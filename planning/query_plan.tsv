@@ -1,0 +1,22 @@
+ALIAS	URL	QUERY_PARAMETERS	AGO_ORGANIZATION
+mgmt_opt	https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/AKFireMgmtOptions_Outlines/FeatureServer/0	"{""where"": ""1=1"", ""outfields"": ""FireManagementOption""}"	nifc
+jurisd	https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/DMP_JurisdictionalUnits_Public/FeatureServer/0	"{""where"": ""1=1"", ""outfields"": ""LandownerCategory,JurisdictionalUnitName""}"	
+spec_mgmt	https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/AK_Special_Management_Area_Polygons_(View)/FeatureServer/0	"{""where"": ""1=1"", ""outfields"": ""FeatureType,Name,ManagementConsiderations""}"	nifc
+parcel	https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/AK_Parcels/FeatureServer/0	"{""where"": ""1=1"", ""outfields"": ""property_type,property_use,land_value,building_value,total_value""}"	
+allot	https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/Alaska_Native_Allotments_(VIEW)/FeatureServer/0	"{""where"": ""1=1"", ""outfields"": ""ALLOT_STATUS,ALLOT_ID""}"	nifc
+silvic	https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/Silviculture/FeatureServer/0	"{""where"": ""STATUS NOT IN ('Terminated','Expired')"", ""outfields"": ""STATUS,TOTAL_VALUE,SALE_NAME""}"	dnr
+usa_struct	https://services2.arcgis.com/FiaPA4ga0iQKduv3/arcgis/rest/services/USA_Structures_View/FeatureServer/0	"{""where"": ""1=1"", ""outfields"": ""OCC_CLS,PRIM_OCC,SEC_OCC,PROP_ADDR""}"	
+aksd	https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/Alaska_Known_Sites_Database_U5/FeatureServer/0	"{""where"": ""DeleteFlag <> 'Yes' Or DeleteFlag IS NULL"", ""outfields"": ""SiteCat,Protection,MainStructs,OthrStructs,SiteNotes,EntryDate""}"	nifc
+nps_struct	https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/NPS_Wildfire_Risk_Assessment_v2023_(Public)/FeatureServer/0	"{""where"": ""1=1"", ""outfields"": ""FacilityUse,Rating,ProtectionLevel""}"	
+ak_runway	https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/AK_Runways/FeatureServer/0	"{""where"": ""surface <> 'Water'"", ""outfields"": ""name,loc_id,runway_id,length,surface,ownership,owner,manager,owner_phone,manager_phone""}"	
+comm_twr	https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/Communication_Towers/FeatureServer/0	"{""where"": ""1=1"", ""outfields"": ""Type,url,Comment""}"	nifc
+wind_turb	https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/US_Wind_Turbine_Database/FeatureServer/0	"{""where"": ""1=1"", ""outfields"": ""p_name,t_ttlh""}"	
+ak_weather	https://fire.ak.blm.gov/arcgis/rest/services/MapAndFeatureServices/AK_WeatherStations/MapServer/0	"{""where"": ""1=1"", ""outfields"": ""NAME,CODE,MNET_SHORTNAME,MESOWESTWEBURL""}"	
+pwrplnt	https://services7.arcgis.com/FGr1D95XCGALKXqM/arcgis/rest/services/Power_Plants_Testing/FeatureServer/0	"{""where"": ""1=1"", ""outfields"": ""Utility_Name,Street_Address,sector_name,PrimSource,tech_desc,Total_MW""}"	
+petrl_term	https://services7.arcgis.com/FGr1D95XCGALKXqM/arcgis/rest/services/PetroleumProduct_Terminals_US_EIA/FeatureServer/36	"{""where"": ""1=1"", ""outfields"": ""Company,Site,City""}"	
+ak_mine	https://services1.arcgis.com/7HDiw78fcUiM2BWn/arcgis/rest/services/APMA_with_Access/FeatureServer/3	"{""where"": ""1=1"", ""outfields"": ""APMA_TYPE,NOTE,Explosives,START_YEAR,EXPIRATION_YEAR,ACTIVE""}"	dnr
+community	https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/AK_Communities_with_Protection_Responsibility_(view)/FeatureServer/0	"{""where"": ""1=1"", ""outfields"": ""CommunityName""}"	nifc
+usa_rail	https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_Railroads_1/FeatureServer/0	"{""where"": ""1=1"", ""outfields"": ""NET_DESC""}"	
+pipeline	https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Infrastructure_Infrastructure/MapServer/8	"{""where"": ""DISPLAY = 'Y' And NAME NOT LIKE '%UNDERGROUND%' And NAME NOT LIKE '%SUBMERGED%'"", ""outfields"": ""NAME,SOURCE_DATE""}"	
+ak_pwrline	https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/GVEA_Power_Lines/FeatureServer/0	"{""where"": ""COND_TYPE NOT LIKE 'UG%' And COND_TYPE NOT LIKE '%Underground%'"", ""outfields"": ""VOLTAGE,COND_TYPE""}"	nifc
+ak_rds	https://services.arcgis.com/r4A0V7UzH9fcLVvv/ArcGIS/rest/services/Functional_Class_AKDOT/FeatureServer/0	"{""where"": ""1=1"", ""outfields"": ""Route_Name""}"	

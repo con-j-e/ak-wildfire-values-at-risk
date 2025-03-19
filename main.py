@@ -1,0 +1,265 @@
+import ast
+import asyncio
+from arcgis.gis import GIS
+import geopandas as gpd
+import json
+import multiprocessing
+import pathlib
+import pandas as pd
+import shapely as shp
+import sys
+import time
+import traceback
+
+from utils.general import basic_file_logger, format_logged_exception, send_email
+from utils.project import acdc_update_email
+from process.prepare_wfigs_inputs import get_wfigs_updates, create_wfigs_fire_points_gdf, create_wfigs_fire_polys_gdf, create_analysis_gdf
+from process.queries import gather_query_bundles, send_all_queries, handle_query_responses
+from process.analysis import gather_analysis_pairs, gather_processes, gather_results, create_attribute_dataframe, join_fires_bufs_attributes, parse_analysis_errors
+from process.output import format_fields, create_output_feature_lists, apply_edits_to_dof_var_service, find_apply_edits_failure, find_apply_edits_success
+
+def main():
+
+    # whole process is wrapped in a general try-except (fail safe for sending notifications if something unexpected goes wrong)
+    # there is targeted exception handling at lower levels
+    try:
+
+        #REGION SETUP
+
+        logger = basic_file_logger('main_info')
+        logger.info('STARTING PROCESS')
+
+        proj_dir = pathlib.Path.cwd()
+        secrets_dir = proj_dir / 'secrets'
+        plans_dir = proj_dir / 'planning'
+
+        with open(secrets_dir / "nifc_ago_credentials.txt", 'r') as file:
+            nifc_credentials_str = file.read()
+            nifc_credentials_tup = ast.literal_eval(nifc_credentials_str) 
+        with open(secrets_dir / "dnr_ago_credentials.txt", 'r') as file:
+            dnr_credentials_str = file.read()
+            dnr_credentials_tup = ast.literal_eval(dnr_credentials_str)      
+        with open(secrets_dir / 'send_email_params.txt', 'r') as file:
+            email_params_str = file.read()
+            email_params_tup = ast.literal_eval(email_params_str)
+            sender, recipient, password = email_params_tup  
+
+        # accessing the nifc portal is considered critical (cannot query or applyEdits to target service without a token)
+        attempts, max_attempts = 0,3
+        while attempts < max_attempts:
+            try:
+                nifc_gis = GIS(*nifc_credentials_tup)
+                nifc_token = nifc_gis._con.token
+                break
+            except Exception as e:
+                attempts += 1
+                if attempts == max_attempts:
+                    logger.critical('Unable to access NIFC portal... exiting with code 1.')
+                    exc_type, exc_val, exc_tb = type(e), e, e.__traceback__
+                    logger.critical(format_logged_exception(exc_type, exc_val, exc_tb))
+                    sys.exit(1)
+                time.sleep(30)
+
+        # accessing the dnr portal is not considered critical (but queries against private dnr services will fail without a token)
+        attempts, max_attempts = 0,3
+        while attempts < max_attempts:
+            try:
+                dnr_gis = GIS(*dnr_credentials_tup)
+                dnr_token = dnr_gis._con.token
+                break
+            except Exception as e:
+                attempts += 1
+                if attempts == max_attempts:
+                    exc_type, exc_val, exc_tb = type(e), e, e.__traceback__
+                    logger.error(format_logged_exception(exc_type, exc_val, exc_tb))
+                    dnr_token = None
+                    break
+                time.sleep(30)
+
+        token_dict = {'nifc': nifc_token, 'dnr': dnr_token}
+
+        # these plans dictate which inputs are queried, how inputs are queried, how results are analyzed, and how outputs are represented
+        # modifying plans is an easy way to adjust any of the above
+        # viewing plans can provide a high level overview of what the main process is currently doing
+        query_plan = pd.read_csv(plans_dir / 'query_plan.tsv', delimiter='\t')
+        analysis_plan = pd.read_csv(plans_dir / 'analysis_plan.tsv', delimiter='\t')
+        schema_plan = pd.read_csv(plans_dir / 'schema_plan.tsv', delimiter='\t')
+
+        #ENDREGION
+
+        #REGION PREPARE WFIGS INPUTS
+
+        wfigs_points, wfigs_polys, exception = asyncio.run(
+            get_wfigs_updates(
+                r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/AK_Wildfire_Values_at_Risk/FeatureServer/0',
+                r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_YearToDate/FeatureServer/0',
+                r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_YearToDate/FeatureServer/0',
+                token_dict['nifc'],
+                testing=False
+            )
+        )
+
+        # any error during get_wfigs_updates() will have the same implications for main
+        # wfigs_points and/or wfigs_polys will remain None
+        # so log the error and exit with code 1, no work should be done during this cycle
+        if wfigs_points is None or wfigs_polys is None:
+            logger.critical('Unable to retrieve WFIGS updates... exiting with code 1.')
+            if exception:
+                logger.critical(format_logged_exception(*exception))
+            sys.exit(1)
+        else:
+            logger.info(
+                json.dumps(
+                    {
+                        'WFIGS points retrieved': len(wfigs_points['features']),
+                        'WFIGS polygons retrieved': len(wfigs_polys['features'])
+                    }
+                )
+            )
+
+        # assign place-holder empty GDFs as flags for exiting main if there are no updates to process
+        # and to ensure arguments are always available for create_analysis_gdf()
+        wfigs_points_gdf, wfigs_polys_gdf = gpd.GeoDataFrame(), gpd.GeoDataFrame()
+
+        if 'features' in wfigs_points and len(wfigs_points['features']) > 0:
+            wfigs_points_gdf = create_wfigs_fire_points_gdf(wfigs_points)
+
+        if 'features' in wfigs_polys and len(wfigs_polys['features']) > 0:
+            wfigs_polys_gdf = create_wfigs_fire_polys_gdf(wfigs_polys)
+
+        if len(wfigs_points_gdf) < 1 and len(wfigs_polys_gdf) < 1:
+            logger.info('No WFIGS updates to process... exiting with code 0.')
+            sys.exit(0)
+
+        analysis_gdf = create_analysis_gdf(wfigs_points_gdf, wfigs_polys_gdf)
+
+        # this is not relevant to any core functionality
+        acdc_update_email(analysis_gdf, sender, recipient, password)
+
+        #ENDREGION
+
+        #REGION QUERIES
+        
+        query_bundles = gather_query_bundles(
+            analysis_gdf=analysis_gdf,
+            query_plan=query_plan,
+            token_dict=token_dict
+            )
+        
+        t0 = time.time()
+
+        query_responses, exception = asyncio.run(send_all_queries(query_bundles))
+
+        # this condition should not even be possible
+        # first exceptions will be present in query_responses as (result_identifier, url_alias, (exc_type, exc_val, exc_tb))
+        # then with asyncio.gather(..., return_exceptions=True), query_responses would contain an Exception object if the expected tuple could not be returned
+        # finally, the exception attribute of the requester class instance in get_var_features() would be populated with (exc_type, exc_val, exc_tb)
+        if exception:
+            logger.critical('Exception propogated during asynchronous queries... exiting with code 1.')
+            logger.critical(format_logged_exception(*exception))
+            sys.exit(1)
+
+        t1 = time.time()
+
+        logger.info(
+            json.dumps(
+                {
+                    'queries completed': len(query_responses),
+                    'seconds': round(t1-t0, 2)
+                }
+            )
+        )
+
+        query_features_dict, results_no_analysis = handle_query_responses(query_responses, analysis_plan)
+
+        #ENDREGION
+
+        #REGION ANALYSIS
+
+        analysis_gdf['geometry'].apply(shp.prepare)
+
+        analysis_pairs = gather_analysis_pairs(analysis_gdf, query_features_dict)
+
+        manager_queue = multiprocessing.Manager().Queue()
+
+        all_processes = gather_processes(analysis_pairs, analysis_plan, manager_queue)
+
+        t0 = time.time()
+
+        results = gather_results(all_processes, manager_queue)
+
+        t1 = time.time()
+
+        analysis_gdf['geometry'].apply(shp.destroy_prepared)
+
+        logger.info(
+            json.dumps(
+                {
+                    'processes executed': len(all_processes),
+                    'seconds': round(t1-t0, 2)
+                }
+            )
+        )
+
+        results = parse_analysis_errors(results)
+
+        results.extend(results_no_analysis)
+        
+        attribute_dataframe = create_attribute_dataframe(results)
+
+        fires_bufs_attrs_gdf = join_fires_bufs_attributes(analysis_gdf, attribute_dataframe)
+
+        #ENDREGION
+
+        #REGION OUTPUT
+        fires_bufs_attrs_gdf = format_fields(fires_bufs_attrs_gdf, schema_plan)
+
+        # logging warnings if any string value is approaching maximum allowed length
+        # this could mean the value has already been truncated, or future truncation is possible
+        # use-case is for json serialized field types with somewhat unpredictable content
+        # helper functions in process.analysis 'pop' objects to shorten json structures that would cause applyEdits to fail if serialized in full
+        str_cols = fires_bufs_attrs_gdf.select_dtypes(include=['string']).columns
+        for col in str_cols:
+            trimmed = fires_bufs_attrs_gdf[fires_bufs_attrs_gdf[col].str.len() > 4900][['wfigs_IncidentName', 'AnalysisBufferMiles', col]]
+            for row in trimmed.itertuples(index=False):
+                logger.warning(f'Value approaching max field length limit, data could be truncated. Incident: {row.wfigs_IncidentName}, Buffer Miles: {row.AnalysisBufferMiles}, Field: {col}.')
+
+        feat_dict = create_output_feature_lists(fires_bufs_attrs_gdf)
+
+        irwins_with_updates = fires_bufs_attrs_gdf[fires_bufs_attrs_gdf['AnalysisBufferMiles'] == 0]['wfigs_IrwinID'].to_list()
+
+        all_edits_response = asyncio.run(apply_edits_to_dof_var_service(
+            perims_locs_url=r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/AK_Wildfire_Values_at_Risk/FeatureServer/0',
+            token=token_dict['nifc'],
+            irwins_with_updates=irwins_with_updates,
+            feat_dict=feat_dict
+        ))
+
+        failures = find_apply_edits_failure(all_edits_response)
+
+        if failures:
+            logger.critical('applyEdits failure(s) detected!')
+            for fail in failures:
+                logger.critical(json.dumps(fail))
+
+        successes = find_apply_edits_success(all_edits_response)
+
+        if successes:
+            logger.info('applyEdits success detected.')
+            for success in successes:
+                logger.info(json.dumps(success))
+
+        logger.info('PROCESS FINISHED')
+
+        return
+    
+        #ENDREGION
+
+    except Exception:
+        tb = traceback.format_exc()
+        subject = f'ak-wildfire-values-at-risk, general Exception.'
+        send_email(subject, tb, sender, recipient, password)
+        raise
+
+if __name__ == "__main__":
+    main()
