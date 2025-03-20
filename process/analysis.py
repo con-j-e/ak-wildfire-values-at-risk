@@ -116,7 +116,7 @@ def parse_analysis_errors(results: list[list[tuple]]) -> list[list[tuple]]:
         list[list[tuple]]: Deepest elements are attribution tuples formatted (IrwinID, buf_dist, attrName, attrVal).
     ''' 
 
-    logger = basic_file_logger('main_info')
+    logger = basic_file_logger('main_info.log')
 
     for attr_tups in results:
         for idx, tup in enumerate(attr_tups):

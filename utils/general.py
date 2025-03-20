@@ -2,6 +2,7 @@ from datetime import datetime
 from email.mime.text import MIMEText
 import logging
 import pandas as pd
+from pathlib import Path 
 import pytz
 import re
 import smtplib
@@ -9,7 +10,7 @@ import traceback
 from typing import Sequence
 from types import TracebackType
 
-def basic_file_logger(file_name: str, log_level: str = 'INFO') -> logging.Logger:
+def basic_file_logger(file_path: str | Path, log_level: str = 'INFO') -> logging.Logger:
     '''
     * Logs to a file using the specified logging level.
     * Information categories will be pipe-delimited, for reading into a dataframe.
@@ -17,7 +18,7 @@ def basic_file_logger(file_name: str, log_level: str = 'INFO') -> logging.Logger
     * If logger with name = __name__ already has handlers, it will be returned as-is.
 
     Args:
-        * file_name (str) -- The name of the file.
+        * file_path (str) -- Path to the log file. Any valid string path or Path object is accepted.
         * log_level (str, optional) -- The logging level as a string (default is 'INFO').
 
     Returns:
@@ -38,7 +39,7 @@ def basic_file_logger(file_name: str, log_level: str = 'INFO') -> logging.Logger
 
         logger.setLevel(level)
 
-        file_handler = logging.FileHandler(f'{file_name}.log', errors='backslashreplace')
+        file_handler = logging.FileHandler(file_path, errors='backslashreplace')
         file_handler.setLevel(level)
 
         formatter = logging.Formatter(r'%(asctime)s|%(levelname)s|%(module)s|%(lineno)d|%(message)s')
@@ -69,6 +70,44 @@ def format_logged_exception(exc_type: type[BaseException], exc_val: BaseExceptio
     exc_format_str = re.sub(r'\s+', ' ', exc_format_str)
     exc_short_format_str = exc_format_str if len(exc_format_str) < max_chars else f'{exc_format_str[:max_chars]}...'
     return exc_short_format_str
+
+def write_log_check_email_body(file_path: str | Path,  check_level: str = 'WARNING') -> str | None:
+    '''
+
+
+    Args:
+        file_path (str): Path to the log file. Any valid string path or Path object is accepted.
+        check_level (str, optional): Lowest logging level at which to begin including messages in the email body. Defaults to 'WARNING'.
+
+    Returns:
+        str | None: Logging message updates, each seperated by a double new line.
+    '''
+    level_dict = {
+        'DEBUG': ('DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL'),
+        'INFO': ('INFO', 'WARNING', 'ERROR', 'CRITICAL'),
+        'WARNING': ('WARNING', 'ERROR', 'CRITICAL'),
+        'ERROR': ('ERROR', 'CRITICAL'),
+        'CRITICAL': ('CRITICAL',)
+    }
+
+    log_df = pd.read_csv(file_path, header=None, delimeter='|')
+    log_df = log_df[log_df[1].isin(level_dict[check_level])]
+    log_df['log_datetime'] = log_df[0].apply(lambda x: datetime.strptime(x, '%Y-%m-%d %H:%M:%S,%f'))
+    log_df['datetime_now'] = datetime.now()
+    log_df['time_delta'] = log_df['datetime_now'] - log_df['datetime_then']
+    log_df['time_delta_hours'] = log_df['time_delta'].apply(lambda x: x.total_seconds() / 3600)
+    log_df = log_df[log_df['time_delta_hours'] >= 24]
+
+    if not log_df:
+        return None
+    
+    log_df.sort_values('log_datetime', ascending=False, inplace=True)
+
+    body = []
+    for row in log_df.itertuples(index=False):
+        body.append(f'{row[0] | row[1] | row[2] | row[3] | row[4]}')
+
+    return '\n\n'.join(body)
 
 def send_email(subject: str, body: str, sender: str, recipients: str | Sequence[str], password: str) -> None:
     '''

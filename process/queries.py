@@ -85,7 +85,7 @@ def handle_query_responses(query_responses: list[tuple], analysis_plan: pd.DataF
 
     ''' 
     # for logging info on atypical or error related query responses
-    logger = basic_file_logger('main_info')
+    logger = basic_file_logger('main_info.log')
 
     # to hold attribution tuples for response types that do not require any analysis
     # returned object

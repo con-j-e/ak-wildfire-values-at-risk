@@ -26,7 +26,7 @@ def main():
 
         #REGION SETUP
 
-        logger = basic_file_logger('main_info')
+        logger = basic_file_logger('main_info.log')
         logger.info('STARTING PROCESS')
 
         proj_dir = pathlib.Path.cwd()
