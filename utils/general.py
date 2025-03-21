@@ -16,6 +16,7 @@ def basic_file_logger(file_path: str | Path, log_level: str = 'INFO') -> logging
     * Information categories will be pipe-delimited, for reading into a dataframe.
     * Logger is given name = __name__.
     * If logger with name = __name__ already has handlers, it will be returned as-is.
+    * Intended for use-cases in which the main process only has need for a single log file and file handler configuration.
 
     Args:
         * file_path (str) -- Path to the log file. Any valid string path or Path object is accepted.
@@ -71,16 +72,37 @@ def format_logged_exception(exc_type: type[BaseException], exc_val: BaseExceptio
     exc_short_format_str = exc_format_str if len(exc_format_str) < max_chars else f'{exc_format_str[:max_chars]}...'
     return exc_short_format_str
 
-def write_log_check_email_body(file_path: str | Path,  check_level: str = 'WARNING') -> str | None:
+def archive_log(file_path: str | Path, archive_dir_path: str | Path) -> None:
     '''
+    Moves log file to specified archive directory and appends a timestamp suffix to the archived file.
 
+    Args:
+        file_path (str | Path): Path to the log file. Any valid string path or Path object is accepted.
+        archive_dir_path (str | Path): Path to the log archive directory. Any valid string path or Path object is accepted. Will be created if it doesn't exist.
+    '''   
+    source = Path(file_path) if isinstance(file_path, str) else file_path
+    dest = Path(archive_dir_path) if isinstance(archive_dir_path, str) else archive_dir_path
+
+    if not source.exists():
+        raise FileNotFoundError(f'{file_path} not found.')
+    if not dest.exists():
+        dest.mkdir(parents=True)
+
+    date = datetime.now().strftime('%Y_%m_%d')
+    source.rename(dest / f'{source.stem}_{date}.log')
+
+def write_log_check_email_body(file_path: str | Path, previous_hours: int,  check_level: str = 'WARNING') -> str | None:
+    '''
+    Reads a log file and writes a simple text body that is intended to be sent in automated emails.
+    Expects the following log format: %(asctime)s|%(levelname)s|%(module)s|%(lineno)d|%(message)s.
 
     Args:
         file_path (str): Path to the log file. Any valid string path or Path object is accepted.
+        previous_hours (int): Number of hours back in time to check logging messages.
         check_level (str, optional): Lowest logging level at which to begin including messages in the email body. Defaults to 'WARNING'.
 
     Returns:
-        str | None: Logging message updates, each seperated by a double new line.
+        * str | None: Logging message updates, each seperated by a double new line.
     '''
     level_dict = {
         'DEBUG': ('DEBUG', 'INFO', 'WARNING', 'ERROR', 'CRITICAL'),
@@ -90,22 +112,26 @@ def write_log_check_email_body(file_path: str | Path,  check_level: str = 'WARNI
         'CRITICAL': ('CRITICAL',)
     }
 
-    log_df = pd.read_csv(file_path, header=None, delimeter='|')
+    log_df = pd.read_csv(file_path, header=None, delimiter='|')
     log_df = log_df[log_df[1].isin(level_dict[check_level])]
+
+    if len(log_df) < 1:
+        return None
+
     log_df['log_datetime'] = log_df[0].apply(lambda x: datetime.strptime(x, '%Y-%m-%d %H:%M:%S,%f'))
     log_df['datetime_now'] = datetime.now()
-    log_df['time_delta'] = log_df['datetime_now'] - log_df['datetime_then']
+    log_df['time_delta'] = log_df['datetime_now'] - log_df['log_datetime']
     log_df['time_delta_hours'] = log_df['time_delta'].apply(lambda x: x.total_seconds() / 3600)
-    log_df = log_df[log_df['time_delta_hours'] >= 24]
+    log_df = log_df[log_df['time_delta_hours'] <= previous_hours]
 
-    if not log_df:
+    if len(log_df) < 1:
         return None
-    
+
     log_df.sort_values('log_datetime', ascending=False, inplace=True)
 
     body = []
     for row in log_df.itertuples(index=False):
-        body.append(f'{row[0] | row[1] | row[2] | row[3] | row[4]}')
+        body.append(f'{row[0]} | {row[1]} | {row[2]} | {row[3]} | {row[4]}')
 
     return '\n\n'.join(body)
 

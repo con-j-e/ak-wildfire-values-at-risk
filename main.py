@@ -250,7 +250,7 @@ def main():
                 logger.info(json.dumps(success))
 
         logger.info('PROCESS FINISHED')
-
+    
         return
     
         #ENDREGION
