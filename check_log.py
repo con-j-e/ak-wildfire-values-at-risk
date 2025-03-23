@@ -12,7 +12,7 @@ def main():
         email_params_tup = ast.literal_eval(email_params_str)
         sender, recipient, password = email_params_tup  
 
-    body = write_log_check_email_body(file_path='main_info.log', previous_hours=24, check_level='WARNING')
+    body = write_log_check_email_body(file_path='main_info.log', previous_hours=1, check_level='WARNING')
     if body:
         send_email('LOGGING NOTIFICATION: ak-wildfire-values-at-risk', body, sender, recipient, password)
 
