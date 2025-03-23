@@ -77,10 +77,11 @@ def acdc_update_email(analysis_gdf: gpd.GeoDataFrame, sender: str, recipients: s
         return
     
     acdc_fires['PolygonDateTime'] = acdc_fires['PolygonDateTime'].apply(
-        lambda x: utc_epoch_to_ak_time_str(x) if pd.notna(x) else None
-    )
+            lambda x: utc_epoch_to_ak_time_str(x) + ' AK Time' if pd.notna(x) else x
+        )
+
     acdc_fires['ModifiedOnDateTime_dt'] = acdc_fires['ModifiedOnDateTime_dt'].apply(
-        lambda x: utc_epoch_to_ak_time_str(x) if pd.notna(x) else None
+        lambda x: utc_epoch_to_ak_time_str(x) + ' AK Time' if pd.notna(x) else x
     )
 
     acdc_fires = acdc_fires[

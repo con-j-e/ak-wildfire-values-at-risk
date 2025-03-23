@@ -162,4 +162,4 @@ def utc_epoch_to_ak_time_str(epoch: int) -> str:
     utc_time = datetime.fromtimestamp(seconds, pytz.utc)
     ak_timezone = pytz.timezone('America/Anchorage')
     ak_time = utc_time.astimezone(ak_timezone).strftime('%Y-%m-%d %H:%M:%S')
-    return f'{ak_time} AK Time'
+    return ak_time
