@@ -4,6 +4,7 @@ from arcgis.gis import GIS
 import geopandas as gpd
 import json
 import multiprocessing
+import os
 import pathlib
 import pandas as pd
 import shapely as shp
@@ -13,6 +14,7 @@ import traceback
 
 from utils.general import basic_file_logger, format_logged_exception, send_email
 from utils.project import acdc_update_email
+from utils.arcgis_helpers import checkout_token
 from process.prepare_wfigs_inputs import get_wfigs_updates, create_wfigs_fire_points_gdf, create_wfigs_fire_polys_gdf, create_analysis_gdf
 from process.queries import gather_query_bundles, send_all_queries, handle_query_responses
 from process.analysis import gather_analysis_pairs, gather_processes, gather_results, create_attribute_dataframe, join_fires_bufs_attributes, parse_analysis_errors
@@ -26,55 +28,31 @@ def main():
 
         #REGION SETUP
 
+        sender, recipient, password = os.getenv('SEND_EMAIL_PARAMS').split(',')
+
         logger = basic_file_logger('main_info.log')
         logger.info('STARTING PROCESS')
 
         proj_dir = pathlib.Path.cwd()
-        secrets_dir = proj_dir / 'secrets'
         plans_dir = proj_dir / 'planning'
 
-        with open(secrets_dir / "nifc_ago_credentials.txt", 'r') as file:
-            nifc_credentials_str = file.read()
-            nifc_credentials_tup = ast.literal_eval(nifc_credentials_str) 
-        with open(secrets_dir / "dnr_ago_credentials.txt", 'r') as file:
-            dnr_credentials_str = file.read()
-            dnr_credentials_tup = ast.literal_eval(dnr_credentials_str)      
-        with open(secrets_dir / 'send_email_params.txt', 'r') as file:
-            email_params_str = file.read()
-            email_params_tup = ast.literal_eval(email_params_str)
-            sender, recipient, password = email_params_tup  
-
         # accessing the nifc portal is considered critical (cannot query or applyEdits to target service without a token)
-        attempts, max_attempts = 0,3
-        while attempts < max_attempts:
-            try:
-                nifc_gis = GIS(*nifc_credentials_tup)
-                nifc_token = nifc_gis._con.token
-                break
-            except Exception as e:
-                attempts += 1
-                if attempts == max_attempts:
-                    logger.critical('Unable to access NIFC portal... exiting with code 1.')
-                    exc_type, exc_val, exc_tb = type(e), e, e.__traceback__
-                    logger.critical(format_logged_exception(exc_type, exc_val, exc_tb))
-                    sys.exit(1)
-                time.sleep(30)
+        try:
+            nifc_token = checkout_token('NIFC_AGO', 120, 'NIFC_TOKEN', 15)
+        except Exception as e:
+            logger.critical('Unable to access NIFC portal... exiting with code 1.')
+            exc_type, exc_val, exc_tb = type(e), e, e.__traceback__
+            logger.critical(format_logged_exception(exc_type, exc_val, exc_tb))
+            sys.exit(1)
 
         # accessing the dnr portal is not considered critical (but queries against private dnr services will fail without a token)
-        attempts, max_attempts = 0,3
-        while attempts < max_attempts:
-            try:
-                dnr_gis = GIS(*dnr_credentials_tup)
-                dnr_token = dnr_gis._con.token
-                break
-            except Exception as e:
-                attempts += 1
-                if attempts == max_attempts:
-                    exc_type, exc_val, exc_tb = type(e), e, e.__traceback__
-                    logger.error(format_logged_exception(exc_type, exc_val, exc_tb))
-                    dnr_token = None
-                    break
-                time.sleep(30)
+        try:
+            dnr_token = checkout_token('DNR_AGO', 120, 'DNR_TOKEN', 15)
+        except Exception as e:
+            logger.error('Unable to access DNR portal.')
+            exc_type, exc_val, exc_tb = type(e), e, e.__traceback__
+            logger.error(format_logged_exception(exc_type, exc_val, exc_tb))
+            dnr_token = None
 
         token_dict = {'nifc': nifc_token, 'dnr': dnr_token}
 

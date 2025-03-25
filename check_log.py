@@ -1,16 +1,11 @@
-import ast
+import os
 import pathlib
 
 from utils.general import write_log_check_email_body, send_email, archive_log
 
 def main():
 
-    secrets_dir = pathlib.Path().cwd() / 'secrets'
-
-    with open(secrets_dir / 'send_email_params.txt', 'r') as file:
-        email_params_str = file.read()
-        email_params_tup = ast.literal_eval(email_params_str)
-        sender, recipient, password = email_params_tup  
+    sender, recipient, password = os.getenv('SEND_EMAIL_PARAMS').split(',')
 
     body = write_log_check_email_body(file_path='main_info.log', previous_hours=1, check_level='WARNING')
     if body:
