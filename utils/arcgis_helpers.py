@@ -318,12 +318,35 @@ def assign_wkid_3338(feature: dict) -> dict:
 
 def arcgis_features_to_gdf(features: dict) -> gpd.GeoDataFrame:
     '''
-    Quick and easy conversion of ArcGIS JSON features to a GeoDataFrame.
+    Quick and easy conversion of ArcGIS JSON features to a GeoPandas GeoDataFrame.
     '''
     fset = FeatureSet.from_dict(features)
     geojson = json.loads(fset.to_geojson)
     gdf = gpd.GeoDataFrame.from_features(geojson['features'], crs='EPSG:3338')
     return gdf
+
+def arcgis_features_to_dataframe(features: dict) -> pd.DataFrame:
+    '''
+    Load ArcGIS JSON features into a regular Pandas DataFrame (no spatial properties or methods).
+    Geometry column is created by default, will remain None if features do not have geometry.
+    Assumes all features have the same attribute keys. 
+    
+    Arguments:
+        features -- ArcGIS JSON features
+
+    Returns:
+        DataFrame where each row represents one feature
+    '''    
+    attrs_template = features['features'][0]['attributes']
+    df_dict = {attrName: [] for attrName,_ in attrs_template.items()}
+    df_dict['geometry'] = []
+
+    for feat in features['features']:
+        df_dict['geometry'].append(feat.get('geometry', None))
+        for attrName, attrVal in feat['attributes'].items():
+            df_dict[attrName].append(attrVal)
+
+    return pd.DataFrame(df_dict)
 
 def arcgis_polygon_features_to_gdf(polygon_features: dict) -> gpd.GeoDataFrame:
     '''
@@ -331,18 +354,8 @@ def arcgis_polygon_features_to_gdf(polygon_features: dict) -> gpd.GeoDataFrame:
     to all geometries. See doc string for _arcgis_polygon_cleanup(), in arcgis_json_feature_helpers.py, for details.
     
     '''
-    polys = [feat for feat in polygon_features['features']]
+    polys_df = arcgis_features_to_dataframe(polygon_features)
 
-    polys_attrs = polys[0]['attributes']
-    polys_df_dict = {attrName: [] for attrName,_ in polys_attrs.items()}
-    polys_df_dict['geometry'] = []
-
-    for feat in polys:
-        polys_df_dict['geometry'].append(feat['geometry'])
-        for attrName, attrVal in feat['attributes'].items():
-            polys_df_dict[attrName].append(attrVal)
-
-    polys_df = pd.DataFrame(polys_df_dict)
     polys_df['geometry'] = polys_df.apply(_arcgis_polygon_cleanup, axis=1)
 
     polys_gdf = gpd.GeoDataFrame(polys_df, geometry='geometry', crs='EPSG:3338')
