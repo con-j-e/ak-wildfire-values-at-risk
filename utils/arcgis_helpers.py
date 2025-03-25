@@ -1,10 +1,14 @@
 import aiohttp
-import asyncio
 from arcgis.features import FeatureSet
+from arcgis.gis import GIS
+import asyncio
 import geopandas as gpd
 import json
+import os
 import pandas as pd
 import shapely as shp
+import subprocess
+import time
 from typing import Sequence
 import traceback
 
@@ -362,6 +366,37 @@ def arcgis_polygon_features_to_gdf(polygon_features: dict) -> gpd.GeoDataFrame:
 
     return polys_gdf
 
+def checkout_token(credentials_env_var: str, token_minutes: int, token_env_var: str, minutes_needed: int):
+    '''
+    Written for accessing token to use with the ArcGIS REST API. Checks out an existing token saved to
+    a system environment variable, or generates a new token if existing token is no longer usable.
+    Intention is to eliminate unnecessary repeated token generation. 
+
+    Arguments:
+        * credentials_env_var -- OS environment variable. Must hold comma seperated string like '{url},{username},{password}'.
+        * token_minutes -- Requested lifespan for the newly generated token if a new token is generated.
+        * token_env_var -- OS environment variable. Must hold comma seperated string like '{token},{expiration_utc_time_as_seconds_since_epoch}'
+        * minutes_needed -- Amount of time that the caller expects it will need a token for. Caller should over-estimate to be on the side of caution.
+
+    Returns:
+        * str -- API access token
+    '''    
+    token_env_var_value = os.getenv(token_env_var)
+
+    if token_env_var_value is None:
+        token, expires = _generate_token(credentials_env_var, token_minutes)
+        subprocess.run(f'setx {token_env_var} "{token},{expires}"')
+        print(f'Environment variable "{token_env_var}" is now set and will be available in future command windows. Restart may be required.')
+        return
+        
+    token, expires = token_env_var_value.split(',')
+
+    if ((float(expires) - time.time()) / 60) <= minutes_needed:
+        token, expires = _generate_token(credentials_env_var, token_minutes)
+        subprocess.run(f'setx {token_env_var} "{token},{expires}"')
+
+    return token
+
 def _arcgis_polygon_cleanup(row: pd.Series) -> shp.Polygon | shp.MultiPolygon:
     """
     - This helper function is written to be used in a pandas.apply() function.
@@ -445,3 +480,41 @@ def _arcgis_polygon_cleanup(row: pd.Series) -> shp.Polygon | shp.MultiPolygon:
     multipoly = shp.difference(exterior_multipoly, interior_multipoly)
 
     return multipoly
+
+def _generate_token(credentials_env_var: str, token_minutes: int = 60) -> tuple[str, int]:
+    '''
+    Uses credentials stored as an environment variable to generate a new token using
+    the ArcGIS API for Python's GIS module. 
+
+    Arguments:
+        credentials_env_var -- OS environment variable. Must hold comma seperated string like '{url},{username},{password}'.
+
+    Keyword Arguments:
+        token_minutes -- Amount of time that a newly generated token will be valid for. (default: {60})
+
+    Raises:
+        KeyError -- Environment variable expected to hold '{url},{username},{password}' is not set.
+
+    Returns:
+        tuple -- ( token , expiration_utc_time_as_seconds_since_epoch )
+    '''    
+    credentials_env_var_value = os.getenv(credentials_env_var)
+
+    if credentials_env_var_value is None:
+        raise KeyError(f'Environment variable "{credentials_env_var}" is not set.')
+
+    url, username, password = credentials_env_var_value.split(',')
+
+    attempts, max_attempts = 0,3
+    while attempts < max_attempts:
+        try:
+            gis = GIS(url, username, password, expiration=token_minutes)
+            expires = time.time() + (gis._expiration * 60)
+            return (gis._con.token, expires)
+        except Exception as e:
+            attempts += 1
+            print(f'Failed to connect to {url}. Error: {e}. Attempt {attempts} of {max_attempts}.')
+            if attempts == max_attempts:
+                raise
+            time.sleep(5)
+
