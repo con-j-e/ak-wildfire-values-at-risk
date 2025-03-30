@@ -154,12 +154,13 @@ def send_email(subject: str, body: str, sender: str, recipients: str | Sequence[
         smtp_server.login(sender, password)
         smtp_server.sendmail(sender, recipients, msg.as_string())
 
-def utc_epoch_to_ak_time_str(epoch: int) -> str:
+def utc_epoch_to_ak_time_str(epoch: int, format_milliseconds: bool = False) -> str:
     '''
     Converts UTC unix timestamp in milliseconds to formatted America/Anchorage time string.
     '''
     seconds = epoch / 1000
     utc_time = datetime.fromtimestamp(seconds, pytz.utc)
     ak_timezone = pytz.timezone('America/Anchorage')
-    ak_time = utc_time.astimezone(ak_timezone).strftime('%Y-%m-%d %H:%M:%S')
+    format = '%Y-%m-%d %H:%M:%S.%f' if format_milliseconds else '%Y-%m-%d %H:%M:%S'
+    ak_time = utc_time.astimezone(ak_timezone).strftime(format)
     return ak_time
