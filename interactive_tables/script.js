@@ -1,24 +1,10 @@
-import { DateTime } from "./node_modules/luxon/src/luxon.js";
-
-//https://forum.freecodecamp.org/t/how-do-i-import-data-from-json-to-javascript/526050
-
-import perims_locs from "./input_json/akdof_perims_locs.json" with { type: "json" };
-
-import buf_1 from "./input_json/buf_1.json" with { type: "json" };
-
-import buf_3 from "./input_json/buf_3.json" with { type: "json" };
-
-import buf_5 from "./input_json/buf_5.json" with { type: "json" };
-
-import timestamp from "./input_json/timestamp.json" with { type: "json" };
-
 // MUTATORS (https://tabulator.info/docs/6.3/mutators#mutators)
 //
 const utc_timestamp_to_akt_obj = (epoch_milliseconds) => {
     if (epoch_milliseconds === null || epoch_milliseconds === undefined) {
         return epoch_milliseconds;
     }
-    const datetime = DateTime.fromMillis(epoch_milliseconds, {zone:"America/Anchorage"});
+    const datetime = luxon.DateTime.fromMillis(epoch_milliseconds, {zone:"America/Anchorage"});
     return datetime;
 };
 
@@ -115,9 +101,9 @@ const build_table = (tag, rows_array) => {
         persistenceID: `pid_${tag.slice(1)}`,
         */
         height:"100%",
-        dependencies:{
-            DateTime:DateTime,
-        },  
+        //dependencies:{
+        //    DateTime:DateTime,
+        //},  
         layout: "fitData",
         pagination: "local",
         paginationSize: 10, 
@@ -1202,9 +1188,22 @@ const build_table = (tag, rows_array) => {
 //
 // END MAIN TABULATOR
 
-const main = () => {
+const load_json_data = async () => {
+    const [perims_locs, buf_1, buf_3, buf_5, timestamp] = await Promise.all([
+        fetch("./input_json/akdof_perims_locs.json").then(res => res.json()),
+        fetch("./input_json/buf_1.json").then(res => res.json()),
+        fetch("./input_json/buf_3.json").then(res => res.json()),
+        fetch("./input_json/buf_5.json").then(res => res.json()),
+        fetch("./input_json/timestamp.json").then(res => res.json())
+    ]);
+    return { perims_locs, buf_1, buf_3, buf_5, timestamp };
+}
 
-    document.getElementById("updated-datetime").innerHTML = "Last Updated " + new Date(timestamp.datetime).toLocaleString('en-US', {
+const main = async () => {
+
+    const data = await load_json_data();
+
+    document.getElementById("updated-datetime").innerHTML = "Last Updated " + new Date(data.timestamp.datetime).toLocaleString('en-US', {
         hour12: false,
         year: 'numeric',
         month: 'numeric',
@@ -1215,10 +1214,10 @@ const main = () => {
 
     // holds arrays formatted as [ { div id }, { tabulator tag }, { array of json rows } ]
     const builder = [
-        ["perims-locs", "#perimeters-and-locations", perims_locs],
-        ["buf-1", "#one-mile-buffers", buf_1],
-        ["buf-3", "#three-mile-buffers", buf_3],
-        ["buf-5", "#five-mile-buffers", buf_5]
+        ["perims-locs", "#perimeters-and-locations", data.perims_locs],
+        ["buf-1", "#one-mile-buffers", data.buf_1],
+        ["buf-3", "#three-mile-buffers", data.buf_3],
+        ["buf-5", "#five-mile-buffers", data.buf_5]
     ]
 
     for (let build of builder) {

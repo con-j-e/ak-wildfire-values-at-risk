@@ -1,5 +1,407 @@
 [
     {
+        "AkFireRegion": "MSS",
+        "AkFireNumber": "012",
+        "wfigs_IncidentName": "Ridgewood",
+        "FireActivityStatus": "Out",
+        "wfigs_GISAcres": null,
+        "wfigs_MapMethod": null,
+        "wfigs_PolygonDateTime": null,
+        "wfigs_ModifiedOnDateTime_dt": 1743372422323,
+        "wfigs_IrwinID": "{58CA249D-F810-4AF4-8CA9-D41920484A0E}",
+        "ReportedAcres": 0.1,
+        "HasError": 0,
+        "DefaultLabel": "012-Ridgewood, 3 Mile Buffer",
+        "AkMine_Active_AttrCount": null,
+        "AkMine_Type_AttrCount": null,
+        "AkMine_Note_AttrCount": null,
+        "AkMine_FeatureCount": null,
+        "AkPowerLine_CondType_FeetSum": [
+            {
+                "key head": "AC; Overhead",
+                "value head": 12493
+            }
+        ],
+        "AkPowerLine_Voltage_FeetSum": [
+            {
+                "key head": "115",
+                "value head": 12493
+            }
+        ],
+        "AkPowerLine_TotalFeet": 12493.0,
+        "Runway_FeatureCount": 6.0,
+        "Runway_Ownership_AttrCount": [
+            {
+                "key head": "Private",
+                "value head": 4
+            },
+            {
+                "key head": "Public",
+                "value head": 2
+            }
+        ],
+        "WeatherStation_Name_AttrCount": {
+            "ASOS/AWOS": 1
+        },
+        "WeatherStation_FeatureCount": 1.0,
+        "Aksd_MainStruct_AttrSum": 2.0,
+        "Aksd_OtherStruct_AttrSum": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Undesignated",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Structure",
+                "value head": 1
+            }
+        ],
+        "Aksd_FeatureCount": 1.0,
+        "NtvAllot_Status_AcreSum": null,
+        "NtvAllot_FeatureCount": null,
+        "NtvAllot_TotalAcres": null,
+        "ComsTwr_Type_AttrCount": [
+            {
+                "key head": "Microwave Service",
+                "value head": 21
+            },
+            {
+                "key head": "Land Mobile Private",
+                "value head": 14
+            },
+            {
+                "key head": "Cellular",
+                "value head": 1
+            },
+            {
+                "key head": "Antenna Structure",
+                "value head": 1
+            }
+        ],
+        "ComsTwr_FeatureCount": 37,
+        "Community_FeatureCount": 1.0,
+        "Community_Name_AttrCount": {
+            "Wasilla": 1
+        },
+        "Jurisd_Unit_AcreSum": [
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 14213.85
+            },
+            {
+                "key head": "Alaska Department of Transportation and Public Facilities",
+                "value head": 1832.47
+            },
+            {
+                "key head": "Wasilla, City of",
+                "value head": 848.34
+            },
+            {
+                "key head": "University of Alaska",
+                "value head": 488.88
+            },
+            {
+                "key head": "Matanuska-Susitna Borough",
+                "value head": 415.17
+            },
+            {
+                "key head": "Knikatnu, Incorporated",
+                "value head": 218.45
+            },
+            {
+                "key head": "Cook Inlet Region, Incorporated",
+                "value head": 120.28
+            },
+            {
+                "key head": "Anchorage Field Office",
+                "value head": 9.59
+            },
+            {
+                "key head": "U.S. Postal Service",
+                "value head": 2.34
+            },
+            {
+                "key head": "Unspecified Other Federal",
+                "value head": 1.87
+            }
+        ],
+        "Jurisd_Owner_AcreSum": {
+            "Private": 12318.95,
+            "State": 4216.26,
+            "City": 848.34,
+            "County": 415.17,
+            "ANCSA": 338.73,
+            "BLM": 9.59,
+            "OthFed": 4.21
+        },
+        "MgmtOption_AcreSum": {
+            "Critical": 18151.63
+        },
+        "NpsStruct_Use_AttrCount": null,
+        "NpsStruct_Protection_AttrCount": null,
+        "NpsStruct_Rating_AttrCount": null,
+        "NpsStruct_FeatureCount": null,
+        "Parcel_BuildingValue_AttrSum": 1933658924,
+        "Parcel_FeatureCount": 6817,
+        "Parcel_LandValue_AttrSum": 372798106,
+        "Parcel_PropType_AcreSum": [
+            {
+                "key head": "PRIVATE",
+                "value head": 12284.3
+            },
+            {
+                "key head": "NA",
+                "value head": 2020.12
+            },
+            {
+                "key head": "MENTAL HEALTH",
+                "value head": 889.42
+            },
+            {
+                "key head": "CITY",
+                "value head": 847.78
+            },
+            {
+                "key head": "PUBLIC UNIVERSITY",
+                "value head": 466.56
+            },
+            {
+                "key head": "NO DATA",
+                "value head": 459.3
+            },
+            {
+                "key head": "STATE",
+                "value head": 414.99
+            },
+            {
+                "key head": "BOROUGH",
+                "value head": 391.19
+            },
+            {
+                "key head": "NATIVE CORP",
+                "value head": 338.15
+            },
+            {
+                "key head": "No Data",
+                "value head": 94.02
+            },
+            {
+                "key head": "PUBLIC USE",
+                "value head": 15.36
+            },
+            {
+                "key head": "FEDERAL",
+                "value head": 11.66
+            },
+            {
+                "key head": "COOPERATIVE",
+                "value head": 6.35
+            }
+        ],
+        "Parcel_PropUse_AcreSum": [
+            {
+                "key head": "No Data",
+                "value head": 18239.2
+            }
+        ],
+        "Parcel_TotalAcres": 18239.2,
+        "Parcel_TotalValue_AttrSum": 2306141630,
+        "PetrolTerm_Company_AttrCount": null,
+        "PetrolTerm_FeatureCount": null,
+        "PipeLine_Name_FeetSum": null,
+        "PipeLine_TotalFeet": null,
+        "PowerPlant_PrimSource_AttrCount": null,
+        "PowerPlant_UtilName_AttrCount": null,
+        "PowerPlant_FeatureCount": null,
+        "PowerPlant_SectorName_AttrCount": null,
+        "Silviculture_Status_AcreSum": null,
+        "Silviculture_TotalValue_AttrSum": null,
+        "Silviculture_FeatureCount": null,
+        "Silviculture_TotalAcres": null,
+        "Railroad_NetDesc_FeetSum": [
+            {
+                "key head": "Main sub network",
+                "value head": 27959
+            },
+            {
+                "key head": "Non-Mainline Active track",
+                "value head": 3585
+            }
+        ],
+        "Railroad_TotalFeet": 31544.0,
+        "UsaStruct_OccCls_AttrCount": [
+            {
+                "key head": "Residential",
+                "value head": 5327
+            },
+            {
+                "key head": "Commercial",
+                "value head": 304
+            },
+            {
+                "key head": "Unclassified",
+                "value head": 165
+            },
+            {
+                "key head": "Industrial",
+                "value head": 121
+            },
+            {
+                "key head": "Education",
+                "value head": 63
+            },
+            {
+                "key head": "Assembly",
+                "value head": 47
+            },
+            {
+                "key head": "Utility and Misc",
+                "value head": 36
+            },
+            {
+                "key head": "Government",
+                "value head": 35
+            },
+            {
+                "key head": "Agriculture",
+                "value head": 18
+            }
+        ],
+        "UsaStruct_PrimOcc_AttrCount": [
+            {
+                "key head": "Single Family Dwelling",
+                "value head": 4370
+            },
+            {
+                "key head": "Multi - Family Dwelling",
+                "value head": 765
+            },
+            {
+                "key head": "Unclassified",
+                "value head": 216
+            },
+            {
+                "key head": "Retail Trade",
+                "value head": 192
+            },
+            {
+                "key head": "Manufactured Home",
+                "value head": 115
+            },
+            {
+                "key head": "Light",
+                "value head": 78
+            },
+            {
+                "key head": "Religious",
+                "value head": 47
+            },
+            {
+                "key head": "Pre-K - 12 Schools",
+                "value head": 46
+            },
+            {
+                "key head": "Construction",
+                "value head": 43
+            },
+            {
+                "key head": "Parking",
+                "value head": 39
+            },
+            {
+                "key head": "General Services",
+                "value head": 33
+            },
+            {
+                "key head": "Nursing Home",
+                "value head": 25
+            },
+            {
+                "key head": "Aviation",
+                "value head": 23
+            },
+            {
+                "key head": "Entertainment and Recreation",
+                "value head": 22
+            },
+            {
+                "key head": "Medical Office/Clinic",
+                "value head": 21
+            },
+            {
+                "key head": "Agriculture",
+                "value head": 18
+            },
+            {
+                "key head": "Professional/Technical Services",
+                "value head": 15
+            },
+            {
+                "key head": "Other Educational Buildings",
+                "value head": 13
+            },
+            {
+                "key head": "Ground",
+                "value head": 13
+            },
+            {
+                "key head": "Personal and Repair Services",
+                "value head": 12
+            },
+            {
+                "key head": "Colleges/Universities",
+                "value head": 4
+            },
+            {
+                "key head": "Emergency Response",
+                "value head": 2
+            },
+            {
+                "key head": "Wholesale Trade",
+                "value head": 1
+            },
+            {
+                "key head": "Temporary Lodging",
+                "value head": 1
+            },
+            {
+                "key head": "Veterinary/Pet ",
+                "value head": 1
+            },
+            {
+                "key head": "Hospital",
+                "value head": 1
+            }
+        ],
+        "UsaStruct_SecOcc_AttrCount": [
+            {
+                "key head": "No Data",
+                "value head": 6116
+            }
+        ],
+        "UsaStruct_FeatureCount": 6116,
+        "WindTurb_FeatureCount": null,
+        "WindTurb_ProjName_AttrCount": null,
+        "SpatialInfoType": " 3 Mile Buffer",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:237530.762,1299569.804,3338,scale:24167.82250000004",
+        "CpxName": null,
+        "DispatchCenterID": "AKACDC",
+        "PercentContained": null,
+        "PercentPerimeterToBeContained": null,
+        "FireMgmtComplexity": null,
+        "IncidentComplexityLevel": null,
+        "EstimatedCostToDate": null,
+        "TotalIncidentPersonnel": null,
+        "POOProtectingAgency": "DVF",
+        "POOJurisdictionalAgency": "DNR",
+        "POOJurisdictionalUnit": "AKDNS",
+        "ICS209ReportDateTime": null,
+        "ICS209ReportStatus": null,
+        "IncidentManagementOrganization": null
+    },
+    {
         "AkFireRegion": "KKS",
         "AkFireNumber": "013",
         "wfigs_IncidentName": "Hoyt",
@@ -7,7 +409,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1743371626017,
+        "wfigs_ModifiedOnDateTime_dt": 1743372151270,
         "wfigs_IrwinID": "{AFCF11D8-7D9D-44EA-A5BD-52E95E8EA6B9}",
         "ReportedAcres": 0.5,
         "HasError": 0,
@@ -312,6 +714,348 @@
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
         "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:146451.168,1187083.544,3338,scale:24237.967500000377",
+        "CpxName": null,
+        "DispatchCenterID": "AKACDC",
+        "PercentContained": null,
+        "PercentPerimeterToBeContained": null,
+        "FireMgmtComplexity": null,
+        "IncidentComplexityLevel": null,
+        "EstimatedCostToDate": null,
+        "TotalIncidentPersonnel": null,
+        "POOProtectingAgency": "DVF",
+        "POOJurisdictionalAgency": "DNR",
+        "POOJurisdictionalUnit": "AKDNS",
+        "ICS209ReportDateTime": null,
+        "ICS209ReportStatus": null,
+        "IncidentManagementOrganization": null
+    },
+    {
+        "AkFireRegion": "MSS",
+        "AkFireNumber": "011",
+        "wfigs_IncidentName": "Carrillo",
+        "FireActivityStatus": "Out",
+        "wfigs_GISAcres": null,
+        "wfigs_MapMethod": null,
+        "wfigs_PolygonDateTime": null,
+        "wfigs_ModifiedOnDateTime_dt": 1743371975473,
+        "wfigs_IrwinID": "{4449E1A8-754D-4499-8025-9B2FE297E8A9}",
+        "ReportedAcres": 0.1,
+        "HasError": 0,
+        "DefaultLabel": "011-Carrillo, 3 Mile Buffer",
+        "AkMine_Active_AttrCount": null,
+        "AkMine_Type_AttrCount": null,
+        "AkMine_Note_AttrCount": null,
+        "AkMine_FeatureCount": null,
+        "AkPowerLine_CondType_FeetSum": null,
+        "AkPowerLine_Voltage_FeetSum": null,
+        "AkPowerLine_TotalFeet": null,
+        "Runway_FeatureCount": 8.0,
+        "Runway_Ownership_AttrCount": [
+            {
+                "key head": "Private",
+                "value head": 8
+            }
+        ],
+        "WeatherStation_Name_AttrCount": null,
+        "WeatherStation_FeatureCount": null,
+        "Aksd_MainStruct_AttrSum": null,
+        "Aksd_OtherStruct_AttrSum": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Critical",
+                "value head": 5
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Structure",
+                "value head": 5
+            }
+        ],
+        "Aksd_FeatureCount": 5.0,
+        "NtvAllot_Status_AcreSum": {
+            "Restricted": 178.64
+        },
+        "NtvAllot_FeatureCount": 3.0,
+        "NtvAllot_TotalAcres": 178.64,
+        "ComsTwr_Type_AttrCount": [
+            {
+                "key head": "Microwave Service",
+                "value head": 7
+            },
+            {
+                "key head": "Cellular",
+                "value head": 2
+            },
+            {
+                "key head": "Land Mobile Private",
+                "value head": 1
+            },
+            {
+                "key head": "Antenna Structure",
+                "value head": 1
+            }
+        ],
+        "ComsTwr_FeatureCount": 11,
+        "Community_FeatureCount": null,
+        "Community_Name_AttrCount": null,
+        "Jurisd_Unit_AcreSum": [
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 15812.41
+            },
+            {
+                "key head": "Alaska Department of Transportation and Public Facilities",
+                "value head": 830.16
+            },
+            {
+                "key head": "Matanuska-Susitna Borough",
+                "value head": 401.05
+            },
+            {
+                "key head": "Knikatnu, Incorporated",
+                "value head": 385.87
+            },
+            {
+                "key head": "Houston, City of",
+                "value head": 231.33
+            },
+            {
+                "key head": "Native Allotments",
+                "value head": 178.64
+            },
+            {
+                "key head": "University of Alaska",
+                "value head": 156.24
+            },
+            {
+                "key head": "Cook Inlet Region, Incorporated",
+                "value head": 155.71
+            }
+        ],
+        "Jurisd_Owner_AcreSum": {
+            "Private": 11344.89,
+            "State": 5453.92,
+            "ANCSA": 541.59,
+            "County": 401.05,
+            "City": 231.33,
+            "BIA": 178.64
+        },
+        "MgmtOption_AcreSum": {
+            "Critical": 18151.63
+        },
+        "NpsStruct_Use_AttrCount": null,
+        "NpsStruct_Protection_AttrCount": null,
+        "NpsStruct_Rating_AttrCount": null,
+        "NpsStruct_FeatureCount": null,
+        "Parcel_BuildingValue_AttrSum": 430460466,
+        "Parcel_FeatureCount": 3323,
+        "Parcel_LandValue_AttrSum": 92628559,
+        "Parcel_PropType_AcreSum": [
+            {
+                "key head": "PRIVATE",
+                "value head": 11399.42
+            },
+            {
+                "key head": "NO DATA",
+                "value head": 3458.39
+            },
+            {
+                "key head": "NA",
+                "value head": 2108.14
+            },
+            {
+                "key head": "BOROUGH",
+                "value head": 340.83
+            },
+            {
+                "key head": "NATIVE CORP",
+                "value head": 339.93
+            },
+            {
+                "key head": "CITY",
+                "value head": 282.06
+            },
+            {
+                "key head": "PUBLIC UNIVERSITY",
+                "value head": 151.87
+            },
+            {
+                "key head": "MENTAL HEALTH",
+                "value head": 80.06
+            },
+            {
+                "key head": "STATE",
+                "value head": 48.45
+            },
+            {
+                "key head": "No Data",
+                "value head": 8.06
+            },
+            {
+                "key head": "PUBLIC USE",
+                "value head": 0.48
+            }
+        ],
+        "Parcel_PropUse_AcreSum": [
+            {
+                "key head": "No Data",
+                "value head": 18217.69
+            }
+        ],
+        "Parcel_TotalAcres": 18217.69,
+        "Parcel_TotalValue_AttrSum": 523089026,
+        "PetrolTerm_Company_AttrCount": null,
+        "PetrolTerm_FeatureCount": null,
+        "PipeLine_Name_FeetSum": null,
+        "PipeLine_TotalFeet": null,
+        "PowerPlant_PrimSource_AttrCount": null,
+        "PowerPlant_UtilName_AttrCount": null,
+        "PowerPlant_FeatureCount": null,
+        "PowerPlant_SectorName_AttrCount": null,
+        "Silviculture_Status_AcreSum": [
+            {
+                "key head": "Proposed",
+                "value head": 14.29
+            }
+        ],
+        "Silviculture_TotalValue_AttrSum": null,
+        "Silviculture_FeatureCount": 1.0,
+        "Silviculture_TotalAcres": 14.29,
+        "Railroad_NetDesc_FeetSum": [
+            {
+                "key head": "Main sub network",
+                "value head": 32345
+            },
+            {
+                "key head": "Abandoned",
+                "value head": 471
+            }
+        ],
+        "Railroad_TotalFeet": 32817.0,
+        "UsaStruct_OccCls_AttrCount": [
+            {
+                "key head": "Residential",
+                "value head": 1894
+            },
+            {
+                "key head": "Unclassified",
+                "value head": 82
+            },
+            {
+                "key head": "Commercial",
+                "value head": 60
+            },
+            {
+                "key head": "Education",
+                "value head": 14
+            },
+            {
+                "key head": "Agriculture",
+                "value head": 6
+            },
+            {
+                "key head": "Industrial",
+                "value head": 6
+            },
+            {
+                "key head": "Utility and Misc",
+                "value head": 6
+            },
+            {
+                "key head": "Government",
+                "value head": 3
+            },
+            {
+                "key head": "Assembly",
+                "value head": 2
+            }
+        ],
+        "UsaStruct_PrimOcc_AttrCount": [
+            {
+                "key head": "Single Family Dwelling",
+                "value head": 1751
+            },
+            {
+                "key head": "Unclassified",
+                "value head": 100
+            },
+            {
+                "key head": "Manufactured Home",
+                "value head": 68
+            },
+            {
+                "key head": "Multi - Family Dwelling",
+                "value head": 55
+            },
+            {
+                "key head": "Parking",
+                "value head": 52
+            },
+            {
+                "key head": "Pre-K - 12 Schools",
+                "value head": 14
+            },
+            {
+                "key head": "Agriculture",
+                "value head": 6
+            },
+            {
+                "key head": "Retail Trade",
+                "value head": 5
+            },
+            {
+                "key head": "Light",
+                "value head": 4
+            },
+            {
+                "key head": "Emergency Response",
+                "value head": 3
+            },
+            {
+                "key head": "Ground",
+                "value head": 3
+            },
+            {
+                "key head": "Aviation",
+                "value head": 3
+            },
+            {
+                "key head": "Construction",
+                "value head": 2
+            },
+            {
+                "key head": "Nursing Home",
+                "value head": 2
+            },
+            {
+                "key head": "Veterinary/Pet ",
+                "value head": 2
+            },
+            {
+                "key head": "Religious",
+                "value head": 1
+            },
+            {
+                "key head": "Entertainment and Recreation",
+                "value head": 1
+            },
+            {
+                "key head": "Community Center",
+                "value head": 1
+            }
+        ],
+        "UsaStruct_SecOcc_AttrCount": [
+            {
+                "key head": "No Data",
+                "value head": 2073
+            }
+        ],
+        "UsaStruct_FeatureCount": 2073,
+        "WindTurb_FeatureCount": null,
+        "WindTurb_ProjName_AttrCount": null,
+        "SpatialInfoType": " 3 Mile Buffer",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:226474.273,1300710.621,3338,scale:24167.822499999966",
         "CpxName": null,
         "DispatchCenterID": "AKACDC",
         "PercentContained": null,
@@ -1826,348 +2570,6 @@
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "C&L",
         "POOJurisdictionalUnit": "AKAMMX",
-        "ICS209ReportDateTime": null,
-        "ICS209ReportStatus": null,
-        "IncidentManagementOrganization": null
-    },
-    {
-        "AkFireRegion": "MSS",
-        "AkFireNumber": "011",
-        "wfigs_IncidentName": "Carrillo",
-        "FireActivityStatus": "Out",
-        "wfigs_GISAcres": null,
-        "wfigs_MapMethod": null,
-        "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1743209361330,
-        "wfigs_IrwinID": "{4449E1A8-754D-4499-8025-9B2FE297E8A9}",
-        "ReportedAcres": 0.1,
-        "HasError": 0,
-        "DefaultLabel": "011-Carrillo, 3 Mile Buffer",
-        "AkMine_Active_AttrCount": null,
-        "AkMine_Type_AttrCount": null,
-        "AkMine_Note_AttrCount": null,
-        "AkMine_FeatureCount": null,
-        "AkPowerLine_CondType_FeetSum": null,
-        "AkPowerLine_Voltage_FeetSum": null,
-        "AkPowerLine_TotalFeet": null,
-        "Runway_FeatureCount": 8.0,
-        "Runway_Ownership_AttrCount": [
-            {
-                "key head": "Private",
-                "value head": 8
-            }
-        ],
-        "WeatherStation_Name_AttrCount": null,
-        "WeatherStation_FeatureCount": null,
-        "Aksd_MainStruct_AttrSum": null,
-        "Aksd_OtherStruct_AttrSum": null,
-        "Aksd_Protection_AttrCount": [
-            {
-                "key head": "Critical",
-                "value head": 5
-            }
-        ],
-        "Aksd_SiteCat_AttrCount": [
-            {
-                "key head": "Structure",
-                "value head": 5
-            }
-        ],
-        "Aksd_FeatureCount": 5.0,
-        "NtvAllot_Status_AcreSum": {
-            "Restricted": 178.64
-        },
-        "NtvAllot_FeatureCount": 3.0,
-        "NtvAllot_TotalAcres": 178.64,
-        "ComsTwr_Type_AttrCount": [
-            {
-                "key head": "Microwave Service",
-                "value head": 7
-            },
-            {
-                "key head": "Cellular",
-                "value head": 2
-            },
-            {
-                "key head": "Land Mobile Private",
-                "value head": 1
-            },
-            {
-                "key head": "Antenna Structure",
-                "value head": 1
-            }
-        ],
-        "ComsTwr_FeatureCount": 11,
-        "Community_FeatureCount": null,
-        "Community_Name_AttrCount": null,
-        "Jurisd_Unit_AcreSum": [
-            {
-                "key head": "Alaska Department of Natural Resources",
-                "value head": 15812.41
-            },
-            {
-                "key head": "Alaska Department of Transportation and Public Facilities",
-                "value head": 830.16
-            },
-            {
-                "key head": "Matanuska-Susitna Borough",
-                "value head": 401.05
-            },
-            {
-                "key head": "Knikatnu, Incorporated",
-                "value head": 385.87
-            },
-            {
-                "key head": "Houston, City of",
-                "value head": 231.33
-            },
-            {
-                "key head": "Native Allotments",
-                "value head": 178.64
-            },
-            {
-                "key head": "University of Alaska",
-                "value head": 156.24
-            },
-            {
-                "key head": "Cook Inlet Region, Incorporated",
-                "value head": 155.71
-            }
-        ],
-        "Jurisd_Owner_AcreSum": {
-            "Private": 11344.89,
-            "State": 5453.92,
-            "ANCSA": 541.59,
-            "County": 401.05,
-            "City": 231.33,
-            "BIA": 178.64
-        },
-        "MgmtOption_AcreSum": {
-            "Critical": 18151.63
-        },
-        "NpsStruct_Use_AttrCount": null,
-        "NpsStruct_Protection_AttrCount": null,
-        "NpsStruct_Rating_AttrCount": null,
-        "NpsStruct_FeatureCount": null,
-        "Parcel_BuildingValue_AttrSum": 430460466,
-        "Parcel_FeatureCount": 3323,
-        "Parcel_LandValue_AttrSum": 92628559,
-        "Parcel_PropType_AcreSum": [
-            {
-                "key head": "PRIVATE",
-                "value head": 11399.42
-            },
-            {
-                "key head": "NO DATA",
-                "value head": 3458.39
-            },
-            {
-                "key head": "NA",
-                "value head": 2108.14
-            },
-            {
-                "key head": "BOROUGH",
-                "value head": 340.83
-            },
-            {
-                "key head": "NATIVE CORP",
-                "value head": 339.93
-            },
-            {
-                "key head": "CITY",
-                "value head": 282.06
-            },
-            {
-                "key head": "PUBLIC UNIVERSITY",
-                "value head": 151.87
-            },
-            {
-                "key head": "MENTAL HEALTH",
-                "value head": 80.06
-            },
-            {
-                "key head": "STATE",
-                "value head": 48.45
-            },
-            {
-                "key head": "No Data",
-                "value head": 8.06
-            },
-            {
-                "key head": "PUBLIC USE",
-                "value head": 0.48
-            }
-        ],
-        "Parcel_PropUse_AcreSum": [
-            {
-                "key head": "No Data",
-                "value head": 18217.69
-            }
-        ],
-        "Parcel_TotalAcres": 18217.69,
-        "Parcel_TotalValue_AttrSum": 523089026,
-        "PetrolTerm_Company_AttrCount": null,
-        "PetrolTerm_FeatureCount": null,
-        "PipeLine_Name_FeetSum": null,
-        "PipeLine_TotalFeet": null,
-        "PowerPlant_PrimSource_AttrCount": null,
-        "PowerPlant_UtilName_AttrCount": null,
-        "PowerPlant_FeatureCount": null,
-        "PowerPlant_SectorName_AttrCount": null,
-        "Silviculture_Status_AcreSum": [
-            {
-                "key head": "Proposed",
-                "value head": 14.29
-            }
-        ],
-        "Silviculture_TotalValue_AttrSum": null,
-        "Silviculture_FeatureCount": 1.0,
-        "Silviculture_TotalAcres": 14.29,
-        "Railroad_NetDesc_FeetSum": [
-            {
-                "key head": "Main sub network",
-                "value head": 32345
-            },
-            {
-                "key head": "Abandoned",
-                "value head": 471
-            }
-        ],
-        "Railroad_TotalFeet": 32817.0,
-        "UsaStruct_OccCls_AttrCount": [
-            {
-                "key head": "Residential",
-                "value head": 1894
-            },
-            {
-                "key head": "Unclassified",
-                "value head": 82
-            },
-            {
-                "key head": "Commercial",
-                "value head": 60
-            },
-            {
-                "key head": "Education",
-                "value head": 14
-            },
-            {
-                "key head": "Agriculture",
-                "value head": 6
-            },
-            {
-                "key head": "Industrial",
-                "value head": 6
-            },
-            {
-                "key head": "Utility and Misc",
-                "value head": 6
-            },
-            {
-                "key head": "Government",
-                "value head": 3
-            },
-            {
-                "key head": "Assembly",
-                "value head": 2
-            }
-        ],
-        "UsaStruct_PrimOcc_AttrCount": [
-            {
-                "key head": "Single Family Dwelling",
-                "value head": 1751
-            },
-            {
-                "key head": "Unclassified",
-                "value head": 100
-            },
-            {
-                "key head": "Manufactured Home",
-                "value head": 68
-            },
-            {
-                "key head": "Multi - Family Dwelling",
-                "value head": 55
-            },
-            {
-                "key head": "Parking",
-                "value head": 52
-            },
-            {
-                "key head": "Pre-K - 12 Schools",
-                "value head": 14
-            },
-            {
-                "key head": "Agriculture",
-                "value head": 6
-            },
-            {
-                "key head": "Retail Trade",
-                "value head": 5
-            },
-            {
-                "key head": "Light",
-                "value head": 4
-            },
-            {
-                "key head": "Emergency Response",
-                "value head": 3
-            },
-            {
-                "key head": "Ground",
-                "value head": 3
-            },
-            {
-                "key head": "Aviation",
-                "value head": 3
-            },
-            {
-                "key head": "Construction",
-                "value head": 2
-            },
-            {
-                "key head": "Nursing Home",
-                "value head": 2
-            },
-            {
-                "key head": "Veterinary/Pet ",
-                "value head": 2
-            },
-            {
-                "key head": "Religious",
-                "value head": 1
-            },
-            {
-                "key head": "Entertainment and Recreation",
-                "value head": 1
-            },
-            {
-                "key head": "Community Center",
-                "value head": 1
-            }
-        ],
-        "UsaStruct_SecOcc_AttrCount": [
-            {
-                "key head": "No Data",
-                "value head": 2073
-            }
-        ],
-        "UsaStruct_FeatureCount": 2073,
-        "WindTurb_FeatureCount": null,
-        "WindTurb_ProjName_AttrCount": null,
-        "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:226474.273,1300710.621,3338,scale:24167.822499999966",
-        "CpxName": null,
-        "DispatchCenterID": "AKACDC",
-        "PercentContained": null,
-        "PercentPerimeterToBeContained": null,
-        "FireMgmtComplexity": null,
-        "IncidentComplexityLevel": null,
-        "EstimatedCostToDate": null,
-        "TotalIncidentPersonnel": null,
-        "POOProtectingAgency": "DVF",
-        "POOJurisdictionalAgency": "DNR",
-        "POOJurisdictionalUnit": "AKDNS",
         "ICS209ReportDateTime": null,
         "ICS209ReportStatus": null,
         "IncidentManagementOrganization": null
