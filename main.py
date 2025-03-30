@@ -1,6 +1,4 @@
-import ast
 import asyncio
-from arcgis.gis import GIS
 import geopandas as gpd
 import json
 import multiprocessing
@@ -235,7 +233,7 @@ def main():
 
     except Exception:
         tb = traceback.format_exc()
-        subject = f'ak-wildfire-values-at-risk, general Exception.'
+        subject = f'ak-wildfire-values-at-risk, main.py, general Exception.'
         send_email(subject, tb, sender, recipient, password)
         raise
 
