@@ -1,0 +1,47 @@
+/* General index.html Styling */
+h1 {
+    text-align: center;
+    margin: 0 0 0 0;
+    font-size: 28px;
+    font-style: bold
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    font-style: italic;
+}
+
+h3 {
+    text-align: center;
+    margin: 15px 0 0 0;
+    font-size: 24px;
+}
+
+/* Tabulator JS Inset HTML Table Styling */
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td {
+    border: 1px solid black;
+    padding: 4px;
+}
+
+/* Hyperlink Styling */
+.buffer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.buffer-links a {
+    text-align: center;
+    margin: 15px 0 0 0;
+    font-size: 22px;
+}
+
+.buffer-links a:hover {
+    color: #007bff;
+}

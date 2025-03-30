@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK Recent Wildfire Info</title>
+    <link href="https://unpkg.com/tabulator-tables@6.3.1/dist/css/tabulator.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>AK Wildfire Info</h1>
+    <h2 id="updated-datetime"></h2>
+    
+    <div id="perims-locs">
+        <h3>Perimeters and Reported Locations</h3>
+        <div id="perimeters-and-locations"></div>
+    </div>
+
+    <div class="buffer-links">
+        <a href="one-mile-buffer-analysis.html" >One Mile Buffer Analysis</a>
+        <a href="three-mile-buffer-analysis.html" >Three Mile Buffer Analysis</a>
+        <a href="five-mile-buffer-analysis.html" >Five Mile Buffer Analysis</a>
+    </div>
+
+    <script type="text/javascript" src="https://unpkg.com/tabulator-tables@6.3.1/dist/js/tabulator.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/luxon@2.3.1/build/global/luxon.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
