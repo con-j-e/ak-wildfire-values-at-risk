@@ -6,6 +6,8 @@ import os
 import pathlib
 import pandas as pd
 import pytz
+from pyproj import CRS, Transformer
+import shapely as shp
 import sys
 import traceback
 
@@ -146,7 +148,7 @@ def prepare_dataframe_for_tabulator(wfigs_features_json: dict, akdof_features_js
     akdof_feats_gdf.set_index('wfigs_IrwinID', inplace=True)
 
     akdof_feats_gdf['centroid_3338'] = akdof_feats_gdf['geometry'].centroid
-
+    
     def _estimate_scale(row: pd.Series) -> int:
         bbox = row['geometry'].bounds
 
@@ -159,18 +161,14 @@ def prepare_dataframe_for_tabulator(wfigs_features_json: dict, akdof_features_js
         # assuming average screen size of 16 inches, converted to meters
         #! need to ground truth this on a variety of features / hyperlinks
         #! hopefully there is some equation that will give me a reasonable scale based on bbox and centroid
-        scale = max_distance / (16 * 0.025)
+        scale = int(max_distance / (16 * 0.025))
 
         return scale
     
     akdof_feats_gdf['map_scale'] = akdof_feats_gdf.apply(_estimate_scale, axis=1)
 
-    akdof_feats_gdf['OpsAppURL'] = akdof_feats_gdf.apply(
-        lambda x: f'https://experience.arcgis.com/experience/4f6507e23cb543b7be88a9b63b87a869#widget_1=center:{round(x["centroid_3338"].x, 3)},{round(x["centroid_3338"].y, 3)},3338,scale:{x["map_scale"]}', axis=1
-    )
-
     akdof_feats_gdf['VarAppURL'] = akdof_feats_gdf.apply(
-        lambda x: f'https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:{round(x["centroid_3338"].x, 3)},{round(x["centroid_3338"].y, 3)},3338,scale:{x["map_scale"]}', axis=1
+        lambda x: f'https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:{round(x["centroid_3338"].x, 3)}%2C{round(x["centroid_3338"].y, 3)}%2C3338,scale:{x["map_scale"]}', axis=1
     )
 
     tabulator_df = akdof_feats_gdf.join(wfigs_feats_df, validate='1:1').drop('geometry', axis=1)
@@ -216,7 +214,7 @@ def main():
 
         proj_dir = pathlib.Path().cwd()
         plans_dir = proj_dir / 'planning'
-        input_json_dir = proj_dir / 'interactive_tables' / 'input_json'
+        input_json_dir = proj_dir / 'docs' / 'input_json'
 
         tabulator_plan = pd.read_csv(plans_dir / 'tabulator_plan.tsv', delimiter='\t')
 
