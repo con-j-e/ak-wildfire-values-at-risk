@@ -132,7 +132,10 @@ const build_table = (tag, rows_array) => {
             }, headerSort:false},
             {title:"Activity Status", field:"FireActivityStatus", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
-                sort:'asc'
+                sort:'asc',
+                autocomplete:true,
+                allowEmpty:true,
+                listOnEmpty:true
             }},
             {title:"Percent Contained", field:"PercentContained", formatter:"money", formatterParams:{
                 symbol:"%",
@@ -162,23 +165,38 @@ const build_table = (tag, rows_array) => {
             }},
             {title:"Complex Name", field:"CpxName", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
-                sort:'asc'
+                sort:'asc',
+                autocomplete:true,
+                allowEmpty:true,
+                listOnEmpty:true
             }},
             {title:"Fire Management Complexity", field:"FireMgmtComplexity", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
-                sort:'asc'
+                sort:'asc',
+                autocomplete:true,
+                allowEmpty:true,
+                listOnEmpty:true
             }},
             {title:"Incident Complexity Level", field:"IncidentComplexityLevel", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
-                sort:'asc'
+                sort:'asc',
+                autocomplete:true,
+                allowEmpty:true,
+                listOnEmpty:true
             }},
             {title:"Incident Management Organization", field:"IncidentManagementOrganization", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
-                sort:'asc'
+                sort:'asc',
+                autocomplete:true,
+                allowEmpty:true,
+                listOnEmpty:true
             }},
             {title:"ICS 209 Report Status", field:"ICS209ReportStatus", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
-                sort:'asc'
+                sort:'asc',
+                autocomplete:true,
+                allowEmpty:true,
+                listOnEmpty:true
             }},
             {title:"ICS 209 Report Date Time", field:"ICS209ReportDateTime", mutator:utc_timestamp_to_akt_obj, formatter:"datetime", formatterParams:{
                 outputFormat:"yyyy-MM-dd HH:mm:ss"
@@ -188,23 +206,38 @@ const build_table = (tag, rows_array) => {
             }},
             {title:"Dispatch Center", field:"DispatchCenterID", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
-                sort:'asc'
+                sort:'asc',
+                autocomplete:true,
+                allowEmpty:true,
+                listOnEmpty:true
             }},
             {title:"Region", field:"AkFireRegion", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
-                sort:'asc'
+                sort:'asc',
+                autocomplete:true,
+                allowEmpty:true,
+                listOnEmpty:true
             }},
             {title:"POO Protecting Agency", field:"POOProtectingAgency", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
                 sort:'asc',
+                autocomplete:true,
+                allowEmpty:true,
+                listOnEmpty:true
             }},
             {title:"POO Jurisdictional Agency", field:"POOJurisdictionalAgency", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
                 sort:'asc',
+                autocomplete:true,
+                allowEmpty:true,
+                listOnEmpty:true
             }},
             {title:"POO Jurisdictional Unit", field:"POOJurisdictionalUnit", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
                 sort:'asc',
+                autocomplete:true,
+                allowEmpty:true,
+                listOnEmpty:true
             }},
             {title:"Jurisdictional Unit Acres", field:"Jurisd_Unit_AcreSum", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                 layout: "fitDataStretch",
@@ -242,6 +275,9 @@ const build_table = (tag, rows_array) => {
             {title:"Map Method", field:"wfigs_MapMethod", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
                 sort:'asc',
+                autocomplete:true,
+                allowEmpty:true,
+                listOnEmpty:true
             }},
             {title:"Perimeter Last updated (AKT)", field:"wfigs_PolygonDateTime", mutator:utc_timestamp_to_akt_obj, formatter:"datetime", formatterParams:{
                 outputFormat:"yyyy-MM-dd HH:mm:ss"
