@@ -114,10 +114,14 @@ const build_table = (tag, rows_array) => {
         columns: [
             {title:"Fire Number", field:"AkFireNumber", frozen:true, headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
+                clearable:true,
+                multiselect:true,
                 sort:'desc'
             }},
             {title:"Fire Name", field:"wfigs_IncidentName", frozen:true, headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
+                clearable:true,
+                multiselect:true,
                 sort:'asc'
             }},
             {title:"Spatial Information Type", field:"SpatialInfoType", frozen:true, headerSort:false},
