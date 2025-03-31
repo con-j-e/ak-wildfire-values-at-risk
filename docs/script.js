@@ -87,12 +87,36 @@ const nested_tabulator = (cell, formatterParams, onRendered) => {
 //
 // END FORMATTERS
 
+// HEADER FILTER FUNCTIONS (https://tabulator.info/docs/6.3/filter#header)
+//
+const list_autocomplete_multi_header_filter = (headerValue, rowValue, rowData, filterParams) => {
+
+    // conditions under which every rowValue is considered valid (which effectively means unfiltering the column)
+    if (headerValue === null || headerValue === undefined) {
+        return true;
+    }
+    if (headerValue.trim() === "") {
+        return true;
+    }
+
+    // get array of all values (comma seperated) entered into header filter, ignoring capitalization and trimming whitespace
+    let header_values = headerValue.split(',');
+    header_values = header_values.map(value => value.trim().toLowerCase());
+
+    // any row value that begins with the text of a header filter value (ignoring capitalization) is considered valid
+    return (header_values.some(hv => rowValue.toLowerCase().startsWith(hv)));
+}
+//
+// END HEADER FILTER FUNCTIONS
+
+
 // MAIN TABULATOR
 //
 const build_table = (tag, rows_array) => {
     const table = new Tabulator(tag, {
+        // persistence has pros and cons. look into options for resetting table state.
         /*
-        persistence:{ // persistence has pros and cons. look into options for resetting table state.
+        persistence:{ 
             sort: true, 
             headerFilter: true, 
             page: true, 
@@ -100,10 +124,7 @@ const build_table = (tag, rows_array) => {
         },
         persistenceID: `pid_${tag.slice(1)}`,
         */
-        height:"100%",
-        //dependencies:{
-        //    DateTime:DateTime,
-        //},  
+        height:"100%",  
         layout: "fitData",
         pagination: "local",
         paginationSize: 10, 
@@ -111,6 +132,7 @@ const build_table = (tag, rows_array) => {
         movableColumns: true, 
         resizableRows: true,
         data: rows_array,
+        headerFilterLiveFilterDelay:900,
         columns: [
             {title:"Fire Number", field:"AkFireNumber", frozen:true, headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
@@ -118,14 +140,14 @@ const build_table = (tag, rows_array) => {
                 autocomplete:true,
                 allowEmpty:true,
                 listOnEmpty:true
-            }},
+            }, headerFilterFunc:list_autocomplete_multi_header_filter},
             {title:"Fire Name", field:"wfigs_IncidentName", frozen:true, headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
                 sort:'asc',
                 autocomplete:true,
                 allowEmpty:true,
                 listOnEmpty:true
-            }},
+            }, headerFilterFunc:list_autocomplete_multi_header_filter},
             {title:"Spatial Information Type", field:"SpatialInfoType", frozen:true, headerSort:false},
             {title:"Web App Link", field:"VarAppURL", frozen:true, formatter:html_link, formatterParams:{
                 label:"View on Map"
@@ -136,7 +158,7 @@ const build_table = (tag, rows_array) => {
                 autocomplete:true,
                 allowEmpty:true,
                 listOnEmpty:true
-            }},
+            }, headerFilterFunc:list_autocomplete_multi_header_filter},
             {title:"Percent Contained", field:"PercentContained", formatter:"money", formatterParams:{
                 symbol:"%",
                 symbolAfter:true,
@@ -169,35 +191,35 @@ const build_table = (tag, rows_array) => {
                 autocomplete:true,
                 allowEmpty:true,
                 listOnEmpty:true
-            }},
+            }, headerFilterFunc:list_autocomplete_multi_header_filter},
             {title:"Fire Management Complexity", field:"FireMgmtComplexity", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
                 sort:'asc',
                 autocomplete:true,
                 allowEmpty:true,
                 listOnEmpty:true
-            }},
+            }, headerFilterFunc:list_autocomplete_multi_header_filter},
             {title:"Incident Complexity Level", field:"IncidentComplexityLevel", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
                 sort:'asc',
                 autocomplete:true,
                 allowEmpty:true,
                 listOnEmpty:true
-            }},
+            }, headerFilterFunc:list_autocomplete_multi_header_filter},
             {title:"Incident Management Organization", field:"IncidentManagementOrganization", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
                 sort:'asc',
                 autocomplete:true,
                 allowEmpty:true,
                 listOnEmpty:true
-            }},
+            }, headerFilterFunc:list_autocomplete_multi_header_filter},
             {title:"ICS 209 Report Status", field:"ICS209ReportStatus", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
                 sort:'asc',
                 autocomplete:true,
                 allowEmpty:true,
                 listOnEmpty:true
-            }},
+            }, headerFilterFunc:list_autocomplete_multi_header_filter},
             {title:"ICS 209 Report Date Time", field:"ICS209ReportDateTime", mutator:utc_timestamp_to_akt_obj, formatter:"datetime", formatterParams:{
                 outputFormat:"yyyy-MM-dd HH:mm:ss"
             }, sorter:"datetime", sorterParams:{
@@ -210,35 +232,35 @@ const build_table = (tag, rows_array) => {
                 autocomplete:true,
                 allowEmpty:true,
                 listOnEmpty:true
-            }},
+            }, headerFilterFunc:list_autocomplete_multi_header_filter},
             {title:"Region", field:"AkFireRegion", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
                 sort:'asc',
                 autocomplete:true,
                 allowEmpty:true,
                 listOnEmpty:true
-            }},
+            }, headerFilterFunc:list_autocomplete_multi_header_filter},
             {title:"POO Protecting Agency", field:"POOProtectingAgency", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
                 sort:'asc',
                 autocomplete:true,
                 allowEmpty:true,
                 listOnEmpty:true
-            }},
+            }, headerFilterFunc:list_autocomplete_multi_header_filter},
             {title:"POO Jurisdictional Agency", field:"POOJurisdictionalAgency", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
                 sort:'asc',
                 autocomplete:true,
                 allowEmpty:true,
                 listOnEmpty:true
-            }},
+            }, headerFilterFunc:list_autocomplete_multi_header_filter},
             {title:"POO Jurisdictional Unit", field:"POOJurisdictionalUnit", headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
                 sort:'asc',
                 autocomplete:true,
                 allowEmpty:true,
                 listOnEmpty:true
-            }},
+            }, headerFilterFunc:list_autocomplete_multi_header_filter},
             {title:"Jurisdictional Unit Acres", field:"Jurisd_Unit_AcreSum", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                 layout: "fitDataStretch",
                 pagination: "local",
@@ -278,7 +300,7 @@ const build_table = (tag, rows_array) => {
                 autocomplete:true,
                 allowEmpty:true,
                 listOnEmpty:true
-            }},
+            }, headerFilterFunc:list_autocomplete_multi_header_filter},
             {title:"Perimeter Last updated (AKT)", field:"wfigs_PolygonDateTime", mutator:utc_timestamp_to_akt_obj, formatter:"datetime", formatterParams:{
                 outputFormat:"yyyy-MM-dd HH:mm:ss"
             }, sorter:"datetime", sorterParams:{
@@ -1067,6 +1089,12 @@ const build_table = (tag, rows_array) => {
 
         // load all visible row components
         const rows = table.getRows("visible");
+
+        // heuristic, efficacy not yet proven
+        // assume that if there are no visible rows, the user has broken something with an impossible and irrevocable header filter
+        if (rows.length < 1) {
+            table.clearHeaderFilter();
+        }
 
         // iterate over all rows and cells to identify which fields have data
         for (let row of rows) {
