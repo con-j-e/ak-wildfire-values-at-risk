@@ -115,12 +115,16 @@ const build_table = (tag, rows_array) => {
             {title:"Fire Number", field:"AkFireNumber", frozen:true, headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
                 sort:'desc',
-                clearable:true
+                autocomplete:true,
+                allowEmpty:true,
+                listOnEmpty:true
             }},
             {title:"Fire Name", field:"wfigs_IncidentName", frozen:true, headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
                 sort:'asc',
-                clearable:true
+                autocomplete:true,
+                allowEmpty:true,
+                listOnEmpty:true
             }},
             {title:"Spatial Information Type", field:"SpatialInfoType", frozen:true, headerSort:false},
             {title:"Web App Link", field:"VarAppURL", frozen:true, formatter:html_link, formatterParams:{
