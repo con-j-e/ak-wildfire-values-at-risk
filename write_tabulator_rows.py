@@ -6,8 +6,6 @@ import os
 import pathlib
 import pandas as pd
 import pytz
-from pyproj import CRS, Transformer
-import shapely as shp
 import sys
 import traceback
 
