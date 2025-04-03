@@ -180,7 +180,7 @@ def prepare_dataframe_for_tabulator(wfigs_features_json: dict, akdof_features_js
     
     def tabulator_rows_from_json(cell, key_head, value_head):
 
-        if pd.isna(cell):
+        if pd.isna(cell) or cell == '!error!':
             return cell
         
         rows = []
@@ -192,7 +192,7 @@ def prepare_dataframe_for_tabulator(wfigs_features_json: dict, akdof_features_js
         return rows
 
     json_obj_fields = tabulator_plan[tabulator_plan['PRE_PROCESSING'] == 'json_object']['FIELD_NAME'].to_list()
-    tabulator_df[json_obj_fields] = tabulator_df[json_obj_fields].map(lambda x: json.loads(x) if pd.notna(x) else x)
+    tabulator_df[json_obj_fields] = tabulator_df[json_obj_fields].map(lambda x: json.loads(x) if (pd.notna(x) and x != '!error!') else x)
 
     nested_table_fields = tabulator_plan[tabulator_plan['PRE_PROCESSING'] == 'nested_tabulator']['FIELD_NAME'].to_list()
     tabulator_df[nested_table_fields] = tabulator_df[nested_table_fields].map(lambda x: tabulator_rows_from_json(x, 'key head', 'value head'))
@@ -245,6 +245,7 @@ def main():
         # keeping this block in place for potential future use
         # initiates variables that will cause the script to query all 2025 fire information
         # used for first run of script to gather all 2025 fire information, or if a re-set is ever needed
+        '''
         current_tables = {
             'akdof_perims_locs': pd.DataFrame(),
             'buf_1': pd.DataFrame(),
@@ -284,7 +285,6 @@ def main():
 
         # all max_timestamps should be the same, this is mostly just for peace of mind
         query_epoch_milliseconds = min(max_timestamps)
-        '''
 
         nifc_token = checkout_token('NIFC_AGO', 120, 'NIFC_TOKEN', 5)
 
@@ -305,6 +305,10 @@ def main():
 
         if all([obj['features'] == [] for obj in [wfigs_locs, akdof_perims_locs, buf_1, buf_3, buf_5]]):
             logger.info('No updates to process... exiting with code 0.')
+            with open(input_json_dir / 'timestamp.json', 'w') as file:
+                json.dump({
+                    'datetime': datetime.now(tz=pytz.utc).timestamp() * 1000
+                }, file)
             sys.exit(0)
 
         for name, dof_feats in {
