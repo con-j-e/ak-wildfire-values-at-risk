@@ -20,11 +20,18 @@ const object_keys = (obj) => {
 // FORMATTERS (https://tabulator.info/docs/6.3/format#format-custom)
 //
 const html_link = (cell, formatterParams) => {
-    const url = cell.getValue();
-    if (url === null || url === undefined) {
-        return url;
+    const value = cell.getValue();
+    if (value === null || value === undefined) {
+        return value;
     }
-    const label = formatterParams.label;
+    let url = value;
+    if (formatterParams.hasOwnProperty('link_body')) {
+        url = formatterParams.link_body.replace("{value}", value);
+    }
+    let label = value;
+    if (formatterParams.hasOwnProperty('label')) {
+        label = formatterParams.label
+    }
     return '<a href="' + url + '" target="_blank">' + label + '</a>';
 };
 
@@ -308,15 +315,74 @@ const build_table = (tag, rows_array) => {
                 alignEmptyValues:"bottom"
             }},
 
-            // TODO use nearest features analysis info here
-            // 
             {title:"Community Count", field:"Community_FeatureCount", formatter:"money", formatterParams:{
                 precision:0
             }, topCalc: "sum", topCalcParams:{
                 precision:0,
             }},
+
+            {title:"Nearest Communities", field:"Community_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                layout: "fitDataStretch",
+                pagination: "local",
+                paginationSize: 5, 
+                paginationCounter: "rows",
+                movableColumns: true, 
+                resizableRows: true,
+                columns:[
+                    {title:"Community", field:"CommunityName"},
+                    {title:"Distance (miles)", field:"distance_miles", formatter:"money", formatterParams:{precision:2}},
+                    {title:"Direction", field:"direction"},
+                    {title:"Latitude", field:"lat_ddm"},
+                    {title:"Longitude", field:"lng_ddm"}
+                ]
+            },    
+                headerSort:false},
+
             {title:"Community Names", field:"Community_Name_AttrCount", mutator:object_keys, formatter:"array", headerFilter:"input"},
             
+            {title:"Nearest Weather Stations", field:"WeatherStation_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                layout: "fitDataStretch",
+                pagination: "local",
+                paginationSize: 5, 
+                paginationCounter: "rows",
+                movableColumns: true, 
+                resizableRows: true,
+                columns:[
+                    {title:"Name", field:"NAME"},
+                    {title:"Code", field:"CODE"},
+                    {title:"URL", field:"MESOWESTWEBURL", formatter:html_link, formatterParams:{
+                        label:"MesoWest CFFDRS"
+                    }},
+                    {title:"Distance (miles)", field:"distance_miles", formatter:"money", formatterParams:{precision:2}},
+                    {title:"Direction", field:"direction"},
+                    {title:"Latitude", field:"lat_ddm"},
+                    {title:"Longitude", field:"lng_ddm"}
+                ]
+            },    
+                headerSort:false},
+
+            {title:"Nearest Runways", field:"Runway_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                layout: "fitDataStretch",
+                pagination: "local",
+                paginationSize: 5, 
+                paginationCounter: "rows",
+                movableColumns: true, 
+                resizableRows: true,
+                columns:[
+                    {title:"Runway ID", field:"runway_id"},
+                    {title:"Length", field:"length"},
+                    {title:"Surface", field:"surface"},
+                    {title:"Location", field:"loc_id", formatter:html_link, formatterParams:{
+                        link_body:"https://www.airnav.com/airport/{value}"
+                    }},
+                    {title:"Distance (miles)", field:"distance_miles", formatter:"money", formatterParams:{precision:2}},
+                    {title:"Direction", field:"direction"},
+                    {title:"Latitude", field:"lat_ddm"},
+                    {title:"Longitude", field:"lng_ddm"}
+                ]
+            },    
+                headerSort:false},
+
             {
                 title:"Management Option Acres",
                 headerHozAlign:"center",

@@ -422,14 +422,14 @@ def _nearest_feats_analysis(identifier, fire_geom, var_gdf, var_alias, included_
         # these will be accounted for with other analysis functions
         # the purpose of nearest_feats_analysis is to capture information on features that may be very close to where a fire currently is
         # but are not accounted for because they do not intersect the fire geometry
-        var_gdf['geometry'] = var_gdf['geometry'].apply(lambda geom: geom.difference(fire_geom))
+        #-var_gdf['geometry'] = var_gdf['geometry'].apply(lambda geom: geom.difference(fire_geom))
 
         # calculate distances
         meters = var_gdf.distance(fire_geom)
 
         # get top 3 nearest features
         meters.sort_values(ascending=True, inplace=True)
-        meters = meters[:3]
+        #-meters = meters[:3]
 
         # convert units to miles
         miles = meters / 1609.34

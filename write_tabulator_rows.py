@@ -126,15 +126,14 @@ async def get_recent_fires_info(dof_perims_locs_url: str, wfigs_locs_url: str, q
 
 def prepare_dataframe_for_tabulator(wfigs_features_json: dict, akdof_features_json: dict, tabulator_plan: pd.DataFrame) -> pd.DataFrame:
     '''
-    Converts features JSON to dataframes, createds a bounding box column based on akdof feature geometry,
-    joins wfigs and akdof features based on IrwinID, and formats columns for use by Tabulator JS.
+    Converts features JSON to dataframes, joins wfigs and akdof features based on IrwinID, and formats fields for Tabulator JS.
 
     Arguments:
         wfigs_features_json -- ArcGIS JSON features from WFIGS
         akdof_features_json -- ArcGIS JSON features from AKDOF values-at-risk service.
 
     Returns:
-        Dataframe used as input for creating rows of data for Tabulator JS.
+        pd.DataFrame -- used as input for creating rows of data for Tabulator JS.
         
     '''    
 
@@ -143,7 +142,7 @@ def prepare_dataframe_for_tabulator(wfigs_features_json: dict, akdof_features_js
     wfigs_feats_df.drop('geometry', axis=1, inplace=True)
 
     akdof_feats_gdf = arcgis_features_to_gdf(akdof_features_json)
-    akdof_feats_gdf.set_index('wfigs_IrwinID', inplace=True)
+    akdof_feats_gdf.set_index('wfigs_IrwinID', inplace=True, drop=False)
 
     akdof_feats_gdf['centroid_3338'] = akdof_feats_gdf['geometry'].centroid
     
@@ -170,7 +169,6 @@ def prepare_dataframe_for_tabulator(wfigs_features_json: dict, akdof_features_js
     )
 
     tabulator_df = akdof_feats_gdf.join(wfigs_feats_df, validate='1:1').drop('geometry', axis=1)
-    tabulator_df.reset_index(inplace=True)
 
     tabulator_df['AkFireNumber'] = tabulator_df['AkFireNumber'].astype(str).str.zfill(3)
 
@@ -178,10 +176,7 @@ def prepare_dataframe_for_tabulator(wfigs_features_json: dict, akdof_features_js
         lambda x: x.split(',')[-1]
     )
     
-    def tabulator_rows_from_json(cell, key_head, value_head):
-
-        if pd.isna(cell) or cell == '!error!':
-            return cell
+    def _tabulator_rows_from_json(cell, key_head, value_head):
         
         rows = []
 
@@ -190,12 +185,18 @@ def prepare_dataframe_for_tabulator(wfigs_features_json: dict, akdof_features_js
             rows.append(row)
         
         return rows
+    
+    nested_table_fields = tabulator_plan[tabulator_plan['PRE_PROCESSING'] == 'nested_tabulator']['FIELD_NAME'].to_list()
+    tabulator_df[nested_table_fields] = tabulator_df[nested_table_fields].map(
+        lambda x: _tabulator_rows_from_json(x, 'key head', 'value head') if x != '!error!' else x,
+        na_action='ignore'
+    )
 
     json_obj_fields = tabulator_plan[tabulator_plan['PRE_PROCESSING'] == 'json_object']['FIELD_NAME'].to_list()
-    tabulator_df[json_obj_fields] = tabulator_df[json_obj_fields].map(lambda x: json.loads(x) if (pd.notna(x) and x != '!error!') else x)
-
-    nested_table_fields = tabulator_plan[tabulator_plan['PRE_PROCESSING'] == 'nested_tabulator']['FIELD_NAME'].to_list()
-    tabulator_df[nested_table_fields] = tabulator_df[nested_table_fields].map(lambda x: tabulator_rows_from_json(x, 'key head', 'value head'))
+    tabulator_df[json_obj_fields] = tabulator_df[json_obj_fields].map(
+        lambda x: json.loads(x) if x != '!error!' else x,
+        na_action='ignore'
+    )
 
     return tabulator_df
 
@@ -245,12 +246,11 @@ def main():
         # keeping this block in place for potential future use
         # initiates variables that will cause the script to query all 2025 fire information
         # used for first run of script to gather all 2025 fire information, or if a re-set is ever needed
-        '''
         current_tables = {
-            'akdof_perims_locs': pd.DataFrame(),
-            'buf_1': pd.DataFrame(),
-            'buf_3': pd.DataFrame(),
-            'buf_5': pd.DataFrame() 
+            'akdof_perims_locs': pd.DataFrame(columns=['wfigs_IrwinID']),
+            'buf_1': pd.DataFrame(columns=['wfigs_IrwinID']),
+            'buf_3': pd.DataFrame(columns=['wfigs_IrwinID']),
+            'buf_5': pd.DataFrame(columns=['wfigs_IrwinID']) 
         }
 
         # 1/1/2025
@@ -285,16 +285,20 @@ def main():
 
         # all max_timestamps should be the same, this is mostly just for peace of mind
         query_epoch_milliseconds = min(max_timestamps)
+        '''
 
         nifc_token = checkout_token('NIFC_AGO', 120, 'NIFC_TOKEN', 5)
 
+        #testing
         wfigs_locs, akdof_perims_locs, buf_1, buf_3, buf_5, exception = asyncio.run(get_recent_fires_info(
-                r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/AK_Wildfire_Values_at_Risk/FeatureServer/0',
-                r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_YearToDate/FeatureServer/0',
+                #-r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/AK_Wildfire_Values_at_Risk/FeatureServer/0',
+                r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/TESTING_AK_Wildfire_Values_at_Risk/FeatureServer/0',
+                #-r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_YearToDate/FeatureServer/0',
+                r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/Fires_to_Date_2025_WFIGS_PROXY/FeatureServer/1',
                 query_epoch_milliseconds,
                 irwins_with_errors,
                 nifc_token,
-                testing=False
+                testing=True
             ))
         
         if None in (wfigs_locs, akdof_perims_locs, buf_1, buf_3, buf_5):
@@ -311,6 +315,18 @@ def main():
                 }, file)
             sys.exit(0)
 
+        akdof_perims_locs_gdf = arcgis_features_to_gdf(akdof_perims_locs)
+        nearest_feats_fields = [col for col in akdof_perims_locs_gdf.columns if col.endswith('_Nearest')]
+        nearest_feats_df = akdof_perims_locs_gdf[nearest_feats_fields + ['wfigs_IrwinID']].copy()
+        nearest_feats_df.to_csv('sample_objects/nearest_feats.csv')
+        nearest_feats_df[nearest_feats_fields] = nearest_feats_df[nearest_feats_fields].map(
+            lambda x: json.loads(x)['features'] if x != 'error' else x,
+            na_action='ignore'
+        )
+        nearest_feats_df.set_index('wfigs_IrwinID', inplace=True)
+
+        nearest_feats_df.to_csv(fr'sample_objects/nearest_feats_df.csv', index=False)
+
         for name, dof_feats in {
             'akdof_perims_locs': akdof_perims_locs,
             'buf_1': buf_1,
@@ -320,12 +336,37 @@ def main():
             
             new_df = prepare_dataframe_for_tabulator(wfigs_locs, dof_feats, tabulator_plan)
             old_df = current_tables[name]
+            old_df.set_index('wfigs_IrwinID', inplace=True, drop=False)
 
             df = pd.concat((new_df, old_df))
             df.sort_values('wfigs_ModifiedOnDateTime_dt', ascending=False, inplace=True)
             df.drop_duplicates('wfigs_IrwinID', keep='first', inplace=True)
 
+            # if handling dataframes loaded from hosted services seperately, we know that each will only have a single unique AnalysisBufferMiles attribute
+            buf_dist = df['AnalysisBufferMiles'].unique()[0]
+            print(buf_dist)
+
+            buf_dist_nearest_feats_df = nearest_feats_df.copy()
+
+            buf_dist_nearest_feats_df = buf_dist_nearest_feats_df[nearest_feats_fields].map(
+                lambda x: [feat for feat in x if feat['distance_miles'] <= buf_dist],
+                na_action='ignore'
+            )
+
+            buf_dist_nearest_feats_df.to_csv(fr'sample_objects/nearest_{buf_dist}.csv', index=False)
+
+            # nearest feats fields are already present for akdof_perims_locs, and must be dropped
+            # ignoring errors because these fields are not present in buf_1, buf_3, buf_5 dataframes
+            df.drop(nearest_feats_fields, axis=1, inplace=True, errors='ignore')
+
+            print(df.index)
+            print(buf_dist_nearest_feats_df.index)
+
+            df = df.join(buf_dist_nearest_feats_df, validate='1:1')
+
             df = df[final_fields]
+
+            df.to_csv(fr'sample_objects/post_join_df_{buf_dist}.csv', index=False)
 
             df = df.replace({np.nan: None})
             tabulator_rows = []

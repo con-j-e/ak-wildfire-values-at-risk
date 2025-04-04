@@ -65,13 +65,17 @@ def main():
 
         #REGION PREPARE WFIGS INPUTS
 
+        #testing
         wfigs_points, wfigs_polys, exception = asyncio.run(
             get_wfigs_updates(
-                r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/AK_Wildfire_Values_at_Risk/FeatureServer/0',
-                r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_YearToDate/FeatureServer/0',
-                r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_YearToDate/FeatureServer/0',
+                #-r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/AK_Wildfire_Values_at_Risk/FeatureServer/0',
+                r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/TESTING_AK_Wildfire_Values_at_Risk/FeatureServer/0',
+                #-r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_YearToDate/FeatureServer/0',
+                r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/Fires_to_Date_2025_WFIGS_PROXY/FeatureServer/1',
+                #-r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_YearToDate/FeatureServer/0',
+                r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/Fires_to_Date_2025_WFIGS_PROXY/FeatureServer/0',
                 token_dict['nifc'],
-                testing=False
+                testing=True
             )
         )
 
@@ -204,8 +208,10 @@ def main():
 
         irwins_with_updates = fires_bufs_attrs_gdf[fires_bufs_attrs_gdf['AnalysisBufferMiles'] == 0]['wfigs_IrwinID'].to_list()
 
+        #testing
         all_edits_response = asyncio.run(apply_edits_to_dof_var_service(
-            perims_locs_url=r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/AK_Wildfire_Values_at_Risk/FeatureServer/0',
+            #-perims_locs_url=r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/AK_Wildfire_Values_at_Risk/FeatureServer/0',
+            perims_locs_url=r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/TESTING_AK_Wildfire_Values_at_Risk/FeatureServer/0',
             token=token_dict['nifc'],
             irwins_with_updates=irwins_with_updates,
             feat_dict=feat_dict
