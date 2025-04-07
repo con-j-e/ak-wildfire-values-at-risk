@@ -257,8 +257,8 @@ def main():
         query_epoch_milliseconds = 1735693200000
 
         irwins_with_errors = set()
-
         '''
+
         current_tables = {
             'akdof_perims_locs': None,
             'buf_1': None,
@@ -328,6 +328,7 @@ def main():
             df = df[final_fields]
 
             df = df.replace({np.nan: None})
+            df.sort_values('AkFireNumber', ascending=False, inplace=True, key=lambda col: col.astype(int))
             tabulator_rows = []
             for _,row in df.iterrows():
                 tabulator_rows.append(row.to_dict())
