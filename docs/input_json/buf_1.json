@@ -1,5 +1,622 @@
 [
     {
+        "AkFireRegion": "CRS",
+        "AkFireNumber": "738",
+        "wfigs_IncidentName": "Palisades",
+        "FireActivityStatus": "Active",
+        "wfigs_GISAcres": 23448.0,
+        "wfigs_MapMethod": "IR Image Interpretation",
+        "wfigs_PolygonDateTime": 1736314304000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1748769300000.0,
+        "wfigs_IrwinID": "{A7EA5D21-F882-44B8-BF64-44AB11059DC1}",
+        "ReportedAcres": 23448.0,
+        "HasError": 0.0,
+        "DefaultLabel": "738-Palisades, 1 Mile Buffer",
+        "AnalysisBufferMiles": 1.0,
+        "AkMine_Active_AttrCount": null,
+        "AkMine_Type_AttrCount": null,
+        "AkMine_Note_AttrCount": null,
+        "AkMine_FeatureCount": null,
+        "AkMine_Nearest": null,
+        "AkPowerLine_CondType_FeetSum": null,
+        "AkPowerLine_Voltage_FeetSum": null,
+        "AkPowerLine_Nearest": null,
+        "AkPowerLine_TotalFeet": null,
+        "Roads_Nearest": null,
+        "Runway_FeatureCount": 3.0,
+        "Runway_Nearest": [
+            {
+                "dist_mi": 0.83,
+                "dir": "Interior",
+                "lat": "62\u00b0 19.282' N",
+                "lng": "150\u00b0 05.563' W",
+                "runway_id": "01/19",
+                "length": 3500,
+                "surface": "Concrete",
+                "loc_id": "TKA"
+            },
+            {
+                "dist_mi": 0.07,
+                "dir": "Interior",
+                "lat": "62\u00b0 19.136' N",
+                "lng": "150\u00b0 06.969' W",
+                "runway_id": "16/34",
+                "length": 1600,
+                "surface": "Gravel",
+                "loc_id": "AK44"
+            },
+            {
+                "dist_mi": 0.43,
+                "dir": "SE",
+                "lat": "62\u00b0 14.537' N",
+                "lng": "150\u00b0 03.949' W",
+                "runway_id": "16/34",
+                "length": 2500,
+                "surface": "Turf",
+                "loc_id": "51AK"
+            }
+        ],
+        "Runway_Ownership_AttrCount": [
+            {
+                "key head": "Public",
+                "value head": 2
+            },
+            {
+                "key head": "Private",
+                "value head": 1
+            }
+        ],
+        "WeatherStation_Name_AttrCount": {
+            "ASOS/AWOS": 1
+        },
+        "WeatherStation_FeatureCount": 1.0,
+        "WeatherStation_Nearest": [
+            {
+                "dist_mi": 0.8,
+                "dir": "Interior",
+                "lat": "62\u00b0 19.236' N",
+                "lng": "150\u00b0 05.615' W",
+                "NAME": "TALKEETNA",
+                "CODE": "PATK",
+                "MESOWESTWEBURL": "https://akff.mesowest.org/tabular/station/#CFFDRS/PATK/"
+            }
+        ],
+        "Aksd_MainStruct_AttrSum": null,
+        "Aksd_OtherStruct_AttrSum": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Undesignated",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "RAWS",
+                "value head": 1
+            }
+        ],
+        "Aksd_FeatureCount": 1.0,
+        "Aksd_Nearest": null,
+        "NtvAllot_Status_AcreSum": null,
+        "NtvAllot_FeatureCount": null,
+        "NtvAllot_Nearest": null,
+        "NtvAllot_TotalAcres": null,
+        "ComsTwr_Type_AttrCount": [
+            {
+                "key head": "Microwave Service",
+                "value head": 10
+            },
+            {
+                "key head": "Land Mobile Private",
+                "value head": 7
+            },
+            {
+                "key head": "Cellular",
+                "value head": 1
+            },
+            {
+                "key head": "Antenna Structure",
+                "value head": 1
+            }
+        ],
+        "ComsTwr_FeatureCount": 19.0,
+        "ComsTwr_Nearest": [
+            {
+                "dist_mi": 0.81,
+                "dir": "Interior",
+                "lat": "62\u00b0 18.278' N",
+                "lng": "150\u00b0 05.513' W",
+                "Type": "Cellular",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=13004",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.81,
+                "dir": "Interior",
+                "lat": "62\u00b0 18.278' N",
+                "lng": "150\u00b0 05.513' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3811788",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.81,
+                "dir": "Interior",
+                "lat": "62\u00b0 18.278' N",
+                "lng": "150\u00b0 05.513' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3811789",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.79,
+                "dir": "Interior",
+                "lat": "62\u00b0 19.320' N",
+                "lng": "150\u00b0 05.618' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1201093",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.79,
+                "dir": "Interior",
+                "lat": "62\u00b0 18.020' N",
+                "lng": "150\u00b0 05.718' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1189033",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.79,
+                "dir": "Interior",
+                "lat": "62\u00b0 18.020' N",
+                "lng": "150\u00b0 05.718' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=4223770",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.53,
+                "dir": "Interior",
+                "lat": "62\u00b0 18.953' N",
+                "lng": "150\u00b0 06.177' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3776409",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.38,
+                "dir": "Interior",
+                "lat": "62\u00b0 18.137' N",
+                "lng": "150\u00b0 06.468' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1259337",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.38,
+                "dir": "Interior",
+                "lat": "62\u00b0 19.122' N",
+                "lng": "150\u00b0 06.402' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3472996",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.29,
+                "dir": "Interior",
+                "lat": "62\u00b0 19.248' N",
+                "lng": "150\u00b0 06.573' W",
+                "Type": "Antenna Structure",
+                "url": "https://wireless2.fcc.gov/UlsApp/AsrSearch/asrRegistration.jsp?regKey=2689972",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.27,
+                "dir": "Interior",
+                "lat": "62\u00b0 19.420' N",
+                "lng": "150\u00b0 06.620' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2359484",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.27,
+                "dir": "Interior",
+                "lat": "62\u00b0 19.420' N",
+                "lng": "150\u00b0 06.620' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3531613",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.27,
+                "dir": "Interior",
+                "lat": "62\u00b0 19.420' N",
+                "lng": "150\u00b0 06.620' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1010740",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.25,
+                "dir": "Interior",
+                "lat": "62\u00b0 15.715' N",
+                "lng": "150\u00b0 04.698' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=4109479",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.25,
+                "dir": "Interior",
+                "lat": "62\u00b0 15.715' N",
+                "lng": "150\u00b0 04.698' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=4109474",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.24,
+                "dir": "Interior",
+                "lat": "62\u00b0 19.318' N",
+                "lng": "150\u00b0 06.652' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1001108",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.24,
+                "dir": "Interior",
+                "lat": "62\u00b0 19.318' N",
+                "lng": "150\u00b0 06.652' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=997107",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.04,
+                "dir": "Interior",
+                "lat": "62\u00b0 19.287' N",
+                "lng": "150\u00b0 07.035' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1168954",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.04,
+                "dir": "Interior",
+                "lat": "62\u00b0 19.287' N",
+                "lng": "150\u00b0 07.035' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1169050",
+                "Comment": ""
+            }
+        ],
+        "Community_FeatureCount": 1.0,
+        "Community_Name_AttrCount": {
+            "Talkeetna": 1
+        },
+        "Community_Nearest": [
+            {
+                "dist_mi": 0.21,
+                "dir": "Interior",
+                "lat": "62\u00b0 19.390' N",
+                "lng": "150\u00b0 06.719' W",
+                "CommunityName": "Talkeetna"
+            }
+        ],
+        "Jurisd_Unit_AcreSum": [
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 20912.06
+            },
+            {
+                "key head": "Matanuska-Susitna Borough",
+                "value head": 7360.4
+            },
+            {
+                "key head": "Cook Inlet Region, Incorporated",
+                "value head": 1001.69
+            },
+            {
+                "key head": "Alaska Department of Transportation and Public Facilities",
+                "value head": 950.33
+            },
+            {
+                "key head": "University of Alaska",
+                "value head": 819.8
+            },
+            {
+                "key head": "U.S. Department of Transportation",
+                "value head": 144.58
+            },
+            {
+                "key head": "U.S. Federal Aviation Administration",
+                "value head": 110.97
+            },
+            {
+                "key head": "Glennallen Field Office",
+                "value head": 49.74
+            },
+            {
+                "key head": "Denali National Park and Preserve",
+                "value head": 1.24
+            },
+            {
+                "key head": "U.S. Postal Service",
+                "value head": 0.86
+            }
+        ],
+        "Jurisd_Owner_AcreSum": {
+            "State": 13047.68,
+            "Private": 9634.5,
+            "County": 7360.4,
+            "ANCSA": 1001.69,
+            "OthFed": 256.41,
+            "BLM": 49.74,
+            "NPS": 1.24
+        },
+        "MgmtOption_AcreSum": {
+            "Full": 19282.25,
+            "Critical": 12069.93
+        },
+        "NpsStruct_Use_AttrCount": [
+            {
+                "key head": "Admin",
+                "value head": 5
+            },
+            {
+                "key head": "Residence",
+                "value head": 1
+            }
+        ],
+        "NpsStruct_Protection_AttrCount": [
+            {
+                "key head": "Full",
+                "value head": 6
+            }
+        ],
+        "NpsStruct_Rating_AttrCount": [
+            {
+                "key head": "Low",
+                "value head": 4
+            },
+            {
+                "key head": "Moderate",
+                "value head": 2
+            }
+        ],
+        "NpsStruct_FeatureCount": 6.0,
+        "NpsStruct_Nearest": null,
+        "Parcel_BuildingValue_AttrSum": 149923119.0,
+        "Parcel_FeatureCount": 1663.0,
+        "Parcel_LandValue_AttrSum": 56771508.0,
+        "Parcel_Nearest": null,
+        "Parcel_PropType_AcreSum": [
+            {
+                "key head": "PRIVATE",
+                "value head": 9623.05
+            },
+            {
+                "key head": "BOROUGH",
+                "value head": 7178.9
+            },
+            {
+                "key head": "NA",
+                "value head": 6177.35
+            },
+            {
+                "key head": "NO DATA",
+                "value head": 4459.58
+            },
+            {
+                "key head": "STATE",
+                "value head": 1964.33
+            },
+            {
+                "key head": "NATIVE CORP",
+                "value head": 923.5
+            },
+            {
+                "key head": "PUBLIC UNIVERSITY",
+                "value head": 773.94
+            },
+            {
+                "key head": "FEDERAL",
+                "value head": 146.12
+            },
+            {
+                "key head": "MENTAL HEALTH",
+                "value head": 93.75
+            },
+            {
+                "key head": "No Data",
+                "value head": 5.78
+            },
+            {
+                "key head": "COOPERATIVE",
+                "value head": 2.32
+            }
+        ],
+        "Parcel_PropUse_AcreSum": [
+            {
+                "key head": "No Data",
+                "value head": 31348.62
+            }
+        ],
+        "Parcel_TotalAcres": 31348.62,
+        "Parcel_TotalValue_AttrSum": 206694628.0,
+        "PetrolTerm_Company_AttrCount": null,
+        "PetrolTerm_FeatureCount": null,
+        "PertolTerm_Nearest": null,
+        "PipeLine_Name_FeetSum": null,
+        "PipeLine_Nearest": null,
+        "PipeLine_TotalFeet": null,
+        "PowerPlant_PrimSource_AttrCount": null,
+        "PowerPlant_UtilName_AttrCount": null,
+        "PowerPlant_FeatureCount": null,
+        "PowerPlant_Nearest": null,
+        "PowerPlant_SectorName_AttrCount": null,
+        "Silviculture_Status_AcreSum": null,
+        "Silviculture_TotalValue_AttrSum": null,
+        "Silviculture_FeatureCount": null,
+        "Silviculture_Nearest": null,
+        "Silviculture_TotalAcres": null,
+        "SpecMgmt_Nearest": null,
+        "Railroad_NetDesc_FeetSum": [
+            {
+                "key head": "Main sub network",
+                "value head": 46482
+            },
+            {
+                "key head": "Non-Mainline Active track",
+                "value head": 6681
+            }
+        ],
+        "Railroad_Nearest": null,
+        "Railroad_TotalFeet": 53164.0,
+        "UsaStruct_OccCls_AttrCount": [
+            {
+                "key head": "Residential",
+                "value head": 661
+            },
+            {
+                "key head": "Commercial",
+                "value head": 65
+            },
+            {
+                "key head": "Unclassified",
+                "value head": 53
+            },
+            {
+                "key head": "Utility and Misc",
+                "value head": 12
+            },
+            {
+                "key head": "Government",
+                "value head": 8
+            },
+            {
+                "key head": "Industrial",
+                "value head": 5
+            },
+            {
+                "key head": "Education",
+                "value head": 4
+            },
+            {
+                "key head": "Assembly",
+                "value head": 2
+            }
+        ],
+        "UsaStruct_PrimOcc_AttrCount": [
+            {
+                "key head": "Single Family Dwelling",
+                "value head": 602
+            },
+            {
+                "key head": "Unclassified",
+                "value head": 62
+            },
+            {
+                "key head": "Retail Trade",
+                "value head": 34
+            },
+            {
+                "key head": "Manufactured Home",
+                "value head": 22
+            },
+            {
+                "key head": "Temporary Lodging",
+                "value head": 21
+            },
+            {
+                "key head": "Parking",
+                "value head": 18
+            },
+            {
+                "key head": "Aviation",
+                "value head": 11
+            },
+            {
+                "key head": "Entertainment and Recreation",
+                "value head": 8
+            },
+            {
+                "key head": "General Services",
+                "value head": 7
+            },
+            {
+                "key head": "Multi - Family Dwelling",
+                "value head": 7
+            },
+            {
+                "key head": "Pre-K - 12 Schools",
+                "value head": 3
+            },
+            {
+                "key head": "Professional/Technical Services",
+                "value head": 3
+            },
+            {
+                "key head": "Heavy",
+                "value head": 3
+            },
+            {
+                "key head": "Personal and Repair Services",
+                "value head": 2
+            },
+            {
+                "key head": "Light",
+                "value head": 2
+            },
+            {
+                "key head": "Religious",
+                "value head": 2
+            },
+            {
+                "key head": "Emergency Response",
+                "value head": 1
+            },
+            {
+                "key head": "Ground",
+                "value head": 1
+            },
+            {
+                "key head": "Colleges/Universities",
+                "value head": 1
+            }
+        ],
+        "UsaStruct_SecOcc_AttrCount": [
+            {
+                "key head": "No Data",
+                "value head": 810
+            }
+        ],
+        "UsaStruct_FeatureCount": 810.0,
+        "UsaStruct_Nearest": null,
+        "WindTurb_FeatureCount": null,
+        "WindTurb_Nearest": null,
+        "WindTurb_ProjName_AttrCount": null,
+        "SpatialInfoType": " 1 Mile Buffer",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:199806.077%2C1373362.097%2C3338,scale:35740",
+        "CpxName": null,
+        "DispatchCenterID": "AKACDC",
+        "PercentContained": 100.0,
+        "PercentPerimeterToBeContained": 100.0,
+        "FireMgmtComplexity": null,
+        "IncidentComplexityLevel": "Type 3 Incident",
+        "EstimatedCostToDate": 208946523.0,
+        "TotalIncidentPersonnel": 60.0,
+        "POOProtectingAgency": "C&L",
+        "POOJurisdictionalAgency": null,
+        "POOJurisdictionalUnit": null,
+        "ICS209ReportDateTime": 1738341924000.0,
+        "ICS209ReportStatus": "F",
+        "IncidentManagementOrganization": "Type 3 Team"
+    },
+    {
         "AkFireRegion": "MSS",
         "AkFireNumber": "155",
         "wfigs_IncidentName": "KENNETH",
@@ -34,265 +651,9 @@
                 "value head": 19038
             }
         ],
-        "AkPowerLine_Nearest": [
-            {
-                "VOLTAGE": "138",
-                "COND_TYPE": "AC; Overhead",
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 45.063' N",
-                "lng_ddm": "150\u00b0 01.508' W"
-            },
-            {
-                "VOLTAGE": "138",
-                "COND_TYPE": "Transmission",
-                "distance_miles": 0.34,
-                "direction": "N",
-                "lat_ddm": "61\u00b0 45.846' N",
-                "lng_ddm": "150\u00b0 01.376' W"
-            }
-        ],
+        "AkPowerLine_Nearest": null,
         "AkPowerLine_TotalFeet": 19038.0,
-        "Roads_Nearest": [
-            {
-                "Route_Name": "Happy Jack Lane",
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.795' N",
-                "lng_ddm": "150\u00b0 01.703' W"
-            },
-            {
-                "Route_Name": "Willow Fishhook Road",
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 45.864' N",
-                "lng_ddm": "150\u00b0 00.033' W"
-            },
-            {
-                "Route_Name": "Tuxedo Avenue",
-                "distance_miles": 0.0,
-                "direction": "E",
-                "lat_ddm": "61\u00b0 44.418' N",
-                "lng_ddm": "150\u00b0 01.205' W"
-            },
-            {
-                "Route_Name": "Pyrite Avenue",
-                "distance_miles": 0.0,
-                "direction": "N",
-                "lat_ddm": "61\u00b0 44.837' N",
-                "lng_ddm": "150\u00b0 01.702' W"
-            },
-            {
-                "Route_Name": "Creekside Drive",
-                "distance_miles": 0.04,
-                "direction": "E",
-                "lat_ddm": "61\u00b0 45.890' N",
-                "lng_ddm": "149\u00b0 59.707' W"
-            },
-            {
-                "Route_Name": "Grubstake Street",
-                "distance_miles": 0.05,
-                "direction": "N",
-                "lat_ddm": "61\u00b0 44.963' N",
-                "lng_ddm": "150\u00b0 01.701' W"
-            },
-            {
-                "Route_Name": "Eska Avenue",
-                "distance_miles": 0.08,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.795' N",
-                "lng_ddm": "150\u00b0 01.898' W"
-            },
-            {
-                "Route_Name": "Bullion Lane",
-                "distance_miles": 0.1,
-                "direction": "NW",
-                "lat_ddm": "61\u00b0 44.964' N",
-                "lng_ddm": "150\u00b0 01.797' W"
-            },
-            {
-                "Route_Name": "Holland Prospect Drive",
-                "distance_miles": 0.12,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.550' N",
-                "lng_ddm": "150\u00b0 01.691' W"
-            },
-            {
-                "Route_Name": "Snowbird Lane",
-                "distance_miles": 0.14,
-                "direction": "NW",
-                "lat_ddm": "61\u00b0 45.055' N",
-                "lng_ddm": "150\u00b0 01.800' W"
-            },
-            {
-                "Route_Name": "Gold Cord Drive",
-                "distance_miles": 0.18,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.628' N",
-                "lng_ddm": "150\u00b0 01.984' W"
-            },
-            {
-                "Route_Name": "Petticoat Street",
-                "distance_miles": 0.19,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.810' N",
-                "lng_ddm": "150\u00b0 02.090' W"
-            },
-            {
-                "Route_Name": "Kittridge Kourt Avenue",
-                "distance_miles": 0.2,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.745' N",
-                "lng_ddm": "150\u00b0 02.087' W"
-            },
-            {
-                "Route_Name": "Bow Tie Loop",
-                "distance_miles": 0.22,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.551' N",
-                "lng_ddm": "150\u00b0 00.259' W"
-            },
-            {
-                "Route_Name": "Prism Drive",
-                "distance_miles": 0.3,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.431' N",
-                "lng_ddm": "150\u00b0 00.486' W"
-            },
-            {
-                "Route_Name": "Willow Station Road",
-                "distance_miles": 0.36,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.666' N",
-                "lng_ddm": "150\u00b0 02.341' W"
-            },
-            {
-                "Route_Name": "Compass Circle",
-                "distance_miles": 0.37,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.396' N",
-                "lng_ddm": "150\u00b0 00.335' W"
-            },
-            {
-                "Route_Name": "Kenny Boulevard",
-                "distance_miles": 0.44,
-                "direction": "NE",
-                "lat_ddm": "61\u00b0 46.360' N",
-                "lng_ddm": "149\u00b0 59.723' W"
-            },
-            {
-                "Route_Name": "Clino Circle",
-                "distance_miles": 0.45,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.262' N",
-                "lng_ddm": "150\u00b0 00.430' W"
-            },
-            {
-                "Route_Name": "Kiwi Circle",
-                "distance_miles": 0.53,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.103' N",
-                "lng_ddm": "150\u00b0 00.456' W"
-            },
-            {
-                "Route_Name": "Douglas Drive",
-                "distance_miles": 0.55,
-                "direction": "NW",
-                "lat_ddm": "61\u00b0 45.328' N",
-                "lng_ddm": "150\u00b0 02.461' W"
-            },
-            {
-                "Route_Name": "Parks Highway",
-                "distance_miles": 0.55,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.513' N",
-                "lng_ddm": "150\u00b0 02.619' W"
-            },
-            {
-                "Route_Name": "Kacey Circle",
-                "distance_miles": 0.56,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.148' N",
-                "lng_ddm": "150\u00b0 02.123' W"
-            },
-            {
-                "Route_Name": "Willow 1st Avenue",
-                "distance_miles": 0.57,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.640' N",
-                "lng_ddm": "150\u00b0 02.731' W"
-            },
-            {
-                "Route_Name": "Alexander Avenue",
-                "distance_miles": 0.57,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.377' N",
-                "lng_ddm": "150\u00b0 02.530' W"
-            },
-            {
-                "Route_Name": "McKinley Lane",
-                "distance_miles": 0.6,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.305' N",
-                "lng_ddm": "150\u00b0 02.483' W"
-            },
-            {
-                "Route_Name": "River-Aire Drive",
-                "distance_miles": 0.6,
-                "direction": "E",
-                "lat_ddm": "61\u00b0 46.166' N",
-                "lng_ddm": "149\u00b0 58.849' W"
-            },
-            {
-                "Route_Name": "Burrow Street",
-                "distance_miles": 0.61,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 45.961' N",
-                "lng_ddm": "149\u00b0 58.673' W"
-            },
-            {
-                "Route_Name": "Willow Comm Center Circle",
-                "distance_miles": 0.62,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.728' N",
-                "lng_ddm": "150\u00b0 02.866' W"
-            },
-            {
-                "Route_Name": "McKinley Way",
-                "distance_miles": 0.63,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.373' N",
-                "lng_ddm": "150\u00b0 02.643' W"
-            },
-            {
-                "Route_Name": "Beluga Avenue",
-                "distance_miles": 0.65,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.228' N",
-                "lng_ddm": "150\u00b0 02.433' W"
-            },
-            {
-                "Route_Name": "Main Street",
-                "distance_miles": 0.67,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.627' N",
-                "lng_ddm": "150\u00b0 02.919' W"
-            },
-            {
-                "Route_Name": "Long Lake Road",
-                "distance_miles": 0.67,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.189' N",
-                "lng_ddm": "150\u00b0 02.408' W"
-            },
-            {
-                "Route_Name": "Lauren Drive",
-                "distance_miles": 0.67,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 43.953' N",
-                "lng_ddm": "150\u00b0 02.058' W"
-            }
-        ],
+        "Roads_Nearest": null,
         "Runway_FeatureCount": 1.0,
         "Runway_Nearest": [
             {
@@ -300,10 +661,10 @@
                 "length": 4400,
                 "surface": "Gravel",
                 "loc_id": "UUO",
-                "distance_miles": 0.86,
-                "direction": "NW",
-                "lat_ddm": "61\u00b0 45.251' N",
-                "lng_ddm": "150\u00b0 03.104' W"
+                "dist_mi": 0.86,
+                "dir": "NW",
+                "lat": "61\u00b0 45.251' N",
+                "lng": "150\u00b0 03.104' W"
             }
         ],
         "Runway_Ownership_AttrCount": [
@@ -321,10 +682,10 @@
                 "NAME": "WILLOW",
                 "CODE": "WOWA2",
                 "MESOWESTWEBURL": "https://akff.mesowest.org/tabular/station/#CFFDRS/WOWA2/",
-                "distance_miles": 0.92,
-                "direction": "N",
-                "lat_ddm": "61\u00b0 45.540' N",
-                "lng_ddm": "150\u00b0 02.999' W"
+                "dist_mi": 0.92,
+                "dir": "N",
+                "lat": "61\u00b0 45.540' N",
+                "lng": "150\u00b0 02.999' W"
             }
         ],
         "Aksd_MainStruct_AttrSum": null,
@@ -342,23 +703,10 @@
             }
         ],
         "Aksd_FeatureCount": 1.0,
-        "Aksd_Nearest": [
-            {
-                "SiteCat": "RAWS",
-                "Protection": "Undesignated",
-                "MainStructs": "No Data",
-                "OthrStructs": "No Data",
-                "SiteNotes": "https://akff.mesowest.org/tabular/station/#CFFDRS/WOWA2/",
-                "EntryDate": 1616112000000.0,
-                "distance_miles": 0.92,
-                "direction": "N",
-                "lat_ddm": "61\u00b0 45.540' N",
-                "lng_ddm": "150\u00b0 02.997' W"
-            }
-        ],
+        "Aksd_Nearest": null,
         "NtvAllot_Status_AcreSum": null,
         "NtvAllot_FeatureCount": null,
-        "NtvAllot_Nearest": [],
+        "NtvAllot_Nearest": null,
         "NtvAllot_TotalAcres": null,
         "ComsTwr_Type_AttrCount": [
             {
@@ -380,136 +728,136 @@
                 "Type": "Land Mobile Private",
                 "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1195718",
                 "Comment": "",
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 45.468' N",
-                "lng_ddm": "150\u00b0 00.467' W"
+                "dist_mi": 0.28,
+                "dir": "SE",
+                "lat": "61\u00b0 45.468' N",
+                "lng": "150\u00b0 00.467' W"
             },
             {
                 "Type": "Microwave Service",
                 "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=4977394",
                 "Comment": "",
-                "distance_miles": 0.35,
-                "direction": "N",
-                "lat_ddm": "61\u00b0 45.835' N",
-                "lng_ddm": "150\u00b0 01.433' W"
+                "dist_mi": 0.35,
+                "dir": "N",
+                "lat": "61\u00b0 45.835' N",
+                "lng": "150\u00b0 01.433' W"
             },
             {
                 "Type": "Microwave Service",
                 "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=4977393",
                 "Comment": "",
-                "distance_miles": 0.35,
-                "direction": "N",
-                "lat_ddm": "61\u00b0 45.835' N",
-                "lng_ddm": "150\u00b0 01.433' W"
+                "dist_mi": 0.35,
+                "dir": "N",
+                "lat": "61\u00b0 45.835' N",
+                "lng": "150\u00b0 01.433' W"
             },
             {
                 "Type": "Microwave Service",
                 "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3838800",
                 "Comment": "",
-                "distance_miles": 0.35,
-                "direction": "N",
-                "lat_ddm": "61\u00b0 45.835' N",
-                "lng_ddm": "150\u00b0 01.433' W"
+                "dist_mi": 0.35,
+                "dir": "N",
+                "lat": "61\u00b0 45.835' N",
+                "lng": "150\u00b0 01.433' W"
             },
             {
                 "Type": "Microwave Service",
                 "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3815763",
                 "Comment": "",
-                "distance_miles": 0.35,
-                "direction": "N",
-                "lat_ddm": "61\u00b0 45.835' N",
-                "lng_ddm": "150\u00b0 01.433' W"
+                "dist_mi": 0.35,
+                "dir": "N",
+                "lat": "61\u00b0 45.835' N",
+                "lng": "150\u00b0 01.433' W"
             },
             {
                 "Type": "Microwave Service",
                 "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3815764",
                 "Comment": "",
-                "distance_miles": 0.35,
-                "direction": "N",
-                "lat_ddm": "61\u00b0 45.835' N",
-                "lng_ddm": "150\u00b0 01.433' W"
+                "dist_mi": 0.35,
+                "dir": "N",
+                "lat": "61\u00b0 45.835' N",
+                "lng": "150\u00b0 01.433' W"
             },
             {
                 "Type": "Microwave Service",
                 "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1045190",
                 "Comment": "",
-                "distance_miles": 0.35,
-                "direction": "N",
-                "lat_ddm": "61\u00b0 45.833' N",
-                "lng_ddm": "150\u00b0 01.433' W"
+                "dist_mi": 0.35,
+                "dir": "N",
+                "lat": "61\u00b0 45.833' N",
+                "lng": "150\u00b0 01.433' W"
             },
             {
                 "Type": "Microwave Service",
                 "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1009737",
                 "Comment": "",
-                "distance_miles": 0.35,
-                "direction": "N",
-                "lat_ddm": "61\u00b0 45.833' N",
-                "lng_ddm": "150\u00b0 01.433' W"
+                "dist_mi": 0.35,
+                "dir": "N",
+                "lat": "61\u00b0 45.833' N",
+                "lng": "150\u00b0 01.433' W"
             },
             {
                 "Type": "Microwave Service",
                 "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2779046",
                 "Comment": "",
-                "distance_miles": 0.76,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.017' N",
-                "lng_ddm": "150\u00b0 02.383' W"
+                "dist_mi": 0.76,
+                "dir": "SE",
+                "lat": "61\u00b0 44.017' N",
+                "lng": "150\u00b0 02.383' W"
             },
             {
                 "Type": "Microwave Service",
                 "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2779047",
                 "Comment": "",
-                "distance_miles": 0.76,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.017' N",
-                "lng_ddm": "150\u00b0 02.383' W"
+                "dist_mi": 0.76,
+                "dir": "SE",
+                "lat": "61\u00b0 44.017' N",
+                "lng": "150\u00b0 02.383' W"
             },
             {
                 "Type": "Microwave Service",
                 "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3914475",
                 "Comment": "",
-                "distance_miles": 0.78,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.003' N",
-                "lng_ddm": "150\u00b0 02.412' W"
+                "dist_mi": 0.78,
+                "dir": "SE",
+                "lat": "61\u00b0 44.003' N",
+                "lng": "150\u00b0 02.412' W"
             },
             {
                 "Type": "Microwave Service",
                 "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3914474",
                 "Comment": "",
-                "distance_miles": 0.78,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.003' N",
-                "lng_ddm": "150\u00b0 02.412' W"
+                "dist_mi": 0.78,
+                "dir": "SE",
+                "lat": "61\u00b0 44.003' N",
+                "lng": "150\u00b0 02.412' W"
             },
             {
                 "Type": "Cellular",
                 "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=13004",
                 "Comment": "",
-                "distance_miles": 0.91,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 43.855' N",
-                "lng_ddm": "150\u00b0 02.485' W"
+                "dist_mi": 0.91,
+                "dir": "SE",
+                "lat": "61\u00b0 43.855' N",
+                "lng": "150\u00b0 02.485' W"
             },
             {
                 "Type": "Microwave Service",
                 "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1050063",
                 "Comment": "",
-                "distance_miles": 0.91,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 43.855' N",
-                "lng_ddm": "150\u00b0 02.485' W"
+                "dist_mi": 0.91,
+                "dir": "SE",
+                "lat": "61\u00b0 43.855' N",
+                "lng": "150\u00b0 02.485' W"
             },
             {
                 "Type": "Microwave Service",
                 "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1050064",
                 "Comment": "",
-                "distance_miles": 0.91,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 43.855' N",
-                "lng_ddm": "150\u00b0 02.485' W"
+                "dist_mi": 0.91,
+                "dir": "SE",
+                "lat": "61\u00b0 43.855' N",
+                "lng": "150\u00b0 02.485' W"
             }
         ],
         "Community_FeatureCount": 1.0,
@@ -519,10 +867,10 @@
         "Community_Nearest": [
             {
                 "CommunityName": "Willow",
-                "distance_miles": 0.57,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.641' N",
-                "lng_ddm": "150\u00b0 02.730' W"
+                "dist_mi": 0.57,
+                "dir": "SE",
+                "lat": "61\u00b0 44.641' N",
+                "lng": "150\u00b0 02.730' W"
             }
         ],
         "Jurisd_Unit_AcreSum": [
@@ -560,228 +908,7 @@
         "Parcel_BuildingValue_AttrSum": 50830042.0,
         "Parcel_FeatureCount": 623.0,
         "Parcel_LandValue_AttrSum": 16470863.0,
-        "Parcel_Nearest": [
-            {
-                "property_type": "PRIVATE",
-                "property_use": "No Data",
-                "land_value": 7700.0,
-                "building_value": "No Data",
-                "total_value": 7700.0,
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.926' N",
-                "lng_ddm": "150\u00b0 01.613' W"
-            },
-            {
-                "property_type": "PRIVATE",
-                "property_use": "No Data",
-                "land_value": 10500.0,
-                "building_value": 50000.0,
-                "total_value": 60500.0,
-                "distance_miles": 0.0,
-                "direction": "NE",
-                "lat_ddm": "61\u00b0 44.872' N",
-                "lng_ddm": "150\u00b0 01.691' W"
-            },
-            {
-                "property_type": "PRIVATE",
-                "property_use": "No Data",
-                "land_value": "No Data",
-                "building_value": "No Data",
-                "total_value": "No Data",
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.846' N",
-                "lng_ddm": "150\u00b0 01.691' W"
-            },
-            {
-                "property_type": "PRIVATE",
-                "property_use": "No Data",
-                "land_value": 26600.0,
-                "building_value": "No Data",
-                "total_value": 26600.0,
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 45.494' N",
-                "lng_ddm": "149\u00b0 59.825' W"
-            },
-            {
-                "property_type": "PRIVATE",
-                "property_use": "No Data",
-                "land_value": 8900.0,
-                "building_value": "No Data",
-                "total_value": 8900.0,
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.813' N",
-                "lng_ddm": "150\u00b0 01.691' W"
-            },
-            {
-                "property_type": "PRIVATE",
-                "property_use": "No Data",
-                "land_value": 5100.0,
-                "building_value": "No Data",
-                "total_value": 5100.0,
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.791' N",
-                "lng_ddm": "150\u00b0 01.723' W"
-            },
-            {
-                "property_type": "PRIVATE",
-                "property_use": "No Data",
-                "land_value": 27100.0,
-                "building_value": "No Data",
-                "total_value": 27100.0,
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 45.804' N",
-                "lng_ddm": "150\u00b0 00.227' W"
-            },
-            {
-                "property_type": "PRIVATE",
-                "property_use": "No Data",
-                "land_value": 23900.0,
-                "building_value": "No Data",
-                "total_value": 23900.0,
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 45.804' N",
-                "lng_ddm": "150\u00b0 00.227' W"
-            },
-            {
-                "property_type": "PRIVATE",
-                "property_use": "No Data",
-                "land_value": 42000.0,
-                "building_value": "No Data",
-                "total_value": 42000.0,
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 45.849' N",
-                "lng_ddm": "150\u00b0 00.053' W"
-            },
-            {
-                "property_type": "PRIVATE",
-                "property_use": "No Data",
-                "land_value": 5100.0,
-                "building_value": "No Data",
-                "total_value": 5100.0,
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.828' N",
-                "lng_ddm": "150\u00b0 01.709' W"
-            },
-            {
-                "property_type": "PRIVATE",
-                "property_use": "No Data",
-                "land_value": 35100.0,
-                "building_value": "No Data",
-                "total_value": 35100.0,
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 45.849' N",
-                "lng_ddm": "150\u00b0 00.053' W"
-            },
-            {
-                "property_type": "PRIVATE",
-                "property_use": "No Data",
-                "land_value": 10500.0,
-                "building_value": "No Data",
-                "total_value": 10500.0,
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.926' N",
-                "lng_ddm": "150\u00b0 01.613' W"
-            },
-            {
-                "property_type": "PRIVATE",
-                "property_use": "No Data",
-                "land_value": 18800.0,
-                "building_value": "No Data",
-                "total_value": 18800.0,
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 45.663' N",
-                "lng_ddm": "150\u00b0 00.374' W"
-            },
-            {
-                "property_type": "NA",
-                "property_use": "No Data",
-                "land_value": "No Data",
-                "building_value": "No Data",
-                "total_value": "No Data",
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.791' N",
-                "lng_ddm": "150\u00b0 01.723' W"
-            },
-            {
-                "property_type": "PRIVATE",
-                "property_use": "No Data",
-                "land_value": 19900.0,
-                "building_value": "No Data",
-                "total_value": 19900.0,
-                "distance_miles": 0.0,
-                "direction": "NW",
-                "lat_ddm": "61\u00b0 45.494' N",
-                "lng_ddm": "150\u00b0 00.089' W"
-            },
-            {
-                "property_type": "PRIVATE",
-                "property_use": "No Data",
-                "land_value": 28500.0,
-                "building_value": "No Data",
-                "total_value": 28500.0,
-                "distance_miles": 0.0,
-                "direction": "N",
-                "lat_ddm": "61\u00b0 45.494' N",
-                "lng_ddm": "149\u00b0 59.952' W"
-            },
-            {
-                "property_type": "PRIVATE",
-                "property_use": "No Data",
-                "land_value": 112000.0,
-                "building_value": 56600.0,
-                "total_value": 168600.0,
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 45.061' N",
-                "lng_ddm": "150\u00b0 01.541' W"
-            },
-            {
-                "property_type": "NO DATA",
-                "property_use": "No Data",
-                "land_value": "No Data",
-                "building_value": "No Data",
-                "total_value": "No Data",
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 45.752' N",
-                "lng_ddm": "150\u00b0 00.428' W"
-            },
-            {
-                "property_type": "PRIVATE",
-                "property_use": "No Data",
-                "land_value": 24900.0,
-                "building_value": "No Data",
-                "total_value": 24900.0,
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 45.740' N",
-                "lng_ddm": "150\u00b0 00.407' W"
-            },
-            {
-                "property_type": "PRIVATE",
-                "property_use": "No Data",
-                "land_value": 10700.0,
-                "building_value": 231300.0,
-                "total_value": 242000.0,
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.698' N",
-                "lng_ddm": "150\u00b0 01.540' W"
-            }
-        ],
+        "Parcel_Nearest": null,
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "PRIVATE",
@@ -838,34 +965,9 @@
         "Silviculture_Status_AcreSum": null,
         "Silviculture_TotalValue_AttrSum": null,
         "Silviculture_FeatureCount": null,
-        "Silviculture_Nearest": [],
+        "Silviculture_Nearest": null,
         "Silviculture_TotalAcres": null,
-        "SpecMgmt_Nearest": [
-            {
-                "FeatureType": "No Data",
-                "Name": "TYO-00025",
-                "distance_miles": 0.25,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.707' N",
-                "lng_ddm": "150\u00b0 02.162' W"
-            },
-            {
-                "FeatureType": "No Data",
-                "Name": "TYO-00202",
-                "distance_miles": 0.6,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.518' N",
-                "lng_ddm": "150\u00b0 02.730' W"
-            },
-            {
-                "FeatureType": "No Data",
-                "Name": "TYO-00361",
-                "distance_miles": 0.74,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.673' N",
-                "lng_ddm": "150\u00b0 03.069' W"
-            }
-        ],
+        "SpecMgmt_Nearest": null,
         "Railroad_NetDesc_FeetSum": [
             {
                 "key head": "Main sub network",
@@ -876,92 +978,7 @@
                 "value head": 7708
             }
         ],
-        "Railroad_Nearest": [
-            {
-                "NET_DESC": "Non-Mainline Active track",
-                "distance_miles": 0.33,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.493' N",
-                "lng_ddm": "150\u00b0 02.164' W"
-            },
-            {
-                "NET_DESC": "Main sub network",
-                "distance_miles": 0.34,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.540' N",
-                "lng_ddm": "150\u00b0 02.233' W"
-            },
-            {
-                "NET_DESC": "Non-Mainline Active track",
-                "distance_miles": 0.34,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.540' N",
-                "lng_ddm": "150\u00b0 02.233' W"
-            },
-            {
-                "NET_DESC": "Main sub network",
-                "distance_miles": 0.34,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.540' N",
-                "lng_ddm": "150\u00b0 02.233' W"
-            },
-            {
-                "NET_DESC": "Non-Mainline Active track",
-                "distance_miles": 0.4,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.745' N",
-                "lng_ddm": "150\u00b0 02.466' W"
-            },
-            {
-                "NET_DESC": "Non-Mainline Active track",
-                "distance_miles": 0.4,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.745' N",
-                "lng_ddm": "150\u00b0 02.466' W"
-            },
-            {
-                "NET_DESC": "Main sub network",
-                "distance_miles": 0.43,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.246' N",
-                "lng_ddm": "150\u00b0 01.966' W"
-            },
-            {
-                "NET_DESC": "Non-Mainline Active track",
-                "distance_miles": 0.43,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.816' N",
-                "lng_ddm": "150\u00b0 02.535' W"
-            },
-            {
-                "NET_DESC": "Non-Mainline Active track",
-                "distance_miles": 0.43,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.816' N",
-                "lng_ddm": "150\u00b0 02.535' W"
-            },
-            {
-                "NET_DESC": "Main sub network",
-                "distance_miles": 0.45,
-                "direction": "NW",
-                "lat_ddm": "61\u00b0 44.886' N",
-                "lng_ddm": "150\u00b0 02.566' W"
-            },
-            {
-                "NET_DESC": "Non-Mainline Active track",
-                "distance_miles": 0.46,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.766' N",
-                "lng_ddm": "150\u00b0 02.588' W"
-            },
-            {
-                "NET_DESC": "Main sub network",
-                "distance_miles": 0.47,
-                "direction": "NW",
-                "lat_ddm": "61\u00b0 44.913' N",
-                "lng_ddm": "150\u00b0 02.595' W"
-            }
-        ],
+        "Railroad_Nearest": null,
         "Railroad_TotalFeet": 21818.0,
         "UsaStruct_OccCls_AttrCount": [
             {
@@ -1054,218 +1071,7 @@
             }
         ],
         "UsaStruct_FeatureCount": 192.0,
-        "UsaStruct_Nearest": [
-            {
-                "PROP_ADDR": "14041 NORTH PYRITE AVENUE",
-                "OCC_CLS": "Residential",
-                "PRIM_OCC": "Single Family Dwelling",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.0,
-                "direction": "E",
-                "lat_ddm": "61\u00b0 44.893' N",
-                "lng_ddm": "150\u00b0 01.647' W"
-            },
-            {
-                "PROP_ADDR": "23135 WEST WILLOW FISHHOOK ROAD",
-                "OCC_CLS": "Commercial",
-                "PRIM_OCC": "Parking",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.0,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 45.915' N",
-                "lng_ddm": "149\u00b0 59.984' W"
-            },
-            {
-                "PROP_ADDR": "14086 NORTH PYRITE AVENUE",
-                "OCC_CLS": "Residential",
-                "PRIM_OCC": "Single Family Dwelling",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.04,
-                "direction": "NW",
-                "lat_ddm": "61\u00b0 44.918' N",
-                "lng_ddm": "150\u00b0 01.737' W"
-            },
-            {
-                "PROP_ADDR": "13977 NORTH ESKA AVENUE",
-                "OCC_CLS": "Residential",
-                "PRIM_OCC": "Single Family Dwelling",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.05,
-                "direction": "NW",
-                "lat_ddm": "61\u00b0 44.832' N",
-                "lng_ddm": "150\u00b0 01.835' W"
-            },
-            {
-                "PROP_ADDR": "14263 NORTH BULLION LANE",
-                "OCC_CLS": "Residential",
-                "PRIM_OCC": "Single Family Dwelling",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.09,
-                "direction": "N",
-                "lat_ddm": "61\u00b0 45.055' N",
-                "lng_ddm": "150\u00b0 01.707' W"
-            },
-            {
-                "PROP_ADDR": "13950 NORTH ESKA AVENUE",
-                "OCC_CLS": "Residential",
-                "PRIM_OCC": "Single Family Dwelling",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.1,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.818' N",
-                "lng_ddm": "150\u00b0 01.929' W"
-            },
-            {
-                "PROP_ADDR": "21290 WEST CREEKSIDE DRIVE",
-                "OCC_CLS": "Residential",
-                "PRIM_OCC": "Single Family Dwelling",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.11,
-                "direction": "E",
-                "lat_ddm": "61\u00b0 46.019' N",
-                "lng_ddm": "149\u00b0 59.760' W"
-            },
-            {
-                "PROP_ADDR": "13848 NORTH ESKA AVENUE",
-                "OCC_CLS": "Residential",
-                "PRIM_OCC": "Single Family Dwelling",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.12,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.750' N",
-                "lng_ddm": "150\u00b0 01.932' W"
-            },
-            {
-                "PROP_ADDR": "No Data",
-                "OCC_CLS": "Unclassified",
-                "PRIM_OCC": "Unclassified",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.14,
-                "direction": "NW",
-                "lat_ddm": "61\u00b0 45.020' N",
-                "lng_ddm": "150\u00b0 01.829' W"
-            },
-            {
-                "PROP_ADDR": "22944 WEST SNOWBIRD LANE",
-                "OCC_CLS": "Commercial",
-                "PRIM_OCC": "Parking",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.15,
-                "direction": "NW",
-                "lat_ddm": "61\u00b0 45.030' N",
-                "lng_ddm": "150\u00b0 01.837' W"
-            },
-            {
-                "PROP_ADDR": "13855 NORTH PETTICOAT STREET",
-                "OCC_CLS": "Residential",
-                "PRIM_OCC": "Single Family Dwelling",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.17,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.749' N",
-                "lng_ddm": "150\u00b0 02.031' W"
-            },
-            {
-                "PROP_ADDR": "21453 WEST CREEKSIDE DRIVE",
-                "OCC_CLS": "Residential",
-                "PRIM_OCC": "Single Family Dwelling",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.2,
-                "direction": "E",
-                "lat_ddm": "61\u00b0 46.076' N",
-                "lng_ddm": "149\u00b0 59.628' W"
-            },
-            {
-                "PROP_ADDR": "21453 WEST CREEKSIDE DRIVE",
-                "OCC_CLS": "Residential",
-                "PRIM_OCC": "Single Family Dwelling",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.21,
-                "direction": "E",
-                "lat_ddm": "61\u00b0 46.087' N",
-                "lng_ddm": "149\u00b0 59.646' W"
-            },
-            {
-                "PROP_ADDR": "22809 WEST WILLOW FISHHOOK ROAD",
-                "OCC_CLS": "Residential",
-                "PRIM_OCC": "Single Family Dwelling",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.23,
-                "direction": "E",
-                "lat_ddm": "61\u00b0 46.001' N",
-                "lng_ddm": "149\u00b0 59.430' W"
-            },
-            {
-                "PROP_ADDR": "21785 WEST CREEKSIDE DRIVE",
-                "OCC_CLS": "Residential",
-                "PRIM_OCC": "Single Family Dwelling",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.23,
-                "direction": "NE",
-                "lat_ddm": "61\u00b0 46.179' N",
-                "lng_ddm": "150\u00b0 00.058' W"
-            },
-            {
-                "PROP_ADDR": "23003 WEST HOLLAND PROSPECT DRIVE",
-                "OCC_CLS": "Residential",
-                "PRIM_OCC": "Single Family Dwelling",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.23,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.503' N",
-                "lng_ddm": "150\u00b0 01.952' W"
-            },
-            {
-                "PROP_ADDR": "22809 WEST WILLOW FISHHOOK ROAD",
-                "OCC_CLS": "Residential",
-                "PRIM_OCC": "Single Family Dwelling",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.24,
-                "direction": "E",
-                "lat_ddm": "61\u00b0 46.001' N",
-                "lng_ddm": "149\u00b0 59.410' W"
-            },
-            {
-                "PROP_ADDR": "21853 WEST CREEKSIDE DRIVE",
-                "OCC_CLS": "Residential",
-                "PRIM_OCC": "Single Family Dwelling",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.24,
-                "direction": "N",
-                "lat_ddm": "61\u00b0 46.176' N",
-                "lng_ddm": "150\u00b0 00.145' W"
-            },
-            {
-                "PROP_ADDR": "23033 WEST SNOWBIRD LANE",
-                "OCC_CLS": "Residential",
-                "PRIM_OCC": "Single Family Dwelling",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.25,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 45.156' N",
-                "lng_ddm": "150\u00b0 01.990' W"
-            },
-            {
-                "PROP_ADDR": "23129 WEST TUXEDO AVENUE",
-                "OCC_CLS": "Residential",
-                "PRIM_OCC": "Single Family Dwelling",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.26,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.638' N",
-                "lng_ddm": "150\u00b0 02.134' W"
-            },
-            {
-                "PROP_ADDR": "No Data",
-                "OCC_CLS": "Unclassified",
-                "PRIM_OCC": "Unclassified",
-                "SEC_OCC": "No Data",
-                "distance_miles": 0.26,
-                "direction": "SE",
-                "lat_ddm": "61\u00b0 44.632' N",
-                "lng_ddm": "150\u00b0 02.141' W"
-            }
-        ],
+        "UsaStruct_Nearest": null,
         "WindTurb_FeatureCount": null,
         "WindTurb_Nearest": null,
         "WindTurb_ProjName_AttrCount": null,

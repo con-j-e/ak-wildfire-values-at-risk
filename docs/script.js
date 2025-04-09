@@ -321,7 +321,7 @@ const build_table = (tag, rows_array) => {
                 precision:0,
             }},
 
-            {title:"Nearest Communities", field:"Community_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+            {title:"Community Locations", field:"Community_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                 layout: "fitDataStretch",
                 pagination: "local",
                 paginationSize: 5, 
@@ -330,17 +330,17 @@ const build_table = (tag, rows_array) => {
                 resizableRows: true,
                 columns:[
                     {title:"Community", field:"CommunityName"},
-                    {title:"Distance (miles)", field:"distance_miles", formatter:"money", formatterParams:{precision:2}},
-                    {title:"Direction", field:"direction"},
-                    {title:"Latitude", field:"lat_ddm"},
-                    {title:"Longitude", field:"lng_ddm"}
+                    {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                    {title:"Direction", field:"dir"},
+                    {title:"Latitude", field:"lat"},
+                    {title:"Longitude", field:"lng"}
                 ]
             },    
                 headerSort:false},
 
             {title:"Community Names", field:"Community_Name_AttrCount", mutator:object_keys, formatter:"array", headerFilter:"input"},
             
-            {title:"Nearest Weather Stations", field:"WeatherStation_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+            {title:"Weather Station Locations", field:"WeatherStation_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                 layout: "fitDataStretch",
                 pagination: "local",
                 paginationSize: 5, 
@@ -353,15 +353,15 @@ const build_table = (tag, rows_array) => {
                     {title:"URL", field:"MESOWESTWEBURL", formatter:html_link, formatterParams:{
                         label:"MesoWest CFFDRS"
                     }},
-                    {title:"Distance (miles)", field:"distance_miles", formatter:"money", formatterParams:{precision:2}},
-                    {title:"Direction", field:"direction"},
-                    {title:"Latitude", field:"lat_ddm"},
-                    {title:"Longitude", field:"lng_ddm"}
+                    {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                    {title:"Direction", field:"dir"},
+                    {title:"Latitude", field:"lat"},
+                    {title:"Longitude", field:"lng"}
                 ]
             },    
                 headerSort:false},
 
-            {title:"Nearest Runways", field:"Runway_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+            {title:"Runway Locations", field:"Runway_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                 layout: "fitDataStretch",
                 pagination: "local",
                 paginationSize: 5, 
@@ -375,10 +375,10 @@ const build_table = (tag, rows_array) => {
                     {title:"Location", field:"loc_id", formatter:html_link, formatterParams:{
                         link_body:"https://www.airnav.com/airport/{value}"
                     }},
-                    {title:"Distance (miles)", field:"distance_miles", formatter:"money", formatterParams:{precision:2}},
-                    {title:"Direction", field:"direction"},
-                    {title:"Latitude", field:"lat_ddm"},
-                    {title:"Longitude", field:"lng_ddm"}
+                    {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                    {title:"Direction", field:"dir"},
+                    {title:"Latitude", field:"lat"},
+                    {title:"Longitude", field:"lng"}
                 ]
             },    
                 headerSort:false},

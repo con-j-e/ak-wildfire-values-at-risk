@@ -41,6 +41,15 @@ def format_fields(fires_bufs_attrs_gdf: gpd.GeoDataFrame, schema_plan: pd.DataFr
     esri_double_cols = schema_plan[schema_plan['ESRI_FIELD_TYPE'] == 'esriFieldTypeDouble']['FIELD_NAME']
 
     ## string formatting
+
+    # Providing flexibility to modify NEAREST_FEATS_FIELDS column in the analysis plan,
+    # without also needing to modify the schema plan and/or service definitions.
+    # This is helpful while determining the exact use case for this output data structure.
+    nearest_feats_cols = [col for col in esri_string_cols if '_Nearest' in col]
+    for col in nearest_feats_cols:
+        if col not in fires_bufs_attrs_gdf.columns:
+            fires_bufs_attrs_gdf[col] = None
+
     fires_bufs_attrs_gdf[esri_string_cols] = fires_bufs_attrs_gdf[esri_string_cols].astype('string')
     string_replace_dict = {
         '': pd.NA,

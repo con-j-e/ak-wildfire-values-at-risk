@@ -192,6 +192,7 @@ def main():
         #ENDREGION
 
         #REGION OUTPUT
+        
         fires_bufs_attrs_gdf = format_fields(fires_bufs_attrs_gdf, schema_plan)
 
         # logging warnings if any string value is approaching maximum allowed length

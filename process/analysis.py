@@ -418,44 +418,51 @@ def _nearest_feats_analysis(identifier, fire_geom, var_gdf, var_alias, included_
             manager_queue.put(attr_tups)
             return
         
-        # we want to ignore features that intersect the fire geometry
-        # these will be accounted for with other analysis functions
-        # the purpose of nearest_feats_analysis is to capture information on features that may be very close to where a fire currently is
-        # but are not accounted for because they do not intersect the fire geometry
-        #-var_gdf['geometry'] = var_gdf['geometry'].apply(lambda geom: geom.difference(fire_geom))
+        # calculate distance in meters from the fires edge
+        fire_geom_boundary = fire_geom.boundary
+        meters = var_gdf.distance(fire_geom_boundary)
 
-        # calculate distances
-        meters = var_gdf.distance(fire_geom)
+        # features that intersect the fire polygon will be considered interior
+        interior = var_gdf.intersects(fire_geom)
 
-        # get top 3 nearest features
-        meters.sort_values(ascending=True, inplace=True)
-        #-meters = meters[:3]
+        # this assumes index aligment after above operations
+        var_proximity = pd.DataFrame({'meters': meters, 'interior': interior})
 
-        # convert units to miles
-        miles = meters / 1609.34
+        # features that are interior and more than 0 meters from the fires edge will have a negative distance value
+        var_proximity['meters'] = var_proximity.apply(
+            lambda x: -x['meters'] if (x['interior'] and x['meters'] > 0) else x['meters'],
+            axis=1
+        )
+
+        # create series of distances in miles
+        miles = var_proximity['meters'] / 1609.34
         miles = miles.astype(float).round(2)
-        miles.name = 'distance_miles'
+        miles.name = 'dist_mi'
 
-        # produce dataframe
+        # produce nearest features dataframe
         miles_df = pd.merge(var_gdf, miles, left_index=True, right_index=True)
-        miles_df.sort_values(by='distance_miles', ascending=True, inplace=True)
+        miles_df.sort_values(by='dist_mi', ascending=True, inplace=True)
         miles_df = miles_df.astype('object')
         miles_df.fillna(value='No Data', inplace=True)
 
-        miles_df['direction'] = None
-        miles_df['lat_ddm'] = None
-        miles_df['lng_ddm'] = None
+        miles_df['dir'] = None
+        miles_df['lat'] = None
+        miles_df['lng'] = None
         for idx, row in miles_df.iterrows():
             fire_nearest_point, var_nearest_point = _get_nearest_points(fire_geom, row['geometry'])
             cardinal_direction = _get_cardinal_direction(fire_nearest_point, var_nearest_point)
 
             lat_ddm, lng_ddm = _get_lat_lng_ddm_from_3338_point(var_nearest_point)
 
-            miles_df.loc[idx, 'direction'] = cardinal_direction
-            miles_df.loc[idx, 'lat_ddm'] = lat_ddm
-            miles_df.loc[idx, 'lng_ddm'] = lng_ddm
-            
-        miles_df = miles_df[[*included_fields, 'distance_miles', 'direction', 'lat_ddm', 'lng_ddm']]
+            miles_df.loc[idx, 'dir'] = cardinal_direction
+            miles_df.loc[idx, 'lat'] = lat_ddm
+            miles_df.loc[idx, 'lng'] = lng_ddm
+        
+        # by placing 'dist_mi' at index 0, in the future json formatted attributes can easily be sorted by this key
+        miles_df = miles_df[['dist_mi', 'dir', 'lat', 'lng', *included_fields]]
+
+        # describing the direction of features that intersect the fire as "Interior"
+        miles_df.loc[miles_df['dist_mi'] <= 0, 'dir'] = 'Interior'
 
         nearest_feats = [feat._asdict() for feat in miles_df.itertuples(index=False)]
 
