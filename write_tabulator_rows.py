@@ -1,6 +1,5 @@
 import asyncio
 from datetime import datetime, timezone
-from copy import deepcopy
 import json
 import numpy as np
 import os
@@ -316,8 +315,8 @@ def main():
                 }, file)
             sys.exit(0)
 
-        ## approach from here down should be revisited
-
+        # getting nearest features data that is saved to the perimeters & locations service
+        # will be used for populating columns in each of the tabulator js tables
         akdof_perims_locs_gdf = arcgis_features_to_gdf(akdof_perims_locs)
         nearest_feats_fields = [col for col in akdof_perims_locs_gdf.columns if col.endswith('_Nearest')]
         nearest_feats_df = akdof_perims_locs_gdf[nearest_feats_fields + ['wfigs_IrwinID']].copy()
@@ -327,75 +326,71 @@ def main():
         )
         nearest_feats_df.set_index('wfigs_IrwinID', inplace=True)
 
-        for name, dof_feats in {
-            'akdof_perims_locs': akdof_perims_locs,
-            'buf_1': buf_1,
-            'buf_3': buf_3,
-            'buf_5': buf_5
-        }.items():
+        for tup in (
+            ('akdof_perims_locs', akdof_perims_locs, nearest_feats_df),
+            ('buf_1', buf_1, nearest_feats_df.copy()),
+            ('buf_3', buf_3, nearest_feats_df.copy()),
+            ('buf_5', buf_5, nearest_feats_df.copy())
+        ):
+            name, dof_feats, buf_dist_nearest_feats_df = tup
             
+            # creating updated dataframe that will be used to write tabulator rows
             new_df = prepare_dataframe_for_tabulator(wfigs_locs, dof_feats, tabulator_plan)
             old_df = current_tables[name]
             old_df.set_index('wfigs_IrwinID', inplace=True, drop=False)
-
             df = pd.concat((new_df, old_df))
             df.sort_values('wfigs_ModifiedOnDateTime_dt', ascending=False, inplace=True)
             df.drop_duplicates('wfigs_IrwinID', keep='first', inplace=True)
 
-            # if handling dataframes loaded from hosted services seperately, we know that each will only have a single unique AnalysisBufferMiles attribute
+            # when handling dataframes loaded from hosted services seperately, we know that each will only have a single unique AnalysisBufferMiles attribute
             buf_dist = df['AnalysisBufferMiles'].unique()[0]
 
-            #! not behaving as expected? mods to df for buf_dist 0 are carrying over to buf_dist 1,3,5
-            buf_dist_nearest_feats_df = nearest_feats_df.copy()
-            #-buf_dist_nearest_feats_df = deepcopy(nearest_feats_df)
-
-
-            buf_dist_nearest_feats_df = buf_dist_nearest_feats_df[nearest_feats_fields].map(
-                lambda x: [feat for feat in x if feat['dist_mi'] <= buf_dist] if x != '!error!' else x,
+            # Filtering for features that are relevant to the dataframe being processed.
+            # Criteria for this is their distance from the fires edge is less than or equal
+            # to the hosted service AnalysisBufferMiles attribute
+            buf_dist_nearest_feats_df = buf_dist_nearest_feats_df.map(
+                lambda x: [feat for feat in x if feat['dist_mi'] <= buf_dist] if x not in ('!error!','wfigs_IrwinID') else x,
                 na_action='ignore'
             )
-            buf_dist_nearest_feats_df[nearest_feats_fields] = buf_dist_nearest_feats_df[nearest_feats_fields].map(
-                lambda x: None if x == [] and x != '!error!' else x,
+            buf_dist_nearest_feats_df = buf_dist_nearest_feats_df.map(
+                lambda x: None if x == [] else x,
                 na_action='ignore'
             )
 
+            # akdof_perims_locs (i.e. buf_dist == 0) requires slightly different processing for nearest feats data
             if buf_dist == 0:
 
                 # for interior feature locations, those closest to fires edge should display at top of table
-                # recall that these features have negative distance values
-                buf_dist_nearest_feats_df[nearest_feats_fields] = buf_dist_nearest_feats_df[nearest_feats_fields].map(
-                    lambda x: sorted(x, key=lambda xx: xx[list(xx.keys())[0]], reverse=True) if x != '!error!' else x,
-                    na_action='ignore'
-                )
-
-                # interior feature locations should have a direction of 'Interior' (not NESW)
-                # also giving a positive distance for display purposes
+                # recall that these features have negative distance values in the nearest features analysis output json structure
+                # recall that distance values are saved at the first key in the nearest features analysis output json structure
                 def _reclass_interior(feat_list: list) -> list:
                     for feat in feat_list:
-                        feat['dir'] = 'Interior'
-                        #! for some reason this is modifying values that are being used in the buf_1, buf_3, buf_5 tables.
                         feat['dist_mi'] = abs(feat['dist_mi'])
+                    feat_list = sorted(
+                        feat_list,
+                        key=lambda x: x[list(x.keys())[0]],
+                    )
                     return feat_list
-                buf_dist_nearest_feats_df[nearest_feats_fields] = buf_dist_nearest_feats_df[nearest_feats_fields].map(
-                    lambda x: _reclass_interior(x) if x != '!error!' else x,
+
+                buf_dist_nearest_feats_df = buf_dist_nearest_feats_df.map(
+                    lambda x: _reclass_interior(x) if x not in ('!error!','wfigs_IrwinID') else x,
                     na_action='ignore'
                 )
 
-                # nearest feats fields are already present for akdof_perims_locs, and must be dropped
+                # nearest feats fields are already present in akdof_perims_locs, and must be dropped prior to join
                 df.drop(nearest_feats_fields, axis=1, inplace=True)
 
             else:
 
                 # interior features shouldn't be included in buffer analysis feature locations
-                buf_dist_nearest_feats_df = buf_dist_nearest_feats_df[nearest_feats_fields].map(
-                    lambda x: [feat for feat in x if not feat['dist_mi'] < 0] if x != '!error!' else x,
+                buf_dist_nearest_feats_df = buf_dist_nearest_feats_df.map(
+                    lambda x: [feat for feat in x if not feat['dir'] == 'Interior'] if x not in ('!error!','wfigs_IrwinID') else x,
                     na_action='ignore'
                 )
-                buf_dist_nearest_feats_df[nearest_feats_fields] = buf_dist_nearest_feats_df[nearest_feats_fields].map(
-                    lambda x: None if x == [] and x != '!error!' else x,
+                buf_dist_nearest_feats_df = buf_dist_nearest_feats_df.map(
+                    lambda x: None if x == [] else x,
                     na_action='ignore'
                 )
-
 
 
             df = df.join(buf_dist_nearest_feats_df, validate='1:1')

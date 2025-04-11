@@ -467,7 +467,9 @@ def _nearest_feats_analysis(identifier, fire_geom, var_gdf, var_alias, included_
         nearest_feats = [feat._asdict() for feat in miles_df.itertuples(index=False)]
 
         fset = {
-            'features': nearest_feats
+            'features': nearest_feats,
+            'popped': 0,
+            'cutoff': None
         }
 
         fset_serialized = _trim_nearest_feats(fset)
@@ -489,7 +491,9 @@ def _trim_nearest_feats(nearest_feats_fset: dict) -> str:
     fset_serialized = json.dumps(nearest_feats_fset)
     
     while len(fset_serialized) > 5000:
-        nearest_feats_fset['features'].pop()
+        popped = nearest_feats_fset['features'].pop()
+        nearest_feats_fset['popped'] += 1
+        nearest_feats_fset['cutoff'] = popped['dist_mi']
         fset_serialized = json.dumps(nearest_feats_fset)
     
     return fset_serialized

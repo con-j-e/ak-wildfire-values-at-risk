@@ -54,8 +54,8 @@ const nested_tabulator = (cell, formatterParams, onRendered) => {
     }
 
     // configure elements
-    var holderEl = document.createElement("div");
-    var tableEl = document.createElement("div");
+    const holderEl = document.createElement("div");
+    const tableEl = document.createElement("div");
     holderEl.style.boxSizing = "border-box";
     holderEl.style.padding = "10px 30px 10px 10px";
     holderEl.style.borderTop = "1px solid #333";
@@ -64,6 +64,14 @@ const nested_tabulator = (cell, formatterParams, onRendered) => {
     tableEl.style.border = "1px solid #333";
     holderEl.appendChild(tableEl);
 
+    if (rows.hasOwnProperty("popped") && rows["popped"] > 0) {
+        if (rows["cutoff"] < 0) {
+            holderEl.title = `Too many features! ${rows["popped"]} feature locations between ${Math.abs(rows["cutoff"])} miles interior and 5 miles from the fires edge are not listed in this table.`;
+        } else {
+            holderEl.title = `Too many features! ${rows["popped"]} feature locations between ${rows["cutoff"]} and 5 miles from the fires edge are not listed in this table.`;
+        }
+    }
+
     // add configured elements to cell
     cell.getElement().appendChild(holderEl);
 
@@ -71,7 +79,7 @@ const nested_tabulator = (cell, formatterParams, onRendered) => {
     onRendered(function(){
 
         const table = new Tabulator(tableEl, {
-            data:rows,
+            data:rows['features'],
             layout: formatterParams.layout,
             pagination: formatterParams.pagination,
             paginationSize: formatterParams.paginationSize,
@@ -314,75 +322,118 @@ const build_table = (tag, rows_array) => {
                 format:"yyyy-MM-dd HH:mm:ss",
                 alignEmptyValues:"bottom"
             }},
-
-            {title:"Community Count", field:"Community_FeatureCount", formatter:"money", formatterParams:{
-                precision:0
-            }, topCalc: "sum", topCalcParams:{
-                precision:0,
-            }},
-
-            {title:"Community Locations", field:"Community_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
-                layout: "fitDataStretch",
-                pagination: "local",
-                paginationSize: 5, 
-                paginationCounter: "rows",
-                movableColumns: true, 
-                resizableRows: true,
+            {
+                title:"Communities",
+                headerHozAlign:"center",
                 columns:[
-                    {title:"Community", field:"CommunityName"},
-                    {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
-                    {title:"Direction", field:"dir"},
-                    {title:"Latitude", field:"lat"},
-                    {title:"Longitude", field:"lng"}
-                ]
-            },    
-                headerSort:false},
-
-            {title:"Community Names", field:"Community_Name_AttrCount", mutator:object_keys, formatter:"array", headerFilter:"input"},
-            
-            {title:"Weather Station Locations", field:"WeatherStation_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
-                layout: "fitDataStretch",
-                pagination: "local",
-                paginationSize: 5, 
-                paginationCounter: "rows",
-                movableColumns: true, 
-                resizableRows: true,
-                columns:[
-                    {title:"Name", field:"NAME"},
-                    {title:"Code", field:"CODE"},
-                    {title:"URL", field:"MESOWESTWEBURL", formatter:html_link, formatterParams:{
-                        label:"MesoWest CFFDRS"
+                    {title:"Feature Count", field:"Community_FeatureCount", formatter:"money", formatterParams:{
+                        precision:0
+                    }, topCalc: "sum", topCalcParams:{
+                        precision:0,
                     }},
-                    {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
-                    {title:"Direction", field:"dir"},
-                    {title:"Latitude", field:"lat"},
-                    {title:"Longitude", field:"lng"}
+                    {title:"Locations", field:"Community_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Community", field:"CommunityName"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    },    
+                        headerSort:false},
                 ]
-            },    
-                headerSort:false},
-
-            {title:"Runway Locations", field:"Runway_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
-                layout: "fitDataStretch",
-                pagination: "local",
-                paginationSize: 5, 
-                paginationCounter: "rows",
-                movableColumns: true, 
-                resizableRows: true,
+            },
+            {
+                title:"Weather Stations",
+                headerHozAlign:"center",
                 columns:[
-                    {title:"Runway ID", field:"runway_id"},
-                    {title:"Length", field:"length"},
-                    {title:"Surface", field:"surface"},
-                    {title:"Location", field:"loc_id", formatter:html_link, formatterParams:{
-                        link_body:"https://www.airnav.com/airport/{value}"
+                    {title:"Feature Count", field:"WeatherStation_FeatureCount", formatter:"money", formatterParams:{
+                        precision:0
+                    }, topCalc: "sum", topCalcParams:{
+                        precision:0,
+                    }, topCalcFormatter:"money", topCalcFormatterParams:{
+                        precision:0
                     }},
-                    {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
-                    {title:"Direction", field:"dir"},
-                    {title:"Latitude", field:"lat"},
-                    {title:"Longitude", field:"lng"}
+                    {title:"Locations", field:"WeatherStation_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Name", field:"NAME"},
+                            {title:"Code", field:"CODE"},
+                            {title:"URL", field:"MESOWESTWEBURL", formatter:html_link, formatterParams:{
+                                label:"MesoWest CFFDRS"
+                            }},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    },    
+                        headerSort:false},
                 ]
-            },    
-                headerSort:false},
-
+            },
+            {
+                title:"Runways",
+                headerHozAlign:"center",
+                columns:[
+                    {title:"Feature Count", field:"Runway_FeatureCount", formatter:"money", formatterParams:{
+                        precision:0
+                    }, topCalc: "sum", topCalcParams:{
+                        precision:0,
+                    }, topCalcFormatter:"money", topCalcFormatterParams:{
+                        precision:0
+                    }}, 
+                    {title:"Locations", field:"Runway_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Location ID", field:"loc_id"},
+                            {title:"Runway ID", field:"runway_id"},
+                            {title:"Length", field:"length"},
+                            {title:"Surface", field:"surface"},
+                            {title:"AirNav URL", field:"loc_id", formatter:html_link, formatterParams:{
+                                link_body:"https://www.airnav.com/airport/{value}",
+                                label:"Go to AirNav"
+                            }},
+                            {title:"WeatherCams URL", field:"loc_id", formatter:html_link, formatterParams:{
+                                link_body:"https://weathercams.faa.gov/map/airport/{value}/details/camera",
+                                label:"Go to WeatherCams"
+                            }},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    },    
+                        headerSort:false},
+                    {title:"Count by Ownership", field:"Runway_Ownership_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Ownership", field:"key head"},
+                            {title:"Feature Count", field: "value head", formatter:"money", formatterParams:{precision:0}}
+                        ]
+                    }, headerSort:false},
+                ]
+            },
             {
                 title:"Management Option Acres",
                 headerHozAlign:"center",
@@ -762,6 +813,23 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},
+                    {title:"Locations", field:"NtvAllot_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Status", field:"ALLOT_STATUS"},
+                            {title:"ID", field:"ALLOT_ID"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    },    
+                        headerSort:false},
                     {title:"Total Allotment Acres", field:"NtvAllot_TotalAcres", formatter:"money", formatterParams:{
                         precision:1
                     }, topCalc: "sum", topCalcParams:{
@@ -806,7 +874,7 @@ const build_table = (tag, rows_array) => {
                         resizableRows: true,
                         columns:[
                             {title:"Conduction Type", field:"key head"},
-                            {title:"Feet", field: "value head", formatter:"money", formatterParams:{precision:1}}
+                            {title:"Feet", field: "value head", formatter:"money", formatterParams:{precision:0}}
                         ]
                     },    
                         headerSort:false},
@@ -835,7 +903,27 @@ const build_table = (tag, rows_array) => {
                         precision:0,
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
-                    }},                        
+                    }},
+                    {title:"Locations", field:"PowerPlant_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Utility Name", field:"Utility_Name"},
+                            {title:"Sector Name", field:"Sector_Name"},
+                            {title:"Address", field:"Street_Address"},
+                            {title:"Source", field:"PrimSource"},
+                            {title:"Description", field:"tech_desc"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    },    
+                        headerSort:false},
                     {title:"Power Source", field:"PowerPlant_PrimSource_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -887,7 +975,27 @@ const build_table = (tag, rows_array) => {
                         precision:0,
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
-                    }},    
+                    }},
+                    {title:"Locations", field:"ComsTwr_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Type", field:"Type"},
+                            {title:"Details", field:"url", formatter:html_link, formatterParams:{
+                                label:"Go to webpage"
+                            }},
+                            {title:"Comment", field:"Comment"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    },    
+                        headerSort:false},
                     {title:"Site Type", field:"ComsTwr_Type_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -902,26 +1010,9 @@ const build_table = (tag, rows_array) => {
                     }, headerSort:false}
                 ]
             },
-
-            //TODO use nearest feature analysis info
-            {
-                title:"Weather Stations",
-                headerHozAlign:"center",
-                columns:[
-                    {title:"Feature Count", field:"WeatherStation_FeatureCount", formatter:"money", formatterParams:{
-                        precision:0
-                    }, topCalc: "sum", topCalcParams:{
-                        precision:0,
-                    }, topCalcFormatter:"money", topCalcFormatterParams:{
-                        precision:0
-                    }},   
-                    {title:"Station Names", field:"WeatherStation_Name_AttrCount", mutator:object_keys, formatter:"array"}
-                ]
-            },
             {
                 title:"Pipelines",
                 headerHozAlign:"center",
-                
                 columns:[
                     {title:"Total Feet", field:"PipeLine_TotalFeet", formatter:"money", formatterParams:{
                         precision:0
@@ -929,7 +1020,7 @@ const build_table = (tag, rows_array) => {
                         precision:0,
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
-                    }},                   
+                    }},
                     {title:"Feet by Name", field:"PipeLine_Name_FeetSum", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -955,6 +1046,24 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},  
+                    {title:"Locations", field:"PertolTerm_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Company", field:"Company"},
+                            {title:"Site", field:"Site"},
+                            {title:"City", field:"City"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    },    
+                        headerSort:false},
                     {title:"Count by Company", field:"PetrolTerm_Company_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -980,6 +1089,34 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},  
+                    {title:"Locations", field:"AkMine_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Activity Status", field:"ACTIVE", formatter:function(cell, formatterParams, onRendered){
+                                const value = cell.getValue();
+                                if (!["0","1"].includes(value)) {
+                                    return null
+                                }
+                                const alias = (value == "0") ? "Non-active" : "Active";
+                                return alias
+                            }},
+                            {title:"Owner", field:"Note"},
+                            {title:"Mining Type", field:"APMA_TYPE"},
+                            {title:"Explosives on Site", field:"Explosives"},
+                            {title:"Start Year", field:"START_YEAR"},
+                            {title:"Expiration Year", field:"EXPIRATION_YEAR"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    },    
+                        headerSort:false},
                     {title:"Count by Activity Status", field:"AkMine_Active_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -1035,7 +1172,25 @@ const build_table = (tag, rows_array) => {
                         precision:0,
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
-                    }},  
+                    }},
+                    {title:"Locations", field:"Silviculture_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Status", field:"STATUS"},
+                            {title:"Sale Name", field:"SALE_NAME"},
+                            {title:"Total Value", field:"TOTAL_VALUE"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    },    
+                        headerSort:false},
                     {title:"Total Acres", field:"Silviculture_TotalAcres", formatter:"money", formatterParams:{
                         precision:1
                     }, topCalc: "sum", topCalcParams:{
@@ -1076,7 +1231,7 @@ const build_table = (tag, rows_array) => {
                         precision:0,
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
-                    }}, 
+                    }},
                     {title:"Feet by Route Description", field:"Railroad_NetDesc_FeetSum", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -1101,7 +1256,23 @@ const build_table = (tag, rows_array) => {
                         precision:0,
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
-                    }}, 
+                    }},
+                    {title:"Locations", field:"WindTurb_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Project Name", field:"p_name"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    },    
+                        headerSort:false},
                     {title:"Count by Project Name", field:"WindTurb_ProjName_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -1111,31 +1282,6 @@ const build_table = (tag, rows_array) => {
                         resizableRows: true,
                         columns:[
                             {title:"Project Name", field:"key head"},
-                            {title:"Feature Count", field: "value head", formatter:"money", formatterParams:{precision:0}}
-                        ]
-                    }, headerSort:false},
-                ]
-            },
-            {
-                title:"Runways",
-                headerHozAlign:"center",
-                columns:[
-                    {title:"Feature Count", field:"Runway_FeatureCount", formatter:"money", formatterParams:{
-                        precision:0
-                    }, topCalc: "sum", topCalcParams:{
-                        precision:0,
-                    }, topCalcFormatter:"money", topCalcFormatterParams:{
-                        precision:0
-                    }}, 
-                    {title:"Count by Ownership", field:"Runway_Ownership_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
-                        layout: "fitDataStretch",
-                        pagination: "local",
-                        paginationSize: 5, 
-                        paginationCounter: "rows",
-                        movableColumns: true, 
-                        resizableRows: true,
-                        columns:[
-                            {title:"Ownership", field:"key head"},
                             {title:"Feature Count", field: "value head", formatter:"money", formatterParams:{precision:0}}
                         ]
                     }, headerSort:false},

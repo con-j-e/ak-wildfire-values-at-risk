@@ -195,6 +195,7 @@ def main():
         
         fires_bufs_attrs_gdf = format_fields(fires_bufs_attrs_gdf, schema_plan)
 
+        #! if use case for the "popped" and "cutoff" keys pans out, this logic can be made more precise
         # logging warnings if any string value is approaching maximum allowed length
         # this could mean the value has already been truncated, or future truncation is possible
         # use-case is for json serialized field types with somewhat unpredictable content

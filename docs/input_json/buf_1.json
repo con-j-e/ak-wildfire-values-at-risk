@@ -1,5 +1,2991 @@
 [
     {
+        "AkFireRegion": "MSS",
+        "AkFireNumber": "155",
+        "wfigs_IncidentName": "KENNETH",
+        "FireActivityStatus": "Active",
+        "wfigs_GISAcres": 998.7377721741564,
+        "wfigs_MapMethod": "IR Image Interpretation",
+        "wfigs_PolygonDateTime": 1736413200000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1746180900000.0,
+        "wfigs_IrwinID": "{842FB37B-7AC8-4700-BB9C-028BF753D149}",
+        "ReportedAcres": 1052.0,
+        "HasError": 0.0,
+        "DefaultLabel": "155-KENNETH, 1 Mile Buffer",
+        "AnalysisBufferMiles": 1.0,
+        "AkMine_Active_AttrCount": null,
+        "AkMine_Type_AttrCount": null,
+        "AkMine_Note_AttrCount": null,
+        "AkMine_FeatureCount": null,
+        "AkMine_Nearest": null,
+        "AkPowerLine_CondType_FeetSum": [
+            {
+                "key head": "AC; Overhead",
+                "value head": 14701
+            },
+            {
+                "key head": "Transmission",
+                "value head": 4336
+            }
+        ],
+        "AkPowerLine_Voltage_FeetSum": [
+            {
+                "key head": "138",
+                "value head": 19038
+            }
+        ],
+        "AkPowerLine_Nearest": null,
+        "AkPowerLine_TotalFeet": 19038.0,
+        "Runway_FeatureCount": 1.0,
+        "Runway_Nearest": [
+            {
+                "dist_mi": 0.86,
+                "dir": "NW",
+                "lat": "61\u00b0 45.251' N",
+                "lng": "150\u00b0 03.104' W",
+                "runway_id": "13/31",
+                "length": 4400,
+                "surface": "Gravel",
+                "loc_id": "UUO"
+            }
+        ],
+        "Runway_Ownership_AttrCount": [
+            {
+                "key head": "Public",
+                "value head": 1
+            }
+        ],
+        "WeatherStation_Name_AttrCount": {
+            "RAWS": 1
+        },
+        "WeatherStation_FeatureCount": 1.0,
+        "WeatherStation_Nearest": [
+            {
+                "dist_mi": 0.92,
+                "dir": "N",
+                "lat": "61\u00b0 45.540' N",
+                "lng": "150\u00b0 02.999' W",
+                "NAME": "WILLOW",
+                "CODE": "WOWA2",
+                "MESOWESTWEBURL": "https://akff.mesowest.org/tabular/station/#CFFDRS/WOWA2/"
+            }
+        ],
+        "Aksd_MainStruct_AttrSum": null,
+        "Aksd_OtherStruct_AttrSum": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Undesignated",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "RAWS",
+                "value head": 1
+            }
+        ],
+        "Aksd_FeatureCount": 1.0,
+        "Aksd_Nearest": null,
+        "NtvAllot_Status_AcreSum": null,
+        "NtvAllot_FeatureCount": null,
+        "NtvAllot_Nearest": null,
+        "NtvAllot_TotalAcres": null,
+        "ComsTwr_Type_AttrCount": [
+            {
+                "key head": "Microwave Service",
+                "value head": 13
+            },
+            {
+                "key head": "Cellular",
+                "value head": 1
+            },
+            {
+                "key head": "Land Mobile Private",
+                "value head": 1
+            }
+        ],
+        "ComsTwr_FeatureCount": 15.0,
+        "ComsTwr_Nearest": [
+            {
+                "dist_mi": 0.35,
+                "dir": "N",
+                "lat": "61\u00b0 45.835' N",
+                "lng": "150\u00b0 01.433' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=4977394",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.35,
+                "dir": "N",
+                "lat": "61\u00b0 45.835' N",
+                "lng": "150\u00b0 01.433' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=4977393",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.35,
+                "dir": "N",
+                "lat": "61\u00b0 45.835' N",
+                "lng": "150\u00b0 01.433' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3838800",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.35,
+                "dir": "N",
+                "lat": "61\u00b0 45.835' N",
+                "lng": "150\u00b0 01.433' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3815763",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.35,
+                "dir": "N",
+                "lat": "61\u00b0 45.835' N",
+                "lng": "150\u00b0 01.433' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3815764",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.35,
+                "dir": "N",
+                "lat": "61\u00b0 45.833' N",
+                "lng": "150\u00b0 01.433' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1045190",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.35,
+                "dir": "N",
+                "lat": "61\u00b0 45.833' N",
+                "lng": "150\u00b0 01.433' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1009737",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.76,
+                "dir": "SE",
+                "lat": "61\u00b0 44.017' N",
+                "lng": "150\u00b0 02.383' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2779046",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.76,
+                "dir": "SE",
+                "lat": "61\u00b0 44.017' N",
+                "lng": "150\u00b0 02.383' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2779047",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.78,
+                "dir": "SE",
+                "lat": "61\u00b0 44.003' N",
+                "lng": "150\u00b0 02.412' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3914475",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.78,
+                "dir": "SE",
+                "lat": "61\u00b0 44.003' N",
+                "lng": "150\u00b0 02.412' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3914474",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.91,
+                "dir": "SE",
+                "lat": "61\u00b0 43.855' N",
+                "lng": "150\u00b0 02.485' W",
+                "Type": "Cellular",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=13004",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.91,
+                "dir": "SE",
+                "lat": "61\u00b0 43.855' N",
+                "lng": "150\u00b0 02.485' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1050063",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.91,
+                "dir": "SE",
+                "lat": "61\u00b0 43.855' N",
+                "lng": "150\u00b0 02.485' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1050064",
+                "Comment": ""
+            }
+        ],
+        "Community_FeatureCount": 1.0,
+        "Community_Name_AttrCount": {
+            "Willow": 1
+        },
+        "Community_Nearest": [
+            {
+                "dist_mi": 0.57,
+                "dir": "SE",
+                "lat": "61\u00b0 44.641' N",
+                "lng": "150\u00b0 02.730' W",
+                "CommunityName": "Willow"
+            }
+        ],
+        "Jurisd_Unit_AcreSum": [
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 2890.34
+            },
+            {
+                "key head": "Matanuska-Susitna Borough",
+                "value head": 2111.1
+            },
+            {
+                "key head": "Alaska Department of Transportation and Public Facilities",
+                "value head": 582.64
+            },
+            {
+                "key head": "U.S. Postal Service",
+                "value head": 2.16
+            }
+        ],
+        "Jurisd_Owner_AcreSum": {
+            "Private": 2358.76,
+            "County": 2111.1,
+            "State": 1114.21,
+            "OthFed": 2.16
+        },
+        "MgmtOption_AcreSum": {
+            "Critical": 5586.32
+        },
+        "NpsStruct_Use_AttrCount": null,
+        "NpsStruct_Protection_AttrCount": null,
+        "NpsStruct_Rating_AttrCount": null,
+        "NpsStruct_FeatureCount": null,
+        "NpsStruct_Nearest": null,
+        "Parcel_BuildingValue_AttrSum": 50830042.0,
+        "Parcel_FeatureCount": 623.0,
+        "Parcel_LandValue_AttrSum": 16470863.0,
+        "Parcel_Nearest": null,
+        "Parcel_PropType_AcreSum": [
+            {
+                "key head": "PRIVATE",
+                "value head": 2298.54
+            },
+            {
+                "key head": "BOROUGH",
+                "value head": 2042.77
+            },
+            {
+                "key head": "NA",
+                "value head": 520.06
+            },
+            {
+                "key head": "NO DATA",
+                "value head": 413.17
+            },
+            {
+                "key head": "STATE",
+                "value head": 213.36
+            },
+            {
+                "key head": "MENTAL HEALTH",
+                "value head": 72.36
+            },
+            {
+                "key head": "COOPERATIVE",
+                "value head": 23.89
+            },
+            {
+                "key head": "FEDERAL",
+                "value head": 2.16
+            }
+        ],
+        "Parcel_PropUse_AcreSum": [
+            {
+                "key head": "No Data",
+                "value head": 5586.32
+            }
+        ],
+        "Parcel_TotalAcres": 5586.32,
+        "Parcel_TotalValue_AttrSum": 67300905.0,
+        "PetrolTerm_Company_AttrCount": null,
+        "PetrolTerm_FeatureCount": null,
+        "PertolTerm_Nearest": null,
+        "PipeLine_Name_FeetSum": null,
+        "PipeLine_Nearest": null,
+        "PipeLine_TotalFeet": null,
+        "PowerPlant_PrimSource_AttrCount": null,
+        "PowerPlant_UtilName_AttrCount": null,
+        "PowerPlant_FeatureCount": null,
+        "PowerPlant_Nearest": null,
+        "PowerPlant_SectorName_AttrCount": null,
+        "Silviculture_Status_AcreSum": null,
+        "Silviculture_TotalValue_AttrSum": null,
+        "Silviculture_FeatureCount": null,
+        "Silviculture_Nearest": null,
+        "Silviculture_TotalAcres": null,
+        "SpecMgmt_Nearest": null,
+        "Railroad_NetDesc_FeetSum": [
+            {
+                "key head": "Main sub network",
+                "value head": 14109
+            },
+            {
+                "key head": "Non-Mainline Active track",
+                "value head": 7708
+            }
+        ],
+        "Railroad_Nearest": null,
+        "Railroad_TotalFeet": 21818.0,
+        "UsaStruct_OccCls_AttrCount": [
+            {
+                "key head": "Residential",
+                "value head": 129
+            },
+            {
+                "key head": "Commercial",
+                "value head": 24
+            },
+            {
+                "key head": "Utility and Misc",
+                "value head": 14
+            },
+            {
+                "key head": "Unclassified",
+                "value head": 12
+            },
+            {
+                "key head": "Education",
+                "value head": 8
+            },
+            {
+                "key head": "Industrial",
+                "value head": 3
+            },
+            {
+                "key head": "Government",
+                "value head": 2
+            }
+        ],
+        "UsaStruct_PrimOcc_AttrCount": [
+            {
+                "key head": "Single Family Dwelling",
+                "value head": 121
+            },
+            {
+                "key head": "Retail Trade",
+                "value head": 16
+            },
+            {
+                "key head": "Unclassified",
+                "value head": 13
+            },
+            {
+                "key head": "Aviation",
+                "value head": 13
+            },
+            {
+                "key head": "Pre-K - 12 Schools",
+                "value head": 8
+            },
+            {
+                "key head": "Manufactured Home",
+                "value head": 6
+            },
+            {
+                "key head": "Parking",
+                "value head": 6
+            },
+            {
+                "key head": "Light",
+                "value head": 3
+            },
+            {
+                "key head": "Personal and Repair Services",
+                "value head": 2
+            },
+            {
+                "key head": "General Services",
+                "value head": 1
+            },
+            {
+                "key head": "Ground",
+                "value head": 1
+            },
+            {
+                "key head": "Emergency Response",
+                "value head": 1
+            },
+            {
+                "key head": "Multi - Family Dwelling",
+                "value head": 1
+            }
+        ],
+        "UsaStruct_SecOcc_AttrCount": [
+            {
+                "key head": "No Data",
+                "value head": 192
+            }
+        ],
+        "UsaStruct_FeatureCount": 192.0,
+        "UsaStruct_Nearest": null,
+        "WindTurb_FeatureCount": null,
+        "WindTurb_Nearest": null,
+        "WindTurb_ProjName_AttrCount": null,
+        "SpatialInfoType": " 1 Mile Buffer",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:209820.638%2C1314658.793%2C3338,scale:15670",
+        "CpxName": null,
+        "DispatchCenterID": "AKACDC",
+        "PercentContained": 100.0,
+        "PercentPerimeterToBeContained": 100.0,
+        "FireMgmtComplexity": null,
+        "IncidentComplexityLevel": "Type 3 Incident",
+        "EstimatedCostToDate": 0.0,
+        "TotalIncidentPersonnel": 180.0,
+        "POOProtectingAgency": "C&L",
+        "POOJurisdictionalAgency": "C&L",
+        "POOJurisdictionalUnit": "CAVNC",
+        "ICS209ReportDateTime": 1736657227000.0,
+        "ICS209ReportStatus": "F",
+        "IncidentManagementOrganization": "Type 3 IC"
+    },
+    {
+        "AkFireRegion": "FAS",
+        "AkFireNumber": "270",
+        "wfigs_IncidentName": "HUGHES",
+        "FireActivityStatus": "Contained",
+        "wfigs_GISAcres": 10425.343366727768,
+        "wfigs_MapMethod": "IR Image Interpretation",
+        "wfigs_PolygonDateTime": null,
+        "wfigs_ModifiedOnDateTime_dt": 1746180900000.0,
+        "wfigs_IrwinID": "{994072D2-E154-434A-BB95-6F6C94C40829}",
+        "ReportedAcres": 10425.0,
+        "HasError": 0.0,
+        "DefaultLabel": "270-HUGHES, 1 Mile Buffer",
+        "AnalysisBufferMiles": 1.0,
+        "AkMine_Active_AttrCount": [
+            {
+                "key head": "0",
+                "value head": 1
+            }
+        ],
+        "AkMine_Type_AttrCount": [
+            {
+                "key head": "HE",
+                "value head": 1
+            }
+        ],
+        "AkMine_Note_AttrCount": [
+            {
+                "key head": "Bluestone Resources (Alaska) Inc.",
+                "value head": 1
+            }
+        ],
+        "AkMine_FeatureCount": 1.0,
+        "AkMine_Nearest": [
+            {
+                "dist_mi": 0.27,
+                "dir": "E",
+                "lat": "64\u00b0 25.553' N",
+                "lng": "146\u00b0 39.193' W",
+                "ACTIVE": 0,
+                "APMA_TYPE": "HE",
+                "NOTE": "Bluestone Resources (Alaska) Inc.",
+                "Explosives": 0.0,
+                "START_YEAR": 2011,
+                "EXPIRATION_YEAR": 2019
+            }
+        ],
+        "AkPowerLine_CondType_FeetSum": [
+            {
+                "key head": "OH Primary 25KV",
+                "value head": 19748
+            },
+            {
+                "key head": "OH Secondary",
+                "value head": 3109
+            }
+        ],
+        "AkPowerLine_Voltage_FeetSum": [
+            {
+                "key head": "25",
+                "value head": 19748
+            },
+            {
+                "key head": "120/240",
+                "value head": 3109
+            }
+        ],
+        "AkPowerLine_Nearest": null,
+        "AkPowerLine_TotalFeet": 22858.0,
+        "Runway_FeatureCount": null,
+        "Runway_Nearest": null,
+        "Runway_Ownership_AttrCount": null,
+        "WeatherStation_Name_AttrCount": null,
+        "WeatherStation_FeatureCount": null,
+        "WeatherStation_Nearest": null,
+        "Aksd_MainStruct_AttrSum": 28.0,
+        "Aksd_OtherStruct_AttrSum": 34.0,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Undesignated",
+                "value head": 26
+            },
+            {
+                "key head": "Avoid",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Structure",
+                "value head": 26
+            },
+            {
+                "key head": "Other",
+                "value head": 1
+            }
+        ],
+        "Aksd_FeatureCount": 27.0,
+        "Aksd_Nearest": null,
+        "NtvAllot_Status_AcreSum": null,
+        "NtvAllot_FeatureCount": null,
+        "NtvAllot_Nearest": null,
+        "NtvAllot_TotalAcres": null,
+        "ComsTwr_Type_AttrCount": [
+            {
+                "key head": "Land Mobile Private",
+                "value head": 1
+            }
+        ],
+        "ComsTwr_FeatureCount": 1.0,
+        "ComsTwr_Nearest": null,
+        "Community_FeatureCount": null,
+        "Community_Name_AttrCount": null,
+        "Community_Nearest": null,
+        "Jurisd_Unit_AcreSum": [
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 15668.07
+            },
+            {
+                "key head": "Fairbanks North Star Borough",
+                "value head": 3647.33
+            },
+            {
+                "key head": "Fairbanks, City of",
+                "value head": 43.91
+            },
+            {
+                "key head": "Eielson Air Force Base",
+                "value head": 26.59
+            },
+            {
+                "key head": "Alaska Department of Fish and Game",
+                "value head": 12.45
+            }
+        ],
+        "Jurisd_Owner_AcreSum": {
+            "State": 15085.05,
+            "County": 3647.33,
+            "Private": 595.47,
+            "City": 43.91,
+            "DOD": 26.59
+        },
+        "MgmtOption_AcreSum": {
+            "Full": 18743.83,
+            "Critical": 654.52
+        },
+        "NpsStruct_Use_AttrCount": null,
+        "NpsStruct_Protection_AttrCount": null,
+        "NpsStruct_Rating_AttrCount": null,
+        "NpsStruct_FeatureCount": null,
+        "NpsStruct_Nearest": null,
+        "Parcel_BuildingValue_AttrSum": 2355470.0,
+        "Parcel_FeatureCount": 136.0,
+        "Parcel_LandValue_AttrSum": 27789305.0,
+        "Parcel_Nearest": null,
+        "Parcel_PropType_AcreSum": [
+            {
+                "key head": "Tract",
+                "value head": 14913.34
+            },
+            {
+                "key head": "Tax Lot",
+                "value head": 3727.81
+            },
+            {
+                "key head": "Government Lot",
+                "value head": 571.4
+            },
+            {
+                "key head": "Waterway",
+                "value head": 132.45
+            },
+            {
+                "key head": "Roadway",
+                "value head": 43.92
+            },
+            {
+                "key head": "Lot",
+                "value head": 9.43
+            }
+        ],
+        "Parcel_PropUse_AcreSum": [
+            {
+                "key head": "Exempt ",
+                "value head": 18656.17
+            },
+            {
+                "key head": "Residential",
+                "value head": 272.97
+            },
+            {
+                "key head": "Vacant Land",
+                "value head": 248.51
+            },
+            {
+                "key head": "No Data",
+                "value head": 206.06
+            },
+            {
+                "key head": "Recreational",
+                "value head": 12.9
+            },
+            {
+                "key head": "Other (Misc.)",
+                "value head": 1.74
+            }
+        ],
+        "Parcel_TotalAcres": 19398.35,
+        "Parcel_TotalValue_AttrSum": 30144775.0,
+        "PetrolTerm_Company_AttrCount": null,
+        "PetrolTerm_FeatureCount": null,
+        "PertolTerm_Nearest": null,
+        "PipeLine_Name_FeetSum": [
+            {
+                "key head": "HAINES-FAIRBANKS PIPELINE",
+                "value head": 14916
+            }
+        ],
+        "PipeLine_Nearest": null,
+        "PipeLine_TotalFeet": 14916.0,
+        "PowerPlant_PrimSource_AttrCount": null,
+        "PowerPlant_UtilName_AttrCount": null,
+        "PowerPlant_FeatureCount": null,
+        "PowerPlant_Nearest": null,
+        "PowerPlant_SectorName_AttrCount": null,
+        "Silviculture_Status_AcreSum": [
+            {
+                "key head": "Proposed",
+                "value head": 1746.9
+            },
+            {
+                "key head": "Active",
+                "value head": 46.55
+            },
+            {
+                "key head": "OTC",
+                "value head": 43.7
+            }
+        ],
+        "Silviculture_TotalValue_AttrSum": 42780.0,
+        "Silviculture_FeatureCount": 14.0,
+        "Silviculture_Nearest": [
+            {
+                "dist_mi": 0.11,
+                "dir": "SE",
+                "lat": "64\u00b0 24.125' N",
+                "lng": "146\u00b0 44.599' W",
+                "STATUS": "Proposed",
+                "TOTAL_VALUE": "No Data",
+                "SALE_NAME": "Aurora Energy 123"
+            },
+            {
+                "dist_mi": 0.12,
+                "dir": "SE",
+                "lat": "64\u00b0 22.373' N",
+                "lng": "146\u00b0 42.776' W",
+                "STATUS": "Proposed",
+                "TOTAL_VALUE": "No Data",
+                "SALE_NAME": "Mosquito 6 Mile Spruce"
+            },
+            {
+                "dist_mi": 0.32,
+                "dir": "SE",
+                "lat": "64\u00b0 22.429' N",
+                "lng": "146\u00b0 43.695' W",
+                "STATUS": "Proposed",
+                "TOTAL_VALUE": "No Data",
+                "SALE_NAME": "Mosquito 6 Mile Spruce"
+            },
+            {
+                "dist_mi": 0.66,
+                "dir": "N",
+                "lat": "64\u00b0 25.749' N",
+                "lng": "146\u00b0 42.725' W",
+                "STATUS": "Active",
+                "TOTAL_VALUE": 44925.36,
+                "SALE_NAME": "Harding Spruce # 3"
+            },
+            {
+                "dist_mi": 0.73,
+                "dir": "SE",
+                "lat": "64\u00b0 24.523' N",
+                "lng": "146\u00b0 45.815' W",
+                "STATUS": "OTC",
+                "TOTAL_VALUE": 5197.41,
+                "SALE_NAME": "Hard Telling, Not Knowing"
+            },
+            {
+                "dist_mi": 0.76,
+                "dir": "SE",
+                "lat": "64\u00b0 21.190' N",
+                "lng": "146\u00b0 39.808' W",
+                "STATUS": "Proposed",
+                "TOTAL_VALUE": "No Data",
+                "SALE_NAME": "Birch #2"
+            },
+            {
+                "dist_mi": 0.81,
+                "dir": "SE",
+                "lat": "64\u00b0 22.685' N",
+                "lng": "146\u00b0 45.066' W",
+                "STATUS": "Proposed",
+                "TOTAL_VALUE": "No Data",
+                "SALE_NAME": "Mosquito 5 Mile Spruce"
+            },
+            {
+                "dist_mi": 0.95,
+                "dir": "SE",
+                "lat": "64\u00b0 22.274' N",
+                "lng": "146\u00b0 44.919' W",
+                "STATUS": "Proposed",
+                "TOTAL_VALUE": "No Data",
+                "SALE_NAME": "Mosquito 5 Mile Mixed"
+            },
+            {
+                "dist_mi": 0.98,
+                "dir": "SE",
+                "lat": "64\u00b0 23.346' N",
+                "lng": "146\u00b0 37.622' W",
+                "STATUS": "OTC",
+                "TOTAL_VALUE": 14127.62,
+                "SALE_NAME": "Mosquito East"
+            }
+        ],
+        "Silviculture_TotalAcres": 1837.15,
+        "SpecMgmt_Nearest": null,
+        "Railroad_NetDesc_FeetSum": null,
+        "Railroad_Nearest": null,
+        "Railroad_TotalFeet": null,
+        "UsaStruct_OccCls_AttrCount": [
+            {
+                "key head": "Residential",
+                "value head": 21
+            },
+            {
+                "key head": "Unclassified",
+                "value head": 2
+            }
+        ],
+        "UsaStruct_PrimOcc_AttrCount": [
+            {
+                "key head": "Temporary Lodging",
+                "value head": 14
+            },
+            {
+                "key head": "Single Family Dwelling",
+                "value head": 6
+            },
+            {
+                "key head": "Unclassified",
+                "value head": 2
+            },
+            {
+                "key head": "Manufactured Home",
+                "value head": 1
+            }
+        ],
+        "UsaStruct_SecOcc_AttrCount": [
+            {
+                "key head": "No Data",
+                "value head": 23
+            }
+        ],
+        "UsaStruct_FeatureCount": 23.0,
+        "UsaStruct_Nearest": null,
+        "WindTurb_FeatureCount": null,
+        "WindTurb_Nearest": null,
+        "WindTurb_ProjName_AttrCount": null,
+        "SpatialInfoType": " 1 Mile Buffer",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:351299.348%2C1621146.329%2C3338,scale:37913",
+        "CpxName": null,
+        "DispatchCenterID": "AKNFDC",
+        "PercentContained": 100.0,
+        "PercentPerimeterToBeContained": 100.0,
+        "FireMgmtComplexity": "Type 3",
+        "IncidentComplexityLevel": "Type 3 Incident",
+        "EstimatedCostToDate": 20000000.0,
+        "TotalIncidentPersonnel": 169.0,
+        "POOProtectingAgency": "AK-DNR",
+        "POOJurisdictionalAgency": "State of Alaska DNR",
+        "POOJurisdictionalUnit": "AK-DNR",
+        "ICS209ReportDateTime": 1738427153000.0,
+        "ICS209ReportStatus": "F",
+        "IncidentManagementOrganization": "Type 3 IC"
+    },
+    {
+        "AkFireRegion": "KKS",
+        "AkFireNumber": "024",
+        "wfigs_IncidentName": "LAC-000024",
+        "FireActivityStatus": "Active",
+        "wfigs_GISAcres": null,
+        "wfigs_MapMethod": null,
+        "wfigs_PolygonDateTime": null,
+        "wfigs_ModifiedOnDateTime_dt": 1746177300000.0,
+        "wfigs_IrwinID": "{CCAC6093-E772-4936-B59C-3F02EBBF4326}",
+        "ReportedAcres": 20.0,
+        "HasError": 0.0,
+        "DefaultLabel": "024-LAC-000024, 1 Mile Buffer",
+        "AnalysisBufferMiles": 1.0,
+        "AkMine_Active_AttrCount": null,
+        "AkMine_Type_AttrCount": null,
+        "AkMine_Note_AttrCount": null,
+        "AkMine_FeatureCount": null,
+        "AkMine_Nearest": null,
+        "AkPowerLine_CondType_FeetSum": [
+            {
+                "key head": "AC; Overhead",
+                "value head": 18597
+            },
+            {
+                "key head": "Overhead",
+                "value head": 1619
+            }
+        ],
+        "AkPowerLine_Voltage_FeetSum": [
+            {
+                "key head": "115",
+                "value head": 18597
+            },
+            {
+                "key head": "No Data",
+                "value head": 1619
+            }
+        ],
+        "AkPowerLine_Nearest": null,
+        "AkPowerLine_TotalFeet": 20217.0,
+        "Runway_FeatureCount": null,
+        "Runway_Nearest": null,
+        "Runway_Ownership_AttrCount": null,
+        "WeatherStation_Name_AttrCount": null,
+        "WeatherStation_FeatureCount": null,
+        "WeatherStation_Nearest": null,
+        "Aksd_MainStruct_AttrSum": null,
+        "Aksd_OtherStruct_AttrSum": null,
+        "Aksd_Protection_AttrCount": null,
+        "Aksd_SiteCat_AttrCount": null,
+        "Aksd_FeatureCount": null,
+        "Aksd_Nearest": null,
+        "NtvAllot_Status_AcreSum": {
+            "Restricted": 0.03
+        },
+        "NtvAllot_FeatureCount": 1.0,
+        "NtvAllot_Nearest": [
+            {
+                "dist_mi": 0.99,
+                "dir": "E",
+                "lat": "60\u00b0 28.615' N",
+                "lng": "150\u00b0 59.947' W",
+                "ALLOT_STATUS": "Restricted",
+                "ALLOT_ID": "975AA417"
+            }
+        ],
+        "NtvAllot_TotalAcres": 0.03,
+        "ComsTwr_Type_AttrCount": null,
+        "ComsTwr_FeatureCount": null,
+        "ComsTwr_Nearest": null,
+        "Community_FeatureCount": null,
+        "Community_Name_AttrCount": null,
+        "Community_Nearest": null,
+        "Jurisd_Unit_AcreSum": [
+            {
+                "key head": "Kenai National Wildlife Refuge",
+                "value head": 1820.45
+            },
+            {
+                "key head": "Salamatof Native Association, Incorporated",
+                "value head": 262.59
+            },
+            {
+                "key head": "Soldotna, City of",
+                "value head": 208.41
+            },
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 136.75
+            },
+            {
+                "key head": "Native Allotments",
+                "value head": 0.03
+            }
+        ],
+        "Jurisd_Owner_AcreSum": {
+            "USFWS": 1820.45,
+            "ANCSA": 262.59,
+            "City": 208.41,
+            "Private": 113.72,
+            "State": 23.04,
+            "BIA": 0.03
+        },
+        "MgmtOption_AcreSum": {
+            "Full": 2139.98,
+            "Critical": 288.26
+        },
+        "NpsStruct_Use_AttrCount": null,
+        "NpsStruct_Protection_AttrCount": null,
+        "NpsStruct_Rating_AttrCount": null,
+        "NpsStruct_FeatureCount": null,
+        "NpsStruct_Nearest": null,
+        "Parcel_BuildingValue_AttrSum": 10498421.0,
+        "Parcel_FeatureCount": 159.0,
+        "Parcel_LandValue_AttrSum": 7456851.0,
+        "Parcel_Nearest": null,
+        "Parcel_PropType_AcreSum": [
+            {
+                "key head": "Federal",
+                "value head": 1808.0
+            },
+            {
+                "key head": "Native",
+                "value head": 245.92
+            },
+            {
+                "key head": "Municipal",
+                "value head": 209.34
+            },
+            {
+                "key head": "Private",
+                "value head": 113.56
+            },
+            {
+                "key head": "State",
+                "value head": 9.06
+            },
+            {
+                "key head": "Native Allotment",
+                "value head": 0.02
+            }
+        ],
+        "Parcel_PropUse_AcreSum": [
+            {
+                "key head": "Vacant",
+                "value head": 2103.34
+            },
+            {
+                "key head": "Institutional",
+                "value head": 120.86
+            },
+            {
+                "key head": "Industrial",
+                "value head": 74.07
+            },
+            {
+                "key head": "Residential",
+                "value head": 63.14
+            },
+            {
+                "key head": "Commercial",
+                "value head": 20.62
+            },
+            {
+                "key head": "Accessory Building",
+                "value head": 3.87
+            }
+        ],
+        "Parcel_TotalAcres": 2385.91,
+        "Parcel_TotalValue_AttrSum": 17955273.0,
+        "PetrolTerm_Company_AttrCount": null,
+        "PetrolTerm_FeatureCount": null,
+        "PertolTerm_Nearest": null,
+        "PipeLine_Name_FeetSum": null,
+        "PipeLine_Nearest": null,
+        "PipeLine_TotalFeet": null,
+        "PowerPlant_PrimSource_AttrCount": null,
+        "PowerPlant_UtilName_AttrCount": null,
+        "PowerPlant_FeatureCount": null,
+        "PowerPlant_Nearest": null,
+        "PowerPlant_SectorName_AttrCount": null,
+        "Silviculture_Status_AcreSum": null,
+        "Silviculture_TotalValue_AttrSum": null,
+        "Silviculture_FeatureCount": null,
+        "Silviculture_Nearest": null,
+        "Silviculture_TotalAcres": null,
+        "SpecMgmt_Nearest": null,
+        "Railroad_NetDesc_FeetSum": null,
+        "Railroad_Nearest": null,
+        "Railroad_TotalFeet": null,
+        "UsaStruct_OccCls_AttrCount": [
+            {
+                "key head": "Residential",
+                "value head": 35
+            },
+            {
+                "key head": "Unclassified",
+                "value head": 1
+            }
+        ],
+        "UsaStruct_PrimOcc_AttrCount": [
+            {
+                "key head": "Single Family Dwelling",
+                "value head": 34
+            },
+            {
+                "key head": "Unclassified",
+                "value head": 1
+            },
+            {
+                "key head": "Institutional Dormitory",
+                "value head": 1
+            }
+        ],
+        "UsaStruct_SecOcc_AttrCount": [
+            {
+                "key head": "No Data",
+                "value head": 36
+            }
+        ],
+        "UsaStruct_FeatureCount": 36.0,
+        "UsaStruct_Nearest": null,
+        "WindTurb_FeatureCount": null,
+        "WindTurb_Nearest": null,
+        "WindTurb_ProjName_AttrCount": null,
+        "SpatialInfoType": " 1 Mile Buffer",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:163616.988%2C1167744.511%2C3338,scale:8839",
+        "CpxName": null,
+        "DispatchCenterID": "AKACDC",
+        "PercentContained": null,
+        "PercentPerimeterToBeContained": null,
+        "FireMgmtComplexity": null,
+        "IncidentComplexityLevel": null,
+        "EstimatedCostToDate": null,
+        "TotalIncidentPersonnel": null,
+        "POOProtectingAgency": "C&L",
+        "POOJurisdictionalAgency": null,
+        "POOJurisdictionalUnit": null,
+        "ICS209ReportDateTime": null,
+        "ICS209ReportStatus": null,
+        "IncidentManagementOrganization": null
+    },
+    {
+        "AkFireRegion": "CALAC",
+        "AkFireNumber": "633",
+        "wfigs_IncidentName": "HURST",
+        "FireActivityStatus": "Active",
+        "wfigs_GISAcres": null,
+        "wfigs_MapMethod": null,
+        "wfigs_PolygonDateTime": null,
+        "wfigs_ModifiedOnDateTime_dt": 1746177300000.0,
+        "wfigs_IrwinID": "{9DAE615E-B4F6-451C-B5A2-AAC79AC2C735}",
+        "ReportedAcres": 0.01,
+        "HasError": 0.0,
+        "DefaultLabel": "633-HURST, 1 Mile Buffer",
+        "AnalysisBufferMiles": 1.0,
+        "AkMine_Active_AttrCount": null,
+        "AkMine_Type_AttrCount": null,
+        "AkMine_Note_AttrCount": null,
+        "AkMine_FeatureCount": null,
+        "AkMine_Nearest": null,
+        "AkPowerLine_CondType_FeetSum": null,
+        "AkPowerLine_Voltage_FeetSum": null,
+        "AkPowerLine_Nearest": null,
+        "AkPowerLine_TotalFeet": null,
+        "Runway_FeatureCount": null,
+        "Runway_Nearest": null,
+        "Runway_Ownership_AttrCount": null,
+        "WeatherStation_Name_AttrCount": null,
+        "WeatherStation_FeatureCount": null,
+        "WeatherStation_Nearest": null,
+        "Aksd_MainStruct_AttrSum": null,
+        "Aksd_OtherStruct_AttrSum": null,
+        "Aksd_Protection_AttrCount": null,
+        "Aksd_SiteCat_AttrCount": null,
+        "Aksd_FeatureCount": null,
+        "Aksd_Nearest": null,
+        "NtvAllot_Status_AcreSum": null,
+        "NtvAllot_FeatureCount": null,
+        "NtvAllot_Nearest": null,
+        "NtvAllot_TotalAcres": null,
+        "ComsTwr_Type_AttrCount": null,
+        "ComsTwr_FeatureCount": null,
+        "ComsTwr_Nearest": null,
+        "Community_FeatureCount": null,
+        "Community_Name_AttrCount": null,
+        "Community_Nearest": null,
+        "Jurisd_Unit_AcreSum": [
+            {
+                "key head": "Ahtna, Incorporated",
+                "value head": 1865.91
+            },
+            {
+                "key head": "Glennallen Field Office",
+                "value head": 150.44
+            }
+        ],
+        "Jurisd_Owner_AcreSum": {
+            "ANCSA": 1865.91,
+            "BLM": 150.44
+        },
+        "MgmtOption_AcreSum": {
+            "Critical": 1822.04,
+            "Modified (Sep 30)": 194.31
+        },
+        "NpsStruct_Use_AttrCount": null,
+        "NpsStruct_Protection_AttrCount": null,
+        "NpsStruct_Rating_AttrCount": null,
+        "NpsStruct_FeatureCount": null,
+        "NpsStruct_Nearest": null,
+        "Parcel_BuildingValue_AttrSum": null,
+        "Parcel_FeatureCount": null,
+        "Parcel_LandValue_AttrSum": null,
+        "Parcel_Nearest": null,
+        "Parcel_PropType_AcreSum": null,
+        "Parcel_PropUse_AcreSum": null,
+        "Parcel_TotalAcres": null,
+        "Parcel_TotalValue_AttrSum": null,
+        "PetrolTerm_Company_AttrCount": null,
+        "PetrolTerm_FeatureCount": null,
+        "PertolTerm_Nearest": null,
+        "PipeLine_Name_FeetSum": [
+            {
+                "key head": "TRANS-ALASKA PIPELINE",
+                "value head": 10409
+            }
+        ],
+        "PipeLine_Nearest": null,
+        "PipeLine_TotalFeet": 10409.0,
+        "PowerPlant_PrimSource_AttrCount": null,
+        "PowerPlant_UtilName_AttrCount": null,
+        "PowerPlant_FeatureCount": null,
+        "PowerPlant_Nearest": null,
+        "PowerPlant_SectorName_AttrCount": null,
+        "Silviculture_Status_AcreSum": null,
+        "Silviculture_TotalValue_AttrSum": null,
+        "Silviculture_FeatureCount": null,
+        "Silviculture_Nearest": null,
+        "Silviculture_TotalAcres": null,
+        "SpecMgmt_Nearest": null,
+        "Railroad_NetDesc_FeetSum": null,
+        "Railroad_Nearest": null,
+        "Railroad_TotalFeet": null,
+        "UsaStruct_OccCls_AttrCount": null,
+        "UsaStruct_PrimOcc_AttrCount": null,
+        "UsaStruct_SecOcc_AttrCount": null,
+        "UsaStruct_FeatureCount": null,
+        "UsaStruct_Nearest": null,
+        "WindTurb_FeatureCount": null,
+        "WindTurb_Nearest": null,
+        "WindTurb_ProjName_AttrCount": null,
+        "SpatialInfoType": " 1 Mile Buffer",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:433626.959%2C1419567.253%2C3338,scale:8054",
+        "CpxName": null,
+        "DispatchCenterID": "AKACDC",
+        "PercentContained": null,
+        "PercentPerimeterToBeContained": null,
+        "FireMgmtComplexity": null,
+        "IncidentComplexityLevel": null,
+        "EstimatedCostToDate": null,
+        "TotalIncidentPersonnel": null,
+        "POOProtectingAgency": "C&L",
+        "POOJurisdictionalAgency": null,
+        "POOJurisdictionalUnit": null,
+        "ICS209ReportDateTime": null,
+        "ICS209ReportStatus": null,
+        "IncidentManagementOrganization": null
+    },
+    {
+        "AkFireRegion": "FAS",
+        "AkFireNumber": "200",
+        "wfigs_IncidentName": "LAC-016200",
+        "FireActivityStatus": "Active",
+        "wfigs_GISAcres": null,
+        "wfigs_MapMethod": null,
+        "wfigs_PolygonDateTime": null,
+        "wfigs_ModifiedOnDateTime_dt": 1746177300000.0,
+        "wfigs_IrwinID": "{22F91EC7-FCF0-4C26-A1E4-2AAC53C7754A}",
+        "ReportedAcres": 0.01,
+        "HasError": 0.0,
+        "DefaultLabel": "200-LAC-016200, 1 Mile Buffer",
+        "AnalysisBufferMiles": 1.0,
+        "AkMine_Active_AttrCount": null,
+        "AkMine_Type_AttrCount": null,
+        "AkMine_Note_AttrCount": null,
+        "AkMine_FeatureCount": null,
+        "AkMine_Nearest": null,
+        "AkPowerLine_CondType_FeetSum": [
+            {
+                "key head": "OH Primary 25KV",
+                "value head": 8673
+            },
+            {
+                "key head": "OH Secondary",
+                "value head": 2070
+            }
+        ],
+        "AkPowerLine_Voltage_FeetSum": [
+            {
+                "key head": "25",
+                "value head": 8673
+            },
+            {
+                "key head": "120/240",
+                "value head": 1431
+            },
+            {
+                "key head": "120/208",
+                "value head": 638
+            }
+        ],
+        "AkPowerLine_Nearest": null,
+        "AkPowerLine_TotalFeet": 10743.0,
+        "Runway_FeatureCount": 4.0,
+        "Runway_Nearest": [
+            {
+                "dist_mi": 0.27,
+                "dir": "N",
+                "lat": "63\u00b0 44.306' N",
+                "lng": "148\u00b0 52.905' W",
+                "runway_id": "H4",
+                "length": 20,
+                "surface": "Wood",
+                "loc_id": "7AK7"
+            },
+            {
+                "dist_mi": 0.27,
+                "dir": "N",
+                "lat": "63\u00b0 44.306' N",
+                "lng": "148\u00b0 52.905' W",
+                "runway_id": "H3",
+                "length": 20,
+                "surface": "Wood",
+                "loc_id": "7AK7"
+            },
+            {
+                "dist_mi": 0.27,
+                "dir": "N",
+                "lat": "63\u00b0 44.306' N",
+                "lng": "148\u00b0 52.905' W",
+                "runway_id": "H2",
+                "length": 20,
+                "surface": "Wood",
+                "loc_id": "7AK7"
+            },
+            {
+                "dist_mi": 0.27,
+                "dir": "N",
+                "lat": "63\u00b0 44.306' N",
+                "lng": "148\u00b0 52.905' W",
+                "runway_id": "H1",
+                "length": 20,
+                "surface": "Wood",
+                "loc_id": "7AK7"
+            }
+        ],
+        "Runway_Ownership_AttrCount": [
+            {
+                "key head": "Private",
+                "value head": 4
+            }
+        ],
+        "WeatherStation_Name_AttrCount": {
+            "RAWS": 1
+        },
+        "WeatherStation_FeatureCount": 1.0,
+        "WeatherStation_Nearest": [
+            {
+                "dist_mi": 0.72,
+                "dir": "SE",
+                "lat": "63\u00b0 44.124' N",
+                "lng": "148\u00b0 53.932' W",
+                "NAME": "DENALI VISITOR CENTER",
+                "CODE": "DVCA2",
+                "MESOWESTWEBURL": "https://akff.mesowest.org/tabular/station/#CFFDRS/DVCA2/"
+            }
+        ],
+        "Aksd_MainStruct_AttrSum": null,
+        "Aksd_OtherStruct_AttrSum": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "No Protection",
+                "value head": 2
+            },
+            {
+                "key head": "Undesignated",
+                "value head": 1
+            },
+            {
+                "key head": "Full",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Structure",
+                "value head": 3
+            },
+            {
+                "key head": "RAWS",
+                "value head": 1
+            }
+        ],
+        "Aksd_FeatureCount": 4.0,
+        "Aksd_Nearest": null,
+        "NtvAllot_Status_AcreSum": null,
+        "NtvAllot_FeatureCount": null,
+        "NtvAllot_Nearest": null,
+        "NtvAllot_TotalAcres": null,
+        "ComsTwr_Type_AttrCount": [
+            {
+                "key head": "Land Mobile Private",
+                "value head": 4
+            },
+            {
+                "key head": "Microwave Service",
+                "value head": 4
+            },
+            {
+                "key head": "Cellular",
+                "value head": 2
+            }
+        ],
+        "ComsTwr_FeatureCount": 10.0,
+        "ComsTwr_Nearest": [
+            {
+                "dist_mi": 0.37,
+                "dir": "NW",
+                "lat": "63\u00b0 44.285' N",
+                "lng": "148\u00b0 53.165' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3598008",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.62,
+                "dir": "N",
+                "lat": "63\u00b0 44.567' N",
+                "lng": "148\u00b0 53.263' W",
+                "Type": "Cellular",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=11529",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.62,
+                "dir": "N",
+                "lat": "63\u00b0 44.573' N",
+                "lng": "148\u00b0 53.245' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3815957",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.62,
+                "dir": "N",
+                "lat": "63\u00b0 44.557' N",
+                "lng": "148\u00b0 53.293' W",
+                "Type": "Cellular",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=12485",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.68,
+                "dir": "N",
+                "lat": "63\u00b0 44.545' N",
+                "lng": "148\u00b0 53.483' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3815957",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.82,
+                "dir": "NE",
+                "lat": "63\u00b0 44.823' N",
+                "lng": "148\u00b0 53.005' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1053658",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.82,
+                "dir": "NE",
+                "lat": "63\u00b0 44.822' N",
+                "lng": "148\u00b0 53.005' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1009667",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.82,
+                "dir": "NE",
+                "lat": "63\u00b0 44.822' N",
+                "lng": "148\u00b0 53.005' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1053658",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.82,
+                "dir": "NE",
+                "lat": "63\u00b0 44.823' N",
+                "lng": "148\u00b0 53.005' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1009667",
+                "Comment": ""
+            }
+        ],
+        "Community_FeatureCount": null,
+        "Community_Name_AttrCount": null,
+        "Community_Nearest": null,
+        "Jurisd_Unit_AcreSum": [
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 1455.2
+            },
+            {
+                "key head": "Denali National Park and Preserve",
+                "value head": 551.64
+            },
+            {
+                "key head": "Alaska Department of Transportation and Public Facilities",
+                "value head": 9.52
+            }
+        ],
+        "Jurisd_Owner_AcreSum": {
+            "State": 1350.68,
+            "NPS": 551.64,
+            "Private": 114.04
+        },
+        "MgmtOption_AcreSum": {
+            "Full": 1263.61,
+            "Critical": 746.27,
+            "Limited": 6.47
+        },
+        "NpsStruct_Use_AttrCount": [
+            {
+                "key head": "Private",
+                "value head": 110
+            },
+            {
+                "key head": "Admin",
+                "value head": 16
+            },
+            {
+                "key head": "Public",
+                "value head": 12
+            },
+            {
+                "key head": "No Data",
+                "value head": 2
+            },
+            {
+                "key head": "NotApplicable",
+                "value head": 1
+            },
+            {
+                "key head": "Concession",
+                "value head": 1
+            }
+        ],
+        "NpsStruct_Protection_AttrCount": [
+            {
+                "key head": "Not Designated",
+                "value head": 134
+            },
+            {
+                "key head": "Critical",
+                "value head": 5
+            },
+            {
+                "key head": "Non-Sensitive",
+                "value head": 2
+            },
+            {
+                "key head": "Full",
+                "value head": 1
+            }
+        ],
+        "NpsStruct_Rating_AttrCount": [
+            {
+                "key head": "PVTNotSurveyed",
+                "value head": 110
+            },
+            {
+                "key head": "Moderate",
+                "value head": 21
+            },
+            {
+                "key head": "High",
+                "value head": 9
+            },
+            {
+                "key head": "SRVNotRequired",
+                "value head": 2
+            }
+        ],
+        "NpsStruct_FeatureCount": 142.0,
+        "NpsStruct_Nearest": null,
+        "Parcel_BuildingValue_AttrSum": null,
+        "Parcel_FeatureCount": 40.0,
+        "Parcel_LandValue_AttrSum": null,
+        "Parcel_Nearest": null,
+        "Parcel_PropType_AcreSum": [
+            {
+                "key head": "No Data",
+                "value head": 94.37
+            }
+        ],
+        "Parcel_PropUse_AcreSum": [
+            {
+                "key head": "No Data",
+                "value head": 94.37
+            }
+        ],
+        "Parcel_TotalAcres": 94.37,
+        "Parcel_TotalValue_AttrSum": null,
+        "PetrolTerm_Company_AttrCount": null,
+        "PetrolTerm_FeatureCount": null,
+        "PertolTerm_Nearest": null,
+        "PipeLine_Name_FeetSum": null,
+        "PipeLine_Nearest": null,
+        "PipeLine_TotalFeet": null,
+        "PowerPlant_PrimSource_AttrCount": null,
+        "PowerPlant_UtilName_AttrCount": null,
+        "PowerPlant_FeatureCount": null,
+        "PowerPlant_Nearest": null,
+        "PowerPlant_SectorName_AttrCount": null,
+        "Silviculture_Status_AcreSum": null,
+        "Silviculture_TotalValue_AttrSum": null,
+        "Silviculture_FeatureCount": null,
+        "Silviculture_Nearest": null,
+        "Silviculture_TotalAcres": null,
+        "SpecMgmt_Nearest": null,
+        "Railroad_NetDesc_FeetSum": null,
+        "Railroad_Nearest": null,
+        "Railroad_TotalFeet": null,
+        "UsaStruct_OccCls_AttrCount": [
+            {
+                "key head": "Unclassified",
+                "value head": 58
+            },
+            {
+                "key head": "Residential",
+                "value head": 11
+            }
+        ],
+        "UsaStruct_PrimOcc_AttrCount": [
+            {
+                "key head": "Unclassified",
+                "value head": 67
+            },
+            {
+                "key head": "Single Family Dwelling",
+                "value head": 2
+            }
+        ],
+        "UsaStruct_SecOcc_AttrCount": [
+            {
+                "key head": "No Data",
+                "value head": 69
+            }
+        ],
+        "UsaStruct_FeatureCount": 69.0,
+        "UsaStruct_Nearest": null,
+        "WindTurb_FeatureCount": null,
+        "WindTurb_Nearest": null,
+        "WindTurb_ProjName_AttrCount": null,
+        "SpatialInfoType": " 1 Mile Buffer",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:252395.31%2C1539708.022%2C3338,scale:8054",
+        "CpxName": null,
+        "DispatchCenterID": "AKNFDC",
+        "PercentContained": null,
+        "PercentPerimeterToBeContained": null,
+        "FireMgmtComplexity": null,
+        "IncidentComplexityLevel": null,
+        "EstimatedCostToDate": null,
+        "TotalIncidentPersonnel": null,
+        "POOProtectingAgency": "C&L",
+        "POOJurisdictionalAgency": null,
+        "POOJurisdictionalUnit": null,
+        "ICS209ReportDateTime": null,
+        "ICS209ReportStatus": null,
+        "IncidentManagementOrganization": null
+    },
+    {
+        "AkFireRegion": "CALAC",
+        "AkFireNumber": "582",
+        "wfigs_IncidentName": "GLENDORA",
+        "FireActivityStatus": "Active",
+        "wfigs_GISAcres": null,
+        "wfigs_MapMethod": null,
+        "wfigs_PolygonDateTime": null,
+        "wfigs_ModifiedOnDateTime_dt": 1746177300000.0,
+        "wfigs_IrwinID": "{7B8745AF-295B-4E15-A793-44F465789F7D}",
+        "ReportedAcres": 0.01,
+        "HasError": 0.0,
+        "DefaultLabel": "582-GLENDORA, 1 Mile Buffer",
+        "AnalysisBufferMiles": 1.0,
+        "AkMine_Active_AttrCount": null,
+        "AkMine_Type_AttrCount": null,
+        "AkMine_Note_AttrCount": null,
+        "AkMine_FeatureCount": null,
+        "AkMine_Nearest": null,
+        "AkPowerLine_CondType_FeetSum": [
+            {
+                "key head": "Overhead",
+                "value head": 22380
+            },
+            {
+                "key head": "AC; Overhead",
+                "value head": 11359
+            }
+        ],
+        "AkPowerLine_Voltage_FeetSum": [
+            {
+                "key head": "No Data",
+                "value head": 22380
+            },
+            {
+                "key head": "115",
+                "value head": 11359
+            }
+        ],
+        "AkPowerLine_Nearest": null,
+        "AkPowerLine_TotalFeet": 33740.0,
+        "Runway_FeatureCount": null,
+        "Runway_Nearest": null,
+        "Runway_Ownership_AttrCount": null,
+        "WeatherStation_Name_AttrCount": null,
+        "WeatherStation_FeatureCount": null,
+        "WeatherStation_Nearest": null,
+        "Aksd_MainStruct_AttrSum": null,
+        "Aksd_OtherStruct_AttrSum": null,
+        "Aksd_Protection_AttrCount": null,
+        "Aksd_SiteCat_AttrCount": null,
+        "Aksd_FeatureCount": null,
+        "Aksd_Nearest": null,
+        "NtvAllot_Status_AcreSum": null,
+        "NtvAllot_FeatureCount": null,
+        "NtvAllot_Nearest": null,
+        "NtvAllot_TotalAcres": null,
+        "ComsTwr_Type_AttrCount": null,
+        "ComsTwr_FeatureCount": null,
+        "ComsTwr_Nearest": null,
+        "Community_FeatureCount": null,
+        "Community_Name_AttrCount": null,
+        "Community_Nearest": null,
+        "Jurisd_Unit_AcreSum": [
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 1347.0
+            },
+            {
+                "key head": "University of Alaska",
+                "value head": 380.88
+            },
+            {
+                "key head": "Ninilchik Natives Association, Incorporated",
+                "value head": 140.41
+            },
+            {
+                "key head": "Kenai Peninsula Borough",
+                "value head": 139.39
+            },
+            {
+                "key head": "Cook Inlet Region, Incorporated",
+                "value head": 8.68
+            }
+        ],
+        "Jurisd_Owner_AcreSum": {
+            "Private": 1185.11,
+            "State": 542.77,
+            "ANCSA": 149.09,
+            "County": 139.39
+        },
+        "MgmtOption_AcreSum": {
+            "Critical": 2016.35
+        },
+        "NpsStruct_Use_AttrCount": null,
+        "NpsStruct_Protection_AttrCount": null,
+        "NpsStruct_Rating_AttrCount": null,
+        "NpsStruct_FeatureCount": null,
+        "NpsStruct_Nearest": null,
+        "Parcel_BuildingValue_AttrSum": 7124625.0,
+        "Parcel_FeatureCount": 167.0,
+        "Parcel_LandValue_AttrSum": 5230032.0,
+        "Parcel_Nearest": null,
+        "Parcel_PropType_AcreSum": [
+            {
+                "key head": "Private",
+                "value head": 1185.19
+            },
+            {
+                "key head": "State",
+                "value head": 438.9
+            },
+            {
+                "key head": "Native",
+                "value head": 144.68
+            },
+            {
+                "key head": "Borough",
+                "value head": 138.14
+            }
+        ],
+        "Parcel_PropUse_AcreSum": [
+            {
+                "key head": "Vacant",
+                "value head": 1446.46
+            },
+            {
+                "key head": "Residential",
+                "value head": 307.67
+            },
+            {
+                "key head": "Accessory Building",
+                "value head": 105.53
+            },
+            {
+                "key head": "Commercial",
+                "value head": 47.25
+            }
+        ],
+        "Parcel_TotalAcres": 1906.91,
+        "Parcel_TotalValue_AttrSum": 12354658.0,
+        "PetrolTerm_Company_AttrCount": null,
+        "PetrolTerm_FeatureCount": null,
+        "PertolTerm_Nearest": null,
+        "PipeLine_Name_FeetSum": [
+            {
+                "key head": "KENAI-KACHEMAK PIPELINE",
+                "value head": 8902
+            }
+        ],
+        "PipeLine_Nearest": null,
+        "PipeLine_TotalFeet": 8902.0,
+        "PowerPlant_PrimSource_AttrCount": null,
+        "PowerPlant_UtilName_AttrCount": null,
+        "PowerPlant_FeatureCount": null,
+        "PowerPlant_Nearest": null,
+        "PowerPlant_SectorName_AttrCount": null,
+        "Silviculture_Status_AcreSum": null,
+        "Silviculture_TotalValue_AttrSum": null,
+        "Silviculture_FeatureCount": null,
+        "Silviculture_Nearest": null,
+        "Silviculture_TotalAcres": null,
+        "SpecMgmt_Nearest": null,
+        "Railroad_NetDesc_FeetSum": null,
+        "Railroad_Nearest": null,
+        "Railroad_TotalFeet": null,
+        "UsaStruct_OccCls_AttrCount": [
+            {
+                "key head": "Residential",
+                "value head": 58
+            },
+            {
+                "key head": "Unclassified",
+                "value head": 6
+            },
+            {
+                "key head": "Commercial",
+                "value head": 1
+            }
+        ],
+        "UsaStruct_PrimOcc_AttrCount": [
+            {
+                "key head": "Single Family Dwelling",
+                "value head": 55
+            },
+            {
+                "key head": "Unclassified",
+                "value head": 7
+            },
+            {
+                "key head": "Manufactured Home",
+                "value head": 2
+            },
+            {
+                "key head": "Retail Trade",
+                "value head": 1
+            }
+        ],
+        "UsaStruct_SecOcc_AttrCount": [
+            {
+                "key head": "No Data",
+                "value head": 65
+            }
+        ],
+        "UsaStruct_FeatureCount": 65.0,
+        "UsaStruct_Nearest": null,
+        "WindTurb_FeatureCount": null,
+        "WindTurb_Nearest": null,
+        "WindTurb_ProjName_AttrCount": null,
+        "SpatialInfoType": " 1 Mile Buffer",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:142817.454%2C1136291.728%2C3338,scale:8054",
+        "CpxName": null,
+        "DispatchCenterID": "AKACDC",
+        "PercentContained": null,
+        "PercentPerimeterToBeContained": null,
+        "FireMgmtComplexity": null,
+        "IncidentComplexityLevel": null,
+        "EstimatedCostToDate": null,
+        "TotalIncidentPersonnel": null,
+        "POOProtectingAgency": "C&L",
+        "POOJurisdictionalAgency": null,
+        "POOJurisdictionalUnit": null,
+        "ICS209ReportDateTime": null,
+        "ICS209ReportStatus": null,
+        "IncidentManagementOrganization": null
+    },
+    {
+        "AkFireRegion": "MSS",
+        "AkFireNumber": "005",
+        "wfigs_IncidentName": "OTIS",
+        "FireActivityStatus": "Active",
+        "wfigs_GISAcres": null,
+        "wfigs_MapMethod": null,
+        "wfigs_PolygonDateTime": null,
+        "wfigs_ModifiedOnDateTime_dt": 1746177300000.0,
+        "wfigs_IrwinID": "{B2C3D49C-AA40-49E4-81E1-6EF312A90FD8}",
+        "ReportedAcres": 0.01,
+        "HasError": 0.0,
+        "DefaultLabel": "005-OTIS, 1 Mile Buffer",
+        "AnalysisBufferMiles": 1.0,
+        "AkMine_Active_AttrCount": null,
+        "AkMine_Type_AttrCount": null,
+        "AkMine_Note_AttrCount": null,
+        "AkMine_FeatureCount": null,
+        "AkMine_Nearest": null,
+        "AkPowerLine_CondType_FeetSum": [
+            {
+                "key head": "AC; Overhead",
+                "value head": 5770
+            }
+        ],
+        "AkPowerLine_Voltage_FeetSum": [
+            {
+                "key head": "115",
+                "value head": 5770
+            }
+        ],
+        "AkPowerLine_Nearest": null,
+        "AkPowerLine_TotalFeet": 5770.0,
+        "Runway_FeatureCount": 1.0,
+        "Runway_Nearest": [
+            {
+                "dist_mi": 0.78,
+                "dir": "SE",
+                "lat": "61\u00b0 13.134' N",
+                "lng": "149\u00b0 53.189' W",
+                "runway_id": "H1",
+                "length": 15,
+                "surface": "Wood",
+                "loc_id": "99AA"
+            }
+        ],
+        "Runway_Ownership_AttrCount": [
+            {
+                "key head": "Private",
+                "value head": 1
+            }
+        ],
+        "WeatherStation_Name_AttrCount": null,
+        "WeatherStation_FeatureCount": null,
+        "WeatherStation_Nearest": null,
+        "Aksd_MainStruct_AttrSum": null,
+        "Aksd_OtherStruct_AttrSum": null,
+        "Aksd_Protection_AttrCount": null,
+        "Aksd_SiteCat_AttrCount": null,
+        "Aksd_FeatureCount": null,
+        "Aksd_Nearest": null,
+        "NtvAllot_Status_AcreSum": null,
+        "NtvAllot_FeatureCount": null,
+        "NtvAllot_Nearest": null,
+        "NtvAllot_TotalAcres": null,
+        "ComsTwr_Type_AttrCount": [
+            {
+                "key head": "Land Mobile Private",
+                "value head": 38
+            },
+            {
+                "key head": "Microwave Service",
+                "value head": 35
+            },
+            {
+                "key head": "Land Mobile Commercial",
+                "value head": 1
+            },
+            {
+                "key head": "USFS Communication Sites",
+                "value head": 1
+            },
+            {
+                "key head": "Antenna Structure",
+                "value head": 1
+            }
+        ],
+        "ComsTwr_FeatureCount": 76.0,
+        "ComsTwr_Nearest": [
+            {
+                "dist_mi": 0.05,
+                "dir": "SE",
+                "lat": "61\u00b0 13.737' N",
+                "lng": "149\u00b0 52.712' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2904952",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.05,
+                "dir": "SE",
+                "lat": "61\u00b0 13.742' N",
+                "lng": "149\u00b0 52.713' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3517046",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.06,
+                "dir": "SE",
+                "lat": "61\u00b0 13.750' N",
+                "lng": "149\u00b0 52.732' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1917953",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.06,
+                "dir": "SE",
+                "lat": "61\u00b0 13.750' N",
+                "lng": "149\u00b0 52.732' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2822249",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.06,
+                "dir": "SE",
+                "lat": "61\u00b0 13.750' N",
+                "lng": "149\u00b0 52.732' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1013502",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.06,
+                "dir": "SE",
+                "lat": "61\u00b0 13.750' N",
+                "lng": "149\u00b0 52.732' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=968144",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.06,
+                "dir": "SE",
+                "lat": "61\u00b0 13.750' N",
+                "lng": "149\u00b0 52.732' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1010739",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.13,
+                "dir": "SE",
+                "lat": "61\u00b0 13.667' N",
+                "lng": "149\u00b0 52.765' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2693137",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.13,
+                "dir": "SE",
+                "lat": "61\u00b0 13.717' N",
+                "lng": "149\u00b0 52.848' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1249726",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.18,
+                "dir": "NE",
+                "lat": "61\u00b0 13.900' N",
+                "lng": "149\u00b0 52.497' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3550868",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.18,
+                "dir": "NE",
+                "lat": "61\u00b0 13.900' N",
+                "lng": "149\u00b0 52.493' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3867342",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.18,
+                "dir": "NE",
+                "lat": "61\u00b0 13.900' N",
+                "lng": "149\u00b0 52.493' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=4112680",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.18,
+                "dir": "NE",
+                "lat": "61\u00b0 13.900' N",
+                "lng": "149\u00b0 52.493' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3819192",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.18,
+                "dir": "NE",
+                "lat": "61\u00b0 13.900' N",
+                "lng": "149\u00b0 52.493' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3550866",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.19,
+                "dir": "NE",
+                "lat": "61\u00b0 13.905' N",
+                "lng": "149\u00b0 52.500' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3954806",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.19,
+                "dir": "NE",
+                "lat": "61\u00b0 13.905' N",
+                "lng": "149\u00b0 52.500' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3956544",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.27,
+                "dir": "SE",
+                "lat": "61\u00b0 13.600' N",
+                "lng": "149\u00b0 53.000' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2842929",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.38,
+                "dir": "SE",
+                "lat": "61\u00b0 13.767' N",
+                "lng": "149\u00b0 51.932' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1014284",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.38,
+                "dir": "SE",
+                "lat": "61\u00b0 13.767' N",
+                "lng": "149\u00b0 51.932' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2351812",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.38,
+                "dir": "SE",
+                "lat": "61\u00b0 13.478' N",
+                "lng": "149\u00b0 52.210' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3886371",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.38,
+                "dir": "SE",
+                "lat": "61\u00b0 13.767' N",
+                "lng": "149\u00b0 51.932' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2951558",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.38,
+                "dir": "SE",
+                "lat": "61\u00b0 13.767' N",
+                "lng": "149\u00b0 51.932' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2951557",
+                "Comment": ""
+            }
+        ],
+        "Community_FeatureCount": null,
+        "Community_Name_AttrCount": null,
+        "Community_Nearest": null,
+        "Jurisd_Unit_AcreSum": [
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 651.81
+            },
+            {
+                "key head": "Alaska Department of Transportation and Public Facilities",
+                "value head": 541.37
+            },
+            {
+                "key head": "Joint Base Elmendorf-Richardson",
+                "value head": 460.65
+            },
+            {
+                "key head": "Municipality of Anchorage",
+                "value head": 88.11
+            },
+            {
+                "key head": "U.S. Public Health Service",
+                "value head": 8.56
+            },
+            {
+                "key head": "Eklutna, Incorporated",
+                "value head": 3.26
+            },
+            {
+                "key head": "Unspecified Other Federal",
+                "value head": 0.09
+            }
+        ],
+        "Jurisd_Owner_AcreSum": {
+            "State": 692.43,
+            "Private": 500.75,
+            "DOD": 460.65,
+            "County": 88.11,
+            "OthFed": 8.65,
+            "ANCSA": 3.26
+        },
+        "MgmtOption_AcreSum": {
+            "Critical": 1753.92
+        },
+        "NpsStruct_Use_AttrCount": [
+            {
+                "key head": "Admin",
+                "value head": 2
+            }
+        ],
+        "NpsStruct_Protection_AttrCount": [
+            {
+                "key head": "Critical",
+                "value head": 1
+            },
+            {
+                "key head": "Not Designated",
+                "value head": 1
+            }
+        ],
+        "NpsStruct_Rating_AttrCount": [
+            {
+                "key head": "High",
+                "value head": 1
+            },
+            {
+                "key head": "Moderate",
+                "value head": 1
+            }
+        ],
+        "NpsStruct_FeatureCount": 2.0,
+        "NpsStruct_Nearest": null,
+        "Parcel_BuildingValue_AttrSum": 853583607.0,
+        "Parcel_FeatureCount": 1473.0,
+        "Parcel_LandValue_AttrSum": 445839965.0,
+        "Parcel_Nearest": null,
+        "Parcel_PropType_AcreSum": [
+            {
+                "key head": "Commercial",
+                "value head": 2990.34
+            },
+            {
+                "key head": "No Data",
+                "value head": 218.24
+            },
+            {
+                "key head": "Residential",
+                "value head": 190.41
+            }
+        ],
+        "Parcel_PropUse_AcreSum": [
+            {
+                "key head": "Leasehold Master",
+                "value head": 1047.09
+            },
+            {
+                "key head": "Office Warehouse",
+                "value head": 402.02
+            },
+            {
+                "key head": "Manufacturing/Processing",
+                "value head": 291.85
+            },
+            {
+                "key head": "Warehouse",
+                "value head": 278.21
+            },
+            {
+                "key head": "Vacant Land",
+                "value head": 276.7
+            },
+            {
+                "key head": "Offc Building Low Rise 1-4 Levels",
+                "value head": 245.04
+            },
+            {
+                "key head": "No Data",
+                "value head": 218.24
+            },
+            {
+                "key head": "Parking Misc.",
+                "value head": 174.74
+            },
+            {
+                "key head": "Condominium (Fee Simple)",
+                "value head": 133.52
+            },
+            {
+                "key head": "Research & Developement",
+                "value head": 57.22
+            },
+            {
+                "key head": "Apartment - Garden 1-3 Levels",
+                "value head": 38.79
+            },
+            {
+                "key head": "Single Family",
+                "value head": 29.24
+            },
+            {
+                "key head": "Auto Service Garage",
+                "value head": 22.75
+            },
+            {
+                "key head": "Cultural Facility",
+                "value head": 20.2
+            },
+            {
+                "key head": "Duplex",
+                "value head": 16.44
+            },
+            {
+                "key head": "Retail Single Occupancy",
+                "value head": 15.59
+            },
+            {
+                "key head": "Cemetery",
+                "value head": 14.06
+            },
+            {
+                "key head": "Residential Vacant Land",
+                "value head": 12.44
+            },
+            {
+                "key head": "Truck Terminal",
+                "value head": 10.64
+            },
+            {
+                "key head": "Correctional",
+                "value head": 8.72
+            },
+            {
+                "key head": "Retail Multi Occupancy",
+                "value head": 8.49
+            },
+            {
+                "key head": "Mobile Home Park",
+                "value head": 7.79
+            },
+            {
+                "key head": "Religious",
+                "value head": 5.77
+            },
+            {
+                "key head": "Auto Dealer, Full Service",
+                "value head": 5.71
+            },
+            {
+                "key head": "Residential Struct On Commercial Land",
+                "value head": 5.4
+            },
+            {
+                "key head": "Hotel/Motel - High Rise 5+ Levels",
+                "value head": 5.34
+            },
+            {
+                "key head": "Hotel/Motel - Low Rise 1-4 Levels",
+                "value head": 5.17
+            },
+            {
+                "key head": "Office Building High Rise 5+ Levels",
+                "value head": 4.28
+            },
+            {
+                "key head": "Distribution Warehouse",
+                "value head": 3.23
+            },
+            {
+                "key head": "Restaurant",
+                "value head": 2.87
+            },
+            {
+                "key head": "Parking Garage/Deck",
+                "value head": 2.83
+            },
+            {
+                "key head": "Recreation/Health",
+                "value head": 2.78
+            },
+            {
+                "key head": "Discount Department Store",
+                "value head": 2.2
+            },
+            {
+                "key head": "Regional Shopping Mall",
+                "value head": 2.15
+            },
+            {
+                "key head": "Department Store",
+                "value head": 2.13
+            },
+            {
+                "key head": "Mixed Residential/Commercial",
+                "value head": 1.63
+            },
+            {
+                "key head": "Board/Rooming House",
+                "value head": 1.61
+            },
+            {
+                "key head": "Mini Warehouse",
+                "value head": 1.57
+            },
+            {
+                "key head": "Triplex",
+                "value head": 1.52
+            },
+            {
+                "key head": "Bar/Lounge",
+                "value head": 1.34
+            },
+            {
+                "key head": "Other Improvements",
+                "value head": 1.23
+            },
+            {
+                "key head": "Day Care Center",
+                "value head": 1.15
+            },
+            {
+                "key head": "Police/Fire Station",
+                "value head": 1.06
+            },
+            {
+                "key head": "School",
+                "value head": 1.05
+            },
+            {
+                "key head": "Convience Food Market",
+                "value head": 1.0
+            },
+            {
+                "key head": "Condominium (Common Element)",
+                "value head": 0.99
+            },
+            {
+                "key head": "Apartment - High Rise 4+ Levels",
+                "value head": 0.88
+            },
+            {
+                "key head": "Commercial Shopping Center",
+                "value head": 0.87
+            },
+            {
+                "key head": "Medical Office",
+                "value head": 0.79
+            },
+            {
+                "key head": "Bank",
+                "value head": 0.68
+            },
+            {
+                "key head": "Single Family w/ Accessory Dwelling Unit",
+                "value head": 0.67
+            },
+            {
+                "key head": "Fast Food",
+                "value head": 0.39
+            },
+            {
+                "key head": "Senior Housing",
+                "value head": 0.36
+            },
+            {
+                "key head": "Service Station w/ Bays",
+                "value head": 0.27
+            },
+            {
+                "key head": "4=Plex+",
+                "value head": 0.15
+            },
+            {
+                "key head": "Social/Fraternal Hall",
+                "value head": 0.14
+            }
+        ],
+        "Parcel_TotalAcres": 3399.0,
+        "Parcel_TotalValue_AttrSum": 1299423572.0,
+        "PetrolTerm_Company_AttrCount": [
+            {
+                "key head": "ANDEAVOR LOGISTICS LP",
+                "value head": 2
+            }
+        ],
+        "PetrolTerm_FeatureCount": 2.0,
+        "PertolTerm_Nearest": [
+            {
+                "dist_mi": 0.46,
+                "dir": "NW",
+                "lat": "61\u00b0 13.776' N",
+                "lng": "149\u00b0 53.449' W",
+                "Company": "ANDEAVOR LOGISTICS LP",
+                "Site": "ANCHORAGE T276",
+                "City": "ANCHORAGE"
+            },
+            {
+                "dist_mi": 0.5,
+                "dir": "N",
+                "lat": "61\u00b0 14.138' N",
+                "lng": "149\u00b0 53.001' W",
+                "Company": "ANDEAVOR LOGISTICS LP",
+                "Site": "ANCHORAGE TO22 TERMINAL",
+                "City": "ANCHORAGE"
+            }
+        ],
+        "PipeLine_Name_FeetSum": [
+            {
+                "key head": "NIKISKI ALASKA PIPELINE",
+                "value head": 4824
+            }
+        ],
+        "PipeLine_Nearest": null,
+        "PipeLine_TotalFeet": 4824.0,
+        "PowerPlant_PrimSource_AttrCount": [
+            {
+                "key head": "natural gas",
+                "value head": 1
+            }
+        ],
+        "PowerPlant_UtilName_AttrCount": [
+            {
+                "key head": "Chugach Electric Assn Inc",
+                "value head": 1
+            }
+        ],
+        "PowerPlant_FeatureCount": 1.0,
+        "PowerPlant_Nearest": [
+            {
+                "dist_mi": 0.61,
+                "dir": "SE",
+                "lat": "61\u00b0 13.326' N",
+                "lng": "149\u00b0 51.965' W",
+                "Utility_Name": "Chugach Electric Assn Inc",
+                "Street_Address": "821 E. 1st Ave",
+                "sector_name": "Electric Utility",
+                "PrimSource": "natural gas",
+                "tech_desc": "Natural Gas Fired Combustion Turbine; Petroleum Liquids;"
+            }
+        ],
+        "PowerPlant_SectorName_AttrCount": [
+            {
+                "key head": "Electric Utility",
+                "value head": 1
+            }
+        ],
+        "Silviculture_Status_AcreSum": null,
+        "Silviculture_TotalValue_AttrSum": null,
+        "Silviculture_FeatureCount": null,
+        "Silviculture_Nearest": null,
+        "Silviculture_TotalAcres": null,
+        "SpecMgmt_Nearest": null,
+        "Railroad_NetDesc_FeetSum": [
+            {
+                "key head": "Non-Mainline Active track",
+                "value head": 24898
+            },
+            {
+                "key head": "Main sub network",
+                "value head": 10106
+            }
+        ],
+        "Railroad_Nearest": null,
+        "Railroad_TotalFeet": 35004.0,
+        "UsaStruct_OccCls_AttrCount": [
+            {
+                "key head": "Residential",
+                "value head": 488
+            },
+            {
+                "key head": "Unclassified",
+                "value head": 372
+            },
+            {
+                "key head": "Commercial",
+                "value head": 215
+            },
+            {
+                "key head": "Government",
+                "value head": 191
+            },
+            {
+                "key head": "Industrial",
+                "value head": 77
+            },
+            {
+                "key head": "Education",
+                "value head": 13
+            },
+            {
+                "key head": "Assembly",
+                "value head": 7
+            },
+            {
+                "key head": "Utility and Misc",
+                "value head": 1
+            }
+        ],
+        "UsaStruct_PrimOcc_AttrCount": [
+            {
+                "key head": "Unclassified",
+                "value head": 394
+            },
+            {
+                "key head": "Single Family Dwelling",
+                "value head": 241
+            },
+            {
+                "key head": "Multi - Family Dwelling",
+                "value head": 207
+            },
+            {
+                "key head": "Non-Civilian Structures",
+                "value head": 186
+            },
+            {
+                "key head": "Light",
+                "value head": 74
+            },
+            {
+                "key head": "Professional/Technical Services",
+                "value head": 74
+            },
+            {
+                "key head": "Retail Trade",
+                "value head": 58
+            },
+            {
+                "key head": "Parking",
+                "value head": 38
+            },
+            {
+                "key head": "Personal and Repair Services",
+                "value head": 22
+            },
+            {
+                "key head": "Temporary Lodging",
+                "value head": 15
+            },
+            {
+                "key head": "Entertainment and Recreation",
+                "value head": 11
+            },
+            {
+                "key head": "Pre-K - 12 Schools",
+                "value head": 8
+            },
+            {
+                "key head": "Wholesale Trade",
+                "value head": 7
+            },
+            {
+                "key head": "Medical Office/Clinic",
+                "value head": 4
+            },
+            {
+                "key head": "Other Educational Buildings",
+                "value head": 4
+            },
+            {
+                "key head": "Religious",
+                "value head": 4
+            },
+            {
+                "key head": "Emergency Response",
+                "value head": 3
+            },
+            {
+                "key head": "High Technology",
+                "value head": 3
+            },
+            {
+                "key head": "Community Center",
+                "value head": 3
+            },
+            {
+                "key head": "Nursing Home",
+                "value head": 2
+            },
+            {
+                "key head": "General Services",
+                "value head": 2
+            },
+            {
+                "key head": "Energy Control Monitoring",
+                "value head": 1
+            },
+            {
+                "key head": "Colleges/Universities",
+                "value head": 1
+            },
+            {
+                "key head": "Theaters",
+                "value head": 1
+            },
+            {
+                "key head": "Institutional Dormitory",
+                "value head": 1
+            }
+        ],
+        "UsaStruct_SecOcc_AttrCount": [
+            {
+                "key head": "No Data",
+                "value head": 1364
+            }
+        ],
+        "UsaStruct_FeatureCount": 1364.0,
+        "UsaStruct_Nearest": null,
+        "WindTurb_FeatureCount": null,
+        "WindTurb_Nearest": null,
+        "WindTurb_ProjName_AttrCount": null,
+        "SpatialInfoType": " 1 Mile Buffer",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:220523.205%2C1256614.652%2C3338,scale:8054",
+        "CpxName": null,
+        "DispatchCenterID": "AKACDC",
+        "PercentContained": 0.0,
+        "PercentPerimeterToBeContained": null,
+        "FireMgmtComplexity": null,
+        "IncidentComplexityLevel": null,
+        "EstimatedCostToDate": null,
+        "TotalIncidentPersonnel": null,
+        "POOProtectingAgency": "AK-DNR",
+        "POOJurisdictionalAgency": "State of Alaska DNR",
+        "POOJurisdictionalUnit": "AK-DNR",
+        "ICS209ReportDateTime": null,
+        "ICS209ReportStatus": null,
+        "IncidentManagementOrganization": null
+    },
+    {
+        "AkFireRegion": "FAS",
+        "AkFireNumber": "455",
+        "wfigs_IncidentName": "LAC-043455",
+        "FireActivityStatus": "Active",
+        "wfigs_GISAcres": null,
+        "wfigs_MapMethod": null,
+        "wfigs_PolygonDateTime": null,
+        "wfigs_ModifiedOnDateTime_dt": 1746177300000.0,
+        "wfigs_IrwinID": "{1541B841-A128-4149-8E70-C687F4E193D1}",
+        "ReportedAcres": 0.01,
+        "HasError": 0.0,
+        "DefaultLabel": "455-LAC-043455, 1 Mile Buffer",
+        "AnalysisBufferMiles": 1.0,
+        "AkMine_Active_AttrCount": null,
+        "AkMine_Type_AttrCount": null,
+        "AkMine_Note_AttrCount": null,
+        "AkMine_FeatureCount": null,
+        "AkMine_Nearest": null,
+        "AkPowerLine_CondType_FeetSum": [
+            {
+                "key head": "Transmission",
+                "value head": 9518
+            },
+            {
+                "key head": "OH Secondary",
+                "value head": 37
+            }
+        ],
+        "AkPowerLine_Voltage_FeetSum": [
+            {
+                "key head": "138",
+                "value head": 9518
+            },
+            {
+                "key head": "35",
+                "value head": 37
+            }
+        ],
+        "AkPowerLine_Nearest": null,
+        "AkPowerLine_TotalFeet": 9556.0,
+        "Runway_FeatureCount": null,
+        "Runway_Nearest": null,
+        "Runway_Ownership_AttrCount": null,
+        "WeatherStation_Name_AttrCount": null,
+        "WeatherStation_FeatureCount": null,
+        "WeatherStation_Nearest": null,
+        "Aksd_MainStruct_AttrSum": null,
+        "Aksd_OtherStruct_AttrSum": null,
+        "Aksd_Protection_AttrCount": null,
+        "Aksd_SiteCat_AttrCount": null,
+        "Aksd_FeatureCount": null,
+        "Aksd_Nearest": null,
+        "NtvAllot_Status_AcreSum": null,
+        "NtvAllot_FeatureCount": null,
+        "NtvAllot_Nearest": null,
+        "NtvAllot_TotalAcres": null,
+        "ComsTwr_Type_AttrCount": [
+            {
+                "key head": "Microwave Service",
+                "value head": 3
+            },
+            {
+                "key head": "Land Mobile Private",
+                "value head": 1
+            }
+        ],
+        "ComsTwr_FeatureCount": 4.0,
+        "ComsTwr_Nearest": [
+            {
+                "dist_mi": 0.78,
+                "dir": "SE",
+                "lat": "64\u00b0 03.600' N",
+                "lng": "148\u00b0 53.970' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3390529",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.8,
+                "dir": "SE",
+                "lat": "64\u00b0 03.583' N",
+                "lng": "148\u00b0 53.987' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3222113",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.8,
+                "dir": "SE",
+                "lat": "64\u00b0 03.583' N",
+                "lng": "148\u00b0 53.987' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3390529",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.8,
+                "dir": "SE",
+                "lat": "64\u00b0 03.583' N",
+                "lng": "148\u00b0 53.987' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3390530",
+                "Comment": ""
+            }
+        ],
+        "Community_FeatureCount": null,
+        "Community_Name_AttrCount": null,
+        "Community_Nearest": null,
+        "Jurisd_Unit_AcreSum": [
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 2016.35
+            }
+        ],
+        "Jurisd_Owner_AcreSum": {
+            "State": 2016.35
+        },
+        "MgmtOption_AcreSum": {
+            "Limited": 2016.35
+        },
+        "NpsStruct_Use_AttrCount": null,
+        "NpsStruct_Protection_AttrCount": null,
+        "NpsStruct_Rating_AttrCount": null,
+        "NpsStruct_FeatureCount": null,
+        "NpsStruct_Nearest": null,
+        "Parcel_BuildingValue_AttrSum": null,
+        "Parcel_FeatureCount": null,
+        "Parcel_LandValue_AttrSum": null,
+        "Parcel_Nearest": null,
+        "Parcel_PropType_AcreSum": null,
+        "Parcel_PropUse_AcreSum": null,
+        "Parcel_TotalAcres": null,
+        "Parcel_TotalValue_AttrSum": null,
+        "PetrolTerm_Company_AttrCount": null,
+        "PetrolTerm_FeatureCount": null,
+        "PertolTerm_Nearest": null,
+        "PipeLine_Name_FeetSum": null,
+        "PipeLine_Nearest": null,
+        "PipeLine_TotalFeet": null,
+        "PowerPlant_PrimSource_AttrCount": [
+            {
+                "key head": "wind",
+                "value head": 1
+            }
+        ],
+        "PowerPlant_UtilName_AttrCount": [
+            {
+                "key head": "Golden Valley Elec Assn Inc",
+                "value head": 1
+            }
+        ],
+        "PowerPlant_FeatureCount": 1.0,
+        "PowerPlant_Nearest": [
+            {
+                "dist_mi": 0.88,
+                "dir": "SE",
+                "lat": "64\u00b0 03.500' N",
+                "lng": "148\u00b0 53.998' W",
+                "Utility_Name": "Golden Valley Elec Assn Inc",
+                "Street_Address": "Mile Post 10 Ferry Road",
+                "sector_name": "Electric Utility",
+                "PrimSource": "wind",
+                "tech_desc": "Onshore Wind Turbine"
+            }
+        ],
+        "PowerPlant_SectorName_AttrCount": [
+            {
+                "key head": "Electric Utility",
+                "value head": 1
+            }
+        ],
+        "Silviculture_Status_AcreSum": null,
+        "Silviculture_TotalValue_AttrSum": null,
+        "Silviculture_FeatureCount": null,
+        "Silviculture_Nearest": null,
+        "Silviculture_TotalAcres": null,
+        "SpecMgmt_Nearest": null,
+        "Railroad_NetDesc_FeetSum": null,
+        "Railroad_Nearest": null,
+        "Railroad_TotalFeet": null,
+        "UsaStruct_OccCls_AttrCount": null,
+        "UsaStruct_PrimOcc_AttrCount": null,
+        "UsaStruct_SecOcc_AttrCount": null,
+        "UsaStruct_FeatureCount": null,
+        "UsaStruct_Nearest": null,
+        "WindTurb_FeatureCount": 8.0,
+        "WindTurb_Nearest": [
+            {
+                "dist_mi": 0.57,
+                "dir": "SE",
+                "lat": "64\u00b0 03.702' N",
+                "lng": "148\u00b0 52.613' W",
+                "p_name": "Eva Creek"
+            },
+            {
+                "dist_mi": 0.73,
+                "dir": "NW",
+                "lat": "64\u00b0 04.320' N",
+                "lng": "148\u00b0 54.478' W",
+                "p_name": "Eva Creek"
+            },
+            {
+                "dist_mi": 0.76,
+                "dir": "SE",
+                "lat": "64\u00b0 03.648' N",
+                "lng": "148\u00b0 52.120' W",
+                "p_name": "Eva Creek"
+            },
+            {
+                "dist_mi": 0.77,
+                "dir": "SE",
+                "lat": "64\u00b0 03.486' N",
+                "lng": "148\u00b0 53.104' W",
+                "p_name": "Eva Creek"
+            },
+            {
+                "dist_mi": 0.78,
+                "dir": "SE",
+                "lat": "64\u00b0 03.510' N",
+                "lng": "148\u00b0 53.597' W",
+                "p_name": "Eva Creek"
+            },
+            {
+                "dist_mi": 0.86,
+                "dir": "SE",
+                "lat": "64\u00b0 03.600' N",
+                "lng": "148\u00b0 54.227' W",
+                "p_name": "Eva Creek"
+            },
+            {
+                "dist_mi": 0.9,
+                "dir": "SE",
+                "lat": "64\u00b0 03.768' N",
+                "lng": "148\u00b0 51.527' W",
+                "p_name": "Eva Creek"
+            },
+            {
+                "dist_mi": 0.98,
+                "dir": "SE",
+                "lat": "64\u00b0 03.702' N",
+                "lng": "148\u00b0 54.737' W",
+                "p_name": "Eva Creek"
+            }
+        ],
+        "WindTurb_ProjName_AttrCount": [
+            {
+                "key head": "Eva Creek",
+                "value head": 8
+            }
+        ],
+        "SpatialInfoType": " 1 Mile Buffer",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:249067.031%2C1576802.536%2C3338,scale:8054",
+        "CpxName": null,
+        "DispatchCenterID": "AKNFDC",
+        "PercentContained": null,
+        "PercentPerimeterToBeContained": null,
+        "FireMgmtComplexity": null,
+        "IncidentComplexityLevel": null,
+        "EstimatedCostToDate": null,
+        "TotalIncidentPersonnel": null,
+        "POOProtectingAgency": "C&L",
+        "POOJurisdictionalAgency": null,
+        "POOJurisdictionalUnit": null,
+        "ICS209ReportDateTime": null,
+        "ICS209ReportStatus": null,
+        "IncidentManagementOrganization": null
+    },
+    {
         "AkFireRegion": "CRS",
         "AkFireNumber": "738",
         "wfigs_IncidentName": "Palisades",
@@ -7,7 +2993,7 @@
         "wfigs_GISAcres": 23448.0,
         "wfigs_MapMethod": "IR Image Interpretation",
         "wfigs_PolygonDateTime": 1736314304000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1748769300000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1746177300000.0,
         "wfigs_IrwinID": "{A7EA5D21-F882-44B8-BF64-44AB11059DC1}",
         "ReportedAcres": 23448.0,
         "HasError": 0.0,
@@ -22,29 +3008,8 @@
         "AkPowerLine_Voltage_FeetSum": null,
         "AkPowerLine_Nearest": null,
         "AkPowerLine_TotalFeet": null,
-        "Roads_Nearest": null,
         "Runway_FeatureCount": 3.0,
         "Runway_Nearest": [
-            {
-                "dist_mi": 0.83,
-                "dir": "Interior",
-                "lat": "62\u00b0 19.282' N",
-                "lng": "150\u00b0 05.563' W",
-                "runway_id": "01/19",
-                "length": 3500,
-                "surface": "Concrete",
-                "loc_id": "TKA"
-            },
-            {
-                "dist_mi": 0.07,
-                "dir": "Interior",
-                "lat": "62\u00b0 19.136' N",
-                "lng": "150\u00b0 06.969' W",
-                "runway_id": "16/34",
-                "length": 1600,
-                "surface": "Gravel",
-                "loc_id": "AK44"
-            },
             {
                 "dist_mi": 0.43,
                 "dir": "SE",
@@ -70,17 +3035,7 @@
             "ASOS/AWOS": 1
         },
         "WeatherStation_FeatureCount": 1.0,
-        "WeatherStation_Nearest": [
-            {
-                "dist_mi": 0.8,
-                "dir": "Interior",
-                "lat": "62\u00b0 19.236' N",
-                "lng": "150\u00b0 05.615' W",
-                "NAME": "TALKEETNA",
-                "CODE": "PATK",
-                "MESOWESTWEBURL": "https://akff.mesowest.org/tabular/station/#CFFDRS/PATK/"
-            }
-        ],
+        "WeatherStation_Nearest": null,
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
         "Aksd_Protection_AttrCount": [
@@ -120,192 +3075,12 @@
             }
         ],
         "ComsTwr_FeatureCount": 19.0,
-        "ComsTwr_Nearest": [
-            {
-                "dist_mi": 0.81,
-                "dir": "Interior",
-                "lat": "62\u00b0 18.278' N",
-                "lng": "150\u00b0 05.513' W",
-                "Type": "Cellular",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=13004",
-                "Comment": ""
-            },
-            {
-                "dist_mi": 0.81,
-                "dir": "Interior",
-                "lat": "62\u00b0 18.278' N",
-                "lng": "150\u00b0 05.513' W",
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3811788",
-                "Comment": ""
-            },
-            {
-                "dist_mi": 0.81,
-                "dir": "Interior",
-                "lat": "62\u00b0 18.278' N",
-                "lng": "150\u00b0 05.513' W",
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3811789",
-                "Comment": ""
-            },
-            {
-                "dist_mi": 0.79,
-                "dir": "Interior",
-                "lat": "62\u00b0 19.320' N",
-                "lng": "150\u00b0 05.618' W",
-                "Type": "Land Mobile Private",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1201093",
-                "Comment": ""
-            },
-            {
-                "dist_mi": 0.79,
-                "dir": "Interior",
-                "lat": "62\u00b0 18.020' N",
-                "lng": "150\u00b0 05.718' W",
-                "Type": "Land Mobile Private",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1189033",
-                "Comment": ""
-            },
-            {
-                "dist_mi": 0.79,
-                "dir": "Interior",
-                "lat": "62\u00b0 18.020' N",
-                "lng": "150\u00b0 05.718' W",
-                "Type": "Land Mobile Private",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=4223770",
-                "Comment": ""
-            },
-            {
-                "dist_mi": 0.53,
-                "dir": "Interior",
-                "lat": "62\u00b0 18.953' N",
-                "lng": "150\u00b0 06.177' W",
-                "Type": "Land Mobile Private",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3776409",
-                "Comment": ""
-            },
-            {
-                "dist_mi": 0.38,
-                "dir": "Interior",
-                "lat": "62\u00b0 18.137' N",
-                "lng": "150\u00b0 06.468' W",
-                "Type": "Land Mobile Private",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1259337",
-                "Comment": ""
-            },
-            {
-                "dist_mi": 0.38,
-                "dir": "Interior",
-                "lat": "62\u00b0 19.122' N",
-                "lng": "150\u00b0 06.402' W",
-                "Type": "Land Mobile Private",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3472996",
-                "Comment": ""
-            },
-            {
-                "dist_mi": 0.29,
-                "dir": "Interior",
-                "lat": "62\u00b0 19.248' N",
-                "lng": "150\u00b0 06.573' W",
-                "Type": "Antenna Structure",
-                "url": "https://wireless2.fcc.gov/UlsApp/AsrSearch/asrRegistration.jsp?regKey=2689972",
-                "Comment": ""
-            },
-            {
-                "dist_mi": 0.27,
-                "dir": "Interior",
-                "lat": "62\u00b0 19.420' N",
-                "lng": "150\u00b0 06.620' W",
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2359484",
-                "Comment": ""
-            },
-            {
-                "dist_mi": 0.27,
-                "dir": "Interior",
-                "lat": "62\u00b0 19.420' N",
-                "lng": "150\u00b0 06.620' W",
-                "Type": "Land Mobile Private",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3531613",
-                "Comment": ""
-            },
-            {
-                "dist_mi": 0.27,
-                "dir": "Interior",
-                "lat": "62\u00b0 19.420' N",
-                "lng": "150\u00b0 06.620' W",
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1010740",
-                "Comment": ""
-            },
-            {
-                "dist_mi": 0.25,
-                "dir": "Interior",
-                "lat": "62\u00b0 15.715' N",
-                "lng": "150\u00b0 04.698' W",
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=4109479",
-                "Comment": ""
-            },
-            {
-                "dist_mi": 0.25,
-                "dir": "Interior",
-                "lat": "62\u00b0 15.715' N",
-                "lng": "150\u00b0 04.698' W",
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=4109474",
-                "Comment": ""
-            },
-            {
-                "dist_mi": 0.24,
-                "dir": "Interior",
-                "lat": "62\u00b0 19.318' N",
-                "lng": "150\u00b0 06.652' W",
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1001108",
-                "Comment": ""
-            },
-            {
-                "dist_mi": 0.24,
-                "dir": "Interior",
-                "lat": "62\u00b0 19.318' N",
-                "lng": "150\u00b0 06.652' W",
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=997107",
-                "Comment": ""
-            },
-            {
-                "dist_mi": 0.04,
-                "dir": "Interior",
-                "lat": "62\u00b0 19.287' N",
-                "lng": "150\u00b0 07.035' W",
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1168954",
-                "Comment": ""
-            },
-            {
-                "dist_mi": 0.04,
-                "dir": "Interior",
-                "lat": "62\u00b0 19.287' N",
-                "lng": "150\u00b0 07.035' W",
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1169050",
-                "Comment": ""
-            }
-        ],
+        "ComsTwr_Nearest": null,
         "Community_FeatureCount": 1.0,
         "Community_Name_AttrCount": {
             "Talkeetna": 1
         },
-        "Community_Nearest": [
-            {
-                "dist_mi": 0.21,
-                "dir": "Interior",
-                "lat": "62\u00b0 19.390' N",
-                "lng": "150\u00b0 06.719' W",
-                "CommunityName": "Talkeetna"
-            }
-        ],
+        "Community_Nearest": null,
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
@@ -617,18 +3392,18 @@
         "IncidentManagementOrganization": "Type 3 Team"
     },
     {
-        "AkFireRegion": "MSS",
-        "AkFireNumber": "155",
-        "wfigs_IncidentName": "KENNETH",
+        "AkFireRegion": "CALAC",
+        "AkFireNumber": "087",
+        "wfigs_IncidentName": "EATON",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 998.7377721741564,
-        "wfigs_MapMethod": "IR Image Interpretation",
-        "wfigs_PolygonDateTime": 1736413200000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1746180900000.0,
-        "wfigs_IrwinID": "{842FB37B-7AC8-4700-BB9C-028BF753D149}",
-        "ReportedAcres": 1052.0,
+        "wfigs_GISAcres": 14021.108712251096,
+        "wfigs_MapMethod": "Mixed Methods",
+        "wfigs_PolygonDateTime": null,
+        "wfigs_ModifiedOnDateTime_dt": 1746177300000.0,
+        "wfigs_IrwinID": "{72660ADC-B5EF-4D96-A33F-B4EA3740A4E3}",
+        "ReportedAcres": 14021.0,
         "HasError": 0.0,
-        "DefaultLabel": "155-KENNETH, 1 Mile Buffer",
+        "DefaultLabel": "087-EATON, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
         "AkMine_Active_AttrCount": null,
         "AkMine_Type_AttrCount": null,
@@ -637,320 +3412,111 @@
         "AkMine_Nearest": null,
         "AkPowerLine_CondType_FeetSum": [
             {
-                "key head": "AC; Overhead",
-                "value head": 14701
+                "key head": "OH Primary 25KV",
+                "value head": 15962
             },
             {
-                "key head": "Transmission",
-                "value head": 4336
+                "key head": "OH Secondary",
+                "value head": 669
             }
         ],
         "AkPowerLine_Voltage_FeetSum": [
             {
-                "key head": "138",
-                "value head": 19038
+                "key head": "25",
+                "value head": 15962
+            },
+            {
+                "key head": "120/240",
+                "value head": 669
             }
         ],
         "AkPowerLine_Nearest": null,
-        "AkPowerLine_TotalFeet": 19038.0,
-        "Roads_Nearest": null,
-        "Runway_FeatureCount": 1.0,
-        "Runway_Nearest": [
-            {
-                "runway_id": "13/31",
-                "length": 4400,
-                "surface": "Gravel",
-                "loc_id": "UUO",
-                "dist_mi": 0.86,
-                "dir": "NW",
-                "lat": "61\u00b0 45.251' N",
-                "lng": "150\u00b0 03.104' W"
-            }
-        ],
-        "Runway_Ownership_AttrCount": [
-            {
-                "key head": "Public",
-                "value head": 1
-            }
-        ],
-        "WeatherStation_Name_AttrCount": {
-            "RAWS": 1
-        },
-        "WeatherStation_FeatureCount": 1.0,
-        "WeatherStation_Nearest": [
-            {
-                "NAME": "WILLOW",
-                "CODE": "WOWA2",
-                "MESOWESTWEBURL": "https://akff.mesowest.org/tabular/station/#CFFDRS/WOWA2/",
-                "dist_mi": 0.92,
-                "dir": "N",
-                "lat": "61\u00b0 45.540' N",
-                "lng": "150\u00b0 02.999' W"
-            }
-        ],
-        "Aksd_MainStruct_AttrSum": null,
-        "Aksd_OtherStruct_AttrSum": null,
+        "AkPowerLine_TotalFeet": 16631.0,
+        "Runway_FeatureCount": null,
+        "Runway_Nearest": null,
+        "Runway_Ownership_AttrCount": null,
+        "WeatherStation_Name_AttrCount": null,
+        "WeatherStation_FeatureCount": null,
+        "WeatherStation_Nearest": null,
+        "Aksd_MainStruct_AttrSum": 44.0,
+        "Aksd_OtherStruct_AttrSum": 56.0,
         "Aksd_Protection_AttrCount": [
             {
+                "key head": "Full",
+                "value head": 31
+            },
+            {
                 "key head": "Undesignated",
-                "value head": 1
+                "value head": 29
             }
         ],
         "Aksd_SiteCat_AttrCount": [
             {
-                "key head": "RAWS",
+                "key head": "Structure",
+                "value head": 52
+            },
+            {
+                "key head": "Other",
+                "value head": 7
+            },
+            {
+                "key head": "Mining",
                 "value head": 1
             }
         ],
-        "Aksd_FeatureCount": 1.0,
+        "Aksd_FeatureCount": 60.0,
         "Aksd_Nearest": null,
         "NtvAllot_Status_AcreSum": null,
         "NtvAllot_FeatureCount": null,
         "NtvAllot_Nearest": null,
         "NtvAllot_TotalAcres": null,
-        "ComsTwr_Type_AttrCount": [
-            {
-                "key head": "Microwave Service",
-                "value head": 13
-            },
-            {
-                "key head": "Cellular",
-                "value head": 1
-            },
-            {
-                "key head": "Land Mobile Private",
-                "value head": 1
-            }
-        ],
-        "ComsTwr_FeatureCount": 15.0,
-        "ComsTwr_Nearest": [
-            {
-                "Type": "Land Mobile Private",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1195718",
-                "Comment": "",
-                "dist_mi": 0.28,
-                "dir": "SE",
-                "lat": "61\u00b0 45.468' N",
-                "lng": "150\u00b0 00.467' W"
-            },
-            {
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=4977394",
-                "Comment": "",
-                "dist_mi": 0.35,
-                "dir": "N",
-                "lat": "61\u00b0 45.835' N",
-                "lng": "150\u00b0 01.433' W"
-            },
-            {
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=4977393",
-                "Comment": "",
-                "dist_mi": 0.35,
-                "dir": "N",
-                "lat": "61\u00b0 45.835' N",
-                "lng": "150\u00b0 01.433' W"
-            },
-            {
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3838800",
-                "Comment": "",
-                "dist_mi": 0.35,
-                "dir": "N",
-                "lat": "61\u00b0 45.835' N",
-                "lng": "150\u00b0 01.433' W"
-            },
-            {
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3815763",
-                "Comment": "",
-                "dist_mi": 0.35,
-                "dir": "N",
-                "lat": "61\u00b0 45.835' N",
-                "lng": "150\u00b0 01.433' W"
-            },
-            {
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3815764",
-                "Comment": "",
-                "dist_mi": 0.35,
-                "dir": "N",
-                "lat": "61\u00b0 45.835' N",
-                "lng": "150\u00b0 01.433' W"
-            },
-            {
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1045190",
-                "Comment": "",
-                "dist_mi": 0.35,
-                "dir": "N",
-                "lat": "61\u00b0 45.833' N",
-                "lng": "150\u00b0 01.433' W"
-            },
-            {
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1009737",
-                "Comment": "",
-                "dist_mi": 0.35,
-                "dir": "N",
-                "lat": "61\u00b0 45.833' N",
-                "lng": "150\u00b0 01.433' W"
-            },
-            {
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2779046",
-                "Comment": "",
-                "dist_mi": 0.76,
-                "dir": "SE",
-                "lat": "61\u00b0 44.017' N",
-                "lng": "150\u00b0 02.383' W"
-            },
-            {
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2779047",
-                "Comment": "",
-                "dist_mi": 0.76,
-                "dir": "SE",
-                "lat": "61\u00b0 44.017' N",
-                "lng": "150\u00b0 02.383' W"
-            },
-            {
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3914475",
-                "Comment": "",
-                "dist_mi": 0.78,
-                "dir": "SE",
-                "lat": "61\u00b0 44.003' N",
-                "lng": "150\u00b0 02.412' W"
-            },
-            {
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3914474",
-                "Comment": "",
-                "dist_mi": 0.78,
-                "dir": "SE",
-                "lat": "61\u00b0 44.003' N",
-                "lng": "150\u00b0 02.412' W"
-            },
-            {
-                "Type": "Cellular",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=13004",
-                "Comment": "",
-                "dist_mi": 0.91,
-                "dir": "SE",
-                "lat": "61\u00b0 43.855' N",
-                "lng": "150\u00b0 02.485' W"
-            },
-            {
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1050063",
-                "Comment": "",
-                "dist_mi": 0.91,
-                "dir": "SE",
-                "lat": "61\u00b0 43.855' N",
-                "lng": "150\u00b0 02.485' W"
-            },
-            {
-                "Type": "Microwave Service",
-                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1050064",
-                "Comment": "",
-                "dist_mi": 0.91,
-                "dir": "SE",
-                "lat": "61\u00b0 43.855' N",
-                "lng": "150\u00b0 02.485' W"
-            }
-        ],
-        "Community_FeatureCount": 1.0,
-        "Community_Name_AttrCount": {
-            "Willow": 1
-        },
-        "Community_Nearest": [
-            {
-                "CommunityName": "Willow",
-                "dist_mi": 0.57,
-                "dir": "SE",
-                "lat": "61\u00b0 44.641' N",
-                "lng": "150\u00b0 02.730' W"
-            }
-        ],
+        "ComsTwr_Type_AttrCount": null,
+        "ComsTwr_FeatureCount": null,
+        "ComsTwr_Nearest": null,
+        "Community_FeatureCount": null,
+        "Community_Name_AttrCount": null,
+        "Community_Nearest": null,
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 2890.34
+                "value head": 25049.32
             },
             {
-                "key head": "Matanuska-Susitna Borough",
-                "value head": 2111.1
-            },
-            {
-                "key head": "Alaska Department of Transportation and Public Facilities",
-                "value head": 582.64
-            },
-            {
-                "key head": "U.S. Postal Service",
-                "value head": 2.16
+                "key head": "Denali Borough",
+                "value head": 68.25
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "Private": 2358.76,
-            "County": 2111.1,
-            "State": 1114.21,
-            "OthFed": 2.16
+            "State": 18156.85,
+            "Private": 6892.47,
+            "County": 68.25
         },
         "MgmtOption_AcreSum": {
-            "Critical": 5586.32
+            "Full": 25117.57
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
         "NpsStruct_Rating_AttrCount": null,
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Nearest": null,
-        "Parcel_BuildingValue_AttrSum": 50830042.0,
-        "Parcel_FeatureCount": 623.0,
-        "Parcel_LandValue_AttrSum": 16470863.0,
+        "Parcel_BuildingValue_AttrSum": null,
+        "Parcel_FeatureCount": 141.0,
+        "Parcel_LandValue_AttrSum": null,
         "Parcel_Nearest": null,
         "Parcel_PropType_AcreSum": [
             {
-                "key head": "PRIVATE",
-                "value head": 2298.54
-            },
-            {
-                "key head": "BOROUGH",
-                "value head": 2042.77
-            },
-            {
-                "key head": "NA",
-                "value head": 520.06
-            },
-            {
-                "key head": "NO DATA",
-                "value head": 413.17
-            },
-            {
-                "key head": "STATE",
-                "value head": 213.36
-            },
-            {
-                "key head": "MENTAL HEALTH",
-                "value head": 72.36
-            },
-            {
-                "key head": "COOPERATIVE",
-                "value head": 23.89
-            },
-            {
-                "key head": "FEDERAL",
-                "value head": 2.16
+                "key head": "No Data",
+                "value head": 5546.55
             }
         ],
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "No Data",
-                "value head": 5586.32
+                "value head": 5546.55
             }
         ],
-        "Parcel_TotalAcres": 5586.32,
-        "Parcel_TotalValue_AttrSum": 67300905.0,
+        "Parcel_TotalAcres": 5546.55,
+        "Parcel_TotalValue_AttrSum": null,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PertolTerm_Nearest": null,
@@ -968,128 +3534,305 @@
         "Silviculture_Nearest": null,
         "Silviculture_TotalAcres": null,
         "SpecMgmt_Nearest": null,
-        "Railroad_NetDesc_FeetSum": [
-            {
-                "key head": "Main sub network",
-                "value head": 14109
-            },
-            {
-                "key head": "Non-Mainline Active track",
-                "value head": 7708
-            }
-        ],
+        "Railroad_NetDesc_FeetSum": null,
         "Railroad_Nearest": null,
-        "Railroad_TotalFeet": 21818.0,
+        "Railroad_TotalFeet": null,
         "UsaStruct_OccCls_AttrCount": [
             {
-                "key head": "Residential",
-                "value head": 129
-            },
-            {
-                "key head": "Commercial",
-                "value head": 24
-            },
-            {
-                "key head": "Utility and Misc",
-                "value head": 14
-            },
-            {
                 "key head": "Unclassified",
-                "value head": 12
+                "value head": 23
             },
             {
-                "key head": "Education",
-                "value head": 8
-            },
-            {
-                "key head": "Industrial",
-                "value head": 3
-            },
-            {
-                "key head": "Government",
-                "value head": 2
+                "key head": "Residential",
+                "value head": 16
             }
         ],
         "UsaStruct_PrimOcc_AttrCount": [
             {
-                "key head": "Single Family Dwelling",
-                "value head": 121
-            },
-            {
-                "key head": "Retail Trade",
-                "value head": 16
-            },
-            {
                 "key head": "Unclassified",
-                "value head": 13
+                "value head": 24
             },
             {
-                "key head": "Aviation",
-                "value head": 13
-            },
-            {
-                "key head": "Pre-K - 12 Schools",
-                "value head": 8
-            },
-            {
-                "key head": "Manufactured Home",
-                "value head": 6
-            },
-            {
-                "key head": "Parking",
-                "value head": 6
-            },
-            {
-                "key head": "Light",
-                "value head": 3
-            },
-            {
-                "key head": "Personal and Repair Services",
-                "value head": 2
-            },
-            {
-                "key head": "General Services",
-                "value head": 1
-            },
-            {
-                "key head": "Ground",
-                "value head": 1
-            },
-            {
-                "key head": "Emergency Response",
-                "value head": 1
-            },
-            {
-                "key head": "Multi - Family Dwelling",
-                "value head": 1
+                "key head": "Single Family Dwelling",
+                "value head": 15
             }
         ],
         "UsaStruct_SecOcc_AttrCount": [
             {
                 "key head": "No Data",
-                "value head": 192
+                "value head": 39
             }
         ],
-        "UsaStruct_FeatureCount": 192.0,
+        "UsaStruct_FeatureCount": 39.0,
         "UsaStruct_Nearest": null,
         "WindTurb_FeatureCount": null,
         "WindTurb_Nearest": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:209820.638%2C1314658.793%2C3338,scale:15670",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:224034.839%2C1592646.001%2C3338,scale:49892",
         "CpxName": null,
-        "DispatchCenterID": "AKACDC",
+        "DispatchCenterID": "AKNFDC",
         "PercentContained": 100.0,
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
-        "IncidentComplexityLevel": "Type 3 Incident",
-        "EstimatedCostToDate": 0.0,
-        "TotalIncidentPersonnel": 180.0,
+        "IncidentComplexityLevel": "Type 4 Incident",
+        "EstimatedCostToDate": 96100000.0,
+        "TotalIncidentPersonnel": 33.0,
         "POOProtectingAgency": "C&L",
-        "POOJurisdictionalAgency": "C&L",
-        "POOJurisdictionalUnit": "CAVNC",
-        "ICS209ReportDateTime": 1736657227000.0,
+        "POOJurisdictionalAgency": null,
+        "POOJurisdictionalUnit": null,
+        "ICS209ReportDateTime": 1738340902000.0,
         "ICS209ReportStatus": "F",
-        "IncidentManagementOrganization": "Type 3 IC"
+        "IncidentManagementOrganization": "Type 4 IC"
+    },
+    {
+        "AkFireRegion": "CALFD",
+        "AkFireNumber": "294",
+        "wfigs_IncidentName": "HURST",
+        "FireActivityStatus": "Active",
+        "wfigs_GISAcres": 799.8176376199292,
+        "wfigs_MapMethod": "Mixed Methods",
+        "wfigs_PolygonDateTime": null,
+        "wfigs_ModifiedOnDateTime_dt": 1746177300000.0,
+        "wfigs_IrwinID": "{F4E810AD-CDF3-4ED4-B63F-03D43785BA7B}",
+        "ReportedAcres": 799.0,
+        "HasError": 0.0,
+        "DefaultLabel": "294-HURST, 1 Mile Buffer",
+        "AnalysisBufferMiles": 1.0,
+        "AkMine_Active_AttrCount": null,
+        "AkMine_Type_AttrCount": null,
+        "AkMine_Note_AttrCount": null,
+        "AkMine_FeatureCount": null,
+        "AkMine_Nearest": null,
+        "AkPowerLine_CondType_FeetSum": null,
+        "AkPowerLine_Voltage_FeetSum": null,
+        "AkPowerLine_Nearest": null,
+        "AkPowerLine_TotalFeet": null,
+        "Runway_FeatureCount": null,
+        "Runway_Nearest": null,
+        "Runway_Ownership_AttrCount": null,
+        "WeatherStation_Name_AttrCount": null,
+        "WeatherStation_FeatureCount": null,
+        "WeatherStation_Nearest": null,
+        "Aksd_MainStruct_AttrSum": 7.0,
+        "Aksd_OtherStruct_AttrSum": 11.0,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Undesignated",
+                "value head": 19
+            },
+            {
+                "key head": "No Protection",
+                "value head": 2
+            },
+            {
+                "key head": "Critical",
+                "value head": 2
+            },
+            {
+                "key head": "Full",
+                "value head": 2
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Structure",
+                "value head": 25
+            }
+        ],
+        "Aksd_FeatureCount": 25.0,
+        "Aksd_Nearest": null,
+        "NtvAllot_Status_AcreSum": {
+            "Restricted": 94.32
+        },
+        "NtvAllot_FeatureCount": 1.0,
+        "NtvAllot_Nearest": [
+            {
+                "dist_mi": 0.62,
+                "dir": "NE",
+                "lat": "62\u00b0 31.754' N",
+                "lng": "145\u00b0 31.801' W",
+                "ALLOT_STATUS": "Restricted",
+                "ALLOT_ID": "976F13814"
+            }
+        ],
+        "NtvAllot_TotalAcres": 94.32,
+        "ComsTwr_Type_AttrCount": [
+            {
+                "key head": "Microwave Service",
+                "value head": 5
+            },
+            {
+                "key head": "Land Mobile Private",
+                "value head": 1
+            }
+        ],
+        "ComsTwr_FeatureCount": 6.0,
+        "ComsTwr_Nearest": [
+            {
+                "dist_mi": 0.51,
+                "dir": "N",
+                "lat": "62\u00b0 31.535' N",
+                "lng": "145\u00b0 32.720' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=4937557",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.51,
+                "dir": "N",
+                "lat": "62\u00b0 31.535' N",
+                "lng": "145\u00b0 32.720' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=4937559",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.56,
+                "dir": "N",
+                "lat": "62\u00b0 31.590' N",
+                "lng": "145\u00b0 32.732' W",
+                "Type": "Land Mobile Private",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2654028",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.56,
+                "dir": "N",
+                "lat": "62\u00b0 31.590' N",
+                "lng": "145\u00b0 32.732' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1011427",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.56,
+                "dir": "N",
+                "lat": "62\u00b0 31.590' N",
+                "lng": "145\u00b0 32.730' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=965908",
+                "Comment": ""
+            },
+            {
+                "dist_mi": 0.56,
+                "dir": "N",
+                "lat": "62\u00b0 31.590' N",
+                "lng": "145\u00b0 32.730' W",
+                "Type": "Microwave Service",
+                "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1011426",
+                "Comment": ""
+            }
+        ],
+        "Community_FeatureCount": null,
+        "Community_Name_AttrCount": null,
+        "Community_Nearest": null,
+        "Jurisd_Unit_AcreSum": [
+            {
+                "key head": "Ahtna, Incorporated",
+                "value head": 2689.97
+            },
+            {
+                "key head": "Glennallen Field Office",
+                "value head": 2044.35
+            },
+            {
+                "key head": "Native Allotments",
+                "value head": 94.32
+            },
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 88.44
+            }
+        ],
+        "Jurisd_Owner_AcreSum": {
+            "ANCSA": 2689.97,
+            "BLM": 2044.35,
+            "BIA": 94.32,
+            "Private": 88.08,
+            "State": 0.36
+        },
+        "MgmtOption_AcreSum": {
+            "Critical": 2432.09,
+            "Modified (Sep 30)": 2390.67,
+            "Full": 94.32
+        },
+        "NpsStruct_Use_AttrCount": null,
+        "NpsStruct_Protection_AttrCount": null,
+        "NpsStruct_Rating_AttrCount": null,
+        "NpsStruct_FeatureCount": null,
+        "NpsStruct_Nearest": null,
+        "Parcel_BuildingValue_AttrSum": null,
+        "Parcel_FeatureCount": null,
+        "Parcel_LandValue_AttrSum": null,
+        "Parcel_Nearest": null,
+        "Parcel_PropType_AcreSum": null,
+        "Parcel_PropUse_AcreSum": null,
+        "Parcel_TotalAcres": null,
+        "Parcel_TotalValue_AttrSum": null,
+        "PetrolTerm_Company_AttrCount": null,
+        "PetrolTerm_FeatureCount": null,
+        "PertolTerm_Nearest": null,
+        "PipeLine_Name_FeetSum": [
+            {
+                "key head": "TRANS-ALASKA PIPELINE",
+                "value head": 18552
+            }
+        ],
+        "PipeLine_Nearest": null,
+        "PipeLine_TotalFeet": 18552.0,
+        "PowerPlant_PrimSource_AttrCount": null,
+        "PowerPlant_UtilName_AttrCount": null,
+        "PowerPlant_FeatureCount": null,
+        "PowerPlant_Nearest": null,
+        "PowerPlant_SectorName_AttrCount": null,
+        "Silviculture_Status_AcreSum": null,
+        "Silviculture_TotalValue_AttrSum": null,
+        "Silviculture_FeatureCount": null,
+        "Silviculture_Nearest": null,
+        "Silviculture_TotalAcres": null,
+        "SpecMgmt_Nearest": null,
+        "Railroad_NetDesc_FeetSum": null,
+        "Railroad_Nearest": null,
+        "Railroad_TotalFeet": null,
+        "UsaStruct_OccCls_AttrCount": [
+            {
+                "key head": "Unclassified",
+                "value head": 10
+            }
+        ],
+        "UsaStruct_PrimOcc_AttrCount": [
+            {
+                "key head": "Unclassified",
+                "value head": 10
+            }
+        ],
+        "UsaStruct_SecOcc_AttrCount": [
+            {
+                "key head": "No Data",
+                "value head": 10
+            }
+        ],
+        "UsaStruct_FeatureCount": 10.0,
+        "UsaStruct_Nearest": null,
+        "WindTurb_FeatureCount": null,
+        "WindTurb_Nearest": null,
+        "WindTurb_ProjName_AttrCount": null,
+        "SpatialInfoType": " 1 Mile Buffer",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:433416.91%2C1420581.985%2C3338,scale:13703",
+        "CpxName": null,
+        "DispatchCenterID": null,
+        "PercentContained": null,
+        "PercentPerimeterToBeContained": null,
+        "FireMgmtComplexity": null,
+        "IncidentComplexityLevel": null,
+        "EstimatedCostToDate": null,
+        "TotalIncidentPersonnel": null,
+        "POOProtectingAgency": null,
+        "POOJurisdictionalAgency": null,
+        "POOJurisdictionalUnit": null,
+        "ICS209ReportDateTime": null,
+        "ICS209ReportStatus": null,
+        "IncidentManagementOrganization": null
     }
 ]
