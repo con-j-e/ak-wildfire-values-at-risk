@@ -254,7 +254,10 @@ def main():
         }
 
         # 1/1/2025
-        query_epoch_milliseconds = 1735693200000
+        #-query_epoch_milliseconds = 1735693200000
+
+        # 5/3/2025
+        query_epoch_milliseconds = 1746230400000
 
         irwins_with_errors = set()
 
@@ -321,7 +324,8 @@ def main():
         nearest_feats_fields = [col for col in akdof_perims_locs_gdf.columns if col.endswith('_Nearest')]
         nearest_feats_df = akdof_perims_locs_gdf[nearest_feats_fields + ['wfigs_IrwinID']].copy()
         nearest_feats_df[nearest_feats_fields] = nearest_feats_df[nearest_feats_fields].map(
-            lambda x: json.loads(x)['features'] if x != '!error!' else x,
+            #-lambda x: json.loads(x)['features'] if x != '!error!' else x,
+            lambda x: json.loads(x) if x != '!error!' else x,
             na_action='ignore'
         )
         nearest_feats_df.set_index('wfigs_IrwinID', inplace=True)
@@ -349,11 +353,15 @@ def main():
             # Criteria for this is their distance from the fires edge is less than or equal
             # to the hosted service AnalysisBufferMiles attribute
             buf_dist_nearest_feats_df = buf_dist_nearest_feats_df.map(
-                lambda x: [feat for feat in x if feat['dist_mi'] <= buf_dist] if x not in ('!error!','wfigs_IrwinID') else x,
+                lambda x: {
+                    'features': [feat for feat in x['features'] if feat['dist_mi'] <= buf_dist],
+                    'popped': x['popped'],
+                    'cutoff': x['cutoff']
+                 } if x not in ('!error!','wfigs_IrwinID') else x,
                 na_action='ignore'
             )
             buf_dist_nearest_feats_df = buf_dist_nearest_feats_df.map(
-                lambda x: None if x == [] else x,
+                lambda x: None if x['features'] == [] else x,
                 na_action='ignore'
             )
 
@@ -363,14 +371,16 @@ def main():
                 # for interior feature locations, those closest to fires edge should display at top of table
                 # recall that these features have negative distance values in the nearest features analysis output json structure
                 # recall that distance values are saved at the first key in the nearest features analysis output json structure
-                def _reclass_interior(feat_list: list) -> list:
+                def _reclass_interior(fset: dict) -> dict:
+                    feat_list = fset['features']
                     for feat in feat_list:
                         feat['dist_mi'] = abs(feat['dist_mi'])
                     feat_list = sorted(
                         feat_list,
                         key=lambda x: x[list(x.keys())[0]],
                     )
-                    return feat_list
+                    fset['features'] = feat_list
+                    return fset
 
                 buf_dist_nearest_feats_df = buf_dist_nearest_feats_df.map(
                     lambda x: _reclass_interior(x) if x not in ('!error!','wfigs_IrwinID') else x,
@@ -380,6 +390,7 @@ def main():
                 # nearest feats fields are already present in akdof_perims_locs, and must be dropped prior to join
                 df.drop(nearest_feats_fields, axis=1, inplace=True)
 
+            '''
             else:
 
                 # interior features shouldn't be included in buffer analysis feature locations
@@ -391,6 +402,7 @@ def main():
                     lambda x: None if x == [] else x,
                     na_action='ignore'
                 )
+            '''
 
 
             df = df.join(buf_dist_nearest_feats_df, validate='1:1')

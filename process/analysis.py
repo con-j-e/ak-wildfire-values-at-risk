@@ -414,7 +414,10 @@ def _nearest_feats_analysis(identifier, fire_geom, var_gdf, var_alias, included_
     try:
         # write null attribution if there are no features within max buffer analysis of the fire
         if len(var_gdf) < 1:
-            attr_tups = [(identifier, 0, f'{var_alias}_nearest_feats', None)]
+            attr_tups = [
+                (identifier, 0, f'{var_alias}_nearest_feats', None),
+                (identifier, 0, f'{var_alias}_interior_feats', None),
+                ]
             manager_queue.put(attr_tups)
             return
         
@@ -464,23 +467,42 @@ def _nearest_feats_analysis(identifier, fire_geom, var_gdf, var_alias, included_
         # describing the direction of features that intersect the fire as "Interior"
         miles_df.loc[miles_df['dist_mi'] <= 0, 'dir'] = 'Interior'
 
-        nearest_feats = [feat._asdict() for feat in miles_df.itertuples(index=False)]
+        # negative distance values are not ideal for _trim_nearest_feats() 
+        # interior features closer to the fires edge should be prioritized
+        #! use of negatives above probably not even necessary if separating interior and nearest into own fields
+        miles_df['dist_mi'] = abs(miles_df['dist_mi'])
 
-        fset = {
+        interior_feats = [feat._asdict() for feat in miles_df[miles_df['dir'] == 'Interior'].itertuples(index=False)]
+
+        nearest_feats = [feat._asdict() for feat in miles_df[miles_df['dir'] != 'Interior'].itertuples(index=False)]
+
+        interior_fset = {
+            'features': interior_feats,
+            'popped': 0,
+            'cutoff': None
+        }
+
+        nearest_fset = {
             'features': nearest_feats,
             'popped': 0,
             'cutoff': None
         }
 
-        fset_serialized = _trim_nearest_feats(fset)
+        interior_fset_serialized = _trim_nearest_feats(interior_fset)
+        nearest_fset_serialized = _trim_nearest_feats(nearest_fset)
 
-        #* tuple wrapped in a list, for consistent attribution result types to be returned by all processes
-        attr_tups = [(identifier, 0, f'{var_alias}_nearest_feats', fset_serialized)]
+        attr_tups = [
+            (identifier, 0, f'{var_alias}_nearest_feats', nearest_fset_serialized),
+            (identifier, 0, f'{var_alias}_interior_feats', interior_fset_serialized)
+        ]
 
         manager_queue.put(attr_tups)
 
     except Exception as e:
-        attr_tups = [(identifier, 0, f'{var_alias}_nearest_feats', (type(e), format_logged_exception(type(e), e, e.__traceback__)))]
+        attr_tups = [
+            (identifier, 0, f'{var_alias}_nearest_feats', (type(e), format_logged_exception(type(e), e, e.__traceback__))),
+            (identifier, 0, f'{var_alias}_interior_feats', (type(e), format_logged_exception(type(e), e, e.__traceback__)))
+        ]
         manager_queue.put(attr_tups)
 
 def _trim_nearest_feats(nearest_feats_fset: dict) -> str:

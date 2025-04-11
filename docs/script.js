@@ -48,7 +48,7 @@ const air_nav_links = (obj) => {
 
 const nested_tabulator = (cell, formatterParams, onRendered) => {
 
-    const rows = cell.getValue()
+    let rows = cell.getValue()
     if (rows === null || rows === undefined) {
         return rows;
     }
@@ -64,12 +64,16 @@ const nested_tabulator = (cell, formatterParams, onRendered) => {
     tableEl.style.border = "1px solid #333";
     holderEl.appendChild(tableEl);
 
-    if (rows.hasOwnProperty("popped") && rows["popped"] > 0) {
-        if (rows["cutoff"] < 0) {
-            holderEl.title = `Too many features! ${rows["popped"]} feature locations between ${Math.abs(rows["cutoff"])} miles interior and 5 miles from the fires edge are not listed in this table.`;
-        } else {
-            holderEl.title = `Too many features! ${rows["popped"]} feature locations between ${rows["cutoff"]} and 5 miles from the fires edge are not listed in this table.`;
+    //TODO new logic required for seperation of nearest and interior feats
+    if (rows.hasOwnProperty("popped")) {
+        if (rows["popped"] > 0) {
+            if (rows["cutoff"] < 0) {
+                holderEl.title = `Too many features! ${rows["popped"]} feature locations between ${Math.abs(rows["cutoff"])} miles interior and 5 miles from the fires edge are not listed in this table.`;
+            } else {
+                holderEl.title = `Too many features! ${rows["popped"]} feature locations between ${rows["cutoff"]} and 5 miles from the fires edge are not listed in this table.`;
+            }
         }
+        rows = rows['features']
     }
 
     // add configured elements to cell
@@ -79,7 +83,7 @@ const nested_tabulator = (cell, formatterParams, onRendered) => {
     onRendered(function(){
 
         const table = new Tabulator(tableEl, {
-            data:rows['features'],
+            data:rows,
             layout: formatterParams.layout,
             pagination: formatterParams.pagination,
             paginationSize: formatterParams.paginationSize,
@@ -128,6 +132,7 @@ const list_autocomplete_multi_header_filter = (headerValue, rowValue, rowData, f
 // MAIN TABULATOR
 //
 const build_table = (tag, rows_array) => {
+    const interior_or_nearest = (tag === "#perimeters-and-locations") ? "Feature Locations (Inside Perimeter)" : "Feature Locations (Outside Perimeter)"
     const table = new Tabulator(tag, {
         // persistence has pros and cons. look into options for resetting table state.
         /*
@@ -331,7 +336,7 @@ const build_table = (tag, rows_array) => {
                     }, topCalc: "sum", topCalcParams:{
                         precision:0,
                     }},
-                    {title:"Locations", field:"Community_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                    {title:interior_or_nearest, field:"Community_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
                         paginationSize: 5, 
@@ -360,7 +365,7 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},
-                    {title:"Locations", field:"WeatherStation_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                    {title:interior_or_nearest, field:"WeatherStation_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
                         paginationSize: 5, 
@@ -393,7 +398,7 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }}, 
-                    {title:"Locations", field:"Runway_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                    {title:interior_or_nearest, field:"Runway_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
                         paginationSize: 5, 
@@ -583,6 +588,24 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},
+                    {title:interior_or_nearest, field:"UsaStruct_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Occupational Class", field:"OCC_CLS"},
+                            {title:"Primary Occupation", field:"PRIM_OCC"},
+                            {title:"Secondary Occupation", field:"SEC_OCC"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    },    
+                        headerSort:false},
                     {title:"Occupational Class", field:"UsaStruct_OccCls_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -813,7 +836,7 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},
-                    {title:"Locations", field:"NtvAllot_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                    {title:interior_or_nearest, field:"NtvAllot_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
                         paginationSize: 5, 
@@ -904,7 +927,7 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},
-                    {title:"Locations", field:"PowerPlant_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                    {title:interior_or_nearest, field:"PowerPlant_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
                         paginationSize: 5, 
@@ -976,7 +999,7 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},
-                    {title:"Locations", field:"ComsTwr_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                    {title:interior_or_nearest, field:"ComsTwr_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
                         paginationSize: 5, 
@@ -1046,7 +1069,7 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},  
-                    {title:"Locations", field:"PertolTerm_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                    {title:interior_or_nearest, field:"PertolTerm_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
                         paginationSize: 5, 
@@ -1089,7 +1112,7 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},  
-                    {title:"Locations", field:"AkMine_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                    {title:interior_or_nearest, field:"AkMine_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
                         paginationSize: 5, 
@@ -1102,7 +1125,7 @@ const build_table = (tag, rows_array) => {
                                 if (!["0","1"].includes(value)) {
                                     return null
                                 }
-                                const alias = (value == "0") ? "Non-active" : "Active";
+                                const alias = (value === "0") ? "Non-active" : "Active";
                                 return alias
                             }},
                             {title:"Owner", field:"Note"},
@@ -1130,7 +1153,7 @@ const build_table = (tag, rows_array) => {
                                 if (!["0","1"].includes(value)) {
                                     return null
                                 }
-                                const alias = (value == "0") ? "Non-active" : "Active";
+                                const alias = (value === "0") ? "Non-active" : "Active";
                                 return alias
                             }},
                             {title:"Feature Count", field: "value head", formatter:"money", formatterParams:{precision:0}}
@@ -1173,7 +1196,7 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},
-                    {title:"Locations", field:"Silviculture_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                    {title:interior_or_nearest, field:"Silviculture_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
                         paginationSize: 5, 
@@ -1257,7 +1280,7 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},
-                    {title:"Locations", field:"WindTurb_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                    {title:interior_or_nearest, field:"WindTurb_Nearest", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
                         paginationSize: 5, 
