@@ -208,8 +208,8 @@ class AsyncArcGISRequester():
             response =  await self.paginate_arcgis_features(url, params)
             return (result_identifier, url_alias, response)
         except Exception as e:
-            exc_type, exc_val, exc_tb = type(e), e, e.__traceback__
-            return (result_identifier, url_alias, (exc_type, exc_val, exc_tb))
+            return (result_identifier, url_alias, e.__reduce__())
+
         
     async def applyEdits_request(self, url: str, token: str, features_to_add: list, get_oids_to_delete_query: str) -> dict:
         '''
