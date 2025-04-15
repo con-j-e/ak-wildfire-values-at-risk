@@ -1,0 +1,1248 @@
+// 20250415
+// copied field list from ...layer_definitions\20250317\Fire_Perimeters_and_Reported_Locations.json
+// comment out fields that will remain in place
+// insert _Interior fields accordingly
+// prior to adding fields to definition, will delete all fields by name, so new order is established
+// must delete all record from service to achieve this, as some fields are non-nullable
+// Roads_Nearest should not be added back in - this field is not used
+
+{ 
+    "fields": [
+        /*
+        {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID",
+            "sqlType": "sqlTypeOther",
+            "nullable": false,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "AkFireRegion",
+            "type": "esriFieldTypeString",
+            "alias": "AkFireRegion",
+            "sqlType": "sqlTypeOther",
+            "length": 5,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "AkFireNumber",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "AkFireNumber",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "wfigs_IncidentName",
+            "type": "esriFieldTypeString",
+            "alias": "wfigs_IncidentName",
+            "sqlType": "sqlTypeOther",
+            "length": 50,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "FireActivityStatus",
+            "type": "esriFieldTypeString",
+            "alias": "FireActivityStatus",
+            "sqlType": "sqlTypeOther",
+            "length": 25,
+            "nullable": false,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "ReportedAcres",
+            "type": "esriFieldTypeDouble",
+            "alias": "ReportedAcres",
+            "sqlType": "sqlTypeOther",
+            "nullable": false,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "wfigs_GISAcres",
+            "type": "esriFieldTypeDouble",
+            "alias": "wfigs_GISAcres",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "wfigs_MapMethod",
+            "type": "esriFieldTypeString",
+            "alias": "wfigs_MapMethod",
+            "sqlType": "sqlTypeOther",
+            "length": 25,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "wfigs_PolygonDateTime",
+            "type": "esriFieldTypeDate",
+            "alias": "wfigs_PolygonDateTime",
+            "sqlType": "sqlTypeOther",
+            "length": 8,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null,
+            "precision": 1
+        },
+        {
+            "name": "wfigs_ModifiedOnDateTime_dt",
+            "type": "esriFieldTypeDate",
+            "alias": "wfigs_ModifiedOnDateTime_dt",
+            "sqlType": "sqlTypeOther",
+            "length": 8,
+            "nullable": false,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null,
+            "precision": 1
+        },
+        {
+            "name": "wfigs_IrwinID",
+            "type": "esriFieldTypeString",
+            "alias": "wfigs_IrwinID",
+            "sqlType": "sqlTypeOther",
+            "length": 38,
+            "nullable": false,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "DefaultLabel",
+            "type": "esriFieldTypeString",
+            "alias": "DefaultLabel",
+            "sqlType": "sqlTypeOther",
+            "length": 256,
+            "nullable": false,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "AnalysisBufferMiles",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "AnalysisBufferMiles",
+            "sqlType": "sqlTypeOther",
+            "nullable": false,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        */
+        {
+            "name": "AkMine_FeatureCount",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "AkMine_FeatureCount",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "AkMine_Active_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "AkMine_Active_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "AkMine_Note_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "AkMine_Note_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "AkMine_Type_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "AkMine_Type_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "AkMine_Nearest",
+            "type": "esriFieldTypeString",
+            "alias": "AkMine_Nearest",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "AkMine_Interior",
+            "type": "esriFieldTypeString",
+            "alias": "AkMine_Interior",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "AkPowerLine_TotalFeet",
+            "type": "esriFieldTypeDouble",
+            "alias": "AkPowerLine_TotalFeet",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "AkPowerLine_CondType_FeetSum",
+            "type": "esriFieldTypeString",
+            "alias": "AkPowerLine_CondType_FeetSum",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "AkPowerLine_Voltage_FeetSum",
+            "type": "esriFieldTypeString",
+            "alias": "AkPowerLine_Voltage_FeetSum",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "AkPowerLine_Nearest",
+            "type": "esriFieldTypeString",
+            "alias": "AkPowerLine_Nearest",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "AkPowerLine_Interior",
+            "type": "esriFieldTypeString",
+            "alias": "AkPowerLine_Interior",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Aksd_FeatureCount",
+            "type": "esriFieldTypeInteger",
+            "alias": "Aksd_FeatureCount",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Aksd_MainStruct_AttrSum",
+            "type": "esriFieldTypeInteger",
+            "alias": "Aksd_MainStruct_AttrSum",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Aksd_OtherStruct_AttrSum",
+            "type": "esriFieldTypeInteger",
+            "alias": "Aksd_OtherStruct_AttrSum",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Aksd_Protection_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "Aksd_Protection_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Aksd_SiteCat_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "Aksd_SiteCat_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Aksd_Nearest",
+            "type": "esriFieldTypeString",
+            "alias": "Aksd_Nearest",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Aksd_Interior",
+            "type": "esriFieldTypeString",
+            "alias": "Aksd_Interior",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "ComsTwr_FeatureCount",
+            "type": "esriFieldTypeInteger",
+            "alias": "ComsTwr_FeatureCount",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "ComsTwr_Type_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "ComsTwr_Type_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "ComsTwr_Nearest",
+            "type": "esriFieldTypeString",
+            "alias": "ComsTwr_Nearest",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "ComsTwr_Interior",
+            "type": "esriFieldTypeString",
+            "alias": "ComsTwr_Interior",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Community_FeatureCount",
+            "type": "esriFieldTypeInteger",
+            "alias": "Community_FeatureCount",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Community_Name_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "Community_Name_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Community_Nearest",
+            "type": "esriFieldTypeString",
+            "alias": "Community_Nearest",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Community_Interior",
+            "type": "esriFieldTypeString",
+            "alias": "Community_Interior",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Jurisd_Owner_AcreSum",
+            "type": "esriFieldTypeString",
+            "alias": "Jurisd_Owner_AcreSum",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Jurisd_Unit_AcreSum",
+            "type": "esriFieldTypeString",
+            "alias": "Jurisd_Unit_AcreSum",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "MgmtOption_AcreSum",
+            "type": "esriFieldTypeString",
+            "alias": "MgmtOption_AcreSum",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "NpsStruct_FeatureCount",
+            "type": "esriFieldTypeInteger",
+            "alias": "NpsStruct_FeatureCount",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "NpsStruct_Use_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "NpsStruct_Use_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "NpsStruct_Protection_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "NpsStruct_Protection_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "NpsStruct_Rating_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "NpsStruct_Rating_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "NpsStruct_Nearest",
+            "type": "esriFieldTypeString",
+            "alias": "NpsStruct_Nearest",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "NpsStruct_Interior",
+            "type": "esriFieldTypeString",
+            "alias": "NpsStruct_Interior",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "NtvAllot_FeatureCount",
+            "type": "esriFieldTypeInteger",
+            "alias": "NtvAllot_FeatureCount",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "NtvAllot_Status_AcreSum",
+            "type": "esriFieldTypeString",
+            "alias": "NtvAllot_Status_AcreSum",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "NtvAllot_TotalAcres",
+            "type": "esriFieldTypeDouble",
+            "alias": "NtvAllot_TotalAcres",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "NtvAllot_Nearest",
+            "type": "esriFieldTypeString",
+            "alias": "NtvAllot_Nearest",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "NtvAllot_Interior",
+            "type": "esriFieldTypeString",
+            "alias": "NtvAllot_Interior",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Parcel_FeatureCount",
+            "type": "esriFieldTypeInteger",
+            "alias": "Parcel_FeatureCount",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Parcel_TotalAcres",
+            "type": "esriFieldTypeDouble",
+            "alias": "Parcel_TotalAcres",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Parcel_PropType_AcreSum",
+            "type": "esriFieldTypeString",
+            "alias": "Parcel_PropType_AcreSum",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Parcel_PropUse_AcreSum",
+            "type": "esriFieldTypeString",
+            "alias": "Parcel_PropUse_AcreSum",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Parcel_TotalValue_AttrSum",
+            "type": "esriFieldTypeDouble",
+            "alias": "Parcel_TotalValue_AttrSum",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Parcel_BuildingValue_AttrSum",
+            "type": "esriFieldTypeDouble",
+            "alias": "Parcel_BuildingValue_AttrSum",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Parcel_LandValue_AttrSum",
+            "type": "esriFieldTypeDouble",
+            "alias": "Parcel_LandValue_AttrSum",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Parcel_Nearest",
+            "type": "esriFieldTypeString",
+            "alias": "Parcel_Nearest",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Parcel_Interior",
+            "type": "esriFieldTypeString",
+            "alias": "Parcel_Interior",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "PetrolTerm_FeatureCount",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "PetrolTerm_FeatureCount",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "PetrolTerm_Company_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "PetrolTerm_Company_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "PetrolTerm_Nearest",
+            "type": "esriFieldTypeString",
+            "alias": "PetrolTerm_Nearest",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "PetrolTerm_Interior",
+            "type": "esriFieldTypeString",
+            "alias": "PetrolTerm_Interior",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "PipeLine_TotalFeet",
+            "type": "esriFieldTypeDouble",
+            "alias": "PipeLine_TotalFeet",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "PipeLine_Name_FeetSum",
+            "type": "esriFieldTypeString",
+            "alias": "PipeLine_Name_FeetSum",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "PipeLine_Nearest",
+            "type": "esriFieldTypeString",
+            "alias": "PipeLine_Nearest",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "PipeLine_Interior",
+            "type": "esriFieldTypeString",
+            "alias": "PipeLine_Interior",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "PowerPlant_FeatureCount",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "PowerPlant_FeatureCount",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "PowerPlant_PrimSource_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "PowerPlant_PrimSource_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "PowerPlant_SectorName_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "PowerPlant_SectorName_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "PowerPlant_UtilName_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "PowerPlant_UtilName_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "PowerPlant_Nearest",
+            "type": "esriFieldTypeString",
+            "alias": "PowerPlant_Nearest",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "PowerPlant_Interior",
+            "type": "esriFieldTypeString",
+            "alias": "PowerPlant_Interior",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Railroad_TotalFeet",
+            "type": "esriFieldTypeDouble",
+            "alias": "Railroad_TotalFeet",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Railroad_NetDesc_FeetSum",
+            "type": "esriFieldTypeString",
+            "alias": "Railroad_NetDesc_FeetSum",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Railroad_Nearest",
+            "type": "esriFieldTypeString",
+            "alias": "Railroad_Nearest",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Railroad_Interior",
+            "type": "esriFieldTypeString",
+            "alias": "Railroad_Interior",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Roads_Nearest",
+            "type": "esriFieldTypeString",
+            "alias": "Roads_Nearest",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Runway_FeatureCount",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "Runway_FeatureCount",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Runway_LocID_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "Runway_LocID_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Runway_Ownership_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "Runway_Ownership_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Runway_Nearest",
+            "type": "esriFieldTypeString",
+            "alias": "Runway_Nearest",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Runway_Interior",
+            "type": "esriFieldTypeString",
+            "alias": "Runway_Interior",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Silviculture_FeatureCount",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "Silviculture_FeatureCount",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Silviculture_TotalAcres",
+            "type": "esriFieldTypeDouble",
+            "alias": "Silviculture_TotalAcres",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Silviculture_Status_AcreSum",
+            "type": "esriFieldTypeString",
+            "alias": "Silviculture_Status_AcreSum",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Silviculture_TotalValue_AttrSum",
+            "type": "esriFieldTypeDouble",
+            "alias": "Silviculture_TotalValue_AttrSum",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Silviculture_Nearest",
+            "type": "esriFieldTypeString",
+            "alias": "Silviculture_Nearest",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Silviculture_Interior",
+            "type": "esriFieldTypeString",
+            "alias": "Silviculture_Interior",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "SpecMgmt_FeatureCount",
+            "type": "esriFieldTypeInteger",
+            "alias": "SpecMgmt_FeatureCount",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "SpecMgmt_Consid_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "SpecMgmt_Consid_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "SpecMgmt_Nearest",
+            "type": "esriFieldTypeString",
+            "alias": "SpecMgmt_Nearest",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "SpecMgmt_Interior",
+            "type": "esriFieldTypeString",
+            "alias": "SpecMgmt_Interior",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "UsaStruct_FeatureCount",
+            "type": "esriFieldTypeInteger",
+            "alias": "UsaStruct_FeatureCount",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "UsaStruct_OccCls_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "UsaStruct_OccCls_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "UsaStruct_PrimOcc_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "UsaStruct_PrimOcc_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "UsaStruct_SecOcc_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "UsaStruct_SecOcc_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "UsaStruct_Nearest",
+            "type": "esriFieldTypeString",
+            "alias": "UsaStruct_Nearest",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "UsaStruct_Interior",
+            "type": "esriFieldTypeString",
+            "alias": "UsaStruct_Interior",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "WeatherStation_FeatureCount",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "WeatherStation_FeatureCount",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "WeatherStation_Name_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "WeatherStation_Name_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "WeatherStation_Nearest",
+            "type": "esriFieldTypeString",
+            "alias": "WeatherStation_Nearest",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "WeatherStation_Interior",
+            "type": "esriFieldTypeString",
+            "alias": "WeatherStation_Interior",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "WindTurb_FeatureCount",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "WindTurb_FeatureCount",
+            "sqlType": "sqlTypeOther",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "WindTurb_ProjName_AttrCount",
+            "type": "esriFieldTypeString",
+            "alias": "WindTurb_ProjName_AttrCount",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "WindTurb_Nearest",
+            "type": "esriFieldTypeString",
+            "alias": "WindTurb_Nearest",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "WindTurb_Interior",
+            "type": "esriFieldTypeString",
+            "alias": "WindTurb_Interior",
+            "sqlType": "sqlTypeOther",
+            "length": 5000,
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "ReportedAcOverPerimAc",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "ReportedAcOverPerimAc",
+            "sqlType": "sqlTypeOther",
+            "nullable": false,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "HasError",
+            "type": "esriFieldTypeSmallInteger",
+            "alias": "HasError",
+            "sqlType": "sqlTypeOther",
+            "nullable": false,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "GlobalID",
+            "type": "esriFieldTypeGlobalID",
+            "alias": "GlobalID",
+            "sqlType": "sqlTypeOther",
+            "length": 38,
+            "nullable": false,
+            "editable": false,
+            "domain": null,
+            "defaultValue": null
+        },
+        // cannot delete and re-add these Shape__ fields, api returns error message if attempted
+        /*
+        {
+            "name": "Shape__Area",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape__Area",
+            "sqlType": "sqlTypeDouble",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        },
+        {
+            "name": "Shape__Length",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape__Length",
+            "sqlType": "sqlTypeDouble",
+            "nullable": true,
+            "editable": true,
+            "domain": null,
+            "defaultValue": null
+        }
+        */
+    ]
+}

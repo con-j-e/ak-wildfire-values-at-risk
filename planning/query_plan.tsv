@@ -19,4 +19,3 @@ community	https://services1.arcgis.com/KbxwQRRfWyEYLgp4/arcgis/rest/services/AK_
 usa_rail	https://services.arcgis.com/P3ePLMYs2RVChkJx/arcgis/rest/services/USA_Railroads_1/FeatureServer/0	"{""where"": ""1=1"", ""outfields"": ""NET_DESC""}"	
 pipeline	https://arcgis.dnr.alaska.gov/arcgis/rest/services/OpenData/Infrastructure_Infrastructure/MapServer/8	"{""where"": ""DISPLAY = 'Y' And NAME NOT LIKE '%UNDERGROUND%' And NAME NOT LIKE '%SUBMERGED%'"", ""outfields"": ""NAME,SOURCE_DATE""}"	
 ak_pwrline	https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/GVEA_Power_Lines/FeatureServer/0	"{""where"": ""COND_TYPE NOT LIKE 'UG%' And COND_TYPE NOT LIKE '%Underground%'"", ""outfields"": ""VOLTAGE,COND_TYPE""}"	nifc
-ak_rds	https://services.arcgis.com/r4A0V7UzH9fcLVvv/ArcGIS/rest/services/Functional_Class_AKDOT/FeatureServer/0	"{""where"": ""1=1"", ""outfields"": ""Route_Name""}"	

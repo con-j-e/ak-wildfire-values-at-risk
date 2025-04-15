@@ -12,40 +12,47 @@ ReportedAcres	raw
 ReportedAcOverPerimAc	
 HasError	raw
 DefaultLabel	custom
-AnalysisBufferMiles	
+AnalysisBufferMiles	raw
 AkMine_Active_AttrCount	nested_tabulator
 AkMine_Type_AttrCount	nested_tabulator
 AkMine_Note_AttrCount	nested_tabulator
 AkMine_FeatureCount	raw
-AkMine_Nearest	
+AkMine_Nearest	custom
+AkMine_Interior	custom
 AkPowerLine_CondType_FeetSum	nested_tabulator
 AkPowerLine_Voltage_FeetSum	nested_tabulator
-AkPowerLine_Nearest	
+AkPowerLine_Nearest	custom
+AkPowerLine_Interior	custom
 AkPowerLine_TotalFeet	raw
-Roads_Nearest	
 Runway_FeatureCount	raw
-Runway_Nearest	
+Runway_Nearest	custom
+Runway_Interior	custom
 Runway_Ownership_AttrCount	nested_tabulator
 Runway_LocID_AttrCount	
-WeatherStation_Name_AttrCount	json_object
+WeatherStation_Name_AttrCount	
 WeatherStation_FeatureCount	raw
-WeatherStation_Nearest	
+WeatherStation_Nearest	custom
+WeatherStation_Interior	custom
 Aksd_MainStruct_AttrSum	raw
 Aksd_OtherStruct_AttrSum	raw
 Aksd_Protection_AttrCount	nested_tabulator
 Aksd_SiteCat_AttrCount	nested_tabulator
 Aksd_FeatureCount	raw
-Aksd_Nearest	
+Aksd_Nearest	custom
+Aksd_Interior	custom
 NtvAllot_Status_AcreSum	json_object
 NtvAllot_FeatureCount	raw
-NtvAllot_Nearest	
+NtvAllot_Nearest	custom
+NtvAllot_Interior	custom
 NtvAllot_TotalAcres	raw
 ComsTwr_Type_AttrCount	nested_tabulator
 ComsTwr_FeatureCount	raw
-ComsTwr_Nearest	
+ComsTwr_Nearest	custom
+ComsTwr_Interior	custom
 Community_FeatureCount	raw
-Community_Name_AttrCount	json_object
-Community_Nearest	
+Community_Name_AttrCount	
+Community_Nearest	custom
+Community_Interior	custom
 Jurisd_Unit_AcreSum	nested_tabulator
 Jurisd_Owner_AcreSum	json_object
 MgmtOption_AcreSum	json_object
@@ -53,42 +60,52 @@ NpsStruct_Use_AttrCount	nested_tabulator
 NpsStruct_Protection_AttrCount	nested_tabulator
 NpsStruct_Rating_AttrCount	nested_tabulator
 NpsStruct_FeatureCount	raw
-NpsStruct_Nearest	
+NpsStruct_Nearest	custom
+NpsStruct_Interior	custom
 Parcel_BuildingValue_AttrSum	raw
 Parcel_FeatureCount	raw
 Parcel_LandValue_AttrSum	raw
-Parcel_Nearest	
+Parcel_Nearest	custom
+Parcel_Interior	custom
 Parcel_PropType_AcreSum	nested_tabulator
 Parcel_PropUse_AcreSum	nested_tabulator
 Parcel_TotalAcres	raw
 Parcel_TotalValue_AttrSum	raw
 PetrolTerm_Company_AttrCount	nested_tabulator
 PetrolTerm_FeatureCount	raw
-PertolTerm_Nearest	
+PetrolTerm_Nearest	custom
+PetrolTerm_Interior	custom
 PipeLine_Name_FeetSum	nested_tabulator
-PipeLine_Nearest	
+PipeLine_Nearest	custom
+PipeLine_Interior	custom
 PipeLine_TotalFeet	raw
 PowerPlant_PrimSource_AttrCount	nested_tabulator
 PowerPlant_UtilName_AttrCount	nested_tabulator
 PowerPlant_FeatureCount	raw
-PowerPlant_Nearest	
+PowerPlant_Nearest	custom
+PowerPlant_Interior	custom
 PowerPlant_SectorName_AttrCount	nested_tabulator
 Silviculture_Status_AcreSum	nested_tabulator
 Silviculture_TotalValue_AttrSum	raw
 Silviculture_FeatureCount	raw
-Silviculture_Nearest	
+Silviculture_Nearest	custom
+Silviculture_Interior	custom
 Silviculture_TotalAcres	raw
-SpecMgmt_Consid_AttrCount	
-SpecMgmt_FeatureCount	
-SpecMgmt_Nearest	
+SpecMgmt_Consid_AttrCount	nested_tabulator
+SpecMgmt_FeatureCount	raw
+SpecMgmt_Nearest	custom
+SpecMgmt_Interior	custom
 Railroad_NetDesc_FeetSum	nested_tabulator
-Railroad_Nearest	
+Railroad_Nearest	custom
+Railroad_Interior	custom
 Railroad_TotalFeet	raw
 UsaStruct_OccCls_AttrCount	nested_tabulator
 UsaStruct_PrimOcc_AttrCount	nested_tabulator
 UsaStruct_SecOcc_AttrCount	nested_tabulator
 UsaStruct_FeatureCount	raw
-UsaStruct_Nearest	
+UsaStruct_Nearest	custom
+UsaStruct_Interior	custom
 WindTurb_FeatureCount	raw
-WindTurb_Nearest	
+WindTurb_Nearest	custom
+WindTurb_Interior	custom
 WindTurb_ProjName_AttrCount	nested_tabulator
