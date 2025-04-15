@@ -14,7 +14,7 @@ from utils.general import basic_file_logger, format_logged_exception, send_email
 from utils.project import acdc_update_email
 from utils.arcgis_helpers import checkout_token
 from process.prepare_wfigs_inputs import get_wfigs_updates, create_wfigs_fire_points_gdf, create_wfigs_fire_polys_gdf, create_analysis_gdf
-from process.queries import gather_query_bundles, send_all_queries, handle_query_responses
+from process.queries import gather_query_bundles, send_all_queries, handle_query_response_pools
 from process.analysis import gather_analysis_pairs, gather_processes, gather_results, create_attribute_dataframe, join_fires_bufs_attributes, parse_analysis_errors
 from process.output import format_fields, create_output_feature_lists, apply_edits_to_dof_var_service, find_apply_edits_failure, find_apply_edits_success
 
@@ -135,6 +135,12 @@ def main():
             logger.critical(format_logged_exception(*exception))
             sys.exit(1)
 
+        # also should not be possible for Exception object to be present in query_responses
+        # we check just in case, and reduce any Exception object to enable pickling during multiprocessing
+        query_response_reduced_exceptions = [resp.__reduce__() for resp in query_responses if isinstance(resp, Exception)]
+        query_responses = [resp for resp in query_responses if not isinstance(resp, Exception)]
+        query_responses.extend(query_response_reduced_exceptions)
+
         t1 = time.time()
 
         logger.info(
@@ -146,7 +152,36 @@ def main():
             )
         )
 
-        query_features_dict, results_no_analysis = handle_query_responses(query_responses, analysis_plan)
+        # batch size determined dynamically based on ratio of query responses to analysis zones
+        batch_size = len(query_responses) // len(analysis_gdf)
+
+        t0 = time.time()
+
+        query_features_dict, results_no_analysis, logger_dict = handle_query_response_pools(query_responses, analysis_plan, batch_size)
+
+        t1 = time.time()
+
+        logger.info(
+            json.dumps(
+                {
+                    'function': 'handle_query_response_pools()',
+                    'seconds': round(t1-t0, 2)
+                }
+            )
+        )
+
+        # _handle_query_responses() only ever passes along critical and/or error messages
+        critical = False
+        for level, messages in logger_dict.items():
+            if level == 'error':
+                for m in messages:
+                    logger.error(m)
+            elif level == 'critical':
+                for m in messages:
+                    logger.critical(m)
+                critical = True
+        if critical:
+            sys.exit(1)
 
         #ENDREGION
 
@@ -191,11 +226,15 @@ def main():
         fires_bufs_attrs_gdf = format_fields(fires_bufs_attrs_gdf, schema_plan)
 
         # logging warnings if any string value is approaching maximum allowed length
-        # this could mean the value has already been truncated, or future truncation is possible
+        # this could mean the value has already been truncated, or future truncation is probable
         # use-case is for json serialized field types with somewhat unpredictable content
-        # helper functions in process.analysis 'pop' objects to shorten json structures that would cause applyEdits to fail if serialized in full
+        # helper functions in process.analysis 'pop' lower priority objects to shorten json structures that would cause applyEdits to fail if serialized in full
         str_cols = fires_bufs_attrs_gdf.select_dtypes(include=['string']).columns
         for col in str_cols:
+            # it is fully expected _Nearest and _Interior fields will frequently be truncated, no reason to log warnings
+            # the fields themselves contain information on how many features were popped and at what distance from (or within) the fire this popping began
+            if '_Nearest' in col or '_Interior' in col:
+                continue
             trimmed = fires_bufs_attrs_gdf[fires_bufs_attrs_gdf[col].str.len() > 4900][['wfigs_IncidentName', 'AnalysisBufferMiles', col]]
             for row in trimmed.itertuples(index=False):
                 logger.warning(f'Value approaching max field length limit, data could be truncated. Incident: {row.wfigs_IncidentName}, Buffer Miles: {row.AnalysisBufferMiles}, Field: {col}.')
