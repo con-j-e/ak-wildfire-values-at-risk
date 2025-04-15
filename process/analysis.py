@@ -303,74 +303,36 @@ def _run_value_sum(var_gdf, field):
 
     return value_sum
 
-def _get_nearest_points(geometry_a: shp.Geometry, geometry_b: shp.Geometry):
-
-    unique_points_a = shp.extract_unique_points(geometry_a).geoms
-
-    unique_points_b = shp.extract_unique_points(geometry_b).geoms
-
-    unique_points_a_count = len(unique_points_a)
-    unique_points_b_count = len(unique_points_b)
-
-    if unique_points_a_count >= unique_points_b_count:
-        tree = shp.STRtree(unique_points_a)
-        min_distance = math.inf
-        closest_points = None
-        for point in unique_points_b:
-            nearest_point_idx = tree.nearest(point)
-            nearest_point = tree.geometries[nearest_point_idx]
-            distance = point.distance(nearest_point)
-            if distance < min_distance:
-                min_distance = distance
-                closest_points = (nearest_point, point)
-    else:
-        tree = shp.STRtree(unique_points_b)
-        min_distance = math.inf
-        closest_points = None
-        for point in unique_points_a:
-            nearest_point_idx = tree.nearest(point)
-            nearest_point = tree.geometries[nearest_point_idx]
-            distance = point.distance(nearest_point)
-            if distance < min_distance:
-                min_distance = distance
-                closest_points = (point, nearest_point)
-
-    return closest_points
-
 def _get_cardinal_direction(point_a, point_b):
-    """ 
-    Calculates the cardinal direction between two Shapely points.
+    '''
+    Calculates the 16-point cardinal direction between two Shapely points.
 
     Args:
         - point_a (shapely.geometry.Point): The starting point.
         - point_b (shapely.geometry.Point): The ending point.
 
     Returns:
-        - str: The cardinal direction (N, E, S, W).
-    """
+        - str: The cardinal direction on a 16-point compass.
+    '''
     dx = point_b.x - point_a.x
     dy = point_b.y - point_a.y
 
+    # describe direction as "None" if point coordinates are identical
+    if dx == 0 and dy == 0:
+        return 'None'
+
     angle = math.degrees(math.atan2(dy, dx))
+    compass_angle = (90 - angle) % 360
 
-    if 22.5 <= angle <= 67.5:
-        return "E"
-    elif 67.5 <= angle <= 112.5:
-        return "NE"
-    elif 112.5 <= angle <= 157.5:
-        return "N"
-    elif 157.5 <= angle <= 202.5:
-        return "NW"
-    elif 202.5 <= angle <= 247.5:
-        return "W"
-    elif 247.5 <= angle <= 292.5:
-        return "SW"
-    elif 292.5 <= angle <= 337.5:
-        return "S"
-    else:
-        return "SE"
+    directions = [
+        'N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE',
+        'S', 'SSW', 'SW', 'WSW', 'W', 'WNW', 'NW', 'NNW'
+    ]
 
-#! in local test data, degree sign isn't rendering. getting unicode instead. see how ago handles before changing. alternate is just having a space instead of degree sign.
+    index = int((compass_angle + 11.25) / 22.5) % 16
+
+    return directions[index]
+
 def _dd_to_ddm_lat(coord):
     degree_sign = u'\N{DEGREE SIGN}'
     deg = abs(int(coord))
@@ -381,7 +343,6 @@ def _dd_to_ddm_lat(coord):
         dir = "S"
     return "%s%s %s' %s"%(deg, degree_sign, "{:06.3f}".format(min), dir)
 
-#! in local test data, degree sign isn't rendering. getting unicode instead. see how ago handles before changing. alternate is just having a space instead of degree sign.
 def _dd_to_ddm_lng(coord):
     degree_sign = u'\N{DEGREE SIGN}' 
     deg = abs(int(coord))
@@ -409,84 +370,191 @@ def _get_lat_lng_ddm_from_3338_point(point_3338: shp.Point) -> tuple[str]:
 
     return (ddm_lat, ddm_lng)
 
-def _nearest_feats_analysis(identifier, fire_geom, var_gdf, var_alias, included_fields, manager_queue):
+def _nearest_feats_analysis(
+    identifier: str,
+    fire_geom: shp.Polygon | shp.MultiPolygon,
+    var_gdf: gpd.GeoDataFrame,
+    var_alias: str,
+    included_fields: tuple,
+    manager_queue: multiprocessing.Queue
+    ) -> None:
+    '''
+    Determines distance and direction from fires edge to nearest point for a value-at-risk.
+    Calculates lat & lng for nearest point of value-at-risk in DDM.
+    Writes attributes specifying distance, direction, lat, lng, *value-at-risk attributes.
+    Values-at-risk which intersect the fire are considered interior, their direction is described
+    as interior and these features are written to a seperate attribution tuple from those beyond the fire edge.
 
+    Arguments:
+        * identifier -- GUID for a fire (IrwinID taken from WFIGS).
+        * fire_geom -- Geometry for a fire.
+        * var_gdf -- All features for a specific input that intersect the maximum size buffer created for the fire.
+        * var_alias -- Identifies the value-at-risk input data source.
+        * included_fields -- Fields unique to the input GDF to include with the output attributes.
+        * manager_queue -- Holds all attribution tuples generated during multiprocessing analysis.
+    '''       
     try:
+
+        attr_tups = []
+
         # write null attribution if there are no features within max buffer analysis of the fire
         if len(var_gdf) < 1:
-            attr_tups = [(identifier, 0, f'{var_alias}_nearest_feats', None)]
+            attr_tups.extend([
+                (identifier, 0, f'{var_alias}_nearest_feats', None),
+                (identifier, 0, f'{var_alias}_interior_feats', None)
+                ])
             manager_queue.put(attr_tups)
             return
+
+        # features that intersect the fire polygon will be considered interior
+        interior = var_gdf.intersects(fire_geom)
+
+        # intermediary var_prox_df
+        # will include index and columns required for assessing proximity
+        var_prox_df = pd.DataFrame({'interior': interior})
+
+        # determine nearest points for the value-at-risk and along fires edge
+        var_prox_df[['var_nearest_pt','fire_nearest_pt']] = var_gdf['geometry'].apply(
+            lambda x: pd.Series(shp.ops.nearest_points(x, fire_geom.boundary))
+        )
+
+        # determine distance in meters between nearest points
+        var_prox_df['meters'] = var_prox_df.apply(
+            lambda x: shp.distance(x['var_nearest_pt'], x['fire_nearest_pt']),
+            axis=1
+        )
         
-        # we want to ignore features that intersect the fire geometry
-        # these will be accounted for with other analysis functions
-        # the purpose of nearest_feats_analysis is to capture information on features that may be very close to where a fire currently is
-        # but are not accounted for because they do not intersect the fire geometry
-        var_gdf['geometry'] = var_gdf['geometry'].apply(lambda geom: geom.difference(fire_geom))
+        # handling interior features
+        # truncating those furthest from the fires edge, saving baseline popped & cutoff variables
+        interior_var_prox_df = var_prox_df[var_prox_df['interior'] == True].copy().sort_values(by='meters', ascending=True)
+        interior_var_total_feats = len(interior_var_prox_df)
+        # considering 50 features a safe upper limit for how many could possibly be serialized to 5000 characters or under
+        interior_var_prox_df = interior_var_prox_df[:50]
+        interior_var_popped = interior_var_total_feats - len(interior_var_prox_df)
+        interior_var_cutoff = round((interior_var_prox_df.iloc[-1]['meters'] / 1609.34), 2) if interior_var_popped > 0 else None
 
-        # calculate distances
-        meters = var_gdf.distance(fire_geom)
+        # handling nearest features
+        # truncating those furthest from the fires edge, saving baseline popped & cutoff variables
+        nearest_var_prox_df = var_prox_df[var_prox_df['interior'] != True].copy().sort_values(by='meters', ascending=True)
+        nearest_var_total_feats = len(nearest_var_prox_df)
+        # considering 50 features a safe upper limit for how many could possibly be serialized to 5000 characters or under
+        nearest_var_prox_df = nearest_var_prox_df[:50]
+        nearest_var_popped = nearest_var_total_feats - len(nearest_var_prox_df)
+        nearest_var_cutoff = round((nearest_var_prox_df.iloc[-1]['meters'] / 1609.34), 2) if nearest_var_popped > 0 else None
 
-        # get top 3 nearest features
-        meters.sort_values(ascending=True, inplace=True)
-        meters = meters[:3]
+        # fully attributed var_prox_df
+        # to be used for analysis and for generating nearest features and interior features lists
+        var_prox_df = pd.concat([interior_var_prox_df, nearest_var_prox_df], axis=0)
+        var_prox_df = pd.merge(var_gdf, var_prox_df, left_index=True, right_index=True)
 
-        # convert units to miles
-        miles = meters / 1609.34
-        miles = miles.astype(float).round(2)
-        miles.name = 'distance_miles'
+        # calculate distance in miles
+        var_prox_df['dist_mi'] = var_prox_df['meters'] / 1609.34
+        var_prox_df['dist_mi'] = var_prox_df['dist_mi'].round(2)
 
-        # produce dataframe
-        miles_df = pd.merge(var_gdf, miles, left_index=True, right_index=True)
-        miles_df.sort_values(by='distance_miles', ascending=True, inplace=True)
-        miles_df = miles_df.astype('object')
-        miles_df.fillna(value='No Data', inplace=True)
+        # fill missing values (var_gdf can be unpredictably attributed)
+        var_prox_df = var_prox_df.astype('object')
+        var_prox_df.fillna(value='No Data', inplace=True)
 
-        miles_df['direction'] = None
-        miles_df['lat_ddm'] = None
-        miles_df['lng_ddm'] = None
-        for idx, row in miles_df.iterrows():
-            fire_nearest_point, var_nearest_point = _get_nearest_points(fire_geom, row['geometry'])
-            cardinal_direction = _get_cardinal_direction(fire_nearest_point, var_nearest_point)
+        # get var coordinates in DDM
+        var_prox_df[['lat','lng']] = var_prox_df['var_nearest_pt'].apply(
+            lambda x: pd.Series(_get_lat_lng_ddm_from_3338_point(x))
+        )
 
-            lat_ddm, lng_ddm = _get_lat_lng_ddm_from_3338_point(var_nearest_point)
+        # get cardinal direction between nearest points for non-interior var features
+        var_prox_df.loc[var_prox_df['interior'] != True, 'dir'] = var_prox_df[var_prox_df['interior'] != True].apply(
+            lambda x: _get_cardinal_direction(x['fire_nearest_pt'], x['var_nearest_pt']),
+            axis=1
+        )
 
-            miles_df.loc[idx, 'direction'] = cardinal_direction
-            miles_df.loc[idx, 'lat_ddm'] = lat_ddm
-            miles_df.loc[idx, 'lng_ddm'] = lng_ddm
-            
-        miles_df = miles_df[[*included_fields, 'distance_miles', 'direction', 'lat_ddm', 'lng_ddm']]
+        # describing the direction of features that intersect the fire as "Interior"
+        var_prox_df.loc[var_prox_df['interior'] == True, 'dir'] = 'Interior'
 
-        nearest_feats = [feat._asdict() for feat in miles_df.itertuples(index=False)]
+        # organize output attributes
+        # by placing 'dist_mi' at index 0, in the future json formatted attributes can easily be sorted by this key
+        var_prox_df = var_prox_df[['dist_mi', 'dir', 'lat', 'lng', *included_fields]]
 
-        fset = {
-            'features': nearest_feats
-        }
+        # create _interior_feats attributes
+        interior_feats_df = var_prox_df[var_prox_df['dir'] == 'Interior'].sort_values(by='dist_mi', ascending=True)
+        interior_feats = [feat._asdict() for feat in interior_feats_df.itertuples(index=False)]
+        if interior_feats:
+            interior_fset = {
+                'features': interior_feats,
+                'popped': interior_var_popped,
+                'cutoff': interior_var_cutoff
+            }
+            interior_fset_serialized = _trim_nearest_feats(interior_fset)
+            attr_tups.append((identifier, 0, f'{var_alias}_interior_feats', interior_fset_serialized))
+        else:
+            attr_tups.append((identifier, 0, f'{var_alias}_interior_feats', None))
 
-        fset_serialized = _trim_nearest_feats(fset)
-
-        #* tuple wrapped in a list, for consistent attribution result types to be returned by all processes
-        attr_tups = [(identifier, 0, f'{var_alias}_nearest_feats', fset_serialized)]
+        # create _nearest_feats attributes
+        nearest_feats_df = var_prox_df[var_prox_df['dir'] != 'Interior'].sort_values(by='dist_mi', ascending=True)
+        nearest_feats = [feat._asdict() for feat in nearest_feats_df.itertuples(index=False)]
+        if nearest_feats:
+            nearest_fset = {
+                'features': nearest_feats,
+                'popped': nearest_var_popped,
+                'cutoff': nearest_var_cutoff
+            }
+            nearest_fset_serialized = _trim_nearest_feats(nearest_fset)
+            attr_tups.append((identifier, 0, f'{var_alias}_nearest_feats', nearest_fset_serialized))
+        else:
+            attr_tups.append((identifier, 0, f'{var_alias}_nearest_feats', None))
 
         manager_queue.put(attr_tups)
 
     except Exception as e:
-        attr_tups = [(identifier, 0, f'{var_alias}_nearest_feats', (type(e), format_logged_exception(type(e), e, e.__traceback__)))]
+        attr_tups = [
+            (identifier, 0, f'{var_alias}_nearest_feats', (type(e), format_logged_exception(type(e), e, e.__traceback__))),
+            (identifier, 0, f'{var_alias}_interior_feats', (type(e), format_logged_exception(type(e), e, e.__traceback__)))
+        ]
         manager_queue.put(attr_tups)
 
 def _trim_nearest_feats(nearest_feats_fset: dict) -> str:
-    '''
-    _Nearest fields could be over 5000 characters. If they are, we remove the further-away features until the serialized length will be accepted by the target service. 
-    Recall that features in nearest_feats_fset are already sorted by distance, in ascending order.
-    '''
-    fset_serialized = json.dumps(nearest_feats_fset)
-    
-    while len(fset_serialized) > 5000:
-        nearest_feats_fset['features'].pop()
-        fset_serialized = json.dumps(nearest_feats_fset)
-    
-    return fset_serialized
 
+    # return full serialized object right away if size is acceptable
+    # otherwise continue to binary search logic
+    full_serialized = json.dumps(nearest_feats_fset)
+    if len(full_serialized) <= 5000:
+        return full_serialized
+
+    # going to search between 0 and len(features) to find 
+    # the maximum number of features that can be serialized into the required string length
+    features = nearest_feats_fset['features']
+    low = 0
+    high = len(features)
+
+    # baseline values for popped and cutoff
+    popped_base = nearest_feats_fset['popped']
+    cutoff_base = nearest_feats_fset['cutoff']
+
+    while low < high:
+
+        # retreive subset of features up to the middle index between the current low and high values
+        mid = (low + high) // 2
+        test_subset = features[:mid]
+
+        # produce test json structure based on feature subset
+        test_dict = {
+            'features': test_subset,
+            'popped': (len(features) - mid) + popped_base,
+            'cutoff': features[mid - 1]['dist_mi'] if mid < len(features) else cutoff_base
+        }
+        test_serialized = json.dumps(test_dict)
+        
+        # feature subset is an acceptable size, establishing the index of the last feature of the subset +1 as our new low value
+        if len(test_serialized) <= 5000:
+            best_serialized = test_serialized
+            low = mid + 1
+
+        # feature subset was too large, establishing the index of the last feature of the subset as our new high value
+        else:
+            high = mid
+
+    return best_serialized
+
+# this can be optimized using binary search logic from _trim_nearest_feats()
+# however _sort_trim_attr_json() is very rarely passed attr_json that needs to be trimmed, and even more rarely attr_json that is well over 5000 chars serialized
 def _sort_trim_attr_json(attr_json: dict, max_length: int = 5000) -> str:
     '''
     Sorts JSON formatted attribute by its values in descending order.
