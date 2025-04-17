@@ -7,48 +7,37 @@ const utc_timestamp_to_akt_obj = (epoch_milliseconds) => {
     const datetime = luxon.DateTime.fromMillis(epoch_milliseconds, {zone:"America/Anchorage"});
     return datetime;
 };
-
-const object_keys = (obj) => {
-    if (obj === null || obj === undefined) {
-        return obj;
-    }
-    return Object.keys(obj);
-};
 //
 // END MUTATORS
 
 // FORMATTERS (https://tabulator.info/docs/6.3/format#format-custom)
 //
 const html_link = (cell, formatterParams) => {
-    const url = cell.getValue();
-    if (url === null || url === undefined) {
-        return url;
+    const value = cell.getValue();
+    if (value === null || value === undefined) {
+        return value;
     }
-    const label = formatterParams.label;
+    let url = value;
+    if (formatterParams.hasOwnProperty('link_body')) {
+        url = formatterParams.link_body.replace("{value}", value);
+    }
+    let label = value;
+    if (formatterParams.hasOwnProperty('label')) {
+        label = formatterParams.label
+    }
     return '<a href="' + url + '" target="_blank">' + label + '</a>';
-};
-
-// not yet implemented
-// similar approach for weather station links may work
-const air_nav_links = (obj) => {
-    if (obj === null || obj === undefined) {
-        return null;
-    }
-    const loc_ids = Object.keys(obj);
-    const links = loc_ids.map(loc_id => `<a href="https://www.airnav.com/airport/${loc_id}" target="_blank">${loc_id}</a>`);
-    return links.join(', ');
 };
 
 const nested_tabulator = (cell, formatterParams, onRendered) => {
 
-    const rows = cell.getValue()
+    let rows = cell.getValue()
     if (rows === null || rows === undefined) {
         return rows;
     }
 
     // configure elements
-    var holderEl = document.createElement("div");
-    var tableEl = document.createElement("div");
+    const holderEl = document.createElement("div");
+    const tableEl = document.createElement("div");
     holderEl.style.boxSizing = "border-box";
     holderEl.style.padding = "10px 30px 10px 10px";
     holderEl.style.borderTop = "1px solid #333";
@@ -56,6 +45,20 @@ const nested_tabulator = (cell, formatterParams, onRendered) => {
     holderEl.style.background = "#ddd";
     tableEl.style.border = "1px solid #333";
     holderEl.appendChild(tableEl);
+
+    // handling field types which specify feature locations
+    // popped and cutoff properties are present to keep track of whether / what / how much data was truncated
+    if (rows.hasOwnProperty("popped")) {
+        if (rows["popped"] > 0) {
+            // every interior feature has "dir" === "Interior", all nearest features have "dir" === {cardinal direction}
+            if (rows["features"][0]["dir"] === "Interior") {
+                holderEl.title = `${rows["popped"]} feature locations deeper than ${rows["cutoff"]} miles interior from the fires edge are not specified.`;
+            } else {
+                holderEl.title = `${rows["popped"]} feature locations between ${rows["cutoff"]} and 5 miles away from the fires edge are not specified`;
+            }
+        }
+        rows = rows["features"]
+    }
 
     // add configured elements to cell
     cell.getElement().appendChild(holderEl);
@@ -109,17 +112,164 @@ const list_autocomplete_multi_header_filter = (headerValue, rowValue, rowData, f
 //
 // END HEADER FILTER FUNCTIONS
 
+// HEADER MENUS (https://tabulator.info/docs/6.3/menu#header-menu)
+//
+const header_menu = function(){
+
+    // to be returned
+    const menu = [];
+
+    // to dictate ordering of columns in menu (for groups, using parent columns instead of children)
+    const columns = this.getColumns(true);
+
+    // to determine which columns should be specified in menu
+    const columns_with_data = new Set();
+
+    // to be used for identifying empty child fields (empty fields that are part of column group)
+    // some fields included by default to prevent group column header collapse
+    const child_fields_with_data = new Set ([
+        "MgmtOption_AcreSum.Critical",
+        "MgmtOption_AcreSum.Full",
+        "MgmtOption_AcreSum.Limited",
+        "Jurisd_Owner_AcreSum.Private",
+        "Jurisd_Owner_AcreSum.State",
+    ]);
+
+
+    // to retrieve empty child column objects that need to be re-hidden after a parent column is turned on
+    const columns_including_children = this.getColumns();
+
+    // populate sets based on what data is present in the current table
+    const rows = this.getRows("all");
+    for (let row of rows) {
+        const cells = row.getCells();
+        for (let cell of cells) {
+            if (cell.getValue() != null && cell.getValue() != undefined) {
+                const col = cell.getColumn();
+                const parent = col.getParentColumn();
+                if (parent === false) {
+                    columns_with_data.add(col);
+                } else {
+                    columns_with_data.add(parent);
+                    child_fields_with_data.add(col.getField());
+                }
+            }
+        }
+    }
+    
+    // create a Hide All Columns menu button
+    const hide_icon = document.createElement("i");
+    hide_icon.classList.add("fas", "fa-eye-slash");
+    const hide_label = document.createElement("span");
+    const hide_title = document.createElement("span");
+    hide_title.innerHTML = '<b> Hide All Columns</b>';
+    hide_label.appendChild(hide_icon);
+    hide_label.appendChild(hide_title);
+    menu.push({
+        label:hide_label,
+        action:function(e) {
+            for (let column of columns) {
+                if (column.getField() === "AkFireNumber") {
+                    continue;
+                }
+                if (!columns_with_data.has(column)) {
+                    continue;
+                }
+                column.hide();
+            }
+        }
+    });
+
+    // create a Show All Columns menu button
+    const show_icon = document.createElement("i");
+    show_icon.classList.add("fas", "fa-eye");
+    const show_label = document.createElement("span");
+    const show_title = document.createElement("span");
+    show_title.innerHTML = "<b> Show All Columns</b>"
+    show_label.appendChild(show_icon);
+    show_label.appendChild(show_title);
+    menu.push({
+        label:show_label,
+        action:function(e) {
+            for (let column of columns) {
+                if (column.getField() === "AkFireNumber") {
+                    continue;
+                }
+                if (!columns_with_data.has(column)) {
+                    continue;
+                }
+                column.show();
+                // re-hiding child columns that have no data 
+                if (column.getDefinition().hasOwnProperty("columns")) {
+                    const children = column.getDefinition().columns;
+                    for (let child of children) {
+                        if (!child_fields_with_data.has(child.field)) {
+                            const child_to_hide = columns_including_children.find(col => col.getField() === child.field);
+                            setTimeout(() => {child_to_hide.hide()}, 100);
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    // create menu buttons to toggle specific columns / group columns on and off
+    for (let column of columns) {
+        if (column.getField() === "AkFireNumber") {
+            continue;
+        }
+        if (!columns_with_data.has(column)) {
+            continue;
+        }
+        let icon = document.createElement("i");
+        icon.classList.add("fas");
+        icon.classList.add(column.isVisible() ? "fa-check-square" : "fa-square");
+        let label = document.createElement("span");
+        let title = document.createElement("span");
+        title.textContent = " " + column.getDefinition().title;
+        label.appendChild(icon);
+        label.appendChild(title);
+        menu.push({
+            label:label,
+            action:function(e) {
+                e.stopPropagation();
+                column.toggle();
+                if (column.isVisible()){
+                    icon.classList.remove("fa-square");
+                    icon.classList.add("fa-check-square");
+
+                    // re-hiding child columns that have no data 
+                    if (column.getDefinition().hasOwnProperty("columns")) {
+                        const children = column.getDefinition().columns;
+                        for (let child of children) {
+                            if (!child_fields_with_data.has(child.field)) {
+                                const child_to_hide = columns_including_children.find(col => col.getField() === child.field);
+                                setTimeout(() => {child_to_hide.hide()}, 100);
+                            }
+                        }
+                    }
+                } else{
+                    icon.classList.remove("fa-check-square");
+                    icon.classList.add("fa-square");
+                }
+            }
+        });
+    }
+    return menu;
+};
+//
+// END HEADER MENUS
 
 // MAIN TABULATOR
 //
 const build_table = (tag, rows_array) => {
+    const interior_or_nearest = (tag === "#perimeters-and-locations") ? "Nearest Features (Inside Perimeter)" : "Nearest Features (Outside Perimeter)"
     const table = new Tabulator(tag, {
         // persistence has pros and cons. look into options for resetting table state.
         /*
         persistence:{ 
             sort: true, 
             headerFilter: true, 
-            page: true, 
             columns: true, 
         },
         persistenceID: `pid_${tag.slice(1)}`,
@@ -127,12 +277,23 @@ const build_table = (tag, rows_array) => {
         height:"100%",  
         layout: "fitData",
         pagination: "local",
-        paginationSize: 10, 
+        paginationSize: 20, 
         paginationCounter: "rows",
         movableColumns: true, 
         resizableRows: true,
         data: rows_array,
         headerFilterLiveFilterDelay:900,
+        columnDefaults:{
+            tooltip:function(e, cell, onRendered){
+                const val = cell.getValue();
+                if (val === '!error!' || val === -1){
+                    const el = document.createElement("div");
+                    el.style.backgroundColor = "red";
+                    el.innerHTML = '<p style="font-size: 12pt; font-weight: bold;">An error occurred. Data is not valid. Check back later.</p>';
+                    return el;
+                }
+            }
+        },
         columns: [
             {title:"Fire Number", field:"AkFireNumber", frozen:true, headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
@@ -140,7 +301,8 @@ const build_table = (tag, rows_array) => {
                 autocomplete:true,
                 allowEmpty:true,
                 listOnEmpty:true
-            }, headerFilterFunc:list_autocomplete_multi_header_filter},
+            }, headerFilterFunc:list_autocomplete_multi_header_filter,
+            headerMenu:header_menu, headerMenuIcon:"<i class='fas fa-bars'></i>"},
             {title:"Fire Name", field:"wfigs_IncidentName", frozen:true, headerFilter:"list", headerFilterParams:{
                 valuesLookup:"active",
                 sort:'asc',
@@ -307,16 +469,6 @@ const build_table = (tag, rows_array) => {
                 format:"yyyy-MM-dd HH:mm:ss",
                 alignEmptyValues:"bottom"
             }},
-
-            // TODO use nearest features analysis info here
-            // 
-            {title:"Community Count", field:"Community_FeatureCount", formatter:"money", formatterParams:{
-                precision:0
-            }, topCalc: "sum", topCalcParams:{
-                precision:0,
-            }},
-            {title:"Community Names", field:"Community_Name_AttrCount", mutator:object_keys, formatter:"array", headerFilter:"input"},
-            
             {
                 title:"Management Option Acres",
                 headerHozAlign:"center",
@@ -383,21 +535,7 @@ const build_table = (tag, rows_array) => {
                 title:"Ownership Acres",
                 headerHozAlign:"center",
                 columns:[
-                    {title:"State", field:"Jurisd_Owner_AcreSum.State", formatter:"money", formatterParams:{
-                        precision:1
-                    }, topCalc: "sum", topCalcParams:{
-                        precision:1
-                    }, topCalcFormatter:"money", topCalcFormatterParams:{
-                        precision:1
-                    }},
-                    {title:"Private", field:"Jurisd_Owner_AcreSum.Private", formatter:"money", formatterParams:{
-                        precision:1
-                    }, topCalc: "sum", topCalcParams:{
-                        precision:1
-                    }, topCalcFormatter:"money", topCalcFormatterParams:{
-                        precision:1
-                    }},
-                    {title:"BLM", field:"Jurisd_Owner_AcreSum.BLM", formatter:"money", formatterParams:{
+                    {title:"ANCSA", field:"Jurisd_Owner_AcreSum.ANCSA", formatter:"money", formatterParams:{
                         precision:1
                     }, topCalc: "sum", topCalcParams:{
                         precision:1
@@ -411,7 +549,7 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
                     }},
-                    {title:"ANCSA", field:"Jurisd_Owner_AcreSum.ANCSA", formatter:"money", formatterParams:{
+                    {title:"BLM", field:"Jurisd_Owner_AcreSum.BLM", formatter:"money", formatterParams:{
                         precision:1
                     }, topCalc: "sum", topCalcParams:{
                         precision:1
@@ -432,7 +570,49 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
                     }},
-                    {title:"USFWS", field:"Jurisd_Owner_AcreSum.USFWS", formatter:"money", formatterParams:{
+                    {title:"DOD", field:"Jurisd_Owner_AcreSum.DOD", formatter:"money", formatterParams:{
+                        precision:1
+                    }, topCalc: "sum", topCalcParams:{
+                        precision:1
+                    }, topCalcFormatter:"money", topCalcFormatterParams:{
+                        precision:1
+                    }},
+                    {title:"DOE", field:"Jurisd_Owner_AcreSum.DOE", formatter:"money", formatterParams:{
+                        precision:1
+                    }, topCalc: "sum", topCalcParams:{
+                        precision:1
+                    }, topCalcFormatter:"money", topCalcFormatterParams:{
+                        precision:1
+                    }},
+                    {title:"NPS", field:"Jurisd_Owner_AcreSum.NPS", formatter:"money", formatterParams:{
+                        precision:1
+                    }, topCalc: "sum", topCalcParams:{
+                        precision:1
+                    }, topCalcFormatter:"money", topCalcFormatterParams:{
+                        precision:1
+                    }},
+                    {title:"OthFed", field:"Jurisd_Owner_AcreSum.OthFed", formatter:"money", formatterParams:{
+                        precision:1
+                    }, topCalc: "sum", topCalcParams:{
+                        precision:1
+                    }, topCalcFormatter:"money", topCalcFormatterParams:{
+                        precision:1
+                    }},
+                    {title:"Private", field:"Jurisd_Owner_AcreSum.Private", formatter:"money", formatterParams:{
+                        precision:1
+                    }, topCalc: "sum", topCalcParams:{
+                        precision:1
+                    }, topCalcFormatter:"money", topCalcFormatterParams:{
+                        precision:1
+                    }},
+                    {title:"State", field:"Jurisd_Owner_AcreSum.State", formatter:"money", formatterParams:{
+                        precision:1
+                    }, topCalc: "sum", topCalcParams:{
+                        precision:1
+                    }, topCalcFormatter:"money", topCalcFormatterParams:{
+                        precision:1
+                    }},
+                    {title:"Tribal", field:"Jurisd_Owner_AcreSum.Tribal", formatter:"money", formatterParams:{
                         precision:1
                     }, topCalc: "sum", topCalcParams:{
                         precision:1
@@ -446,13 +626,123 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
                     }},
-                    {title:"OthLoc", field:"Jurisd_Owner_AcreSum.OthLoc", formatter:"money", formatterParams:{
+                    {title:"USFWS", field:"Jurisd_Owner_AcreSum.USFWS", formatter:"money", formatterParams:{
                         precision:1
                     }, topCalc: "sum", topCalcParams:{
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
-                    }}
+                    }},
+                ]
+            },
+            {
+                title:"Weather Stations",
+                headerHozAlign:"center",
+                columns:[
+                    {title:"Feature Count", field:"WeatherStation_FeatureCount", formatter:"money", formatterParams:{
+                        precision:0
+                    }, topCalc: "sum", topCalcParams:{
+                        precision:0,
+                    }, topCalcFormatter:"money", topCalcFormatterParams:{
+                        precision:0
+                    }},
+                    {title:interior_or_nearest, field:"WeatherStation_Locations", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Name", field:"NAME"},
+                            {title:"Code", field:"CODE"},
+                            {title:"URL", field:"MESOWESTWEBURL", formatter:html_link, formatterParams:{
+                                label:"MesoWest CFFDRS"
+                            }},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    }, headerSort:false},
+                ]
+            },
+            {
+                title:"Runways",
+                headerHozAlign:"center",
+                columns:[
+                    {title:"Feature Count", field:"Runway_FeatureCount", formatter:"money", formatterParams:{
+                        precision:0
+                    }, topCalc: "sum", topCalcParams:{
+                        precision:0,
+                    }, topCalcFormatter:"money", topCalcFormatterParams:{
+                        precision:0
+                    }}, 
+                    {title:interior_or_nearest, field:"Runway_Locations", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Location ID", field:"loc_id"},
+                            {title:"Runway ID", field:"runway_id"},
+                            {title:"Length", field:"length"},
+                            {title:"Surface", field:"surface"},
+                            {title:"AirNav URL", field:"loc_id", formatter:html_link, formatterParams:{
+                                link_body:"https://www.airnav.com/airport/{value}",
+                                label:"Go to AirNav"
+                            }},
+                            {title:"WeatherCams URL", field:"loc_id", formatter:html_link, formatterParams:{
+                                link_body:"https://weathercams.faa.gov/map/airport/{value}/details/camera",
+                                label:"Go to WeatherCams"
+                            }},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    },    
+                        headerSort:false},
+                    {title:"Count by Ownership", field:"Runway_Ownership_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Ownership", field:"key head"},
+                            {title:"Feature Count", field: "value head", formatter:"money", formatterParams:{precision:0}}
+                        ]
+                    }, headerSort:false},
+                ]
+            },
+            {
+                title:"Communities",
+                headerHozAlign:"center",
+                columns:[
+                    {title:"Feature Count", field:"Community_FeatureCount", formatter:"money", formatterParams:{
+                        precision:0
+                    }, topCalc: "sum", topCalcParams:{
+                        precision:0,
+                    }},
+                    {title:interior_or_nearest, field:"Community_Locations", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Community", field:"CommunityName"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    }, headerSort:false},
                 ]
             },
             {
@@ -466,6 +756,22 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},
+                    {title:interior_or_nearest, field:"UsaStruct_Locations", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Occupational Class", field:"OCC_CLS"},
+                            {title:"Primary Occupation", field:"PRIM_OCC"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    }, headerSort:false},
                     {title:"Occupational Class", field:"UsaStruct_OccCls_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -518,6 +824,24 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},
+                    {title:interior_or_nearest, field:"Aksd_Locations", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Site Category", field:"SiteCat"},
+                            {title:"Protection Level", field:"Protection"},
+                            {title:"Main Structures", field:"MainStructs"},
+                            {title:"Other Structures", field:"OthrStructs"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    }, headerSort:false},
                     {title:"Main Structures Count", field:"Aksd_MainStruct_AttrSum", formatter:"money", formatterParams:{
                         precision:0
                     }, topCalc: "sum", topCalcParams:{
@@ -571,6 +895,23 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},
+                    {title:interior_or_nearest, field:"NpsStruct_Locations", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Protection Level", field:"ProtectionLevel"},
+                            {title:"Structure Use", field:"FacilityUse"},
+                            {title:"Risk Rating", field:"Rating"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    }, headerSort:false},
                     {title:"Protection Levels", field:"NpsStruct_Protection_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -623,6 +964,26 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},
+                    {title:interior_or_nearest, field:"Parcel_Locations", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Property Type", field:"property_type"},
+                            {title:"Property Use", field:"property_use"},
+                            {title:"Total Value", field:"total_value", formatter:"money", formatterParams:{
+                                symbol:"$",
+                                precision:0
+                            }},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    }, headerSort:false},
                     {title:"Land Value", field:"Parcel_LandValue_AttrSum", topCalc: "sum", topCalcParams:{
                         precision:0,
                     }, formatter:"money", formatterParams:{
@@ -696,6 +1057,22 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},
+                    {title:interior_or_nearest, field:"NtvAllot_Locations", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Status", field:"ALLOT_STATUS"},
+                            {title:"ID", field:"ALLOT_ID"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    }, headerSort:false},
                     {title:"Total Allotment Acres", field:"NtvAllot_TotalAcres", formatter:"money", formatterParams:{
                         precision:1
                     }, topCalc: "sum", topCalcParams:{
@@ -731,6 +1108,22 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},
+                    {title:interior_or_nearest, field:"AkPowerLine_Locations", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Conduction Type", field:"COND_TYPE"},
+                            {title:"Voltage", field:"VOLTAGE"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    }, headerSort:false},
                     {title:"Feet by Conduction Type", field:"AkPowerLine_CondType_FeetSum", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -740,7 +1133,7 @@ const build_table = (tag, rows_array) => {
                         resizableRows: true,
                         columns:[
                             {title:"Conduction Type", field:"key head"},
-                            {title:"Feet", field: "value head", formatter:"money", formatterParams:{precision:1}}
+                            {title:"Feet", field: "value head", formatter:"money", formatterParams:{precision:0}}
                         ]
                     },    
                         headerSort:false},
@@ -769,7 +1162,26 @@ const build_table = (tag, rows_array) => {
                         precision:0,
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
-                    }},                        
+                    }},
+                    {title:interior_or_nearest, field:"PowerPlant_Locations", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Utility Name", field:"Utility_Name"},
+                            {title:"Sector Name", field:"Sector_Name"},
+                            {title:"Address", field:"Street_Address"},
+                            {title:"Source", field:"PrimSource"},
+                            {title:"Description", field:"tech_desc"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    }, headerSort:false},
                     {title:"Power Source", field:"PowerPlant_PrimSource_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -781,8 +1193,7 @@ const build_table = (tag, rows_array) => {
                             {title:"Power Source", field:"key head"},
                             {title:"Feature Count", field: "value head", formatter:"money", formatterParams:{precision:0}}
                         ]
-                    },    
-                        headerSort:false},
+                    }, headerSort:false},
                     {title:"Sector Name", field:"PowerPlant_SectorName_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -794,8 +1205,7 @@ const build_table = (tag, rows_array) => {
                             {title:"Sector Name", field:"key head"},
                             {title:"Feature Count", field: "value head", formatter:"money", formatterParams:{precision:0}}
                         ]
-                    },    
-                        headerSort:false},
+                    }, headerSort:false},
                     {title:"Utility Name", field:"PowerPlant_UtilName_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -807,8 +1217,7 @@ const build_table = (tag, rows_array) => {
                             {title:"Utility Name", field:"key head"},
                             {title:"Feature Count", field: "value head", formatter:"money", formatterParams:{precision:0}}
                         ]
-                    },    
-                        headerSort:false},
+                    }, headerSort:false},
                 ]
             },
             {
@@ -821,7 +1230,25 @@ const build_table = (tag, rows_array) => {
                         precision:0,
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
-                    }},    
+                    }},
+                    {title:interior_or_nearest, field:"ComsTwr_Locations", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Type", field:"Type"},
+                            {title:"Details", field:"url", formatter:html_link, formatterParams:{
+                                label:"Go to webpage"
+                            }},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    }, headerSort:false},
                     {title:"Site Type", field:"ComsTwr_Type_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -836,26 +1263,9 @@ const build_table = (tag, rows_array) => {
                     }, headerSort:false}
                 ]
             },
-
-            //TODO use nearest feature analysis info
-            {
-                title:"Weather Stations",
-                headerHozAlign:"center",
-                columns:[
-                    {title:"Feature Count", field:"WeatherStation_FeatureCount", formatter:"money", formatterParams:{
-                        precision:0
-                    }, topCalc: "sum", topCalcParams:{
-                        precision:0,
-                    }, topCalcFormatter:"money", topCalcFormatterParams:{
-                        precision:0
-                    }},   
-                    {title:"Station Names", field:"WeatherStation_Name_AttrCount", mutator:object_keys, formatter:"array"}
-                ]
-            },
             {
                 title:"Pipelines",
                 headerHozAlign:"center",
-                
                 columns:[
                     {title:"Total Feet", field:"PipeLine_TotalFeet", formatter:"money", formatterParams:{
                         precision:0
@@ -863,7 +1273,22 @@ const build_table = (tag, rows_array) => {
                         precision:0,
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
-                    }},                   
+                    }},
+                    {title:interior_or_nearest, field:"PipeLine_Locations", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Name", field:"NAME"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    }, headerSort:false},
                     {title:"Feet by Name", field:"PipeLine_Name_FeetSum", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -889,6 +1314,23 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},  
+                    {title:interior_or_nearest, field:"PetrolTerm_Locations", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Company", field:"Company"},
+                            {title:"Site", field:"Site"},
+                            {title:"City", field:"City"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    }, headerSort:false},
                     {title:"Count by Company", field:"PetrolTerm_Company_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -914,6 +1356,46 @@ const build_table = (tag, rows_array) => {
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
                     }},  
+                    {title:interior_or_nearest, field:"AkMine_Locations", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Activity Status", field:"ACTIVE", formatter:function(cell, formatterParams, onRendered){
+                                const value = cell.getValue();
+                                if (value === "No Data") {
+                                    return value
+                                }
+                                if (![0,1].includes(value)) {
+                                    return null
+                                }
+                                const alias = (value === 0) ? "Non-active" : "Active";
+                                return alias
+                            }},
+                            {title:"Owner", field:"NOTE"},
+                            {title:"Mining Type", field:"APMA_TYPE"},
+                            {title:"Explosives on Site", field:"Explosives", formatter:function(cell, formatterParams, onRendered){
+                                const value = cell.getValue();
+                                if (value === "No Data") {
+                                    return value
+                                }
+                                if (![0,1].includes(value)) {
+                                    return null
+                                }
+                                const alias = (value === 0) ? "No" : "Yes";
+                                return alias
+                            }},
+                            {title:"Start Year", field:"START_YEAR"},
+                            {title:"Expiration Year", field:"EXPIRATION_YEAR"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    }, headerSort:false},
                     {title:"Count by Activity Status", field:"AkMine_Active_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -927,7 +1409,7 @@ const build_table = (tag, rows_array) => {
                                 if (!["0","1"].includes(value)) {
                                     return null
                                 }
-                                const alias = (value == "0") ? "Non-active" : "Active";
+                                const alias = (value === "0") ? "Non-active" : "Active";
                                 return alias
                             }},
                             {title:"Feature Count", field: "value head", formatter:"money", formatterParams:{precision:0}}
@@ -969,7 +1451,27 @@ const build_table = (tag, rows_array) => {
                         precision:0,
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
-                    }},  
+                    }},
+                    {title:interior_or_nearest, field:"Silviculture_Locations", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Status", field:"STATUS"},
+                            {title:"Sale Name", field:"SALE_NAME"},
+                            {title:"Total Value", field:"TOTAL_VALUE", formatter:"money", formatterParams:{
+                                symbol:"$",
+                                precision:0
+                            }},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    }, headerSort:false},
                     {title:"Total Acres", field:"Silviculture_TotalAcres", formatter:"money", formatterParams:{
                         precision:1
                     }, topCalc: "sum", topCalcParams:{
@@ -1001,6 +1503,46 @@ const build_table = (tag, rows_array) => {
                 ]
             },
             {
+                title:"Special Management Considerations",
+                headerHozAlign:"center",
+                columns:[
+                    {title:"Feature Count", field:"SpecMgmt_FeatureCount", formatter:"money", formatterParams:{
+                        precision:0
+                    }, topCalc: "sum", topCalcParams:{
+                        precision:0,
+                    }, topCalcFormatter:"money", topCalcFormatterParams:{
+                        precision:0
+                    }},
+                    {title:interior_or_nearest, field:"SpecMgmt_Locations", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Management Consideration", field:"ManagementConsiderations"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    }, headerSort:false},
+                    {title:"Count by Consideration Type", field:"SpecMgmt_Consid_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Consideration", field:"key head"},
+                            {title:"Feature Count", field: "value head", formatter:"money", formatterParams:{precision:0}}
+                        ]
+                    }, headerSort:false}
+                ]
+            },
+            {
                 title:"Railroad",
                 headerHozAlign:"center",
                 columns:[
@@ -1010,7 +1552,22 @@ const build_table = (tag, rows_array) => {
                         precision:0,
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
-                    }}, 
+                    }},
+                    {title:interior_or_nearest, field:"Railroad_Locations", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Route Description", field:"NET_DESC"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    }, headerSort:false},
                     {title:"Feet by Route Description", field:"Railroad_NetDesc_FeetSum", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -1035,7 +1592,22 @@ const build_table = (tag, rows_array) => {
                         precision:0,
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:0
-                    }}, 
+                    }},
+                    {title:interior_or_nearest, field:"WindTurb_Locations", variableHeight:true, formatter:nested_tabulator, formatterParams:{
+                        layout: "fitDataStretch",
+                        pagination: "local",
+                        paginationSize: 5, 
+                        paginationCounter: "rows",
+                        movableColumns: true, 
+                        resizableRows: true,
+                        columns:[
+                            {title:"Project Name", field:"p_name"},
+                            {title:"Miles from Fire Edge", field:"dist_mi", formatter:"money", formatterParams:{precision:2}},
+                            {title:"Direction", field:"dir"},
+                            {title:"Latitude", field:"lat"},
+                            {title:"Longitude", field:"lng"}
+                        ]
+                    }, headerSort:false},
                     {title:"Count by Project Name", field:"WindTurb_ProjName_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
                         layout: "fitDataStretch",
                         pagination: "local",
@@ -1050,53 +1622,127 @@ const build_table = (tag, rows_array) => {
                     }, headerSort:false},
                 ]
             },
-            {
-                title:"Runways",
-                headerHozAlign:"center",
-                columns:[
-                    {title:"Feature Count", field:"Runway_FeatureCount", formatter:"money", formatterParams:{
-                        precision:0
-                    }, topCalc: "sum", topCalcParams:{
-                        precision:0,
-                    }, topCalcFormatter:"money", topCalcFormatterParams:{
-                        precision:0
-                    }}, 
-                    {title:"Count by Ownership", field:"Runway_Ownership_AttrCount", variableHeight:true, formatter:nested_tabulator, formatterParams:{
-                        layout: "fitDataStretch",
-                        pagination: "local",
-                        paginationSize: 5, 
-                        paginationCounter: "rows",
-                        movableColumns: true, 
-                        resizableRows: true,
-                        columns:[
-                            {title:"Ownership", field:"key head"},
-                            {title:"Feature Count", field: "value head", formatter:"money", formatterParams:{precision:0}}
-                        ]
-                    }, headerSort:false},
-                ]
-            },
         ]
     });
 
-    const format_columns = () => {
-
-        // load all column components
-        const columns = table.getColumns();
-
-        // initialize sets that will determine which columns to hide and which columns to show
-        let hide_fields = new Set(columns.map(col => col.getField()));
-        let show_fields = new Set();
-
-        // load all visible row components
+    // previously called on renderComplete to fix edge case where user applies irrevocable filter combination yielding no results
+    // using list_autocomplete_multi_header_filter(), this no longer seems necessary (user can backspace to remove filter)
+    // retaining function for now, not currently in use. 20250415.
+    const if_table_empty_clear_filters = () => {
         const rows = table.getRows("visible");
-
-        // heuristic, efficacy not yet proven
-        // assume that if there are no visible rows, the user has broken something with an impossible and irrevocable header filter
         if (rows.length < 1) {
             table.clearHeaderFilter();
         }
+    }
+
+    // called on renderComplete
+    // assigns alternating color scheme to visible columns
+    const color_columns = () => {
+
+        // this variable will alternate between two color assignment values
+        let next_color = 'rgb(50, 185, 200, 0.075)';
+
+        // to track which parent column elements have already had a color assigned during this execution (columns loop will pass over multiple of their children)
+        const parents_colored = new Set();
+
+        // array of Tabulator JS column components
+        const columns = table.getColumns();
+
+        // to determine when a parent column should be skipped (i.e. they have no visible children)
+        // using field names because child columns are accessed from the parent using .getDefinition().columns (so we need string identifiers)
+        const visible_fields = columns
+            .filter(col => col.isVisible())
+            .map(col => col.getField());
+
+        for (let column of columns) {
+
+            const parent = column.getParentColumn();
+
+            // skip columns that have no parent and are not visible
+            if (!parent && !column.isVisible()) {
+                continue;
+
+            // color columns that have no parent and are visible
+            } else if (!parent && column.isVisible()) {
+
+                // skip leading frozen columns so we don't make them transparent (these don't require alternating color scheme anyways)
+                if (["AkFireNumber", "wfigs_IncidentName", "SpatialInfoType", "VarAppURL"].includes(column.getField())) {
+                    continue;
+                }
+                
+                // apply color
+                const el = column.getElement();
+                el.style.background = next_color;
+                const cells = column.getCells();
+                for (let cell of cells) {
+                    const cell_el = cell.getElement();
+                    if (cell.getValue() === "!error!" || cell.getValue() === -1) {
+                        cell_el.style.backgroundColor = "rgba(255, 75, 75, 0.25)";
+                    } else {
+                        cell_el.style.backgroundColor = next_color;
+                    }
+                }
+                // alternate colors - whatever column or group of columns is colored next needs to look different
+                next_color = (next_color === 'rgb(255, 182, 18, 0.075)') ? 'rgb(50, 185, 200, 0.075)' : 'rgb(255, 182, 18, 0.075)';
+
+            // color parent columns and their children, based on visibility
+            } else if (parent) {
+
+                const parent_title = parent.getDefinition().title;
+
+                const child_fields = parent.getDefinition().columns.map(child => child.field);
+
+                // skip parent columns that have no visible child columns
+                const a_child_is_shown = child_fields.some(field => visible_fields.includes(field));
+                if (!a_child_is_shown) {
+                    continue;
+                }
+
+                // ensure parent has not yet been colored during this execution
+                if (!parents_colored.has(parent_title)) {
+
+                    // assign color and track parent column title so we don't try to color it and its children again
+                    const parent_el = parent.getElement();
+                    parent_el.style.background = next_color;
+                    parents_colored.add(parent_title);
+
+                    // iterate over all child columns
+                    for (let field of child_fields) {
+
+                        const child_column = columns.find(col => col.getField() === field);
+
+                        // apply color
+                        const child_el = child_column.getElement();
+                        child_el.style.backgroundColor = next_color;
+                        const cells = child_column.getCells();
+                        for (let cell of cells) {
+                            const cell_el = cell.getElement();
+                            if (cell.getValue() === "!error!" || cell.getValue() === -1) {
+                                cell_el.style.backgroundColor = "rgba(255, 75, 75, 0.25)";
+                            } else {
+                                cell_el.style.backgroundColor = next_color;
+                            }
+                        }
+                    }
+                    // alternate colors - whatever column or group of columns is colored next needs to look different
+                    next_color = (next_color === 'rgb(255, 182, 18, 0.075)') ? 'rgb(50, 185, 200, 0.075)' : 'rgb(255, 182, 18, 0.075)';
+                }
+            }
+
+        }
+    }
+
+    // called on tableBuilt
+    // hides columns that would otherwise display and be completely empty
+    const initial_columns_visibility = () => {
+
+        // initialize sets that will determine which columns to hide and which columns to show
+        const columns = table.getColumns();
+        let hide_fields = new Set(columns.map(col => col.getField()));
+        let show_fields = new Set();
 
         // iterate over all rows and cells to identify which fields have data
+        const rows = table.getRows("all");
         for (let row of rows) {
             const cells = row.getCells();
             for (let cell of cells) {
@@ -1108,40 +1754,7 @@ const build_table = (tag, rows_array) => {
             }
         }
 
-        //^ this block is almost a functional option for handling group column collapse in a more dynamic way
-        //^ not yet predictable enough for implementation but may be worth future exploration
-        //^ in the meantime, use of a never_hide set (see below) is more stable
-        /*
-        // iterate over all columns that will be visible and ensure proper columns widths
-        //for (let field of show_fields) {
-        for (let column of columns) {
-            if (!show_fields.has(column.getField())) {
-                continue
-            }
-            //const column = table.getColumn(field);
-            const parent = column.getParentColumn();
-            if (parent !== false) {
-                const column_width = column.getWidth();
-                const parent_width = parent.getWidth();
-                const wider_parent_px = parent_width * 3;
-                // this heuristic may need to be adjusted, but its working nicely as of 20250329. max parent width determined by management option acres.
-                if (column_width >= parent_width && wider_parent_px < 350) {
-                    parent.setWidth(wider_parent_px);
-                    column.setWidth(wider_parent_px);
-                } else {
-                    column.setWidth(true);
-                    column.setWidth(column.getWidth() + 25);
-                }
-    
-            } else {
-                column.setWidth(true);
-            }
-        }
-        */
-
         // to prevent certain group columns from collapsing so far that the headers are not legible
-        // additions may be necessary if other problematic group columns are identified
-        // may be worth opening a gh issue to address this behavior
         const never_hide = new Set ([
             "MgmtOption_AcreSum.Critical",
             "MgmtOption_AcreSum.Full",
@@ -1149,7 +1762,6 @@ const build_table = (tag, rows_array) => {
             "Jurisd_Owner_AcreSum.Private",
             "Jurisd_Owner_AcreSum.State",
         ]);
-
         show_fields = new Set([...show_fields, ...never_hide]);
 
         // hide columns that have NO data, show columns that have ANY data
@@ -1163,94 +1775,14 @@ const build_table = (tag, rows_array) => {
             const column = table.getColumn(field);
             column.setWidth(true);
         }
-
-        // initialize sets to track which elements have already had a color assigned during this execution
-        // this is essential to preserve the desired alternating color scheme
-        const columns_colored = new Set();
-        const parents_colored = new Set();
-
-        // initialize first color to assign
-        // this variable will alternate between two color assignment values
-        let next_color = 'rgb(50, 185, 200, 0.075)';
-
-        // iterate over all columns
-        // using the columns object (instead of show_fields, for example) is essential for following the order in which columns display left-to-right
-        for (let column of columns) {
-
-            // skip columns that have no parent and are hidden
-            const parent = column.getParentColumn();
-            if (parent === false && hide_fields.has(column.getField()) ) {
-                continue;
-            }
-
-            // color parent columns and their children
-            if (parent !== false) {
-                const children = parent.getDefinition().columns;
-                const fields = children.map(child => child.field);
-
-                // skip parent columns that have no child columns which will be shown
-                const a_child_is_shown = fields.some(item => show_fields.has(item));
-                if (!a_child_is_shown) {
-                    continue
-                }
-
-                // ensure parent has not yet been colored during this execution
-                if (!parents_colored.has(parent.getDefinition().title)) {
-
-                    // assign color and track parent column title so we don't try to color it again
-                    const parent_el = parent.getElement();
-                    parent_el.style.background = next_color;
-                    parents_colored.add(parent.getDefinition().title);
-
-                    // iterate over all child columns
-                    for (let field of fields) {
-                        const child_column = table.getColumn(field);
-
-                        // ensure child column has not yet been colored during this execution
-                        if (!columns_colored.has(child_column.getField())) {
-
-                            // assign color and track child column field so we don't try to color it again
-                            const child_el = child_column.getElement();
-                            child_el.style.backgroundColor = next_color;
-                            columns_colored.add(child_column.getField());
-
-                            // iterate over all cells in the child column and color them
-                            // there is no circumstance in which an execution should color a child column but not its cells
-                            const cells = child_column.getCells();
-                            for (let cell of cells) {
-                                const cell_el = cell.getElement();
-                                cell_el.style.backgroundColor = next_color;
-                            }
-                        }
-                    }
-                    // alternate colors - whatever column or group of columns is colored next needs to look different
-                    next_color = (next_color === 'rgb(255, 182, 18, 0.075)') ? 'rgb(50, 185, 200, 0.075)' : 'rgb(255, 182, 18, 0.075)';
-                }
-            }
-
-            // skip leading frozen columns so we don't make them transparent (these don't require alternating color scheme anyways)
-            // skip any columns which were colored above with their parent
-            if (["AkFireNumber", "wfigs_IncidentName", "SpatialInfoType", "VarAppURL"].includes(column.getField()) || columns_colored.has(column.getField())) {
-                continue;
-            }
-            
-            // color any column which has not been skipped by preceeding logic
-            const el = column.getElement();
-            el.style.background = next_color;
-            const cells = column.getCells();
-            for (let cell of cells) {
-                const cell_el = cell.getElement();
-                cell_el.style.backgroundColor = next_color;
-            }
-            // alternate colors - whatever column or group of columns is colored next needs to look different
-            next_color = (next_color === 'rgb(255, 182, 18, 0.075)') ? 'rgb(50, 185, 200, 0.075)' : 'rgb(255, 182, 18, 0.075)';
-        }
     }
 
-    table.on("renderComplete", format_columns);
+    table.on("tableBuilt", initial_columns_visibility);
+    table.on("renderComplete", color_columns);
+    table.on("columnVisibilityChanged", color_columns);
 
     table.on("cellClick", function(e, cell) {
-        setTimeout(() => {cell.getRow().normalizeHeight()}, 500)
+        setTimeout(() => {cell.getRow().normalizeHeight()}, 500);
         setTimeout(() => {cell.getColumn().setWidth(true)}, 500);
     });    
 
@@ -1299,4 +1831,3 @@ const main = async () => {
 }
 
 main()
-
