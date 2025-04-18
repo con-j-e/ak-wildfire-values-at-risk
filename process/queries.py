@@ -50,7 +50,7 @@ def gather_query_bundles(analysis_gdf: gpd.GeoDataFrame, query_plan: pd.DataFram
 
     return query_bundles
 
-async def send_all_queries(query_bundles: tuple[tuple]) -> tuple[list]:
+async def send_all_queries(query_bundles: tuple[tuple]) -> tuple[list, Exception | None]:
     '''
     Asynchronously send all query bundles.
 
