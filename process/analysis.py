@@ -25,7 +25,7 @@ def gather_analysis_pairs(analysis_gdf: gpd.GeoDataFrame, query_features_dict: d
     On return these GDFs are accompanied by the alias identifying the source of the analysis input GDF.
 
     Args:
-        * analysis_gdf (gpd.GeoDataFrame) -- Contains all fire features used in values-at-risk analysis.
+        * analysis_gdf (gpd.GeoDataFrame) -- contains all fire features used in values-at-risk analysis.
         * query_features_dict (dict) -- holds { IrwinID : [(var_alias, geodataframe), ... } pairs.
 
     Returns:
@@ -46,9 +46,10 @@ def gather_processes(analysis_gdf_var_gdf_pairs: list[tuple], analysis_plan: pd.
     Prepare all analysis processes to be run concurrently.
 
     Args:
-        analysis_gdf_var_gdf_pairs (list[tuple])
-        analysis_plan (pd.DataFrame)
-        manager_queue (multiprocessing.Queue)
+        * analysis_gdf_var_gdf_pairs (list[tuple]) -- holds tuples for all unique combinations of IrwinID and analysis input.
+            * tuple structure: ( GDF of all features for a specific fire , GDF of an analysis input  , alias for the analysis input )
+        * analysis_plan (pd.DataFrame) -- determines which types of analyses to run (and which attributes to analyze) for all input data sources. 
+        * manager_queue (multiprocessing.Queue) -- holds all attribution tuples generated during multiprocessing analysis.
 
     Returns:
         list[multiprocessing.Process]
@@ -65,9 +66,9 @@ def gather_results(processes: list[multiprocessing.Process], manager_queue: mult
     Execute all processes in batches that are sized according to system cpu count.
 
     Args:
-        processes (list[multiprocessing.Process])
-        manager_queue (multiprocessing.Queue)
-        batch_size (int, optional): Maximum number of processes in each batch. Defaults to multiprocessing.cpu_count().
+        processes (list[multiprocessing.Process]) -- all analysis processes to be executed.
+        manager_queue (multiprocessing.Queue) -- holds all attribution tuples generated during multiprocessing analysis.
+        batch_size (int, optional) -- maximum number of processes to execute in each batch. Defaults to multiprocessing.cpu_count().
 
     Returns:
         list[list[tuple]]: Deepest elements are attribution tuples formatted (IrwinID, buf_dist, attrName, attrVal).
@@ -130,10 +131,10 @@ def parse_analysis_errors(results: list[list[tuple]]) -> list[list[tuple]]:
 
 def create_attribute_dataframe(results: list[list[tuple]]) -> pd.DataFrame:
     """
-    - Convert attribution tuples generated during multiprocessing into a DataFrame.
+    Convert attribution tuples generated during multiprocessing into a DataFrame.
 
     Args:
-        - results (list[list[tuple]]) -- Object structure returned by gather_results(). Deepest elements are attribution tuples formatted (IrwinID, buf_dist, attrName, attrVal).
+        * results (list[list[tuple]]) -- Object structure returned by gather_results(). Deepest elements are attribution tuples formatted (IrwinID, buf_dist, attrName, attrVal).
 
     Returns:
         - pd.DataFrame -- DataFrame with buf_dist & IrwinID multi-index, and columns for each unique attrName.
@@ -168,7 +169,21 @@ def join_fires_bufs_attributes(analysis_gdf: gpd.GeoDataFrame, attributes_df: pd
     analysis_gdf.reset_index(drop=True, inplace=True)
     return analysis_gdf
 
-def _process_gdf_pair(analysis_pair: tuple, analysis_plan: pd.DataFrame, manager_queue: multiprocessing.Queue) -> tuple:
+def _process_gdf_pair(analysis_pair: tuple, analysis_plan: pd.DataFrame, manager_queue: multiprocessing.Queue) -> list[multiprocessing.Process]:
+    '''
+    Creates all processes for a given fire (including its buffer zones) and value-at-risk input.
+
+    Arguments:
+        analysis_pair -- tuple structure: ( GDF of all features for a specific fire , GDF of an analysis input  , alias for the analysis input )
+        analysis_plan -- determines which types of analyses to run (and which attributes to analyze) for all input data sources.
+        manager_queue -- holds all attribution tuples generated during multiprocessing analysis.
+
+    Raises:
+        ValueError: Unable to determine geometry type of value-at-risk input.
+
+    Returns:
+        list -- processes to be run for the analysis of a given fire (including its buffer zones) and value-at-risk input
+    '''    
 
     fire_buf_gdf, var_gdf, var_alias = analysis_pair
 
@@ -200,7 +215,6 @@ def _process_gdf_pair(analysis_pair: tuple, analysis_plan: pd.DataFrame, manager
         )
         processes.append(p)
 
-    #! deep copy objects - watch out for memory usage. fire_buf_gdf will have 4 rows, so 4 copies of all objects will be made.
     if poly_var:
         for _, row in fire_buf_gdf.iterrows():
             process_args = [deepcopy(obj) for obj in (row['IrwinID'], row['geometry'], row['buf_dist'], var_gdf, var_alias, analysis_types)]
@@ -235,11 +249,16 @@ def _process_gdf_pair(analysis_pair: tuple, analysis_plan: pd.DataFrame, manager
 
     return processes
 
-def _preprocess_poly_var_gdf(var_gdf: gpd.GeoDataFrame, fire_geometry: shp.Polygon | shp.MultiPolygon):
-
+def _preprocess_poly_var_gdf(var_gdf: gpd.GeoDataFrame, fire_geometry: shp.Polygon | shp.MultiPolygon) -> gpd.GeoDataFrame:
+    '''
+    Prepares GDF of polygon features for subsequent analyses:
+    Calculates the ratio of the analysis zone intersection geometry area to the full geometry area for each feature.
+    Replaces feature geometries with the portion of their geometry intersecting the fire analysis zone.
+    Calculates acreage of each features intersection area with the fire.
+    '''
     var_gdf['intersect_geom'] = var_gdf['geometry'].clip(fire_geometry)
 
-    var_gdf = var_gdf[var_gdf['intersect_geom'].notna()].copy() #* copy() because pandas SettingwithCopyWarning
+    var_gdf = var_gdf[var_gdf['intersect_geom'].notna()].copy()
 
     var_gdf['fire_intersect_ratio'] = (var_gdf['intersect_geom'].area / var_gdf['geometry'].area)
 
@@ -252,10 +271,15 @@ def _preprocess_poly_var_gdf(var_gdf: gpd.GeoDataFrame, fire_geometry: shp.Polyg
     return var_gdf
 
 def _preprocess_line_var_gdf(var_gdf: gpd.GeoDataFrame, fire_geometry: shp.Polygon | shp.MultiPolygon):
-
+    '''
+    Prepares GDF of line features for subsequent analyses:
+    Calculates the ratio of the analysis zone intersection geometry length to the full geometry length for each feature.
+    Replaces feature geometries with the portion of their geometry intersecting the fire analysis zone.
+    Calculates length in feet of each features intersection with the fire.
+    '''
     var_gdf['intersect_geom'] = var_gdf['geometry'].clip(fire_geometry)
 
-    var_gdf = var_gdf[var_gdf['intersect_geom'].notna()].copy() #* copy() because pandas SettingwithCopyWarning
+    var_gdf = var_gdf[var_gdf['intersect_geom'].notna()].copy()
 
     var_gdf['fire_intersect_ratio'] = (var_gdf['intersect_geom'].length / var_gdf['geometry'].length)
 
