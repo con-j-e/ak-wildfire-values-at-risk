@@ -325,7 +325,6 @@ def _assign_ak_fire_region(row: pd.Series) -> str:
     Parses the UniqueFireIdentifier attribute from either WFIGS locations or perimeters
     and returns the three-digit Alaska fire region ('MSS', for example).
     '''
-
     try:
         unique_fire_id = row['UniqueFireIdentifier']
     except KeyError:
@@ -343,7 +342,6 @@ def _assign_ak_fire_number(row: pd.Series) -> int:
     Parses the UniqueFireIdentifier attribute from either WFIGS locations or perimeters
     and returns the three-digit Alaska fire number.
     '''
-
     try:
         unique_fire_id = row['UniqueFireIdentifier']
     except KeyError:
@@ -355,8 +353,6 @@ def _assign_ak_fire_number(row: pd.Series) -> int:
 
     return ak_number
 
-
-
 def _create_reported_acres_buffers(wfigs_points_gdf: gpd.GeoDataFrame) -> gpd.GeoDataFrame:
     '''
     Replaces point geometries of WFIGS fire location features with polygon geometries 
@@ -365,6 +361,7 @@ def _create_reported_acres_buffers(wfigs_points_gdf: gpd.GeoDataFrame) -> gpd.Ge
     wfigs_points_gdf['ReportedAcres_m2'] = wfigs_points_gdf['ReportedAcres'] * 4046.86
     wfigs_points_gdf['buf_radius'] = np.sqrt(wfigs_points_gdf['ReportedAcres_m2'] / np.pi)
     wfigs_points_gdf['geometry'] = wfigs_points_gdf.apply(
-        lambda row: row['geometry'].buffer(row['buf_radius']), axis=1
-        )
+        lambda row: row['geometry'].buffer(row['buf_radius']),
+        axis=1
+    )
     return wfigs_points_gdf
