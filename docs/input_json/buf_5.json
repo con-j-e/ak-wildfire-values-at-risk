@@ -7,9 +7,9 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1745083059583.0,
+        "wfigs_ModifiedOnDateTime_dt": 1745085925490.0,
         "wfigs_IrwinID": "{F1A2F1A0-9D7B-4406-938F-A0094525E8A4}",
-        "ReportedAcres": 0.1,
+        "ReportedAcres": 0.25,
         "HasError": 0.0,
         "DefaultLabel": "032-Greystone, 5 Mile Buffer",
         "AnalysisBufferMiles": 5.0,
@@ -21,15 +21,15 @@
         "AkPowerLine_CondType_FeetSum": [
             {
                 "key head": "OH Primary 25KV",
-                "value head": 685986
+                "value head": 686584
             },
             {
                 "key head": "OH Secondary",
-                "value head": 220695
+                "value head": 220779
             },
             {
                 "key head": "Transmission",
-                "value head": 42343
+                "value head": 42390
             },
             {
                 "key head": "OH Primary 12KV",
@@ -43,15 +43,15 @@
         "AkPowerLine_Voltage_FeetSum": [
             {
                 "key head": "25",
-                "value head": 687943
+                "value head": 688540
             },
             {
                 "key head": "120/240",
-                "value head": 216040
+                "value head": 216123
             },
             {
                 "key head": "138",
-                "value head": 42343
+                "value head": 42390
             },
             {
                 "key head": "12",
@@ -65,7 +65,7 @@
         "AkPowerLine_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.01,
+                    "dist_mi": 0.0,
                     "dir": "SE",
                     "lat": "64\u00b0 04.241' N",
                     "lng": "145\u00b0 37.995' W",
@@ -73,7 +73,7 @@
                     "COND_TYPE": "OH Primary 25KV"
                 },
                 {
-                    "dist_mi": 0.01,
+                    "dist_mi": 0.0,
                     "dir": "SE",
                     "lat": "64\u00b0 04.242' N",
                     "lng": "145\u00b0 37.993' W",
@@ -90,6 +90,14 @@
                 },
                 {
                     "dist_mi": 0.03,
+                    "dir": "S",
+                    "lat": "64\u00b0 04.216' N",
+                    "lng": "145\u00b0 38.010' W",
+                    "VOLTAGE": "25",
+                    "COND_TYPE": "OH Primary 25KV"
+                },
+                {
+                    "dist_mi": 0.03,
                     "dir": "N",
                     "lat": "64\u00b0 04.285' N",
                     "lng": "145\u00b0 37.985' W",
@@ -98,17 +106,17 @@
                 },
                 {
                     "dist_mi": 0.03,
-                    "dir": "S",
+                    "dir": "SSW",
                     "lat": "64\u00b0 04.216' N",
-                    "lng": "145\u00b0 38.010' W",
+                    "lng": "145\u00b0 38.048' W",
                     "VOLTAGE": "25",
                     "COND_TYPE": "OH Primary 25KV"
                 },
                 {
-                    "dist_mi": 0.04,
-                    "dir": "SSW",
-                    "lat": "64\u00b0 04.216' N",
-                    "lng": "145\u00b0 38.048' W",
+                    "dist_mi": 0.05,
+                    "dir": "N",
+                    "lat": "64\u00b0 04.300' N",
+                    "lng": "145\u00b0 38.010' W",
                     "VOLTAGE": "25",
                     "COND_TYPE": "OH Primary 25KV"
                 },
@@ -121,10 +129,18 @@
                     "COND_TYPE": "OH Primary 25KV"
                 },
                 {
-                    "dist_mi": 0.05,
-                    "dir": "N",
+                    "dist_mi": 0.06,
+                    "dir": "NNE",
                     "lat": "64\u00b0 04.300' N",
-                    "lng": "145\u00b0 38.010' W",
+                    "lng": "145\u00b0 37.928' W",
+                    "VOLTAGE": "120/240",
+                    "COND_TYPE": "OH Secondary"
+                },
+                {
+                    "dist_mi": 0.06,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 04.300' N",
+                    "lng": "145\u00b0 37.928' W",
                     "VOLTAGE": "25",
                     "COND_TYPE": "OH Primary 25KV"
                 },
@@ -138,41 +154,9 @@
                 },
                 {
                     "dist_mi": 0.06,
-                    "dir": "NNE",
-                    "lat": "64\u00b0 04.300' N",
-                    "lng": "145\u00b0 37.928' W",
-                    "VOLTAGE": "25",
-                    "COND_TYPE": "OH Primary 25KV"
-                },
-                {
-                    "dist_mi": 0.06,
                     "dir": "ESE",
                     "lat": "64\u00b0 04.216' N",
                     "lng": "145\u00b0 37.903' W",
-                    "VOLTAGE": "120/240",
-                    "COND_TYPE": "OH Secondary"
-                },
-                {
-                    "dist_mi": 0.06,
-                    "dir": "ESE",
-                    "lat": "64\u00b0 04.216' N",
-                    "lng": "145\u00b0 37.903' W",
-                    "VOLTAGE": "25",
-                    "COND_TYPE": "OH Primary 25KV"
-                },
-                {
-                    "dist_mi": 0.06,
-                    "dir": "ESE",
-                    "lat": "64\u00b0 04.216' N",
-                    "lng": "145\u00b0 37.903' W",
-                    "VOLTAGE": "25",
-                    "COND_TYPE": "OH Primary 25KV"
-                },
-                {
-                    "dist_mi": 0.06,
-                    "dir": "NNE",
-                    "lat": "64\u00b0 04.300' N",
-                    "lng": "145\u00b0 37.928' W",
                     "VOLTAGE": "120/240",
                     "COND_TYPE": "OH Secondary"
                 },
@@ -185,12 +169,44 @@
                     "COND_TYPE": "OH Primary 25KV"
                 },
                 {
+                    "dist_mi": 0.06,
+                    "dir": "ESE",
+                    "lat": "64\u00b0 04.216' N",
+                    "lng": "145\u00b0 37.903' W",
+                    "VOLTAGE": "25",
+                    "COND_TYPE": "OH Primary 25KV"
+                },
+                {
+                    "dist_mi": 0.06,
+                    "dir": "ESE",
+                    "lat": "64\u00b0 04.216' N",
+                    "lng": "145\u00b0 37.903' W",
+                    "VOLTAGE": "25",
+                    "COND_TYPE": "OH Primary 25KV"
+                },
+                {
                     "dist_mi": 0.07,
                     "dir": "SW",
                     "lat": "64\u00b0 04.216' N",
                     "lng": "145\u00b0 38.152' W",
                     "VOLTAGE": "25",
                     "COND_TYPE": "OH Primary 25KV"
+                },
+                {
+                    "dist_mi": 0.07,
+                    "dir": "SW",
+                    "lat": "64\u00b0 04.213' N",
+                    "lng": "145\u00b0 38.152' W",
+                    "VOLTAGE": "25",
+                    "COND_TYPE": "OH Primary 25KV"
+                },
+                {
+                    "dist_mi": 0.07,
+                    "dir": "SE",
+                    "lat": "64\u00b0 04.190' N",
+                    "lng": "145\u00b0 37.912' W",
+                    "VOLTAGE": "120/240",
+                    "COND_TYPE": "OH Secondary"
                 },
                 {
                     "dist_mi": 0.07,
@@ -202,11 +218,19 @@
                 },
                 {
                     "dist_mi": 0.08,
-                    "dir": "SW",
-                    "lat": "64\u00b0 04.213' N",
-                    "lng": "145\u00b0 38.152' W",
-                    "VOLTAGE": "25",
-                    "COND_TYPE": "OH Primary 25KV"
+                    "dir": "NNW",
+                    "lat": "64\u00b0 04.332' N",
+                    "lng": "145\u00b0 38.029' W",
+                    "VOLTAGE": "120/240",
+                    "COND_TYPE": "OH Secondary"
+                },
+                {
+                    "dist_mi": 0.08,
+                    "dir": "SSE",
+                    "lat": "64\u00b0 04.168' N",
+                    "lng": "145\u00b0 37.988' W",
+                    "VOLTAGE": "120/240",
+                    "COND_TYPE": "OH Secondary"
                 },
                 {
                     "dist_mi": 0.08,
@@ -217,42 +241,10 @@
                     "COND_TYPE": "OH Secondary"
                 },
                 {
-                    "dist_mi": 0.08,
-                    "dir": "SE",
-                    "lat": "64\u00b0 04.190' N",
-                    "lng": "145\u00b0 37.912' W",
-                    "VOLTAGE": "120/240",
-                    "COND_TYPE": "OH Secondary"
-                },
-                {
-                    "dist_mi": 0.09,
+                    "dist_mi": 0.1,
                     "dir": "SSE",
-                    "lat": "64\u00b0 04.168' N",
-                    "lng": "145\u00b0 37.988' W",
-                    "VOLTAGE": "120/240",
-                    "COND_TYPE": "OH Secondary"
-                },
-                {
-                    "dist_mi": 0.09,
-                    "dir": "NNW",
-                    "lat": "64\u00b0 04.332' N",
-                    "lng": "145\u00b0 38.029' W",
-                    "VOLTAGE": "120/240",
-                    "COND_TYPE": "OH Secondary"
-                },
-                {
-                    "dist_mi": 0.1,
-                    "dir": "WSW",
-                    "lat": "64\u00b0 04.216' N",
-                    "lng": "145\u00b0 38.213' W",
-                    "VOLTAGE": "25",
-                    "COND_TYPE": "OH Primary 25KV"
-                },
-                {
-                    "dist_mi": 0.1,
-                    "dir": "WSW",
-                    "lat": "64\u00b0 04.216' N",
-                    "lng": "145\u00b0 38.213' W",
+                    "lat": "64\u00b0 04.153' N",
+                    "lng": "145\u00b0 37.960' W",
                     "VOLTAGE": "120/240",
                     "COND_TYPE": "OH Secondary"
                 },
@@ -263,6 +255,30 @@
                     "lng": "145\u00b0 37.806' W",
                     "VOLTAGE": "120/240",
                     "COND_TYPE": "OH Secondary"
+                },
+                {
+                    "dist_mi": 0.1,
+                    "dir": "WSW",
+                    "lat": "64\u00b0 04.216' N",
+                    "lng": "145\u00b0 38.213' W",
+                    "VOLTAGE": "120/240",
+                    "COND_TYPE": "OH Secondary"
+                },
+                {
+                    "dist_mi": 0.1,
+                    "dir": "SSE",
+                    "lat": "64\u00b0 04.153' N",
+                    "lng": "145\u00b0 37.960' W",
+                    "VOLTAGE": "120/240",
+                    "COND_TYPE": "OH Secondary"
+                },
+                {
+                    "dist_mi": 0.1,
+                    "dir": "WSW",
+                    "lat": "64\u00b0 04.216' N",
+                    "lng": "145\u00b0 38.213' W",
+                    "VOLTAGE": "25",
+                    "COND_TYPE": "OH Primary 25KV"
                 },
                 {
                     "dist_mi": 0.11,
@@ -279,22 +295,6 @@
                     "lng": "145\u00b0 38.043' W",
                     "VOLTAGE": "25",
                     "COND_TYPE": "OH Primary 25KV"
-                },
-                {
-                    "dist_mi": 0.11,
-                    "dir": "SSE",
-                    "lat": "64\u00b0 04.153' N",
-                    "lng": "145\u00b0 37.960' W",
-                    "VOLTAGE": "120/240",
-                    "COND_TYPE": "OH Secondary"
-                },
-                {
-                    "dist_mi": 0.11,
-                    "dir": "SSE",
-                    "lat": "64\u00b0 04.153' N",
-                    "lng": "145\u00b0 37.960' W",
-                    "VOLTAGE": "120/240",
-                    "COND_TYPE": "OH Secondary"
                 },
                 {
                     "dist_mi": 0.11,
@@ -322,8 +322,16 @@
                 },
                 {
                     "dist_mi": 0.15,
-                    "dir": "WSW",
-                    "lat": "64\u00b0 04.221' N",
+                    "dir": "ENE",
+                    "lat": "64\u00b0 04.285' N",
+                    "lng": "145\u00b0 37.702' W",
+                    "VOLTAGE": "120/240",
+                    "COND_TYPE": "OH Secondary"
+                },
+                {
+                    "dist_mi": 0.15,
+                    "dir": "W",
+                    "lat": "64\u00b0 04.274' N",
                     "lng": "145\u00b0 38.323' W",
                     "VOLTAGE": "25",
                     "COND_TYPE": "OH Primary 25KV"
@@ -335,25 +343,17 @@
                     "lng": "145\u00b0 38.323' W",
                     "VOLTAGE": "25",
                     "COND_TYPE": "OH Primary 25KV"
-                },
-                {
-                    "dist_mi": 0.15,
-                    "dir": "W",
-                    "lat": "64\u00b0 04.274' N",
-                    "lng": "145\u00b0 38.323' W",
-                    "VOLTAGE": "25",
-                    "COND_TYPE": "OH Primary 25KV"
                 }
             ],
-            "popped": 4132,
+            "popped": 4133,
             "cutoff": 0.15
         },
-        "AkPowerLine_TotalFeet": 953067.0,
+        "AkPowerLine_TotalFeet": 953796.0,
         "Runway_FeatureCount": 4.0,
         "Runway_Locations": {
             "features": [
                 {
-                    "dist_mi": 3.05,
+                    "dist_mi": 3.04,
                     "dir": "SW",
                     "lat": "64\u00b0 03.007' N",
                     "lng": "145\u00b0 43.348' W",
@@ -442,7 +442,7 @@
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 1.32,
+                    "dist_mi": 1.31,
                     "dir": "NNE",
                     "lat": "64\u00b0 05.320' N",
                     "lng": "145\u00b0 37.063' W",
@@ -512,7 +512,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 2.03,
+                    "dist_mi": 2.02,
                     "dir": "ENE",
                     "lat": "64\u00b0 04.824' N",
                     "lng": "145\u00b0 34.196' W",
@@ -522,7 +522,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 2.98,
+                    "dist_mi": 2.97,
                     "dir": "NE",
                     "lat": "64\u00b0 05.532' N",
                     "lng": "145\u00b0 32.880' W",
@@ -552,7 +552,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 3.55,
+                    "dist_mi": 3.54,
                     "dir": "W",
                     "lat": "64\u00b0 04.433' N",
                     "lng": "145\u00b0 45.041' W",
@@ -572,7 +572,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 3.67,
+                    "dist_mi": 3.66,
                     "dir": "SSW",
                     "lat": "64\u00b0 01.410' N",
                     "lng": "145\u00b0 41.272' W",
@@ -592,7 +592,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 3.76,
+                    "dist_mi": 3.75,
                     "dir": "W",
                     "lat": "64\u00b0 04.662' N",
                     "lng": "145\u00b0 45.413' W",
@@ -602,7 +602,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 3.77,
+                    "dist_mi": 3.76,
                     "dir": "W",
                     "lat": "64\u00b0 04.697' N",
                     "lng": "145\u00b0 45.417' W",
@@ -612,7 +612,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 3.77,
+                    "dist_mi": 3.76,
                     "dir": "W",
                     "lat": "64\u00b0 04.856' N",
                     "lng": "145\u00b0 45.355' W",
@@ -622,7 +622,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 3.78,
+                    "dist_mi": 3.77,
                     "dir": "SSW",
                     "lat": "64\u00b0 01.474' N",
                     "lng": "145\u00b0 41.977' W",
@@ -632,7 +632,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 3.79,
+                    "dist_mi": 3.78,
                     "dir": "W",
                     "lat": "64\u00b0 04.839' N",
                     "lng": "145\u00b0 45.403' W",
@@ -662,7 +662,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 3.87,
+                    "dist_mi": 3.86,
                     "dir": "W",
                     "lat": "64\u00b0 04.786' N",
                     "lng": "145\u00b0 45.584' W",
@@ -725,7 +725,7 @@
         "ComsTwr_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.7,
+                    "dist_mi": 0.69,
                     "dir": "ENE",
                     "lat": "64\u00b0 04.425' N",
                     "lng": "145\u00b0 36.672' W",
@@ -773,7 +773,7 @@
                     "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=4465722"
                 },
                 {
-                    "dist_mi": 1.45,
+                    "dist_mi": 1.44,
                     "dir": "ENE",
                     "lat": "64\u00b0 04.765' N",
                     "lng": "145\u00b0 35.382' W",
@@ -781,7 +781,7 @@
                     "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=4779427"
                 },
                 {
-                    "dist_mi": 1.45,
+                    "dist_mi": 1.44,
                     "dir": "ENE",
                     "lat": "64\u00b0 04.765' N",
                     "lng": "145\u00b0 35.382' W",
@@ -937,15 +937,15 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 45159.87
+                "value head": 45233.21
             },
             {
                 "key head": "University of Alaska",
-                "value head": 2129.15
+                "value head": 2129.17
             },
             {
                 "key head": "Fort Wainwright, Donnelly TA",
-                "value head": 1919.19
+                "value head": 1926.01
             },
             {
                 "key head": "Delta Junction, City of",
@@ -953,7 +953,7 @@
             },
             {
                 "key head": "Fort Greely",
-                "value head": 238.53
+                "value head": 240.87
             },
             {
                 "key head": "Eastern Interior Field Office",
@@ -973,15 +973,15 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "Private": 24111.64,
-            "State": 23222.65,
-            "DOD": 2157.72,
+            "Private": 24137.07,
+            "State": 23270.58,
+            "DOD": 2166.88,
             "City": 645.05,
             "BLM": 189.48
         },
         "MgmtOption_AcreSum": {
-            "Critical": 38169.88,
-            "Full": 12156.69
+            "Critical": 38211.58,
+            "Full": 12197.51
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -1002,23 +1002,23 @@
         "PipeLine_Name_FeetSum": [
             {
                 "key head": "TRANS-ALASKA PIPELINE",
-                "value head": 40085
+                "value head": 40132
             }
         ],
         "PipeLine_Locations": {
             "features": [
                 {
-                    "dist_mi": 2.72,
+                    "dist_mi": 2.71,
                     "dir": "WSW",
-                    "lat": "64\u00b0 03.556' N",
-                    "lng": "145\u00b0 43.178' W",
+                    "lat": "64\u00b0 03.405' N",
+                    "lng": "145\u00b0 43.045' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
                     "dist_mi": 2.72,
                     "dir": "WSW",
-                    "lat": "64\u00b0 03.405' N",
-                    "lng": "145\u00b0 43.045' W",
+                    "lat": "64\u00b0 03.556' N",
+                    "lng": "145\u00b0 43.178' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
@@ -1029,14 +1029,14 @@
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 2.78,
+                    "dist_mi": 2.77,
                     "dir": "SW",
                     "lat": "64\u00b0 02.930' N",
                     "lng": "145\u00b0 42.625' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 2.79,
+                    "dist_mi": 2.78,
                     "dir": "SW",
                     "lat": "64\u00b0 02.904' N",
                     "lng": "145\u00b0 42.603' W",
@@ -1057,7 +1057,7 @@
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 2.9,
+                    "dist_mi": 2.89,
                     "dir": "W",
                     "lat": "64\u00b0 04.222' N",
                     "lng": "145\u00b0 43.766' W",
@@ -1078,14 +1078,14 @@
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 3.03,
+                    "dist_mi": 3.02,
                     "dir": "SW",
                     "lat": "64\u00b0 02.465' N",
                     "lng": "145\u00b0 42.417' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 3.12,
+                    "dist_mi": 3.11,
                     "dir": "W",
                     "lat": "64\u00b0 04.639' N",
                     "lng": "145\u00b0 44.134' W",
@@ -1099,7 +1099,7 @@
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 3.51,
+                    "dist_mi": 3.5,
                     "dir": "SW",
                     "lat": "64\u00b0 01.993' N",
                     "lng": "145\u00b0 42.663' W",
@@ -1134,7 +1134,7 @@
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 3.77,
+                    "dist_mi": 3.76,
                     "dir": "SSW",
                     "lat": "64\u00b0 01.760' N",
                     "lng": "145\u00b0 42.840' W",
@@ -1155,14 +1155,14 @@
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 4.04,
+                    "dist_mi": 4.03,
                     "dir": "SSW",
                     "lat": "64\u00b0 01.523' N",
                     "lng": "145\u00b0 43.019' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 4.04,
+                    "dist_mi": 4.03,
                     "dir": "SSW",
                     "lat": "64\u00b0 01.520' N",
                     "lng": "145\u00b0 43.022' W",
@@ -1176,28 +1176,28 @@
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 4.14,
+                    "dist_mi": 4.13,
                     "dir": "SSW",
                     "lat": "64\u00b0 01.435' N",
                     "lng": "145\u00b0 43.086' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 4.26,
+                    "dist_mi": 4.25,
                     "dir": "WNW",
                     "lat": "64\u00b0 06.155' N",
                     "lng": "145\u00b0 45.250' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 4.41,
+                    "dist_mi": 4.4,
                     "dir": "WNW",
                     "lat": "64\u00b0 06.300' N",
                     "lng": "145\u00b0 45.393' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 4.57,
+                    "dist_mi": 4.56,
                     "dir": "WNW",
                     "lat": "64\u00b0 06.454' N",
                     "lng": "145\u00b0 45.543' W",
@@ -1225,7 +1225,7 @@
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 4.97,
+                    "dist_mi": 4.96,
                     "dir": "WNW",
                     "lat": "64\u00b0 06.839' N",
                     "lng": "145\u00b0 45.892' W",
@@ -1235,7 +1235,7 @@
             "popped": 0,
             "cutoff": null
         },
-        "PipeLine_TotalFeet": 40085.0,
+        "PipeLine_TotalFeet": 40132.0,
         "PowerPlant_PrimSource_AttrCount": [
             {
                 "key head": "wind",
@@ -1271,7 +1271,7 @@
                     "tech_desc": "Petroleum Liquids"
                 },
                 {
-                    "dist_mi": 4.1,
+                    "dist_mi": 4.09,
                     "dir": "SSE",
                     "lat": "64\u00b0 00.833' N",
                     "lng": "145\u00b0 35.799' W",
@@ -1298,10 +1298,10 @@
         "Silviculture_Status_AcreSum": [
             {
                 "key head": "OTC",
-                "value head": 72.33
+                "value head": 72.95
             }
         ],
-        "Silviculture_TotalValue_AttrSum": 26473.0,
+        "Silviculture_TotalValue_AttrSum": 26699.0,
         "Silviculture_FeatureCount": 1.0,
         "Silviculture_Locations": {
             "features": [
@@ -1318,7 +1318,7 @@
             "popped": 0,
             "cutoff": null
         },
-        "Silviculture_TotalAcres": 72.33,
+        "Silviculture_TotalAcres": 72.95,
         "SpecMgmt_Consid_AttrCount": [
             {
                 "key head": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area.",
@@ -1357,7 +1357,7 @@
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 2.37,
+                    "dist_mi": 2.36,
                     "dir": "ENE",
                     "lat": "64\u00b0 04.485' N",
                     "lng": "145\u00b0 33.338' W",
@@ -1392,14 +1392,14 @@
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 3.75,
+                    "dist_mi": 3.74,
                     "dir": "SW",
                     "lat": "64\u00b0 02.235' N",
                     "lng": "145\u00b0 43.843' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 4.53,
+                    "dist_mi": 4.52,
                     "dir": "W",
                     "lat": "64\u00b0 04.255' N",
                     "lng": "145\u00b0 46.991' W",
@@ -1413,7 +1413,7 @@
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 4.74,
+                    "dist_mi": 4.73,
                     "dir": "E",
                     "lat": "64\u00b0 03.703' N",
                     "lng": "145\u00b0 28.699' W",
@@ -1429,7 +1429,7 @@
         "UsaStruct_OccCls_AttrCount": [
             {
                 "key head": "Unclassified",
-                "value head": 1746
+                "value head": 1748
             },
             {
                 "key head": "Residential",
@@ -1447,7 +1447,7 @@
         "UsaStruct_PrimOcc_AttrCount": [
             {
                 "key head": "Unclassified",
-                "value head": 2046
+                "value head": 2048
             },
             {
                 "key head": "Emergency Response",
@@ -1465,20 +1465,12 @@
         "UsaStruct_SecOcc_AttrCount": [
             {
                 "key head": "No Data",
-                "value head": 2057
+                "value head": 2059
             }
         ],
-        "UsaStruct_FeatureCount": 2057.0,
+        "UsaStruct_FeatureCount": 2059.0,
         "UsaStruct_Locations": {
             "features": [
-                {
-                    "dist_mi": 0.0,
-                    "dir": "E",
-                    "lat": "64\u00b0 04.250' N",
-                    "lng": "145\u00b0 37.988' W",
-                    "OCC_CLS": "Unclassified",
-                    "PRIM_OCC": "Unclassified"
-                },
                 {
                     "dist_mi": 0.01,
                     "dir": "E",
@@ -1497,17 +1489,17 @@
                 },
                 {
                     "dist_mi": 0.07,
-                    "dir": "SE",
-                    "lat": "64\u00b0 04.194' N",
-                    "lng": "145\u00b0 37.925' W",
+                    "dir": "N",
+                    "lat": "64\u00b0 04.318' N",
+                    "lng": "145\u00b0 38.003' W",
                     "OCC_CLS": "Unclassified",
                     "PRIM_OCC": "Unclassified"
                 },
                 {
                     "dist_mi": 0.07,
-                    "dir": "N",
-                    "lat": "64\u00b0 04.318' N",
-                    "lng": "145\u00b0 38.003' W",
+                    "dir": "SE",
+                    "lat": "64\u00b0 04.194' N",
+                    "lng": "145\u00b0 37.925' W",
                     "OCC_CLS": "Unclassified",
                     "PRIM_OCC": "Unclassified"
                 },
@@ -1520,6 +1512,14 @@
                     "PRIM_OCC": "Unclassified"
                 },
                 {
+                    "dist_mi": 0.09,
+                    "dir": "SE",
+                    "lat": "64\u00b0 04.182' N",
+                    "lng": "145\u00b0 37.872' W",
+                    "OCC_CLS": "Unclassified",
+                    "PRIM_OCC": "Unclassified"
+                },
+                {
                     "dist_mi": 0.1,
                     "dir": "SE",
                     "lat": "64\u00b0 04.188' N",
@@ -1529,14 +1529,6 @@
                 },
                 {
                     "dist_mi": 0.1,
-                    "dir": "SE",
-                    "lat": "64\u00b0 04.182' N",
-                    "lng": "145\u00b0 37.872' W",
-                    "OCC_CLS": "Unclassified",
-                    "PRIM_OCC": "Unclassified"
-                },
-                {
-                    "dist_mi": 0.11,
                     "dir": "E",
                     "lat": "64\u00b0 04.248' N",
                     "lng": "145\u00b0 37.786' W",
@@ -1544,15 +1536,7 @@
                     "PRIM_OCC": "Unclassified"
                 },
                 {
-                    "dist_mi": 0.13,
-                    "dir": "ENE",
-                    "lat": "64\u00b0 04.286' N",
-                    "lng": "145\u00b0 37.745' W",
-                    "OCC_CLS": "Unclassified",
-                    "PRIM_OCC": "Unclassified"
-                },
-                {
-                    "dist_mi": 0.13,
+                    "dist_mi": 0.12,
                     "dir": "S",
                     "lat": "64\u00b0 04.136' N",
                     "lng": "145\u00b0 38.005' W",
@@ -1568,18 +1552,18 @@
                     "PRIM_OCC": "Unclassified"
                 },
                 {
-                    "dist_mi": 0.14,
-                    "dir": "SSE",
-                    "lat": "64\u00b0 04.128' N",
-                    "lng": "145\u00b0 37.905' W",
+                    "dist_mi": 0.13,
+                    "dir": "ENE",
+                    "lat": "64\u00b0 04.286' N",
+                    "lng": "145\u00b0 37.745' W",
                     "OCC_CLS": "Unclassified",
                     "PRIM_OCC": "Unclassified"
                 },
                 {
-                    "dist_mi": 0.15,
-                    "dir": "NE",
-                    "lat": "64\u00b0 04.330' N",
-                    "lng": "145\u00b0 37.749' W",
+                    "dist_mi": 0.14,
+                    "dir": "SSE",
+                    "lat": "64\u00b0 04.128' N",
+                    "lng": "145\u00b0 37.905' W",
                     "OCC_CLS": "Unclassified",
                     "PRIM_OCC": "Unclassified"
                 },
@@ -1592,6 +1576,14 @@
                     "PRIM_OCC": "Unclassified"
                 },
                 {
+                    "dist_mi": 0.15,
+                    "dir": "NE",
+                    "lat": "64\u00b0 04.330' N",
+                    "lng": "145\u00b0 37.749' W",
+                    "OCC_CLS": "Unclassified",
+                    "PRIM_OCC": "Unclassified"
+                },
+                {
                     "dist_mi": 0.16,
                     "dir": "ENE",
                     "lat": "64\u00b0 04.279' N",
@@ -1600,11 +1592,19 @@
                     "PRIM_OCC": "Unclassified"
                 },
                 {
-                    "dist_mi": 0.17,
+                    "dist_mi": 0.16,
                     "dir": "SW",
                     "lat": "64\u00b0 04.151' N",
                     "lng": "145\u00b0 38.265' W",
                     "OCC_CLS": "Unclassified",
+                    "PRIM_OCC": "Unclassified"
+                },
+                {
+                    "dist_mi": 0.17,
+                    "dir": "NE",
+                    "lat": "64\u00b0 04.324' N",
+                    "lng": "145\u00b0 37.688' W",
+                    "OCC_CLS": "Residential",
                     "PRIM_OCC": "Unclassified"
                 },
                 {
@@ -1625,10 +1625,10 @@
                 },
                 {
                     "dist_mi": 0.18,
-                    "dir": "NE",
-                    "lat": "64\u00b0 04.324' N",
-                    "lng": "145\u00b0 37.688' W",
-                    "OCC_CLS": "Residential",
+                    "dir": "ENE",
+                    "lat": "64\u00b0 04.293' N",
+                    "lng": "145\u00b0 37.636' W",
+                    "OCC_CLS": "Unclassified",
                     "PRIM_OCC": "Unclassified"
                 },
                 {
@@ -1641,9 +1641,9 @@
                 },
                 {
                     "dist_mi": 0.19,
-                    "dir": "ENE",
-                    "lat": "64\u00b0 04.293' N",
-                    "lng": "145\u00b0 37.636' W",
+                    "dir": "W",
+                    "lat": "64\u00b0 04.295' N",
+                    "lng": "145\u00b0 38.403' W",
                     "OCC_CLS": "Unclassified",
                     "PRIM_OCC": "Unclassified"
                 },
@@ -1666,21 +1666,21 @@
                 {
                     "dist_mi": 0.2,
                     "dir": "W",
-                    "lat": "64\u00b0 04.295' N",
-                    "lng": "145\u00b0 38.403' W",
-                    "OCC_CLS": "Unclassified",
-                    "PRIM_OCC": "Unclassified"
-                },
-                {
-                    "dist_mi": 0.2,
-                    "dir": "W",
                     "lat": "64\u00b0 04.255' N",
                     "lng": "145\u00b0 38.419' W",
                     "OCC_CLS": "Unclassified",
                     "PRIM_OCC": "Unclassified"
                 },
                 {
-                    "dist_mi": 0.24,
+                    "dist_mi": 0.23,
+                    "dir": "ESE",
+                    "lat": "64\u00b0 04.147' N",
+                    "lng": "145\u00b0 37.587' W",
+                    "OCC_CLS": "Unclassified",
+                    "PRIM_OCC": "Unclassified"
+                },
+                {
+                    "dist_mi": 0.23,
                     "dir": "E",
                     "lat": "64\u00b0 04.237' N",
                     "lng": "145\u00b0 37.525' W",
@@ -1689,14 +1689,6 @@
                 },
                 {
                     "dist_mi": 0.24,
-                    "dir": "ESE",
-                    "lat": "64\u00b0 04.147' N",
-                    "lng": "145\u00b0 37.587' W",
-                    "OCC_CLS": "Unclassified",
-                    "PRIM_OCC": "Unclassified"
-                },
-                {
-                    "dist_mi": 0.25,
                     "dir": "ENE",
                     "lat": "64\u00b0 04.283' N",
                     "lng": "145\u00b0 37.509' W",
@@ -1704,7 +1696,7 @@
                     "PRIM_OCC": "Unclassified"
                 },
                 {
-                    "dist_mi": 0.26,
+                    "dist_mi": 0.25,
                     "dir": "ESE",
                     "lat": "64\u00b0 04.131' N",
                     "lng": "145\u00b0 37.566' W",
@@ -1720,10 +1712,18 @@
                     "PRIM_OCC": "Unclassified"
                 },
                 {
-                    "dist_mi": 0.27,
+                    "dist_mi": 0.26,
                     "dir": "WNW",
                     "lat": "64\u00b0 04.403' N",
                     "lng": "145\u00b0 38.422' W",
+                    "OCC_CLS": "Unclassified",
+                    "PRIM_OCC": "Unclassified"
+                },
+                {
+                    "dist_mi": 0.28,
+                    "dir": "WNW",
+                    "lat": "64\u00b0 04.340' N",
+                    "lng": "145\u00b0 38.553' W",
                     "OCC_CLS": "Unclassified",
                     "PRIM_OCC": "Unclassified"
                 },
@@ -1734,20 +1734,12 @@
                     "lng": "145\u00b0 38.553' W",
                     "OCC_CLS": "Unclassified",
                     "PRIM_OCC": "Unclassified"
-                },
-                {
-                    "dist_mi": 0.29,
-                    "dir": "NE",
-                    "lat": "64\u00b0 04.394' N",
-                    "lng": "145\u00b0 37.523' W",
-                    "OCC_CLS": "Unclassified",
-                    "PRIM_OCC": "Unclassified"
                 }
             ],
-            "popped": 2021,
+            "popped": 2023,
             "cutoff": 0.29
         },
-        "WindTurb_FeatureCount": 3,
+        "WindTurb_FeatureCount": 3.0,
         "WindTurb_Locations": {
             "features": [
                 {
@@ -1758,14 +1750,14 @@
                     "p_name": "Delta Junction"
                 },
                 {
-                    "dist_mi": 4.08,
+                    "dist_mi": 4.07,
                     "dir": "SSE",
                     "lat": "64\u00b0 00.864' N",
                     "lng": "145\u00b0 35.698' W",
                     "p_name": "Delta Junction"
                 },
                 {
-                    "dist_mi": 4.13,
+                    "dist_mi": 4.12,
                     "dir": "SSE",
                     "lat": "64\u00b0 00.811' N",
                     "lng": "145\u00b0 35.758' W",
@@ -1782,7 +1774,7 @@
             }
         ],
         "SpatialInfoType": " 5 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:406676.499%2C1593037.198%2C3338,scale:40241",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:406676.499%2C1593037.198%2C3338,scale:40274",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": null,
