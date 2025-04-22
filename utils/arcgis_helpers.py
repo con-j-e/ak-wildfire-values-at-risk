@@ -29,7 +29,8 @@ class AsyncArcGISRequester():
         - arcgis_rest_api_post() -- POST request with persistent retry logic.
         - paginate_arcgis_features() -- Query an ArcGIS Online feature layer using pagination. 
         - send_query_bundle() -- Bundles paginated query with a result identifier and a url alias.
-        - applyEdits_request() -- basic applyEdits POST request to an ArcGIS Online feature layer endpoint.
+        - applyEdits_request() -- applyEdits POST request to an ArcGIS Online feature layer endpoint, uses SQL query to get OIDs for deletions.
+        - applyEdits_archiver() -- Loads features to be deleted into a GDF, then deletes features from the online feature layer.
 
     '''
     def __init__(self, timeout: int = 900):
@@ -220,7 +221,10 @@ class AsyncArcGISRequester():
             url (str): Target URL.
             token (str): Required token for editing target URL.
             features_to_add (list): ArcGIS JSON formatted features to be added.
-            get_oids_to_delete_query (str): SQL query which will retrieve ObjectIDs of features to delete. 
+            get_oids_to_delete_query (str): SQL query which will retrieve ObjectIDs of features to delete.
+
+        Raises:
+            * KeyError -- Key "objectIds" not found in query response
 
         Returns:
             dict: JSON formatted response from applyEdits POST request.
@@ -238,10 +242,15 @@ class AsyncArcGISRequester():
             params=get_oids_params,
             operation='query?'
             )
+        
+        try:
+            oids = get_oids_response['objectIds']
+        except KeyError:
+            raise KeyError(f'Key "objectIds" not found in query response: {get_oids_response}')
 
         apply_edits_data = {
             'adds': json.dumps(features_to_add),
-            'deletes': json.dumps(get_oids_response.get('objectIds', [])),
+            'deletes': json.dumps(oids),
             'rollbackOnFailure': 'true',
             'f': 'json',
             'token': token
@@ -254,6 +263,63 @@ class AsyncArcGISRequester():
         )
 
         return apply_edits_response
+    
+    async def applyEdits_archiver(self, url: str, token: str, get_archive_feats_query: str) -> tuple[gpd.GeoDataFrame, dict] | None:
+        '''
+        Specific use case combining a query? GET request and applyEdits POST request to an ArcGIS Online feature layer endpoint.
+        Pass a query "where" clause for retrieving features that will then be loaded into a GeoDataFrame.
+        OBJECTIDs of these features will then be used to delete features from the feature layer.
+
+        Arguments:
+            * url -- Target URL.
+            * token -- Required token for querying and editing target URL.
+            * get_archive_feats_query -- SQL query which will retrieve features to archive.
+
+        Raises:
+            * KeyError -- Key "features" not found in response from query? GET request.
+
+        Returns:
+            * tuple[gpd.GeoDataFrame, dict] | None
+                * gpd.GeoDataFrame -- Data returned by query? GET request.
+                * dict -- Response from applyEdits POST request.
+        '''        
+        get_archive_feats_params = {
+            'f': 'json',
+            'token': token,
+            'outfields': '*',
+            'where': get_archive_feats_query,
+        }
+
+        get_archive_feats_response = await self.arcgis_rest_api_get(
+            base_url=url,
+            params=get_archive_feats_params,
+            operation='query?'
+            )
+        
+        try:
+            archive_feats = get_archive_feats_response['features']
+        except KeyError:
+            raise KeyError(f'Key "features" not found in query response: {get_archive_feats_response}')
+        if len(archive_feats) < 1:
+            return None
+
+        archive_feats_gdf = arcgis_features_to_gdf({'features': archive_feats})
+        oids_to_delete = archive_feats_gdf['OBJECTID'].to_list()
+
+        apply_edits_data = {
+            'deletes': json.dumps(oids_to_delete),
+            'rollbackOnFailure': 'true',
+            'f': 'json',
+            'token': token
+        }
+
+        apply_edits_response = await self.arcgis_rest_api_post(
+            base_url=url,
+            data=apply_edits_data,
+            operation='applyEdits'
+        )
+
+        return (archive_feats_gdf, apply_edits_response)
 
     # DRAFTING
     # Should gain a better understanding Of what response formats to expect from land fire, and plan how to best handle them within and between functions
