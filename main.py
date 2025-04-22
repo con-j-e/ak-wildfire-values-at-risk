@@ -243,17 +243,21 @@ def main():
 
         irwins_with_updates = fires_bufs_attrs_gdf[fires_bufs_attrs_gdf['AnalysisBufferMiles'] == 0]['wfigs_IrwinID'].to_list()
 
-        all_edits_response = asyncio.run(apply_edits_to_dof_var_service(
+        all_edits_response, exception = asyncio.run(apply_edits_to_dof_var_service(
             perims_locs_url=r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/AK_Wildfire_Values_at_Risk/FeatureServer/0',
             token=token_dict['nifc'],
             irwins_with_updates=irwins_with_updates,
             feat_dict=feat_dict
         ))
 
+        if exception:
+            logger.error('Requester instance exited early with an exception!')
+            logger.error(format_logged_exception(*exception))
+
         failures = find_apply_edits_failure(all_edits_response)
 
         if failures:
-            logger.critical('applyEdits failure(s) detected!')
+            logger.critical('applyEdits failure detected!')
             for fail in failures:
                 logger.critical(json.dumps(fail))
 

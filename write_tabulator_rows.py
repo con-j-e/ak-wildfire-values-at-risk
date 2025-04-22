@@ -253,7 +253,7 @@ def main():
 
         irwins_with_errors = set()
         '''
-        
+
         current_tables = {
             'akdof_perims_locs': None,
             'buf_1': None,

@@ -126,7 +126,7 @@ def create_output_feature_lists(fires_bufs_attrs_gdf: gpd.GeoDataFrame) -> dict[
 
     return feat_dict
 
-async def apply_edits_to_dof_var_service(perims_locs_url: str, token: str, irwins_with_updates: list, feat_dict: dict[int, list]) -> list[dict]:
+async def apply_edits_to_dof_var_service(perims_locs_url: str, token: str, irwins_with_updates: list, feat_dict: dict[int, list]) -> tuple[list[dict], Exception | None]:
     '''
     Update all layers in the target service.
 
@@ -137,7 +137,7 @@ async def apply_edits_to_dof_var_service(perims_locs_url: str, token: str, irwin
         feat_dict (dict[int, list]): All features that will be used to update the target service.
 
     Returns:
-        list[dict]: 
+        tuple[list[dict], Exception | None]: 
     '''
     irwins_with_updates_query = f"wfigs_IrwinID IN ({','.join(f"'{irwin}'" for irwin in irwins_with_updates)})"
 
@@ -162,20 +162,23 @@ async def apply_edits_to_dof_var_service(perims_locs_url: str, token: str, irwin
             ) for url, features_to_add in layer_edits_dict.items())
         )
 
-    return all_edits_response
+    return (all_edits_response, requester.exception)
 
-def find_apply_edits_failure(all_edits_response: list[dict]) -> list[tuple]:
+def find_apply_edits_failure(all_edits_response: list[dict]) -> list[tuple | dict]:
     '''
-    Checks list of applyEdits responses for any edit results where {'success': False}.
+    Checks list of applyEdits responses for any edit results that are an error message or where {'success': False}.
     
     Args:
         * all_edits_response (list[dict]) -- Contains applyEdits responses
 
     Returns:
-        * list -- Contains tuples of (result type, result objects where {'success': False})
+        * list -- Contains tuples of (result type, result objects where {'success': False}). Can contain an API error message as a dictionary.
     '''    
     failures = []
     for result_group in all_edits_response:
+        if 'error' in result_group:
+            failures.append(result_group)
+            continue
         for result_type in ['addResults', 'updateResults', 'deleteResults']:
             for item in result_group.get(result_type, []):
                 if item.get('success') == False:
