@@ -2,16 +2,18 @@ import aiohttp
 from arcgis.features import FeatureSet
 from arcgis.gis import GIS
 import asyncio
+from copy import deepcopy
 import geopandas as gpd
 import json
 import os
 import pandas as pd
+from pathlib import Path
+import pickle as pkl
 import shapely as shp
 import subprocess
 import time
-from typing import Sequence
+from typing import Iterable
 import traceback
-
 
 class AsyncArcGISRequester():
     '''
@@ -329,8 +331,8 @@ class AsyncArcGISRequester():
     # Or to ask for another precanned format Like I do with JSON, if there is one which can clearly be expected and is useful
     async def submit_landfire_job(
         self,
-        layers: Sequence | str,
-        wgs84_bbox: Sequence,
+        layers: Iterable | str,
+        wgs84_bbox: Iterable,
         output_wkid: int = None,
         resample_resolution: int = None,
         edit_rule: dict = None,
@@ -342,7 +344,7 @@ class AsyncArcGISRequester():
 
         Args:
             - layers
-            - wgs84_bbox (Sequence) -- Float values in the order of ( lower left longitude, lower left latitude, upper right longitude, upper right latitude ).
+            - wgs84_bbox (Iterable) -- Float values in the order of ( lower left longitude, lower left latitude, upper right longitude, upper right latitude ).
             - output_wkid (int) -- The desired output spatial reference WKID.
             - resample_resolution (int) -- Requested when the desired resolution is coarser than the native 30m of the LF products. The valid values for this box are integers between 31 and 9999. If not used, the default value is 30.
             - edit_rule: dict -- JSON structure describing the edit rule to be applied. See LandFire documentation for more details.
@@ -462,6 +464,55 @@ def checkout_token(credentials_env_var: str, token_minutes: int, token_env_var: 
         subprocess.run(f'setx {token_env_var} "{token},{expires}"')
 
     return token
+
+def fresh_pickles(jar: str | Path, json_features: list[dict], identifier: str | int, ignore_attributes: Iterable[str] = None) -> list[dict]:
+    '''
+    Compare JSON features with a matching .pkl file to determine whether relevant changes have occurred.
+
+    Arguments:
+        * jar -- Pickle storage (file directory)
+        * json_features -- Contains ESRI json features
+        * identifier -- Unique attribute used to match .pkl files with a json feature
+
+    Keyword Arguments:
+        * ignore_attributes -- Specify attributes that should not be considered when assessing equivalency (default: {None})
+
+    Returns:
+        * list[dict] -- Input json features, minus those that were equivalent to json that has already been processed
+    '''    
+
+    jar = Path(jar) if isinstance(jar, str) else jar
+
+    del_idx = set()
+
+    for idx, feat in enumerate(json_features):
+
+        file_path = jar / f'{feat['attributes'][identifier]}.pkl'
+
+        if file_path.exists():
+
+            compare_feat = deepcopy(feat)
+            with open(file_path, 'rb') as file:
+                old_feat = pkl.load(file)
+
+            ignore_attributes = ignore_attributes or tuple()
+            for attr in ignore_attributes:
+                del compare_feat['attributes'][attr]
+                del old_feat['attributes'][attr]
+
+            if compare_feat == old_feat:
+                del_idx.add(idx)
+                continue
+            else:
+                with open(file_path, 'wb') as file:
+                    pkl.dump(feat, file)
+        
+        else:
+            with open(file_path, 'wb') as file:
+                pkl.dump(feat, file)
+
+    return [feat for idx, feat in enumerate(json_features) if idx not in del_idx]
+
 
 def _arcgis_polygon_cleanup(row: pd.Series) -> shp.Polygon | shp.MultiPolygon:
     """
