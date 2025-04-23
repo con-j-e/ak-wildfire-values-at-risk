@@ -12,7 +12,7 @@ import traceback
 
 from utils.general import basic_file_logger, format_logged_exception, send_email
 from utils.project import acdc_update_email
-from utils.arcgis_helpers import checkout_token
+from utils.arcgis_helpers import checkout_token, fresh_pickles
 from process.prepare_wfigs_inputs import get_wfigs_updates, create_wfigs_fire_points_gdf, create_wfigs_fire_polys_gdf, create_analysis_gdf
 from process.queries import gather_query_bundles, send_all_queries, handle_query_response_pools
 from process.analysis import gather_analysis_pairs, gather_processes, gather_results, create_attribute_dataframe, join_fires_bufs_attributes, parse_analysis_errors
@@ -92,6 +92,22 @@ def main():
                     }
                 )
             )
+
+        # filtering out features that have already been analyzed
+        # fires recently called 'Out' can repeatedly be returned by timestamp query, because they are removed from the target service and archived
+        # to further reduce/eliminate redundant processing, pass the ModifiedOnDateTime_dt attribute to fresh_pickles() ignore_attributes arg
+            # note that this would create a discrepency between the modified dt attribute in WFIGS and the modified dt attribute in the target service!
+        pickle_jar = proj_dir / 'wfigs_json_pickles'
+        wfigs_points['features'] = fresh_pickles(pickle_jar, wfigs_points['features'], 'IrwinID')
+        wfigs_polys['features'] = fresh_pickles(pickle_jar, wfigs_polys['features'], 'attr_IrwinID')
+        logger.info(
+            json.dumps(
+                {
+                    'New WFIGS points to process': len(wfigs_points['features']),
+                    'New WFIGS polygons to process': len(wfigs_polys['features'])
+                }
+            )
+        )
 
         # assign place-holder empty GDFs as flags for exiting main if there are no updates to process
         # and to ensure arguments are always available for create_analysis_gdf()
