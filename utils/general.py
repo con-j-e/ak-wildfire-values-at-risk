@@ -2,12 +2,12 @@ from datetime import datetime
 from email.mime.text import MIMEText
 import logging
 import pandas as pd
-from pathlib import Path 
+from pathlib import Path
 import pytz
 import re
 import smtplib
 import traceback
-from typing import Sequence
+from typing import Iterable
 from types import TracebackType
 
 def basic_file_logger(file_path: str | Path, log_level: str = 'INFO') -> logging.Logger:
@@ -135,7 +135,7 @@ def write_log_check_email_body(file_path: str | Path, previous_hours: int,  chec
 
     return '\n\n'.join(body)
 
-def send_email(subject: str, body: str, sender: str, recipients: str | Sequence[str], password: str) -> None:
+def send_email(subject: str, body: str, sender: str, recipients: str | Iterable[str], password: str) -> None:
     '''
     This function was written for use with a gmail sender account. With gmail you must enable 2fa to generate an app password for programmatic use.
 
@@ -143,7 +143,7 @@ def send_email(subject: str, body: str, sender: str, recipients: str | Sequence[
         subject (str): Email subject.
         body (str): Email body.
         sender (str): Email address of sender.
-        recipients (str | Sequence[str]): Email address or addresses of recipient or recipients.
+        recipients (str | Iterable[str]): Email address or addresses of recipient or recipients.
         password (str): App password to access sender email account programmatically. 
     '''
     msg = MIMEText(body)
