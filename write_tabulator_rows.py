@@ -183,7 +183,8 @@ def prepare_dataframe_for_tabulator(wfigs_features_json: dict, akdof_features_js
 
     json_obj_fields = tabulator_plan[tabulator_plan['PRE_PROCESSING'] == 'json_object']['FIELD_NAME'].to_list()
     tabulator_df[json_obj_fields] = tabulator_df[json_obj_fields].map(
-        lambda x: json.loads(x) if x != '!error!' else x,
+        # cannot use standard '!error!' indicator, because tabulator will access these fields as objects 
+        lambda x: json.loads(x) if x != '!error!' else {'!error!': '!error!'},
         na_action='ignore'
     )
 
