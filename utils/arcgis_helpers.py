@@ -465,7 +465,7 @@ def checkout_token(credentials_env_var: str, token_minutes: int, token_env_var: 
 
     return token
 
-def fresh_pickles(jar: str | Path, json_features: list[dict], identifier: str | int, ignore_attributes: Iterable[str] = None) -> list[dict]:
+def fresh_pickles(jar: str | Path, json_features: list[dict], identifier: str | int, ignore_attributes: Iterable[str] = None, exempt_identifiers: Iterable[str | int] = None) -> list[dict]:
     '''
     Compare JSON features with a matching .pkl file to determine whether relevant changes have occurred.
 
@@ -476,6 +476,7 @@ def fresh_pickles(jar: str | Path, json_features: list[dict], identifier: str | 
 
     Keyword Arguments:
         * ignore_attributes -- Specify attributes that should not be considered when assessing equivalency (default: {None})
+        * exempt_identifiers -- Specify identifiers that indicate a feature should be exempt from being compared for equivalency (default: {None})
 
     Returns:
         * list[dict] -- Input json features, minus those that were equivalent to json that has already been processed
@@ -486,6 +487,9 @@ def fresh_pickles(jar: str | Path, json_features: list[dict], identifier: str | 
     del_idx = set()
 
     for idx, feat in enumerate(json_features):
+
+        if exempt_identifiers and feat['attributes'][identifier] in exempt_identifiers:
+            continue
 
         file_path = jar / f'{feat['attributes'][identifier]}.pkl'
 
