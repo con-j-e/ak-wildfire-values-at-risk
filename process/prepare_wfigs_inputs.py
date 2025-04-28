@@ -30,10 +30,10 @@ async def get_wfigs_updates(akdof_var_service_url: str, wfigs_locations_url: str
         - testing (bool) -- Indicates whether this is a testing run or a production run. Ensures token is passed when querying a private WFIGS proxy. Defaults to False.
 
     Returns:
-        - tuple[dict, tuple] -- ({ wfigs points json } | None, { wfigs polygons json } | None, (exc_type, exc_val, exc_tb) | None)
+        - tuple[dict, dict, set, tuple] -- ({ wfigs points json } | None, { wfigs polygons json } | None, { irwins with errors } | None, (exc_type, exc_val, exc_tb) | None)
     '''
     # None placeholders for return objects, in case the requester instance exits early with an exception
-    wfigs_points, wfigs_polys = None, None
+    wfigs_points, wfigs_polys, irwins_with_errors = None, None, None
 
     async with AsyncArcGISRequester() as requester:
 
@@ -162,7 +162,7 @@ async def get_wfigs_updates(akdof_var_service_url: str, wfigs_locations_url: str
             'features': [feat for feat in wfigs_points['features'] if feat['attributes']['IrwinID'] not in poly_irwins]
         }
 
-    return (wfigs_points, wfigs_polys, requester.exception)
+    return (wfigs_points, wfigs_polys, irwins_with_errors, requester.exception)
 
 def create_wfigs_fire_points_gdf(wfigs_points: dict) -> gpd.GeoDataFrame:
     '''

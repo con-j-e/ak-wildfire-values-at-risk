@@ -65,7 +65,7 @@ def main():
 
         #REGION PREPARE WFIGS INPUTS
 
-        wfigs_points, wfigs_polys, exception = asyncio.run(
+        wfigs_points, wfigs_polys, irwins_with_errors, exception = asyncio.run(
             get_wfigs_updates(
                 r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/AK_Wildfire_Values_at_Risk/FeatureServer/0',
                 r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_YearToDate/FeatureServer/0',
@@ -98,8 +98,8 @@ def main():
         # to further reduce/eliminate redundant processing, pass the ModifiedOnDateTime_dt attribute to fresh_pickles() ignore_attributes arg
             # note that this would create a discrepency between the modified dt attribute in WFIGS and the modified dt attribute in the target service!
         pickle_jar = proj_dir / 'wfigs_json_pickles'
-        wfigs_points['features'] = fresh_pickles(pickle_jar, wfigs_points['features'], 'IrwinID')
-        wfigs_polys['features'] = fresh_pickles(pickle_jar, wfigs_polys['features'], 'attr_IrwinID')
+        wfigs_points['features'] = fresh_pickles(pickle_jar, wfigs_points['features'], 'IrwinID', exempt_identifiers=irwins_with_errors)
+        wfigs_polys['features'] = fresh_pickles(pickle_jar, wfigs_polys['features'], 'attr_IrwinID', exempt_identifiers=irwins_with_errors)
         logger.info(
             json.dumps(
                 {
