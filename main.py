@@ -65,9 +65,9 @@ def main():
 
         #REGION PREPARE WFIGS INPUTS
 
-        wfigs_points, wfigs_polys, irwins_with_errors, exception = asyncio.run(
+        wfigs_points, wfigs_polys, irwins_with_errors, check_json_pickles, exception = asyncio.run(
             get_wfigs_updates(
-                r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/AK_Wildfire_Values_at_Risk/FeatureServer/0',
+                r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/AK_Wildfire_Values_at_Risk/FeatureServer',
                 r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_YearToDate/FeatureServer/0',
                 r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_YearToDate/FeatureServer/0',
                 token_dict['nifc'],
@@ -97,17 +97,18 @@ def main():
         # fires recently called 'Out' can repeatedly be returned by timestamp query, because they are removed from the target service and archived
         # to further reduce/eliminate redundant processing, pass the ModifiedOnDateTime_dt attribute to fresh_pickles() ignore_attributes arg
             # note that this would create a discrepency between the modified dt attribute in WFIGS and the modified dt attribute in the target service!
-        pickle_jar = proj_dir / 'wfigs_json_pickles'
-        wfigs_points['features'] = fresh_pickles(pickle_jar, wfigs_points['features'], 'IrwinID', exempt_identifiers=irwins_with_errors)
-        wfigs_polys['features'] = fresh_pickles(pickle_jar, wfigs_polys['features'], 'attr_IrwinID', exempt_identifiers=irwins_with_errors)
-        logger.info(
-            json.dumps(
-                {
-                    'New WFIGS points to process': len(wfigs_points['features']),
-                    'New WFIGS polygons to process': len(wfigs_polys['features'])
-                }
+        if check_json_pickles:
+            pickle_jar = proj_dir / 'wfigs_json_pickles'
+            wfigs_points['features'] = fresh_pickles(pickle_jar, wfigs_points['features'], 'IrwinID', exempt_identifiers=irwins_with_errors)
+            wfigs_polys['features'] = fresh_pickles(pickle_jar, wfigs_polys['features'], 'attr_IrwinID', exempt_identifiers=irwins_with_errors)
+            logger.info(
+                json.dumps(
+                    {
+                        'New WFIGS points to process': len(wfigs_points['features']),
+                        'New WFIGS polygons to process': len(wfigs_polys['features'])
+                    }
+                )
             )
-        )
 
         # assign place-holder empty GDFs as flags for exiting main if there are no updates to process
         # and to ensure arguments are always available for create_analysis_gdf()
@@ -260,7 +261,7 @@ def main():
         irwins_with_updates = fires_bufs_attrs_gdf[fires_bufs_attrs_gdf['AnalysisBufferMiles'] == 0]['wfigs_IrwinID'].to_list()
 
         all_edits_response, exception = asyncio.run(apply_edits_to_dof_var_service(
-            perims_locs_url=r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/AK_Wildfire_Values_at_Risk/FeatureServer/0',
+            akdof_var_service_url=r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/AK_Wildfire_Values_at_Risk/FeatureServer',
             token=token_dict['nifc'],
             irwins_with_updates=irwins_with_updates,
             feat_dict=feat_dict

@@ -30,10 +30,21 @@ async def get_wfigs_updates(akdof_var_service_url: str, wfigs_locations_url: str
         - testing (bool) -- Indicates whether this is a testing run or a production run. Ensures token is passed when querying a private WFIGS proxy. Defaults to False.
 
     Returns:
-        - tuple[dict, dict, set, tuple] -- ({ wfigs points json } | None, { wfigs polygons json } | None, { irwins with errors } | None, (exc_type, exc_val, exc_tb) | None)
+        - tuple[dict, dict, set, bool, tuple] -- 
+            - wfigs points json | None,
+            - wfigs polygons json | None,
+            - irwins with errors | None,
+            - boolean flag determining whether to compare returned json with saved pickle files,
+            - (exc_type, exc_val, exc_tb) | None)
     '''
     # None placeholders for return objects, in case the requester instance exits early with an exception
     wfigs_points, wfigs_polys, irwins_with_errors = None, None, None
+
+    # Returned boolean flag defaults to True.
+    # A discrepency between maximum 'wfigs_ModifiedOnDateTime_dt' value or 'has_error' values for different layers in the AK WF VAR service sets flag to False,
+    # meaning that no retrieved WFIGS features should be filtered out, regardless of whether or not they have been seen previously.
+    # This controls for an edge case where some layers in the AK WF VAR service update succesfully while others do not, and ensures new updates are applied uniformly.  
+    check_json_pickles = True
 
     async with AsyncArcGISRequester() as requester:
 
@@ -47,7 +58,22 @@ async def get_wfigs_updates(akdof_var_service_url: str, wfigs_locations_url: str
                     'onStatisticField': 'wfigs_ModifiedOnDateTime_dt',
                 }
             ]'''
-        }
+        }        
+        tmax_responses = await asyncio.gather(
+            *(requester.arcgis_rest_api_get(
+                base_url=f'{akdof_var_service_url}/{lyr_idx}',
+                params=max_timestamp_params,
+                operation='query?'
+            ) for lyr_idx in (0,1,2,3))
+        )
+        seconds = set()
+        for resp in tmax_responses:
+            sec = resp['features'][0]['attributes']['MAX_wfigs_ModifiedOnDateTime_dt'] / 1000
+            seconds.add(sec)
+        if len(seconds) > 1:
+            check_json_pickles = False
+        max_timestamp = datetime.fromtimestamp(min(seconds), timezone.utc).strftime('%Y-%m-%d %H:%M:%S.%f')
+        
         reprocess_errors_params = {
             'f': 'json',
             'where': "HasError = 1",
@@ -55,22 +81,19 @@ async def get_wfigs_updates(akdof_var_service_url: str, wfigs_locations_url: str
             'returnGeometry': 'false',
             'token': token,
         }
-        tmax_resp, err_resp = await asyncio.gather(
-            requester.arcgis_rest_api_get(
-                base_url=akdof_var_service_url,
-                params=max_timestamp_params,
-                operation='query?'
-            ),
-            requester.arcgis_rest_api_get(
-                base_url=akdof_var_service_url,
+        err_responses = await asyncio.gather(
+            *(requester.arcgis_rest_api_get(
+                base_url=f'{akdof_var_service_url}/{lyr_idx}',
                 params=reprocess_errors_params,
                 operation='query?'
-            ),
+            ) for lyr_idx in (0,1,2,3))  
         )
-
-        seconds = tmax_resp['features'][0]['attributes']['MAX_wfigs_ModifiedOnDateTime_dt'] / 1000
-        max_timestamp = datetime.fromtimestamp(seconds, timezone.utc).strftime('%Y-%m-%d %H:%M:%S.%f')
-        irwins_with_errors = {feat['attributes']['wfigs_IrwinID'] for feat in err_resp['features']}
+        irwins_with_errors = set()
+        for resp in err_responses:
+            irwins = {feat['attributes']['wfigs_IrwinID'] for feat in resp['features']}
+            if irwins_with_errors and irwins != irwins_with_errors:
+                check_json_pickles = False
+            irwins_with_errors.update(irwins)
 
         if irwins_with_errors:
 
@@ -162,7 +185,7 @@ async def get_wfigs_updates(akdof_var_service_url: str, wfigs_locations_url: str
             'features': [feat for feat in wfigs_points['features'] if feat['attributes']['IrwinID'] not in poly_irwins]
         }
 
-    return (wfigs_points, wfigs_polys, irwins_with_errors, requester.exception)
+    return (wfigs_points, wfigs_polys, irwins_with_errors, check_json_pickles, requester.exception)
 
 def create_wfigs_fire_points_gdf(wfigs_points: dict) -> gpd.GeoDataFrame:
     '''
