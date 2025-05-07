@@ -126,12 +126,12 @@ def create_output_feature_lists(fires_bufs_attrs_gdf: gpd.GeoDataFrame) -> dict[
 
     return feat_dict
 
-async def apply_edits_to_dof_var_service(perims_locs_url: str, token: str, irwins_with_updates: list, feat_dict: dict[int, list]) -> tuple[list[dict], Exception | None]:
+async def apply_edits_to_dof_var_service(akdof_var_service_url: str, token: str, irwins_with_updates: list, feat_dict: dict[int, list]) -> tuple[list[dict], Exception | None]:
     '''
     Update all layers in the target service.
 
     Args:
-        perims_locs_url (str): Target service layer at index 0.
+        akdof_var_service_url (str)
         token (str): ArcGIS Online token with NIFC portal access.
         irwins_with_updates (list): Used to delete features from the target service that have updated information in this round of edits.
         feat_dict (dict[int, list]): All features that will be used to update the target service.
@@ -141,9 +141,10 @@ async def apply_edits_to_dof_var_service(perims_locs_url: str, token: str, irwin
     '''
     irwins_with_updates_query = f"wfigs_IrwinID IN ({','.join(f"'{irwin}'" for irwin in irwins_with_updates)})"
 
-    one_mile_bufs_url = f'{perims_locs_url[:-1]}1'
-    three_mile_bufs_url = f'{perims_locs_url[:-1]}2'
-    five_mile_bufs_url = f'{perims_locs_url[:-1]}3'
+    perims_locs_url = f'{akdof_var_service_url}/0'
+    one_mile_bufs_url = f'{akdof_var_service_url}/1'
+    three_mile_bufs_url = f'{akdof_var_service_url}/2'
+    five_mile_bufs_url = f'{akdof_var_service_url}/3'
 
     layer_edits_dict = {
         perims_locs_url: feat_dict[0],
