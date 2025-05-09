@@ -3,11 +3,11 @@
         "AkFireRegion": "KKS",
         "AkFireNumber": "053",
         "wfigs_IncidentName": "Arctic",
-        "FireActivityStatus": "Active",
+        "FireActivityStatus": "Controlled",
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1746832367640.0,
+        "wfigs_ModifiedOnDateTime_dt": 1746832746620.0,
         "wfigs_IrwinID": "{BFDCDDE5-B157-4592-8C6C-3E50BEE724BB}",
         "ReportedAcres": 0.1,
         "HasError": 0.0,
@@ -59,19 +59,28 @@
         "NpsStruct_Rating_AttrCount": null,
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
-        "Parcel_BuildingValue_AttrSum": 2428.0,
-        "Parcel_FeatureCount": 1.0,
-        "Parcel_LandValue_AttrSum": 745.0,
+        "Parcel_BuildingValue_AttrSum": 5695.0,
+        "Parcel_FeatureCount": 2.0,
+        "Parcel_LandValue_AttrSum": 882.0,
         "Parcel_Locations": {
             "features": [
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "60\u00b0 41.793' N",
-                    "lng": "151\u00b0 19.676' W",
+                    "lat": "60\u00b0 41.812' N",
+                    "lng": "151\u00b0 19.621' W",
+                    "property_type": "Private",
+                    "property_use": "Accessory Building",
+                    "total_value": 15200.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "60\u00b0 41.814' N",
+                    "lng": "151\u00b0 19.597' W",
                     "property_type": "Private",
                     "property_use": "Residential",
-                    "total_value": 36200.0
+                    "total_value": 81300.0
                 }
             ],
             "popped": 0,
@@ -80,17 +89,21 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Private",
-                "value head": 0.1
+                "value head": 0.09
             }
         ],
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Residential",
-                "value head": 0.1
+                "value head": 0.08
+            },
+            {
+                "key head": "Accessory Building",
+                "value head": 0.01
             }
         ],
-        "Parcel_TotalAcres": 0.1,
-        "Parcel_TotalValue_AttrSum": 3174.0,
+        "Parcel_TotalAcres": 0.09,
+        "Parcel_TotalValue_AttrSum": 6578.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -122,7 +135,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Reported Location",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:145352.981%2C1193119.69%2C3338,scale:56",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:145423.571%2C1193161.375%2C3338,scale:56",
         "CpxName": null,
         "DispatchCenterID": "AKACDC",
         "PercentContained": null,
