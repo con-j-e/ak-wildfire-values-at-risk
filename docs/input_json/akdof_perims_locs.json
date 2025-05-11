@@ -10,7 +10,7 @@
         "wfigs_ModifiedOnDateTime_dt": 1746928579577.0,
         "wfigs_IrwinID": "{8BC8F34F-0140-4DA7-80A7-46EF98B02BC9}",
         "ReportedAcres": 0.5,
-        "HasError": 1.0,
+        "HasError": 0.0,
         "DefaultLabel": "054-Barabara, Reported Location",
         "AnalysisBufferMiles": 0.0,
         "AkMine_Active_AttrCount": null,
@@ -59,14 +59,51 @@
         "NpsStruct_Rating_AttrCount": null,
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
-        "Parcel_BuildingValue_AttrSum": -1.0,
-        "Parcel_FeatureCount": -1.0,
-        "Parcel_LandValue_AttrSum": -1.0,
-        "Parcel_Locations": "!error!",
-        "Parcel_PropType_AcreSum": "!error!",
-        "Parcel_PropUse_AcreSum": "!error!",
-        "Parcel_TotalAcres": -1.0,
-        "Parcel_TotalValue_AttrSum": -1.0,
+        "Parcel_BuildingValue_AttrSum": 116491.0,
+        "Parcel_FeatureCount": 2.0,
+        "Parcel_LandValue_AttrSum": 25754.0,
+        "Parcel_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "60\u00b0 32.399' N",
+                    "lng": "151\u00b0 11.890' W",
+                    "property_type": "Private",
+                    "property_use": "Residential",
+                    "total_value": 461000.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "60\u00b0 32.401' N",
+                    "lng": "151\u00b0 11.946' W",
+                    "property_type": "Private",
+                    "property_use": "Vacant",
+                    "total_value": 51600.0
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "Parcel_PropType_AcreSum": [
+            {
+                "key head": "Private",
+                "value head": 0.5
+            }
+        ],
+        "Parcel_PropUse_AcreSum": [
+            {
+                "key head": "Residential",
+                "value head": 0.28
+            },
+            {
+                "key head": "Vacant",
+                "value head": 0.21
+            }
+        ],
+        "Parcel_TotalAcres": 0.5,
+        "Parcel_TotalValue_AttrSum": 142245.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
