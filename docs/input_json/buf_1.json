@@ -10,7 +10,7 @@
         "wfigs_ModifiedOnDateTime_dt": 1747348506777.0,
         "wfigs_IrwinID": "{563EFA98-8B64-42E9-B97F-9F673385D7A4}",
         "ReportedAcres": 0.1,
-        "HasError": 1.0,
+        "HasError": 0.0,
         "DefaultLabel": "069-MP 97 Sterling 2, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
         "AkMine_Active_AttrCount": null,
@@ -325,9 +325,9 @@
             "cutoff": 0.35
         },
         "AkPowerLine_TotalFeet": 46013.0,
-        "Runway_FeatureCount": -1.0,
-        "Runway_Locations": "!error!",
-        "Runway_Ownership_AttrCount": "!error!",
+        "Runway_FeatureCount": null,
+        "Runway_Locations": null,
+        "Runway_Ownership_AttrCount": null,
         "WeatherStation_FeatureCount": null,
         "WeatherStation_Locations": null,
         "Aksd_MainStruct_AttrSum": null,
@@ -530,14 +530,325 @@
         "NpsStruct_Rating_AttrCount": null,
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
-        "Parcel_BuildingValue_AttrSum": -1.0,
-        "Parcel_FeatureCount": -1.0,
-        "Parcel_LandValue_AttrSum": -1.0,
-        "Parcel_Locations": "!error!",
-        "Parcel_PropType_AcreSum": "!error!",
-        "Parcel_PropUse_AcreSum": "!error!",
-        "Parcel_TotalAcres": -1.0,
-        "Parcel_TotalValue_AttrSum": -1.0,
+        "Parcel_BuildingValue_AttrSum": 67854347.0,
+        "Parcel_FeatureCount": 155.0,
+        "Parcel_LandValue_AttrSum": 8439818.0,
+        "Parcel_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.01,
+                    "dir": "WNW",
+                    "lat": "60\u00b0 26.875' N",
+                    "lng": "151\u00b0 06.671' W",
+                    "property_type": "Borough",
+                    "property_use": "Vacant",
+                    "total_value": 420300.0
+                },
+                {
+                    "dist_mi": 0.01,
+                    "dir": "W",
+                    "lat": "60\u00b0 26.865' N",
+                    "lng": "151\u00b0 06.684' W",
+                    "property_type": "Private",
+                    "property_use": "Vacant",
+                    "total_value": 35000.0
+                },
+                {
+                    "dist_mi": 0.03,
+                    "dir": "ESE",
+                    "lat": "60\u00b0 26.849' N",
+                    "lng": "151\u00b0 06.586' W",
+                    "property_type": "Borough",
+                    "property_use": "Institutional",
+                    "total_value": 5100400.0
+                },
+                {
+                    "dist_mi": 0.04,
+                    "dir": "WNW",
+                    "lat": "60\u00b0 26.886' N",
+                    "lng": "151\u00b0 06.726' W",
+                    "property_type": "Borough",
+                    "property_use": "Vacant",
+                    "total_value": 120800.0
+                },
+                {
+                    "dist_mi": 0.07,
+                    "dir": "W",
+                    "lat": "60\u00b0 26.867' N",
+                    "lng": "151\u00b0 06.787' W",
+                    "property_type": "Private",
+                    "property_use": "Vacant",
+                    "total_value": 31300.0
+                },
+                {
+                    "dist_mi": 0.08,
+                    "dir": "ENE",
+                    "lat": "60\u00b0 26.886' N",
+                    "lng": "151\u00b0 06.507' W",
+                    "property_type": "Municipal",
+                    "property_use": "Vacant",
+                    "total_value": 245200.0
+                },
+                {
+                    "dist_mi": 0.08,
+                    "dir": "SW",
+                    "lat": "60\u00b0 26.814' N",
+                    "lng": "151\u00b0 06.744' W",
+                    "property_type": "Borough",
+                    "property_use": "Institutional",
+                    "total_value": 103500.0
+                },
+                {
+                    "dist_mi": 0.12,
+                    "dir": "SSW",
+                    "lat": "60\u00b0 26.764' N",
+                    "lng": "151\u00b0 06.726' W",
+                    "property_type": "Borough",
+                    "property_use": "Vacant",
+                    "total_value": 31400.0
+                },
+                {
+                    "dist_mi": 0.12,
+                    "dir": "SW",
+                    "lat": "60\u00b0 26.778' N",
+                    "lng": "151\u00b0 06.786' W",
+                    "property_type": "Borough",
+                    "property_use": "Vacant",
+                    "total_value": 48200.0
+                },
+                {
+                    "dist_mi": 0.22,
+                    "dir": "S",
+                    "lat": "60\u00b0 26.670' N",
+                    "lng": "151\u00b0 06.646' W",
+                    "property_type": "Borough",
+                    "property_use": "Institutional",
+                    "total_value": 3311100.0
+                },
+                {
+                    "dist_mi": 0.23,
+                    "dir": "S",
+                    "lat": "60\u00b0 26.670' N",
+                    "lng": "151\u00b0 06.725' W",
+                    "property_type": "Borough",
+                    "property_use": "Institutional",
+                    "total_value": 844700.0
+                },
+                {
+                    "dist_mi": 0.27,
+                    "dir": "NNW",
+                    "lat": "60\u00b0 27.103' N",
+                    "lng": "151\u00b0 06.726' W",
+                    "property_type": "Private",
+                    "property_use": "Vacant",
+                    "total_value": 67200.0
+                },
+                {
+                    "dist_mi": 0.27,
+                    "dir": "SSW",
+                    "lat": "60\u00b0 26.670' N",
+                    "lng": "151\u00b0 06.911' W",
+                    "property_type": "Borough",
+                    "property_use": "Vacant",
+                    "total_value": 115800.0
+                },
+                {
+                    "dist_mi": 0.29,
+                    "dir": "W",
+                    "lat": "60\u00b0 26.886' N",
+                    "lng": "151\u00b0 07.165' W",
+                    "property_type": "Private",
+                    "property_use": "Vacant",
+                    "total_value": 133600.0
+                },
+                {
+                    "dist_mi": 0.29,
+                    "dir": "W",
+                    "lat": "60\u00b0 26.867' N",
+                    "lng": "151\u00b0 07.165' W",
+                    "property_type": "Borough",
+                    "property_use": "Vacant",
+                    "total_value": 93900.0
+                },
+                {
+                    "dist_mi": 0.29,
+                    "dir": "NNW",
+                    "lat": "60\u00b0 27.103' N",
+                    "lng": "151\u00b0 06.859' W",
+                    "property_type": "Private",
+                    "property_use": "Residential",
+                    "total_value": 41300.0
+                },
+                {
+                    "dist_mi": 0.34,
+                    "dir": "NE",
+                    "lat": "60\u00b0 27.103' N",
+                    "lng": "151\u00b0 06.260' W",
+                    "property_type": "State",
+                    "property_use": "Institutional",
+                    "total_value": 6089800.0
+                },
+                {
+                    "dist_mi": 0.35,
+                    "dir": "NNW",
+                    "lat": "60\u00b0 27.140' N",
+                    "lng": "151\u00b0 06.955' W",
+                    "property_type": "Private",
+                    "property_use": "Vacant",
+                    "total_value": 11600.0
+                },
+                {
+                    "dist_mi": 0.35,
+                    "dir": "NW",
+                    "lat": "60\u00b0 27.103' N",
+                    "lng": "151\u00b0 07.055' W",
+                    "property_type": "Private",
+                    "property_use": "Residential",
+                    "total_value": 148800.0
+                },
+                {
+                    "dist_mi": 0.37,
+                    "dir": "SW",
+                    "lat": "60\u00b0 26.670' N",
+                    "lng": "151\u00b0 07.164' W",
+                    "property_type": "Borough",
+                    "property_use": "Vacant",
+                    "total_value": 184100.0
+                },
+                {
+                    "dist_mi": 0.38,
+                    "dir": "NNW",
+                    "lat": "60\u00b0 27.162' N",
+                    "lng": "151\u00b0 06.955' W",
+                    "property_type": "Private",
+                    "property_use": "Vacant",
+                    "total_value": 16000.0
+                },
+                {
+                    "dist_mi": 0.4,
+                    "dir": "NNW",
+                    "lat": "60\u00b0 27.184' N",
+                    "lng": "151\u00b0 06.955' W",
+                    "property_type": "Private",
+                    "property_use": "Residential",
+                    "total_value": 139000.0
+                },
+                {
+                    "dist_mi": 0.4,
+                    "dir": "NW",
+                    "lat": "60\u00b0 27.108' N",
+                    "lng": "151\u00b0 07.171' W",
+                    "property_type": "Private",
+                    "property_use": "Residential",
+                    "total_value": 117600.0
+                },
+                {
+                    "dist_mi": 0.4,
+                    "dir": "N",
+                    "lat": "60\u00b0 27.216' N",
+                    "lng": "151\u00b0 06.726' W",
+                    "property_type": "Private",
+                    "property_use": "Residential",
+                    "total_value": 436600.0
+                },
+                {
+                    "dist_mi": 0.4,
+                    "dir": "NW",
+                    "lat": "60\u00b0 27.108' N",
+                    "lng": "151\u00b0 07.165' W",
+                    "property_type": "Private",
+                    "property_use": "Vacant",
+                    "total_value": 18100.0
+                },
+                {
+                    "dist_mi": 0.41,
+                    "dir": "NNW",
+                    "lat": "60\u00b0 27.216' N",
+                    "lng": "151\u00b0 06.836' W",
+                    "property_type": "Private",
+                    "property_use": "Residential",
+                    "total_value": 458400.0
+                },
+                {
+                    "dist_mi": 0.41,
+                    "dir": "W",
+                    "lat": "60\u00b0 26.886' N",
+                    "lng": "151\u00b0 07.378' W",
+                    "property_type": "Private",
+                    "property_use": "Residential",
+                    "total_value": 504000.0
+                },
+                {
+                    "dist_mi": 0.43,
+                    "dir": "NNW",
+                    "lat": "60\u00b0 27.216' N",
+                    "lng": "151\u00b0 06.945' W",
+                    "property_type": "Private",
+                    "property_use": "Vacant",
+                    "total_value": 20600.0
+                }
+            ],
+            "popped": 8967,
+            "cutoff": 0.43
+        },
+        "Parcel_PropType_AcreSum": [
+            {
+                "key head": "Borough",
+                "value head": 862.25
+            },
+            {
+                "key head": "Federal",
+                "value head": 410.62
+            },
+            {
+                "key head": "Private",
+                "value head": 330.11
+            },
+            {
+                "key head": "State",
+                "value head": 112.03
+            },
+            {
+                "key head": "Native",
+                "value head": 82.1
+            },
+            {
+                "key head": "Native Allotment",
+                "value head": 77.19
+            },
+            {
+                "key head": "Municipal",
+                "value head": 22.59
+            }
+        ],
+        "Parcel_PropUse_AcreSum": [
+            {
+                "key head": "Vacant",
+                "value head": 1230.9
+            },
+            {
+                "key head": "Institutional",
+                "value head": 419.03
+            },
+            {
+                "key head": "Residential",
+                "value head": 201.47
+            },
+            {
+                "key head": "Commercial",
+                "value head": 22.51
+            },
+            {
+                "key head": "Accessory Building",
+                "value head": 17.02
+            },
+            {
+                "key head": "Industrial",
+                "value head": 5.97
+            }
+        ],
+        "Parcel_TotalAcres": 1896.89,
+        "Parcel_TotalValue_AttrSum": 76294166.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -1966,7 +2277,7 @@
         "wfigs_ModifiedOnDateTime_dt": 1747348495183.0,
         "wfigs_IrwinID": "{DAF44644-5C95-40A5-83BB-F463057FCCCE}",
         "ReportedAcres": 0.1,
-        "HasError": 1.0,
+        "HasError": 0.0,
         "DefaultLabel": "067-MP 97 Sterling 1, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
         "AkMine_Active_AttrCount": null,
@@ -2281,9 +2592,9 @@
             "cutoff": 0.28
         },
         "AkPowerLine_TotalFeet": 86530.0,
-        "Runway_FeatureCount": -1.0,
-        "Runway_Locations": "!error!",
-        "Runway_Ownership_AttrCount": "!error!",
+        "Runway_FeatureCount": null,
+        "Runway_Locations": null,
+        "Runway_Ownership_AttrCount": null,
         "WeatherStation_FeatureCount": null,
         "WeatherStation_Locations": null,
         "Aksd_MainStruct_AttrSum": 1.0,
@@ -2597,14 +2908,321 @@
         "NpsStruct_Rating_AttrCount": null,
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
-        "Parcel_BuildingValue_AttrSum": -1.0,
-        "Parcel_FeatureCount": -1.0,
-        "Parcel_LandValue_AttrSum": -1.0,
-        "Parcel_Locations": "!error!",
-        "Parcel_PropType_AcreSum": "!error!",
-        "Parcel_PropUse_AcreSum": "!error!",
-        "Parcel_TotalAcres": -1.0,
-        "Parcel_TotalValue_AttrSum": -1.0,
+        "Parcel_BuildingValue_AttrSum": 228741368.0,
+        "Parcel_FeatureCount": 928.0,
+        "Parcel_LandValue_AttrSum": 97939224.0,
+        "Parcel_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.0,
+                    "dir": "E",
+                    "lat": "60\u00b0 28.491' N",
+                    "lng": "151\u00b0 05.046' W",
+                    "property_type": "State",
+                    "property_use": "Vacant",
+                    "total_value": 134100.0
+                },
+                {
+                    "dist_mi": 0.01,
+                    "dir": "SSE",
+                    "lat": "60\u00b0 28.479' N",
+                    "lng": "151\u00b0 05.053' W",
+                    "property_type": "Private",
+                    "property_use": "Commercial",
+                    "total_value": 453600.0
+                },
+                {
+                    "dist_mi": 0.02,
+                    "dir": "WNW",
+                    "lat": "60\u00b0 28.501' N",
+                    "lng": "151\u00b0 05.107' W",
+                    "property_type": "State",
+                    "property_use": "Vacant",
+                    "total_value": 193800.0
+                },
+                {
+                    "dist_mi": 0.02,
+                    "dir": "WSW",
+                    "lat": "60\u00b0 28.485' N",
+                    "lng": "151\u00b0 05.119' W",
+                    "property_type": "Private",
+                    "property_use": "Commercial",
+                    "total_value": 72400.0
+                },
+                {
+                    "dist_mi": 0.03,
+                    "dir": "ESE",
+                    "lat": "60\u00b0 28.475' N",
+                    "lng": "151\u00b0 05.006' W",
+                    "property_type": "Private",
+                    "property_use": "Commercial",
+                    "total_value": 2379400.0
+                },
+                {
+                    "dist_mi": 0.04,
+                    "dir": "NE",
+                    "lat": "60\u00b0 28.513' N",
+                    "lng": "151\u00b0 05.007' W",
+                    "property_type": "Private",
+                    "property_use": "Vacant",
+                    "total_value": 37900.0
+                },
+                {
+                    "dist_mi": 0.04,
+                    "dir": "W",
+                    "lat": "60\u00b0 28.491' N",
+                    "lng": "151\u00b0 05.150' W",
+                    "property_type": "Private",
+                    "property_use": "Commercial",
+                    "total_value": 316800.0
+                },
+                {
+                    "dist_mi": 0.04,
+                    "dir": "E",
+                    "lat": "60\u00b0 28.485' N",
+                    "lng": "151\u00b0 04.981' W",
+                    "property_type": "Private",
+                    "property_use": "Commercial",
+                    "total_value": 943400.0
+                },
+                {
+                    "dist_mi": 0.05,
+                    "dir": "WNW",
+                    "lat": "60\u00b0 28.520' N",
+                    "lng": "151\u00b0 05.150' W",
+                    "property_type": "Private",
+                    "property_use": "Commercial",
+                    "total_value": 1543700.0
+                },
+                {
+                    "dist_mi": 0.05,
+                    "dir": "SW",
+                    "lat": "60\u00b0 28.462' N",
+                    "lng": "151\u00b0 05.150' W",
+                    "property_type": "Private",
+                    "property_use": "Commercial",
+                    "total_value": 513300.0
+                },
+                {
+                    "dist_mi": 0.05,
+                    "dir": "N",
+                    "lat": "60\u00b0 28.545' N",
+                    "lng": "151\u00b0 05.061' W",
+                    "property_type": "Municipal",
+                    "property_use": "Commercial",
+                    "total_value": 195600.0
+                },
+                {
+                    "dist_mi": 0.06,
+                    "dir": "NE",
+                    "lat": "60\u00b0 28.532' N",
+                    "lng": "151\u00b0 04.992' W",
+                    "property_type": "Private",
+                    "property_use": "Commercial",
+                    "total_value": 71400.0
+                },
+                {
+                    "dist_mi": 0.07,
+                    "dir": "N",
+                    "lat": "60\u00b0 28.560' N",
+                    "lng": "151\u00b0 05.037' W",
+                    "property_type": "State",
+                    "property_use": "Vacant",
+                    "total_value": 824800.0
+                },
+                {
+                    "dist_mi": 0.08,
+                    "dir": "NNE",
+                    "lat": "60\u00b0 28.565' N",
+                    "lng": "151\u00b0 05.029' W",
+                    "property_type": "Municipal",
+                    "property_use": "Institutional",
+                    "total_value": 522300.0
+                },
+                {
+                    "dist_mi": 0.08,
+                    "dir": "NE",
+                    "lat": "60\u00b0 28.545' N",
+                    "lng": "151\u00b0 04.964' W",
+                    "property_type": "Private",
+                    "property_use": "Residential",
+                    "total_value": 747200.0
+                },
+                {
+                    "dist_mi": 0.08,
+                    "dir": "W",
+                    "lat": "60\u00b0 28.491' N",
+                    "lng": "151\u00b0 05.216' W",
+                    "property_type": "State",
+                    "property_use": "Institutional",
+                    "total_value": 1277600.0
+                },
+                {
+                    "dist_mi": 0.09,
+                    "dir": "NNW",
+                    "lat": "60\u00b0 28.565' N",
+                    "lng": "151\u00b0 05.150' W",
+                    "property_type": "State",
+                    "property_use": "Vacant",
+                    "total_value": 675200.0
+                },
+                {
+                    "dist_mi": 0.09,
+                    "dir": "WNW",
+                    "lat": "60\u00b0 28.524' N",
+                    "lng": "151\u00b0 05.233' W",
+                    "property_type": "Municipal",
+                    "property_use": "Institutional",
+                    "total_value": 1286700.0
+                },
+                {
+                    "dist_mi": 0.09,
+                    "dir": "WNW",
+                    "lat": "60\u00b0 28.523' N",
+                    "lng": "151\u00b0 05.217' W",
+                    "property_type": "Municipal",
+                    "property_use": "Institutional",
+                    "total_value": 5459600.0
+                },
+                {
+                    "dist_mi": 0.1,
+                    "dir": "S",
+                    "lat": "60\u00b0 28.401' N",
+                    "lng": "151\u00b0 05.067' W",
+                    "property_type": "Federal",
+                    "property_use": "Institutional",
+                    "total_value": 126100.0
+                },
+                {
+                    "dist_mi": 0.1,
+                    "dir": "S",
+                    "lat": "60\u00b0 28.401' N",
+                    "lng": "151\u00b0 05.081' W",
+                    "property_type": "Federal",
+                    "property_use": "Vacant",
+                    "total_value": 74200.0
+                },
+                {
+                    "dist_mi": 0.11,
+                    "dir": "SSE",
+                    "lat": "60\u00b0 28.401' N",
+                    "lng": "151\u00b0 04.980' W",
+                    "property_type": "Federal",
+                    "property_use": "Vacant",
+                    "total_value": 90100.0
+                },
+                {
+                    "dist_mi": 0.11,
+                    "dir": "NNE",
+                    "lat": "60\u00b0 28.585' N",
+                    "lng": "151\u00b0 04.993' W",
+                    "property_type": "Municipal",
+                    "property_use": "Vacant",
+                    "total_value": 178400.0
+                },
+                {
+                    "dist_mi": 0.12,
+                    "dir": "SSW",
+                    "lat": "60\u00b0 28.401' N",
+                    "lng": "151\u00b0 05.182' W",
+                    "property_type": "Native",
+                    "property_use": "Vacant",
+                    "total_value": 74200.0
+                },
+                {
+                    "dist_mi": 0.12,
+                    "dir": "E",
+                    "lat": "60\u00b0 28.491' N",
+                    "lng": "151\u00b0 04.847' W",
+                    "property_type": "Private",
+                    "property_use": "Commercial",
+                    "total_value": 703700.0
+                },
+                {
+                    "dist_mi": 0.15,
+                    "dir": "NW",
+                    "lat": "60\u00b0 28.602' N",
+                    "lng": "151\u00b0 05.234' W",
+                    "property_type": "Municipal",
+                    "property_use": "Institutional",
+                    "total_value": 247000.0
+                },
+                {
+                    "dist_mi": 0.16,
+                    "dir": "ESE",
+                    "lat": "60\u00b0 28.455' N",
+                    "lng": "151\u00b0 04.778' W",
+                    "property_type": "Private",
+                    "property_use": "Residential",
+                    "total_value": 493300.0
+                },
+                {
+                    "dist_mi": 0.16,
+                    "dir": "E",
+                    "lat": "60\u00b0 28.491' N",
+                    "lng": "151\u00b0 04.777' W",
+                    "property_type": "Private",
+                    "property_use": "Commercial",
+                    "total_value": 287000.0
+                }
+            ],
+            "popped": 10721,
+            "cutoff": 0.16
+        },
+        "Parcel_PropType_AcreSum": [
+            {
+                "key head": "Private",
+                "value head": 546.49
+            },
+            {
+                "key head": "Federal",
+                "value head": 515.3
+            },
+            {
+                "key head": "Municipal",
+                "value head": 246.54
+            },
+            {
+                "key head": "Borough",
+                "value head": 191.21
+            },
+            {
+                "key head": "Native",
+                "value head": 118.29
+            },
+            {
+                "key head": "State",
+                "value head": 79.78
+            }
+        ],
+        "Parcel_PropUse_AcreSum": [
+            {
+                "key head": "Vacant",
+                "value head": 802.18
+            },
+            {
+                "key head": "Institutional",
+                "value head": 505.81
+            },
+            {
+                "key head": "Residential",
+                "value head": 234.13
+            },
+            {
+                "key head": "Commercial",
+                "value head": 139.17
+            },
+            {
+                "key head": "Industrial",
+                "value head": 12.99
+            },
+            {
+                "key head": "Accessory Building",
+                "value head": 3.32
+            }
+        ],
+        "Parcel_TotalAcres": 1697.61,
+        "Parcel_TotalValue_AttrSum": 326680593.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
