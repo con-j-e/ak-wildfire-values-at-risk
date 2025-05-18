@@ -146,9 +146,9 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1747522105687.0,
+        "wfigs_ModifiedOnDateTime_dt": 1747597636230.0,
         "wfigs_IrwinID": "{637EDE57-28D5-4478-8D37-8464484F646E}",
-        "ReportedAcres": 0.1,
+        "ReportedAcres": 0.47,
         "HasError": 0.0,
         "DefaultLabel": "074-Gold Run, Reported Location",
         "AnalysisBufferMiles": 0.0,
@@ -184,23 +184,32 @@
         "Jurisd_Unit_AcreSum": null,
         "Jurisd_Owner_AcreSum": null,
         "MgmtOption_AcreSum": {
-            "Critical": 0.1
+            "Critical": 0.47
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
         "NpsStruct_Rating_AttrCount": null,
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
-        "Parcel_BuildingValue_AttrSum": null,
-        "Parcel_FeatureCount": 1.0,
-        "Parcel_LandValue_AttrSum": 202.0,
+        "Parcel_BuildingValue_AttrSum": 19.0,
+        "Parcel_FeatureCount": 2.0,
+        "Parcel_LandValue_AttrSum": 952.0,
         "Parcel_Locations": {
             "features": [
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "64\u00b0 58.371' N",
-                    "lng": "147\u00b0 34.080' W",
+                    "lat": "64\u00b0 58.360' N",
+                    "lng": "147\u00b0 34.078' W",
+                    "property_type": "Lot",
+                    "property_use": "Residential",
+                    "total_value": 325986.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "64\u00b0 58.370' N",
+                    "lng": "147\u00b0 34.063' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 26402.0
@@ -212,17 +221,25 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Tax Lot",
-                "value head": 0.1
+                "value head": 0.47
+            },
+            {
+                "key head": "Lot",
+                "value head": 0.0
             }
         ],
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Exempt ",
-                "value head": 0.1
+                "value head": 0.47
+            },
+            {
+                "key head": "Residential",
+                "value head": 0.0
             }
         ],
-        "Parcel_TotalAcres": 0.1,
-        "Parcel_TotalValue_AttrSum": 202.0,
+        "Parcel_TotalAcres": 0.47,
+        "Parcel_TotalValue_AttrSum": 972.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -254,7 +271,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Reported Location",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:303240.599%2C1682723.407%2C3338,scale:56",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:303240.599%2C1682723.407%2C3338,scale:123",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": null,
