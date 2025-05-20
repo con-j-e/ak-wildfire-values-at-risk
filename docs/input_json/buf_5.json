@@ -1,5 +1,1975 @@
 [
     {
+        "AkFireRegion": "MSS",
+        "AkFireNumber": "081",
+        "wfigs_IncidentName": "Sourdough",
+        "FireActivityStatus": "Controlled",
+        "wfigs_GISAcres": null,
+        "wfigs_MapMethod": null,
+        "wfigs_PolygonDateTime": null,
+        "wfigs_ModifiedOnDateTime_dt": 1747772848490.0,
+        "wfigs_IrwinID": "{F090EE4D-5C06-43E8-B7F2-18717A246B28}",
+        "ReportedAcres": 0.1,
+        "HasError": 0.0,
+        "DefaultLabel": "081-Sourdough, 5 Mile Buffer",
+        "AnalysisBufferMiles": 5.0,
+        "AkMine_Active_AttrCount": [
+            {
+                "key head": "0",
+                "value head": 1
+            }
+        ],
+        "AkMine_Type_AttrCount": [
+            {
+                "key head": "No Data",
+                "value head": 1
+            }
+        ],
+        "AkMine_Note_AttrCount": [
+            {
+                "key head": "Harold Olson | Same | 2 N SXX",
+                "value head": 1
+            }
+        ],
+        "AkMine_FeatureCount": 1.0,
+        "AkMine_Locations": {
+            "features": [
+                {
+                    "dist_mi": 4.67,
+                    "dir": "NNE",
+                    "lat": "61\u00b0 39.661' N",
+                    "lng": "149\u00b0 32.933' W",
+                    "ACTIVE": 0,
+                    "APMA_TYPE": "No Data",
+                    "NOTE": "Harold Olson | Same | 2 N SXX",
+                    "Explosives": "No Data",
+                    "START_YEAR": 2005,
+                    "EXPIRATION_YEAR": 2009
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "AkPowerLine_CondType_FeetSum": [
+            {
+                "key head": "AC; Overhead",
+                "value head": 25398
+            }
+        ],
+        "AkPowerLine_Voltage_FeetSum": [
+            {
+                "key head": "115",
+                "value head": 16944
+            },
+            {
+                "key head": "138",
+                "value head": 8453
+            }
+        ],
+        "AkPowerLine_Locations": {
+            "features": [
+                {
+                    "dist_mi": 4.51,
+                    "dir": "SE",
+                    "lat": "61\u00b0 33.442' N",
+                    "lng": "149\u00b0 31.836' W",
+                    "VOLTAGE": "115",
+                    "COND_TYPE": "AC; Overhead"
+                },
+                {
+                    "dist_mi": 4.62,
+                    "dir": "WSW",
+                    "lat": "61\u00b0 34.593' N",
+                    "lng": "149\u00b0 45.208' W",
+                    "VOLTAGE": "138",
+                    "COND_TYPE": "AC; Overhead"
+                },
+                {
+                    "dist_mi": 4.85,
+                    "dir": "SE",
+                    "lat": "61\u00b0 33.597' N",
+                    "lng": "149\u00b0 30.682' W",
+                    "VOLTAGE": "115",
+                    "COND_TYPE": "AC; Overhead"
+                },
+                {
+                    "dist_mi": 4.85,
+                    "dir": "SE",
+                    "lat": "61\u00b0 33.597' N",
+                    "lng": "149\u00b0 30.682' W",
+                    "VOLTAGE": "115",
+                    "COND_TYPE": "AC; Overhead"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "AkPowerLine_TotalFeet": 25398.0,
+        "Runway_FeatureCount": 23.0,
+        "Runway_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.98,
+                    "dir": "NNE",
+                    "lat": "61\u00b0 37.050' N",
+                    "lng": "149\u00b0 36.884' W",
+                    "runway_id": "06/24",
+                    "length": 1200,
+                    "surface": "Turf",
+                    "loc_id": "AK25"
+                },
+                {
+                    "dist_mi": 1.22,
+                    "dir": "NNE",
+                    "lat": "61\u00b0 37.275' N",
+                    "lng": "149\u00b0 36.895' W",
+                    "runway_id": "07/25",
+                    "length": 1300,
+                    "surface": "Gravel",
+                    "loc_id": "7AK8"
+                },
+                {
+                    "dist_mi": 1.53,
+                    "dir": "E",
+                    "lat": "61\u00b0 36.046' N",
+                    "lng": "149\u00b0 34.750' W",
+                    "runway_id": "06/24",
+                    "length": 2800,
+                    "surface": "Gravel",
+                    "loc_id": "43AK"
+                },
+                {
+                    "dist_mi": 1.56,
+                    "dir": "NNW",
+                    "lat": "61\u00b0 37.444' N",
+                    "lng": "149\u00b0 38.898' W",
+                    "runway_id": "07/25",
+                    "length": 1800,
+                    "surface": "Turf",
+                    "loc_id": "9AK6"
+                },
+                {
+                    "dist_mi": 1.68,
+                    "dir": "NNE",
+                    "lat": "61\u00b0 37.635' N",
+                    "lng": "149\u00b0 36.560' W",
+                    "runway_id": "18/36",
+                    "length": 2100,
+                    "surface": "Turf",
+                    "loc_id": "AK83"
+                },
+                {
+                    "dist_mi": 1.72,
+                    "dir": "WNW",
+                    "lat": "61\u00b0 37.089' N",
+                    "lng": "149\u00b0 40.151' W",
+                    "runway_id": "18/36",
+                    "length": 1200,
+                    "surface": "Turf",
+                    "loc_id": "6AK8"
+                },
+                {
+                    "dist_mi": 1.92,
+                    "dir": "WSW",
+                    "lat": "61\u00b0 35.513' N",
+                    "lng": "149\u00b0 40.675' W",
+                    "runway_id": "07/25",
+                    "length": 800,
+                    "surface": "Gravel",
+                    "loc_id": "10AK"
+                },
+                {
+                    "dist_mi": 2.07,
+                    "dir": "S",
+                    "lat": "61\u00b0 34.483' N",
+                    "lng": "149\u00b0 38.100' W",
+                    "runway_id": "07/25",
+                    "length": 2000,
+                    "surface": "Turf",
+                    "loc_id": "6AK7"
+                },
+                {
+                    "dist_mi": 2.07,
+                    "dir": "ESE",
+                    "lat": "61\u00b0 35.613' N",
+                    "lng": "149\u00b0 33.990' W",
+                    "runway_id": "09/27",
+                    "length": 1300,
+                    "surface": "Turf",
+                    "loc_id": "AK79"
+                },
+                {
+                    "dist_mi": 2.31,
+                    "dir": "NE",
+                    "lat": "61\u00b0 37.657' N",
+                    "lng": "149\u00b0 34.520' W",
+                    "runway_id": "16/34",
+                    "length": 1750,
+                    "surface": "Gravel",
+                    "loc_id": "06AK"
+                },
+                {
+                    "dist_mi": 2.34,
+                    "dir": "WNW",
+                    "lat": "61\u00b0 37.485' N",
+                    "lng": "149\u00b0 40.934' W",
+                    "runway_id": "18/36",
+                    "length": 2000,
+                    "surface": "Gravel",
+                    "loc_id": "9AK8"
+                },
+                {
+                    "dist_mi": 2.41,
+                    "dir": "ESE",
+                    "lat": "61\u00b0 35.141' N",
+                    "lng": "149\u00b0 33.801' W",
+                    "runway_id": "05/23",
+                    "length": 1100,
+                    "surface": "Turf",
+                    "loc_id": "AK47"
+                },
+                {
+                    "dist_mi": 2.58,
+                    "dir": "NW",
+                    "lat": "61\u00b0 37.800' N",
+                    "lng": "149\u00b0 40.955' W",
+                    "runway_id": "14/32",
+                    "length": 1500,
+                    "surface": "Gravel",
+                    "loc_id": "8AK8"
+                },
+                {
+                    "dist_mi": 2.66,
+                    "dir": "N",
+                    "lat": "61\u00b0 38.555' N",
+                    "lng": "149\u00b0 37.467' W",
+                    "runway_id": "06/24",
+                    "length": 1800,
+                    "surface": "Gravel",
+                    "loc_id": "AK27"
+                },
+                {
+                    "dist_mi": 2.75,
+                    "dir": "NW",
+                    "lat": "61\u00b0 38.008' N",
+                    "lng": "149\u00b0 40.943' W",
+                    "runway_id": "04/22",
+                    "length": 1320,
+                    "surface": "Gravel",
+                    "loc_id": "6AK9"
+                },
+                {
+                    "dist_mi": 2.79,
+                    "dir": "WNW",
+                    "lat": "61\u00b0 36.945' N",
+                    "lng": "149\u00b0 42.416' W",
+                    "runway_id": "14/32",
+                    "length": 1300,
+                    "surface": "Turf",
+                    "loc_id": "24AK"
+                },
+                {
+                    "dist_mi": 3.11,
+                    "dir": "S",
+                    "lat": "61\u00b0 33.562' N",
+                    "lng": "149\u00b0 37.457' W",
+                    "runway_id": "06/24",
+                    "length": 2200,
+                    "surface": "Turf",
+                    "loc_id": "AK45"
+                },
+                {
+                    "dist_mi": 3.22,
+                    "dir": "SSW",
+                    "lat": "61\u00b0 33.747' N",
+                    "lng": "149\u00b0 40.070' W",
+                    "runway_id": "18/36",
+                    "length": 1500,
+                    "surface": "Turf",
+                    "loc_id": "38AK"
+                },
+                {
+                    "dist_mi": 3.6,
+                    "dir": "SE",
+                    "lat": "61\u00b0 34.319' N",
+                    "lng": "149\u00b0 32.373' W",
+                    "runway_id": "04S/22S",
+                    "length": 1690,
+                    "surface": "Turf",
+                    "loc_id": "IYS"
+                },
+                {
+                    "dist_mi": 3.6,
+                    "dir": "SE",
+                    "lat": "61\u00b0 34.319' N",
+                    "lng": "149\u00b0 32.373' W",
+                    "runway_id": "04/22",
+                    "length": 3700,
+                    "surface": "Asphalt",
+                    "loc_id": "IYS"
+                },
+                {
+                    "dist_mi": 4.04,
+                    "dir": "SW",
+                    "lat": "61\u00b0 34.178' N",
+                    "lng": "149\u00b0 43.466' W",
+                    "runway_id": "01/19",
+                    "length": 1200,
+                    "surface": "Gravel",
+                    "loc_id": "08AK"
+                },
+                {
+                    "dist_mi": 4.07,
+                    "dir": "SW",
+                    "lat": "61\u00b0 33.563' N",
+                    "lng": "149\u00b0 42.328' W",
+                    "runway_id": "16/34",
+                    "length": 2000,
+                    "surface": "Gravel",
+                    "loc_id": "89AK"
+                },
+                {
+                    "dist_mi": 4.75,
+                    "dir": "W",
+                    "lat": "61\u00b0 36.249' N",
+                    "lng": "149\u00b0 46.207' W",
+                    "runway_id": "18/36",
+                    "length": 1700,
+                    "surface": "Turf",
+                    "loc_id": "AA33"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "Runway_Ownership_AttrCount": [
+            {
+                "key head": "Private",
+                "value head": 21
+            },
+            {
+                "key head": "Public",
+                "value head": 2
+            }
+        ],
+        "WeatherStation_FeatureCount": 1.0,
+        "WeatherStation_Locations": {
+            "features": [
+                {
+                    "dist_mi": 3.58,
+                    "dir": "SE",
+                    "lat": "61\u00b0 34.314' N",
+                    "lng": "149\u00b0 32.435' W",
+                    "NAME": "Wasilla, Wasilla Airport",
+                    "CODE": "PAWS",
+                    "MESOWESTWEBURL": "https://akff.mesowest.org/tabular/station/#CFFDRS/PAWS/"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "Aksd_MainStruct_AttrSum": 2.0,
+        "Aksd_OtherStruct_AttrSum": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Critical",
+                "value head": 10
+            },
+            {
+                "key head": "Undesignated",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Structure",
+                "value head": 11
+            }
+        ],
+        "Aksd_FeatureCount": 11.0,
+        "Aksd_Locations": {
+            "features": [
+                {
+                    "dist_mi": 3.66,
+                    "dir": "SW",
+                    "lat": "61\u00b0 34.459' N",
+                    "lng": "149\u00b0 43.044' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Critical",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 3.67,
+                    "dir": "SW",
+                    "lat": "61\u00b0 34.472' N",
+                    "lng": "149\u00b0 43.087' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Critical",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 3.67,
+                    "dir": "SW",
+                    "lat": "61\u00b0 34.440' N",
+                    "lng": "149\u00b0 43.041' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Critical",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 3.67,
+                    "dir": "SW",
+                    "lat": "61\u00b0 34.466' N",
+                    "lng": "149\u00b0 43.076' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Critical",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 3.77,
+                    "dir": "SW",
+                    "lat": "61\u00b0 34.308' N",
+                    "lng": "149\u00b0 43.046' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Critical",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 3.85,
+                    "dir": "WNW",
+                    "lat": "61\u00b0 37.769' N",
+                    "lng": "149\u00b0 43.802' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Critical",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 3.92,
+                    "dir": "WNW",
+                    "lat": "61\u00b0 37.771' N",
+                    "lng": "149\u00b0 43.936' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Critical",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 3.92,
+                    "dir": "WNW",
+                    "lat": "61\u00b0 37.776' N",
+                    "lng": "149\u00b0 43.941' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Critical",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 4.12,
+                    "dir": "WNW",
+                    "lat": "61\u00b0 38.193' N",
+                    "lng": "149\u00b0 43.864' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Critical",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 4.15,
+                    "dir": "WNW",
+                    "lat": "61\u00b0 38.249' N",
+                    "lng": "149\u00b0 43.839' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Critical",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 4.85,
+                    "dir": "NE",
+                    "lat": "61\u00b0 38.381' N",
+                    "lng": "149\u00b0 29.877' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
+                    "MainStructs": 2.0,
+                    "OthrStructs": "No Data"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "NtvAllot_Status_AcreSum": {
+            "Restricted": 296.52
+        },
+        "NtvAllot_FeatureCount": 7.0,
+        "NtvAllot_Locations": {
+            "features": [
+                {
+                    "dist_mi": 3.27,
+                    "dir": "SW",
+                    "lat": "61\u00b0 34.666' N",
+                    "lng": "149\u00b0 42.466' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "975A53761"
+                },
+                {
+                    "dist_mi": 3.45,
+                    "dir": "E",
+                    "lat": "61\u00b0 35.629' N",
+                    "lng": "149\u00b0 31.362' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "975A67592I"
+                },
+                {
+                    "dist_mi": 3.46,
+                    "dir": "E",
+                    "lat": "61\u00b0 35.577' N",
+                    "lng": "149\u00b0 31.361' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "975A67592H"
+                },
+                {
+                    "dist_mi": 3.51,
+                    "dir": "E",
+                    "lat": "61\u00b0 35.572' N",
+                    "lng": "149\u00b0 31.277' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "975A67592G"
+                },
+                {
+                    "dist_mi": 3.52,
+                    "dir": "E",
+                    "lat": "61\u00b0 35.540' N",
+                    "lng": "149\u00b0 31.273' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "975A67592F"
+                },
+                {
+                    "dist_mi": 3.76,
+                    "dir": "SW",
+                    "lat": "61\u00b0 34.233' N",
+                    "lng": "149\u00b0 42.910' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "975A53761"
+                },
+                {
+                    "dist_mi": 3.88,
+                    "dir": "WNW",
+                    "lat": "61\u00b0 37.819' N",
+                    "lng": "149\u00b0 43.808' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "975AA5971"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "NtvAllot_TotalAcres": 296.52,
+        "ComsTwr_Type_AttrCount": [
+            {
+                "key head": "Microwave Service",
+                "value head": 39
+            },
+            {
+                "key head": "Land Mobile Private",
+                "value head": 14
+            },
+            {
+                "key head": "Cellular",
+                "value head": 4
+            }
+        ],
+        "ComsTwr_FeatureCount": 57.0,
+        "ComsTwr_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.73,
+                    "dir": "S",
+                    "lat": "61\u00b0 35.618' N",
+                    "lng": "149\u00b0 37.633' W",
+                    "Type": "Land Mobile Private",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1189033"
+                },
+                {
+                    "dist_mi": 1.46,
+                    "dir": "S",
+                    "lat": "61\u00b0 35.000' N",
+                    "lng": "149\u00b0 37.853' W",
+                    "Type": "Land Mobile Private",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3517110"
+                },
+                {
+                    "dist_mi": 1.67,
+                    "dir": "W",
+                    "lat": "61\u00b0 36.318' N",
+                    "lng": "149\u00b0 40.583' W",
+                    "Type": "Cellular",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=12616"
+                },
+                {
+                    "dist_mi": 1.71,
+                    "dir": "W",
+                    "lat": "61\u00b0 36.318' N",
+                    "lng": "149\u00b0 40.670' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3777314"
+                },
+                {
+                    "dist_mi": 1.71,
+                    "dir": "W",
+                    "lat": "61\u00b0 36.318' N",
+                    "lng": "149\u00b0 40.670' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3300153"
+                },
+                {
+                    "dist_mi": 1.89,
+                    "dir": "SE",
+                    "lat": "61\u00b0 34.898' N",
+                    "lng": "149\u00b0 35.600' W",
+                    "Type": "Land Mobile Private",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3517110"
+                },
+                {
+                    "dist_mi": 1.98,
+                    "dir": "SSW",
+                    "lat": "61\u00b0 34.605' N",
+                    "lng": "149\u00b0 38.543' W",
+                    "Type": "Land Mobile Private",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=4584016"
+                },
+                {
+                    "dist_mi": 2.04,
+                    "dir": "SSW",
+                    "lat": "61\u00b0 34.795' N",
+                    "lng": "149\u00b0 39.635' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2553994"
+                },
+                {
+                    "dist_mi": 2.04,
+                    "dir": "SSW",
+                    "lat": "61\u00b0 34.795' N",
+                    "lng": "149\u00b0 39.635' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3877416"
+                },
+                {
+                    "dist_mi": 2.04,
+                    "dir": "SSW",
+                    "lat": "61\u00b0 34.795' N",
+                    "lng": "149\u00b0 39.633' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3914472"
+                },
+                {
+                    "dist_mi": 2.12,
+                    "dir": "SE",
+                    "lat": "61\u00b0 34.812' N",
+                    "lng": "149\u00b0 35.125' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3653099"
+                },
+                {
+                    "dist_mi": 2.12,
+                    "dir": "SE",
+                    "lat": "61\u00b0 34.812' N",
+                    "lng": "149\u00b0 35.125' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3436384"
+                },
+                {
+                    "dist_mi": 2.12,
+                    "dir": "SE",
+                    "lat": "61\u00b0 34.812' N",
+                    "lng": "149\u00b0 35.125' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3439435"
+                },
+                {
+                    "dist_mi": 2.15,
+                    "dir": "SSW",
+                    "lat": "61\u00b0 34.607' N",
+                    "lng": "149\u00b0 39.367' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2553985"
+                },
+                {
+                    "dist_mi": 2.32,
+                    "dir": "SE",
+                    "lat": "61\u00b0 34.853' N",
+                    "lng": "149\u00b0 34.478' W",
+                    "Type": "Land Mobile Private",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3517110"
+                },
+                {
+                    "dist_mi": 2.38,
+                    "dir": "E",
+                    "lat": "61\u00b0 36.323' N",
+                    "lng": "149\u00b0 33.177' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3436384"
+                },
+                {
+                    "dist_mi": 2.38,
+                    "dir": "E",
+                    "lat": "61\u00b0 36.323' N",
+                    "lng": "149\u00b0 33.177' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3439435"
+                },
+                {
+                    "dist_mi": 3.21,
+                    "dir": "ESE",
+                    "lat": "61\u00b0 34.598' N",
+                    "lng": "149\u00b0 32.827' W",
+                    "Type": "Land Mobile Private",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3120151"
+                },
+                {
+                    "dist_mi": 3.21,
+                    "dir": "ESE",
+                    "lat": "61\u00b0 34.598' N",
+                    "lng": "149\u00b0 32.827' W",
+                    "Type": "Land Mobile Private",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3120151"
+                },
+                {
+                    "dist_mi": 3.25,
+                    "dir": "ESE",
+                    "lat": "61\u00b0 35.097' N",
+                    "lng": "149\u00b0 32.103' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3653099"
+                },
+                {
+                    "dist_mi": 3.25,
+                    "dir": "ESE",
+                    "lat": "61\u00b0 35.097' N",
+                    "lng": "149\u00b0 32.103' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3436384"
+                },
+                {
+                    "dist_mi": 3.93,
+                    "dir": "SW",
+                    "lat": "61\u00b0 34.525' N",
+                    "lng": "149\u00b0 43.713' W",
+                    "Type": "Land Mobile Private",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=4976142"
+                },
+                {
+                    "dist_mi": 3.96,
+                    "dir": "WSW",
+                    "lat": "61\u00b0 34.797' N",
+                    "lng": "149\u00b0 44.082' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3437290"
+                },
+                {
+                    "dist_mi": 3.96,
+                    "dir": "WSW",
+                    "lat": "61\u00b0 34.797' N",
+                    "lng": "149\u00b0 44.082' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3300153"
+                }
+            ],
+            "popped": 33,
+            "cutoff": 3.96
+        },
+        "Community_FeatureCount": 1.0,
+        "Community_Locations": {
+            "features": [
+                {
+                    "dist_mi": 1.56,
+                    "dir": "NNE",
+                    "lat": "61\u00b0 37.455' N",
+                    "lng": "149\u00b0 36.212' W",
+                    "CommunityName": "Meadow Lakes"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "Jurisd_Unit_AcreSum": [
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 44270.78
+            },
+            {
+                "key head": "Alaska Department of Transportation and Public Facilities",
+                "value head": 1945.2
+            },
+            {
+                "key head": "Knikatnu, Incorporated",
+                "value head": 1445.82
+            },
+            {
+                "key head": "Matanuska Susitna Borough",
+                "value head": 817.26
+            },
+            {
+                "key head": "Wasilla, City of",
+                "value head": 671.88
+            },
+            {
+                "key head": "Cook Inlet Region, Incorporated",
+                "value head": 411.55
+            },
+            {
+                "key head": "Alaska Regional Office",
+                "value head": 296.52
+            },
+            {
+                "key head": "University of Alaska",
+                "value head": 246.04
+            },
+            {
+                "key head": "Houston, City of",
+                "value head": 200.92
+            },
+            {
+                "key head": "Anchorage Field Office",
+                "value head": 20.05
+            }
+        ],
+        "Jurisd_Owner_AcreSum": {
+            "Private": 34942.82,
+            "State": 11519.19,
+            "ANCSA": 1857.38,
+            "City": 872.8,
+            "County": 817.26,
+            "BIA": 296.52,
+            "BLM": 20.05
+        },
+        "MgmtOption_AcreSum": {
+            "Critical": 50326.57
+        },
+        "NpsStruct_Use_AttrCount": null,
+        "NpsStruct_Protection_AttrCount": null,
+        "NpsStruct_Rating_AttrCount": null,
+        "NpsStruct_FeatureCount": null,
+        "NpsStruct_Locations": null,
+        "Parcel_BuildingValue_AttrSum": 2356035811.0,
+        "Parcel_FeatureCount": 11955.0,
+        "Parcel_LandValue_AttrSum": 431219415.0,
+        "Parcel_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.01,
+                    "dir": "SSE",
+                    "lat": "61\u00b0 36.242' N",
+                    "lng": "149\u00b0 37.515' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 281300.0
+                },
+                {
+                    "dist_mi": 0.02,
+                    "dir": "NW",
+                    "lat": "61\u00b0 36.269' N",
+                    "lng": "149\u00b0 37.559' W",
+                    "property_type": "NA",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 0.02,
+                    "dir": "ENE",
+                    "lat": "61\u00b0 36.264' N",
+                    "lng": "149\u00b0 37.485' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 60100.0
+                },
+                {
+                    "dist_mi": 0.02,
+                    "dir": "NW",
+                    "lat": "61\u00b0 36.275' N",
+                    "lng": "149\u00b0 37.571' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 27400.0
+                },
+                {
+                    "dist_mi": 0.02,
+                    "dir": "E",
+                    "lat": "61\u00b0 36.250' N",
+                    "lng": "149\u00b0 37.477' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 47800.0
+                },
+                {
+                    "dist_mi": 0.02,
+                    "dir": "S",
+                    "lat": "61\u00b0 36.237' N",
+                    "lng": "149\u00b0 37.536' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 155300.0
+                },
+                {
+                    "dist_mi": 0.03,
+                    "dir": "N",
+                    "lat": "61\u00b0 36.292' N",
+                    "lng": "149\u00b0 37.525' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 25500.0
+                },
+                {
+                    "dist_mi": 0.03,
+                    "dir": "NW",
+                    "lat": "61\u00b0 36.278' N",
+                    "lng": "149\u00b0 37.565' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 277900.0
+                },
+                {
+                    "dist_mi": 0.04,
+                    "dir": "W",
+                    "lat": "61\u00b0 36.251' N",
+                    "lng": "149\u00b0 37.618' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 189100.0
+                },
+                {
+                    "dist_mi": 0.05,
+                    "dir": "ENE",
+                    "lat": "61\u00b0 36.274' N",
+                    "lng": "149\u00b0 37.433' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 31600.0
+                },
+                {
+                    "dist_mi": 0.05,
+                    "dir": "SW",
+                    "lat": "61\u00b0 36.224' N",
+                    "lng": "149\u00b0 37.611' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 222900.0
+                },
+                {
+                    "dist_mi": 0.05,
+                    "dir": "E",
+                    "lat": "61\u00b0 36.260' N",
+                    "lng": "149\u00b0 37.421' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 285100.0
+                },
+                {
+                    "dist_mi": 0.06,
+                    "dir": "NNW",
+                    "lat": "61\u00b0 36.314' N",
+                    "lng": "149\u00b0 37.547' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 29500.0
+                },
+                {
+                    "dist_mi": 0.06,
+                    "dir": "SSE",
+                    "lat": "61\u00b0 36.199' N",
+                    "lng": "149\u00b0 37.500' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 339600.0
+                },
+                {
+                    "dist_mi": 0.07,
+                    "dir": "SE",
+                    "lat": "61\u00b0 36.205' N",
+                    "lng": "149\u00b0 37.437' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 50900.0
+                },
+                {
+                    "dist_mi": 0.07,
+                    "dir": "WSW",
+                    "lat": "61\u00b0 36.232' N",
+                    "lng": "149\u00b0 37.656' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 40500.0
+                },
+                {
+                    "dist_mi": 0.08,
+                    "dir": "NE",
+                    "lat": "61\u00b0 36.312' N",
+                    "lng": "149\u00b0 37.423' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 50300.0
+                },
+                {
+                    "dist_mi": 0.08,
+                    "dir": "S",
+                    "lat": "61\u00b0 36.180' N",
+                    "lng": "149\u00b0 37.529' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 0.08,
+                    "dir": "ENE",
+                    "lat": "61\u00b0 36.282' N",
+                    "lng": "149\u00b0 37.381' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 49700.0
+                },
+                {
+                    "dist_mi": 0.08,
+                    "dir": "ENE",
+                    "lat": "61\u00b0 36.267' N",
+                    "lng": "149\u00b0 37.369' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 51500.0
+                },
+                {
+                    "dist_mi": 0.09,
+                    "dir": "SSE",
+                    "lat": "61\u00b0 36.180' N",
+                    "lng": "149\u00b0 37.478' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 449400.0
+                },
+                {
+                    "dist_mi": 0.09,
+                    "dir": "S",
+                    "lat": "61\u00b0 36.175' N",
+                    "lng": "149\u00b0 37.535' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 0.1,
+                    "dir": "NNE",
+                    "lat": "61\u00b0 36.342' N",
+                    "lng": "149\u00b0 37.459' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 115800.0
+                },
+                {
+                    "dist_mi": 0.1,
+                    "dir": "N",
+                    "lat": "61\u00b0 36.346' N",
+                    "lng": "149\u00b0 37.527' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 363600.0
+                },
+                {
+                    "dist_mi": 0.1,
+                    "dir": "SW",
+                    "lat": "61\u00b0 36.206' N",
+                    "lng": "149\u00b0 37.685' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 282100.0
+                },
+                {
+                    "dist_mi": 0.1,
+                    "dir": "SSW",
+                    "lat": "61\u00b0 36.180' N",
+                    "lng": "149\u00b0 37.627' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 0.1,
+                    "dir": "ESE",
+                    "lat": "61\u00b0 36.213' N",
+                    "lng": "149\u00b0 37.366' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 25100.0
+                },
+                {
+                    "dist_mi": 0.11,
+                    "dir": "NE",
+                    "lat": "61\u00b0 36.319' N",
+                    "lng": "149\u00b0 37.372' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 250600.0
+                },
+                {
+                    "dist_mi": 0.11,
+                    "dir": "N",
+                    "lat": "61\u00b0 36.354' N",
+                    "lng": "149\u00b0 37.487' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 68000.0
+                },
+                {
+                    "dist_mi": 0.11,
+                    "dir": "ENE",
+                    "lat": "61\u00b0 36.276' N",
+                    "lng": "149\u00b0 37.318' W",
+                    "property_type": "PRIVATE",
+                    "property_use": "",
+                    "total_value": 56400.0
+                }
+            ],
+            "popped": 11923,
+            "cutoff": 0.11
+        },
+        "Parcel_PropType_AcreSum": [
+            {
+                "key head": "PRIVATE",
+                "value head": 33470.16
+            },
+            {
+                "key head": "NO DATA",
+                "value head": 6560.58
+            },
+            {
+                "key head": "NA",
+                "value head": 3835.04
+            },
+            {
+                "key head": "NATIVE CORP",
+                "value head": 1582.27
+            },
+            {
+                "key head": "MENTAL HEALTH",
+                "value head": 1196.19
+            },
+            {
+                "key head": "No Data",
+                "value head": 938.99
+            },
+            {
+                "key head": "STATE",
+                "value head": 882.17
+            },
+            {
+                "key head": "CITY",
+                "value head": 878.4
+            },
+            {
+                "key head": "BOROUGH",
+                "value head": 786.11
+            },
+            {
+                "key head": "PUBLIC UNIVERSITY",
+                "value head": 212.81
+            },
+            {
+                "key head": "FEDERAL",
+                "value head": 20.0
+            },
+            {
+                "key head": "COOPERATIVE",
+                "value head": 13.77
+            },
+            {
+                "key head": "PUBLIC USE",
+                "value head": 12.52
+            }
+        ],
+        "Parcel_PropUse_AcreSum": [
+            {
+                "key head": "No Data",
+                "value head": 50389.0
+            }
+        ],
+        "Parcel_TotalAcres": 50389.0,
+        "Parcel_TotalValue_AttrSum": 2787034727.0,
+        "PetrolTerm_Company_AttrCount": null,
+        "PetrolTerm_FeatureCount": null,
+        "PetrolTerm_Locations": null,
+        "PipeLine_Name_FeetSum": [
+            {
+                "key head": "BELUGA GAS PIPELINE",
+                "value head": 4576
+            }
+        ],
+        "PipeLine_Locations": {
+            "features": [
+                {
+                    "dist_mi": 4.68,
+                    "dir": "SE",
+                    "lat": "61\u00b0 33.070' N",
+                    "lng": "149\u00b0 32.253' W",
+                    "NAME": "BELUGA GAS PIPELINE"
+                },
+                {
+                    "dist_mi": 4.72,
+                    "dir": "SE",
+                    "lat": "61\u00b0 33.134' N",
+                    "lng": "149\u00b0 31.967' W",
+                    "NAME": "BELUGA GAS PIPELINE"
+                },
+                {
+                    "dist_mi": 4.83,
+                    "dir": "SE",
+                    "lat": "61\u00b0 33.181' N",
+                    "lng": "149\u00b0 31.556' W",
+                    "NAME": "BELUGA GAS PIPELINE"
+                },
+                {
+                    "dist_mi": 4.83,
+                    "dir": "SE",
+                    "lat": "61\u00b0 33.181' N",
+                    "lng": "149\u00b0 31.556' W",
+                    "NAME": "BELUGA GAS PIPELINE"
+                },
+                {
+                    "dist_mi": 4.85,
+                    "dir": "SE",
+                    "lat": "61\u00b0 33.186' N",
+                    "lng": "149\u00b0 31.502' W",
+                    "NAME": "BELUGA GAS PIPELINE"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "PipeLine_TotalFeet": 4576.0,
+        "PowerPlant_PrimSource_AttrCount": null,
+        "PowerPlant_UtilName_AttrCount": null,
+        "PowerPlant_FeatureCount": null,
+        "PowerPlant_Locations": null,
+        "PowerPlant_SectorName_AttrCount": null,
+        "Silviculture_Status_AcreSum": [
+            {
+                "key head": "Proposed",
+                "value head": 381.94
+            },
+            {
+                "key head": "Active",
+                "value head": 4.91
+            }
+        ],
+        "Silviculture_TotalValue_AttrSum": null,
+        "Silviculture_FeatureCount": 9.0,
+        "Silviculture_Locations": {
+            "features": [
+                {
+                    "dist_mi": 2.61,
+                    "dir": "NNE",
+                    "lat": "61\u00b0 38.267' N",
+                    "lng": "149\u00b0 35.334' W",
+                    "STATUS": "Active",
+                    "TOTAL_VALUE": "No Data",
+                    "SALE_NAME": "Haddock, Mike Personal Use Area 2023"
+                },
+                {
+                    "dist_mi": 3.21,
+                    "dir": "N",
+                    "lat": "61\u00b0 39.025' N",
+                    "lng": "149\u00b0 38.077' W",
+                    "STATUS": "Proposed",
+                    "TOTAL_VALUE": "No Data",
+                    "SALE_NAME": "Sunset #04"
+                },
+                {
+                    "dist_mi": 3.25,
+                    "dir": "NNW",
+                    "lat": "61\u00b0 39.021' N",
+                    "lng": "149\u00b0 38.623' W",
+                    "STATUS": "Proposed",
+                    "TOTAL_VALUE": "No Data",
+                    "SALE_NAME": "Sunset #01"
+                },
+                {
+                    "dist_mi": 3.69,
+                    "dir": "NNW",
+                    "lat": "61\u00b0 39.382' N",
+                    "lng": "149\u00b0 38.899' W",
+                    "STATUS": "Proposed",
+                    "TOTAL_VALUE": "No Data",
+                    "SALE_NAME": "Sunset #02"
+                },
+                {
+                    "dist_mi": 4.0,
+                    "dir": "NNW",
+                    "lat": "61\u00b0 39.650' N",
+                    "lng": "149\u00b0 38.956' W",
+                    "STATUS": "Proposed",
+                    "TOTAL_VALUE": "No Data",
+                    "SALE_NAME": "Sunset #03B"
+                },
+                {
+                    "dist_mi": 4.32,
+                    "dir": "NNW",
+                    "lat": "61\u00b0 39.953' N",
+                    "lng": "149\u00b0 38.716' W",
+                    "STATUS": "Proposed",
+                    "TOTAL_VALUE": "No Data",
+                    "SALE_NAME": "Sunset #03A"
+                },
+                {
+                    "dist_mi": 4.43,
+                    "dir": "NNW",
+                    "lat": "61\u00b0 39.937' N",
+                    "lng": "149\u00b0 39.784' W",
+                    "STATUS": "Proposed",
+                    "TOTAL_VALUE": "No Data",
+                    "SALE_NAME": "Sunset #05"
+                },
+                {
+                    "dist_mi": 4.49,
+                    "dir": "NNW",
+                    "lat": "61\u00b0 39.887' N",
+                    "lng": "149\u00b0 40.464' W",
+                    "STATUS": "Proposed",
+                    "TOTAL_VALUE": "No Data",
+                    "SALE_NAME": "Sunset #06"
+                },
+                {
+                    "dist_mi": 4.7,
+                    "dir": "NNW",
+                    "lat": "61\u00b0 40.124' N",
+                    "lng": "149\u00b0 40.149' W",
+                    "STATUS": "Proposed",
+                    "TOTAL_VALUE": "No Data",
+                    "SALE_NAME": "Sunset #07"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "Silviculture_TotalAcres": 386.85,
+        "SpecMgmt_Consid_AttrCount": [
+            {
+                "key head": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area.",
+                "value head": 50
+            }
+        ],
+        "SpecMgmt_FeatureCount": 50.0,
+        "SpecMgmt_Locations": {
+            "features": [
+                {
+                    "dist_mi": 1.43,
+                    "dir": "S",
+                    "lat": "61\u00b0 35.031' N",
+                    "lng": "149\u00b0 37.900' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 1.44,
+                    "dir": "NE",
+                    "lat": "61\u00b0 37.052' N",
+                    "lng": "149\u00b0 35.503' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 1.51,
+                    "dir": "NE",
+                    "lat": "61\u00b0 37.056' N",
+                    "lng": "149\u00b0 35.341' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 1.54,
+                    "dir": "S",
+                    "lat": "61\u00b0 34.929' N",
+                    "lng": "149\u00b0 37.779' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 1.92,
+                    "dir": "SSW",
+                    "lat": "61\u00b0 34.719' N",
+                    "lng": "149\u00b0 38.852' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 2.03,
+                    "dir": "ENE",
+                    "lat": "61\u00b0 37.052' N",
+                    "lng": "149\u00b0 34.203' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 2.06,
+                    "dir": "ENE",
+                    "lat": "61\u00b0 36.957' N",
+                    "lng": "149\u00b0 34.065' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 2.12,
+                    "dir": "ENE",
+                    "lat": "61\u00b0 36.905' N",
+                    "lng": "149\u00b0 33.896' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 2.42,
+                    "dir": "SSW",
+                    "lat": "61\u00b0 34.418' N",
+                    "lng": "149\u00b0 39.651' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 2.49,
+                    "dir": "SSE",
+                    "lat": "61\u00b0 34.215' N",
+                    "lng": "149\u00b0 36.059' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 2.58,
+                    "dir": "SSW",
+                    "lat": "61\u00b0 34.319' N",
+                    "lng": "149\u00b0 39.881' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 2.83,
+                    "dir": "SW",
+                    "lat": "61\u00b0 34.531' N",
+                    "lng": "149\u00b0 41.192' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 2.84,
+                    "dir": "SW",
+                    "lat": "61\u00b0 34.430' N",
+                    "lng": "149\u00b0 41.020' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 3.16,
+                    "dir": "ESE",
+                    "lat": "61\u00b0 34.688' N",
+                    "lng": "149\u00b0 32.803' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 3.19,
+                    "dir": "ESE",
+                    "lat": "61\u00b0 34.668' N",
+                    "lng": "149\u00b0 32.759' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 3.2,
+                    "dir": "ESE",
+                    "lat": "61\u00b0 34.678' N",
+                    "lng": "149\u00b0 32.715' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 3.2,
+                    "dir": "ESE",
+                    "lat": "61\u00b0 34.678' N",
+                    "lng": "149\u00b0 32.715' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 3.2,
+                    "dir": "ESE",
+                    "lat": "61\u00b0 34.674' N",
+                    "lng": "149\u00b0 32.714' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 3.21,
+                    "dir": "ESE",
+                    "lat": "61\u00b0 34.665' N",
+                    "lng": "149\u00b0 32.721' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                }
+            ],
+            "popped": 31,
+            "cutoff": 3.21
+        },
+        "Railroad_NetDesc_FeetSum": [
+            {
+                "key head": "Main sub network",
+                "value head": 57965
+            },
+            {
+                "key head": "Abandoned",
+                "value head": 1297
+            }
+        ],
+        "Railroad_Locations": {
+            "features": [
+                {
+                    "dist_mi": 1.45,
+                    "dir": "S",
+                    "lat": "61\u00b0 35.000' N",
+                    "lng": "149\u00b0 37.755' W",
+                    "NET_DESC": "Main sub network"
+                },
+                {
+                    "dist_mi": 1.63,
+                    "dir": "SSW",
+                    "lat": "61\u00b0 35.076' N",
+                    "lng": "149\u00b0 39.174' W",
+                    "NET_DESC": "Abandoned"
+                },
+                {
+                    "dist_mi": 1.63,
+                    "dir": "SSW",
+                    "lat": "61\u00b0 35.076' N",
+                    "lng": "149\u00b0 39.174' W",
+                    "NET_DESC": "Main sub network"
+                },
+                {
+                    "dist_mi": 1.74,
+                    "dir": "SW",
+                    "lat": "61\u00b0 35.113' N",
+                    "lng": "149\u00b0 39.606' W",
+                    "NET_DESC": "Main sub network"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "Railroad_TotalFeet": 59263.0,
+        "UsaStruct_OccCls_AttrCount": [
+            {
+                "key head": "Residential",
+                "value head": 8494
+            },
+            {
+                "key head": "Commercial",
+                "value head": 358
+            },
+            {
+                "key head": "Unclassified",
+                "value head": 244
+            },
+            {
+                "key head": "Industrial",
+                "value head": 156
+            },
+            {
+                "key head": "Assembly",
+                "value head": 40
+            },
+            {
+                "key head": "Government",
+                "value head": 32
+            },
+            {
+                "key head": "Utility and Misc",
+                "value head": 31
+            },
+            {
+                "key head": "Education",
+                "value head": 29
+            },
+            {
+                "key head": "Agriculture",
+                "value head": 26
+            }
+        ],
+        "UsaStruct_PrimOcc_AttrCount": [
+            {
+                "key head": "Single Family Dwelling",
+                "value head": 7405
+            },
+            {
+                "key head": "Multi - Family Dwelling",
+                "value head": 661
+            },
+            {
+                "key head": "Unclassified",
+                "value head": 325
+            },
+            {
+                "key head": "Manufactured Home",
+                "value head": 316
+            },
+            {
+                "key head": "Retail Trade",
+                "value head": 173
+            },
+            {
+                "key head": "Parking",
+                "value head": 138
+            },
+            {
+                "key head": "Light",
+                "value head": 88
+            },
+            {
+                "key head": "Construction",
+                "value head": 68
+            },
+            {
+                "key head": "Religious",
+                "value head": 39
+            },
+            {
+                "key head": "Pre-K - 12 Schools",
+                "value head": 29
+            },
+            {
+                "key head": "Nursing Home",
+                "value head": 28
+            },
+            {
+                "key head": "Agriculture",
+                "value head": 26
+            },
+            {
+                "key head": "Aviation",
+                "value head": 26
+            },
+            {
+                "key head": "Personal and Repair Services",
+                "value head": 22
+            },
+            {
+                "key head": "General Services",
+                "value head": 22
+            },
+            {
+                "key head": "Emergency Response",
+                "value head": 10
+            },
+            {
+                "key head": "Veterinary/Pet ",
+                "value head": 7
+            },
+            {
+                "key head": "Entertainment and Recreation",
+                "value head": 7
+            },
+            {
+                "key head": "Medical Office/Clinic",
+                "value head": 6
+            },
+            {
+                "key head": "Ground",
+                "value head": 5
+            },
+            {
+                "key head": "Professional/Technical Services",
+                "value head": 4
+            },
+            {
+                "key head": "Temporary Lodging",
+                "value head": 3
+            },
+            {
+                "key head": "Wholesale Trade",
+                "value head": 1
+            },
+            {
+                "key head": "Community Center",
+                "value head": 1
+            }
+        ],
+        "UsaStruct_SecOcc_AttrCount": [
+            {
+                "key head": "No Data",
+                "value head": 9410
+            }
+        ],
+        "UsaStruct_FeatureCount": 9410.0,
+        "UsaStruct_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.0,
+                    "dir": "WSW",
+                    "lat": "61\u00b0 36.254' N",
+                    "lng": "149\u00b0 37.550' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.02,
+                    "dir": "SE",
+                    "lat": "61\u00b0 36.237' N",
+                    "lng": "149\u00b0 37.490' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.03,
+                    "dir": "ESE",
+                    "lat": "61\u00b0 36.247' N",
+                    "lng": "149\u00b0 37.466' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Manufactured Home"
+                },
+                {
+                    "dist_mi": 0.03,
+                    "dir": "NE",
+                    "lat": "61\u00b0 36.277' N",
+                    "lng": "149\u00b0 37.478' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Manufactured Home"
+                },
+                {
+                    "dist_mi": 0.04,
+                    "dir": "ESE",
+                    "lat": "61\u00b0 36.240' N",
+                    "lng": "149\u00b0 37.457' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Manufactured Home"
+                },
+                {
+                    "dist_mi": 0.04,
+                    "dir": "NNW",
+                    "lat": "61\u00b0 36.294' N",
+                    "lng": "149\u00b0 37.572' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.04,
+                    "dir": "SSW",
+                    "lat": "61\u00b0 36.218' N",
+                    "lng": "149\u00b0 37.561' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.06,
+                    "dir": "N",
+                    "lat": "61\u00b0 36.311' N",
+                    "lng": "149\u00b0 37.498' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Manufactured Home"
+                },
+                {
+                    "dist_mi": 0.06,
+                    "dir": "E",
+                    "lat": "61\u00b0 36.250' N",
+                    "lng": "149\u00b0 37.406' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.06,
+                    "dir": "ENE",
+                    "lat": "61\u00b0 36.285' N",
+                    "lng": "149\u00b0 37.421' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Manufactured Home"
+                },
+                {
+                    "dist_mi": 0.06,
+                    "dir": "W",
+                    "lat": "61\u00b0 36.257' N",
+                    "lng": "149\u00b0 37.649' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.07,
+                    "dir": "SSE",
+                    "lat": "61\u00b0 36.195' N",
+                    "lng": "149\u00b0 37.474' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.07,
+                    "dir": "SW",
+                    "lat": "61\u00b0 36.211' N",
+                    "lng": "149\u00b0 37.620' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.07,
+                    "dir": "SW",
+                    "lat": "61\u00b0 36.218' N",
+                    "lng": "149\u00b0 37.642' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.08,
+                    "dir": "WSW",
+                    "lat": "61\u00b0 36.232' N",
+                    "lng": "149\u00b0 37.682' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Manufactured Home"
+                },
+                {
+                    "dist_mi": 0.08,
+                    "dir": "NNW",
+                    "lat": "61\u00b0 36.334' N",
+                    "lng": "149\u00b0 37.556' W",
+                    "OCC_CLS": "Unclassified",
+                    "PRIM_OCC": "Unclassified"
+                },
+                {
+                    "dist_mi": 0.09,
+                    "dir": "ENE",
+                    "lat": "61\u00b0 36.296' N",
+                    "lng": "149\u00b0 37.373' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Manufactured Home"
+                },
+                {
+                    "dist_mi": 0.09,
+                    "dir": "E",
+                    "lat": "61\u00b0 36.260' N",
+                    "lng": "149\u00b0 37.347' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Manufactured Home"
+                },
+                {
+                    "dist_mi": 0.1,
+                    "dir": "NNE",
+                    "lat": "61\u00b0 36.332' N",
+                    "lng": "149\u00b0 37.415' W",
+                    "OCC_CLS": "Commercial",
+                    "PRIM_OCC": "Parking"
+                },
+                {
+                    "dist_mi": 0.11,
+                    "dir": "ESE",
+                    "lat": "61\u00b0 36.208' N",
+                    "lng": "149\u00b0 37.331' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Manufactured Home"
+                },
+                {
+                    "dist_mi": 0.11,
+                    "dir": "SW",
+                    "lat": "61\u00b0 36.203' N",
+                    "lng": "149\u00b0 37.715' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.13,
+                    "dir": "NE",
+                    "lat": "61\u00b0 36.341' N",
+                    "lng": "149\u00b0 37.350' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.13,
+                    "dir": "ENE",
+                    "lat": "61\u00b0 36.310' N",
+                    "lng": "149\u00b0 37.316' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.13,
+                    "dir": "NE",
+                    "lat": "61\u00b0 36.343' N",
+                    "lng": "149\u00b0 37.372' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.13,
+                    "dir": "NNW",
+                    "lat": "61\u00b0 36.367' N",
+                    "lng": "149\u00b0 37.599' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.13,
+                    "dir": "SSW",
+                    "lat": "61\u00b0 36.157' N",
+                    "lng": "149\u00b0 37.670' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.14,
+                    "dir": "NNE",
+                    "lat": "61\u00b0 36.361' N",
+                    "lng": "149\u00b0 37.375' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.14,
+                    "dir": "WSW",
+                    "lat": "61\u00b0 36.200' N",
+                    "lng": "149\u00b0 37.777' W",
+                    "OCC_CLS": "Unclassified",
+                    "PRIM_OCC": "Unclassified"
+                },
+                {
+                    "dist_mi": 0.14,
+                    "dir": "NNE",
+                    "lat": "61\u00b0 36.380' N",
+                    "lng": "149\u00b0 37.448' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.15,
+                    "dir": "ESE",
+                    "lat": "61\u00b0 36.217' N",
+                    "lng": "149\u00b0 37.248' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.15,
+                    "dir": "ENE",
+                    "lat": "61\u00b0 36.305' N",
+                    "lng": "149\u00b0 37.263' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Manufactured Home"
+                },
+                {
+                    "dist_mi": 0.15,
+                    "dir": "ENE",
+                    "lat": "61\u00b0 36.278' N",
+                    "lng": "149\u00b0 37.241' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                }
+            ],
+            "popped": 9377,
+            "cutoff": 0.15
+        },
+        "WindTurb_FeatureCount": null,
+        "WindTurb_Locations": null,
+        "WindTurb_ProjName_AttrCount": null,
+        "SpatialInfoType": " 5 Mile Buffer",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:231189.872%2C1299335.648%2C3338,scale:40241",
+        "CpxName": null,
+        "DispatchCenterID": "AKACDC",
+        "PercentContained": null,
+        "PercentPerimeterToBeContained": null,
+        "FireMgmtComplexity": null,
+        "IncidentComplexityLevel": "Type 5 Incident",
+        "EstimatedCostToDate": null,
+        "TotalIncidentPersonnel": null,
+        "POOProtectingAgency": "DVF",
+        "POOJurisdictionalAgency": "DNR",
+        "POOJurisdictionalUnit": "AKDNS",
+        "ICS209ReportDateTime": null,
+        "ICS209ReportStatus": null,
+        "IncidentManagementOrganization": null
+    },
+    {
         "AkFireRegion": "UYD",
         "AkFireNumber": "080",
         "wfigs_IncidentName": "Sixmile",
