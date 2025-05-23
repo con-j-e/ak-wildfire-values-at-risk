@@ -2,16 +2,16 @@
     {
         "AkFireRegion": "FAS",
         "AkFireNumber": "084",
-        "wfigs_IncidentName": "455 Sanduri Ave",
+        "wfigs_IncidentName": "Sanduri Ave",
         "FireActivityStatus": "Active",
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1747989680430.0,
+        "wfigs_ModifiedOnDateTime_dt": 1747990646183.0,
         "wfigs_IrwinID": "{3224AFAA-2B54-4EF2-BDA2-B3F0DCAB13FA}",
         "ReportedAcres": 0.1,
         "HasError": 0.0,
-        "DefaultLabel": "084-455 Sanduri Ave, Reported Location",
+        "DefaultLabel": "084-Sanduri Ave, Reported Location",
         "AnalysisBufferMiles": 0.0,
         "AkMine_Active_AttrCount": null,
         "AkMine_Type_AttrCount": null,
@@ -44,12 +44,12 @@
         "Community_Locations": null,
         "Jurisd_Unit_AcreSum": [
             {
-                "key head": "Fairbanks North Star Borough",
+                "key head": "Alaska Department of Natural Resources",
                 "value head": 0.1
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "County": 0.1
+            "Private": 0.1
         },
         "MgmtOption_AcreSum": {
             "Critical": 0.1
@@ -61,17 +61,17 @@
         "NpsStruct_Locations": null,
         "Parcel_BuildingValue_AttrSum": null,
         "Parcel_FeatureCount": 1.0,
-        "Parcel_LandValue_AttrSum": 4818.0,
+        "Parcel_LandValue_AttrSum": 1020.0,
         "Parcel_Locations": {
             "features": [
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "64\u00b0 48.304' N",
-                    "lng": "147\u00b0 41.713' W",
-                    "property_type": "Tax Lot",
-                    "property_use": "Exempt ",
-                    "total_value": 715377.0
+                    "lat": "64\u00b0 48.179' N",
+                    "lng": "147\u00b0 41.416' W",
+                    "property_type": "Tract",
+                    "property_use": "Vacant Land",
+                    "total_value": 262570.0
                 }
             ],
             "popped": 0,
@@ -79,18 +79,18 @@
         },
         "Parcel_PropType_AcreSum": [
             {
-                "key head": "Tax Lot",
+                "key head": "Tract",
                 "value head": 0.1
             }
         ],
         "Parcel_PropUse_AcreSum": [
             {
-                "key head": "Exempt ",
+                "key head": "Vacant Land",
                 "value head": 0.1
             }
         ],
         "Parcel_TotalAcres": 0.1,
-        "Parcel_TotalValue_AttrSum": 4818.0,
+        "Parcel_TotalValue_AttrSum": 1020.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -113,44 +113,16 @@
         "Railroad_NetDesc_FeetSum": null,
         "Railroad_Locations": null,
         "Railroad_TotalFeet": null,
-        "UsaStruct_OccCls_AttrCount": [
-            {
-                "key head": "Unclassified",
-                "value head": 1
-            }
-        ],
-        "UsaStruct_PrimOcc_AttrCount": [
-            {
-                "key head": "Unclassified",
-                "value head": 1
-            }
-        ],
-        "UsaStruct_SecOcc_AttrCount": [
-            {
-                "key head": "No Data",
-                "value head": 1
-            }
-        ],
-        "UsaStruct_FeatureCount": 1.0,
-        "UsaStruct_Locations": {
-            "features": [
-                {
-                    "dist_mi": 0.0,
-                    "dir": "Interior",
-                    "lat": "64\u00b0 48.304' N",
-                    "lng": "147\u00b0 41.713' W",
-                    "OCC_CLS": "Unclassified",
-                    "PRIM_OCC": "Unclassified"
-                }
-            ],
-            "popped": 0,
-            "cutoff": null
-        },
+        "UsaStruct_OccCls_AttrCount": null,
+        "UsaStruct_PrimOcc_AttrCount": null,
+        "UsaStruct_SecOcc_AttrCount": null,
+        "UsaStruct_FeatureCount": null,
+        "UsaStruct_Locations": null,
         "WindTurb_FeatureCount": null,
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Reported Location",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:299034.469%2C1663523.111%2C3338,scale:56",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:299290.36%2C1663315.019%2C3338,scale:56",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": null,
@@ -160,8 +132,8 @@
         "EstimatedCostToDate": null,
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "DVF",
-        "POOJurisdictionalAgency": "C&L",
-        "POOJurisdictionalUnit": "AKFNFX",
+        "POOJurisdictionalAgency": "DNR",
+        "POOJurisdictionalUnit": "AKDNS",
         "ICS209ReportDateTime": null,
         "ICS209ReportStatus": null,
         "IncidentManagementOrganization": null
