@@ -7,9 +7,9 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1748134595593.0,
+        "wfigs_ModifiedOnDateTime_dt": 1748135356117.0,
         "wfigs_IrwinID": "{94835413-8B87-43B7-8344-F0DB030403BA}",
-        "ReportedAcres": 0.1,
+        "ReportedAcres": 0.82,
         "HasError": 0.0,
         "DefaultLabel": "086-Bartko Ave, Reported Location",
         "AnalysisBufferMiles": 0.0,
@@ -45,33 +45,42 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 0.1
+                "value head": 0.82
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "Private": 0.1
+            "Private": 0.82
         },
         "MgmtOption_AcreSum": {
-            "Critical": 0.1
+            "Critical": 0.82
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
         "NpsStruct_Rating_AttrCount": null,
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
-        "Parcel_BuildingValue_AttrSum": 2434.0,
-        "Parcel_FeatureCount": 1.0,
-        "Parcel_LandValue_AttrSum": 579.0,
+        "Parcel_BuildingValue_AttrSum": 19662.0,
+        "Parcel_FeatureCount": 2.0,
+        "Parcel_LandValue_AttrSum": 4793.0,
         "Parcel_Locations": {
             "features": [
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "59\u00b0 42.894' N",
-                    "lng": "151\u00b0 24.328' W",
+                    "lat": "59\u00b0 42.887' N",
+                    "lng": "151\u00b0 24.308' W",
                     "property_type": "Private",
                     "property_use": "Residential",
                     "total_value": 144100.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "59\u00b0 42.893' N",
+                    "lng": "151\u00b0 24.305' W",
+                    "property_type": "Private",
+                    "property_use": "Vacant",
+                    "total_value": 25900.0
                 }
             ],
             "popped": 0,
@@ -80,17 +89,21 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Private",
-                "value head": 0.1
+                "value head": 0.82
             }
         ],
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Residential",
-                "value head": 0.1
+                "value head": 0.81
+            },
+            {
+                "key head": "Vacant",
+                "value head": 0.01
             }
         ],
-        "Parcel_TotalAcres": 0.1,
-        "Parcel_TotalValue_AttrSum": 3013.0,
+        "Parcel_TotalAcres": 0.82,
+        "Parcel_TotalValue_AttrSum": 24455.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -113,16 +126,44 @@
         "Railroad_NetDesc_FeetSum": null,
         "Railroad_Locations": null,
         "Railroad_TotalFeet": null,
-        "UsaStruct_OccCls_AttrCount": null,
-        "UsaStruct_PrimOcc_AttrCount": null,
-        "UsaStruct_SecOcc_AttrCount": null,
-        "UsaStruct_FeatureCount": null,
-        "UsaStruct_Locations": null,
+        "UsaStruct_OccCls_AttrCount": [
+            {
+                "key head": "Residential",
+                "value head": 1
+            }
+        ],
+        "UsaStruct_PrimOcc_AttrCount": [
+            {
+                "key head": "Single Family Dwelling",
+                "value head": 1
+            }
+        ],
+        "UsaStruct_SecOcc_AttrCount": [
+            {
+                "key head": "No Data",
+                "value head": 1
+            }
+        ],
+        "UsaStruct_FeatureCount": 1.0,
+        "UsaStruct_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "59\u00b0 42.906' N",
+                    "lng": "151\u00b0 24.348' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "WindTurb_FeatureCount": null,
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Reported Location",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:145425.499%2C1083249.377%2C3338,scale:56",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:145425.499%2C1083249.377%2C3338,scale:162",
         "CpxName": null,
         "DispatchCenterID": "AKACDC",
         "PercentContained": null,
