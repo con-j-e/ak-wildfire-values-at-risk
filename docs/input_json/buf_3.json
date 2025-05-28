@@ -7,10 +7,10 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1748444359693.0,
+        "wfigs_ModifiedOnDateTime_dt": 1748448147053.0,
         "wfigs_IrwinID": "{3845D03F-7D93-4324-AFC5-627838CE087A}",
         "ReportedAcres": 0.1,
-        "HasError": 1.0,
+        "HasError": 0.0,
         "DefaultLabel": "095-Admiralty, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
         "AkMine_Active_AttrCount": null,
@@ -1107,9 +1107,26 @@
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
-        "PipeLine_Name_FeetSum": "!error!",
-        "PipeLine_Locations": "!error!",
-        "PipeLine_TotalFeet": -1.0,
+        "PipeLine_Name_FeetSum": [
+            {
+                "key head": "NIKISKI ALASKA PIPELINE",
+                "value head": 29592
+            }
+        ],
+        "PipeLine_Locations": {
+            "features": [
+                {
+                    "dist_mi": 1.48,
+                    "dir": "SSE",
+                    "lat": "60\u00b0 41.924' N",
+                    "lng": "151\u00b0 17.343' W",
+                    "NAME": "NIKISKI ALASKA PIPELINE"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "PipeLine_TotalFeet": 29592.0,
         "PowerPlant_PrimSource_AttrCount": null,
         "PowerPlant_UtilName_AttrCount": null,
         "PowerPlant_FeatureCount": null,
