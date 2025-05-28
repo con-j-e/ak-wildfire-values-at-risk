@@ -123,9 +123,9 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1748462758967.0,
+        "wfigs_ModifiedOnDateTime_dt": 1748474110663.0,
         "wfigs_IrwinID": "{3845D03F-7D93-4324-AFC5-627838CE087A}",
-        "ReportedAcres": 0.1,
+        "ReportedAcres": 0.25,
         "HasError": 0.0,
         "DefaultLabel": "095-Admiralty, Reported Location",
         "AnalysisBufferMiles": 0.0,
@@ -161,33 +161,42 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 0.1
+                "value head": 0.25
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "Private": 0.1
+            "Private": 0.25
         },
         "MgmtOption_AcreSum": {
-            "Critical": 0.1
+            "Critical": 0.25
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
         "NpsStruct_Rating_AttrCount": null,
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
-        "Parcel_BuildingValue_AttrSum": 6797.0,
-        "Parcel_FeatureCount": 1.0,
-        "Parcel_LandValue_AttrSum": 823.0,
+        "Parcel_BuildingValue_AttrSum": 16061.0,
+        "Parcel_FeatureCount": 2.0,
+        "Parcel_LandValue_AttrSum": 2068.0,
         "Parcel_Locations": {
             "features": [
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
                     "lat": "60\u00b0 43.144' N",
-                    "lng": "151\u00b0 18.164' W",
+                    "lng": "151\u00b0 18.156' W",
                     "property_type": "Private",
                     "property_use": "Residential",
                     "total_value": 125900.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "60\u00b0 43.138' N",
+                    "lng": "151\u00b0 18.192' W",
+                    "property_type": "Private",
+                    "property_use": "Vacant",
+                    "total_value": 14100.0
                 }
             ],
             "popped": 0,
@@ -196,17 +205,21 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Private",
-                "value head": 0.1
+                "value head": 0.25
             }
         ],
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Residential",
-                "value head": 0.1
+                "value head": 0.24
+            },
+            {
+                "key head": "Vacant",
+                "value head": 0.01
             }
         ],
-        "Parcel_TotalAcres": 0.1,
-        "Parcel_TotalValue_AttrSum": 7621.0,
+        "Parcel_TotalAcres": 0.25,
+        "Parcel_TotalValue_AttrSum": 18129.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -238,7 +251,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Reported Location",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:146621.355%2C1195690.953%2C3338,scale:56",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:146621.355%2C1195690.953%2C3338,scale:89",
         "CpxName": null,
         "DispatchCenterID": "AKACDC",
         "PercentContained": null,
