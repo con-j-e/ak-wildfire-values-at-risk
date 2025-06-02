@@ -95,29 +95,36 @@ async def get_wfigs_updates(akdof_var_service_url: str, wfigs_locations_url: str
                 check_json_pickles = False
             irwins_with_errors.update(irwins)
 
+        # 20250602.
+        # Possible edge case requiring >= operator for timestamp query instead of >.
+        # If location data is retrieved for a fire prior to when the information update flows to the perimeter, 
+        # subsequent queries will not retrieve the perimeter data, as modified datetimes will be equivalent.
+        # Using the >= operator should control for this.
+        # The inefficiency of always requesting the latest updated fire from wfigs may be acceptable,
+        # especially given the caching of json pickles that prevents the full process from executing with inputs that have already been seen.
         if irwins_with_errors:
 
             wfigs_points_where = f"""DispatchCenterID IN ('AKACDC', 'AKCGFC', 'AKNFDC', 'AKTNFC', 'AKYFDC') AND
                                     IncidentTypeCategory = 'WF' AND
                                     (
-                                        ModifiedOnDateTime_dt > timestamp '{max_timestamp}' OR
+                                        ModifiedOnDateTime_dt >= timestamp '{max_timestamp}' OR
                                         IrwinID IN ({','.join(f"'{irwin}'" for irwin in irwins_with_errors)})
                                     )"""
             
             wfigs_polys_where = f"""attr_DispatchCenterID IN ('AKACDC', 'AKCGFC', 'AKNFDC', 'AKTNFC', 'AKYFDC') AND
                                     attr_IncidentTypeCategory = 'WF' AND
                                     (
-                                        attr_ModifiedOnDateTime_dt > timestamp '{max_timestamp}' OR
+                                        attr_ModifiedOnDateTime_dt >= timestamp '{max_timestamp}' OR
                                         attr_IrwinID IN ({','.join(f"'{irwin}'" for irwin in irwins_with_errors)})
                                     )"""
         else:
             wfigs_points_where = f"""DispatchCenterID IN ('AKACDC', 'AKCGFC', 'AKNFDC', 'AKTNFC', 'AKYFDC') AND
                                     IncidentTypeCategory = 'WF' AND
-                                    ModifiedOnDateTime_dt > timestamp '{max_timestamp}'"""
+                                    ModifiedOnDateTime_dt >= timestamp '{max_timestamp}'"""
             
             wfigs_polys_where = f"""attr_DispatchCenterID IN ('AKACDC', 'AKCGFC', 'AKNFDC', 'AKTNFC', 'AKYFDC') AND
                                     attr_IncidentTypeCategory = 'WF' AND
-                                    attr_ModifiedOnDateTime_dt > timestamp '{max_timestamp}'"""
+                                    attr_ModifiedOnDateTime_dt >= timestamp '{max_timestamp}'"""
 
         wfigs_points_outfields = (
             'IncidentName',
