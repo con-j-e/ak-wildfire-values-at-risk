@@ -1,5 +1,356 @@
 [
     {
+        "AkFireRegion": "TAS",
+        "AkFireNumber": "121",
+        "wfigs_IncidentName": "Robertson River",
+        "FireActivityStatus": "Active",
+        "wfigs_GISAcres": null,
+        "wfigs_MapMethod": null,
+        "wfigs_PolygonDateTime": null,
+        "wfigs_ModifiedOnDateTime_dt": 1749927401650.0,
+        "wfigs_IrwinID": "{CEB1E6E0-D709-4919-93A2-01BF42AE25E6}",
+        "ReportedAcres": 0.1,
+        "HasError": 0.0,
+        "DefaultLabel": "121-Robertson River, 3 Mile Buffer",
+        "AnalysisBufferMiles": 3.0,
+        "AkMine_Active_AttrCount": null,
+        "AkMine_Type_AttrCount": null,
+        "AkMine_Note_AttrCount": null,
+        "AkMine_FeatureCount": null,
+        "AkMine_Locations": null,
+        "AkPowerLine_CondType_FeetSum": null,
+        "AkPowerLine_Voltage_FeetSum": null,
+        "AkPowerLine_Locations": null,
+        "AkPowerLine_TotalFeet": null,
+        "Runway_FeatureCount": null,
+        "Runway_Locations": null,
+        "Runway_Ownership_AttrCount": null,
+        "WeatherStation_FeatureCount": 3.0,
+        "WeatherStation_Locations": {
+            "features": [
+                {
+                    "dist_mi": 2.41,
+                    "dir": "E",
+                    "lat": "63\u00b0 23.250' N",
+                    "lng": "143\u00b0 42.935' W",
+                    "NAME": "FWSRX1",
+                    "CODE": "RX1A2",
+                    "MESOWESTWEBURL": "https://akff.mesowest.org/tabular/station/#CFFDRS/RX1A2/"
+                },
+                {
+                    "dist_mi": 2.96,
+                    "dir": "N",
+                    "lat": "63\u00b0 26.130' N",
+                    "lng": "143\u00b0 46.625' W",
+                    "NAME": "T LAKE",
+                    "CODE": "TEEA2",
+                    "MESOWESTWEBURL": "https://akff.mesowest.org/tabular/station/#CFFDRS/TEEA2/"
+                },
+                {
+                    "dist_mi": 2.96,
+                    "dir": "N",
+                    "lat": "63\u00b0 26.130' N",
+                    "lng": "143\u00b0 46.625' W",
+                    "NAME": "CATHEDRAL",
+                    "CODE": "CTHA2",
+                    "MESOWESTWEBURL": "https://akff.mesowest.org/tabular/station/#CFFDRS/CTHA2/"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "Aksd_MainStruct_AttrSum": null,
+        "Aksd_OtherStruct_AttrSum": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Undesignated",
+                "value head": 1
+            },
+            {
+                "key head": "Full",
+                "value head": 1
+            },
+            {
+                "key head": "Critical",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Structure",
+                "value head": 3
+            }
+        ],
+        "Aksd_FeatureCount": 3.0,
+        "Aksd_Locations": {
+            "features": [
+                {
+                    "dist_mi": 1.46,
+                    "dir": "SSW",
+                    "lat": "63\u00b0 22.428' N",
+                    "lng": "143\u00b0 48.635' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 1.55,
+                    "dir": "E",
+                    "lat": "63\u00b0 23.175' N",
+                    "lng": "143\u00b0 44.696' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Critical",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.76,
+                    "dir": "WSW",
+                    "lat": "63\u00b0 23.494' N",
+                    "lng": "143\u00b0 52.899' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "NtvAllot_Status_AcreSum": null,
+        "NtvAllot_FeatureCount": null,
+        "NtvAllot_Locations": null,
+        "NtvAllot_TotalAcres": null,
+        "ComsTwr_Type_AttrCount": [
+            {
+                "key head": "Microwave Service",
+                "value head": 6
+            },
+            {
+                "key head": "Land Mobile Private",
+                "value head": 3
+            },
+            {
+                "key head": "Cellular",
+                "value head": 1
+            }
+        ],
+        "ComsTwr_FeatureCount": 10.0,
+        "ComsTwr_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.6,
+                    "dir": "S",
+                    "lat": "63\u00b0 23.083' N",
+                    "lng": "143\u00b0 47.767' W",
+                    "Type": "Cellular",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=11529"
+                },
+                {
+                    "dist_mi": 0.6,
+                    "dir": "S",
+                    "lat": "63\u00b0 23.085' N",
+                    "lng": "143\u00b0 47.772' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=970141"
+                },
+                {
+                    "dist_mi": 0.6,
+                    "dir": "S",
+                    "lat": "63\u00b0 23.085' N",
+                    "lng": "143\u00b0 47.772' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=970139"
+                },
+                {
+                    "dist_mi": 0.6,
+                    "dir": "S",
+                    "lat": "63\u00b0 23.085' N",
+                    "lng": "143\u00b0 47.772' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=970146"
+                },
+                {
+                    "dist_mi": 0.65,
+                    "dir": "S",
+                    "lat": "63\u00b0 23.045' N",
+                    "lng": "143\u00b0 47.852' W",
+                    "Type": "Land Mobile Private",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1200690"
+                },
+                {
+                    "dist_mi": 0.65,
+                    "dir": "S",
+                    "lat": "63\u00b0 23.045' N",
+                    "lng": "143\u00b0 47.852' W",
+                    "Type": "Land Mobile Private",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1262988"
+                },
+                {
+                    "dist_mi": 0.65,
+                    "dir": "S",
+                    "lat": "63\u00b0 23.045' N",
+                    "lng": "143\u00b0 47.852' W",
+                    "Type": "Land Mobile Private",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2655227"
+                },
+                {
+                    "dist_mi": 0.65,
+                    "dir": "S",
+                    "lat": "63\u00b0 23.050' N",
+                    "lng": "143\u00b0 47.850' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1009537"
+                },
+                {
+                    "dist_mi": 0.65,
+                    "dir": "S",
+                    "lat": "63\u00b0 23.050' N",
+                    "lng": "143\u00b0 47.850' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1009536"
+                },
+                {
+                    "dist_mi": 0.65,
+                    "dir": "S",
+                    "lat": "63\u00b0 23.050' N",
+                    "lng": "143\u00b0 47.850' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=1009503"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "Community_FeatureCount": null,
+        "Community_Locations": null,
+        "Jurisd_Unit_AcreSum": [
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 16581.99
+            },
+            {
+                "key head": "Tanacross, Incorporated",
+                "value head": 1569.64
+            }
+        ],
+        "Jurisd_Owner_AcreSum": {
+            "State": 16368.79,
+            "ANCSA": 1569.64,
+            "Private": 213.2
+        },
+        "MgmtOption_AcreSum": {
+            "Full": 10730.94,
+            "Modified (Jul 10)": 5246.49,
+            "Limited": 2174.2
+        },
+        "NpsStruct_Use_AttrCount": null,
+        "NpsStruct_Protection_AttrCount": null,
+        "NpsStruct_Rating_AttrCount": null,
+        "NpsStruct_FeatureCount": null,
+        "NpsStruct_Locations": null,
+        "Parcel_BuildingValue_AttrSum": null,
+        "Parcel_FeatureCount": null,
+        "Parcel_LandValue_AttrSum": null,
+        "Parcel_Locations": null,
+        "Parcel_PropType_AcreSum": null,
+        "Parcel_PropUse_AcreSum": null,
+        "Parcel_TotalAcres": null,
+        "Parcel_TotalValue_AttrSum": null,
+        "PetrolTerm_Company_AttrCount": null,
+        "PetrolTerm_FeatureCount": null,
+        "PetrolTerm_Locations": null,
+        "PipeLine_Name_FeetSum": [
+            {
+                "key head": "HAINES-FAIRBANKS PIPELINE",
+                "value head": 18787
+            },
+            {
+                "key head": "PIPELINE",
+                "value head": 1300
+            }
+        ],
+        "PipeLine_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.08,
+                    "dir": "NE",
+                    "lat": "63\u00b0 23.653' N",
+                    "lng": "143\u00b0 47.434' W",
+                    "NAME": "HAINES-FAIRBANKS PIPELINE"
+                },
+                {
+                    "dist_mi": 1.28,
+                    "dir": "ESE",
+                    "lat": "63\u00b0 23.195' N",
+                    "lng": "143\u00b0 45.238' W",
+                    "NAME": "PIPELINE"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "PipeLine_TotalFeet": 20087.0,
+        "PowerPlant_PrimSource_AttrCount": null,
+        "PowerPlant_UtilName_AttrCount": null,
+        "PowerPlant_FeatureCount": null,
+        "PowerPlant_Locations": null,
+        "PowerPlant_SectorName_AttrCount": null,
+        "Silviculture_Status_AcreSum": null,
+        "Silviculture_TotalValue_AttrSum": null,
+        "Silviculture_FeatureCount": null,
+        "Silviculture_Locations": null,
+        "Silviculture_TotalAcres": null,
+        "SpecMgmt_Consid_AttrCount": [
+            {
+                "key head": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area.",
+                "value head": 1
+            }
+        ],
+        "SpecMgmt_FeatureCount": 1.0,
+        "SpecMgmt_Locations": {
+            "features": [
+                {
+                    "dist_mi": 2.59,
+                    "dir": "ESE",
+                    "lat": "63\u00b0 22.365' N",
+                    "lng": "143\u00b0 43.348' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "Railroad_NetDesc_FeetSum": null,
+        "Railroad_Locations": null,
+        "Railroad_TotalFeet": null,
+        "UsaStruct_OccCls_AttrCount": null,
+        "UsaStruct_PrimOcc_AttrCount": null,
+        "UsaStruct_SecOcc_AttrCount": null,
+        "UsaStruct_FeatureCount": null,
+        "UsaStruct_Locations": null,
+        "WindTurb_FeatureCount": null,
+        "WindTurb_Locations": null,
+        "WindTurb_ProjName_AttrCount": null,
+        "SpatialInfoType": " 3 Mile Buffer",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:507105.982%2C1530769.236%2C3338,scale:24167",
+        "CpxName": null,
+        "DispatchCenterID": "AKNFDC",
+        "PercentContained": null,
+        "PercentPerimeterToBeContained": null,
+        "FireMgmtComplexity": null,
+        "IncidentComplexityLevel": null,
+        "EstimatedCostToDate": null,
+        "TotalIncidentPersonnel": null,
+        "POOProtectingAgency": "DVF",
+        "POOJurisdictionalAgency": "DNR",
+        "POOJurisdictionalUnit": "AKDNS",
+        "ICS209ReportDateTime": null,
+        "ICS209ReportStatus": null,
+        "IncidentManagementOrganization": null
+    },
+    {
         "AkFireRegion": "FAS",
         "AkFireNumber": "120",
         "wfigs_IncidentName": "McAdams Creek",
