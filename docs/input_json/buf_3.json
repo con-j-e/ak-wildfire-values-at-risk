@@ -1,6 +1,377 @@
 [
     {
         "AkFireRegion": "MID",
+        "AkFireNumber": "125",
+        "wfigs_IncidentName": "Stuart 3",
+        "FireActivityStatus": "Active",
+        "wfigs_GISAcres": null,
+        "wfigs_MapMethod": null,
+        "wfigs_PolygonDateTime": null,
+        "wfigs_ModifiedOnDateTime_dt": 1749959457097.0,
+        "wfigs_IrwinID": "{B4E75459-02D1-4C65-9774-F22745FD7466}",
+        "ReportedAcres": 0.1,
+        "HasError": 0.0,
+        "DefaultLabel": "125-Stuart 3, 3 Mile Buffer",
+        "AnalysisBufferMiles": 3.0,
+        "AkMine_Active_AttrCount": null,
+        "AkMine_Type_AttrCount": null,
+        "AkMine_Note_AttrCount": null,
+        "AkMine_FeatureCount": null,
+        "AkMine_Locations": null,
+        "AkPowerLine_CondType_FeetSum": null,
+        "AkPowerLine_Voltage_FeetSum": null,
+        "AkPowerLine_Locations": null,
+        "AkPowerLine_TotalFeet": null,
+        "Runway_FeatureCount": null,
+        "Runway_Locations": null,
+        "Runway_Ownership_AttrCount": null,
+        "WeatherStation_FeatureCount": 1.0,
+        "WeatherStation_Locations": {
+            "features": [
+                {
+                    "dist_mi": 2.48,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 43.098' N",
+                    "lng": "146\u00b0 30.106' W",
+                    "NAME": "STUART CREEK",
+                    "CODE": "STUA2",
+                    "MESOWESTWEBURL": "https://akff.mesowest.org/tabular/station/#CFFDRS/STUA2/"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "Aksd_MainStruct_AttrSum": 16.0,
+        "Aksd_OtherStruct_AttrSum": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Full",
+                "value head": 7
+            },
+            {
+                "key head": "Undesignated",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Structure",
+                "value head": 6
+            },
+            {
+                "key head": "Other",
+                "value head": 1
+            },
+            {
+                "key head": "RAWS",
+                "value head": 1
+            }
+        ],
+        "Aksd_FeatureCount": 8.0,
+        "Aksd_Locations": {
+            "features": [
+                {
+                    "dist_mi": 1.68,
+                    "dir": "SSW",
+                    "lat": "64\u00b0 39.913' N",
+                    "lng": "146\u00b0 34.017' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": 4.0,
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 1.75,
+                    "dir": "SE",
+                    "lat": "64\u00b0 39.977' N",
+                    "lng": "146\u00b0 29.754' W",
+                    "SiteCat": "Other",
+                    "Protection": "Full",
+                    "MainStructs": 2.0,
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 1.97,
+                    "dir": "SSW",
+                    "lat": "64\u00b0 39.661' N",
+                    "lng": "146\u00b0 34.176' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": 2.0,
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.19,
+                    "dir": "E",
+                    "lat": "64\u00b0 41.163' N",
+                    "lng": "146\u00b0 27.649' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": 2.0,
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.38,
+                    "dir": "N",
+                    "lat": "64\u00b0 43.171' N",
+                    "lng": "146\u00b0 31.497' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": 4.0,
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.47,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 43.128' N",
+                    "lng": "146\u00b0 30.342' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": 1.0,
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.48,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 43.098' N",
+                    "lng": "146\u00b0 30.105' W",
+                    "SiteCat": "RAWS",
+                    "Protection": "Undesignated",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.84,
+                    "dir": "NNW",
+                    "lat": "64\u00b0 43.453' N",
+                    "lng": "146\u00b0 33.918' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": 1.0,
+                    "OthrStructs": "No Data"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "NtvAllot_Status_AcreSum": null,
+        "NtvAllot_FeatureCount": null,
+        "NtvAllot_Locations": null,
+        "NtvAllot_TotalAcres": null,
+        "ComsTwr_Type_AttrCount": null,
+        "ComsTwr_FeatureCount": null,
+        "ComsTwr_Locations": null,
+        "Community_FeatureCount": null,
+        "Community_Locations": null,
+        "Jurisd_Unit_AcreSum": [
+            {
+                "key head": "Fort Wainwright",
+                "value head": 18151.63
+            }
+        ],
+        "Jurisd_Owner_AcreSum": {
+            "DOD": 18151.63
+        },
+        "MgmtOption_AcreSum": {
+            "Limited": 18151.63
+        },
+        "NpsStruct_Use_AttrCount": null,
+        "NpsStruct_Protection_AttrCount": null,
+        "NpsStruct_Rating_AttrCount": null,
+        "NpsStruct_FeatureCount": null,
+        "NpsStruct_Locations": null,
+        "Parcel_BuildingValue_AttrSum": null,
+        "Parcel_FeatureCount": 5.0,
+        "Parcel_LandValue_AttrSum": 12705264.0,
+        "Parcel_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.34,
+                    "dir": "N",
+                    "lat": "64\u00b0 41.418' N",
+                    "lng": "146\u00b0 32.090' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 15999900
+                },
+                {
+                    "dist_mi": 2.91,
+                    "dir": "E",
+                    "lat": "64\u00b0 41.122' N",
+                    "lng": "146\u00b0 26.195' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 362796
+                },
+                {
+                    "dist_mi": 2.92,
+                    "dir": "ENE",
+                    "lat": "64\u00b0 41.417' N",
+                    "lng": "146\u00b0 26.195' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 16001300
+                },
+                {
+                    "dist_mi": 2.98,
+                    "dir": "E",
+                    "lat": "64\u00b0 40.550' N",
+                    "lng": "146\u00b0 26.195' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 363972
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "Parcel_PropType_AcreSum": [
+            {
+                "key head": "Tax Lot",
+                "value head": 18151.63
+            }
+        ],
+        "Parcel_PropUse_AcreSum": [
+            {
+                "key head": "Exempt ",
+                "value head": 18151.63
+            }
+        ],
+        "Parcel_TotalAcres": 18151.63,
+        "Parcel_TotalValue_AttrSum": 12705264.0,
+        "PetrolTerm_Company_AttrCount": null,
+        "PetrolTerm_FeatureCount": null,
+        "PetrolTerm_Locations": null,
+        "PipeLine_Name_FeetSum": null,
+        "PipeLine_Locations": null,
+        "PipeLine_TotalFeet": null,
+        "PowerPlant_PrimSource_AttrCount": null,
+        "PowerPlant_UtilName_AttrCount": null,
+        "PowerPlant_FeatureCount": null,
+        "PowerPlant_Locations": null,
+        "PowerPlant_SectorName_AttrCount": null,
+        "Silviculture_Status_AcreSum": null,
+        "Silviculture_TotalValue_AttrSum": null,
+        "Silviculture_FeatureCount": null,
+        "Silviculture_Locations": null,
+        "Silviculture_TotalAcres": null,
+        "SpecMgmt_Consid_AttrCount": null,
+        "SpecMgmt_FeatureCount": null,
+        "SpecMgmt_Locations": null,
+        "Railroad_NetDesc_FeetSum": null,
+        "Railroad_Locations": null,
+        "Railroad_TotalFeet": null,
+        "UsaStruct_OccCls_AttrCount": [
+            {
+                "key head": "Unclassified",
+                "value head": 8
+            }
+        ],
+        "UsaStruct_PrimOcc_AttrCount": [
+            {
+                "key head": "Unclassified",
+                "value head": 8
+            }
+        ],
+        "UsaStruct_SecOcc_AttrCount": [
+            {
+                "key head": "No Data",
+                "value head": 8
+            }
+        ],
+        "UsaStruct_FeatureCount": 8.0,
+        "UsaStruct_Locations": {
+            "features": [
+                {
+                    "dist_mi": 2.17,
+                    "dir": "E",
+                    "lat": "64\u00b0 41.182' N",
+                    "lng": "146\u00b0 27.688' W",
+                    "OCC_CLS": "Unclassified",
+                    "PRIM_OCC": "Unclassified"
+                },
+                {
+                    "dist_mi": 2.39,
+                    "dir": "N",
+                    "lat": "64\u00b0 43.175' N",
+                    "lng": "146\u00b0 31.495' W",
+                    "OCC_CLS": "Unclassified",
+                    "PRIM_OCC": "Unclassified"
+                },
+                {
+                    "dist_mi": 2.56,
+                    "dir": "NE",
+                    "lat": "64\u00b0 42.548' N",
+                    "lng": "146\u00b0 28.107' W",
+                    "OCC_CLS": "Unclassified",
+                    "PRIM_OCC": "Unclassified"
+                },
+                {
+                    "dist_mi": 2.6,
+                    "dir": "NE",
+                    "lat": "64\u00b0 42.626' N",
+                    "lng": "146\u00b0 28.151' W",
+                    "OCC_CLS": "Unclassified",
+                    "PRIM_OCC": "Unclassified"
+                },
+                {
+                    "dist_mi": 2.62,
+                    "dir": "NE",
+                    "lat": "64\u00b0 42.682' N",
+                    "lng": "146\u00b0 28.238' W",
+                    "OCC_CLS": "Unclassified",
+                    "PRIM_OCC": "Unclassified"
+                },
+                {
+                    "dist_mi": 2.65,
+                    "dir": "NE",
+                    "lat": "64\u00b0 42.708' N",
+                    "lng": "146\u00b0 28.190' W",
+                    "OCC_CLS": "Unclassified",
+                    "PRIM_OCC": "Unclassified"
+                },
+                {
+                    "dist_mi": 2.65,
+                    "dir": "NE",
+                    "lat": "64\u00b0 42.716' N",
+                    "lng": "146\u00b0 28.228' W",
+                    "OCC_CLS": "Unclassified",
+                    "PRIM_OCC": "Unclassified"
+                },
+                {
+                    "dist_mi": 2.65,
+                    "dir": "NE",
+                    "lat": "64\u00b0 42.726' N",
+                    "lng": "146\u00b0 28.231' W",
+                    "OCC_CLS": "Unclassified",
+                    "PRIM_OCC": "Unclassified"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "WindTurb_FeatureCount": null,
+        "WindTurb_Locations": null,
+        "WindTurb_ProjName_AttrCount": null,
+        "SpatialInfoType": " 3 Mile Buffer",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:355368.358%2C1655956.917%2C3338,scale:24167",
+        "CpxName": null,
+        "DispatchCenterID": "AKYFDC",
+        "PercentContained": null,
+        "PercentPerimeterToBeContained": null,
+        "FireMgmtComplexity": null,
+        "IncidentComplexityLevel": null,
+        "EstimatedCostToDate": null,
+        "TotalIncidentPersonnel": null,
+        "POOProtectingAgency": "BLM",
+        "POOJurisdictionalAgency": "USA",
+        "POOJurisdictionalUnit": "AKFWQ",
+        "ICS209ReportDateTime": null,
+        "ICS209ReportStatus": null,
+        "IncidentManagementOrganization": null
+    },
+    {
+        "AkFireRegion": "MID",
         "AkFireNumber": "124",
         "wfigs_IncidentName": "Stuart 2",
         "FireActivityStatus": "Active",
