@@ -115,6 +115,7 @@ async def get_wfigs_updates(akdof_var_service_url: str, wfigs_locations_url: str
                                     attr_IncidentTypeCategory = 'WF' AND
                                     (
                                         attr_ModifiedOnDateTime_dt >= timestamp '{max_timestamp}' OR
+                                        poly_DateCurrent >= timestamp '{max_timestamp}' OR
                                         attr_IrwinID IN ({','.join(f"'{irwin}'" for irwin in irwins_with_errors)})
                                     )"""
         else:
@@ -124,7 +125,10 @@ async def get_wfigs_updates(akdof_var_service_url: str, wfigs_locations_url: str
             
             wfigs_polys_where = f"""attr_DispatchCenterID IN ('AKACDC', 'AKCGFC', 'AKNFDC', 'AKTNFC', 'AKYFDC') AND
                                     attr_IncidentTypeCategory = 'WF' AND
-                                    attr_ModifiedOnDateTime_dt >= timestamp '{max_timestamp}'"""
+                                    (
+                                        attr_ModifiedOnDateTime_dt >= timestamp '{max_timestamp}' OR
+                                        poly_DateCurrent >= timestamp '{max_timestamp}'
+                                    )"""
 
         wfigs_points_outfields = (
             'IncidentName',
@@ -154,7 +158,8 @@ async def get_wfigs_updates(akdof_var_service_url: str, wfigs_locations_url: str
             'attr_FireOutDateTime',
             'poly_GISAcres',
             'poly_MapMethod',
-            'poly_PolygonDateTime'
+            'poly_PolygonDateTime',
+            'poly_DateCurrent'
         )
 
         wfigs_points_params = {
@@ -236,6 +241,22 @@ def create_wfigs_fire_polys_gdf(wfigs_polys: dict) -> gpd.GeoDataFrame:
     wfigs_polys_gdf['FireActivityStatus'] = wfigs_polys_gdf.apply(_assign_fire_activity_status, axis=1)
     wfigs_polys_gdf['AkFireRegion'] = wfigs_polys_gdf.apply(_assign_ak_fire_region, axis=1)
     wfigs_polys_gdf['AkFireNumber'] = wfigs_polys_gdf.apply(_assign_ak_fire_number, axis=1)
+
+    # It appears that event polygon updates in the NIFS do not trigger the WFIGS attr_ModifiedOnDateTime_dt attribute to update.
+    # poly_DateCurrent represents information with equivalent meaning for our use case (the last moment in time a record for a fire was altered).
+    # Introducing a second timestamp field to the target service would require refactoring code, updating schemas, complicating query logic, and so on.
+    # For the time being (20250615) we see if we can instead achieve the desired functionality by
+    # overwriting the polygons attr_ModifiedOnDateTime_dt attribute with any poly_DateCurrent attribute that is greater.
+    def _safe_max(attr_mod_dt: float, poly_curr_dt: float) -> float:
+        if pd.isna(poly_curr_dt):
+            return attr_mod_dt
+        if pd.isna(attr_mod_dt):
+            return poly_curr_dt
+        return max(attr_mod_dt, poly_curr_dt)
+    wfigs_polys_gdf["attr_ModifiedOnDateTime_dt"] = wfigs_polys_gdf.apply(
+        lambda x: _safe_max(x["attr_ModifiedOnDateTime_dt"], x["poly_DateCurrent"]),
+        axis=1
+    )
 
     wfigs_polys_field_rename = {
         'attr_IncidentName': 'IncidentName',
