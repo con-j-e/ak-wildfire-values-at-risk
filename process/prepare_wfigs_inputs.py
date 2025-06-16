@@ -264,7 +264,7 @@ def create_wfigs_fire_polys_gdf(wfigs_polys: dict) -> gpd.GeoDataFrame:
     wfigs_polys_gdf = arcgis_polygon_features_to_gdf(wfigs_polys)
 
     wfigs_polys_gdf['ReportedAcres'] = wfigs_polys_gdf.apply(_assign_reported_acres, axis=1)
-    wfigs_polys_gdf['ReportedAcOverPerimAc'] = wfigs_polys_gdf['ReportedAcres'] > wfigs_polys_gdf['poly_GISAcres']
+    wfigs_polys_gdf['ReportedAcOverPerimAc'] = (wfigs_polys_gdf['ReportedAcres'] - wfigs_polys_gdf['poly_GISAcres']) >= 1
     # if poly_GISAcres or ReportedAcres is np.nan, we can get null values from the above comparison.
     wfigs_polys_gdf['ReportedAcOverPerimAc'] = wfigs_polys_gdf['ReportedAcOverPerimAc'].fillna(0)
 
