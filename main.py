@@ -13,7 +13,7 @@ import traceback
 from utils.general import basic_file_logger, format_logged_exception, send_email
 from utils.project import acdc_update_email
 from utils.arcgis_helpers import checkout_token, fresh_pickles
-from process.prepare_wfigs_inputs import get_wfigs_updates, create_wfigs_fire_points_gdf, create_wfigs_fire_polys_gdf, create_analysis_gdf
+from process.prepare_wfigs_inputs import get_wfigs_updates, prevent_perimeter_overwrite_by_point, create_wfigs_fire_points_gdf, create_wfigs_fire_polys_gdf, create_analysis_gdf
 from process.queries import gather_query_bundles, send_all_queries, handle_query_response_pools
 from process.analysis import gather_analysis_pairs, gather_processes, gather_results, create_attribute_dataframe, join_fires_bufs_attributes, parse_analysis_errors
 from process.output import format_fields, create_output_feature_lists, apply_edits_to_dof_var_service, find_apply_edits_failure, find_apply_edits_success
@@ -92,15 +92,17 @@ def main():
                     }
                 )
             )
+        
+        wfigs_cache = proj_dir / 'wfigs_json_pickles'
+        wfigs_points['features'] = prevent_perimeter_overwrite_by_point(wfigs_cache, wfigs_points['features'])
 
         # filtering out features that have already been analyzed
         # fires recently called 'Out' can repeatedly be returned by timestamp query, because they are removed from the target service and archived
         # to further reduce/eliminate redundant processing, pass the ModifiedOnDateTime_dt attribute to fresh_pickles() ignore_attributes arg
             # note that this would create a discrepency between the modified dt attribute in WFIGS and the modified dt attribute in the target service!
         if check_json_pickles:
-            pickle_jar = proj_dir / 'wfigs_json_pickles'
-            wfigs_points['features'] = fresh_pickles(pickle_jar, wfigs_points['features'], 'IrwinID', exempt_identifiers=irwins_with_errors)
-            wfigs_polys['features'] = fresh_pickles(pickle_jar, wfigs_polys['features'], 'attr_IrwinID', exempt_identifiers=irwins_with_errors)
+            wfigs_points['features'] = fresh_pickles(wfigs_cache, wfigs_points['features'], 'IrwinID', exempt_identifiers=irwins_with_errors)
+            wfigs_polys['features'] = fresh_pickles(wfigs_cache, wfigs_polys['features'], 'attr_IrwinID', exempt_identifiers=irwins_with_errors)
             logger.info(
                 json.dumps(
                     {

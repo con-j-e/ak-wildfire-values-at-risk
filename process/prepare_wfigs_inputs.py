@@ -4,6 +4,7 @@ import geopandas as gpd
 import numpy as np
 import pandas as pd
 import pathlib
+import pickle as pkl
 import sys
 
 proj_root = pathlib.Path(__file__).parent.parent
@@ -199,6 +200,35 @@ async def get_wfigs_updates(akdof_var_service_url: str, wfigs_locations_url: str
 
     return (wfigs_points, wfigs_polys, irwins_with_errors, check_json_pickles, requester.exception)
 
+def prevent_perimeter_overwrite_by_point(wfigs_cache: str | pathlib.Path, wfigs_point_features: list[dict]) -> list[dict]:
+    '''
+    Addresses edge case where timestamp queries retrieve updated information from the WFIGS fire locations service
+    before this information flows to the WFIGS perimeters service,
+    causing an existing perimeter in the target service to be temporarily replaced by a reported location geometry.
+
+    Parameters
+    ----------
+    wfigs_cache : str | pathlib.Path
+        Location of cached .pkl files containing the last seen json feature for a fire.
+    wfigs_point_features : list[dict]
+        Current batch of WFIGS fire locations that have timestamps greater than the max timestamp in the target service.
+
+    Returns
+    -------
+    list[dict]
+        WFIGS fire locations, minus any features that have previously had a perimeter update.
+    '''
+    del_idx = set()
+    wfigs_cache = pathlib.Path(wfigs_cache)
+    for idx, feat in enumerate(wfigs_point_features):
+        file_path = wfigs_cache / f'{feat['attributes']['IrwinID']}.pkl'
+        if file_path.exists():
+            with open(file_path, 'rb') as file:
+                old_feat = pkl.load(file)
+            if 'poly_PolygonDateTime' in old_feat['attributes']:
+                del_idx.add(idx)
+    return [feat for idx, feat in enumerate(wfigs_point_features) if idx not in del_idx]
+            
 def create_wfigs_fire_points_gdf(wfigs_points: dict) -> gpd.GeoDataFrame:
     '''
     Converts ArcGIS JSON features for WFIGS fire locations to a GeoDataFrame that is processed and formatted for analysis
