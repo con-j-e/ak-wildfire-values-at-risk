@@ -107,16 +107,24 @@ async def purge_features_gone_from_wfigs(perims_locs_url: str, wfigs_locs_url: s
                 ak_wf_var_irwins.update([feat['attributes']['wfigs_IrwinID'] for feat in response['features']])
             except KeyError:
                 raise KeyError(f'Expected keys not found in query response: {response}')
-            
-        current_wfigs_feats = await requester.arcgis_rest_api_get(
-            base_url=wfigs_locs_url,
-            params={'f':'json', 'token':token, 'outfields':'IrwinID', 'where':f"IrwinID IN ({','.join(f"'{irwin}'" for irwin in ak_wf_var_irwins)})", 'returnGeometry':'false'},
-            operation='query?'
-        )
-        try:
-            current_wfigs_irwins = [feat['attributes']['IrwinID'] for feat in current_wfigs_feats['features']]
-        except KeyError:
-            raise KeyError(f'Expected keys not found in query response: {current_wfigs_feats}')
+
+        # Because excessively long request parameters can result in http 404 responses,
+        # we make irwin id queries in batches of ten.
+        # This is not being done efficiently, but for the task at hand, effiency is not a factor.
+        ak_wf_var_irwins_chunks = list(ak_wf_var_irwins)
+        ak_wf_var_irwins_chunks = [tuple(ak_wf_var_irwins_chunks[i: i + 10]) for i in range(0, len(ak_wf_var_irwins), 10)]
+
+        current_wfigs_irwins = set()
+        for irwins_chunk in ak_wf_var_irwins_chunks:
+            current_wfigs_feats = await requester.arcgis_rest_api_get(
+                base_url=wfigs_locs_url,
+                params={'f':'json', 'token':token, 'outfields':'IrwinID', 'where':f"IrwinID IN ({','.join(f"'{irwin}'" for irwin in irwins_chunk)})", 'returnGeometry':'false'},
+                operation='query?'
+            )
+            try:
+                current_wfigs_irwins.update([feat['attributes']['IrwinID'] for feat in current_wfigs_feats['features']])
+            except KeyError:
+                raise KeyError(f'Expected keys not found in query response: {current_wfigs_feats}')
         
         ak_wf_var_irwins.difference_update(current_wfigs_irwins)
 
