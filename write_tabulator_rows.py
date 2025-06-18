@@ -39,10 +39,10 @@ async def get_recent_fires_info(dof_perims_locs_url: str, wfigs_locs_url: str, q
     async with AsyncArcGISRequester() as requester:
 
         if irwins_with_errors:
-            where_clause = f"""wfigs_ModifiedOnDateTime_dt > timestamp '{query_timestamp}' OR
+            where_clause = f"""wfigs_ModifiedOnDateTime_dt >= timestamp '{query_timestamp}' OR
                         wfigs_IrwinID IN ({','.join(f"'{irwin}'" for irwin in irwins_with_errors)})"""
         else:
-            where_clause = f"wfigs_ModifiedOnDateTime_dt > timestamp '{query_timestamp}'"
+            where_clause = f"wfigs_ModifiedOnDateTime_dt >= timestamp '{query_timestamp}'"
 
         perims_locs_bufs_params = {
             'f': 'json',
@@ -103,20 +103,28 @@ async def get_recent_fires_info(dof_perims_locs_url: str, wfigs_locs_url: str, q
                 'IncidentManagementOrganization'
             )
 
-            wfigs_locs_params = {
-                'f': 'json',
-                'where': f"IrwinID IN ({','.join(f"'{irwin}'" for irwin in wfigs_query_irwins)})",
-                'outfields': ",".join(wfigs_locs_outfields),
-                'returnGeometry': 'false'
-            }
-            if testing:
-                wfigs_locs_params['token'] = token
+            wfigs_query_irwins_chunks = list(wfigs_query_irwins)
+            wfigs_query_irwins_chunks = [tuple(wfigs_query_irwins_chunks[i: i + 10]) for i in range(0, len(wfigs_query_irwins_chunks), 10)]
 
-            wfigs_locs = await requester.arcgis_rest_api_get(
-                base_url=wfigs_locs_url,
-                params=wfigs_locs_params,
-                operation='query?'
-            )
+            wfigs_locs_features = list()
+            for irwins_chunk in wfigs_query_irwins_chunks:
+                wfigs_locs_params = {
+                    'f': 'json',
+                    'where': f"IrwinID IN ({','.join(f"'{irwin}'" for irwin in irwins_chunk)})",
+                    'outfields': ",".join(wfigs_locs_outfields),
+                    'returnGeometry': 'false'
+                }
+                if testing:
+                    wfigs_locs_params['token'] = token
+
+                wfigs_locs = await requester.arcgis_rest_api_get(
+                    base_url=wfigs_locs_url,
+                    params=wfigs_locs_params,
+                    operation='query?'
+                )
+                wfigs_locs_features.extend(wfigs_locs['features'])
+
+            wfigs_locs = {'features': wfigs_locs_features}
 
         else:
             wfigs_locs = {'features': []}
