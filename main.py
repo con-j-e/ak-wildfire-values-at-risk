@@ -5,6 +5,7 @@ import multiprocessing
 import os
 import pathlib
 import pandas as pd
+import pickle as pkl
 import shapely as shp
 import sys
 import time
@@ -100,6 +101,11 @@ def main():
         # fires recently called 'Out' can repeatedly be returned by timestamp query, because they are removed from the target service and archived
         # to further reduce/eliminate redundant processing, pass the ModifiedOnDateTime_dt attribute to fresh_pickles() ignore_attributes arg
             # note that this would create a discrepency between the modified dt attribute in WFIGS and the modified dt attribute in the target service!
+        
+        # 20250617 new edge case --
+            # general exception occurs after a new fire is added to the cache
+            # so update does not succeed, yet subsequent executions will ignore the new fire because we think its already been processed
+            # solution is to retain a list of features that will be processed by an execution cycle, and after applyEdits success save to cache
         if check_json_pickles:
             wfigs_points['features'] = fresh_pickles(wfigs_cache, wfigs_points['features'], 'IrwinID', exempt_identifiers=irwins_with_errors)
             wfigs_polys['features'] = fresh_pickles(wfigs_cache, wfigs_polys['features'], 'attr_IrwinID', exempt_identifiers=irwins_with_errors)
@@ -111,6 +117,7 @@ def main():
                     }
                 )
             )
+        features_to_cache_on_success = wfigs_points['features'] + wfigs_polys['features']
 
         # assign place-holder empty GDFs as flags for exiting main if there are no updates to process
         # and to ensure arguments are always available for create_analysis_gdf()
@@ -286,6 +293,15 @@ def main():
             logger.info('applyEdits success detected.')
             for success in successes:
                 logger.info(json.dumps(success))
+
+        if successes and not failures:
+            for feat in features_to_cache_on_success:
+                try:
+                    irwin = feat['attributes']['IrwinID']
+                except KeyError:
+                    irwin = feat['attributes']['attr_IrwinID']
+                with open(proj_dir / 'wfigs_json_pickles' / f'{irwin}.pkl', 'wb') as file:
+                    pkl.dump(feat, file)
 
         logger.info('PROCESS FINISHED')
     

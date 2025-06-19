@@ -5,6 +5,7 @@ import asyncio
 from copy import deepcopy
 import geopandas as gpd
 import json
+from multidict import CIMultiDictProxy
 import os
 import pandas as pd
 from pathlib import Path
@@ -14,6 +15,14 @@ import subprocess
 import time
 from typing import Iterable
 import traceback
+
+class RequesterException(Exception):
+    '''Implemented so that aiohttp raise_for_status() exception details are pickle-able'''
+
+    def __init__(self, status: int, message: str, headers: dict | None = None):
+        super().__init__(f"HTTP {status}: {message}")
+        self.status = status
+        self.headers = headers or {}
 
 class AsyncArcGISRequester():
     '''
@@ -69,17 +78,31 @@ class AsyncArcGISRequester():
         GET request helper. Raise aiohttp.ClientResponseError if response status is 400 or higher, else return JSON response. Set optional argument is_raw=True to return the response as-is.
         '''
         async with self.session.get(url, params=params) as response:
-            response.raise_for_status()
-            return await response.read() if is_raw else await response.json()
-        
+            try:
+                response.raise_for_status()
+                return await response.read() if is_raw else await response.json()
+            except aiohttp.ClientResponseError as e:
+                raise RequesterException(
+                    status=e.status,
+                    message=str(e),
+                    headers=dict(e.headers) if e.headers else None
+                ) from e
+            
     async def _post_request(self, url: str, data: dict | None = None, is_raw: bool = False) -> dict:
         '''
         POST request helper. Raise aiohttp.ClientResponseError if response status is 400 or higher, else return JSON response. Set optional argument is_raw=True to return the response as-is.
         '''
         async with self.session.post(url, data=data) as response:
-            response.raise_for_status()
-            return await response.read() if is_raw else await response.json()
-        
+            try:
+                response.raise_for_status()
+                return await response.read() if is_raw else await response.json()
+            except aiohttp.ClientResponseError as e:
+                raise RequesterException(
+                    status=e.status,
+                    message=str(e),
+                    headers=dict(e.headers) if e.headers else None
+                ) from e
+                    
     async def arcgis_rest_api_post(self, base_url: str, data: dict | None = None, operation: str | None = None, is_raw: bool = False) -> dict:
         '''
         POST request with persistent retry logic.
@@ -506,14 +529,6 @@ def fresh_pickles(jar: str | Path, json_features: list[dict], identifier: str | 
 
             if compare_feat == old_feat:
                 del_idx.add(idx)
-                continue
-            else:
-                with open(file_path, 'wb') as file:
-                    pkl.dump(feat, file)
-        
-        else:
-            with open(file_path, 'wb') as file:
-                pkl.dump(feat, file)
 
     return [feat for idx, feat in enumerate(json_features) if idx not in del_idx]
 
@@ -639,3 +654,25 @@ def _generate_token(credentials_env_var: str, token_minutes: int = 60) -> tuple[
                 raise
             time.sleep(5)
 
+# 20250618 this was an attempt to resolve occasional TypeError: can't pickle multidict._multidict.CIMultiDictProxy objects:
+    # File "C:\REPOS\con-j-e\ak-wildfire-values-at-risk\process\queries.py", line 92, in handle_query_response_pools()
+# not being implemented currently, error is more likely a result of AsyncArcGISRequester.send_query_bundles() attempts to reduce exception object created by aiohttp raise_for_status()
+    # https://github.com/aio-libs/multidict/issues/340
+def _convert_multidict_to_dict(obj):
+    """Recursively convert CIMultiDictProxy to dict, including nested structures."""
+
+    if isinstance(obj, CIMultiDictProxy):
+        obj = dict(obj)
+
+    if isinstance(obj, dict):
+        return {k: _convert_multidict_to_dict(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [_convert_multidict_to_dict(i) for i in obj]
+    elif isinstance(obj, tuple):
+        return tuple(_convert_multidict_to_dict(i) for i in obj)
+    elif isinstance(obj, set):
+        return {_convert_multidict_to_dict(i) for i in obj}
+    elif isinstance(obj, frozenset):
+        return frozenset(_convert_multidict_to_dict(i) for i in obj)
+    else:
+        return obj
