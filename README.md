@@ -1,5 +1,5 @@
 ## About
-This project aims to expedite an initial assessment of land and infrastructure values that may be impacted by, or are in proximity to, active wildfires in Alaska. The current products should not be viewed as final or authoritative, as development is ongoing throughout the 2025 fire season. Additionally, because input data sources and user needs are expected to change over time, the current configuration and implementation details are likely to change as well.
+This project aims to expedite an initial assessment of land and infrastructure values that may be impacted by, or are in proximity to, active wildfires in Alaska. The current products should not be viewed as final and authoritative, as development is ongoing throughout the 2025 fire season. Additionally, because input data sources and user needs are expected to change over time, the current configuration and implementation details are likely to change as well.
 
 ## Products
 | Link | Description |
