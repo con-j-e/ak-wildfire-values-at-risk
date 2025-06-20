@@ -2022,9 +2022,9 @@
         "wfigs_GISAcres": 15.527094577026029,
         "wfigs_MapMethod": "GPS-Walked",
         "wfigs_PolygonDateTime": 1750382040000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1750447469000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750448735590.0,
         "wfigs_IrwinID": "{FE7C055C-5FCF-4BB7-967A-98700FF4D538}",
-        "ReportedAcres": 15.0,
+        "ReportedAcres": 15.5,
         "HasError": 0.0,
         "DefaultLabel": "233-Gilmore Trail, Perimeter",
         "AnalysisBufferMiles": 0.0,
@@ -3786,10 +3786,10 @@
         "AkFireNumber": "218",
         "wfigs_IncidentName": "Ninetyeight",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 4.196961029199259,
+        "wfigs_GISAcres": 767.4620913303069,
         "wfigs_MapMethod": "Digitized-Image",
-        "wfigs_PolygonDateTime": 1750368000000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1750446596000.0,
+        "wfigs_PolygonDateTime": 1750401240000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750448335000.0,
         "wfigs_IrwinID": "{AAE5042E-833A-466D-B54A-DC92F77EAD7A}",
         "ReportedAcres": 300.0,
         "HasError": 0.0,
@@ -3827,14 +3827,20 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Fort Wainwright",
-                "value head": 4.2
+                "value head": 602.92
+            },
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 164.54
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "DOD": 4.2
+            "DOD": 602.92,
+            "State": 164.54
         },
         "MgmtOption_AcreSum": {
-            "Limited": 4.2
+            "Limited": 665.7,
+            "Full": 101.76
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -3842,18 +3848,72 @@
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
         "Parcel_BuildingValue_AttrSum": null,
-        "Parcel_FeatureCount": 1.0,
-        "Parcel_LandValue_AttrSum": 2666.0,
+        "Parcel_FeatureCount": 7.0,
+        "Parcel_LandValue_AttrSum": 319604.0,
         "Parcel_Locations": {
             "features": [
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "64\u00b0 36.344' N",
-                    "lng": "146\u00b0 11.760' W",
+                    "lat": "64\u00b0 35.382' N",
+                    "lng": "146\u00b0 12.148' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 108000.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "64\u00b0 35.354' N",
+                    "lng": "146\u00b0 12.197' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 166005.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "64\u00b0 36.014' N",
+                    "lng": "146\u00b0 10.640' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 296700.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "64\u00b0 36.471' N",
+                    "lng": "146\u00b0 12.156' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 368582.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "64\u00b0 36.696' N",
+                    "lng": "146\u00b0 11.130' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 305760.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "64\u00b0 36.346' N",
+                    "lng": "146\u00b0 10.137' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 128800.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "64\u00b0 36.346' N",
+                    "lng": "146\u00b0 10.137' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 371840.0
                 }
             ],
             "popped": 0,
@@ -3862,17 +3922,17 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Tax Lot",
-                "value head": 4.2
+                "value head": 767.46
             }
         ],
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Exempt ",
-                "value head": 4.2
+                "value head": 767.46
             }
         ],
-        "Parcel_TotalAcres": 4.2,
-        "Parcel_TotalValue_AttrSum": 2666.0,
+        "Parcel_TotalAcres": 767.46,
+        "Parcel_TotalValue_AttrSum": 319604.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -3904,7 +3964,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:372504.246%2C1648927.5%2C3338,scale:415",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:372736.875%2C1648423.933%2C3338,scale:6446",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
