@@ -7,10 +7,10 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750450344590.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750450355070.0,
         "wfigs_IrwinID": "{99E3B215-71B9-4AA8-850D-D31F41434F54}",
         "ReportedAcres": 0.1,
-        "HasError": 0.0,
+        "HasError": 1.0,
         "DefaultLabel": "252-Hockley, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
         "AkMine_Active_AttrCount": null,
@@ -25,8 +25,8 @@
         "Runway_FeatureCount": null,
         "Runway_Locations": null,
         "Runway_Ownership_AttrCount": null,
-        "WeatherStation_FeatureCount": null,
-        "WeatherStation_Locations": null,
+        "WeatherStation_FeatureCount": -1.0,
+        "WeatherStation_Locations": "!error!",
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
         "Aksd_Protection_AttrCount": null,
@@ -2197,10 +2197,10 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750406545807.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750450892563.0,
         "wfigs_IrwinID": "{2E74E7EC-3BE4-4C52-89C0-6E3CA1E4D999}",
-        "ReportedAcres": 350.0,
-        "HasError": 0.0,
+        "ReportedAcres": 540.0,
+        "HasError": 1.0,
         "DefaultLabel": "238-Bonanza Creek, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
         "AkMine_Active_AttrCount": null,
@@ -2211,22 +2211,22 @@
         "AkPowerLine_CondType_FeetSum": [
             {
                 "key head": "Transmission",
-                "value head": 14085
+                "value head": 15212
             }
         ],
         "AkPowerLine_Voltage_FeetSum": [
             {
                 "key head": "138",
-                "value head": 14085
+                "value head": 15212
             }
         ],
         "AkPowerLine_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.53,
+                    "dist_mi": 0.43,
                     "dir": "NNW",
-                    "lat": "64\u00b0 43.583' N",
-                    "lng": "148\u00b0 27.568' W",
+                    "lat": "64\u00b0 43.584' N",
+                    "lng": "148\u00b0 27.564' W",
                     "VOLTAGE": "138",
                     "COND_TYPE": "Transmission"
                 }
@@ -2234,12 +2234,12 @@
             "popped": 0,
             "cutoff": null
         },
-        "AkPowerLine_TotalFeet": 14085.0,
+        "AkPowerLine_TotalFeet": 15212.0,
         "Runway_FeatureCount": null,
         "Runway_Locations": null,
         "Runway_Ownership_AttrCount": null,
-        "WeatherStation_FeatureCount": null,
-        "WeatherStation_Locations": null,
+        "WeatherStation_FeatureCount": -1.0,
+        "WeatherStation_Locations": "!error!",
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
         "Aksd_Protection_AttrCount": null,
@@ -2258,18 +2258,18 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 3987.91
+                "value head": 4578.52
             },
             {
                 "key head": "Alaska Department of Transportation and Public Facilities",
-                "value head": 45.98
+                "value head": 51.12
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 4033.9
+            "State": 4629.64
         },
         "MgmtOption_AcreSum": {
-            "Full": 4033.9
+            "Full": 4629.64
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -2277,12 +2277,12 @@
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
         "Parcel_BuildingValue_AttrSum": null,
-        "Parcel_FeatureCount": 6.0,
-        "Parcel_LandValue_AttrSum": 6957123.0,
+        "Parcel_FeatureCount": 7.0,
+        "Parcel_LandValue_AttrSum": 8282718.0,
         "Parcel_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.54,
+                    "dist_mi": 0.44,
                     "dir": "N",
                     "lat": "64\u00b0 43.658' N",
                     "lng": "148\u00b0 26.848' W",
@@ -2291,7 +2291,7 @@
                     "total_value": "No Data"
                 },
                 {
-                    "dist_mi": 0.6,
+                    "dist_mi": 0.5,
                     "dir": "N",
                     "lat": "64\u00b0 43.712' N",
                     "lng": "148\u00b0 26.848' W",
@@ -2300,22 +2300,31 @@
                     "total_value": 1824384.0
                 },
                 {
-                    "dist_mi": 0.61,
+                    "dist_mi": 0.51,
                     "dir": "W",
-                    "lat": "64\u00b0 42.827' N",
+                    "lat": "64\u00b0 42.826' N",
                     "lng": "148\u00b0 28.873' W",
                     "property_type": "Tract",
                     "property_use": "Exempt ",
                     "total_value": 7721791.0
                 },
                 {
-                    "dist_mi": 0.94,
+                    "dist_mi": 0.84,
                     "dir": "N",
                     "lat": "64\u00b0 44.010' N",
-                    "lng": "148\u00b0 26.796' W",
+                    "lng": "148\u00b0 26.799' W",
                     "property_type": "Tract",
                     "property_use": "Exempt ",
                     "total_value": 853440.0
+                },
+                {
+                    "dist_mi": 0.91,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 44.010' N",
+                    "lng": "148\u00b0 25.932' W",
+                    "property_type": "Tract",
+                    "property_use": "Exempt ",
+                    "total_value": 1824384.0
                 }
             ],
             "popped": 0,
@@ -2324,25 +2333,25 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Tract",
-                "value head": 4011.02
+                "value head": 4603.0
             },
             {
                 "key head": "Roadway",
-                "value head": 22.88
+                "value head": 26.64
             }
         ],
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Exempt ",
-                "value head": 4011.02
+                "value head": 4603.0
             },
             {
                 "key head": "No Data",
-                "value head": 22.88
+                "value head": 26.64
             }
         ],
-        "Parcel_TotalAcres": 4033.9,
-        "Parcel_TotalValue_AttrSum": 6957123.0,
+        "Parcel_TotalAcres": 4629.64,
+        "Parcel_TotalValue_AttrSum": 8282718.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -2365,7 +2374,7 @@
         "Silviculture_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.17,
+                    "dist_mi": 0.07,
                     "dir": "NW",
                     "lat": "64\u00b0 43.271' N",
                     "lng": "148\u00b0 27.377' W",
@@ -2393,7 +2402,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:264354.713%2C1650207.042%2C3338,scale:11394",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:264354.713%2C1650207.042%2C3338,scale:12207",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": null,
