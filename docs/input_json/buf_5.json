@@ -2475,9 +2475,9 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750401864793.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750407493947.0,
         "wfigs_IrwinID": "{F366F6E4-8E54-4DA8-927F-8DB53D21B0A1}",
-        "ReportedAcres": 50.0,
+        "ReportedAcres": 1000.0,
         "HasError": 0.0,
         "DefaultLabel": "242-Ikheenjik, 5 Mile Buffer",
         "AnalysisBufferMiles": 5.0,
@@ -2497,7 +2497,7 @@
         "WeatherStation_Locations": {
             "features": [
                 {
-                    "dist_mi": 4.0,
+                    "dist_mi": 3.46,
                     "dir": "SW",
                     "lat": "65\u00b0 35.076' N",
                     "lng": "144\u00b0 21.808' W",
@@ -2514,24 +2514,48 @@
         "Aksd_Protection_AttrCount": [
             {
                 "key head": "Undesignated",
-                "value head": 1
+                "value head": 3
             }
         ],
         "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Structure",
+                "value head": 2
+            },
             {
                 "key head": "RAWS",
                 "value head": 1
             }
         ],
-        "Aksd_FeatureCount": 1.0,
+        "Aksd_FeatureCount": 3.0,
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 4.0,
+                    "dist_mi": 3.46,
                     "dir": "SW",
                     "lat": "65\u00b0 35.075' N",
                     "lng": "144\u00b0 21.811' W",
                     "SiteCat": "RAWS",
+                    "Protection": "Undesignated",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 4.82,
+                    "dir": "NE",
+                    "lat": "65\u00b0 40.019' N",
+                    "lng": "144\u00b0 05.683' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 4.82,
+                    "dir": "NE",
+                    "lat": "65\u00b0 40.020' N",
+                    "lng": "144\u00b0 05.697' W",
+                    "SiteCat": "Structure",
                     "Protection": "Undesignated",
                     "MainStructs": "No Data",
                     "OthrStructs": "No Data"
@@ -2541,13 +2565,13 @@
             "cutoff": null
         },
         "NtvAllot_Status_AcreSum": {
-            "Restricted": 16.27
+            "Restricted": 39.96
         },
         "NtvAllot_FeatureCount": 1.0,
         "NtvAllot_Locations": {
             "features": [
                 {
-                    "dist_mi": 4.85,
+                    "dist_mi": 4.3,
                     "dir": "WNW",
                     "lat": "65\u00b0 39.022' N",
                     "lng": "144\u00b0 22.919' W",
@@ -2558,7 +2582,7 @@
             "popped": 0,
             "cutoff": null
         },
-        "NtvAllot_TotalAcres": 16.27,
+        "NtvAllot_TotalAcres": 39.96,
         "ComsTwr_Type_AttrCount": null,
         "ComsTwr_FeatureCount": null,
         "ComsTwr_Locations": null,
@@ -2567,35 +2591,40 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 38197.9
+                "value head": 43717.56
             },
             {
                 "key head": "Danzhit Hanlaii Corporation",
-                "value head": 6514.4
+                "value head": 8823.75
             },
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 5472.66
+                "value head": 7405.72
             },
             {
                 "key head": "Doyon, Limited",
-                "value head": 3202.8
+                "value head": 5285.72
+            },
+            {
+                "key head": "Yukon-Charley Rivers National Preserve",
+                "value head": 84.35
             },
             {
                 "key head": "Alaska Regional Office",
-                "value head": 16.27
+                "value head": 39.96
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 38197.9,
-            "ANCSA": 9717.2,
-            "BLM": 5472.66,
-            "BIA": 16.27
+            "State": 43717.56,
+            "ANCSA": 14109.47,
+            "BLM": 7405.72,
+            "NPS": 84.35,
+            "BIA": 39.96
         },
         "MgmtOption_AcreSum": {
-            "Limited": 35385.67,
-            "Modified (Jul 10)": 17598.8,
-            "Full": 419.57
+            "Limited": 42908.97,
+            "Modified (Jul 10)": 20225.22,
+            "Full": 2222.86
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -2636,7 +2665,7 @@
         "SpecMgmt_Locations": {
             "features": [
                 {
-                    "dist_mi": 2.68,
+                    "dist_mi": 2.13,
                     "dir": "NW",
                     "lat": "65\u00b0 38.578' N",
                     "lng": "144\u00b0 17.904' W",
@@ -2658,7 +2687,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 5 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:449060.18%2C1772309.658%2C3338,scale:41454",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:449060.18%2C1772309.658%2C3338,scale:45859",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
@@ -2682,9 +2711,9 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750397313407.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750407392910.0,
         "wfigs_IrwinID": "{E73593E5-D3EF-4444-91E0-2E81D273E0B2}",
-        "ReportedAcres": 0.1,
+        "ReportedAcres": 0.25,
         "HasError": 0.0,
         "DefaultLabel": "241-Little Mosquito, 5 Mile Buffer",
         "AnalysisBufferMiles": 5.0,
@@ -2738,7 +2767,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 3.64,
+                    "dist_mi": 3.63,
                     "dir": "S",
                     "lat": "65\u00b0 35.700' N",
                     "lng": "144\u00b0 39.983' W",
@@ -2768,7 +2797,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 3.85,
+                    "dist_mi": 3.84,
                     "dir": "S",
                     "lat": "65\u00b0 35.570' N",
                     "lng": "144\u00b0 40.574' W",
@@ -2788,7 +2817,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 3.91,
+                    "dist_mi": 3.9,
                     "dir": "S",
                     "lat": "65\u00b0 35.555' N",
                     "lng": "144\u00b0 40.870' W",
@@ -2798,12 +2827,22 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 4.11,
+                    "dist_mi": 4.1,
                     "dir": "E",
                     "lat": "65\u00b0 37.796' N",
                     "lng": "144\u00b0 30.132' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 4.12,
+                    "dir": "SE",
+                    "lat": "65\u00b0 36.335' N",
+                    "lng": "144\u00b0 32.102' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
                     "MainStructs": "No Data",
                     "OthrStructs": "No Data"
                 },
@@ -2819,9 +2858,9 @@
                 },
                 {
                     "dist_mi": 4.13,
-                    "dir": "SE",
-                    "lat": "65\u00b0 36.335' N",
-                    "lng": "144\u00b0 32.102' W",
+                    "dir": "ESE",
+                    "lat": "65\u00b0 37.293' N",
+                    "lng": "144\u00b0 30.526' W",
                     "SiteCat": "Structure",
                     "Protection": "Undesignated",
                     "MainStructs": "No Data",
@@ -2830,8 +2869,18 @@
                 {
                     "dist_mi": 4.14,
                     "dir": "ESE",
-                    "lat": "65\u00b0 37.293' N",
-                    "lng": "144\u00b0 30.526' W",
+                    "lat": "65\u00b0 37.298' N",
+                    "lng": "144\u00b0 30.491' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 4.14,
+                    "dir": "ESE",
+                    "lat": "65\u00b0 37.304' N",
+                    "lng": "144\u00b0 30.490' W",
                     "SiteCat": "Structure",
                     "Protection": "Undesignated",
                     "MainStructs": "No Data",
@@ -2844,26 +2893,6 @@
                     "lng": "144\u00b0 32.059' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 4.15,
-                    "dir": "ESE",
-                    "lat": "65\u00b0 37.298' N",
-                    "lng": "144\u00b0 30.491' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Undesignated",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 4.15,
-                    "dir": "ESE",
-                    "lat": "65\u00b0 37.304' N",
-                    "lng": "144\u00b0 30.490' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Undesignated",
                     "MainStructs": "No Data",
                     "OthrStructs": "No Data"
                 },
@@ -2938,7 +2967,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 4.61,
+                    "dist_mi": 4.6,
                     "dir": "E",
                     "lat": "65\u00b0 37.798' N",
                     "lng": "144\u00b0 29.050' W",
@@ -2948,7 +2977,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 4.62,
+                    "dist_mi": 4.61,
                     "dir": "E",
                     "lat": "65\u00b0 37.761' N",
                     "lng": "144\u00b0 29.049' W",
@@ -2958,7 +2987,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 4.63,
+                    "dist_mi": 4.62,
                     "dir": "E",
                     "lat": "65\u00b0 37.780' N",
                     "lng": "144\u00b0 29.015' W",
@@ -2993,27 +3022,27 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 48319.67
+                "value head": 48388.97
             },
             {
                 "key head": "Doyon, Limited",
-                "value head": 1904.12
+                "value head": 1914.07
             },
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 102.79
+                "value head": 106.05
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 47157.37,
-            "ANCSA": 1904.12,
-            "Private": 1162.3,
-            "BLM": 102.79
+            "State": 47224.49,
+            "ANCSA": 1914.07,
+            "Private": 1164.48,
+            "BLM": 106.05
         },
         "MgmtOption_AcreSum": {
-            "Modified (Jul 10)": 25179.64,
-            "Full": 24665.63,
-            "Critical": 481.3
+            "Modified (Jul 10)": 25215.37,
+            "Full": 24709.07,
+            "Critical": 484.65
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -3108,7 +3137,7 @@
                     "PRIM_OCC": "Unclassified"
                 },
                 {
-                    "dist_mi": 3.85,
+                    "dist_mi": 3.84,
                     "dir": "S",
                     "lat": "65\u00b0 35.567' N",
                     "lng": "144\u00b0 40.551' W",
@@ -3116,7 +3145,7 @@
                     "PRIM_OCC": "Unclassified"
                 },
                 {
-                    "dist_mi": 3.86,
+                    "dist_mi": 3.85,
                     "dir": "S",
                     "lat": "65\u00b0 35.559' N",
                     "lng": "144\u00b0 40.551' W",
@@ -3124,7 +3153,7 @@
                     "PRIM_OCC": "Unclassified"
                 },
                 {
-                    "dist_mi": 4.12,
+                    "dist_mi": 4.11,
                     "dir": "SE",
                     "lat": "65\u00b0 36.341' N",
                     "lng": "144\u00b0 32.118' W",
@@ -3148,7 +3177,7 @@
                     "PRIM_OCC": "Unclassified"
                 },
                 {
-                    "dist_mi": 4.89,
+                    "dist_mi": 4.88,
                     "dir": "SSW",
                     "lat": "65\u00b0 35.390' N",
                     "lng": "144\u00b0 44.543' W",
@@ -3171,7 +3200,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 5 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:429975.339%2C1773443.426%2C3338,scale:40241",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:429975.339%2C1773443.426%2C3338,scale:40274",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
