@@ -10,7 +10,7 @@
         "wfigs_ModifiedOnDateTime_dt": 1750460739153.0,
         "wfigs_IrwinID": "{8535339F-D3AD-4B87-A3FB-FFFF2B7B1625}",
         "ReportedAcres": 0.1,
-        "HasError": 0.0,
+        "HasError": 1.0,
         "DefaultLabel": "266-Baker, 5 Mile Buffer",
         "AnalysisBufferMiles": 5.0,
         "AkMine_Active_AttrCount": [
@@ -57,8 +57,8 @@
         "Runway_FeatureCount": null,
         "Runway_Locations": null,
         "Runway_Ownership_AttrCount": null,
-        "WeatherStation_FeatureCount": null,
-        "WeatherStation_Locations": null,
+        "WeatherStation_FeatureCount": -1.0,
+        "WeatherStation_Locations": "!error!",
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
         "Aksd_Protection_AttrCount": null,
@@ -20258,10 +20258,10 @@
         "wfigs_GISAcres": 726.9772192356671,
         "wfigs_MapMethod": "GPS-Flight",
         "wfigs_PolygonDateTime": 1750454760000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1750459356000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750461124533.0,
         "wfigs_IrwinID": "{5F27DEF6-F74A-49F7-9F6D-677AED2F4ED1}",
-        "ReportedAcres": 70.0,
-        "HasError": 0.0,
+        "ReportedAcres": 727.0,
+        "HasError": 1.0,
         "DefaultLabel": "226-Nelchina Glacier, 5 Mile Buffer",
         "AnalysisBufferMiles": 5.0,
         "AkMine_Active_AttrCount": null,
@@ -20296,8 +20296,8 @@
                 "value head": 1
             }
         ],
-        "WeatherStation_FeatureCount": null,
-        "WeatherStation_Locations": null,
+        "WeatherStation_FeatureCount": -1.0,
+        "WeatherStation_Locations": "!error!",
         "Aksd_MainStruct_AttrSum": 3.0,
         "Aksd_OtherStruct_AttrSum": 3.0,
         "Aksd_Protection_AttrCount": [
@@ -40970,13 +40970,13 @@
         "AkFireNumber": "173",
         "wfigs_IncidentName": "Horseshoe",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": null,
-        "wfigs_MapMethod": null,
-        "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750380984730.0,
+        "wfigs_GISAcres": 221.82209588173416,
+        "wfigs_MapMethod": "Image Interpretation",
+        "wfigs_PolygonDateTime": 1750370854000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750461184000.0,
         "wfigs_IrwinID": "{D1D5D181-D331-43D1-BDC5-350EE706780D}",
         "ReportedAcres": 10.0,
-        "HasError": 0.0,
+        "HasError": 1.0,
         "DefaultLabel": "173-Horseshoe, 5 Mile Buffer",
         "AnalysisBufferMiles": 5.0,
         "AkMine_Active_AttrCount": null,
@@ -40991,31 +40991,31 @@
         "Runway_FeatureCount": null,
         "Runway_Locations": null,
         "Runway_Ownership_AttrCount": null,
-        "WeatherStation_FeatureCount": null,
-        "WeatherStation_Locations": null,
+        "WeatherStation_FeatureCount": -1.0,
+        "WeatherStation_Locations": "!error!",
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
         "Aksd_Protection_AttrCount": [
             {
                 "key head": "No Protection",
-                "value head": 4
+                "value head": 5
             },
             {
                 "key head": "Full",
-                "value head": 1
+                "value head": 2
             }
         ],
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
-                "value head": 5
+                "value head": 7
             }
         ],
-        "Aksd_FeatureCount": 5.0,
+        "Aksd_FeatureCount": 7.0,
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 3.27,
+                    "dist_mi": 3.22,
                     "dir": "NNE",
                     "lat": "64\u00b0 45.918' N",
                     "lng": "154\u00b0 13.459' W",
@@ -41025,7 +41025,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 3.81,
+                    "dist_mi": 3.57,
                     "dir": "WNW",
                     "lat": "64\u00b0 44.293' N",
                     "lng": "154\u00b0 24.131' W",
@@ -41035,7 +41035,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 3.99,
+                    "dist_mi": 3.97,
                     "dir": "NNW",
                     "lat": "64\u00b0 46.797' N",
                     "lng": "154\u00b0 18.293' W",
@@ -41045,7 +41045,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 4.25,
+                    "dist_mi": 4.21,
                     "dir": "NNE",
                     "lat": "64\u00b0 46.850' N",
                     "lng": "154\u00b0 13.483' W",
@@ -41055,10 +41055,30 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 4.57,
-                    "dir": "WNW",
+                    "dist_mi": 4.34,
+                    "dir": "W",
+                    "lat": "64\u00b0 42.070' N",
+                    "lng": "154\u00b0 26.630' W",
+                    "SiteCat": "Structure",
+                    "Protection": "No Protection",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 4.49,
+                    "dir": "NW",
                     "lat": "64\u00b0 45.157' N",
                     "lng": "154\u00b0 24.982' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 4.58,
+                    "dir": "WSW",
+                    "lat": "64\u00b0 40.815' N",
+                    "lng": "154\u00b0 26.205' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
                     "MainStructs": "No Data",
@@ -41075,8 +41095,8 @@
         "NtvAllot_Locations": {
             "features": [
                 {
-                    "dist_mi": 4.12,
-                    "dir": "WNW",
+                    "dist_mi": 4.09,
+                    "dir": "NW",
                     "lat": "64\u00b0 45.117' N",
                     "lng": "154\u00b0 24.017' W",
                     "ALLOT_STATUS": "Restricted",
@@ -41095,7 +41115,7 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Nowitna National Wildlife Refuge",
-                "value head": 51532.1
+                "value head": 59911.89
             },
             {
                 "key head": "Alaska Regional Office",
@@ -41103,11 +41123,11 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "USFWS": 51532.1,
+            "USFWS": 59911.89,
             "BIA": 80.0
         },
         "MgmtOption_AcreSum": {
-            "Limited": 51532.1,
+            "Limited": 59911.89,
             "Full": 80.0
         },
         "NpsStruct_Use_AttrCount": null,
@@ -41154,7 +41174,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 5 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-13164.845%2C1640145.089%2C3338,scale:40752",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-13492.307%2C1639415.318%2C3338,scale:44453",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
