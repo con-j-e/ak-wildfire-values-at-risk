@@ -2312,13 +2312,13 @@
         "AkFireNumber": "257",
         "wfigs_IncidentName": "Hay",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": null,
-        "wfigs_MapMethod": null,
-        "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750456690843.0,
+        "wfigs_GISAcres": 44.542765422025624,
+        "wfigs_MapMethod": "Modeled",
+        "wfigs_PolygonDateTime": 1750461555000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750468518000.0,
         "wfigs_IrwinID": "{DC8BAFA7-FC89-43B3-86DD-34A6C706E23E}",
         "ReportedAcres": 0.1,
-        "HasError": 0.0,
+        "HasError": 1.0,
         "DefaultLabel": "257-Hay, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
         "AkMine_Active_AttrCount": null,
@@ -2333,8 +2333,8 @@
         "Runway_FeatureCount": null,
         "Runway_Locations": null,
         "Runway_Ownership_AttrCount": null,
-        "WeatherStation_FeatureCount": null,
-        "WeatherStation_Locations": null,
+        "WeatherStation_FeatureCount": -1.0,
+        "WeatherStation_Locations": "!error!",
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
         "Aksd_Protection_AttrCount": null,
@@ -2342,32 +2342,32 @@
         "Aksd_FeatureCount": null,
         "Aksd_Locations": null,
         "NtvAllot_Status_AcreSum": {
-            "Restricted": 55.24
+            "Restricted": 40.78
         },
         "NtvAllot_FeatureCount": 2.0,
         "NtvAllot_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.8,
-                    "dir": "SSW",
-                    "lat": "65\u00b0 05.408' N",
-                    "lng": "151\u00b0 37.484' W",
-                    "ALLOT_STATUS": "Restricted",
-                    "ALLOT_ID": "989F422"
-                },
-                {
-                    "dist_mi": 0.82,
+                    "dist_mi": 0.84,
                     "dir": "S",
                     "lat": "65\u00b0 05.294' N",
                     "lng": "151\u00b0 36.836' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "989F2363"
+                },
+                {
+                    "dist_mi": 0.84,
+                    "dir": "SSW",
+                    "lat": "65\u00b0 05.408' N",
+                    "lng": "151\u00b0 37.484' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "989F422"
                 }
             ],
             "popped": 0,
             "cutoff": null
         },
-        "NtvAllot_TotalAcres": 55.24,
+        "NtvAllot_TotalAcres": 40.78,
         "ComsTwr_Type_AttrCount": null,
         "ComsTwr_FeatureCount": null,
         "ComsTwr_Locations": null,
@@ -2375,25 +2375,25 @@
         "Community_Locations": null,
         "Jurisd_Unit_AcreSum": [
             {
-                "key head": "Tozitna, Limited",
-                "value head": 1097.56
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 1315.38
             },
             {
-                "key head": "Alaska Department of Natural Resources",
-                "value head": 883.03
+                "key head": "Tozitna, Limited",
+                "value head": 1313.45
             },
             {
                 "key head": "Alaska Regional Office",
-                "value head": 55.24
+                "value head": 40.78
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "ANCSA": 1097.56,
-            "State": 883.03,
-            "BIA": 55.24
+            "State": 1315.38,
+            "ANCSA": 1313.45,
+            "BIA": 40.78
         },
         "MgmtOption_AcreSum": {
-            "Full": 2035.83
+            "Full": 2669.61
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -2439,7 +2439,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:112324.064%2C1684224.28%2C3338,scale:8093",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:112459.139%2C1684504.732%2C3338,scale:9448",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
@@ -5743,13 +5743,13 @@
         "AkFireNumber": "235",
         "wfigs_IncidentName": "Moran",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": null,
-        "wfigs_MapMethod": null,
-        "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750405196500.0,
+        "wfigs_GISAcres": 1588.0757853020214,
+        "wfigs_MapMethod": "Modeled",
+        "wfigs_PolygonDateTime": 1750434474000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750468379000.0,
         "wfigs_IrwinID": "{9B91E3B7-D685-40C1-9B23-74C6D88C7519}",
         "ReportedAcres": 0.1,
-        "HasError": 0.0,
+        "HasError": 1.0,
         "DefaultLabel": "235-Moran, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
         "AkMine_Active_AttrCount": null,
@@ -5764,8 +5764,8 @@
         "Runway_FeatureCount": null,
         "Runway_Locations": null,
         "Runway_Ownership_AttrCount": null,
-        "WeatherStation_FeatureCount": null,
-        "WeatherStation_Locations": null,
+        "WeatherStation_FeatureCount": -1.0,
+        "WeatherStation_Locations": "!error!",
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
         "Aksd_Protection_AttrCount": null,
@@ -5784,14 +5784,14 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 2035.83
+                "value head": 7629.75
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 2035.83
+            "State": 7629.75
         },
         "MgmtOption_AcreSum": {
-            "Limited": 2035.83
+            "Limited": 7629.75
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -5837,7 +5837,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:51626.822%2C1716285.021%2C3338,scale:8093",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:51668.12%2C1717869.605%2C3338,scale:17863",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
@@ -9365,10 +9365,10 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750403142780.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750468724400.0,
         "wfigs_IrwinID": "{6F1CBB46-144E-4DB7-8AF6-E550C873FF5F}",
-        "ReportedAcres": 278.0,
-        "HasError": 0.0,
+        "ReportedAcres": 0.1,
+        "HasError": 1.0,
         "DefaultLabel": "224-Lake George, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
         "AkMine_Active_AttrCount": null,
@@ -9383,8 +9383,8 @@
         "Runway_FeatureCount": null,
         "Runway_Locations": null,
         "Runway_Ownership_AttrCount": null,
-        "WeatherStation_FeatureCount": null,
-        "WeatherStation_Locations": null,
+        "WeatherStation_FeatureCount": -1.0,
+        "WeatherStation_Locations": "!error!",
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
         "Aksd_Protection_AttrCount": null,
@@ -9403,19 +9403,19 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 3049.16
+                "value head": 1831.81
             },
             {
                 "key head": "Dot Lake Native Corporation",
-                "value head": 730.43
+                "value head": 204.02
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 3049.16,
-            "ANCSA": 730.43
+            "State": 1831.81,
+            "ANCSA": 204.02
         },
         "MgmtOption_AcreSum": {
-            "Full": 3779.59
+            "Full": 2035.83
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -9461,7 +9461,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:470055.595%2C1569258.492%2C3338,scale:11029",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:470055.595%2C1569258.492%2C3338,scale:8093",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": null,
@@ -12043,10 +12043,10 @@
         "wfigs_GISAcres": 20.239789041205466,
         "wfigs_MapMethod": "GPS-Walked",
         "wfigs_PolygonDateTime": 1750383181000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1750389645540.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750468386677.0,
         "wfigs_IrwinID": "{850AAF3D-6BF6-4D5D-8BC4-6DA0EC8A4629}",
-        "ReportedAcres": 20.2,
-        "HasError": 0.0,
+        "ReportedAcres": 75.0,
+        "HasError": 1.0,
         "DefaultLabel": "208-Bonnifield Creek, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
         "AkMine_Active_AttrCount": null,
@@ -12061,8 +12061,8 @@
         "Runway_FeatureCount": null,
         "Runway_Locations": null,
         "Runway_Ownership_AttrCount": null,
-        "WeatherStation_FeatureCount": null,
-        "WeatherStation_Locations": null,
+        "WeatherStation_FeatureCount": -1.0,
+        "WeatherStation_Locations": "!error!",
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
         "Aksd_Protection_AttrCount": null,
@@ -13241,13 +13241,13 @@
         "AkFireNumber": "199",
         "wfigs_IncidentName": "Lush",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": null,
-        "wfigs_MapMethod": null,
-        "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750371456433.0,
+        "wfigs_GISAcres": 568.6987626202903,
+        "wfigs_MapMethod": "Modeled",
+        "wfigs_PolygonDateTime": 1750364787000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750468668000.0,
         "wfigs_IrwinID": "{9B7A96A6-E06B-4F40-9321-9ADB96358945}",
         "ReportedAcres": 100.0,
-        "HasError": 0.0,
+        "HasError": 1.0,
         "DefaultLabel": "199-Lush, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
         "AkMine_Active_AttrCount": null,
@@ -13262,8 +13262,8 @@
         "Runway_FeatureCount": null,
         "Runway_Locations": null,
         "Runway_Ownership_AttrCount": null,
-        "WeatherStation_FeatureCount": null,
-        "WeatherStation_Locations": null,
+        "WeatherStation_FeatureCount": -1.0,
+        "WeatherStation_Locations": "!error!",
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
         "Aksd_Protection_AttrCount": null,
@@ -13281,19 +13281,19 @@
         "Community_Locations": null,
         "Jurisd_Unit_AcreSum": [
             {
-                "key head": "Doyon, Limited",
-                "value head": 1689.42
+                "key head": "Baan O Yeel Kon Corporation",
+                "value head": 3576.84
             },
             {
-                "key head": "Baan O Yeel Kon Corporation",
-                "value head": 1314.23
+                "key head": "Doyon, Limited",
+                "value head": 1242.06
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "ANCSA": 3003.65
+            "ANCSA": 4818.9
         },
         "MgmtOption_AcreSum": {
-            "Full": 3003.65
+            "Full": 4818.9
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -13334,10 +13334,10 @@
         "SpecMgmt_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.81,
-                    "dir": "NNW",
-                    "lat": "65\u00b0 32.127' N",
-                    "lng": "150\u00b0 21.051' W",
+                    "dist_mi": 0.95,
+                    "dir": "NW",
+                    "lat": "65\u00b0 32.129' N",
+                    "lng": "150\u00b0 21.047' W",
                     "ManagementConsiderations": "Contact Doyon, Limited Lands and Natural Resources Dept. for guidence."
                 }
             ],
@@ -13356,8 +13356,8 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:169344.986%2C1733801.088%2C3338,scale:9831",
-        "CpxName": null,
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:170601.555%2C1733834.328%2C3338,scale:12657",
+        "CpxName": "Wolverine Complex",
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
         "PercentPerimeterToBeContained": null,
@@ -14115,10 +14115,10 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750394058303.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750468983550.0,
         "wfigs_IrwinID": "{6FD4BAE0-F1F2-4DA8-9760-A7A3FDD2587F}",
-        "ReportedAcres": 400.0,
-        "HasError": 0.0,
+        "ReportedAcres": 5175.0,
+        "HasError": 1.0,
         "DefaultLabel": "192-Kechumstuk Creek, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
         "AkMine_Active_AttrCount": null,
@@ -14133,18 +14133,93 @@
         "Runway_FeatureCount": null,
         "Runway_Locations": null,
         "Runway_Ownership_AttrCount": null,
-        "WeatherStation_FeatureCount": null,
-        "WeatherStation_Locations": null,
+        "WeatherStation_FeatureCount": -1.0,
+        "WeatherStation_Locations": "!error!",
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
-        "Aksd_Protection_AttrCount": null,
-        "Aksd_SiteCat_AttrCount": null,
-        "Aksd_FeatureCount": null,
-        "Aksd_Locations": null,
-        "NtvAllot_Status_AcreSum": null,
-        "NtvAllot_FeatureCount": null,
-        "NtvAllot_Locations": null,
-        "NtvAllot_TotalAcres": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Full",
+                "value head": 2
+            },
+            {
+                "key head": "Avoid",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Structure",
+                "value head": 2
+            },
+            {
+                "key head": "Other",
+                "value head": 1
+            }
+        ],
+        "Aksd_FeatureCount": 3.0,
+        "Aksd_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.59,
+                    "dir": "E",
+                    "lat": "64\u00b0 01.093' N",
+                    "lng": "142\u00b0 34.828' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.6,
+                    "dir": "E",
+                    "lat": "64\u00b0 01.105' N",
+                    "lng": "142\u00b0 34.810' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "NtvAllot_Status_AcreSum": {
+            "Selected": 119.96,
+            "Restricted": 79.97
+        },
+        "NtvAllot_FeatureCount": 3.0,
+        "NtvAllot_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.17,
+                    "dir": "E",
+                    "lat": "64\u00b0 01.158' N",
+                    "lng": "142\u00b0 35.644' W",
+                    "ALLOT_STATUS": "Selected",
+                    "ALLOT_ID": "FF019188B"
+                },
+                {
+                    "dist_mi": 0.55,
+                    "dir": "E",
+                    "lat": "64\u00b0 01.101' N",
+                    "lng": "142\u00b0 34.907' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "989F31218B"
+                },
+                {
+                    "dist_mi": 0.55,
+                    "dir": "E",
+                    "lat": "64\u00b0 01.145' N",
+                    "lng": "142\u00b0 34.903' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "989F24786C"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "NtvAllot_TotalAcres": 199.93,
         "ComsTwr_Type_AttrCount": null,
         "ComsTwr_FeatureCount": null,
         "ComsTwr_Locations": null,
@@ -14153,14 +14228,20 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 4199.61
+                "value head": 13542.83
+            },
+            {
+                "key head": "Alaska Regional Office",
+                "value head": 79.97
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 4199.61
+            "BLM": 13542.83,
+            "BIA": 79.97
         },
         "MgmtOption_AcreSum": {
-            "Limited": 4199.61
+            "Limited": 13422.88,
+            "Full": 199.93
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -14191,9 +14272,33 @@
         "Silviculture_FeatureCount": null,
         "Silviculture_Locations": null,
         "Silviculture_TotalAcres": null,
-        "SpecMgmt_Consid_AttrCount": null,
-        "SpecMgmt_FeatureCount": null,
-        "SpecMgmt_Locations": null,
+        "SpecMgmt_Consid_AttrCount": [
+            {
+                "key head": "Contact Doyon, Limited Lands and Natural Resources Dept. for guidence.",
+                "value head": 2
+            }
+        ],
+        "SpecMgmt_FeatureCount": 2.0,
+        "SpecMgmt_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.18,
+                    "dir": "S",
+                    "lat": "63\u00b0 59.757' N",
+                    "lng": "142\u00b0 39.918' W",
+                    "ManagementConsiderations": "Contact Doyon, Limited Lands and Natural Resources Dept. for guidence."
+                },
+                {
+                    "dist_mi": 0.37,
+                    "dir": "E",
+                    "lat": "64\u00b0 00.670' N",
+                    "lng": "142\u00b0 35.494' W",
+                    "ManagementConsiderations": "Contact Doyon, Limited Lands and Natural Resources Dept. for guidence."
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "Railroad_NetDesc_FeetSum": null,
         "Railroad_Locations": null,
         "Railroad_TotalFeet": null,
@@ -14206,7 +14311,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:551296.499%2C1609046.679%2C3338,scale:11626",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:551296.499%2C1609046.679%2C3338,scale:20946",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
