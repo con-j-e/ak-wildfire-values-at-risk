@@ -5312,10 +5312,10 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750407012270.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750492037150.0,
         "wfigs_IrwinID": "{B10C8EE0-1D47-4CA7-946F-2F978BD49C5B}",
-        "ReportedAcres": 1.0,
-        "HasError": 0.0,
+        "ReportedAcres": 1.1,
+        "HasError": 1.0,
         "DefaultLabel": "239-Trail, Reported Location",
         "AnalysisBufferMiles": 0.0,
         "AkMine_Active_AttrCount": null,
@@ -5330,8 +5330,8 @@
         "Runway_FeatureCount": null,
         "Runway_Locations": null,
         "Runway_Ownership_AttrCount": null,
-        "WeatherStation_FeatureCount": null,
-        "WeatherStation_Locations": null,
+        "WeatherStation_FeatureCount": -1.0,
+        "WeatherStation_Locations": "!error!",
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
         "Aksd_Protection_AttrCount": null,
@@ -5350,14 +5350,14 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 1.0
+                "value head": 1.1
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 1.0
+            "State": 1.1
         },
         "MgmtOption_AcreSum": {
-            "Full": 1.0
+            "Full": 1.1
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -5403,7 +5403,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Reported Location",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:190336.013%2C1657999.301%2C3338,scale:179",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:190336.013%2C1657999.301%2C3338,scale:188",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
@@ -5566,7 +5566,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750484905427.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750492524627.0,
         "wfigs_IrwinID": "{058AD797-B4F7-4CB5-B34F-7267D980BAA9}",
         "ReportedAcres": 4001.0,
         "HasError": 1.0,
@@ -5791,18 +5791,18 @@
         "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:231873.839%2C1572528.002%2C3338,scale:11351",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
-        "PercentContained": null,
-        "PercentPerimeterToBeContained": null,
+        "PercentContained": 0.0,
+        "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
-        "IncidentComplexityLevel": null,
-        "EstimatedCostToDate": null,
-        "TotalIncidentPersonnel": null,
+        "IncidentComplexityLevel": "Type 2 Incident",
+        "EstimatedCostToDate": 150000.0,
+        "TotalIncidentPersonnel": 15.0,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "ANC",
         "POOJurisdictionalUnit": "AKCIN",
-        "ICS209ReportDateTime": null,
-        "ICS209ReportStatus": null,
-        "IncidentManagementOrganization": null
+        "ICS209ReportDateTime": 1750492524000.0,
+        "ICS209ReportStatus": "I",
+        "IncidentManagementOrganization": "Type 4 IC"
     },
     {
         "AkFireRegion": "TAD",
@@ -7741,7 +7741,7 @@
         "wfigs_GISAcres": 2158.910170239685,
         "wfigs_MapMethod": "GPS-Flight",
         "wfigs_PolygonDateTime": 1750472480000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1750487133727.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750492062390.0,
         "wfigs_IrwinID": "{D0395AD0-94CF-4638-B640-7E7B40FEDB22}",
         "ReportedAcres": 2158.91,
         "HasError": 1.0,
@@ -7844,8 +7844,8 @@
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1750487133000.0,
-        "ICS209ReportStatus": "I",
+        "ICS209ReportDateTime": 1750492062000.0,
+        "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 4 IC"
     },
     {
