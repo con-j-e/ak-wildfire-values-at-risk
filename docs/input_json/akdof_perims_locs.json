@@ -237,7 +237,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750475391297.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750479389707.0,
         "wfigs_IrwinID": "{A830CCB0-01D1-4361-9B18-2DCD15EC517C}",
         "ReportedAcres": 2.0,
         "HasError": 1.0,
@@ -467,7 +467,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750475067620.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750479269470.0,
         "wfigs_IrwinID": "{58A121FB-F568-4C09-886A-F6D122B5D565}",
         "ReportedAcres": 340.0,
         "HasError": 1.0,
@@ -812,7 +812,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750475399940.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750479639517.0,
         "wfigs_IrwinID": "{0BF42287-6E2F-4D4A-96D2-AA60FB7F2E35}",
         "ReportedAcres": 105.0,
         "HasError": 1.0,
@@ -1042,7 +1042,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750466091140.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750479351273.0,
         "wfigs_IrwinID": "{BD31C4A6-6C96-4E70-939A-2E1563BE768D}",
         "ReportedAcres": 0.1,
         "HasError": 1.0,
@@ -1157,7 +1157,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750464890660.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750479194120.0,
         "wfigs_IrwinID": "{D5D2C615-6FEF-4305-99A6-5304469AD3D3}",
         "ReportedAcres": 0.1,
         "HasError": 1.0,
@@ -7022,14 +7022,14 @@
         "AkFireNumber": "223",
         "wfigs_IncidentName": "Himalaya Road",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": null,
-        "wfigs_MapMethod": null,
-        "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750474966807.0,
+        "wfigs_GISAcres": 1433.8630128606987,
+        "wfigs_MapMethod": "GPS-Flight",
+        "wfigs_PolygonDateTime": 1750479148000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750479571190.0,
         "wfigs_IrwinID": "{3DC21EB7-7323-497D-B5AB-BFB16EC65599}",
-        "ReportedAcres": 20.0,
+        "ReportedAcres": 1434.0,
         "HasError": 1.0,
-        "DefaultLabel": "223-Himalaya Road, Reported Location",
+        "DefaultLabel": "223-Himalaya Road, Perimeter",
         "AnalysisBufferMiles": 0.0,
         "AkMine_Active_AttrCount": null,
         "AkMine_Type_AttrCount": null,
@@ -7063,30 +7063,40 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 19.97
+                "value head": 1433.86
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 19.97
+            "State": 1433.86
         },
         "MgmtOption_AcreSum": {
-            "Full": 19.97
+            "Full": 945.39,
+            "Modified (Jul 10)": 488.47
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
         "NpsStruct_Rating_AttrCount": null,
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
-        "Parcel_BuildingValue_AttrSum": 102.0,
-        "Parcel_FeatureCount": 1.0,
-        "Parcel_LandValue_AttrSum": 4867.0,
+        "Parcel_BuildingValue_AttrSum": 7375.0,
+        "Parcel_FeatureCount": 2.0,
+        "Parcel_LandValue_AttrSum": 351689.0,
         "Parcel_Locations": {
             "features": [
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "65\u00b0 07.690' N",
-                    "lng": "147\u00b0 46.085' W",
+                    "lat": "65\u00b0 08.263' N",
+                    "lng": "147\u00b0 46.924' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 388800.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "65\u00b0 07.802' N",
+                    "lng": "147\u00b0 46.234' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 5172189.0
@@ -7098,17 +7108,17 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Tax Lot",
-                "value head": 19.97
+                "value head": 1433.86
             }
         ],
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Exempt ",
-                "value head": 19.97
+                "value head": 1433.86
             }
         ],
-        "Parcel_TotalAcres": 19.97,
-        "Parcel_TotalValue_AttrSum": 4970.0,
+        "Parcel_TotalAcres": 1433.86,
+        "Parcel_TotalValue_AttrSum": 359064.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -7139,8 +7149,8 @@
         "WindTurb_FeatureCount": null,
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
-        "SpatialInfoType": " Reported Location",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:292063.552%2C1699063.517%2C3338,scale:802",
+        "SpatialInfoType": " Perimeter",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:293285.623%2C1700467.107%2C3338,scale:9905",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": null,
@@ -8791,9 +8801,9 @@
         "wfigs_GISAcres": 20.239789041205466,
         "wfigs_MapMethod": "GPS-Walked",
         "wfigs_PolygonDateTime": 1750383181000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1750468386677.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750479698520.0,
         "wfigs_IrwinID": "{850AAF3D-6BF6-4D5D-8BC4-6DA0EC8A4629}",
-        "ReportedAcres": 75.0,
+        "ReportedAcres": 500.0,
         "HasError": 1.0,
         "DefaultLabel": "208-Bonnifield Creek, Perimeter",
         "AnalysisBufferMiles": 0.0,

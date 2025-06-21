@@ -237,7 +237,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750475391297.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750479389707.0,
         "wfigs_IrwinID": "{A830CCB0-01D1-4361-9B18-2DCD15EC517C}",
         "ReportedAcres": 2.0,
         "HasError": 1.0,
@@ -467,7 +467,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750475067620.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750479269470.0,
         "wfigs_IrwinID": "{58A121FB-F568-4C09-886A-F6D122B5D565}",
         "ReportedAcres": 340.0,
         "HasError": 1.0,
@@ -812,7 +812,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750475399940.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750479639517.0,
         "wfigs_IrwinID": "{0BF42287-6E2F-4D4A-96D2-AA60FB7F2E35}",
         "ReportedAcres": 105.0,
         "HasError": 1.0,
@@ -1047,7 +1047,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750466091140.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750479351273.0,
         "wfigs_IrwinID": "{BD31C4A6-6C96-4E70-939A-2E1563BE768D}",
         "ReportedAcres": 0.1,
         "HasError": 1.0,
@@ -1187,7 +1187,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750464890660.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750479194120.0,
         "wfigs_IrwinID": "{D5D2C615-6FEF-4305-99A6-5304469AD3D3}",
         "ReportedAcres": 0.1,
         "HasError": 1.0,
@@ -10595,12 +10595,12 @@
         "AkFireNumber": "223",
         "wfigs_IncidentName": "Himalaya Road",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": null,
-        "wfigs_MapMethod": null,
-        "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750474966807.0,
+        "wfigs_GISAcres": 1433.8630128606987,
+        "wfigs_MapMethod": "GPS-Flight",
+        "wfigs_PolygonDateTime": 1750479148000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750479571190.0,
         "wfigs_IrwinID": "{3DC21EB7-7323-497D-B5AB-BFB16EC65599}",
-        "ReportedAcres": 20.0,
+        "ReportedAcres": 1434.0,
         "HasError": 1.0,
         "DefaultLabel": "223-Himalaya Road, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
@@ -10609,65 +10609,242 @@
         "AkMine_Note_AttrCount": null,
         "AkMine_FeatureCount": null,
         "AkMine_Locations": null,
-        "AkPowerLine_CondType_FeetSum": null,
-        "AkPowerLine_Voltage_FeetSum": null,
-        "AkPowerLine_Locations": null,
-        "AkPowerLine_TotalFeet": null,
+        "AkPowerLine_CondType_FeetSum": [
+            {
+                "key head": "OH Primary 35KV",
+                "value head": 3955
+            },
+            {
+                "key head": "OH Secondary",
+                "value head": 400
+            }
+        ],
+        "AkPowerLine_Voltage_FeetSum": [
+            {
+                "key head": "35",
+                "value head": 3955
+            },
+            {
+                "key head": "120/240",
+                "value head": 400
+            }
+        ],
+        "AkPowerLine_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.66,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.932' N",
+                    "lng": "147\u00b0 41.054' W",
+                    "VOLTAGE": "35",
+                    "COND_TYPE": "OH Primary 35KV"
+                },
+                {
+                    "dist_mi": 0.66,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.932' N",
+                    "lng": "147\u00b0 41.054' W",
+                    "VOLTAGE": "35",
+                    "COND_TYPE": "OH Primary 35KV"
+                },
+                {
+                    "dist_mi": 0.68,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.882' N",
+                    "lng": "147\u00b0 41.104' W",
+                    "VOLTAGE": "35",
+                    "COND_TYPE": "OH Primary 35KV"
+                },
+                {
+                    "dist_mi": 0.68,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.880' N",
+                    "lng": "147\u00b0 41.133' W",
+                    "VOLTAGE": "120/240",
+                    "COND_TYPE": "OH Secondary"
+                },
+                {
+                    "dist_mi": 0.69,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.998' N",
+                    "lng": "147\u00b0 40.815' W",
+                    "VOLTAGE": "120/240",
+                    "COND_TYPE": "OH Secondary"
+                },
+                {
+                    "dist_mi": 0.69,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.934' N",
+                    "lng": "147\u00b0 40.949' W",
+                    "VOLTAGE": "35",
+                    "COND_TYPE": "OH Primary 35KV"
+                },
+                {
+                    "dist_mi": 0.7,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.983' N",
+                    "lng": "147\u00b0 40.816' W",
+                    "VOLTAGE": "35",
+                    "COND_TYPE": "OH Primary 35KV"
+                },
+                {
+                    "dist_mi": 0.71,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.877' N",
+                    "lng": "147\u00b0 41.033' W",
+                    "VOLTAGE": "35",
+                    "COND_TYPE": "OH Primary 35KV"
+                },
+                {
+                    "dist_mi": 0.72,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.936' N",
+                    "lng": "147\u00b0 40.860' W",
+                    "VOLTAGE": "120/240",
+                    "COND_TYPE": "OH Secondary"
+                },
+                {
+                    "dist_mi": 0.75,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.913' N",
+                    "lng": "147\u00b0 40.823' W",
+                    "VOLTAGE": "120/240",
+                    "COND_TYPE": "OH Secondary"
+                },
+                {
+                    "dist_mi": 0.76,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.822' N",
+                    "lng": "147\u00b0 41.032' W",
+                    "VOLTAGE": "35",
+                    "COND_TYPE": "OH Primary 35KV"
+                },
+                {
+                    "dist_mi": 0.81,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.770' N",
+                    "lng": "147\u00b0 41.031' W",
+                    "VOLTAGE": "35",
+                    "COND_TYPE": "OH Primary 35KV"
+                },
+                {
+                    "dist_mi": 0.82,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.750' N",
+                    "lng": "147\u00b0 41.061' W",
+                    "VOLTAGE": "35",
+                    "COND_TYPE": "OH Primary 35KV"
+                },
+                {
+                    "dist_mi": 0.84,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.706' N",
+                    "lng": "147\u00b0 41.128' W",
+                    "VOLTAGE": "35",
+                    "COND_TYPE": "OH Primary 35KV"
+                },
+                {
+                    "dist_mi": 0.87,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.663' N",
+                    "lng": "147\u00b0 41.193' W",
+                    "VOLTAGE": "35",
+                    "COND_TYPE": "OH Primary 35KV"
+                },
+                {
+                    "dist_mi": 0.9,
+                    "dir": "SSE",
+                    "lat": "65\u00b0 07.620' N",
+                    "lng": "147\u00b0 41.258' W",
+                    "VOLTAGE": "35",
+                    "COND_TYPE": "OH Primary 35KV"
+                },
+                {
+                    "dist_mi": 0.93,
+                    "dir": "SSE",
+                    "lat": "65\u00b0 07.579' N",
+                    "lng": "147\u00b0 41.320' W",
+                    "VOLTAGE": "35",
+                    "COND_TYPE": "OH Primary 35KV"
+                },
+                {
+                    "dist_mi": 0.96,
+                    "dir": "SSE",
+                    "lat": "65\u00b0 07.537' N",
+                    "lng": "147\u00b0 41.386' W",
+                    "VOLTAGE": "35",
+                    "COND_TYPE": "OH Primary 35KV"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "AkPowerLine_TotalFeet": 4355.0,
         "Runway_FeatureCount": null,
         "Runway_Locations": null,
         "Runway_Ownership_AttrCount": null,
         "WeatherStation_FeatureCount": -1.0,
         "WeatherStation_Locations": "!error!",
-        "Aksd_MainStruct_AttrSum": null,
-        "Aksd_OtherStruct_AttrSum": null,
+        "Aksd_MainStruct_AttrSum": 2.0,
+        "Aksd_OtherStruct_AttrSum": 1.0,
         "Aksd_Protection_AttrCount": [
             {
-                "key head": "Critical",
-                "value head": 1
+                "key head": "Undesignated",
+                "value head": 2
             }
         ],
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
-                "value head": 1
+                "value head": 2
             }
         ],
-        "Aksd_FeatureCount": 1.0,
+        "Aksd_FeatureCount": 2.0,
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.99,
-                    "dir": "S",
-                    "lat": "65\u00b0 06.762' N",
-                    "lng": "147\u00b0 46.565' W",
+                    "dist_mi": 0.68,
+                    "dir": "SE",
+                    "lat": "65\u00b0 08.000' N",
+                    "lng": "147\u00b0 40.818' W",
                     "SiteCat": "Structure",
-                    "Protection": "Critical",
-                    "MainStructs": "No Data",
+                    "Protection": "Undesignated",
+                    "MainStructs": 1.0,
                     "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.68,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.874' N",
+                    "lng": "147\u00b0 41.161' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
+                    "MainStructs": 1.0,
+                    "OthrStructs": 1.0
                 }
             ],
             "popped": 0,
             "cutoff": null
         },
         "NtvAllot_Status_AcreSum": {
-            "Restricted": 68.56
+            "Restricted": 138.69
         },
         "NtvAllot_FeatureCount": 2.0,
         "NtvAllot_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.69,
-                    "dir": "W",
-                    "lat": "65\u00b0 07.749' N",
-                    "lng": "147\u00b0 47.898' W",
+                    "dist_mi": 0.63,
+                    "dir": "SW",
+                    "lat": "65\u00b0 07.830' N",
+                    "lng": "147\u00b0 47.899' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "989F944"
                 },
                 {
-                    "dist_mi": 0.91,
+                    "dist_mi": 0.69,
                     "dir": "W",
-                    "lat": "65\u00b0 07.830' N",
-                    "lng": "147\u00b0 48.348' W",
+                    "lat": "65\u00b0 08.263' N",
+                    "lng": "147\u00b0 48.350' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "989F12785"
                 }
@@ -10675,7 +10852,7 @@
             "popped": 0,
             "cutoff": null
         },
-        "NtvAllot_TotalAcres": 68.56,
+        "NtvAllot_TotalAcres": 138.69,
         "ComsTwr_Type_AttrCount": null,
         "ComsTwr_FeatureCount": null,
         "ComsTwr_Locations": null,
@@ -10684,67 +10861,58 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 2128.41
+                "value head": 7123.93
             },
             {
                 "key head": "Fairbanks North Star Borough",
-                "value head": 203.14
+                "value head": 160.25
             },
             {
                 "key head": "Alaska Regional Office",
-                "value head": 68.56
+                "value head": 139.22
             },
             {
                 "key head": "Alaska Department of Transportation and Public Facilities",
-                "value head": 27.9
+                "value head": 20.03
             },
             {
                 "key head": "Fairbanks, City of",
-                "value head": 0.23
+                "value head": 6.31
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 2097.98,
-            "County": 203.14,
-            "BIA": 68.56,
-            "Private": 58.33,
-            "City": 0.23
+            "State": 6972.38,
+            "Private": 171.58,
+            "County": 160.25,
+            "BIA": 139.22,
+            "City": 6.31
         },
         "MgmtOption_AcreSum": {
-            "Full": 2166.17,
-            "Modified (Jul 10)": 146.22,
-            "Critical": 115.85
+            "Full": 4138.02,
+            "Modified (Jul 10)": 3012.53,
+            "Critical": 299.18
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
         "NpsStruct_Rating_AttrCount": null,
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
-        "Parcel_BuildingValue_AttrSum": 28162.0,
-        "Parcel_FeatureCount": 23.0,
-        "Parcel_LandValue_AttrSum": 1258311.0,
+        "Parcel_BuildingValue_AttrSum": 288080.0,
+        "Parcel_FeatureCount": 29.0,
+        "Parcel_LandValue_AttrSum": 2592315.0,
         "Parcel_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.15,
-                    "dir": "W",
-                    "lat": "65\u00b0 07.697' N",
-                    "lng": "147\u00b0 46.806' W",
-                    "property_type": "Tax Lot",
-                    "property_use": "Exempt ",
-                    "total_value": 388800.0
-                },
-                {
-                    "dist_mi": 0.25,
+                    "dist_mi": 0.33,
                     "dir": "S",
                     "lat": "65\u00b0 07.397' N",
-                    "lng": "147\u00b0 46.288' W",
+                    "lng": "147\u00b0 46.213' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 249480.0
                 },
                 {
-                    "dist_mi": 0.33,
+                    "dist_mi": 0.43,
                     "dir": "SSW",
                     "lat": "65\u00b0 07.397' N",
                     "lng": "147\u00b0 46.804' W",
@@ -10753,52 +10921,124 @@
                     "total_value": 86139.0
                 },
                 {
-                    "dist_mi": 0.68,
-                    "dir": "W",
-                    "lat": "65\u00b0 07.749' N",
+                    "dist_mi": 0.53,
+                    "dir": "S",
+                    "lat": "65\u00b0 07.397' N",
+                    "lng": "147\u00b0 44.743' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 287232.0
+                },
+                {
+                    "dist_mi": 0.58,
+                    "dir": "SE",
+                    "lat": "65\u00b0 08.017' N",
+                    "lng": "147\u00b0 41.062' W",
+                    "property_type": "Lot",
+                    "property_use": "Residential",
+                    "total_value": 134858.0
+                },
+                {
+                    "dist_mi": 0.58,
+                    "dir": "SE",
+                    "lat": "65\u00b0 08.017' N",
+                    "lng": "147\u00b0 41.078' W",
+                    "property_type": "Roadway",
+                    "property_use": "Vacant Land",
+                    "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 0.58,
+                    "dir": "SE",
+                    "lat": "65\u00b0 08.009' N",
+                    "lng": "147\u00b0 41.092' W",
+                    "property_type": "Lot",
+                    "property_use": "Residential",
+                    "total_value": 178072.0
+                },
+                {
+                    "dist_mi": 0.63,
+                    "dir": "SW",
+                    "lat": "65\u00b0 07.830' N",
                     "lng": "147\u00b0 47.897' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 48825.0
                 },
                 {
-                    "dist_mi": 0.7,
+                    "dist_mi": 0.68,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.903' N",
+                    "lng": "147\u00b0 41.046' W",
+                    "property_type": "Lot",
+                    "property_use": "Other (Misc.)",
+                    "total_value": 49815.0
+                },
+                {
+                    "dist_mi": 0.69,
+                    "dir": "W",
+                    "lat": "65\u00b0 08.263' N",
+                    "lng": "147\u00b0 48.352' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 56369.0
+                },
+                {
+                    "dist_mi": 0.77,
+                    "dir": "SSE",
+                    "lat": "65\u00b0 07.667' N",
+                    "lng": "147\u00b0 41.667' W",
+                    "property_type": "Lot",
+                    "property_use": "Vacant Land",
+                    "total_value": 21474.0
+                },
+                {
+                    "dist_mi": 0.79,
                     "dir": "SSW",
-                    "lat": "65\u00b0 07.059' N",
-                    "lng": "147\u00b0 46.919' W",
+                    "lat": "65\u00b0 07.052' N",
+                    "lng": "147\u00b0 46.884' W",
                     "property_type": "Roadway",
                     "property_use": "",
                     "total_value": "No Data"
                 },
                 {
-                    "dist_mi": 0.73,
-                    "dir": "ESE",
-                    "lat": "65\u00b0 07.397' N",
-                    "lng": "147\u00b0 44.748' W",
+                    "dist_mi": 0.82,
+                    "dir": "WSW",
+                    "lat": "65\u00b0 07.830' N",
+                    "lng": "147\u00b0 48.347' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
-                    "total_value": 287232.0
+                    "total_value": 37125.0
                 },
                 {
-                    "dist_mi": 0.74,
+                    "dist_mi": 0.83,
                     "dir": "SSW",
-                    "lat": "65\u00b0 07.026' N",
-                    "lng": "147\u00b0 46.962' W",
+                    "lat": "65\u00b0 07.022' N",
+                    "lng": "147\u00b0 46.937' W",
                     "property_type": "Lot",
                     "property_use": "Exempt ",
                     "total_value": 106928.0
                 },
                 {
-                    "dist_mi": 0.75,
+                    "dist_mi": 0.83,
                     "dir": "S",
                     "lat": "65\u00b0 06.964' N",
-                    "lng": "147\u00b0 46.288' W",
+                    "lng": "147\u00b0 46.213' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 53865.0
                 },
                 {
-                    "dist_mi": 0.75,
+                    "dist_mi": 0.83,
+                    "dir": "SSE",
+                    "lat": "65\u00b0 07.397' N",
+                    "lng": "147\u00b0 42.692' W",
+                    "property_type": "Tract",
+                    "property_use": "Exempt ",
+                    "total_value": 70318.0
+                },
+                {
+                    "dist_mi": 0.84,
                     "dir": "SSW",
                     "lat": "65\u00b0 06.995' N",
                     "lng": "147\u00b0 46.802' W",
@@ -10807,8 +11047,8 @@
                     "total_value": 20958.0
                 },
                 {
-                    "dist_mi": 0.76,
-                    "dir": "S",
+                    "dist_mi": 0.85,
+                    "dir": "SSW",
                     "lat": "65\u00b0 06.984' N",
                     "lng": "147\u00b0 46.767' W",
                     "property_type": "Tax Lot",
@@ -10816,8 +11056,17 @@
                     "total_value": 53865.0
                 },
                 {
-                    "dist_mi": 0.78,
-                    "dir": "S",
+                    "dist_mi": 0.86,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.518' N",
+                    "lng": "147\u00b0 41.918' W",
+                    "property_type": "Lot",
+                    "property_use": "Vacant Land",
+                    "total_value": 13471.0
+                },
+                {
+                    "dist_mi": 0.87,
+                    "dir": "SSW",
                     "lat": "65\u00b0 06.964' N",
                     "lng": "147\u00b0 46.802' W",
                     "property_type": "Lot",
@@ -10825,8 +11074,8 @@
                     "total_value": 24473.0
                 },
                 {
-                    "dist_mi": 0.78,
-                    "dir": "S",
+                    "dist_mi": 0.87,
+                    "dir": "SSW",
                     "lat": "65\u00b0 06.964' N",
                     "lng": "147\u00b0 46.802' W",
                     "property_type": "Tax Lot",
@@ -10834,16 +11083,7 @@
                     "total_value": 2864.0
                 },
                 {
-                    "dist_mi": 0.79,
-                    "dir": "WSW",
-                    "lat": "65\u00b0 07.561' N",
-                    "lng": "147\u00b0 48.089' W",
-                    "property_type": "Tax Lot",
-                    "property_use": "Vacant Land",
-                    "total_value": 13500.0
-                },
-                {
-                    "dist_mi": 0.8,
+                    "dist_mi": 0.89,
                     "dir": "S",
                     "lat": "65\u00b0 06.926' N",
                     "lng": "147\u00b0 46.583' W",
@@ -10852,7 +11092,16 @@
                     "total_value": 20958.0
                 },
                 {
-                    "dist_mi": 0.85,
+                    "dist_mi": 0.89,
+                    "dir": "SW",
+                    "lat": "65\u00b0 07.561' N",
+                    "lng": "147\u00b0 48.089' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Vacant Land",
+                    "total_value": 13500.0
+                },
+                {
+                    "dist_mi": 0.94,
                     "dir": "S",
                     "lat": "65\u00b0 06.876' N",
                     "lng": "147\u00b0 46.425' W",
@@ -10861,67 +11110,40 @@
                     "total_value": 53865.0
                 },
                 {
-                    "dist_mi": 0.9,
+                    "dist_mi": 0.94,
                     "dir": "W",
-                    "lat": "65\u00b0 07.698' N",
-                    "lng": "147\u00b0 48.347' W",
+                    "lat": "65\u00b0 08.283' N",
+                    "lng": "147\u00b0 48.866' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
-                    "total_value": 37125.0
+                    "total_value": 792000.0
                 },
                 {
-                    "dist_mi": 0.91,
+                    "dist_mi": 0.94,
                     "dir": "W",
-                    "lat": "65\u00b0 07.830' N",
-                    "lng": "147\u00b0 48.347' W",
+                    "lat": "65\u00b0 08.263' N",
+                    "lng": "147\u00b0 48.866' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
-                    "total_value": 56369.0
-                },
-                {
-                    "dist_mi": 0.95,
-                    "dir": "S",
-                    "lat": "65\u00b0 06.797' N",
-                    "lng": "147\u00b0 46.566' W",
-                    "property_type": "Lot",
-                    "property_use": "Residential",
-                    "total_value": 11416.0
-                },
-                {
-                    "dist_mi": 0.96,
-                    "dir": "S",
-                    "lat": "65\u00b0 06.780' N",
-                    "lng": "147\u00b0 46.255' W",
-                    "property_type": "Lot",
-                    "property_use": "Residential",
-                    "total_value": 169083.0
+                    "total_value": 56995.0
                 },
                 {
                     "dist_mi": 0.98,
-                    "dir": "S",
-                    "lat": "65\u00b0 06.767' N",
-                    "lng": "147\u00b0 46.469' W",
+                    "dir": "WSW",
+                    "lat": "65\u00b0 07.848' N",
+                    "lng": "147\u00b0 48.721' W",
                     "property_type": "Lot",
                     "property_use": "Residential",
-                    "total_value": 24113.0
+                    "total_value": 15179.0
                 },
                 {
                     "dist_mi": 0.98,
-                    "dir": "SW",
-                    "lat": "65\u00b0 07.078' N",
-                    "lng": "147\u00b0 47.947' W",
-                    "property_type": "Roadway",
-                    "property_use": "",
-                    "total_value": "No Data"
-                },
-                {
-                    "dist_mi": 0.99,
-                    "dir": "SW",
-                    "lat": "65\u00b0 07.085' N",
-                    "lng": "147\u00b0 47.981' W",
-                    "property_type": "Lot",
-                    "property_use": "Exempt ",
-                    "total_value": 55421.0
+                    "dir": "WSW",
+                    "lat": "65\u00b0 07.737' N",
+                    "lng": "147\u00b0 48.605' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Vacant Land",
+                    "total_value": 5434.0
                 }
             ],
             "popped": 0,
@@ -10930,37 +11152,45 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Tax Lot",
-                "value head": 2154.99
+                "value head": 7077.4
             },
             {
                 "key head": "Lot",
-                "value head": 245.14
+                "value head": 318.94
+            },
+            {
+                "key head": "Tract",
+                "value head": 27.08
             },
             {
                 "key head": "Roadway",
-                "value head": 28.12
+                "value head": 26.32
             }
         ],
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Exempt ",
-                "value head": 2341.51
+                "value head": 7251.73
             },
             {
                 "key head": "Vacant Land",
-                "value head": 56.33
-            },
-            {
-                "key head": "No Data",
-                "value head": 28.12
+                "value head": 78.33
             },
             {
                 "key head": "Residential",
-                "value head": 2.29
+                "value head": 59.11
+            },
+            {
+                "key head": "Other (Misc.)",
+                "value head": 40.55
+            },
+            {
+                "key head": "No Data",
+                "value head": 20.01
             }
         ],
-        "Parcel_TotalAcres": 2428.24,
-        "Parcel_TotalValue_AttrSum": 1286474.0,
+        "Parcel_TotalAcres": 7449.73,
+        "Parcel_TotalValue_AttrSum": 2880395.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -10986,39 +11216,79 @@
         "UsaStruct_OccCls_AttrCount": [
             {
                 "key head": "Residential",
-                "value head": 2
+                "value head": 7
             }
         ],
         "UsaStruct_PrimOcc_AttrCount": [
             {
-                "key head": "Temporary Lodging",
-                "value head": 2
+                "key head": "Single Family Dwelling",
+                "value head": 7
             }
         ],
         "UsaStruct_SecOcc_AttrCount": [
             {
                 "key head": "No Data",
-                "value head": 2
+                "value head": 7
             }
         ],
-        "UsaStruct_FeatureCount": 2.0,
+        "UsaStruct_FeatureCount": 7.0,
         "UsaStruct_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.97,
-                    "dir": "S",
-                    "lat": "65\u00b0 06.776' N",
-                    "lng": "147\u00b0 46.550' W",
+                    "dist_mi": 0.67,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.875' N",
+                    "lng": "147\u00b0 41.177' W",
                     "OCC_CLS": "Residential",
-                    "PRIM_OCC": "Temporary Lodging"
+                    "PRIM_OCC": "Single Family Dwelling"
                 },
                 {
-                    "dist_mi": 0.99,
-                    "dir": "S",
-                    "lat": "65\u00b0 06.765' N",
-                    "lng": "147\u00b0 46.574' W",
+                    "dist_mi": 0.67,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.887' N",
+                    "lng": "147\u00b0 41.150' W",
                     "OCC_CLS": "Residential",
-                    "PRIM_OCC": "Temporary Lodging"
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.67,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.880' N",
+                    "lng": "147\u00b0 41.155' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.68,
+                    "dir": "SE",
+                    "lat": "65\u00b0 08.002' N",
+                    "lng": "147\u00b0 40.819' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.69,
+                    "dir": "ESE",
+                    "lat": "65\u00b0 08.004' N",
+                    "lng": "147\u00b0 40.795' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.69,
+                    "dir": "SE",
+                    "lat": "65\u00b0 07.846' N",
+                    "lng": "147\u00b0 41.198' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.73,
+                    "dir": "SSE",
+                    "lat": "65\u00b0 07.726' N",
+                    "lng": "147\u00b0 41.534' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
                 }
             ],
             "popped": 0,
@@ -11028,7 +11298,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:292063.552%2C1699063.517%2C3338,scale:8839",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:293330.088%2C1700420.976%2C3338,scale:17951",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": null,
@@ -13142,9 +13412,9 @@
         "wfigs_GISAcres": 20.239789041205466,
         "wfigs_MapMethod": "GPS-Walked",
         "wfigs_PolygonDateTime": 1750383181000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1750468386677.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750479698520.0,
         "wfigs_IrwinID": "{850AAF3D-6BF6-4D5D-8BC4-6DA0EC8A4629}",
-        "ReportedAcres": 75.0,
+        "ReportedAcres": 500.0,
         "HasError": 1.0,
         "DefaultLabel": "208-Bonnifield Creek, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
