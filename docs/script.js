@@ -94,6 +94,9 @@ const nested_tabulator = (cell, formatterParams, onRendered) => {
 //
 const list_autocomplete_multi_header_filter = (headerValue, rowValue, rowData, filterParams) => {
 
+    // convert null or undefined rowValue to empty string, because string methods get called on rowValue prior to return
+    rowValue = _null_to_empty(rowValue);
+
     // conditions under which every rowValue is considered valid (which effectively means unfiltering the column)
     if (headerValue === null || headerValue === undefined) {
         return true;
@@ -109,6 +112,8 @@ const list_autocomplete_multi_header_filter = (headerValue, rowValue, rowData, f
     // any row value that begins with the text of a header filter value (ignoring capitalization) is considered valid
     return (header_values.some(hv => rowValue.toLowerCase().startsWith(hv)));
 }
+
+const _null_to_empty = (value) => (value === null || value === undefined) ? "" : value;
 //
 // END HEADER FILTER FUNCTIONS
 
