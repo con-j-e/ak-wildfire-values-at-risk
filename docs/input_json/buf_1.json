@@ -14112,10 +14112,10 @@
         "AkFireNumber": "192",
         "wfigs_IncidentName": "Kechumstuk Creek",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": null,
-        "wfigs_MapMethod": null,
-        "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750468983550.0,
+        "wfigs_GISAcres": 4201.881890658828,
+        "wfigs_MapMethod": "Image Interpretation",
+        "wfigs_PolygonDateTime": 1750454393000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750469945000.0,
         "wfigs_IrwinID": "{6FD4BAE0-F1F2-4DA8-9760-A7A3FDD2587F}",
         "ReportedAcres": 5175.0,
         "HasError": 1.0,
@@ -14161,8 +14161,8 @@
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.59,
-                    "dir": "E",
+                    "dist_mi": 0.13,
+                    "dir": "NE",
                     "lat": "64\u00b0 01.093' N",
                     "lng": "142\u00b0 34.828' W",
                     "SiteCat": "Structure",
@@ -14171,8 +14171,8 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 0.6,
-                    "dir": "E",
+                    "dist_mi": 0.15,
+                    "dir": "NE",
                     "lat": "64\u00b0 01.105' N",
                     "lng": "142\u00b0 34.810' W",
                     "SiteCat": "Structure",
@@ -14192,26 +14192,18 @@
         "NtvAllot_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.17,
+                    "dist_mi": 0.04,
                     "dir": "E",
-                    "lat": "64\u00b0 01.158' N",
-                    "lng": "142\u00b0 35.644' W",
-                    "ALLOT_STATUS": "Selected",
-                    "ALLOT_ID": "FF019188B"
-                },
-                {
-                    "dist_mi": 0.55,
-                    "dir": "E",
-                    "lat": "64\u00b0 01.101' N",
-                    "lng": "142\u00b0 34.907' W",
+                    "lat": "64\u00b0 00.985' N",
+                    "lng": "142\u00b0 34.918' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "989F31218B"
                 },
                 {
-                    "dist_mi": 0.55,
-                    "dir": "E",
-                    "lat": "64\u00b0 01.145' N",
-                    "lng": "142\u00b0 34.903' W",
+                    "dist_mi": 0.11,
+                    "dir": "NE",
+                    "lat": "64\u00b0 01.101' N",
+                    "lng": "142\u00b0 34.907' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "989F24786C"
                 }
@@ -14228,7 +14220,11 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 13542.83
+                "value head": 12150.04
+            },
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 1318.5
             },
             {
                 "key head": "Alaska Regional Office",
@@ -14236,11 +14232,12 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 13542.83,
+            "BLM": 12150.04,
+            "State": 1318.5,
             "BIA": 79.97
         },
         "MgmtOption_AcreSum": {
-            "Limited": 13422.88,
+            "Limited": 13348.59,
             "Full": 199.93
         },
         "NpsStruct_Use_AttrCount": null,
@@ -14282,17 +14279,10 @@
         "SpecMgmt_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.18,
-                    "dir": "S",
-                    "lat": "63\u00b0 59.757' N",
-                    "lng": "142\u00b0 39.918' W",
-                    "ManagementConsiderations": "Contact Doyon, Limited Lands and Natural Resources Dept. for guidence."
-                },
-                {
-                    "dist_mi": 0.37,
-                    "dir": "E",
-                    "lat": "64\u00b0 00.670' N",
-                    "lng": "142\u00b0 35.494' W",
+                    "dist_mi": 0.13,
+                    "dir": "WSW",
+                    "lat": "63\u00b0 59.522' N",
+                    "lng": "142\u00b0 39.783' W",
                     "ManagementConsiderations": "Contact Doyon, Limited Lands and Natural Resources Dept. for guidence."
                 }
             ],
@@ -14311,7 +14301,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:551296.499%2C1609046.679%2C3338,scale:20946",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:552133.918%2C1607998.427%2C3338,scale:22251",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
@@ -14930,14 +14920,14 @@
         "AkFireRegion": "SWS",
         "AkFireNumber": "186",
         "wfigs_IncidentName": "Wabash Creek",
-        "FireActivityStatus": "Active",
+        "FireActivityStatus": "Controlled",
         "wfigs_GISAcres": 41.49775944000316,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1750371326000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1750434553880.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750470642507.0,
         "wfigs_IrwinID": "{CA9E31A5-5698-44D1-9DF7-9A21EB4B76F3}",
         "ReportedAcres": 41.5,
-        "HasError": 0.0,
+        "HasError": 1.0,
         "DefaultLabel": "186-Wabash Creek, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
         "AkMine_Active_AttrCount": null,
@@ -14952,8 +14942,8 @@
         "Runway_FeatureCount": null,
         "Runway_Locations": null,
         "Runway_Ownership_AttrCount": null,
-        "WeatherStation_FeatureCount": null,
-        "WeatherStation_Locations": null,
+        "WeatherStation_FeatureCount": -1.0,
+        "WeatherStation_Locations": "!error!",
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
         "Aksd_Protection_AttrCount": null,

@@ -9817,14 +9817,14 @@
         "AkFireNumber": "192",
         "wfigs_IncidentName": "Kechumstuk Creek",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": null,
-        "wfigs_MapMethod": null,
-        "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750468983550.0,
+        "wfigs_GISAcres": 4201.881890658828,
+        "wfigs_MapMethod": "Image Interpretation",
+        "wfigs_PolygonDateTime": 1750454393000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750469945000.0,
         "wfigs_IrwinID": "{6FD4BAE0-F1F2-4DA8-9760-A7A3FDD2587F}",
         "ReportedAcres": 5175.0,
         "HasError": 1.0,
-        "DefaultLabel": "192-Kechumstuk Creek, Reported Location",
+        "DefaultLabel": "192-Kechumstuk Creek, Perimeter",
         "AnalysisBufferMiles": 0.0,
         "AkMine_Active_AttrCount": null,
         "AkMine_Type_AttrCount": null,
@@ -9858,7 +9858,7 @@
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.05,
+                    "dist_mi": 0.3,
                     "dir": "Interior",
                     "lat": "64\u00b0 00.147' N",
                     "lng": "142\u00b0 37.439' W",
@@ -9871,10 +9871,25 @@
             "popped": 0,
             "cutoff": null
         },
-        "NtvAllot_Status_AcreSum": null,
-        "NtvAllot_FeatureCount": null,
-        "NtvAllot_Locations": null,
-        "NtvAllot_TotalAcres": null,
+        "NtvAllot_Status_AcreSum": {
+            "Selected": 50.67
+        },
+        "NtvAllot_FeatureCount": 1.0,
+        "NtvAllot_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "64\u00b0 00.886' N",
+                    "lng": "142\u00b0 35.011' W",
+                    "ALLOT_STATUS": "Selected",
+                    "ALLOT_ID": "FF019188B"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "NtvAllot_TotalAcres": 50.67,
         "ComsTwr_Type_AttrCount": null,
         "ComsTwr_FeatureCount": null,
         "ComsTwr_Locations": null,
@@ -9883,14 +9898,15 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 5166.69
+                "value head": 4201.88
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 5166.69
+            "BLM": 4201.88
         },
         "MgmtOption_AcreSum": {
-            "Limited": 5166.69
+            "Limited": 4151.21,
+            "Full": 50.67
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -9921,9 +9937,26 @@
         "Silviculture_FeatureCount": null,
         "Silviculture_Locations": null,
         "Silviculture_TotalAcres": null,
-        "SpecMgmt_Consid_AttrCount": null,
-        "SpecMgmt_FeatureCount": null,
-        "SpecMgmt_Locations": null,
+        "SpecMgmt_Consid_AttrCount": [
+            {
+                "key head": "Contact Doyon, Limited Lands and Natural Resources Dept. for guidence.",
+                "value head": 1
+            }
+        ],
+        "SpecMgmt_FeatureCount": 1.0,
+        "SpecMgmt_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "64\u00b0 00.545' N",
+                    "lng": "142\u00b0 35.091' W",
+                    "ManagementConsiderations": "Contact Doyon, Limited Lands and Natural Resources Dept. for guidence."
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "Railroad_NetDesc_FeetSum": null,
         "Railroad_Locations": null,
         "Railroad_TotalFeet": null,
@@ -9935,8 +9968,8 @@
         "WindTurb_FeatureCount": null,
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
-        "SpatialInfoType": " Reported Location",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:551296.499%2C1609046.679%2C3338,scale:12909",
+        "SpatialInfoType": " Perimeter",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:552111.079%2C1608101.264%2C3338,scale:14210",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
@@ -10555,14 +10588,14 @@
         "AkFireRegion": "SWS",
         "AkFireNumber": "186",
         "wfigs_IncidentName": "Wabash Creek",
-        "FireActivityStatus": "Active",
+        "FireActivityStatus": "Controlled",
         "wfigs_GISAcres": 41.49775944000316,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1750371326000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1750434553880.0,
+        "wfigs_ModifiedOnDateTime_dt": 1750470642507.0,
         "wfigs_IrwinID": "{CA9E31A5-5698-44D1-9DF7-9A21EB4B76F3}",
         "ReportedAcres": 41.5,
-        "HasError": 0.0,
+        "HasError": 1.0,
         "DefaultLabel": "186-Wabash Creek, Perimeter",
         "AnalysisBufferMiles": 0.0,
         "AkMine_Active_AttrCount": null,
@@ -10577,8 +10610,8 @@
         "Runway_FeatureCount": null,
         "Runway_Locations": null,
         "Runway_Ownership_AttrCount": null,
-        "WeatherStation_FeatureCount": null,
-        "WeatherStation_Locations": null,
+        "WeatherStation_FeatureCount": -1.0,
+        "WeatherStation_Locations": "!error!",
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
         "Aksd_Protection_AttrCount": null,
