@@ -37,6 +37,15 @@ async def get_recent_fires_info(dof_perims_locs_url: str, wfigs_locs_url: str, q
     query_timestamp = datetime.fromtimestamp(seconds, timezone.utc).strftime('%Y-%m-%d %H:%M:%S.%f')
 
     async with AsyncArcGISRequester() as requester:
+        
+        # Edge case observed on 20250620:
+            # If an input feature service remains down for an extended period,
+            # continually attempting to reprocess the accumulating AK WF VAR features that have had a query error during prior processing
+            # becomes extremely inefficient / potentially burdensome on external resources.
+            # Limiting the number of error-having features which can be reprocessed during each cycle to 5
+            # addresses this problem while still enabling the service to incrementally self-correct any information gaps that exist due to prior processing errors.
+        irwins_with_errors = list(irwins_with_errors)
+        irwins_with_errors = irwins_with_errors[:5]
 
         if irwins_with_errors:
             where_clause = f"""wfigs_ModifiedOnDateTime_dt >= timestamp '{query_timestamp}' OR

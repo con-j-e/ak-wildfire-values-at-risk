@@ -103,6 +103,16 @@ async def get_wfigs_updates(akdof_var_service_url: str, wfigs_locations_url: str
         # Using the >= operator should control for this.
         # The inefficiency of always requesting the latest updated fire from wfigs may be acceptable,
         # especially given the caching of json pickles that prevents the full process from executing with inputs that have already been seen.
+
+        # Edge case observed on 20250620:
+            # If an input feature service remains down for an extended period,
+            # continually attempting to reprocess the accumulating AK WF VAR features that have had a query error during prior processing
+            # becomes extremely inefficient / potentially burdensome on external resources.
+            # Limiting the number of error-having features which can be reprocessed during each cycle to 5
+            # addresses this problem while still enabling the service to incrementally self-correct any information gaps that exist due to prior processing errors.
+        irwins_with_errors = list(irwins_with_errors)
+        irwins_with_errors = irwins_with_errors[:5]
+
         if irwins_with_errors:
 
             wfigs_points_where = f"""DispatchCenterID IN ('AKACDC', 'AKCGFC', 'AKNFDC', 'AKTNFC', 'AKYFDC') AND
