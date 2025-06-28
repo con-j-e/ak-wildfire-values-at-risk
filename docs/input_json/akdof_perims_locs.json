@@ -5476,10 +5476,10 @@
         "AkFireNumber": "292",
         "wfigs_IncidentName": "Sand Lake",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 2855.807132263437,
+        "wfigs_GISAcres": 4891.921064592853,
         "wfigs_MapMethod": "Mixed Methods",
-        "wfigs_PolygonDateTime": 1750602820000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751058725007.0,
+        "wfigs_PolygonDateTime": 1750982400000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751082684000.0,
         "wfigs_IrwinID": "{327EDF97-9ACE-4A1C-B720-CC0163D5E36B}",
         "ReportedAcres": 2855.81,
         "HasError": 0.0,
@@ -5505,10 +5505,25 @@
         "Aksd_SiteCat_AttrCount": null,
         "Aksd_FeatureCount": null,
         "Aksd_Locations": null,
-        "NtvAllot_Status_AcreSum": null,
-        "NtvAllot_FeatureCount": null,
-        "NtvAllot_Locations": null,
-        "NtvAllot_TotalAcres": null,
+        "NtvAllot_Status_AcreSum": {
+            "Restricted": 9.84
+        },
+        "NtvAllot_FeatureCount": 1.0,
+        "NtvAllot_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "63\u00b0 46.015' N",
+                    "lng": "144\u00b0 16.224' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "989F12599A"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "NtvAllot_TotalAcres": 9.84,
         "ComsTwr_Type_AttrCount": null,
         "ComsTwr_FeatureCount": null,
         "ComsTwr_Locations": null,
@@ -5517,19 +5532,24 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 2746.59
+                "value head": 3289.93
             },
             {
                 "key head": "Dot Lake Native Corporation",
-                "value head": 109.21
+                "value head": 1592.15
+            },
+            {
+                "key head": "Alaska Regional Office",
+                "value head": 9.84
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 2746.59,
-            "ANCSA": 109.21
+            "State": 3289.93,
+            "ANCSA": 1592.15,
+            "BIA": 9.84
         },
         "MgmtOption_AcreSum": {
-            "Full": 2855.8
+            "Full": 4891.92
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -5575,7 +5595,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:473433.802%2C1570422.008%2C3338,scale:13924",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:474393.134%2C1570167.977%2C3338,scale:17795",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
@@ -6782,7 +6802,7 @@
         "wfigs_GISAcres": 11336.554664686648,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1750803900000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751005116000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751082532620.0,
         "wfigs_IrwinID": "{BE1874C8-7BD4-4D22-A087-A689F710ED78}",
         "ReportedAcres": 10526.33,
         "HasError": 0.0,
@@ -6882,17 +6902,17 @@
         "CpxName": "Roundabout Complex",
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
-        "PercentPerimeterToBeContained": 100.0,
+        "PercentPerimeterToBeContained": 0.0,
         "FireMgmtComplexity": null,
-        "IncidentComplexityLevel": null,
+        "IncidentComplexityLevel": "Type 4 Incident",
         "EstimatedCostToDate": 0.0,
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "ANC",
         "POOJurisdictionalUnit": "AKDYN",
-        "ICS209ReportDateTime": 1750914723000.0,
-        "ICS209ReportStatus": null,
-        "IncidentManagementOrganization": null
+        "ICS209ReportDateTime": 1751082532000.0,
+        "ICS209ReportStatus": "F",
+        "IncidentManagementOrganization": "Type 4 IC"
     },
     {
         "AkFireRegion": "TAS",
@@ -7017,7 +7037,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750914725797.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751082227653.0,
         "wfigs_IrwinID": "{4644F225-E1CD-4510-98B1-3B5FA0872412}",
         "ReportedAcres": 1000.0,
         "HasError": 0.0,
@@ -7112,17 +7132,17 @@
         "CpxName": "Roundabout Complex",
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
-        "PercentPerimeterToBeContained": 100.0,
+        "PercentPerimeterToBeContained": 0.0,
         "FireMgmtComplexity": null,
-        "IncidentComplexityLevel": null,
+        "IncidentComplexityLevel": "Type 4 Incident",
         "EstimatedCostToDate": 0.0,
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "ANC",
         "POOJurisdictionalUnit": "AKDYN",
-        "ICS209ReportDateTime": 1750914725000.0,
-        "ICS209ReportStatus": null,
-        "IncidentManagementOrganization": null
+        "ICS209ReportDateTime": 1751082227000.0,
+        "ICS209ReportStatus": "F",
+        "IncidentManagementOrganization": "Type 4 IC"
     },
     {
         "AkFireRegion": "TAS",
@@ -13753,7 +13773,7 @@
         "wfigs_GISAcres": 3288.8183975313063,
         "wfigs_MapMethod": "GPS-Flight",
         "wfigs_PolygonDateTime": 1750880766000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751081405117.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751081913297.0,
         "wfigs_IrwinID": "{5F27DEF6-F74A-49F7-9F6D-677AED2F4ED1}",
         "ReportedAcres": 3800.0,
         "HasError": 0.0,
@@ -14910,10 +14930,10 @@
         "AkFireNumber": "220",
         "wfigs_IncidentName": "Twelvemile lake",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 14420.216051789806,
+        "wfigs_GISAcres": 18744.70012756275,
         "wfigs_MapMethod": "Mixed Methods",
-        "wfigs_PolygonDateTime": 1750631615000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751047372973.0,
+        "wfigs_PolygonDateTime": 1750982400000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751082684000.0,
         "wfigs_IrwinID": "{D0395AD0-94CF-4638-B640-7E7B40FEDB22}",
         "ReportedAcres": 14420.21,
         "HasError": 0.0,
@@ -14951,20 +14971,20 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 13713.51
+                "value head": 17089.18
             },
             {
                 "key head": "Doyon, Limited",
-                "value head": 706.69
+                "value head": 1655.5
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 13713.51,
-            "ANCSA": 706.69
+            "State": 17089.18,
+            "ANCSA": 1655.5
         },
         "MgmtOption_AcreSum": {
-            "Full": 13573.16,
-            "Critical": 847.04
+            "Full": 17770.98,
+            "Critical": 973.71
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -15010,7 +15030,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:463832.279%2C1579787.313%2C3338,scale:32951",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:464442.955%2C1579933.276%2C3338,scale:38891",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
@@ -18011,7 +18031,7 @@
         "wfigs_GISAcres": 1104.3159745475782,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1750800713000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1750904572353.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751082676027.0,
         "wfigs_IrwinID": "{DFE606C6-D758-489A-9477-D34C3AA01A0E}",
         "ReportedAcres": 1104.0,
         "HasError": 0.0,
@@ -18105,18 +18125,18 @@
         "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:81112.214%2C1564267.762%2C3338,scale:9258",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
-        "PercentContained": null,
-        "PercentPerimeterToBeContained": null,
+        "PercentContained": 0.0,
+        "PercentPerimeterToBeContained": 0.0,
         "FireMgmtComplexity": null,
-        "IncidentComplexityLevel": null,
-        "EstimatedCostToDate": null,
+        "IncidentComplexityLevel": "Type 5 Incident",
+        "EstimatedCostToDate": 0.0,
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "BLM",
         "POOJurisdictionalUnit": "AKCYD",
-        "ICS209ReportDateTime": null,
-        "ICS209ReportStatus": null,
-        "IncidentManagementOrganization": null
+        "ICS209ReportDateTime": 1751082676000.0,
+        "ICS209ReportStatus": "I",
+        "IncidentManagementOrganization": "Type 5 IC"
     },
     {
         "AkFireRegion": "FAS",
@@ -20313,7 +20333,7 @@
         "wfigs_GISAcres": 582.940428,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1750542480000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1750986394000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751082545167.0,
         "wfigs_IrwinID": "{6ACDFBDF-2F82-4B2C-B55B-43219D237B7E}",
         "ReportedAcres": 583.0,
         "HasError": 0.0,
@@ -20407,18 +20427,18 @@
         "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:285610.36%2C1720892.155%2C3338,scale:5873",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
-        "PercentContained": null,
-        "PercentPerimeterToBeContained": null,
+        "PercentContained": 0.0,
+        "PercentPerimeterToBeContained": 0.0,
         "FireMgmtComplexity": null,
-        "IncidentComplexityLevel": null,
-        "EstimatedCostToDate": null,
+        "IncidentComplexityLevel": "Type 5 Incident",
+        "EstimatedCostToDate": 0.0,
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "BLM",
         "POOJurisdictionalUnit": "AKEID",
-        "ICS209ReportDateTime": null,
-        "ICS209ReportStatus": null,
-        "IncidentManagementOrganization": null
+        "ICS209ReportDateTime": 1751082545000.0,
+        "ICS209ReportStatus": "I",
+        "IncidentManagementOrganization": "Type 5 IC"
     },
     {
         "AkFireRegion": "SWS",
@@ -22182,7 +22202,7 @@
         "wfigs_GISAcres": 1546.8025839156294,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1750802861000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1750899379450.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751082448520.0,
         "wfigs_IrwinID": "{8F191A9C-84DC-42B8-8C9F-0651113687AD}",
         "ReportedAcres": 1547.0,
         "HasError": 0.0,
@@ -22276,18 +22296,18 @@
         "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:24802.295%2C1695470.413%2C3338,scale:11062",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
-        "PercentContained": null,
-        "PercentPerimeterToBeContained": null,
+        "PercentContained": 0.0,
+        "PercentPerimeterToBeContained": 0.0,
         "FireMgmtComplexity": null,
-        "IncidentComplexityLevel": null,
-        "EstimatedCostToDate": null,
+        "IncidentComplexityLevel": "Type 5 Incident",
+        "EstimatedCostToDate": 0.0,
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": null,
-        "ICS209ReportStatus": null,
-        "IncidentManagementOrganization": null
+        "ICS209ReportDateTime": 1751082448000.0,
+        "ICS209ReportStatus": "I",
+        "IncidentManagementOrganization": "Type 5 IC"
     },
     {
         "AkFireRegion": "UYD",
