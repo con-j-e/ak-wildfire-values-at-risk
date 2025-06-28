@@ -17558,10 +17558,10 @@
         "AkFireNumber": "297",
         "wfigs_IncidentName": "Yellow",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 852.0574481693855,
+        "wfigs_GISAcres": 1471.1085493579503,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1750887447000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1750986970177.0,
+        "wfigs_PolygonDateTime": 1751059617000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751138966000.0,
         "wfigs_IrwinID": "{B1FC52FF-4743-4BA3-BC6F-D3A6E8C43BBA}",
         "ReportedAcres": 852.0,
         "HasError": 0.0,
@@ -17587,24 +17587,38 @@
             {
                 "key head": "Critical",
                 "value head": 1
+            },
+            {
+                "key head": "No Protection",
+                "value head": 1
             }
         ],
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
-                "value head": 1
+                "value head": 2
             }
         ],
-        "Aksd_FeatureCount": 1.0,
+        "Aksd_FeatureCount": 2.0,
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 4.8,
-                    "dir": "NNW",
+                    "dist_mi": 3.63,
+                    "dir": "NW",
                     "lat": "65\u00b0 48.268' N",
                     "lng": "146\u00b0 38.772' W",
                     "SiteCat": "Structure",
                     "Protection": "Critical",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 4.78,
+                    "dir": "N",
+                    "lat": "65\u00b0 49.750' N",
+                    "lng": "146\u00b0 34.916' W",
+                    "SiteCat": "Structure",
+                    "Protection": "No Protection",
                     "MainStructs": "No Data",
                     "OthrStructs": "No Data"
                 }
@@ -17624,11 +17638,11 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 54472.44
+                "value head": 58419.0
             },
             {
                 "key head": "Yukon Flats National Wildlife Refuge",
-                "value head": 12999.16
+                "value head": 18009.33
             },
             {
                 "key head": "Alaska Department of Natural Resources",
@@ -17636,13 +17650,13 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 54472.44,
-            "USFWS": 12999.16,
+            "BLM": 58419.0,
+            "USFWS": 18009.33,
             "Private": 17.99
         },
         "MgmtOption_AcreSum": {
-            "Modified (Jul 10)": 66810.58,
-            "Limited": 679.01
+            "Modified (Jul 10)": 71898.45,
+            "Limited": 4547.86
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -17673,9 +17687,26 @@
         "Silviculture_FeatureCount": null,
         "Silviculture_Locations": null,
         "Silviculture_TotalAcres": null,
-        "SpecMgmt_Consid_AttrCount": null,
-        "SpecMgmt_FeatureCount": null,
-        "SpecMgmt_Locations": null,
+        "SpecMgmt_Consid_AttrCount": [
+            {
+                "key head": "No Data",
+                "value head": 1
+            }
+        ],
+        "SpecMgmt_FeatureCount": 1.0,
+        "SpecMgmt_Locations": {
+            "features": [
+                {
+                    "dist_mi": 4.06,
+                    "dir": "N",
+                    "lat": "65\u00b0 49.082' N",
+                    "lng": "146\u00b0 33.271' W",
+                    "ManagementConsiderations": "No Data"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "Railroad_NetDesc_FeetSum": null,
         "Railroad_Locations": null,
         "Railroad_TotalFeet": null,
@@ -17688,7 +17719,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 5 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:340871.77%2C1771537.266%2C3338,scale:47124",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:340564.391%2C1772428.253%2C3338,scale:51327",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -33136,10 +33167,10 @@
         "AkFireNumber": "249",
         "wfigs_IncidentName": "Takoma",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 2081.86,
+        "wfigs_GISAcres": 2790.302758424035,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1750537500000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751082861817.0,
+        "wfigs_PolygonDateTime": 1751059626000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751137677000.0,
         "wfigs_IrwinID": "{20B4D3E8-BA9A-405C-BF75-DA23EA9C704F}",
         "ReportedAcres": 2081.86,
         "HasError": 0.0,
@@ -33177,19 +33208,19 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 51529.52
+                "value head": 51634.16
             },
             {
                 "key head": "Yukon-Charley Rivers National Preserve",
-                "value head": 30098.3
+                "value head": 33572.57
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 51529.52,
-            "NPS": 30098.3
+            "State": 51634.16,
+            "NPS": 33572.57
         },
         "MgmtOption_AcreSum": {
-            "Limited": 81627.82
+            "Limited": 85206.73
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -33235,7 +33266,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 5 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:466991.597%2C1754504.504%2C3338,scale:54447",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:467363.611%2C1754414.86%2C3338,scale:55705",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
