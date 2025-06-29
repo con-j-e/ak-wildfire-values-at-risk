@@ -4433,9 +4433,9 @@
         "wfigs_GISAcres": 440.31710579198835,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1751038243000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751181583450.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751222652590.0,
         "wfigs_IrwinID": "{6CB8BD07-B9C0-4E03-9F8E-FE982D5CF21E}",
-        "ReportedAcres": 662.0,
+        "ReportedAcres": 440.32,
         "HasError": 0.0,
         "DefaultLabel": "319-Monte Cristo Creek, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
@@ -12289,9 +12289,9 @@
         "wfigs_GISAcres": 2797.5,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751148000000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751220247000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751222902577.0,
         "wfigs_IrwinID": "{A5FFC9D8-6F8D-453F-A4E3-D52362D53216}",
-        "ReportedAcres": 2803.78,
+        "ReportedAcres": 2797.49,
         "HasError": 0.0,
         "DefaultLabel": "268-Aggie Creek, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
@@ -15020,9 +15020,9 @@
         "wfigs_GISAcres": 11124.0,
         "wfigs_MapMethod": "Remote Sensing Derived",
         "wfigs_PolygonDateTime": 1750678649000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751175865040.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751222538877.0,
         "wfigs_IrwinID": "{9ABAD0E9-E2E8-492F-B34C-0422582007BA}",
-        "ReportedAcres": 11929.2,
+        "ReportedAcres": 11871.47,
         "HasError": 0.0,
         "DefaultLabel": "246-Saint George Creek, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
@@ -17315,9 +17315,9 @@
         "wfigs_GISAcres": 27943.0,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1750973452000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751175917250.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751222833747.0,
         "wfigs_IrwinID": "{058AD797-B4F7-4CB5-B34F-7267D980BAA9}",
-        "ReportedAcres": 27943.25,
+        "ReportedAcres": 27252.07,
         "HasError": 0.0,
         "DefaultLabel": "237-Bear Creek, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
@@ -17646,7 +17646,7 @@
         "Runway_Ownership_AttrCount": null,
         "WeatherStation_FeatureCount": null,
         "WeatherStation_Locations": null,
-        "Aksd_MainStruct_AttrSum": 54.0,
+        "Aksd_MainStruct_AttrSum": 55.0,
         "Aksd_OtherStruct_AttrSum": 63.0,
         "Aksd_Protection_AttrCount": [
             {
@@ -17659,7 +17659,7 @@
             },
             {
                 "key head": "Unknown",
-                "value head": 24
+                "value head": 26
             },
             {
                 "key head": "No Data",
@@ -17669,14 +17669,14 @@
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
-                "value head": 107
+                "value head": 109
             },
             {
                 "key head": "Other",
                 "value head": 6
             }
         ],
-        "Aksd_FeatureCount": 113.0,
+        "Aksd_FeatureCount": 115.0,
         "Aksd_Locations": {
             "features": [
                 {
@@ -17692,20 +17692,20 @@
                 {
                     "dist_mi": 0.02,
                     "dir": "ENE",
-                    "lat": "64\u00b0 05.618' N",
-                    "lng": "149\u00b0 14.713' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Full",
-                    "MainStructs": 1.0,
-                    "OthrStructs": 1.0
-                },
-                {
-                    "dist_mi": 0.02,
-                    "dir": "ENE",
                     "lat": "64\u00b0 08.007' N",
                     "lng": "149\u00b0 15.214' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.02,
+                    "dir": "SSW",
+                    "lat": "64\u00b0 06.362' N",
+                    "lng": "149\u00b0 15.631' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Unknown",
                     "MainStructs": "No Data",
                     "OthrStructs": "No Data"
                 },
@@ -17721,43 +17721,23 @@
                 },
                 {
                     "dist_mi": 0.02,
-                    "dir": "SSW",
-                    "lat": "64\u00b0 06.362' N",
-                    "lng": "149\u00b0 15.631' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Unknown",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 0.03,
-                    "dir": "NNW",
-                    "lat": "64\u00b0 05.778' N",
-                    "lng": "149\u00b0 15.525' W",
+                    "dir": "ENE",
+                    "lat": "64\u00b0 05.618' N",
+                    "lng": "149\u00b0 14.713' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
                     "MainStructs": 1.0,
-                    "OthrStructs": 4.0
+                    "OthrStructs": 1.0
                 },
                 {
                     "dist_mi": 0.03,
-                    "dir": "S",
-                    "lat": "64\u00b0 05.785' N",
-                    "lng": "149\u00b0 15.022' W",
+                    "dir": "ENE",
+                    "lat": "64\u00b0 06.416' N",
+                    "lng": "149\u00b0 15.781' W",
                     "SiteCat": "Structure",
                     "Protection": "Undesignated",
                     "MainStructs": 1.0,
-                    "OthrStructs": 2.0
-                },
-                {
-                    "dist_mi": 0.03,
-                    "dir": "E",
-                    "lat": "64\u00b0 05.825' N",
-                    "lng": "149\u00b0 14.881' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Undesignated",
-                    "MainStructs": 1.0,
-                    "OthrStructs": 3.0
+                    "OthrStructs": 6.0
                 },
                 {
                     "dist_mi": 0.03,
@@ -17771,13 +17751,33 @@
                 },
                 {
                     "dist_mi": 0.03,
-                    "dir": "ENE",
-                    "lat": "64\u00b0 06.416' N",
-                    "lng": "149\u00b0 15.781' W",
+                    "dir": "E",
+                    "lat": "64\u00b0 05.825' N",
+                    "lng": "149\u00b0 14.881' W",
                     "SiteCat": "Structure",
                     "Protection": "Undesignated",
                     "MainStructs": 1.0,
-                    "OthrStructs": 6.0
+                    "OthrStructs": 3.0
+                },
+                {
+                    "dist_mi": 0.03,
+                    "dir": "S",
+                    "lat": "64\u00b0 05.785' N",
+                    "lng": "149\u00b0 15.022' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
+                    "MainStructs": 1.0,
+                    "OthrStructs": 2.0
+                },
+                {
+                    "dist_mi": 0.03,
+                    "dir": "NNW",
+                    "lat": "64\u00b0 05.778' N",
+                    "lng": "149\u00b0 15.525' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": 1.0,
+                    "OthrStructs": 4.0
                 },
                 {
                     "dist_mi": 0.04,
@@ -17821,13 +17821,13 @@
                 },
                 {
                     "dist_mi": 0.09,
-                    "dir": "NW",
-                    "lat": "64\u00b0 10.673' N",
-                    "lng": "149\u00b0 17.934' W",
+                    "dir": "ENE",
+                    "lat": "64\u00b0 06.746' N",
+                    "lng": "149\u00b0 14.520' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
-                    "MainStructs": 1.0,
-                    "OthrStructs": 2.0
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
                 },
                 {
                     "dist_mi": 0.09,
@@ -17842,22 +17842,22 @@
                 {
                     "dist_mi": 0.09,
                     "dir": "ENE",
-                    "lat": "64\u00b0 06.746' N",
-                    "lng": "149\u00b0 14.520' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Full",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 0.09,
-                    "dir": "ENE",
                     "lat": "64\u00b0 05.544' N",
                     "lng": "149\u00b0 14.447' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
                     "MainStructs": 1.0,
                     "OthrStructs": 4.0
+                },
+                {
+                    "dist_mi": 0.09,
+                    "dir": "NW",
+                    "lat": "64\u00b0 10.673' N",
+                    "lng": "149\u00b0 17.934' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": 1.0,
+                    "OthrStructs": 2.0
                 },
                 {
                     "dist_mi": 0.1,
@@ -17871,21 +17871,21 @@
                 },
                 {
                     "dist_mi": 0.11,
-                    "dir": "ENE",
-                    "lat": "64\u00b0 06.687' N",
-                    "lng": "149\u00b0 14.398' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Unknown",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 0.11,
                     "dir": "SSW",
                     "lat": "64\u00b0 10.777' N",
                     "lng": "149\u00b0 25.050' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.11,
+                    "dir": "ENE",
+                    "lat": "64\u00b0 06.687' N",
+                    "lng": "149\u00b0 14.398' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Unknown",
                     "MainStructs": "No Data",
                     "OthrStructs": "No Data"
                 },
@@ -17921,16 +17921,6 @@
                 },
                 {
                     "dist_mi": 0.14,
-                    "dir": "N",
-                    "lat": "64\u00b0 05.480' N",
-                    "lng": "149\u00b0 14.273' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Undesignated",
-                    "MainStructs": 1.0,
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 0.14,
                     "dir": "SSW",
                     "lat": "64\u00b0 05.627' N",
                     "lng": "149\u00b0 14.262' W",
@@ -17938,6 +17928,16 @@
                     "Protection": "Full",
                     "MainStructs": 2.0,
                     "OthrStructs": 8.0
+                },
+                {
+                    "dist_mi": 0.14,
+                    "dir": "E",
+                    "lat": "64\u00b0 05.653' N",
+                    "lng": "149\u00b0 14.433' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Unknown",
+                    "MainStructs": 1.0,
+                    "OthrStructs": 2.0
                 }
             ],
             "popped": 263,
@@ -20424,9 +20424,9 @@
         "wfigs_GISAcres": 3866.31,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751148000000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751220237000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751222754650.0,
         "wfigs_IrwinID": "{3DC21EB7-7323-497D-B5AB-BFB16EC65599}",
-        "ReportedAcres": 3408.0,
+        "ReportedAcres": 3866.3,
         "HasError": 0.0,
         "DefaultLabel": "223-Himalaya Road, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
@@ -26108,7 +26108,7 @@
         "wfigs_GISAcres": 25.000007436977114,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1750305886000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751220672390.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751223117680.0,
         "wfigs_IrwinID": "{EB4B2416-8BE7-4AFB-9700-BBD36D052F31}",
         "ReportedAcres": 25.0,
         "HasError": 0.0,
