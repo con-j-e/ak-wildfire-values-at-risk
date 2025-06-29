@@ -17012,10 +17012,10 @@
         "AkFireNumber": "238",
         "wfigs_IncidentName": "Bonanza Creek",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 2294.968498712344,
+        "wfigs_GISAcres": 2623.4546384098826,
         "wfigs_MapMethod": "Mixed Methods",
-        "wfigs_PolygonDateTime": 1751158956000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751229142260.0,
+        "wfigs_PolygonDateTime": 1751147136000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751234404000.0,
         "wfigs_IrwinID": "{2E74E7EC-3BE4-4C52-89C0-6E3CA1E4D999}",
         "ReportedAcres": 2294.96,
         "HasError": 0.0,
@@ -17026,10 +17026,33 @@
         "AkMine_Note_AttrCount": null,
         "AkMine_FeatureCount": null,
         "AkMine_Locations": null,
-        "AkPowerLine_CondType_FeetSum": null,
-        "AkPowerLine_Voltage_FeetSum": null,
-        "AkPowerLine_Locations": null,
-        "AkPowerLine_TotalFeet": null,
+        "AkPowerLine_CondType_FeetSum": [
+            {
+                "key head": "Transmission",
+                "value head": 3504
+            }
+        ],
+        "AkPowerLine_Voltage_FeetSum": [
+            {
+                "key head": "138",
+                "value head": 3504
+            }
+        ],
+        "AkPowerLine_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.88,
+                    "dir": "NW",
+                    "lat": "64\u00b0 42.854' N",
+                    "lng": "148\u00b0 28.926' W",
+                    "VOLTAGE": "138",
+                    "COND_TYPE": "Transmission"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "AkPowerLine_TotalFeet": 3504.0,
         "Runway_FeatureCount": null,
         "Runway_Locations": null,
         "Runway_Ownership_AttrCount": null,
@@ -17053,14 +17076,18 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 11155.5
+                "value head": 12354.03
+            },
+            {
+                "key head": "Alaska Department of Transportation and Public Facilities",
+                "value head": 7.22
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 11155.5
+            "State": 12361.25
         },
         "MgmtOption_AcreSum": {
-            "Full": 11155.5
+            "Full": 12361.25
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -17068,33 +17095,24 @@
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
         "Parcel_BuildingValue_AttrSum": null,
-        "Parcel_FeatureCount": 28.0,
-        "Parcel_LandValue_AttrSum": 6048032.0,
+        "Parcel_FeatureCount": 29.0,
+        "Parcel_LandValue_AttrSum": 8728800.0,
         "Parcel_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.01,
-                    "dir": "W",
-                    "lat": "64\u00b0 41.282' N",
-                    "lng": "148\u00b0 26.848' W",
-                    "property_type": "Tract",
-                    "property_use": "Exempt ",
-                    "total_value": 3508620.0
-                },
-                {
-                    "dist_mi": 0.11,
-                    "dir": "SSW",
+                    "dist_mi": 0.0,
+                    "dir": "S",
                     "lat": "64\u00b0 40.979' N",
-                    "lng": "148\u00b0 26.416' W",
+                    "lng": "148\u00b0 26.438' W",
                     "property_type": "Government Lot",
                     "property_use": "Exempt ",
                     "total_value": 16535.0
                 },
                 {
-                    "dist_mi": 0.12,
-                    "dir": "S",
+                    "dist_mi": 0.02,
+                    "dir": "E",
                     "lat": "64\u00b0 41.412' N",
-                    "lng": "148\u00b0 25.381' W",
+                    "lng": "148\u00b0 25.408' W",
                     "property_type": "Government Lot",
                     "property_use": "Exempt ",
                     "total_value": 20190.0
@@ -17109,13 +17127,13 @@
                     "total_value": 20205.0
                 },
                 {
-                    "dist_mi": 0.31,
+                    "dist_mi": 0.25,
                     "dir": "S",
-                    "lat": "64\u00b0 41.412' N",
-                    "lng": "148\u00b0 24.396' W",
+                    "lat": "64\u00b0 40.762' N",
+                    "lng": "148\u00b0 26.437' W",
                     "property_type": "Government Lot",
                     "property_use": "Exempt ",
-                    "total_value": 20165.0
+                    "total_value": 16610.0
                 },
                 {
                     "dist_mi": 0.33,
@@ -17129,23 +17147,23 @@
                 {
                     "dist_mi": 0.34,
                     "dir": "S",
-                    "lat": "64\u00b0 40.762' N",
-                    "lng": "148\u00b0 26.414' W",
+                    "lat": "64\u00b0 41.412' N",
+                    "lng": "148\u00b0 23.890' W",
                     "property_type": "Government Lot",
                     "property_use": "Exempt ",
-                    "total_value": 16610.0
+                    "total_value": 20165.0
                 },
                 {
-                    "dist_mi": 0.37,
-                    "dir": "SSE",
+                    "dist_mi": 0.36,
+                    "dir": "S",
                     "lat": "64\u00b0 41.412' N",
-                    "lng": "148\u00b0 23.384' W",
+                    "lng": "148\u00b0 23.166' W",
                     "property_type": "Government Lot",
                     "property_use": "Exempt ",
                     "total_value": 20095.0
                 },
                 {
-                    "dist_mi": 0.44,
+                    "dist_mi": 0.37,
                     "dir": "SE",
                     "lat": "64\u00b0 41.195' N",
                     "lng": "148\u00b0 24.900' W",
@@ -17154,7 +17172,7 @@
                     "total_value": 240000.0
                 },
                 {
-                    "dist_mi": 0.49,
+                    "dist_mi": 0.38,
                     "dir": "SSE",
                     "lat": "64\u00b0 41.412' N",
                     "lng": "148\u00b0 22.878' W",
@@ -17163,25 +17181,34 @@
                     "total_value": 20090.0
                 },
                 {
-                    "dist_mi": 0.58,
+                    "dist_mi": 0.49,
+                    "dir": "W",
+                    "lat": "64\u00b0 42.278' N",
+                    "lng": "148\u00b0 28.873' W",
+                    "property_type": "Tract",
+                    "property_use": "Exempt ",
+                    "total_value": 7721791.0
+                },
+                {
+                    "dist_mi": 0.5,
                     "dir": "S",
                     "lat": "64\u00b0 40.546' N",
-                    "lng": "148\u00b0 26.413' W",
+                    "lng": "148\u00b0 26.437' W",
                     "property_type": "Government Lot",
                     "property_use": "Exempt ",
                     "total_value": 16680.0
                 },
                 {
-                    "dist_mi": 0.58,
+                    "dist_mi": 0.5,
                     "dir": "S",
                     "lat": "64\u00b0 40.546' N",
-                    "lng": "148\u00b0 26.241' W",
+                    "lng": "148\u00b0 26.413' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 160000.0
                 },
                 {
-                    "dist_mi": 0.61,
+                    "dist_mi": 0.52,
                     "dir": "SE",
                     "lat": "64\u00b0 41.412' N",
                     "lng": "148\u00b0 22.372' W",
@@ -17190,7 +17217,16 @@
                     "total_value": 20110.0
                 },
                 {
-                    "dist_mi": 0.7,
+                    "dist_mi": 0.62,
+                    "dir": "SSE",
+                    "lat": "64\u00b0 41.195' N",
+                    "lng": "148\u00b0 22.877' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 240000.0
+                },
+                {
+                    "dist_mi": 0.66,
                     "dir": "SE",
                     "lat": "64\u00b0 41.412' N",
                     "lng": "148\u00b0 21.867' W",
@@ -17199,13 +17235,13 @@
                     "total_value": 20130.0
                 },
                 {
-                    "dist_mi": 0.72,
-                    "dir": "SE",
-                    "lat": "64\u00b0 41.195' N",
-                    "lng": "148\u00b0 22.877' W",
-                    "property_type": "Tax Lot",
+                    "dist_mi": 0.75,
+                    "dir": "S",
+                    "lat": "64\u00b0 40.329' N",
+                    "lng": "148\u00b0 26.437' W",
+                    "property_type": "Government Lot",
                     "property_use": "Exempt ",
-                    "total_value": 240000.0
+                    "total_value": 16745.0
                 },
                 {
                     "dist_mi": 0.76,
@@ -17217,15 +17253,6 @@
                     "total_value": 20150.0
                 },
                 {
-                    "dist_mi": 0.8,
-                    "dir": "W",
-                    "lat": "64\u00b0 42.278' N",
-                    "lng": "148\u00b0 28.873' W",
-                    "property_type": "Tract",
-                    "property_use": "Exempt ",
-                    "total_value": 7721791.0
-                },
-                {
                     "dist_mi": 0.81,
                     "dir": "SSE",
                     "lat": "64\u00b0 41.412' N",
@@ -17235,22 +17262,31 @@
                     "total_value": 320000.0
                 },
                 {
-                    "dist_mi": 0.83,
-                    "dir": "S",
-                    "lat": "64\u00b0 40.329' N",
-                    "lng": "148\u00b0 26.411' W",
-                    "property_type": "Government Lot",
-                    "property_use": "Exempt ",
-                    "total_value": 16745.0
-                },
-                {
-                    "dist_mi": 0.86,
+                    "dist_mi": 0.82,
                     "dir": "SE",
                     "lat": "64\u00b0 40.546' N",
                     "lng": "148\u00b0 24.896' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 200000.0
+                },
+                {
+                    "dist_mi": 0.85,
+                    "dir": "N",
+                    "lat": "64\u00b0 44.010' N",
+                    "lng": "148\u00b0 19.620' W",
+                    "property_type": "Tract",
+                    "property_use": "Exempt ",
+                    "total_value": 2580480.0
+                },
+                {
+                    "dist_mi": 1.0,
+                    "dir": "S",
+                    "lat": "64\u00b0 40.113' N",
+                    "lng": "148\u00b0 26.437' W",
+                    "property_type": "Government Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 16805.0
                 }
             ],
             "popped": 0,
@@ -17259,25 +17295,25 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Tract",
-                "value head": 9594.12
+                "value head": 10703.7
             },
             {
                 "key head": "Tax Lot",
-                "value head": 934.02
+                "value head": 1017.56
             },
             {
                 "key head": "Government Lot",
-                "value head": 627.35
+                "value head": 640.0
             }
         ],
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Exempt ",
-                "value head": 11155.5
+                "value head": 12361.25
             }
         ],
-        "Parcel_TotalAcres": 11155.5,
-        "Parcel_TotalValue_AttrSum": 6048032.0,
+        "Parcel_TotalAcres": 12361.25,
+        "Parcel_TotalValue_AttrSum": 8728800.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -17292,26 +17328,17 @@
         "Silviculture_Status_AcreSum": [
             {
                 "key head": "Terminated",
-                "value head": 575.25
+                "value head": 655.76
             },
             {
                 "key head": "Proposed",
-                "value head": 145.67
+                "value head": 158.82
             }
         ],
-        "Silviculture_TotalValue_AttrSum": 144679.0,
-        "Silviculture_FeatureCount": 22.0,
+        "Silviculture_TotalValue_AttrSum": 166673.0,
+        "Silviculture_FeatureCount": 27.0,
         "Silviculture_Locations": {
             "features": [
-                {
-                    "dist_mi": 0.02,
-                    "dir": "WNW",
-                    "lat": "64\u00b0 43.072' N",
-                    "lng": "148\u00b0 19.943' W",
-                    "STATUS": "Terminated",
-                    "TOTAL_VALUE": 1510.39,
-                    "SALE_NAME": " "
-                },
                 {
                     "dist_mi": 0.02,
                     "dir": "SE",
@@ -17322,22 +17349,31 @@
                     "SALE_NAME": "Oh My #2"
                 },
                 {
-                    "dist_mi": 0.03,
-                    "dir": "S",
-                    "lat": "64\u00b0 41.649' N",
-                    "lng": "148\u00b0 24.430' W",
+                    "dist_mi": 0.05,
+                    "dir": "SE",
+                    "lat": "64\u00b0 41.565' N",
+                    "lng": "148\u00b0 25.110' W",
                     "STATUS": "Terminated",
                     "TOTAL_VALUE": 43606.16,
                     "SALE_NAME": "Oh My Birch West"
                 },
                 {
-                    "dist_mi": 0.11,
+                    "dist_mi": 0.06,
                     "dir": "SE",
-                    "lat": "64\u00b0 42.277' N",
-                    "lng": "148\u00b0 20.319' W",
+                    "lat": "64\u00b0 42.207' N",
+                    "lng": "148\u00b0 20.526' W",
                     "STATUS": "Terminated",
                     "TOTAL_VALUE": 35844.96,
                     "SALE_NAME": "Bonanza Bug Kill #3"
+                },
+                {
+                    "dist_mi": 0.11,
+                    "dir": "E",
+                    "lat": "64\u00b0 42.804' N",
+                    "lng": "148\u00b0 19.475' W",
+                    "STATUS": "Terminated",
+                    "TOTAL_VALUE": 11274.96,
+                    "SALE_NAME": "Bonanza Bug Kill #4"
                 },
                 {
                     "dist_mi": 0.12,
@@ -17349,15 +17385,6 @@
                     "SALE_NAME": "Oh My #2"
                 },
                 {
-                    "dist_mi": 0.13,
-                    "dir": "E",
-                    "lat": "64\u00b0 42.804' N",
-                    "lng": "148\u00b0 19.475' W",
-                    "STATUS": "Terminated",
-                    "TOTAL_VALUE": 11274.96,
-                    "SALE_NAME": "Bonanza Bug Kill #4"
-                },
-                {
                     "dist_mi": 0.29,
                     "dir": "SE",
                     "lat": "64\u00b0 41.898' N",
@@ -17367,7 +17394,7 @@
                     "SALE_NAME": "Bonanza Aspen"
                 },
                 {
-                    "dist_mi": 0.5,
+                    "dist_mi": 0.46,
                     "dir": "SSE",
                     "lat": "64\u00b0 40.617' N",
                     "lng": "148\u00b0 26.052' W",
@@ -17376,13 +17403,67 @@
                     "SALE_NAME": "Bonanza Creek Spruce South"
                 },
                 {
-                    "dist_mi": 0.65,
-                    "dir": "NE",
+                    "dist_mi": 0.47,
+                    "dir": "ENE",
                     "lat": "64\u00b0 43.406' N",
                     "lng": "148\u00b0 18.713' W",
                     "STATUS": "Terminated",
                     "TOTAL_VALUE": 0.0,
                     "SALE_NAME": "BONANZA LEFTOVER #4"
+                },
+                {
+                    "dist_mi": 0.53,
+                    "dir": "N",
+                    "lat": "64\u00b0 43.717' N",
+                    "lng": "148\u00b0 19.335' W",
+                    "STATUS": "Terminated",
+                    "TOTAL_VALUE": 6901.89,
+                    "SALE_NAME": "Rosie Burn Stand 5D"
+                },
+                {
+                    "dist_mi": 0.65,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 43.784' N",
+                    "lng": "148\u00b0 19.081' W",
+                    "STATUS": "Terminated",
+                    "TOTAL_VALUE": 7997.48,
+                    "SALE_NAME": "Rosie Burn Stand 5A"
+                },
+                {
+                    "dist_mi": 0.68,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 43.840' N",
+                    "lng": "148\u00b0 19.227' W",
+                    "STATUS": "Terminated",
+                    "TOTAL_VALUE": 1663.11,
+                    "SALE_NAME": "Rosie Burn Stand 5C"
+                },
+                {
+                    "dist_mi": 0.69,
+                    "dir": "NW",
+                    "lat": "64\u00b0 43.762' N",
+                    "lng": "148\u00b0 20.880' W",
+                    "STATUS": "Proposed",
+                    "TOTAL_VALUE": 0.0,
+                    "SALE_NAME": "Bonanza Birch #1"
+                },
+                {
+                    "dist_mi": 0.71,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 43.862' N",
+                    "lng": "148\u00b0 19.180' W",
+                    "STATUS": "Terminated",
+                    "TOTAL_VALUE": 8114.75,
+                    "SALE_NAME": "Rosie Burn Stand 5A5"
+                },
+                {
+                    "dist_mi": 0.73,
+                    "dir": "N",
+                    "lat": "64\u00b0 43.899' N",
+                    "lng": "148\u00b0 19.900' W",
+                    "STATUS": "Terminated",
+                    "TOTAL_VALUE": 26296.5,
+                    "SALE_NAME": "Rosie's End #1"
                 },
                 {
                     "dist_mi": 0.79,
@@ -17394,64 +17475,55 @@
                     "SALE_NAME": "Parks Hwy 332 Spruce"
                 },
                 {
-                    "dist_mi": 0.79,
+                    "dist_mi": 0.89,
                     "dir": "NNE",
-                    "lat": "64\u00b0 43.717' N",
-                    "lng": "148\u00b0 19.335' W",
+                    "lat": "64\u00b0 43.884' N",
+                    "lng": "148\u00b0 18.518' W",
                     "STATUS": "Terminated",
-                    "TOTAL_VALUE": 6901.89,
-                    "SALE_NAME": "Rosie Burn Stand 5D"
+                    "TOTAL_VALUE": "No Data",
+                    "SALE_NAME": "Bonanza Leftover #2"
                 },
                 {
-                    "dist_mi": 0.85,
-                    "dir": "N",
-                    "lat": "64\u00b0 43.762' N",
-                    "lng": "148\u00b0 20.880' W",
-                    "STATUS": "Proposed",
-                    "TOTAL_VALUE": 0.0,
-                    "SALE_NAME": "Bonanza Birch #1"
-                },
-                {
-                    "dist_mi": 0.91,
+                    "dist_mi": 0.89,
                     "dir": "NNE",
-                    "lat": "64\u00b0 43.784' N",
-                    "lng": "148\u00b0 19.081' W",
+                    "lat": "64\u00b0 43.974' N",
+                    "lng": "148\u00b0 18.863' W",
                     "STATUS": "Terminated",
-                    "TOTAL_VALUE": 7997.48,
-                    "SALE_NAME": "Rosie Burn Stand 5A"
-                },
-                {
-                    "dist_mi": 0.94,
-                    "dir": "NNE",
-                    "lat": "64\u00b0 43.840' N",
-                    "lng": "148\u00b0 19.227' W",
-                    "STATUS": "Terminated",
-                    "TOTAL_VALUE": 1663.11,
-                    "SALE_NAME": "Rosie Burn Stand 5C"
+                    "TOTAL_VALUE": 660.75,
+                    "SALE_NAME": "Bonanza Leftover #2"
                 },
                 {
                     "dist_mi": 0.95,
-                    "dir": "N",
-                    "lat": "64\u00b0 43.899' N",
-                    "lng": "148\u00b0 19.900' W",
+                    "dir": "NNE",
+                    "lat": "64\u00b0 44.036' N",
+                    "lng": "148\u00b0 18.878' W",
                     "STATUS": "Terminated",
-                    "TOTAL_VALUE": 26296.5,
-                    "SALE_NAME": "Rosie's End #1"
+                    "TOTAL_VALUE": 13690.0,
+                    "SALE_NAME": "Rosie Burn Stand 5A3"
+                },
+                {
+                    "dist_mi": 0.96,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 44.018' N",
+                    "lng": "148\u00b0 18.765' W",
+                    "STATUS": "Terminated",
+                    "TOTAL_VALUE": 5000.0,
+                    "SALE_NAME": "Bonanza Leftover #3"
                 },
                 {
                     "dist_mi": 0.97,
-                    "dir": "NNE",
-                    "lat": "64\u00b0 43.862' N",
-                    "lng": "148\u00b0 19.180' W",
+                    "dir": "NE",
+                    "lat": "64\u00b0 43.795' N",
+                    "lng": "148\u00b0 18.082' W",
                     "STATUS": "Terminated",
-                    "TOTAL_VALUE": 8114.75,
-                    "SALE_NAME": "Rosie Burn Stand 5A5"
+                    "TOTAL_VALUE": 4046.0,
+                    "SALE_NAME": "Rosie Burn Stand 5C"
                 }
             ],
             "popped": 0,
             "cutoff": null
         },
-        "Silviculture_TotalAcres": 720.92,
+        "Silviculture_TotalAcres": 814.59,
         "SpecMgmt_Consid_AttrCount": [
             {
                 "key head": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area.",
@@ -17462,28 +17534,28 @@
         "SpecMgmt_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.32,
+                    "dist_mi": 0.29,
                     "dir": "E",
                     "lat": "64\u00b0 42.986' N",
                     "lng": "148\u00b0 18.953' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 0.53,
-                    "dir": "ENE",
+                    "dist_mi": 0.49,
+                    "dir": "E",
                     "lat": "64\u00b0 43.064' N",
                     "lng": "148\u00b0 18.546' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 0.89,
+                    "dist_mi": 0.87,
                     "dir": "ESE",
                     "lat": "64\u00b0 42.304' N",
                     "lng": "148\u00b0 18.196' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 0.93,
+                    "dist_mi": 0.91,
                     "dir": "ESE",
                     "lat": "64\u00b0 42.378' N",
                     "lng": "148\u00b0 18.049' W",
@@ -17505,7 +17577,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:266809.32%2C1649309.022%2C3338,scale:22897",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:266726.844%2C1649348.006%2C3338,scale:24242",
         "CpxName": "Nenana Ridge Complex",
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
