@@ -14076,7 +14076,7 @@
         "wfigs_GISAcres": 11653.586915969734,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1750803900000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751161834300.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751174437000.0,
         "wfigs_IrwinID": "{BE1874C8-7BD4-4D22-A087-A689F710ED78}",
         "ReportedAcres": 10526.33,
         "HasError": 0.0,
@@ -20948,7 +20948,7 @@
         "wfigs_GISAcres": 563.3484231634725,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1750576260000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751161826407.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751174437000.0,
         "wfigs_IrwinID": "{5A97DFEA-AF3D-4935-B8C5-79B7A427F752}",
         "ReportedAcres": 563.35,
         "HasError": 0.0,
@@ -42792,7 +42792,7 @@
         "wfigs_GISAcres": 11.270747762871393,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1750371900000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751161831907.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751174437000.0,
         "wfigs_IrwinID": "{B58C116E-41CA-4EC4-B23A-1105D3FCF5AF}",
         "ReportedAcres": 11.27,
         "HasError": 0.0,
@@ -44203,7 +44203,7 @@
         "wfigs_GISAcres": 148.05553734994652,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1750371900000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751161829620.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751174437000.0,
         "wfigs_IrwinID": "{6F9E85FB-A9F2-4541-BC8A-E54FB44B0033}",
         "ReportedAcres": 148.05,
         "HasError": 0.0,
@@ -52268,7 +52268,7 @@
         "wfigs_GISAcres": 1830.1664614225892,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1750836300000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751161823580.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751174437000.0,
         "wfigs_IrwinID": "{CA16468A-739B-4333-BC1D-AB5B85ED504A}",
         "ReportedAcres": 1830.16,
         "HasError": 0.0,
@@ -52412,7 +52412,7 @@
         ],
         "WeatherStation_FeatureCount": null,
         "WeatherStation_Locations": null,
-        "Aksd_MainStruct_AttrSum": 10.0,
+        "Aksd_MainStruct_AttrSum": 12.0,
         "Aksd_OtherStruct_AttrSum": null,
         "Aksd_Protection_AttrCount": [
             {
@@ -52421,24 +52421,28 @@
             },
             {
                 "key head": "Unknown",
+                "value head": 2
+            },
+            {
+                "key head": "Full",
                 "value head": 1
             }
         ],
         "Aksd_SiteCat_AttrCount": [
             {
-                "key head": "Mining",
-                "value head": 2
+                "key head": "Structure",
+                "value head": 3
             },
             {
-                "key head": "Structure",
-                "value head": 1
+                "key head": "Mining",
+                "value head": 2
             },
             {
                 "key head": "Other",
                 "value head": 1
             }
         ],
-        "Aksd_FeatureCount": 4.0,
+        "Aksd_FeatureCount": 6.0,
         "Aksd_Locations": {
             "features": [
                 {
@@ -52449,6 +52453,26 @@
                     "SiteCat": "Structure",
                     "Protection": "Undesignated",
                     "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.55,
+                    "dir": "NNE",
+                    "lat": "66\u00b0 10.935' N",
+                    "lng": "155\u00b0 42.291' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Unknown",
+                    "MainStructs": 1.0,
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.55,
+                    "dir": "ENE",
+                    "lat": "66\u00b0 11.541' N",
+                    "lng": "155\u00b0 45.180' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": 1.0,
                     "OthrStructs": "No Data"
                 },
                 {
