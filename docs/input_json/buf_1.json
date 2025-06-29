@@ -11501,9 +11501,9 @@
         "wfigs_GISAcres": 6088.028290202874,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751007480000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751143372227.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751163855203.0,
         "wfigs_IrwinID": "{83997F1E-7D1C-4E08-9E41-DE41920B5929}",
-        "ReportedAcres": 6088.02,
+        "ReportedAcres": 6088.0,
         "HasError": 0.0,
         "DefaultLabel": "270-Goldstream Creek, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
@@ -12110,12 +12110,12 @@
         "PercentPerimeterToBeContained": null,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": null,
-        "EstimatedCostToDate": 65000.0,
+        "EstimatedCostToDate": 20000.0,
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1751085275000.0,
+        "ICS209ReportDateTime": 1751163855000.0,
         "ICS209ReportStatus": null,
         "IncidentManagementOrganization": null
     },
@@ -15006,7 +15006,7 @@
         "wfigs_GISAcres": 11124.0,
         "wfigs_MapMethod": "Remote Sensing Derived",
         "wfigs_PolygonDateTime": 1750678649000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751083987463.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751164487000.0,
         "wfigs_IrwinID": "{9ABAD0E9-E2E8-492F-B34C-0422582007BA}",
         "ReportedAcres": 11929.2,
         "HasError": 0.0,
@@ -15061,18 +15061,18 @@
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.0,
-                    "dir": "SW",
-                    "lat": "64\u00b0 11.581' N",
-                    "lng": "147\u00b0 56.935' W",
+                    "dist_mi": 0.01,
+                    "dir": "S",
+                    "lat": "64\u00b0 11.713' N",
+                    "lng": "147\u00b0 56.884' W",
                     "SiteCat": "Structure",
-                    "Protection": "Unknown",
-                    "MainStructs": 1.0,
-                    "OthrStructs": 7.0
+                    "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 0.0,
-                    "dir": "W",
+                    "dist_mi": 0.04,
+                    "dir": "S",
                     "lat": "64\u00b0 11.684' N",
                     "lng": "147\u00b0 56.935' W",
                     "SiteCat": "Structure",
@@ -15081,7 +15081,7 @@
                     "OthrStructs": 4.0
                 },
                 {
-                    "dist_mi": 0.08,
+                    "dist_mi": 0.07,
                     "dir": "SSW",
                     "lat": "64\u00b0 12.410' N",
                     "lng": "147\u00b0 57.901' W",
@@ -15101,17 +15101,37 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 0.13,
-                    "dir": "SW",
-                    "lat": "64\u00b0 11.306' N",
-                    "lng": "147\u00b0 56.923' W",
+                    "dist_mi": 0.09,
+                    "dir": "S",
+                    "lat": "64\u00b0 11.636' N",
+                    "lng": "147\u00b0 56.828' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.16,
+                    "dir": "S",
+                    "lat": "64\u00b0 11.581' N",
+                    "lng": "147\u00b0 56.935' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Unknown",
                     "MainStructs": 1.0,
                     "OthrStructs": 7.0
                 },
                 {
-                    "dist_mi": 0.19,
+                    "dist_mi": 0.22,
+                    "dir": "SW",
+                    "lat": "64\u00b0 12.331' N",
+                    "lng": "147\u00b0 58.179' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.24,
                     "dir": "WSW",
                     "lat": "64\u00b0 12.244' N",
                     "lng": "147\u00b0 58.114' W",
@@ -15121,14 +15141,14 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 0.21,
-                    "dir": "W",
-                    "lat": "64\u00b0 12.331' N",
-                    "lng": "147\u00b0 58.179' W",
+                    "dist_mi": 0.26,
+                    "dir": "WNW",
+                    "lat": "64\u00b0 11.306' N",
+                    "lng": "147\u00b0 56.923' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
+                    "MainStructs": 1.0,
+                    "OthrStructs": 7.0
                 },
                 {
                     "dist_mi": 0.48,
@@ -15156,7 +15176,7 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 27132.86
+                "value head": 27078.74
             },
             {
                 "key head": "Alaska Department of Transportation and Public Facilities",
@@ -15164,12 +15184,12 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 26784.69,
+            "State": 26730.57,
             "Private": 378.47
         },
         "MgmtOption_AcreSum": {
             "Full": 24009.65,
-            "Limited": 3153.52
+            "Limited": 3099.4
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -15182,6 +15202,33 @@
         "Parcel_Locations": {
             "features": [
                 {
+                    "dist_mi": 0.01,
+                    "dir": "W",
+                    "lat": "64\u00b0 12.188' N",
+                    "lng": "147\u00b0 57.630' W",
+                    "property_type": "",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 0.01,
+                    "dir": "WSW",
+                    "lat": "64\u00b0 12.331' N",
+                    "lng": "147\u00b0 57.722' W",
+                    "property_type": "",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 0.02,
+                    "dir": "SSE",
+                    "lat": "64\u00b0 11.699' N",
+                    "lng": "147\u00b0 56.828' W",
+                    "property_type": "",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
                     "dist_mi": 0.05,
                     "dir": "SW",
                     "lat": "64\u00b0 11.146' N",
@@ -15191,8 +15238,26 @@
                     "total_value": "No Data"
                 },
                 {
-                    "dist_mi": 0.08,
-                    "dir": "SW",
+                    "dist_mi": 0.07,
+                    "dir": "W",
+                    "lat": "64\u00b0 11.512' N",
+                    "lng": "147\u00b0 56.739' W",
+                    "property_type": "",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 0.14,
+                    "dir": "W",
+                    "lat": "64\u00b0 11.236' N",
+                    "lng": "147\u00b0 56.722' W",
+                    "property_type": "",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 0.14,
+                    "dir": "WNW",
                     "lat": "64\u00b0 11.259' N",
                     "lng": "147\u00b0 56.715' W",
                     "property_type": "",
@@ -15280,7 +15345,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:295810.623%2C1596630.004%2C3338,scale:36703",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:295818.749%2C1596635.586%2C3338,scale:36703",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
@@ -16722,9 +16787,9 @@
         "wfigs_GISAcres": 2294.968498712344,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751158956000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751158971000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751163852703.0,
         "wfigs_IrwinID": "{2E74E7EC-3BE4-4C52-89C0-6E3CA1E4D999}",
-        "ReportedAcres": 2165.1,
+        "ReportedAcres": 2165.0,
         "HasError": 0.0,
         "DefaultLabel": "238-Bonanza Creek, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
@@ -17219,12 +17284,12 @@
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 3 Incident",
-        "EstimatedCostToDate": 232335.0,
+        "EstimatedCostToDate": 527794.0,
         "TotalIncidentPersonnel": 2.0,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1751085272000.0,
+        "ICS209ReportDateTime": 1751163852000.0,
         "ICS209ReportStatus": "F",
         "IncidentManagementOrganization": "Type 3 IC"
     },
