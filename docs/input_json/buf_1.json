@@ -9812,7 +9812,7 @@
         "wfigs_GISAcres": 4879.011064994173,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751122800000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751319307927.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751344208023.0,
         "wfigs_IrwinID": "{327EDF97-9ACE-4A1C-B720-CC0163D5E36B}",
         "ReportedAcres": 4878.28,
         "HasError": 0.0,
@@ -9999,12 +9999,12 @@
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 3 Incident",
-        "EstimatedCostToDate": 24390.0,
+        "EstimatedCostToDate": 99836.0,
         "TotalIncidentPersonnel": 24.0,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1751256510000.0,
+        "ICS209ReportDateTime": 1751344208000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 3 Team"
     },
@@ -18613,9 +18613,9 @@
         "wfigs_GISAcres": 28270.0,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1750973452000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751338293000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751344634767.0,
         "wfigs_IrwinID": "{058AD797-B4F7-4CB5-B34F-7267D980BAA9}",
-        "ReportedAcres": 28269.5,
+        "ReportedAcres": 28270.0,
         "HasError": 0.0,
         "DefaultLabel": "237-Bear Creek, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
@@ -18961,7 +18961,7 @@
             },
             {
                 "key head": "No Data",
-                "value head": 2
+                "value head": 3
             }
         ],
         "Aksd_SiteCat_AttrCount": [
@@ -18971,12 +18971,22 @@
             },
             {
                 "key head": "Other",
-                "value head": 10
+                "value head": 11
             }
         ],
-        "Aksd_FeatureCount": 132.0,
+        "Aksd_FeatureCount": 133.0,
         "Aksd_Locations": {
             "features": [
+                {
+                    "dist_mi": 0.01,
+                    "dir": "N",
+                    "lat": "64\u00b0 11.956' N",
+                    "lng": "149\u00b0 20.605' W",
+                    "SiteCat": "Other",
+                    "Protection": "No Data",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
                 {
                     "dist_mi": 0.01,
                     "dir": "E",
@@ -19119,16 +19129,6 @@
                 },
                 {
                     "dist_mi": 0.09,
-                    "dir": "ENE",
-                    "lat": "64\u00b0 05.544' N",
-                    "lng": "149\u00b0 14.447' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Full",
-                    "MainStructs": 1.0,
-                    "OthrStructs": 4.0
-                },
-                {
-                    "dist_mi": 0.09,
                     "dir": "NW",
                     "lat": "64\u00b0 10.673' N",
                     "lng": "149\u00b0 17.934' W",
@@ -19156,6 +19156,16 @@
                     "Protection": "Undesignated",
                     "MainStructs": 2.0,
                     "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.09,
+                    "dir": "ENE",
+                    "lat": "64\u00b0 05.544' N",
+                    "lng": "149\u00b0 14.447' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": 1.0,
+                    "OthrStructs": 4.0
                 },
                 {
                     "dist_mi": 0.1,
@@ -19226,20 +19236,10 @@
                     "Protection": "Unknown",
                     "MainStructs": 1.0,
                     "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 0.14,
-                    "dir": "N",
-                    "lat": "64\u00b0 05.480' N",
-                    "lng": "149\u00b0 14.273' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Undesignated",
-                    "MainStructs": 1.0,
-                    "OthrStructs": "No Data"
                 }
             ],
-            "popped": 279,
-            "cutoff": 0.14
+            "popped": 280,
+            "cutoff": 0.13
         },
         "NtvAllot_Status_AcreSum": {
             "Restricted": 708.53
@@ -20025,12 +20025,12 @@
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 1 Incident",
-        "EstimatedCostToDate": 4200000.0,
-        "TotalIncidentPersonnel": 258.0,
+        "EstimatedCostToDate": 4900000.0,
+        "TotalIncidentPersonnel": 259.0,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "ANC",
         "POOJurisdictionalUnit": "AKCIN",
-        "ICS209ReportDateTime": 1751256308000.0,
+        "ICS209ReportDateTime": 1751344634000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 4 IC"
     },
@@ -23375,7 +23375,7 @@
         "wfigs_GISAcres": 18744.70012756275,
         "wfigs_MapMethod": "GPS-Flight",
         "wfigs_PolygonDateTime": 1751068800000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751256993310.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751344505387.0,
         "wfigs_IrwinID": "{D0395AD0-94CF-4638-B640-7E7B40FEDB22}",
         "ReportedAcres": 18744.0,
         "HasError": 0.0,
@@ -23483,12 +23483,12 @@
         "PercentPerimeterToBeContained": 2.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 3 Incident",
-        "EstimatedCostToDate": 390283.0,
+        "EstimatedCostToDate": 444343.0,
         "TotalIncidentPersonnel": 30.0,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1751256993000.0,
+        "ICS209ReportDateTime": 1751344505000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 3 Team"
     },
@@ -30281,11 +30281,11 @@
         "AkFireRegion": "SWS",
         "AkFireNumber": "170",
         "wfigs_IncidentName": "Little Selatna",
-        "FireActivityStatus": "Contained",
+        "FireActivityStatus": "Controlled",
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1751260296687.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751344187420.0,
         "wfigs_IrwinID": "{9B52A504-EA9C-470A-924B-777C0283133B}",
         "ReportedAcres": 250.0,
         "HasError": 0.0,
