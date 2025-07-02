@@ -24670,7 +24670,7 @@
         "wfigs_ModifiedOnDateTime_dt": 1751443255264.0,
         "wfigs_IrwinID": "{42D42470-23C1-428E-A1A4-AD76A8788DCF}",
         "ReportedAcres": 7067.72,
-        "HasError": 1.0,
+        "HasError": 0.0,
         "DefaultLabel": "281-McArthur Creek, 5 Mile Buffer",
         "AnalysisBufferMiles": 5.0,
         "AkMine_Active_AttrCount": [
@@ -24903,9 +24903,9 @@
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
-        "PipeLine_Name_FeetSum": "!error!",
-        "PipeLine_Locations": "!error!",
-        "PipeLine_TotalFeet": -1.0,
+        "PipeLine_Name_FeetSum": null,
+        "PipeLine_Locations": null,
+        "PipeLine_TotalFeet": null,
         "PowerPlant_PrimSource_AttrCount": null,
         "PowerPlant_UtilName_AttrCount": null,
         "PowerPlant_FeatureCount": null,
@@ -64114,10 +64114,10 @@
         "AkFireNumber": "188",
         "wfigs_IncidentName": "Boulder Creek",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 3379.080729769539,
+        "wfigs_GISAcres": 3887.0087709751697,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1751038200000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751080228580.0,
+        "wfigs_PolygonDateTime": 1751351649000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751444150000.0,
         "wfigs_IrwinID": "{F16B1251-A81F-41DD-B8E0-7B3DF91C12A4}",
         "ReportedAcres": 3379.08,
         "HasError": 0.0,
@@ -64155,14 +64155,14 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 88663.49
+                "value head": 93130.27
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 88663.49
+            "State": 93130.27
         },
         "MgmtOption_AcreSum": {
-            "Limited": 88663.49
+            "Limited": 93130.27
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -64171,17 +64171,26 @@
         "NpsStruct_Locations": null,
         "Parcel_BuildingValue_AttrSum": null,
         "Parcel_FeatureCount": 11.0,
-        "Parcel_LandValue_AttrSum": 57277392.0,
+        "Parcel_LandValue_AttrSum": 60324659.0,
         "Parcel_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.48,
+                    "dist_mi": 0.51,
                     "dir": "SE",
                     "lat": "64\u00b0 51.812' N",
                     "lng": "144\u00b0 37.623' W",
                     "property_type": "Tract",
                     "property_use": "Exempt ",
                     "total_value": 15827742.0
+                },
+                {
+                    "dist_mi": 0.64,
+                    "dir": "E",
+                    "lat": "64\u00b0 53.404' N",
+                    "lng": "144\u00b0 35.298' W",
+                    "property_type": "Tract",
+                    "property_use": "Exempt ",
+                    "total_value": 16101967.0
                 },
                 {
                     "dist_mi": 0.67,
@@ -64191,15 +64200,6 @@
                     "property_type": "Tract",
                     "property_use": "Exempt ",
                     "total_value": 16102136.0
-                },
-                {
-                    "dist_mi": 1.34,
-                    "dir": "E",
-                    "lat": "64\u00b0 52.957' N",
-                    "lng": "144\u00b0 35.298' W",
-                    "property_type": "Tract",
-                    "property_use": "Exempt ",
-                    "total_value": 16101967.0
                 },
                 {
                     "dist_mi": 2.11,
@@ -64220,6 +64220,15 @@
                     "total_value": 1935360.0
                 },
                 {
+                    "dist_mi": 4.09,
+                    "dir": "N",
+                    "lat": "64\u00b0 57.008' N",
+                    "lng": "144\u00b0 35.298' W",
+                    "property_type": "Tract",
+                    "property_use": "Exempt ",
+                    "total_value": 13642547.0
+                },
+                {
                     "dist_mi": 4.37,
                     "dir": "NNW",
                     "lat": "64\u00b0 57.008' N",
@@ -64227,15 +64236,6 @@
                     "property_type": "Tract",
                     "property_use": "Exempt ",
                     "total_value": 16127300.0
-                },
-                {
-                    "dist_mi": 4.38,
-                    "dir": "NNE",
-                    "lat": "64\u00b0 57.008' N",
-                    "lng": "144\u00b0 35.298' W",
-                    "property_type": "Tract",
-                    "property_use": "Exempt ",
-                    "total_value": 13642547.0
                 },
                 {
                     "dist_mi": 4.56,
@@ -64262,11 +64262,11 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Tract",
-                "value head": 56156.8
+                "value head": 60572.66
             },
             {
                 "key head": "Tax Lot",
-                "value head": 32443.88
+                "value head": 32494.8
             },
             {
                 "key head": "Waterway",
@@ -64276,15 +64276,15 @@
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Exempt ",
-                "value head": 88600.68
+                "value head": 93067.46
             },
             {
                 "key head": "No Data",
                 "value head": 62.81
             }
         ],
-        "Parcel_TotalAcres": 88663.49,
-        "Parcel_TotalValue_AttrSum": 57277392.0,
+        "Parcel_TotalAcres": 93130.27,
+        "Parcel_TotalValue_AttrSum": 60324659.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -64316,7 +64316,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 5 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:439349.059%2C1688411.502%2C3338,scale:56288",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:439815.822%2C1688586.71%2C3338,scale:58709",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
