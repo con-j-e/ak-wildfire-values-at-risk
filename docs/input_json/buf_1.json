@@ -18247,12 +18247,12 @@
         "AkFireNumber": "238",
         "wfigs_IncidentName": "Bonanza Creek",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 2641.317292525674,
+        "wfigs_GISAcres": 2744.627041070897,
         "wfigs_MapMethod": "Digitized-Image",
-        "wfigs_PolygonDateTime": 1751179590000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751338368717.0,
+        "wfigs_PolygonDateTime": 1751352390000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751414324243.0,
         "wfigs_IrwinID": "{2E74E7EC-3BE4-4C52-89C0-6E3CA1E4D999}",
-        "ReportedAcres": 2641.0,
+        "ReportedAcres": 2744.62,
         "HasError": 0.0,
         "DefaultLabel": "238-Bonanza Creek, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
@@ -18261,25 +18261,15 @@
         "AkMine_Note_AttrCount": null,
         "AkMine_FeatureCount": null,
         "AkMine_Locations": null,
-        "AkPowerLine_CondType_FeetSum": [
-            {
-                "key head": "Transmission",
-                "value head": 3504
-            }
-        ],
-        "AkPowerLine_Voltage_FeetSum": [
-            {
-                "key head": "138",
-                "value head": 3504
-            }
-        ],
+        "AkPowerLine_CondType_FeetSum": null,
+        "AkPowerLine_Voltage_FeetSum": null,
         "AkPowerLine_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.88,
-                    "dir": "NW",
-                    "lat": "64\u00b0 42.854' N",
-                    "lng": "148\u00b0 28.926' W",
+                    "dist_mi": 1.0,
+                    "dir": "NNW",
+                    "lat": "64\u00b0 43.585' N",
+                    "lng": "148\u00b0 27.556' W",
                     "VOLTAGE": "138",
                     "COND_TYPE": "Transmission"
                 }
@@ -18287,7 +18277,7 @@
             "popped": 0,
             "cutoff": null
         },
-        "AkPowerLine_TotalFeet": 3504.0,
+        "AkPowerLine_TotalFeet": null,
         "Runway_FeatureCount": null,
         "Runway_Locations": null,
         "Runway_Ownership_AttrCount": null,
@@ -18311,18 +18301,18 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 12459.61
+                "value head": 12501.2
             },
             {
                 "key head": "Alaska Department of Transportation and Public Facilities",
-                "value head": 7.22
+                "value head": 6.47
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 12466.83
+            "State": 12507.67
         },
         "MgmtOption_AcreSum": {
-            "Full": 12466.83
+            "Full": 12507.67
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -18330,8 +18320,8 @@
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
         "Parcel_BuildingValue_AttrSum": null,
-        "Parcel_FeatureCount": 29.0,
-        "Parcel_LandValue_AttrSum": 8780878.0,
+        "Parcel_FeatureCount": 30.0,
+        "Parcel_LandValue_AttrSum": 6748660.0,
         "Parcel_Locations": {
             "features": [
                 {
@@ -18416,13 +18406,13 @@
                     "total_value": 20090.0
                 },
                 {
-                    "dist_mi": 0.49,
-                    "dir": "W",
-                    "lat": "64\u00b0 42.278' N",
-                    "lng": "148\u00b0 28.873' W",
-                    "property_type": "Tract",
+                    "dist_mi": 0.5,
+                    "dir": "S",
+                    "lat": "64\u00b0 40.546' N",
+                    "lng": "148\u00b0 26.413' W",
+                    "property_type": "Tax Lot",
                     "property_use": "Exempt ",
-                    "total_value": 7721791.0
+                    "total_value": 160000.0
                 },
                 {
                     "dist_mi": 0.5,
@@ -18432,15 +18422,6 @@
                     "property_type": "Government Lot",
                     "property_use": "Exempt ",
                     "total_value": 16680.0
-                },
-                {
-                    "dist_mi": 0.5,
-                    "dir": "S",
-                    "lat": "64\u00b0 40.546' N",
-                    "lng": "148\u00b0 26.413' W",
-                    "property_type": "Tax Lot",
-                    "property_use": "Exempt ",
-                    "total_value": 160000.0
                 },
                 {
                     "dist_mi": 0.52,
@@ -18488,6 +18469,15 @@
                     "total_value": 20150.0
                 },
                 {
+                    "dist_mi": 0.78,
+                    "dir": "W",
+                    "lat": "64\u00b0 42.278' N",
+                    "lng": "148\u00b0 28.873' W",
+                    "property_type": "Tract",
+                    "property_use": "Exempt ",
+                    "total_value": 7721791.0
+                },
+                {
                     "dist_mi": 0.81,
                     "dir": "SSE",
                     "lat": "64\u00b0 41.412' N",
@@ -18522,6 +18512,15 @@
                     "property_type": "Government Lot",
                     "property_use": "Exempt ",
                     "total_value": 16805.0
+                },
+                {
+                    "dist_mi": 1.0,
+                    "dir": "N",
+                    "lat": "64\u00b0 43.658' N",
+                    "lng": "148\u00b0 26.848' W",
+                    "property_type": "Roadway",
+                    "property_use": "",
+                    "total_value": "No Data"
                 }
             ],
             "popped": 0,
@@ -18530,7 +18529,7 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Tract",
-                "value head": 10809.27
+                "value head": 10850.12
             },
             {
                 "key head": "Tax Lot",
@@ -18539,16 +18538,24 @@
             {
                 "key head": "Government Lot",
                 "value head": 640.0
+            },
+            {
+                "key head": "Roadway",
+                "value head": 0.0
             }
         ],
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Exempt ",
-                "value head": 12466.83
+                "value head": 12507.67
+            },
+            {
+                "key head": "No Data",
+                "value head": 0.0
             }
         ],
-        "Parcel_TotalAcres": 12466.83,
-        "Parcel_TotalValue_AttrSum": 8780878.0,
+        "Parcel_TotalAcres": 12507.67,
+        "Parcel_TotalValue_AttrSum": 6748660.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -18656,6 +18663,15 @@
                     "SALE_NAME": "Rosie Burn Stand 5D"
                 },
                 {
+                    "dist_mi": 0.64,
+                    "dir": "NW",
+                    "lat": "64\u00b0 43.271' N",
+                    "lng": "148\u00b0 27.377' W",
+                    "STATUS": "Proposed",
+                    "TOTAL_VALUE": 0.0,
+                    "SALE_NAME": "Parks Hwy 332 Spruce"
+                },
+                {
                     "dist_mi": 0.65,
                     "dir": "NNE",
                     "lat": "64\u00b0 43.784' N",
@@ -18701,13 +18717,13 @@
                     "SALE_NAME": "Rosie's End #1"
                 },
                 {
-                    "dist_mi": 0.79,
-                    "dir": "NW",
-                    "lat": "64\u00b0 43.271' N",
-                    "lng": "148\u00b0 27.377' W",
-                    "STATUS": "Proposed",
-                    "TOTAL_VALUE": 0.0,
-                    "SALE_NAME": "Parks Hwy 332 Spruce"
+                    "dist_mi": 0.89,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 43.974' N",
+                    "lng": "148\u00b0 18.863' W",
+                    "STATUS": "Terminated",
+                    "TOTAL_VALUE": 660.75,
+                    "SALE_NAME": "Bonanza Leftover #2"
                 },
                 {
                     "dist_mi": 0.89,
@@ -18716,15 +18732,6 @@
                     "lng": "148\u00b0 18.518' W",
                     "STATUS": "Terminated",
                     "TOTAL_VALUE": "No Data",
-                    "SALE_NAME": "Bonanza Leftover #2"
-                },
-                {
-                    "dist_mi": 0.89,
-                    "dir": "NNE",
-                    "lat": "64\u00b0 43.974' N",
-                    "lng": "148\u00b0 18.863' W",
-                    "STATUS": "Terminated",
-                    "TOTAL_VALUE": 660.75,
                     "SALE_NAME": "Bonanza Leftover #2"
                 },
                 {
@@ -18812,7 +18819,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:266695.334%2C1649321.206%2C3338,scale:24242",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:266751.204%2C1649381.808%2C3338,scale:23287",
         "CpxName": "Nenana Ridge Complex",
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
