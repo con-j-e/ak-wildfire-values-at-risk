@@ -43506,10 +43506,10 @@
         "AkFireNumber": "246",
         "wfigs_IncidentName": "Saint George Creek",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 12911.0,
+        "wfigs_GISAcres": 17496.0,
         "wfigs_MapMethod": "Remote Sensing Derived",
         "wfigs_PolygonDateTime": 1750678649000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751525363110.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751556249000.0,
         "wfigs_IrwinID": "{9ABAD0E9-E2E8-492F-B34C-0422582007BA}",
         "ReportedAcres": 11886.56,
         "HasError": 0.0,
@@ -43534,8 +43534,8 @@
         ],
         "WeatherStation_FeatureCount": 1.0,
         "WeatherStation_Locations": null,
-        "Aksd_MainStruct_AttrSum": 19.0,
-        "Aksd_OtherStruct_AttrSum": 53.0,
+        "Aksd_MainStruct_AttrSum": 20.0,
+        "Aksd_OtherStruct_AttrSum": 54.0,
         "Aksd_Protection_AttrCount": [
             {
                 "key head": "Full",
@@ -43551,7 +43551,7 @@
             },
             {
                 "key head": "Undesignated",
-                "value head": 2
+                "value head": 3
             },
             {
                 "key head": "No Protection",
@@ -43561,14 +43561,14 @@
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
-                "value head": 42
+                "value head": 43
             },
             {
                 "key head": "RAWS",
                 "value head": 1
             }
         ],
-        "Aksd_FeatureCount": 43.0,
+        "Aksd_FeatureCount": 44.0,
         "Aksd_Locations": {
             "features": [
                 {
@@ -43582,22 +43582,22 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 0.02,
-                    "dir": "W",
-                    "lat": "64\u00b0 10.974' N",
-                    "lng": "147\u00b0 54.041' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Unknown",
-                    "MainStructs": 1.0,
-                    "OthrStructs": "No Data"
-                },
-                {
                     "dist_mi": 0.04,
                     "dir": "S",
                     "lat": "64\u00b0 11.684' N",
                     "lng": "147\u00b0 56.935' W",
                     "SiteCat": "Structure",
                     "Protection": "Unknown",
+                    "MainStructs": 1.0,
+                    "OthrStructs": 4.0
+                },
+                {
+                    "dist_mi": 0.05,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 10.646' N",
+                    "lng": "147\u00b0 56.849' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
                     "MainStructs": 1.0,
                     "OthrStructs": 4.0
                 },
@@ -43672,16 +43672,6 @@
                     "OthrStructs": 7.0
                 },
                 {
-                    "dist_mi": 0.48,
-                    "dir": "SW",
-                    "lat": "64\u00b0 10.646' N",
-                    "lng": "147\u00b0 56.849' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Full",
-                    "MainStructs": 1.0,
-                    "OthrStructs": 4.0
-                },
-                {
                     "dist_mi": 1.71,
                     "dir": "NE",
                     "lat": "64\u00b0 15.839' N",
@@ -43689,6 +43679,26 @@
                     "SiteCat": "Structure",
                     "Protection": "Full",
                     "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 1.79,
+                    "dir": "SSW",
+                    "lat": "64\u00b0 07.046' N",
+                    "lng": "147\u00b0 59.796' W",
+                    "SiteCat": "Structure",
+                    "Protection": "No Protection",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 1.82,
+                    "dir": "E",
+                    "lat": "64\u00b0 07.515' N",
+                    "lng": "147\u00b0 46.944' W",
+                    "SiteCat": "Structure",
+                    "Protection": "No Data",
+                    "MainStructs": 1.0,
                     "OthrStructs": "No Data"
                 },
                 {
@@ -43703,16 +43713,6 @@
                 },
                 {
                     "dist_mi": 1.83,
-                    "dir": "E",
-                    "lat": "64\u00b0 07.515' N",
-                    "lng": "147\u00b0 46.944' W",
-                    "SiteCat": "Structure",
-                    "Protection": "No Data",
-                    "MainStructs": 1.0,
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 1.84,
                     "dir": "E",
                     "lat": "64\u00b0 07.520' N",
                     "lng": "147\u00b0 46.925' W",
@@ -43744,8 +43744,8 @@
                 {
                     "dist_mi": 2.88,
                     "dir": "E",
-                    "lat": "64\u00b0 14.347' N",
-                    "lng": "147\u00b0 44.596' W",
+                    "lat": "64\u00b0 14.380' N",
+                    "lng": "147\u00b0 44.575' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
                     "MainStructs": "No Data",
@@ -43754,8 +43754,8 @@
                 {
                     "dist_mi": 2.88,
                     "dir": "E",
-                    "lat": "64\u00b0 14.380' N",
-                    "lng": "147\u00b0 44.575' W",
+                    "lat": "64\u00b0 14.347' N",
+                    "lng": "147\u00b0 44.596' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
                     "MainStructs": "No Data",
@@ -43822,18 +43822,18 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 3.75,
-                    "dir": "WSW",
-                    "lat": "64\u00b0 07.046' N",
-                    "lng": "147\u00b0 59.796' W",
+                    "dist_mi": 3.83,
+                    "dir": "N",
+                    "lat": "64\u00b0 18.818' N",
+                    "lng": "147\u00b0 54.814' W",
                     "SiteCat": "Structure",
-                    "Protection": "No Protection",
+                    "Protection": "Full",
                     "MainStructs": "No Data",
                     "OthrStructs": "No Data"
                 }
             ],
             "popped": 4,
-            "cutoff": 3.75
+            "cutoff": 3.83
         },
         "NtvAllot_Status_AcreSum": null,
         "NtvAllot_FeatureCount": null,
@@ -43847,7 +43847,7 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 135797.66
+                "value head": 148792.09
             },
             {
                 "key head": "Alaska Department of Transportation and Public Facilities",
@@ -43855,11 +43855,11 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 135046.81,
+            "State": 148041.24,
             "Private": 781.15
         },
         "MgmtOption_AcreSum": {
-            "Limited": 82302.56,
+            "Limited": 95296.99,
             "Full": 53525.41
         },
         "NpsStruct_Use_AttrCount": null,
@@ -43909,10 +43909,19 @@
                     "total_value": "No Data"
                 },
                 {
-                    "dist_mi": 0.14,
+                    "dist_mi": 0.09,
                     "dir": "W",
-                    "lat": "64\u00b0 11.236' N",
-                    "lng": "147\u00b0 56.722' W",
+                    "lat": "64\u00b0 09.655' N",
+                    "lng": "147\u00b0 58.034' W",
+                    "property_type": "",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 0.09,
+                    "dir": "WSW",
+                    "lat": "64\u00b0 09.642' N",
+                    "lng": "147\u00b0 58.034' W",
                     "property_type": "",
                     "property_use": "",
                     "total_value": "No Data"
@@ -43927,10 +43936,10 @@
                     "total_value": "No Data"
                 },
                 {
-                    "dist_mi": 0.32,
-                    "dir": "WSW",
-                    "lat": "64\u00b0 10.809' N",
-                    "lng": "147\u00b0 56.752' W",
+                    "dist_mi": 0.14,
+                    "dir": "W",
+                    "lat": "64\u00b0 11.236' N",
+                    "lng": "147\u00b0 56.722' W",
                     "property_type": "",
                     "property_use": "",
                     "total_value": "No Data"
@@ -43981,15 +43990,6 @@
                     "total_value": "No Data"
                 },
                 {
-                    "dist_mi": 1.71,
-                    "dir": "SSW",
-                    "lat": "64\u00b0 09.697' N",
-                    "lng": "147\u00b0 58.031' W",
-                    "property_type": "",
-                    "property_use": "",
-                    "total_value": "No Data"
-                },
-                {
                     "dist_mi": 1.73,
                     "dir": "NNE",
                     "lat": "64\u00b0 16.307' N",
@@ -44021,15 +44021,6 @@
                     "dir": "NE",
                     "lat": "64\u00b0 15.831' N",
                     "lng": "147\u00b0 47.279' W",
-                    "property_type": "",
-                    "property_use": "",
-                    "total_value": "No Data"
-                },
-                {
-                    "dist_mi": 1.76,
-                    "dir": "SSW",
-                    "lat": "64\u00b0 09.642' N",
-                    "lng": "147\u00b0 58.034' W",
                     "property_type": "",
                     "property_use": "",
                     "total_value": "No Data"
@@ -44108,6 +44099,15 @@
                 },
                 {
                     "dist_mi": 2.26,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 17.092' N",
+                    "lng": "147\u00b0 49.976' W",
+                    "property_type": "Tract",
+                    "property_use": "Vacant Land",
+                    "total_value": 17955.0
+                },
+                {
+                    "dist_mi": 2.26,
                     "dir": "N",
                     "lat": "64\u00b0 17.174' N",
                     "lng": "147\u00b0 50.644' W",
@@ -44125,15 +44125,6 @@
                     "total_value": "No Data"
                 },
                 {
-                    "dist_mi": 2.26,
-                    "dir": "NNE",
-                    "lat": "64\u00b0 17.092' N",
-                    "lng": "147\u00b0 49.976' W",
-                    "property_type": "Tract",
-                    "property_use": "Vacant Land",
-                    "total_value": 17955.0
-                },
-                {
                     "dist_mi": 2.28,
                     "dir": "N",
                     "lat": "64\u00b0 17.173' N",
@@ -44141,9 +44132,18 @@
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 4841895.0
+                },
+                {
+                    "dist_mi": 2.28,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 17.058' N",
+                    "lng": "147\u00b0 49.656' W",
+                    "property_type": "",
+                    "property_use": "",
+                    "total_value": "No Data"
                 }
             ],
-            "popped": 63,
+            "popped": 62,
             "cutoff": 2.28
         },
         "Parcel_PropType_AcreSum": [
@@ -44232,7 +44232,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 5 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:296196.509%2C1595258.502%2C3338,scale:75546",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:295708.509%2C1594321.3%2C3338,scale:77581",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
@@ -64626,10 +64626,10 @@
         "AkFireNumber": "208",
         "wfigs_IncidentName": "Bonnifield Creek",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 11655.0,
+        "wfigs_GISAcres": 11829.0,
         "wfigs_MapMethod": "Remote Sensing Derived",
         "wfigs_PolygonDateTime": 1750678760000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751506042000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751556249000.0,
         "wfigs_IrwinID": "{850AAF3D-6BF6-4D5D-8BC4-6DA0EC8A4629}",
         "ReportedAcres": 10414.45,
         "HasError": 0.0,
@@ -64791,6 +64791,16 @@
                     "OthrStructs": "No Data"
                 },
                 {
+                    "dist_mi": 1.02,
+                    "dir": "NE",
+                    "lat": "64\u00b0 14.158' N",
+                    "lng": "147\u00b0 42.048' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
                     "dist_mi": 1.03,
                     "dir": "NE",
                     "lat": "64\u00b0 14.722' N",
@@ -64801,18 +64811,8 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 1.17,
-                    "dir": "NNE",
-                    "lat": "64\u00b0 14.158' N",
-                    "lng": "147\u00b0 42.048' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Full",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 1.2,
-                    "dir": "NNE",
+                    "dist_mi": 1.14,
+                    "dir": "NE",
                     "lat": "64\u00b0 14.058' N",
                     "lng": "147\u00b0 41.463' W",
                     "SiteCat": "Structure",
@@ -64996,7 +64996,7 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 132905.36
+                "value head": 133011.76
             },
             {
                 "key head": "Alaska Department of Transportation and Public Facilities",
@@ -65004,11 +65004,11 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 132174.37,
+            "State": 132280.77,
             "Private": 761.29
         },
         "MgmtOption_AcreSum": {
-            "Limited": 83283.32,
+            "Limited": 83389.72,
             "Full": 49652.35
         },
         "NpsStruct_Use_AttrCount": null,
@@ -65018,7 +65018,7 @@
         "NpsStruct_Locations": null,
         "Parcel_BuildingValue_AttrSum": 122295.0,
         "Parcel_FeatureCount": 114.0,
-        "Parcel_LandValue_AttrSum": 127391810.0,
+        "Parcel_LandValue_AttrSum": 127399264.0,
         "Parcel_Locations": {
             "features": [
                 {
@@ -65059,19 +65059,19 @@
                 },
                 {
                     "dist_mi": 0.77,
-                    "dir": "NNE",
-                    "lat": "64\u00b0 15.776' N",
-                    "lng": "147\u00b0 47.934' W",
-                    "property_type": "Waterway",
+                    "dir": "NE",
+                    "lat": "64\u00b0 14.543' N",
+                    "lng": "147\u00b0 43.525' W",
+                    "property_type": "",
                     "property_use": "",
                     "total_value": "No Data"
                 },
                 {
                     "dist_mi": 0.77,
-                    "dir": "NE",
-                    "lat": "64\u00b0 14.543' N",
-                    "lng": "147\u00b0 43.525' W",
-                    "property_type": "",
+                    "dir": "NNE",
+                    "lat": "64\u00b0 15.776' N",
+                    "lng": "147\u00b0 47.934' W",
+                    "property_type": "Waterway",
                     "property_use": "",
                     "total_value": "No Data"
                 },
@@ -65112,10 +65112,46 @@
                     "total_value": "No Data"
                 },
                 {
+                    "dist_mi": 1.0,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 14.284' N",
+                    "lng": "147\u00b0 42.450' W",
+                    "property_type": "",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 1.03,
+                    "dir": "NE",
+                    "lat": "64\u00b0 13.947' N",
+                    "lng": "147\u00b0 41.542' W",
+                    "property_type": "",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 1.04,
+                    "dir": "NE",
+                    "lat": "64\u00b0 14.162' N",
+                    "lng": "147\u00b0 42.016' W",
+                    "property_type": "",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
                     "dist_mi": 1.04,
                     "dir": "NE",
                     "lat": "64\u00b0 15.831' N",
                     "lng": "147\u00b0 47.279' W",
+                    "property_type": "",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 1.04,
+                    "dir": "NE",
+                    "lat": "64\u00b0 14.161' N",
+                    "lng": "147\u00b0 42.017' W",
                     "property_type": "",
                     "property_use": "",
                     "total_value": "No Data"
@@ -65128,15 +65164,6 @@
                     "property_type": "Tract",
                     "property_use": "Vacant Land",
                     "total_value": 8825.0
-                },
-                {
-                    "dist_mi": 1.07,
-                    "dir": "NNE",
-                    "lat": "64\u00b0 13.947' N",
-                    "lng": "147\u00b0 41.542' W",
-                    "property_type": "",
-                    "property_use": "",
-                    "total_value": "No Data"
                 },
                 {
                     "dist_mi": 1.08,
@@ -65170,33 +65197,6 @@
                     "dir": "NE",
                     "lat": "64\u00b0 15.716' N",
                     "lng": "147\u00b0 46.876' W",
-                    "property_type": "",
-                    "property_use": "",
-                    "total_value": "No Data"
-                },
-                {
-                    "dist_mi": 1.13,
-                    "dir": "ENE",
-                    "lat": "64\u00b0 14.284' N",
-                    "lng": "147\u00b0 42.450' W",
-                    "property_type": "",
-                    "property_use": "",
-                    "total_value": "No Data"
-                },
-                {
-                    "dist_mi": 1.17,
-                    "dir": "NNE",
-                    "lat": "64\u00b0 14.114' N",
-                    "lng": "147\u00b0 41.862' W",
-                    "property_type": "",
-                    "property_use": "",
-                    "total_value": "No Data"
-                },
-                {
-                    "dist_mi": 1.18,
-                    "dir": "NNE",
-                    "lat": "64\u00b0 14.161' N",
-                    "lng": "147\u00b0 42.017' W",
                     "property_type": "",
                     "property_use": "",
                     "total_value": "No Data"
@@ -65298,7 +65298,7 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Tax Lot",
-                "value head": 17743.15
+                "value head": 17753.09
             },
             {
                 "key head": "No Data",
@@ -65316,7 +65316,7 @@
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Exempt ",
-                "value head": 17756.61
+                "value head": 17766.55
             },
             {
                 "key head": "No Data",
@@ -65331,8 +65331,8 @@
                 "value head": 83.9
             }
         ],
-        "Parcel_TotalAcres": 19211.76,
-        "Parcel_TotalValue_AttrSum": 127514105.0,
+        "Parcel_TotalAcres": 19221.7,
+        "Parcel_TotalValue_AttrSum": 127521559.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -65388,7 +65388,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 5 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:300736.343%2C1595055.872%2C3338,scale:75022",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:300734.645%2C1595045.957%2C3338,scale:75022",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
