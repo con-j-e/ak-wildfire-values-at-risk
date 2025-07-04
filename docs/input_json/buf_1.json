@@ -31997,8 +31997,8 @@
         "FireActivityStatus": "Active",
         "wfigs_GISAcres": 10745.487579473254,
         "wfigs_MapMethod": "Mixed Methods",
-        "wfigs_PolygonDateTime": 1751407054000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751600919993.0,
+        "wfigs_PolygonDateTime": 1751579854000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751645519000.0,
         "wfigs_IrwinID": "{9B7A96A6-E06B-4F40-9321-9ADB96358945}",
         "ReportedAcres": 11651.0,
         "HasError": 0.0,
@@ -32027,29 +32027,29 @@
             },
             {
                 "key head": "Undesignated",
-                "value head": 2
+                "value head": 3
             },
             {
                 "key head": "Avoid",
-                "value head": 1
+                "value head": 2
             }
         ],
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
-                "value head": 7
+                "value head": 8
             },
             {
                 "key head": "Other",
-                "value head": 1
+                "value head": 2
             }
         ],
-        "Aksd_FeatureCount": 8.0,
+        "Aksd_FeatureCount": 10.0,
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.37,
-                    "dir": "NE",
+                    "dist_mi": 0.36,
+                    "dir": "E",
                     "lat": "65\u00b0 32.755' N",
                     "lng": "150\u00b0 08.204' W",
                     "SiteCat": "Structure",
@@ -32058,8 +32058,8 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 0.38,
-                    "dir": "NE",
+                    "dist_mi": 0.36,
+                    "dir": "E",
                     "lat": "65\u00b0 32.767' N",
                     "lng": "150\u00b0 08.198' W",
                     "SiteCat": "Structure",
@@ -32068,7 +32068,17 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 0.58,
+                    "dist_mi": 0.45,
+                    "dir": "SSE",
+                    "lat": "65\u00b0 28.922' N",
+                    "lng": "150\u00b0 17.066' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.59,
                     "dir": "ENE",
                     "lat": "65\u00b0 33.506' N",
                     "lng": "150\u00b0 07.444' W",
@@ -32088,7 +32098,17 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 0.76,
+                    "dist_mi": 0.78,
+                    "dir": "ESE",
+                    "lat": "65\u00b0 31.306' N",
+                    "lng": "150\u00b0 07.836' W",
+                    "SiteCat": "Other",
+                    "Protection": "Avoid",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.85,
                     "dir": "ESE",
                     "lat": "65\u00b0 30.180' N",
                     "lng": "150\u00b0 12.034' W",
@@ -32098,10 +32118,10 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 0.78,
-                    "dir": "ESE",
-                    "lat": "65\u00b0 31.306' N",
-                    "lng": "150\u00b0 07.836' W",
+                    "dist_mi": 0.96,
+                    "dir": "SE",
+                    "lat": "65\u00b0 29.336' N",
+                    "lng": "150\u00b0 12.965' W",
                     "SiteCat": "Other",
                     "Protection": "Avoid",
                     "MainStructs": "No Data",
@@ -32132,9 +32152,10 @@
             "cutoff": null
         },
         "NtvAllot_Status_AcreSum": {
-            "Restricted": 1140.12
+            "Restricted": 1768.3,
+            "Selected": 123.84
         },
-        "NtvAllot_FeatureCount": 12.0,
+        "NtvAllot_FeatureCount": 22.0,
         "NtvAllot_Locations": {
             "features": [
                 {
@@ -32154,28 +32175,68 @@
                     "ALLOT_ID": "989F14027"
                 },
                 {
-                    "dist_mi": 0.25,
-                    "dir": "SE",
-                    "lat": "65\u00b0 30.333' N",
-                    "lng": "150\u00b0 13.081' W",
+                    "dist_mi": 0.24,
+                    "dir": "E",
+                    "lat": "65\u00b0 30.238' N",
+                    "lng": "150\u00b0 13.347' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "989F33033"
                 },
                 {
-                    "dist_mi": 0.54,
-                    "dir": "SSE",
-                    "lat": "65\u00b0 30.069' N",
-                    "lng": "150\u00b0 12.995' W",
+                    "dist_mi": 0.26,
+                    "dir": "WNW",
+                    "lat": "65\u00b0 29.556' N",
+                    "lng": "150\u00b0 21.971' W",
+                    "ALLOT_STATUS": "Selected",
+                    "ALLOT_ID": "FF097196"
+                },
+                {
+                    "dist_mi": 0.27,
+                    "dir": "SE",
+                    "lat": "65\u00b0 29.818' N",
+                    "lng": "150\u00b0 13.846' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "989F14346A"
                 },
                 {
-                    "dist_mi": 0.55,
+                    "dist_mi": 0.36,
+                    "dir": "S",
+                    "lat": "65\u00b0 28.862' N",
+                    "lng": "150\u00b0 21.055' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "989F14495B"
+                },
+                {
+                    "dist_mi": 0.37,
+                    "dir": "S",
+                    "lat": "65\u00b0 28.848' N",
+                    "lng": "150\u00b0 20.693' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "989F14282B"
+                },
+                {
+                    "dist_mi": 0.43,
+                    "dir": "SW",
+                    "lat": "65\u00b0 28.917' N",
+                    "lng": "150\u00b0 21.590' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "989F17130"
+                },
+                {
+                    "dist_mi": 0.57,
                     "dir": "ENE",
-                    "lat": "65\u00b0 33.579' N",
-                    "lng": "150\u00b0 07.561' W",
+                    "lat": "65\u00b0 33.601' N",
+                    "lng": "150\u00b0 07.586' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "989F15572"
+                },
+                {
+                    "dist_mi": 0.64,
+                    "dir": "SW",
+                    "lat": "65\u00b0 29.119' N",
+                    "lng": "150\u00b0 22.511' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "989F13550B"
                 },
                 {
                     "dist_mi": 0.65,
@@ -32186,7 +32247,7 @@
                     "ALLOT_ID": "989F14548A"
                 },
                 {
-                    "dist_mi": 0.68,
+                    "dist_mi": 0.72,
                     "dir": "SE",
                     "lat": "65\u00b0 30.537' N",
                     "lng": "150\u00b0 11.710' W",
@@ -32200,12 +32261,20 @@
                     "lng": "150\u00b0 07.308' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "989F13361C"
+                },
+                {
+                    "dist_mi": 0.94,
+                    "dir": "WNW",
+                    "lat": "65\u00b0 29.772' N",
+                    "lng": "150\u00b0 23.291' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "989F13077A"
                 }
             ],
             "popped": 0,
             "cutoff": null
         },
-        "NtvAllot_TotalAcres": 1140.12,
+        "NtvAllot_TotalAcres": 1892.14,
         "ComsTwr_Type_AttrCount": null,
         "ComsTwr_FeatureCount": null,
         "ComsTwr_Locations": null,
@@ -32214,29 +32283,34 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Baan O Yeel Kon Corporation",
-                "value head": 18472.82
+                "value head": 22266.9
             },
             {
                 "key head": "Doyon, Limited",
-                "value head": 7776.83
+                "value head": 8385.98
             },
             {
                 "key head": "Alaska Regional Office",
-                "value head": 1140.12
+                "value head": 1768.3
             },
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 3.29
+                "value head": 163.18
+            },
+            {
+                "key head": "Central Yukon Field Office",
+                "value head": 123.84
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "ANCSA": 26249.65,
-            "BIA": 1140.12,
-            "Private": 3.29
+            "ANCSA": 30652.88,
+            "BIA": 1768.3,
+            "Private": 163.18,
+            "BLM": 123.84
         },
         "MgmtOption_AcreSum": {
-            "Full": 26884.57,
-            "Limited": 348.68,
+            "Full": 31888.93,
+            "Limited": 659.46,
             "Critical": 159.81
         },
         "NpsStruct_Use_AttrCount": null,
@@ -32271,24 +32345,42 @@
         "SpecMgmt_Consid_AttrCount": [
             {
                 "key head": "Contact Doyon, Limited Lands and Natural Resources Dept. for guidence.",
-                "value head": 3
+                "value head": 4
+            },
+            {
+                "key head": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area.",
+                "value head": 1
             }
         ],
-        "SpecMgmt_FeatureCount": 3.0,
+        "SpecMgmt_FeatureCount": 5.0,
         "SpecMgmt_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.3,
+                    "dist_mi": 0.31,
                     "dir": "WNW",
-                    "lat": "65\u00b0 32.130' N",
-                    "lng": "150\u00b0 21.045' W",
+                    "lat": "65\u00b0 32.129' N",
+                    "lng": "150\u00b0 21.046' W",
                     "ManagementConsiderations": "Contact Doyon, Limited Lands and Natural Resources Dept. for guidence."
+                },
+                {
+                    "dist_mi": 0.41,
+                    "dir": "SSE",
+                    "lat": "65\u00b0 28.961' N",
+                    "lng": "150\u00b0 17.073' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
                     "dist_mi": 0.89,
                     "dir": "NW",
                     "lat": "65\u00b0 35.069' N",
                     "lng": "150\u00b0 14.656' W",
+                    "ManagementConsiderations": "Contact Doyon, Limited Lands and Natural Resources Dept. for guidence."
+                },
+                {
+                    "dist_mi": 0.99,
+                    "dir": "NNW",
+                    "lat": "65\u00b0 34.996' N",
+                    "lng": "150\u00b0 18.035' W",
                     "ManagementConsiderations": "Contact Doyon, Limited Lands and Natural Resources Dept. for guidence."
                 }
             ],
@@ -32307,7 +32399,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:173611.135%2C1736272.128%2C3338,scale:33721",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:173148.805%2C1735430.428%2C3338,scale:35684",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 40.0,
