@@ -4026,12 +4026,12 @@
         "AkFireNumber": "331",
         "wfigs_IncidentName": "Racquet",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 701.4321615416783,
+        "wfigs_GISAcres": 801.9982330871028,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1751059607000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751431682703.0,
+        "wfigs_PolygonDateTime": 1751663811000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751732718000.0,
         "wfigs_IrwinID": "{D1884080-B3E7-42D7-8E51-EF7915D592DC}",
-        "ReportedAcres": 701.0,
+        "ReportedAcres": 721.0,
         "HasError": 0.0,
         "DefaultLabel": "331-Racquet, Perimeter",
         "AnalysisBufferMiles": 0.0,
@@ -4051,10 +4051,35 @@
         "WeatherStation_Locations": null,
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
-        "Aksd_Protection_AttrCount": null,
-        "Aksd_SiteCat_AttrCount": null,
-        "Aksd_FeatureCount": null,
-        "Aksd_Locations": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Full",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Structure",
+                "value head": 1
+            }
+        ],
+        "Aksd_FeatureCount": 1.0,
+        "Aksd_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.01,
+                    "dir": "Interior",
+                    "lat": "66\u00b0 19.685' N",
+                    "lng": "141\u00b0 12.455' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "NtvAllot_Status_AcreSum": null,
         "NtvAllot_FeatureCount": null,
         "NtvAllot_Locations": null,
@@ -4067,14 +4092,19 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 701.43
+                "value head": 797.45
+            },
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 4.55
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 701.43
+            "BLM": 797.45,
+            "Private": 4.55
         },
         "MgmtOption_AcreSum": {
-            "Limited": 701.43
+            "Limited": 802.0
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -4120,7 +4150,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:575358.0%2C1875074.289%2C3338,scale:10659",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:574862.352%2C1874963.082%2C3338,scale:17438",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -4141,10 +4171,10 @@
         "AkFireNumber": "330",
         "wfigs_IncidentName": "Runt",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 1217.460226057202,
+        "wfigs_GISAcres": 1502.0301640594344,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1751578104000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751692283800.0,
+        "wfigs_PolygonDateTime": 1751663811000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751732718000.0,
         "wfigs_IrwinID": "{58282BC0-C6F9-401A-8669-FF538954B1A0}",
         "ReportedAcres": 1217.0,
         "HasError": 0.0,
@@ -4207,14 +4237,14 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 1217.46
+                "value head": 1502.03
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 1217.46
+            "BLM": 1502.03
         },
         "MgmtOption_AcreSum": {
-            "Limited": 1217.46
+            "Limited": 1502.03
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -4260,7 +4290,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:573308.44%2C1870859.875%2C3338,scale:11902",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:573712.586%2C1870853.81%2C3338,scale:12904",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -4281,10 +4311,10 @@
         "AkFireNumber": "328",
         "wfigs_IncidentName": "Three Castle",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 1833.4569993967996,
+        "wfigs_GISAcres": 1887.634766124902,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1750972044000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751097563497.0,
+        "wfigs_PolygonDateTime": 1751663825000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751734176000.0,
         "wfigs_IrwinID": "{2AA85EDB-572A-4BF1-A144-55883FA1C4C4}",
         "ReportedAcres": 1833.0,
         "HasError": 0.0,
@@ -4322,14 +4352,14 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Doyon, Limited",
-                "value head": 1833.46
+                "value head": 1887.63
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "ANCSA": 1833.46
+            "ANCSA": 1887.63
         },
         "MgmtOption_AcreSum": {
-            "Limited": 1833.46
+            "Limited": 1887.63
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -4372,8 +4402,8 @@
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "65\u00b0 14.960' N",
-                    "lng": "141\u00b0 14.783' W",
+                    "lat": "65\u00b0 14.335' N",
+                    "lng": "141\u00b0 13.664' W",
                     "ManagementConsiderations": "Active land use permit (to Dartmouth). Contact Doyon, Limited Lands and Natural Resources Dept. for guidence."
                 }
             ],
@@ -4392,7 +4422,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:592659.291%2C1753851.765%2C3338,scale:9408",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:592639.906%2C1753852.755%2C3338,scale:9485",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
@@ -17466,7 +17496,7 @@
         "wfigs_GISAcres": 3919.771596014709,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751602020000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751695206327.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751733601640.0,
         "wfigs_IrwinID": "{5F27DEF6-F74A-49F7-9F6D-677AED2F4ED1}",
         "ReportedAcres": 3919.8,
         "HasError": 0.0,
@@ -17713,7 +17743,7 @@
         "PercentContained": 0.0,
         "PercentPerimeterToBeContained": 0.0,
         "FireMgmtComplexity": null,
-        "IncidentComplexityLevel": "Type 3 Incident",
+        "IncidentComplexityLevel": "Type 4 Incident",
         "EstimatedCostToDate": 4163208.0,
         "TotalIncidentPersonnel": 79.0,
         "POOProtectingAgency": "DVF",
@@ -23078,10 +23108,10 @@
         "AkFireNumber": "184",
         "wfigs_IncidentName": "Kandik",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 4385.276840244352,
+        "wfigs_GISAcres": 4406.642541571064,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1751231843000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751518169530.0,
+        "wfigs_PolygonDateTime": 1751663825000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751734202000.0,
         "wfigs_IrwinID": "{F872A2B5-082C-40A3-BE29-64E8188804C7}",
         "ReportedAcres": 4385.0,
         "HasError": 0.0,
@@ -23119,14 +23149,14 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Yukon-Charley Rivers National Preserve",
-                "value head": 4385.27
+                "value head": 4406.64
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "NPS": 4385.27
+            "NPS": 4406.64
         },
         "MgmtOption_AcreSum": {
-            "Limited": 4385.27
+            "Limited": 4406.64
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -23172,7 +23202,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:543756.144%2C1765304.254%2C3338,scale:17922",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:543762.955%2C1765302.04%2C3338,scale:17922",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -23541,7 +23571,7 @@
         "wfigs_GISAcres": 174.88587559555197,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1750972044000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751385826000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751733940000.0,
         "wfigs_IrwinID": "{D5CC5231-D6D7-485D-83E1-F04A329A50E7}",
         "ReportedAcres": 175.0,
         "HasError": 0.0,
