@@ -3071,9 +3071,9 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1751677726857.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751697935383.0,
         "wfigs_IrwinID": "{37A2EE4A-9CE7-4374-80C4-13F5B92674D3}",
-        "ReportedAcres": 1.0,
+        "ReportedAcres": 86.0,
         "HasError": 0.0,
         "DefaultLabel": "379-Duck, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -3093,18 +3093,43 @@
         "WeatherStation_Locations": null,
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
-        "Aksd_Protection_AttrCount": null,
-        "Aksd_SiteCat_AttrCount": null,
-        "Aksd_FeatureCount": null,
-        "Aksd_Locations": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Full",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Camp",
+                "value head": 1
+            }
+        ],
+        "Aksd_FeatureCount": 1.0,
+        "Aksd_Locations": {
+            "features": [
+                {
+                    "dist_mi": 2.84,
+                    "dir": "SW",
+                    "lat": "65\u00b0 10.770' N",
+                    "lng": "165\u00b0 31.319' W",
+                    "SiteCat": "Camp",
+                    "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "NtvAllot_Status_AcreSum": {
-            "Restricted": 169.9
+            "Restricted": 206.02
         },
         "NtvAllot_FeatureCount": 3.0,
         "NtvAllot_Locations": {
             "features": [
                 {
-                    "dist_mi": 2.2,
+                    "dist_mi": 2.02,
                     "dir": "SE",
                     "lat": "65\u00b0 11.872' N",
                     "lng": "165\u00b0 24.258' W",
@@ -3112,7 +3137,7 @@
                     "ALLOT_ID": "978F28263B"
                 },
                 {
-                    "dist_mi": 2.47,
+                    "dist_mi": 2.28,
                     "dir": "WSW",
                     "lat": "65\u00b0 11.694' N",
                     "lng": "165\u00b0 32.070' W",
@@ -3120,7 +3145,7 @@
                     "ALLOT_ID": "978F12584D"
                 },
                 {
-                    "dist_mi": 3.0,
+                    "dist_mi": 2.81,
                     "dir": "SW",
                     "lat": "65\u00b0 11.004' N",
                     "lng": "165\u00b0 31.996' W",
@@ -3131,7 +3156,7 @@
             "popped": 0,
             "cutoff": null
         },
-        "NtvAllot_TotalAcres": 169.9,
+        "NtvAllot_TotalAcres": 206.02,
         "ComsTwr_Type_AttrCount": null,
         "ComsTwr_FeatureCount": null,
         "ComsTwr_Locations": null,
@@ -3140,29 +3165,29 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Mary's Igloo Native Corporation",
-                "value head": 14521.82
+                "value head": 15687.02
             },
             {
                 "key head": "Anchorage Field Office",
-                "value head": 3592.27
+                "value head": 4617.17
             },
             {
                 "key head": "Alaska Regional Office",
-                "value head": 169.9
+                "value head": 206.02
             },
             {
                 "key head": "Bering Straits Native Corporation",
-                "value head": 52.42
+                "value head": 136.1
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "ANCSA": 14574.24,
-            "BLM": 3592.27,
-            "BIA": 169.9
+            "ANCSA": 15823.12,
+            "BLM": 4617.17,
+            "BIA": 206.02
         },
         "MgmtOption_AcreSum": {
-            "Modified (Aug 20)": 18166.52,
-            "Full": 169.9
+            "Modified (Aug 20)": 20440.29,
+            "Full": 206.02
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -3208,7 +3233,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-534097.41%2C1741429.614%2C3338,scale:24290",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-534097.41%2C1741429.614%2C3338,scale:25775",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
