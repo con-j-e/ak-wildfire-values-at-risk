@@ -29979,10 +29979,10 @@
         "AkFireNumber": "264",
         "wfigs_IncidentName": "Buckley Bar",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 2302.411275764414,
+        "wfigs_GISAcres": 3272.9371521339604,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1751578686000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751694486017.0,
+        "wfigs_PolygonDateTime": 1751663830000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751737415000.0,
         "wfigs_IrwinID": "{11A6FCDD-5FBD-4E76-9899-8658696EE21E}",
         "ReportedAcres": 2302.0,
         "HasError": 0.0,
@@ -30006,49 +30006,63 @@
         "Aksd_OtherStruct_AttrSum": null,
         "Aksd_Protection_AttrCount": [
             {
+                "key head": "Avoid",
+                "value head": 2
+            },
+            {
                 "key head": "Undesignated",
                 "value head": 2
             },
             {
-                "key head": "Avoid",
+                "key head": "Full",
                 "value head": 1
             },
             {
-                "key head": "Full",
+                "key head": "Unknown",
                 "value head": 1
             }
         ],
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
-                "value head": 3
+                "value head": 4
             },
             {
                 "key head": "Other",
-                "value head": 1
+                "value head": 2
             }
         ],
-        "Aksd_FeatureCount": 4.0,
+        "Aksd_FeatureCount": 6.0,
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.88,
+                    "dist_mi": 0.36,
                     "dir": "SSE",
-                    "lat": "65\u00b0 20.072' N",
-                    "lng": "144\u00b0 19.694' W",
+                    "lat": "65\u00b0 20.132' N",
+                    "lng": "144\u00b0 19.691' W",
                     "SiteCat": "Structure",
-                    "Protection": "Full",
-                    "MainStructs": 1.0,
+                    "Protection": "Unknown",
+                    "MainStructs": "No Data",
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 1.32,
-                    "dir": "SSW",
+                    "dist_mi": 0.39,
+                    "dir": "S",
                     "lat": "65\u00b0 19.805' N",
                     "lng": "144\u00b0 21.597' W",
                     "SiteCat": "Structure",
                     "Protection": "Undesignated",
                     "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.4,
+                    "dir": "E",
+                    "lat": "65\u00b0 20.072' N",
+                    "lng": "144\u00b0 19.694' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": 1.0,
                     "OthrStructs": "No Data"
                 },
                 {
@@ -30062,10 +30076,20 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 2.69,
-                    "dir": "SSW",
+                    "dist_mi": 1.95,
+                    "dir": "SW",
                     "lat": "65\u00b0 18.873' N",
                     "lng": "144\u00b0 26.130' W",
+                    "SiteCat": "Other",
+                    "Protection": "Avoid",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.83,
+                    "dir": "SW",
+                    "lat": "65\u00b0 18.516' N",
+                    "lng": "144\u00b0 27.830' W",
                     "SiteCat": "Other",
                     "Protection": "Avoid",
                     "MainStructs": "No Data",
@@ -30087,7 +30111,7 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 29220.62
+                "value head": 33535.85
             },
             {
                 "key head": "Alaska Department of Natural Resources",
@@ -30095,12 +30119,12 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 29220.62,
+            "BLM": 33535.85,
             "State": 7113.89
         },
         "MgmtOption_AcreSum": {
-            "Modified (Jul 10)": 30555.45,
-            "Limited": 5779.05
+            "Modified (Jul 10)": 34795.72,
+            "Limited": 5854.03
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -30146,7 +30170,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:447468.133%2C1743935.978%2C3338,scale:35439",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:447537.216%2C1743317.7%2C3338,scale:36570",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -32102,10 +32126,10 @@
         "AkFireNumber": "249",
         "wfigs_IncidentName": "Takoma",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 3274.8310105329074,
+        "wfigs_GISAcres": 6451.161896804205,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1751577918000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751662902480.0,
+        "wfigs_PolygonDateTime": 1751663830000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751738511000.0,
         "wfigs_IrwinID": "{20B4D3E8-BA9A-405C-BF75-DA23EA9C704F}",
         "ReportedAcres": 3275.0,
         "HasError": 0.0,
@@ -32143,19 +32167,19 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 26557.41
+                "value head": 29884.76
             },
             {
                 "key head": "Yukon-Charley Rivers National Preserve",
-                "value head": 15972.58
+                "value head": 22495.29
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 26557.41,
-            "NPS": 15972.58
+            "State": 29884.76,
+            "NPS": 22495.29
         },
         "MgmtOption_AcreSum": {
-            "Limited": 42529.99
+            "Limited": 52380.04
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -32201,7 +32225,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:467553.62%2C1754598.515%2C3338,scale:40012",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:468336.96%2C1753565.148%2C3338,scale:42818",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -33796,12 +33820,12 @@
         "AkFireNumber": "243",
         "wfigs_IncidentName": "Turtle",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 11183.014749678761,
+        "wfigs_GISAcres": 11860.235496384801,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1751578696000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751662874643.0,
+        "wfigs_PolygonDateTime": 1751663830000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751738197000.0,
         "wfigs_IrwinID": "{A224676A-B13F-4189-ABBB-667139A20621}",
-        "ReportedAcres": 10627.0,
+        "ReportedAcres": 11183.0,
         "HasError": 0.0,
         "DefaultLabel": "243-Turtle, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -34189,11 +34213,11 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 41907.49
+                "value head": 42544.41
             },
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 13285.64
+                "value head": 13304.22
             },
             {
                 "key head": "Doyon, Limited",
@@ -34209,16 +34233,16 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 41275.15,
+            "State": 41912.07,
             "ANCSA": 15776.96,
-            "BLM": 13285.64,
+            "BLM": 13304.22,
             "Private": 632.34,
             "BIA": 543.65
         },
         "MgmtOption_AcreSum": {
-            "Limited": 43666.19,
+            "Limited": 44313.16,
             "Modified (Jul 10)": 16913.32,
-            "Full": 10934.23
+            "Full": 10942.77
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -34348,19 +34372,19 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:444206.847%2C1770921.358%2C3338,scale:54621",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:444180.252%2C1770843.563%2C3338,scale:54621",
         "CpxName": "Ptarmigan Complex",
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
         "PercentPerimeterToBeContained": 0.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": null,
-        "EstimatedCostToDate": 398969.0,
+        "EstimatedCostToDate": 441538.0,
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1751594276000.0,
+        "ICS209ReportDateTime": 1751680361000.0,
         "ICS209ReportStatus": null,
         "IncidentManagementOrganization": null
     },
@@ -34369,10 +34393,10 @@
         "AkFireNumber": "242",
         "wfigs_IncidentName": "Ikheenjik",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 9289.315317444762,
+        "wfigs_GISAcres": 10106.998406432234,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1751578696000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751662753010.0,
+        "wfigs_PolygonDateTime": 1751663830000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751738197000.0,
         "wfigs_IrwinID": "{F366F6E4-8E54-4DA8-927F-8DB53D21B0A1}",
         "ReportedAcres": 9289.0,
         "HasError": 0.0,
@@ -34432,6 +34456,16 @@
         "Aksd_Locations": {
             "features": [
                 {
+                    "dist_mi": 2.55,
+                    "dir": "NNW",
+                    "lat": "65\u00b0 42.428' N",
+                    "lng": "144\u00b0 19.925' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": 1.0,
+                    "OthrStructs": "No Data"
+                },
+                {
                     "dist_mi": 2.62,
                     "dir": "SW",
                     "lat": "65\u00b0 35.075' N",
@@ -34442,17 +34476,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 2.67,
-                    "dir": "NNW",
-                    "lat": "65\u00b0 42.428' N",
-                    "lng": "144\u00b0 19.925' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Full",
-                    "MainStructs": 1.0,
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 2.89,
+                    "dist_mi": 2.78,
                     "dir": "NNW",
                     "lat": "65\u00b0 42.639' N",
                     "lng": "144\u00b0 19.852' W",
@@ -34466,7 +34490,7 @@
             "cutoff": null
         },
         "NtvAllot_Status_AcreSum": {
-            "Restricted": 825.98
+            "Restricted": 908.58
         },
         "NtvAllot_FeatureCount": 13.0,
         "NtvAllot_Locations": {
@@ -34488,7 +34512,7 @@
                     "ALLOT_ID": "989F85881C"
                 },
                 {
-                    "dist_mi": 2.37,
+                    "dist_mi": 2.25,
                     "dir": "NNW",
                     "lat": "65\u00b0 42.139' N",
                     "lng": "144\u00b0 20.010' W",
@@ -34496,20 +34520,36 @@
                     "ALLOT_ID": "989F14263"
                 },
                 {
-                    "dist_mi": 2.39,
+                    "dist_mi": 2.33,
                     "dir": "N",
-                    "lat": "65\u00b0 42.322' N",
-                    "lng": "144\u00b0 18.018' W",
-                    "ALLOT_STATUS": "Restricted",
-                    "ALLOT_ID": "989F13709"
-                },
-                {
-                    "dist_mi": 2.4,
-                    "dir": "NNW",
                     "lat": "65\u00b0 42.317' N",
                     "lng": "144\u00b0 18.628' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "989F13706"
+                },
+                {
+                    "dist_mi": 2.33,
+                    "dir": "N",
+                    "lat": "65\u00b0 42.322' N",
+                    "lng": "144\u00b0 18.427' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "989F13709"
+                },
+                {
+                    "dist_mi": 2.59,
+                    "dir": "NNW",
+                    "lat": "65\u00b0 42.433' N",
+                    "lng": "144\u00b0 20.120' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "989F14263"
+                },
+                {
+                    "dist_mi": 2.7,
+                    "dir": "NW",
+                    "lat": "65\u00b0 42.381' N",
+                    "lng": "144\u00b0 21.041' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "989F18825"
                 },
                 {
                     "dist_mi": 2.71,
@@ -34528,20 +34568,12 @@
                     "ALLOT_ID": "989F13744B"
                 },
                 {
-                    "dist_mi": 2.71,
+                    "dist_mi": 2.75,
                     "dir": "NNW",
-                    "lat": "65\u00b0 42.433' N",
-                    "lng": "144\u00b0 20.120' W",
+                    "lat": "65\u00b0 42.615' N",
+                    "lng": "144\u00b0 19.800' W",
                     "ALLOT_STATUS": "Restricted",
-                    "ALLOT_ID": "989F14263"
-                },
-                {
-                    "dist_mi": 2.73,
-                    "dir": "NNW",
-                    "lat": "65\u00b0 42.381' N",
-                    "lng": "144\u00b0 21.041' W",
-                    "ALLOT_STATUS": "Restricted",
-                    "ALLOT_ID": "989F18825"
+                    "ALLOT_ID": "989F13712"
                 },
                 {
                     "dist_mi": 2.76,
@@ -34552,23 +34584,15 @@
                     "ALLOT_ID": "989F18825"
                 },
                 {
-                    "dist_mi": 2.85,
-                    "dir": "NNW",
-                    "lat": "65\u00b0 42.700' N",
-                    "lng": "144\u00b0 18.847' W",
-                    "ALLOT_STATUS": "Restricted",
-                    "ALLOT_ID": "989F13712"
-                },
-                {
-                    "dist_mi": 2.85,
-                    "dir": "NNW",
+                    "dist_mi": 2.78,
+                    "dir": "N",
                     "lat": "65\u00b0 42.713' N",
                     "lng": "144\u00b0 18.628' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "989F13711"
                 },
                 {
-                    "dist_mi": 2.99,
+                    "dist_mi": 2.87,
                     "dir": "NNW",
                     "lat": "65\u00b0 42.645' N",
                     "lng": "144\u00b0 20.455' W",
@@ -34579,7 +34603,7 @@
             "popped": 0,
             "cutoff": null
         },
-        "NtvAllot_TotalAcres": 825.98,
+        "NtvAllot_TotalAcres": 908.58,
         "ComsTwr_Type_AttrCount": null,
         "ComsTwr_FeatureCount": null,
         "ComsTwr_Locations": null,
@@ -34588,7 +34612,7 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 42554.51
+                "value head": 44908.98
             },
             {
                 "key head": "Doyon, Limited",
@@ -34596,15 +34620,19 @@
             },
             {
                 "key head": "Danzhit Hanlaii Corporation",
-                "value head": 9310.32
+                "value head": 9589.88
             },
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 5270.59
+                "value head": 5440.74
             },
             {
                 "key head": "Alaska Regional Office",
-                "value head": 825.98
+                "value head": 908.58
+            },
+            {
+                "key head": "Yukon-Charley Rivers National Preserve",
+                "value head": 12.48
             },
             {
                 "key head": "Alaska Department of Fish and Game",
@@ -34612,16 +34640,17 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 42548.03,
-            "ANCSA": 19712.78,
-            "BLM": 5270.59,
-            "BIA": 825.98,
-            "Private": 6.71
+            "State": 44899.2,
+            "ANCSA": 19992.34,
+            "BLM": 5440.74,
+            "BIA": 908.58,
+            "NPS": 12.48,
+            "Private": 10.0
         },
         "MgmtOption_AcreSum": {
-            "Limited": 39746.44,
-            "Modified (Jul 10)": 22135.51,
-            "Full": 6482.13
+            "Limited": 41987.28,
+            "Modified (Jul 10)": 22694.07,
+            "Full": 6581.99
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -34672,7 +34701,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:448335.868%2C1772850.625%2C3338,scale:51291",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:448653.959%2C1772823.451%2C3338,scale:51631",
         "CpxName": "Ptarmigan Complex",
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -34684,7 +34713,7 @@
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1751594274000.0,
+        "ICS209ReportDateTime": 1751680359000.0,
         "ICS209ReportStatus": null,
         "IncidentManagementOrganization": null
     },
@@ -57954,12 +57983,12 @@
         "AkFireNumber": "152",
         "wfigs_IncidentName": "Tetilesook",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 1172.7356188357633,
+        "wfigs_GISAcres": 1259.3758735774788,
         "wfigs_MapMethod": "Digitized-Image",
-        "wfigs_PolygonDateTime": 1750890300000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751516244473.0,
+        "wfigs_PolygonDateTime": 1751667480000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751738468153.0,
         "wfigs_IrwinID": "{388EB379-166C-44B8-9BCE-312BDABBDCE0}",
-        "ReportedAcres": 1172.74,
+        "ReportedAcres": 1259.38,
         "HasError": 0.0,
         "DefaultLabel": "152-Tetilesook, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -57995,7 +58024,7 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Selawik National Wildlife Refuge",
-                "value head": 25538.94
+                "value head": 25669.93
             },
             {
                 "key head": "Kobuk Valley National Park",
@@ -58003,11 +58032,11 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "USFWS": 25538.94,
+            "USFWS": 25669.93,
             "NPS": 9324.18
         },
         "MgmtOption_AcreSum": {
-            "Limited": 34863.12
+            "Limited": 34994.11
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -58053,7 +58082,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-244245.938%2C1895920.725%2C3338,scale:33975",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-244244.255%2C1895895.609%2C3338,scale:34326",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
