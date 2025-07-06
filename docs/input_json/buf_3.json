@@ -1,17 +1,17 @@
 [
     {
         "AkFireRegion": "MSS",
-        "AkFireNumber": "471",
+        "AkFireNumber": "405",
         "wfigs_IncidentName": "Campbell Creek 2",
-        "FireActivityStatus": "Active",
+        "FireActivityStatus": "Controlled",
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1751826768210.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751828221527.0,
         "wfigs_IrwinID": "{2042D487-5FFB-4F74-AA68-DCE498957B6D}",
         "ReportedAcres": 0.1,
         "HasError": 0.0,
-        "DefaultLabel": "471-Campbell Creek 2, 3 Mile Buffer",
+        "DefaultLabel": "405-Campbell Creek 2, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
         "AkMine_Active_AttrCount": null,
         "AkMine_Type_AttrCount": null,
@@ -2061,7 +2061,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1751826999320.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751827975827.0,
         "wfigs_IrwinID": "{A254F870-0AC0-41E6-ADBF-9534D19CDBD2}",
         "ReportedAcres": 1.0,
         "HasError": 0.0,
@@ -34405,12 +34405,12 @@
         "AkFireNumber": "279",
         "wfigs_IncidentName": "Moldy",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 25045.377571647834,
+        "wfigs_GISAcres": 28840.882432582293,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751542663000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751768567000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751828011000.0,
         "wfigs_IrwinID": "{BE1874C8-7BD4-4D22-A087-A689F710ED78}",
-        "ReportedAcres": 24571.0,
+        "ReportedAcres": 28841.0,
         "HasError": 0.0,
         "DefaultLabel": "279-Moldy, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -34460,9 +34460,9 @@
             "cutoff": null
         },
         "NtvAllot_Status_AcreSum": {
-            "Restricted": 1024.56
+            "Restricted": 1025.63
         },
-        "NtvAllot_FeatureCount": 10.0,
+        "NtvAllot_FeatureCount": 11.0,
         "NtvAllot_Locations": {
             "features": [
                 {
@@ -34522,12 +34522,20 @@
                     "ALLOT_ID": "989F82133A"
                 },
                 {
-                    "dist_mi": 2.0,
-                    "dir": "W",
+                    "dist_mi": 1.56,
+                    "dir": "WSW",
                     "lat": "65\u00b0 33.330' N",
                     "lng": "157\u00b0 00.485' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "989F14413"
+                },
+                {
+                    "dist_mi": 1.97,
+                    "dir": "W",
+                    "lat": "65\u00b0 33.610' N",
+                    "lng": "157\u00b0 01.512' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "989F27926"
                 },
                 {
                     "dist_mi": 2.32,
@@ -34538,16 +34546,8 @@
                     "ALLOT_ID": "989F13295D"
                 },
                 {
-                    "dist_mi": 2.45,
-                    "dir": "W",
-                    "lat": "65\u00b0 33.610' N",
-                    "lng": "157\u00b0 01.512' W",
-                    "ALLOT_STATUS": "Restricted",
-                    "ALLOT_ID": "989F27926"
-                },
-                {
-                    "dist_mi": 3.0,
-                    "dir": "NE",
+                    "dist_mi": 2.96,
+                    "dir": "ENE",
                     "lat": "65\u00b0 42.545' N",
                     "lng": "156\u00b0 34.360' W",
                     "ALLOT_STATUS": "Restricted",
@@ -34557,7 +34557,7 @@
             "popped": 0,
             "cutoff": null
         },
-        "NtvAllot_TotalAcres": 1024.56,
+        "NtvAllot_TotalAcres": 1025.63,
         "ComsTwr_Type_AttrCount": null,
         "ComsTwr_FeatureCount": null,
         "ComsTwr_Locations": null,
@@ -34566,30 +34566,30 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Koyukuk National Wildlife Refuge",
-                "value head": 64807.66
+                "value head": 67628.93
             },
             {
                 "key head": "Doyon, Limited",
-                "value head": 39626.47
+                "value head": 41131.19
             },
             {
                 "key head": "K'oyitl'ots'ina, Limited",
-                "value head": 4081.18
+                "value head": 4095.89
             },
             {
                 "key head": "Alaska Regional Office",
-                "value head": 1024.56
+                "value head": 1025.63
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "USFWS": 64807.66,
-            "ANCSA": 43707.64,
-            "BIA": 1024.56
+            "USFWS": 67628.93,
+            "ANCSA": 45227.08,
+            "BIA": 1025.63
         },
         "MgmtOption_AcreSum": {
-            "Modified (Jul 10)": 77195.52,
-            "Limited": 26885.93,
-            "Full": 5458.4
+            "Modified (Jul 10)": 79679.06,
+            "Limited": 28638.88,
+            "Full": 5563.69
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -34635,7 +34635,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-127423.139%2C1741582.992%2C3338,scale:63963",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-127627.91%2C1741766.945%2C3338,scale:65901",
         "CpxName": "Roundabout Complex",
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -34647,7 +34647,7 @@
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "ANC",
         "POOJurisdictionalUnit": "AKDYN",
-        "ICS209ReportDateTime": 1751688504000.0,
+        "ICS209ReportDateTime": 1751777599000.0,
         "ICS209ReportStatus": "F",
         "IncidentManagementOrganization": "Type 4 IC"
     },
@@ -41745,7 +41745,7 @@
         "wfigs_GISAcres": 576.6385192436217,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1750576260000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751688512060.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751828004000.0,
         "wfigs_IrwinID": "{5A97DFEA-AF3D-4935-B8C5-79B7A427F752}",
         "ReportedAcres": 577.0,
         "HasError": 0.0,
@@ -41874,7 +41874,7 @@
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "USFWS",
         "POOJurisdictionalUnit": "AKKUR",
-        "ICS209ReportDateTime": 1751688511000.0,
+        "ICS209ReportDateTime": 1751777606000.0,
         "ICS209ReportStatus": "F",
         "IncidentManagementOrganization": "Type 4 IC"
     },
@@ -53402,9 +53402,9 @@
         "wfigs_GISAcres": 3317.6883429382033,
         "wfigs_MapMethod": "GPS-Flight",
         "wfigs_PolygonDateTime": 1750968130000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751820927000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751827420867.0,
         "wfigs_IrwinID": "{8CF29542-3408-4B54-B79C-507CA4997E01}",
-        "ReportedAcres": 3204.0,
+        "ReportedAcres": 3317.69,
         "HasError": 0.0,
         "DefaultLabel": "222-7 Mile Lookout, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -72944,7 +72944,7 @@
         "wfigs_GISAcres": 1913.190127413228,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1750836300000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751688508787.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751827840000.0,
         "wfigs_IrwinID": "{CA16468A-739B-4333-BC1D-AB5B85ED504A}",
         "ReportedAcres": 1915.0,
         "HasError": 0.0,
@@ -73313,7 +73313,7 @@
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1751688508000.0,
+        "ICS209ReportDateTime": 1751777603000.0,
         "ICS209ReportStatus": "F",
         "IncidentManagementOrganization": "Type 4 IC"
     },
