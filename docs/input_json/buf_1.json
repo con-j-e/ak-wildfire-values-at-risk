@@ -1916,6 +1916,469 @@
         "IncidentManagementOrganization": null
     },
     {
+        "AkFireRegion": "KKS",
+        "AkFireNumber": "393",
+        "wfigs_IncidentName": "Centennial 2",
+        "FireActivityStatus": "Controlled",
+        "wfigs_GISAcres": null,
+        "wfigs_MapMethod": null,
+        "wfigs_PolygonDateTime": null,
+        "wfigs_ModifiedOnDateTime_dt": 1751843195337.0,
+        "wfigs_IrwinID": "{BC48FDEE-0438-4323-B024-F842FC7E3A29}",
+        "ReportedAcres": 0.01,
+        "HasError": 0.0,
+        "DefaultLabel": "393-Centennial 2, 1 Mile Buffer",
+        "AnalysisBufferMiles": 1.0,
+        "AkMine_Active_AttrCount": null,
+        "AkMine_Type_AttrCount": null,
+        "AkMine_Note_AttrCount": null,
+        "AkMine_FeatureCount": null,
+        "AkMine_Locations": null,
+        "AkPowerLine_CondType_FeetSum": [
+            {
+                "key head": "AC; Overhead",
+                "value head": 9963
+            }
+        ],
+        "AkPowerLine_Voltage_FeetSum": [
+            {
+                "key head": "115",
+                "value head": 9963
+            }
+        ],
+        "AkPowerLine_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.56,
+                    "dir": "WNW",
+                    "lat": "60\u00b0 15.597' N",
+                    "lng": "151\u00b0 14.310' W",
+                    "VOLTAGE": "115",
+                    "COND_TYPE": "AC; Overhead"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "AkPowerLine_TotalFeet": 9963.0,
+        "Runway_FeatureCount": null,
+        "Runway_Locations": null,
+        "Runway_Ownership_AttrCount": null,
+        "WeatherStation_FeatureCount": null,
+        "WeatherStation_Locations": null,
+        "Aksd_MainStruct_AttrSum": null,
+        "Aksd_OtherStruct_AttrSum": null,
+        "Aksd_Protection_AttrCount": null,
+        "Aksd_SiteCat_AttrCount": null,
+        "Aksd_FeatureCount": null,
+        "Aksd_Locations": null,
+        "NtvAllot_Status_AcreSum": null,
+        "NtvAllot_FeatureCount": null,
+        "NtvAllot_Locations": null,
+        "NtvAllot_TotalAcres": null,
+        "ComsTwr_Type_AttrCount": null,
+        "ComsTwr_FeatureCount": null,
+        "ComsTwr_Locations": null,
+        "Community_FeatureCount": null,
+        "Community_Locations": null,
+        "Jurisd_Unit_AcreSum": [
+            {
+                "key head": "Cook Inlet Region, Incorporated",
+                "value head": 1038.21
+            },
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 774.62
+            },
+            {
+                "key head": "Kenai Peninsula Borough",
+                "value head": 186.87
+            },
+            {
+                "key head": "University of Alaska",
+                "value head": 16.65
+            }
+        ],
+        "Jurisd_Owner_AcreSum": {
+            "ANCSA": 1038.21,
+            "State": 589.56,
+            "Private": 201.71,
+            "County": 186.87
+        },
+        "MgmtOption_AcreSum": {
+            "Critical": 2016.35
+        },
+        "NpsStruct_Use_AttrCount": null,
+        "NpsStruct_Protection_AttrCount": null,
+        "NpsStruct_Rating_AttrCount": null,
+        "NpsStruct_FeatureCount": null,
+        "NpsStruct_Locations": null,
+        "Parcel_BuildingValue_AttrSum": 1009455.0,
+        "Parcel_FeatureCount": 24.0,
+        "Parcel_LandValue_AttrSum": 2323288.0,
+        "Parcel_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.02,
+                    "dir": "N",
+                    "lat": "60\u00b0 15.384' N",
+                    "lng": "151\u00b0 13.436' W",
+                    "property_type": "State",
+                    "property_use": "Vacant",
+                    "total_value": 541100.0
+                },
+                {
+                    "dist_mi": 0.14,
+                    "dir": "W",
+                    "lat": "60\u00b0 15.384' N",
+                    "lng": "151\u00b0 13.678' W",
+                    "property_type": "Borough",
+                    "property_use": "Vacant",
+                    "total_value": 76100.0
+                },
+                {
+                    "dist_mi": 0.14,
+                    "dir": "W",
+                    "lat": "60\u00b0 15.368' N",
+                    "lng": "151\u00b0 13.678' W",
+                    "property_type": "Native",
+                    "property_use": "Vacant",
+                    "total_value": 65700.0
+                },
+                {
+                    "dist_mi": 0.18,
+                    "dir": "NW",
+                    "lat": "60\u00b0 15.469' N",
+                    "lng": "151\u00b0 13.678' W",
+                    "property_type": "Borough",
+                    "property_use": "Vacant",
+                    "total_value": 76400.0
+                },
+                {
+                    "dist_mi": 0.3,
+                    "dir": "NNW",
+                    "lat": "60\u00b0 15.600' N",
+                    "lng": "151\u00b0 13.679' W",
+                    "property_type": "Private",
+                    "property_use": "Vacant",
+                    "total_value": 180200.0
+                },
+                {
+                    "dist_mi": 0.36,
+                    "dir": "E",
+                    "lat": "60\u00b0 15.369' N",
+                    "lng": "151\u00b0 12.807' W",
+                    "property_type": "Native",
+                    "property_use": "Institutional",
+                    "total_value": 2857900.0
+                },
+                {
+                    "dist_mi": 0.63,
+                    "dir": "W",
+                    "lat": "60\u00b0 15.367' N",
+                    "lng": "151\u00b0 14.549' W",
+                    "property_type": "State",
+                    "property_use": "Vacant",
+                    "total_value": 151600.0
+                },
+                {
+                    "dist_mi": 0.63,
+                    "dir": "W",
+                    "lat": "60\u00b0 15.383' N",
+                    "lng": "151\u00b0 14.549' W",
+                    "property_type": "Borough",
+                    "property_use": "Vacant",
+                    "total_value": 110600.0
+                },
+                {
+                    "dist_mi": 0.67,
+                    "dir": "WSW",
+                    "lat": "60\u00b0 15.166' N",
+                    "lng": "151\u00b0 14.548' W",
+                    "property_type": "State",
+                    "property_use": "Vacant",
+                    "total_value": 38600.0
+                },
+                {
+                    "dist_mi": 0.68,
+                    "dir": "NW",
+                    "lat": "60\u00b0 15.802' N",
+                    "lng": "151\u00b0 14.238' W",
+                    "property_type": "Private",
+                    "property_use": "Residential",
+                    "total_value": 327000.0
+                },
+                {
+                    "dist_mi": 0.76,
+                    "dir": "NW",
+                    "lat": "60\u00b0 15.903' N",
+                    "lng": "151\u00b0 14.208' W",
+                    "property_type": "Private",
+                    "property_use": "Vacant",
+                    "total_value": 73500.0
+                },
+                {
+                    "dist_mi": 0.78,
+                    "dir": "NNW",
+                    "lat": "60\u00b0 16.002' N",
+                    "lng": "151\u00b0 13.885' W",
+                    "property_type": "Private",
+                    "property_use": "Residential",
+                    "total_value": 329900.0
+                },
+                {
+                    "dist_mi": 0.8,
+                    "dir": "SW",
+                    "lat": "60\u00b0 14.949' N",
+                    "lng": "151\u00b0 14.547' W",
+                    "property_type": "Native",
+                    "property_use": "Vacant",
+                    "total_value": 52600.0
+                },
+                {
+                    "dist_mi": 0.83,
+                    "dir": "NW",
+                    "lat": "60\u00b0 15.822' N",
+                    "lng": "151\u00b0 14.568' W",
+                    "property_type": "Borough",
+                    "property_use": "Vacant",
+                    "total_value": 177000.0
+                },
+                {
+                    "dist_mi": 0.84,
+                    "dir": "NNW",
+                    "lat": "60\u00b0 16.059' N",
+                    "lng": "151\u00b0 13.888' W",
+                    "property_type": "Private",
+                    "property_use": "Vacant",
+                    "total_value": 77400.0
+                },
+                {
+                    "dist_mi": 0.85,
+                    "dir": "NNW",
+                    "lat": "60\u00b0 16.001' N",
+                    "lng": "151\u00b0 14.178' W",
+                    "property_type": "Private",
+                    "property_use": "Vacant",
+                    "total_value": 57000.0
+                },
+                {
+                    "dist_mi": 0.88,
+                    "dir": "W",
+                    "lat": "60\u00b0 15.383' N",
+                    "lng": "151\u00b0 14.985' W",
+                    "property_type": "State",
+                    "property_use": "Vacant",
+                    "total_value": 153100.0
+                },
+                {
+                    "dist_mi": 0.9,
+                    "dir": "NW",
+                    "lat": "60\u00b0 16.001' N",
+                    "lng": "151\u00b0 14.355' W",
+                    "property_type": "Private",
+                    "property_use": "Residential",
+                    "total_value": 524700.0
+                },
+                {
+                    "dist_mi": 0.93,
+                    "dir": "WNW",
+                    "lat": "60\u00b0 15.600' N",
+                    "lng": "151\u00b0 14.996' W",
+                    "property_type": "Private",
+                    "property_use": "Vacant",
+                    "total_value": 12400.0
+                },
+                {
+                    "dist_mi": 0.95,
+                    "dir": "WNW",
+                    "lat": "60\u00b0 15.657' N",
+                    "lng": "151\u00b0 14.996' W",
+                    "property_type": "Private",
+                    "property_use": "Residential",
+                    "total_value": 456100.0
+                },
+                {
+                    "dist_mi": 0.96,
+                    "dir": "NNW",
+                    "lat": "60\u00b0 16.132' N",
+                    "lng": "151\u00b0 14.118' W",
+                    "property_type": "Private",
+                    "property_use": "Residential",
+                    "total_value": 382800.0
+                },
+                {
+                    "dist_mi": 0.98,
+                    "dir": "S",
+                    "lat": "60\u00b0 14.517' N",
+                    "lng": "151\u00b0 13.432' W",
+                    "property_type": "Native",
+                    "property_use": "Vacant",
+                    "total_value": 750200.0
+                },
+                {
+                    "dist_mi": 1.0,
+                    "dir": "NNW",
+                    "lat": "60\u00b0 16.128' N",
+                    "lng": "151\u00b0 14.271' W",
+                    "property_type": "Private",
+                    "property_use": "Residential",
+                    "total_value": 116700.0
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "Parcel_PropType_AcreSum": [
+            {
+                "key head": "Native",
+                "value head": 1038.17
+            },
+            {
+                "key head": "State",
+                "value head": 544.54
+            },
+            {
+                "key head": "Private",
+                "value head": 201.4
+            },
+            {
+                "key head": "Borough",
+                "value head": 169.23
+            }
+        ],
+        "Parcel_PropUse_AcreSum": [
+            {
+                "key head": "Vacant",
+                "value head": 1365.86
+            },
+            {
+                "key head": "Institutional",
+                "value head": 557.55
+            },
+            {
+                "key head": "Residential",
+                "value head": 29.93
+            }
+        ],
+        "Parcel_TotalAcres": 1953.35,
+        "Parcel_TotalValue_AttrSum": 3332744.0,
+        "PetrolTerm_Company_AttrCount": null,
+        "PetrolTerm_FeatureCount": null,
+        "PetrolTerm_Locations": null,
+        "PipeLine_Name_FeetSum": null,
+        "PipeLine_Locations": null,
+        "PipeLine_TotalFeet": null,
+        "PowerPlant_PrimSource_AttrCount": null,
+        "PowerPlant_UtilName_AttrCount": null,
+        "PowerPlant_FeatureCount": null,
+        "PowerPlant_Locations": null,
+        "PowerPlant_SectorName_AttrCount": null,
+        "Silviculture_Status_AcreSum": null,
+        "Silviculture_TotalValue_AttrSum": null,
+        "Silviculture_FeatureCount": null,
+        "Silviculture_Locations": null,
+        "Silviculture_TotalAcres": null,
+        "SpecMgmt_Consid_AttrCount": null,
+        "SpecMgmt_FeatureCount": null,
+        "SpecMgmt_Locations": null,
+        "Railroad_NetDesc_FeetSum": null,
+        "Railroad_Locations": null,
+        "Railroad_TotalFeet": null,
+        "UsaStruct_OccCls_AttrCount": [
+            {
+                "key head": "Residential",
+                "value head": 6
+            }
+        ],
+        "UsaStruct_PrimOcc_AttrCount": [
+            {
+                "key head": "Single Family Dwelling",
+                "value head": 6
+            }
+        ],
+        "UsaStruct_SecOcc_AttrCount": [
+            {
+                "key head": "No Data",
+                "value head": 6
+            }
+        ],
+        "UsaStruct_FeatureCount": 6.0,
+        "UsaStruct_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.81,
+                    "dir": "NNW",
+                    "lat": "60\u00b0 16.009' N",
+                    "lng": "151\u00b0 14.030' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.83,
+                    "dir": "NNW",
+                    "lat": "60\u00b0 16.026' N",
+                    "lng": "151\u00b0 14.034' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.94,
+                    "dir": "NW",
+                    "lat": "60\u00b0 16.017' N",
+                    "lng": "151\u00b0 14.433' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.94,
+                    "dir": "NW",
+                    "lat": "60\u00b0 16.011' N",
+                    "lng": "151\u00b0 14.444' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.95,
+                    "dir": "NW",
+                    "lat": "60\u00b0 16.029' N",
+                    "lng": "151\u00b0 14.429' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                },
+                {
+                    "dist_mi": 0.95,
+                    "dir": "NW",
+                    "lat": "60\u00b0 16.036' N",
+                    "lng": "151\u00b0 14.414' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Single Family Dwelling"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "WindTurb_FeatureCount": null,
+        "WindTurb_Locations": null,
+        "WindTurb_ProjName_AttrCount": null,
+        "SpatialInfoType": " 1 Mile Buffer",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:153077.452%2C1144136.564%2C3338,scale:8054",
+        "CpxName": null,
+        "DispatchCenterID": "AKACDC",
+        "PercentContained": null,
+        "PercentPerimeterToBeContained": null,
+        "FireMgmtComplexity": null,
+        "IncidentComplexityLevel": "Type 5 Incident",
+        "EstimatedCostToDate": null,
+        "TotalIncidentPersonnel": null,
+        "POOProtectingAgency": "DVF",
+        "POOJurisdictionalAgency": "DNR",
+        "POOJurisdictionalUnit": "AKDNS",
+        "ICS209ReportDateTime": null,
+        "ICS209ReportStatus": null,
+        "IncidentManagementOrganization": null
+    },
+    {
         "AkFireRegion": "FAS",
         "AkFireNumber": "391",
         "wfigs_IncidentName": "Pumice Court",
@@ -15350,10 +15813,10 @@
         "AkFireNumber": "331",
         "wfigs_IncidentName": "Racquet",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 801.9982330871028,
+        "wfigs_GISAcres": 974.7670340284362,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1751663811000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751777223617.0,
+        "wfigs_PolygonDateTime": 1751750631000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751843201000.0,
         "wfigs_IrwinID": "{D1884080-B3E7-42D7-8E51-EF7915D592DC}",
         "ReportedAcres": 802.0,
         "HasError": 0.0,
@@ -15396,7 +15859,17 @@
             "features": [
                 {
                     "dist_mi": 0.0,
-                    "dir": "E",
+                    "dir": "NNW",
+                    "lat": "66\u00b0 19.685' N",
+                    "lng": "141\u00b0 12.455' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.01,
+                    "dir": "N",
                     "lat": "66\u00b0 19.694' N",
                     "lng": "141\u00b0 12.430' W",
                     "SiteCat": "Structure",
@@ -15420,7 +15893,7 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 9772.1
+                "value head": 9979.72
             },
             {
                 "key head": "Alaska Department of Natural Resources",
@@ -15428,11 +15901,11 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 9772.1,
+            "BLM": 9979.72,
             "Private": 79.98
         },
         "MgmtOption_AcreSum": {
-            "Limited": 9852.08
+            "Limited": 10059.7
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -15478,7 +15951,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:574061.223%2C1874783.174%2C3338,scale:25481",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:574066.658%2C1874736.663%2C3338,scale:25481",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -15499,10 +15972,10 @@
         "AkFireNumber": "330",
         "wfigs_IncidentName": "Runt",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 1502.0301640594344,
+        "wfigs_GISAcres": 2913.252813112744,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1751663811000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751776372907.0,
+        "wfigs_PolygonDateTime": 1751750631000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751843201000.0,
         "wfigs_IrwinID": "{58282BC0-C6F9-401A-8669-FF538954B1A0}",
         "ReportedAcres": 1502.0,
         "HasError": 0.0,
@@ -15550,14 +16023,14 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 9108.22
+                "value head": 14393.16
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 9108.22
+            "BLM": 14393.16
         },
         "MgmtOption_AcreSum": {
-            "Limited": 9108.22
+            "Limited": 14393.16
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -15603,7 +16076,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:573378.236%2C1870924.105%2C3338,scale:20950",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:574547.014%2C1871632.893%2C3338,scale:24433",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -33726,10 +34199,10 @@
         "AkFireNumber": "223",
         "wfigs_IncidentName": "Himalaya Road",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 5842.276174271722,
+        "wfigs_GISAcres": 5872.046031763233,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751544000000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751836498000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751842894000.0,
         "wfigs_IrwinID": "{3DC21EB7-7323-497D-B5AB-BFB16EC65599}",
         "ReportedAcres": 5767.71,
         "HasError": 0.0,
@@ -34376,7 +34849,7 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 18764.6
+                "value head": 18765.32
             },
             {
                 "key head": "Fairbanks North Star Borough",
@@ -34396,7 +34869,7 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 17597.42,
+            "State": 17598.14,
             "Private": 1235.4,
             "County": 1161.97,
             "BIA": 475.53,
@@ -34404,7 +34877,7 @@
         },
         "MgmtOption_AcreSum": {
             "Full": 10218.92,
-            "Modified (Jul 10)": 5141.68,
+            "Modified (Jul 10)": 5142.4,
             "Critical": 4849.68,
             "Limited": 381.73
         },
@@ -34413,9 +34886,9 @@
         "NpsStruct_Rating_AttrCount": null,
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
-        "Parcel_BuildingValue_AttrSum": 8647503.0,
+        "Parcel_BuildingValue_AttrSum": 8647507.0,
         "Parcel_FeatureCount": 280.0,
-        "Parcel_LandValue_AttrSum": 12806187.0,
+        "Parcel_LandValue_AttrSum": 12806362.0,
         "Parcel_Locations": {
             "features": [
                 {
@@ -34686,7 +35159,7 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Tax Lot",
-                "value head": 17778.18
+                "value head": 17778.9
             },
             {
                 "key head": "Lot",
@@ -34708,7 +35181,7 @@
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Exempt ",
-                "value head": 19065.76
+                "value head": 19066.48
             },
             {
                 "key head": "Vacant Land",
@@ -34735,8 +35208,8 @@
                 "value head": 12.11
             }
         ],
-        "Parcel_TotalAcres": 20592.01,
-        "Parcel_TotalValue_AttrSum": 21453691.0,
+        "Parcel_TotalAcres": 20592.72,
+        "Parcel_TotalValue_AttrSum": 21453870.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -35060,7 +35533,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:295247.079%2C1700903.651%2C3338,scale:32213",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:295246.9%2C1700903.686%2C3338,scale:32213",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
