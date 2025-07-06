@@ -484,6 +484,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"Full", field:"MgmtOption_AcreSum.Full", formatter:"money", formatterParams:{
                         precision:1
@@ -491,6 +493,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"Limited", field:"MgmtOption_AcreSum.Limited", formatter:"money", formatterParams:{
                         precision:1
@@ -498,6 +502,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"Mod. (Jul 10)", field:"MgmtOption_AcreSum.Modified (Jul 10)", formatter:"money", formatterParams:{
                         precision:1
@@ -505,6 +511,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"Mod. (Aug 10)", field:"MgmtOption_AcreSum.Modified (Aug 10)", formatter:"money", formatterParams:{
                         precision:1
@@ -512,6 +520,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"Mod. (Aug 20)", field:"MgmtOption_AcreSum.Modified (Aug 20)", formatter:"money", formatterParams:{
                         precision:1
@@ -519,6 +529,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"Mod. (Sep 30)", field:"MgmtOption_AcreSum.Modified (Sep 30)", formatter:"money", formatterParams:{
                         precision:1
@@ -526,6 +538,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"Unplanned", field:"MgmtOption_AcreSum.Unplanned", formatter:"money", formatterParams:{
                         precision:1
@@ -533,6 +547,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }}
                 ]
             },
@@ -546,6 +562,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"BIA", field:"Jurisd_Owner_AcreSum.BIA", formatter:"money", formatterParams:{
                         precision:1
@@ -553,6 +571,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"BLM", field:"Jurisd_Owner_AcreSum.BLM", formatter:"money", formatterParams:{
                         precision:1
@@ -560,6 +580,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"City", field:"Jurisd_Owner_AcreSum.City", formatter:"money", formatterParams:{
                         precision:1
@@ -567,6 +589,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"County", field:"Jurisd_Owner_AcreSum.County", formatter:"money", formatterParams:{
                         precision:1
@@ -574,6 +598,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"DOD", field:"Jurisd_Owner_AcreSum.DOD", formatter:"money", formatterParams:{
                         precision:1
@@ -581,6 +607,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"DOE", field:"Jurisd_Owner_AcreSum.DOE", formatter:"money", formatterParams:{
                         precision:1
@@ -588,6 +616,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"NPS", field:"Jurisd_Owner_AcreSum.NPS", formatter:"money", formatterParams:{
                         precision:1
@@ -595,6 +625,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"OthFed", field:"Jurisd_Owner_AcreSum.OthFed", formatter:"money", formatterParams:{
                         precision:1
@@ -602,6 +634,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"Private", field:"Jurisd_Owner_AcreSum.Private", formatter:"money", formatterParams:{
                         precision:1
@@ -609,6 +643,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"State", field:"Jurisd_Owner_AcreSum.State", formatter:"money", formatterParams:{
                         precision:1
@@ -616,6 +652,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"Tribal", field:"Jurisd_Owner_AcreSum.Tribal", formatter:"money", formatterParams:{
                         precision:1
@@ -623,6 +661,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"USFS", field:"Jurisd_Owner_AcreSum.USFS", formatter:"money", formatterParams:{
                         precision:1
@@ -630,6 +670,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                     {title:"USFWS", field:"Jurisd_Owner_AcreSum.USFWS", formatter:"money", formatterParams:{
                         precision:1
@@ -637,6 +679,8 @@ const build_table = (tag, rows_array) => {
                         precision:1
                     }, topCalcFormatter:"money", topCalcFormatterParams:{
                         precision:1
+                    }, sorter:"number", sorterParams:{
+                        thousandSeparator:","
                     }},
                 ]
             },
