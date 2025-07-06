@@ -12103,10 +12103,10 @@
         "AkFireNumber": "268",
         "wfigs_IncidentName": "Aggie Creek",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 25701.961627307155,
+        "wfigs_GISAcres": 36748.45386593162,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751544000000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751781228620.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751811454000.0,
         "wfigs_IrwinID": "{A5FFC9D8-6F8D-453F-A4E3-D52362D53216}",
         "ReportedAcres": 25701.86,
         "HasError": 0.0,
@@ -12124,8 +12124,22 @@
         "Runway_FeatureCount": null,
         "Runway_Locations": null,
         "Runway_Ownership_AttrCount": null,
-        "WeatherStation_FeatureCount": null,
-        "WeatherStation_Locations": null,
+        "WeatherStation_FeatureCount": 1.0,
+        "WeatherStation_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.26,
+                    "dir": "Interior",
+                    "lat": "65\u00b0 10.320' N",
+                    "lng": "148\u00b0 05.818' W",
+                    "NAME": "ALASKA PORTABLE #6",
+                    "CODE": "AP6A2",
+                    "MESOWESTWEBURL": "https://akff.mesowest.org/tabular/station/#CFFDRS/AP6A2/"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "Aksd_MainStruct_AttrSum": 1.0,
         "Aksd_OtherStruct_AttrSum": null,
         "Aksd_Protection_AttrCount": [
@@ -12158,7 +12172,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 0.07,
+                    "dist_mi": 0.05,
                     "dir": "Interior",
                     "lat": "65\u00b0 09.992' N",
                     "lng": "148\u00b0 04.464' W",
@@ -12183,16 +12197,16 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 25701.95
+                "value head": 36748.42
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 25698.59,
+            "State": 36745.07,
             "Private": 3.36
         },
         "MgmtOption_AcreSum": {
-            "Full": 19388.58,
-            "Modified (Jul 10)": 6313.37
+            "Full": 23460.65,
+            "Modified (Jul 10)": 13287.77
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -12200,42 +12214,24 @@
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
         "Parcel_BuildingValue_AttrSum": 7464.0,
-        "Parcel_FeatureCount": 26.0,
-        "Parcel_LandValue_AttrSum": 7167108.0,
+        "Parcel_FeatureCount": 25.0,
+        "Parcel_LandValue_AttrSum": 9764096.0,
         "Parcel_Locations": {
             "features": [
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "65\u00b0 06.850' N",
-                    "lng": "148\u00b0 21.401' W",
+                    "lat": "65\u00b0 04.096' N",
+                    "lng": "148\u00b0 15.234' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
-                    "total_value": 2476540.0
-                },
-                {
-                    "dist_mi": 0.0,
-                    "dir": "Interior",
-                    "lat": "65\u00b0 10.860' N",
-                    "lng": "148\u00b0 08.437' W",
-                    "property_type": "Tax Lot",
-                    "property_use": "Exempt ",
-                    "total_value": 1941502.0
-                },
-                {
-                    "dist_mi": 0.0,
-                    "dir": "Interior",
-                    "lat": "65\u00b0 10.591' N",
-                    "lng": "148\u00b0 05.009' W",
-                    "property_type": "Tax Lot",
-                    "property_use": "Exempt ",
-                    "total_value": 18144.0
+                    "total_value": 193600.0
                 },
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
                     "lat": "65\u00b0 09.998' N",
-                    "lng": "148\u00b0 04.313' W",
+                    "lng": "148\u00b0 04.357' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 175132.0
@@ -12243,8 +12239,17 @@
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "65\u00b0 10.596' N",
-                    "lng": "148\u00b0 05.076' W",
+                    "lat": "65\u00b0 10.864' N",
+                    "lng": "148\u00b0 06.078' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 1941502.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "65\u00b0 10.579' N",
+                    "lng": "148\u00b0 05.205' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 217800.0
@@ -12252,47 +12257,11 @@
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "65\u00b0 10.158' N",
-                    "lng": "148\u00b0 04.462' W",
-                    "property_type": "Tax Lot",
-                    "property_use": "Exempt ",
-                    "total_value": 85050.0
-                },
-                {
-                    "dist_mi": 0.0,
-                    "dir": "Interior",
-                    "lat": "65\u00b0 08.784' N",
-                    "lng": "148\u00b0 14.673' W",
+                    "lat": "65\u00b0 09.112' N",
+                    "lng": "148\u00b0 10.581' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 4281350.0
-                },
-                {
-                    "dist_mi": 0.0,
-                    "dir": "Interior",
-                    "lat": "65\u00b0 06.984' N",
-                    "lng": "148\u00b0 05.303' W",
-                    "property_type": "Tract",
-                    "property_use": "Recreational",
-                    "total_value": 11599.0
-                },
-                {
-                    "dist_mi": 0.0,
-                    "dir": "Interior",
-                    "lat": "65\u00b0 10.670' N",
-                    "lng": "148\u00b0 15.235' W",
-                    "property_type": "Tax Lot",
-                    "property_use": "Exempt ",
-                    "total_value": 3801600.0
-                },
-                {
-                    "dist_mi": 0.0,
-                    "dir": "Interior",
-                    "lat": "65\u00b0 06.816' N",
-                    "lng": "148\u00b0 05.071' W",
-                    "property_type": "Tax Lot",
-                    "property_use": "Exempt ",
-                    "total_value": 190878.0
                 },
                 {
                     "dist_mi": 0.0,
@@ -12306,11 +12275,11 @@
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "65\u00b0 08.351' N",
-                    "lng": "148\u00b0 03.016' W",
+                    "lat": "65\u00b0 06.814' N",
+                    "lng": "148\u00b0 09.182' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
-                    "total_value": 1667641.0
+                    "total_value": 193600.0
                 },
                 {
                     "dist_mi": 0.0,
@@ -12324,8 +12293,53 @@
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "65\u00b0 06.405' N",
-                    "lng": "148\u00b0 05.362' W",
+                    "lat": "65\u00b0 10.158' N",
+                    "lng": "148\u00b0 04.559' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 85050.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "65\u00b0 06.816' N",
+                    "lng": "148\u00b0 05.071' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 190878.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "65\u00b0 08.209' N",
+                    "lng": "148\u00b0 03.016' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 1667641.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "65\u00b0 06.984' N",
+                    "lng": "148\u00b0 05.303' W",
+                    "property_type": "Tract",
+                    "property_use": "Recreational",
+                    "total_value": 11599.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "65\u00b0 07.396' N",
+                    "lng": "148\u00b0 25.369' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 2476540.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "65\u00b0 06.343' N",
+                    "lng": "148\u00b0 05.363' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 193600.0
@@ -12343,7 +12357,7 @@
                     "dist_mi": 0.0,
                     "dir": "Interior",
                     "lat": "65\u00b0 05.665' N",
-                    "lng": "148\u00b0 12.351' W",
+                    "lng": "148\u00b0 12.033' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 193600.0
@@ -12352,7 +12366,7 @@
                     "dist_mi": 0.0,
                     "dir": "Interior",
                     "lat": "65\u00b0 04.799' N",
-                    "lng": "148\u00b0 12.263' W",
+                    "lng": "148\u00b0 11.880' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 193600.0
@@ -12360,25 +12374,7 @@
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "65\u00b0 04.714' N",
-                    "lng": "148\u00b0 13.214' W",
-                    "property_type": "Tax Lot",
-                    "property_use": "Exempt ",
-                    "total_value": 193600.0
-                },
-                {
-                    "dist_mi": 0.0,
-                    "dir": "Interior",
-                    "lat": "65\u00b0 04.731' N",
-                    "lng": "148\u00b0 15.234' W",
-                    "property_type": "Tax Lot",
-                    "property_use": "Exempt ",
-                    "total_value": 193600.0
-                },
-                {
-                    "dist_mi": 0.0,
-                    "dir": "Interior",
-                    "lat": "65\u00b0 04.731' N",
+                    "lat": "65\u00b0 04.096' N",
                     "lng": "148\u00b0 15.234' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
@@ -12387,11 +12383,20 @@
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "65\u00b0 06.814' N",
-                    "lng": "148\u00b0 09.182' W",
+                    "lat": "65\u00b0 03.972' N",
+                    "lng": "148\u00b0 13.213' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 193600.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "65\u00b0 08.240' N",
+                    "lng": "148\u00b0 17.616' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 3801600.0
                 },
                 {
                     "dist_mi": 0.0,
@@ -12403,15 +12408,6 @@
                     "total_value": 1318899.0
                 },
                 {
-                    "dist_mi": 0.04,
-                    "dir": "Interior",
-                    "lat": "65\u00b0 04.799' N",
-                    "lng": "148\u00b0 13.353' W",
-                    "property_type": "Tax Lot",
-                    "property_use": "Exempt ",
-                    "total_value": 193600.0
-                },
-                {
                     "dist_mi": 0.09,
                     "dir": "Interior",
                     "lat": "65\u00b0 06.531' N",
@@ -12421,19 +12417,28 @@
                     "total_value": 193600.0
                 },
                 {
-                    "dist_mi": 0.3,
+                    "dist_mi": 0.31,
                     "dir": "Interior",
-                    "lat": "65\u00b0 06.050' N",
+                    "lat": "65\u00b0 06.219' N",
                     "lng": "148\u00b0 13.216' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 193600.0
                 },
                 {
-                    "dist_mi": 0.35,
+                    "dist_mi": 0.44,
                     "dir": "Interior",
-                    "lat": "65\u00b0 07.397' N",
-                    "lng": "148\u00b0 15.234' W",
+                    "lat": "65\u00b0 06.531' N",
+                    "lng": "148\u00b0 13.217' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 193600.0
+                },
+                {
+                    "dist_mi": 0.57,
+                    "dir": "Interior",
+                    "lat": "65\u00b0 05.665' N",
+                    "lng": "148\u00b0 13.215' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 193600.0
@@ -12445,7 +12450,7 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Tax Lot",
-                "value head": 25698.59
+                "value head": 36745.07
             },
             {
                 "key head": "Tract",
@@ -12455,22 +12460,22 @@
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Exempt ",
-                "value head": 25698.59
+                "value head": 36745.07
             },
             {
                 "key head": "Recreational",
                 "value head": 3.36
             }
         ],
-        "Parcel_TotalAcres": 25701.95,
-        "Parcel_TotalValue_AttrSum": 7174573.0,
+        "Parcel_TotalAcres": 36748.42,
+        "Parcel_TotalValue_AttrSum": 9771561.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
         "PipeLine_Name_FeetSum": [
             {
                 "key head": "TRANS-ALASKA PIPELINE",
-                "value head": 1540
+                "value head": 9419
             }
         ],
         "PipeLine_Locations": {
@@ -12478,15 +12483,15 @@
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "65\u00b0 10.349' N",
-                    "lng": "148\u00b0 05.476' W",
+                    "lat": "65\u00b0 11.337' N",
+                    "lng": "148\u00b0 07.417' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 }
             ],
             "popped": 0,
             "cutoff": null
         },
-        "PipeLine_TotalFeet": 1540.0,
+        "PipeLine_TotalFeet": 9419.0,
         "PowerPlant_PrimSource_AttrCount": null,
         "PowerPlant_UtilName_AttrCount": null,
         "PowerPlant_FeatureCount": null,
@@ -12512,7 +12517,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:271504.77%2C1697206.718%2C3338,scale:39778",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:270460.516%2C1697532.057%2C3338,scale:48109",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
@@ -19191,10 +19196,10 @@
         "AkFireNumber": "223",
         "wfigs_IncidentName": "Himalaya Road",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 5692.0728528432155,
+        "wfigs_GISAcres": 5855.299946223309,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751544000000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751781451740.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751811454000.0,
         "wfigs_IrwinID": "{3DC21EB7-7323-497D-B5AB-BFB16EC65599}",
         "ReportedAcres": 5692.05,
         "HasError": 0.0,
@@ -19309,7 +19314,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 0.06,
+                    "dist_mi": 0.07,
                     "dir": "Interior",
                     "lat": "65\u00b0 09.433' N",
                     "lng": "147\u00b0 36.413' W",
@@ -19357,7 +19362,7 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 5640.82
+                "value head": 5804.04
             },
             {
                 "key head": "Alaska Regional Office",
@@ -19373,14 +19378,14 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 5624.56,
+            "State": 5787.79,
             "BIA": 45.14,
             "Private": 16.26,
             "County": 4.16,
             "City": 1.95
         },
         "MgmtOption_AcreSum": {
-            "Full": 4754.56,
+            "Full": 4917.78,
             "Modified (Jul 10)": 733.59,
             "Critical": 203.92
         },
@@ -19391,7 +19396,7 @@
         "NpsStruct_Locations": null,
         "Parcel_BuildingValue_AttrSum": 56603.0,
         "Parcel_FeatureCount": 22.0,
-        "Parcel_LandValue_AttrSum": 1881005.0,
+        "Parcel_LandValue_AttrSum": 1950439.0,
         "Parcel_Locations": {
             "features": [
                 {
@@ -19587,7 +19592,7 @@
                     "dist_mi": 0.0,
                     "dir": "Interior",
                     "lat": "65\u00b0 09.996' N",
-                    "lng": "147\u00b0 36.619' W",
+                    "lng": "147\u00b0 36.092' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 5492912.0
@@ -19599,7 +19604,7 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Tax Lot",
-                "value head": 5664.75
+                "value head": 5827.98
             },
             {
                 "key head": "Lot",
@@ -19613,7 +19618,7 @@
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Exempt ",
-                "value head": 5673.86
+                "value head": 5837.08
             },
             {
                 "key head": "Vacant Land",
@@ -19628,8 +19633,8 @@
                 "value head": 1.97
             }
         ],
-        "Parcel_TotalAcres": 5692.07,
-        "Parcel_TotalValue_AttrSum": 1937608.0,
+        "Parcel_TotalAcres": 5855.29,
+        "Parcel_TotalValue_AttrSum": 2007042.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -19661,7 +19666,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:295213.221%2C1700917.095%2C3338,scale:23837",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:295324.457%2C1701002.511%2C3338,scale:24167",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
@@ -25385,10 +25390,10 @@
         "AkFireNumber": "172",
         "wfigs_IncidentName": "Obrien",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 628.530685093501,
+        "wfigs_GISAcres": 7660.198441504841,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751491657000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751777707377.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751811454000.0,
         "wfigs_IrwinID": "{6ACDFBDF-2F82-4B2C-B55B-43219D237B7E}",
         "ReportedAcres": 628.0,
         "HasError": 0.0,
@@ -25425,15 +25430,20 @@
         "Community_Locations": null,
         "Jurisd_Unit_AcreSum": [
             {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 4275.9
+            },
+            {
                 "key head": "Eastern Interior Field Office",
-                "value head": 639.96
+                "value head": 3384.29
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 639.96
+            "State": 4275.9,
+            "BLM": 3384.29
         },
         "MgmtOption_AcreSum": {
-            "Limited": 639.96
+            "Limited": 7660.19
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -25479,7 +25489,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:285588.504%2C1720960.849%2C3338,scale:6124",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:282097.475%2C1717989.113%2C3338,scale:31307",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
