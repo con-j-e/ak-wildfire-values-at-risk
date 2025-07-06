@@ -7,7 +7,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1751778376330.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751779412570.0,
         "wfigs_IrwinID": "{B30BA1C0-CE9B-4DAF-BB12-78481BE8A02B}",
         "ReportedAcres": 0.3,
         "HasError": 0.0,
@@ -44,17 +44,12 @@
         "Community_Locations": null,
         "Jurisd_Unit_AcreSum": [
             {
-                "key head": "Alaska Department of Transportation and Public Facilities",
-                "value head": 0.28
-            },
-            {
-                "key head": "Eklutna, Incorporated",
-                "value head": 0.02
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 0.3
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 0.28,
-            "ANCSA": 0.02
+            "Private": 0.3
         },
         "MgmtOption_AcreSum": {
             "Critical": 0.3
@@ -65,13 +60,37 @@
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
         "Parcel_BuildingValue_AttrSum": null,
-        "Parcel_FeatureCount": null,
-        "Parcel_LandValue_AttrSum": null,
-        "Parcel_Locations": null,
-        "Parcel_PropType_AcreSum": null,
-        "Parcel_PropUse_AcreSum": null,
-        "Parcel_TotalAcres": null,
-        "Parcel_TotalValue_AttrSum": null,
+        "Parcel_FeatureCount": 1.0,
+        "Parcel_LandValue_AttrSum": 8857.0,
+        "Parcel_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "61\u00b0 22.889' N",
+                    "lng": "149\u00b0 31.074' W",
+                    "property_type": "Residential",
+                    "property_use": "Residential Vacant Land",
+                    "total_value": 32200.0
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "Parcel_PropType_AcreSum": [
+            {
+                "key head": "Residential",
+                "value head": 0.25
+            }
+        ],
+        "Parcel_PropUse_AcreSum": [
+            {
+                "key head": "Residential Vacant Land",
+                "value head": 0.25
+            }
+        ],
+        "Parcel_TotalAcres": 0.25,
+        "Parcel_TotalValue_AttrSum": 8857.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -103,7 +122,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Reported Location",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:238629.323%2C1275142.931%2C3338,scale:98",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:238527.739%2C1274854.698%2C3338,scale:98",
         "CpxName": null,
         "DispatchCenterID": "AKACDC",
         "PercentContained": null,
@@ -113,8 +132,8 @@
         "EstimatedCostToDate": null,
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "DVF",
-        "POOJurisdictionalAgency": "DTPF",
-        "POOJurisdictionalUnit": "AKDTS",
+        "POOJurisdictionalAgency": "DNR",
+        "POOJurisdictionalUnit": "AKDNS",
         "ICS209ReportDateTime": null,
         "ICS209ReportStatus": null,
         "IncidentManagementOrganization": null
@@ -123,11 +142,11 @@
         "AkFireRegion": "TAS",
         "AkFireNumber": "398",
         "wfigs_IncidentName": "Moose Horn",
-        "FireActivityStatus": "Active",
+        "FireActivityStatus": "Controlled",
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1751777947707.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751779156167.0,
         "wfigs_IrwinID": "{5A419116-8E92-4AED-B26D-9FA282AC5199}",
         "ReportedAcres": 0.1,
         "HasError": 0.0,
@@ -224,7 +243,7 @@
         "PercentContained": null,
         "PercentPerimeterToBeContained": null,
         "FireMgmtComplexity": null,
-        "IncidentComplexityLevel": null,
+        "IncidentComplexityLevel": "Type 5 Incident",
         "EstimatedCostToDate": null,
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "DVF",
@@ -242,7 +261,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1751761486770.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751779284097.0,
         "wfigs_IrwinID": "{4AE6E51E-EBCB-4DAC-A6EC-CEEDFAD32DB3}",
         "ReportedAcres": 0.1,
         "HasError": 0.0,
@@ -20113,9 +20132,9 @@
         "wfigs_GISAcres": 11975.908783453608,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1751666220000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751731510000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751779192317.0,
         "wfigs_IrwinID": "{AAE5042E-833A-466D-B54A-DC92F77EAD7A}",
-        "ReportedAcres": 10544.0,
+        "ReportedAcres": 11976.0,
         "HasError": 0.0,
         "DefaultLabel": "218-Ninetyeight, Perimeter",
         "AnalysisBufferMiles": 0.0,
@@ -20531,12 +20550,12 @@
         "PercentPerimeterToBeContained": 45.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 3 Incident",
-        "EstimatedCostToDate": 1723000.0,
-        "TotalIncidentPersonnel": 85.0,
+        "EstimatedCostToDate": 2224000.0,
+        "TotalIncidentPersonnel": 82.0,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "USA",
         "POOJurisdictionalUnit": "AKFWQ",
-        "ICS209ReportDateTime": 1751692540000.0,
+        "ICS209ReportDateTime": 1751779192000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 3 Team"
     },
