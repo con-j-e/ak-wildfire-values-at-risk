@@ -28742,9 +28742,9 @@
         "wfigs_GISAcres": 327.16615852213346,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1750825200000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751685654000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751771450827.0,
         "wfigs_IrwinID": "{E07FA154-761F-4B26-B1AD-B4CCEF988DA6}",
-        "ReportedAcres": 325.0,
+        "ReportedAcres": 327.0,
         "HasError": 0.0,
         "DefaultLabel": "289-Tok River, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -29144,16 +29144,16 @@
         "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:547053.232%2C1513346.239%2C3338,scale:29458",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
-        "PercentContained": 38.0,
+        "PercentContained": 62.0,
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 3 Incident",
-        "EstimatedCostToDate": 151440.0,
-        "TotalIncidentPersonnel": 41.0,
+        "EstimatedCostToDate": 228752.0,
+        "TotalIncidentPersonnel": 42.0,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1751601374000.0,
+        "ICS209ReportDateTime": 1751771450000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 3 Team"
     },
@@ -33790,7 +33790,7 @@
         "wfigs_GISAcres": 20751.842270524652,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751544000000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751769026243.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751771597000.0,
         "wfigs_IrwinID": "{A5FFC9D8-6F8D-453F-A4E3-D52362D53216}",
         "ReportedAcres": 20752.0,
         "HasError": 0.0,
@@ -33812,8 +33812,8 @@
         "WeatherStation_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.14,
-                    "dir": "SW",
+                    "dist_mi": 0.02,
+                    "dir": "NNW",
                     "lat": "65\u00b0 10.320' N",
                     "lng": "148\u00b0 05.818' W",
                     "NAME": "ALASKA PORTABLE #6",
@@ -33833,49 +33833,53 @@
             "popped": 0,
             "cutoff": null
         },
-        "Aksd_MainStruct_AttrSum": 15.0,
-        "Aksd_OtherStruct_AttrSum": 8.0,
+        "Aksd_MainStruct_AttrSum": 33.0,
+        "Aksd_OtherStruct_AttrSum": 22.0,
         "Aksd_Protection_AttrCount": [
             {
-                "key head": "Critical",
-                "value head": 15
+                "key head": "Full",
+                "value head": 21
             },
             {
                 "key head": "Undesignated",
-                "value head": 12
+                "value head": 19
             },
             {
-                "key head": "Full",
-                "value head": 5
+                "key head": "Critical",
+                "value head": 15
             },
             {
                 "key head": "Unknown",
                 "value head": 3
             },
             {
-                "key head": "Avoid",
+                "key head": "No Data",
                 "value head": 1
             },
             {
-                "key head": "No Data",
+                "key head": "Avoid",
                 "value head": 1
             }
         ],
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
-                "value head": 31
+                "value head": 52
             },
             {
                 "key head": "Other",
-                "value head": 5
+                "value head": 6
+            },
+            {
+                "key head": "Camp",
+                "value head": 1
             },
             {
                 "key head": "Communications",
                 "value head": 1
             }
         ],
-        "Aksd_FeatureCount": 37.0,
+        "Aksd_FeatureCount": 60.0,
         "Aksd_Locations": {
             "features": [
                 {
@@ -33899,7 +33903,27 @@
                     "OthrStructs": 0.0
                 },
                 {
-                    "dist_mi": 1.22,
+                    "dist_mi": 1.15,
+                    "dir": "E",
+                    "lat": "65\u00b0 08.313' N",
+                    "lng": "147\u00b0 59.675' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Unknown",
+                    "MainStructs": 1.0,
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 1.2,
+                    "dir": "E",
+                    "lat": "65\u00b0 05.712' N",
+                    "lng": "148\u00b0 02.696' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Critical",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 1.2,
                     "dir": "E",
                     "lat": "65\u00b0 05.781' N",
                     "lng": "148\u00b0 02.656' W",
@@ -33909,17 +33933,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 1.22,
-                    "dir": "ESE",
-                    "lat": "65\u00b0 05.712' N",
-                    "lng": "148\u00b0 02.696' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Critical",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 1.28,
+                    "dist_mi": 1.26,
                     "dir": "E",
                     "lat": "65\u00b0 05.780' N",
                     "lng": "148\u00b0 02.535' W",
@@ -33929,7 +33943,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 1.31,
+                    "dist_mi": 1.3,
                     "dir": "E",
                     "lat": "65\u00b0 05.822' N",
                     "lng": "148\u00b0 02.441' W",
@@ -33939,7 +33953,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 1.35,
+                    "dist_mi": 1.31,
                     "dir": "ESE",
                     "lat": "65\u00b0 05.567' N",
                     "lng": "148\u00b0 02.542' W",
@@ -33949,8 +33963,8 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 1.36,
-                    "dir": "ESE",
+                    "dist_mi": 1.32,
+                    "dir": "E",
                     "lat": "65\u00b0 05.609' N",
                     "lng": "148\u00b0 02.495' W",
                     "SiteCat": "Structure",
@@ -33959,23 +33973,13 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 1.38,
+                    "dist_mi": 1.36,
                     "dir": "E",
                     "lat": "65\u00b0 05.725' N",
                     "lng": "148\u00b0 02.350' W",
                     "SiteCat": "Structure",
                     "Protection": "Critical",
                     "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 1.44,
-                    "dir": "ESE",
-                    "lat": "65\u00b0 08.313' N",
-                    "lng": "147\u00b0 59.675' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Unknown",
-                    "MainStructs": 1.0,
                     "OthrStructs": "No Data"
                 },
                 {
@@ -33989,7 +33993,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 1.6,
+                    "dist_mi": 1.52,
                     "dir": "ESE",
                     "lat": "65\u00b0 05.264' N",
                     "lng": "148\u00b0 02.367' W",
@@ -34019,6 +34023,16 @@
                     "OthrStructs": "No Data"
                 },
                 {
+                    "dist_mi": 1.75,
+                    "dir": "ESE",
+                    "lat": "65\u00b0 05.247' N",
+                    "lng": "148\u00b0 01.854' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
+                    "MainStructs": 1.0,
+                    "OthrStructs": "No Data"
+                },
+                {
                     "dist_mi": 1.78,
                     "dir": "E",
                     "lat": "65\u00b0 05.935' N",
@@ -34029,13 +34043,13 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 1.82,
+                    "dist_mi": 1.88,
                     "dir": "ESE",
-                    "lat": "65\u00b0 05.247' N",
-                    "lng": "148\u00b0 01.854' W",
+                    "lat": "65\u00b0 05.288' N",
+                    "lng": "148\u00b0 01.523' W",
                     "SiteCat": "Structure",
                     "Protection": "Undesignated",
-                    "MainStructs": 1.0,
+                    "MainStructs": "No Data",
                     "OthrStructs": "No Data"
                 },
                 {
@@ -34059,16 +34073,6 @@
                     "OthrStructs": 1.0
                 },
                 {
-                    "dist_mi": 1.94,
-                    "dir": "ESE",
-                    "lat": "65\u00b0 05.288' N",
-                    "lng": "148\u00b0 01.523' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Undesignated",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
                     "dist_mi": 2.14,
                     "dir": "E",
                     "lat": "65\u00b0 05.746' N",
@@ -34079,7 +34083,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 2.3,
+                    "dist_mi": 2.28,
                     "dir": "E",
                     "lat": "65\u00b0 05.597' N",
                     "lng": "148\u00b0 00.488' W",
@@ -34089,7 +34093,17 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 2.45,
+                    "dist_mi": 2.36,
+                    "dir": "ESE",
+                    "lat": "65\u00b0 07.379' N",
+                    "lng": "147\u00b0 57.786' W",
+                    "SiteCat": "Other",
+                    "Protection": "Undesignated",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.43,
                     "dir": "E",
                     "lat": "65\u00b0 05.514' N",
                     "lng": "148\u00b0 00.209' W",
@@ -34109,38 +34123,28 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 2.57,
-                    "dir": "NE",
-                    "lat": "65\u00b0 10.690' N",
-                    "lng": "147\u00b0 58.690' W",
+                    "dist_mi": 2.52,
+                    "dir": "SE",
+                    "lat": "65\u00b0 06.465' N",
+                    "lng": "147\u00b0 59.397' W",
                     "SiteCat": "Structure",
-                    "Protection": "Undesignated",
-                    "MainStructs": 2.0,
+                    "Protection": "Unknown",
+                    "MainStructs": 1.0,
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 2.59,
-                    "dir": "E",
-                    "lat": "65\u00b0 06.371' N",
-                    "lng": "147\u00b0 59.707' W",
+                    "dist_mi": 2.53,
+                    "dir": "S",
+                    "lat": "65\u00b0 01.781' N",
+                    "lng": "148\u00b0 21.826' W",
                     "SiteCat": "Structure",
-                    "Protection": "Undesignated",
+                    "Protection": "Full",
                     "MainStructs": 1.0,
-                    "OthrStructs": 1.0
-                },
-                {
-                    "dist_mi": 2.6,
-                    "dir": "E",
-                    "lat": "65\u00b0 06.107' N",
-                    "lng": "147\u00b0 59.738' W",
-                    "SiteCat": "Other",
-                    "Protection": "Undesignated",
-                    "MainStructs": 1.0,
-                    "OthrStructs": "No Data"
+                    "OthrStructs": 2.0
                 }
             ],
-            "popped": 83,
-            "cutoff": 2.6
+            "popped": 90,
+            "cutoff": 2.53
         },
         "NtvAllot_Status_AcreSum": {
             "Restricted": 40.0
@@ -34149,7 +34153,7 @@
         "NtvAllot_Locations": {
             "features": [
                 {
-                    "dist_mi": 2.28,
+                    "dist_mi": 2.05,
                     "dir": "WSW",
                     "lat": "65\u00b0 04.711' N",
                     "lng": "148\u00b0 26.434' W",
@@ -34175,8 +34179,8 @@
         "ComsTwr_Locations": {
             "features": [
                 {
-                    "dist_mi": 1.45,
-                    "dir": "ESE",
+                    "dist_mi": 1.15,
+                    "dir": "E",
                     "lat": "65\u00b0 08.290' N",
                     "lng": "147\u00b0 59.680' W",
                     "Type": "Land Mobile Private",
@@ -34239,7 +34243,7 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 94846.63
+                "value head": 103719.38
             },
             {
                 "key head": "Eastern Interior Field Office",
@@ -34247,7 +34251,7 @@
             },
             {
                 "key head": "Fairbanks North Star Borough",
-                "value head": 188.19
+                "value head": 341.14
             },
             {
                 "key head": "Alaska Department of Transportation and Public Facilities",
@@ -34267,27 +34271,27 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 94165.69,
+            "State": 102930.1,
             "BLM": 4094.47,
-            "Private": 940.78,
-            "County": 188.19,
+            "Private": 1049.12,
+            "County": 341.14,
             "City": 57.41,
             "BIA": 40.0
         },
         "MgmtOption_AcreSum": {
-            "Full": 58803.77,
-            "Modified (Jul 10)": 35153.91,
-            "Critical": 2835.97,
-            "Limited": 2692.91
+            "Full": 61487.49,
+            "Modified (Jul 10)": 40823.84,
+            "Critical": 3271.23,
+            "Limited": 2929.69
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
         "NpsStruct_Rating_AttrCount": null,
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
-        "Parcel_BuildingValue_AttrSum": 1170895.0,
-        "Parcel_FeatureCount": 258.0,
-        "Parcel_LandValue_AttrSum": 34356136.0,
+        "Parcel_BuildingValue_AttrSum": 1760213.0,
+        "Parcel_FeatureCount": 290.0,
+        "Parcel_LandValue_AttrSum": 40089937.0,
         "Parcel_Locations": {
             "features": [
                 {
@@ -34327,6 +34331,24 @@
                     "total_value": 75411.0
                 },
                 {
+                    "dist_mi": 0.24,
+                    "dir": "S",
+                    "lat": "65\u00b0 05.665' N",
+                    "lng": "148\u00b0 05.173' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 193600.0
+                },
+                {
+                    "dist_mi": 0.25,
+                    "dir": "SSE",
+                    "lat": "65\u00b0 05.665' N",
+                    "lng": "148\u00b0 05.070' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 193600.0
+                },
+                {
                     "dist_mi": 0.28,
                     "dir": "S",
                     "lat": "65\u00b0 06.531' N",
@@ -34345,15 +34367,6 @@
                     "total_value": 13608.0
                 },
                 {
-                    "dist_mi": 0.34,
-                    "dir": "S",
-                    "lat": "65\u00b0 05.665' N",
-                    "lng": "148\u00b0 05.604' W",
-                    "property_type": "Tax Lot",
-                    "property_use": "Exempt ",
-                    "total_value": 193600.0
-                },
-                {
                     "dist_mi": 0.35,
                     "dir": "NNE",
                     "lat": "65\u00b0 10.868' N",
@@ -34361,15 +34374,6 @@
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 189917.0
-                },
-                {
-                    "dist_mi": 0.38,
-                    "dir": "SSE",
-                    "lat": "65\u00b0 05.665' N",
-                    "lng": "148\u00b0 05.070' W",
-                    "property_type": "Tax Lot",
-                    "property_use": "Exempt ",
-                    "total_value": 193600.0
                 },
                 {
                     "dist_mi": 0.45,
@@ -34390,6 +34394,15 @@
                     "total_value": 193600.0
                 },
                 {
+                    "dist_mi": 0.5,
+                    "dir": "E",
+                    "lat": "65\u00b0 04.799' N",
+                    "lng": "148\u00b0 11.194' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 193600.0
+                },
+                {
                     "dist_mi": 0.52,
                     "dir": "ENE",
                     "lat": "65\u00b0 06.884' N",
@@ -34397,15 +34410,6 @@
                     "property_type": "Tract",
                     "property_use": "Vacant Land",
                     "total_value": 693.0
-                },
-                {
-                    "dist_mi": 0.55,
-                    "dir": "ESE",
-                    "lat": "65\u00b0 04.799' N",
-                    "lng": "148\u00b0 11.194' W",
-                    "property_type": "Tax Lot",
-                    "property_use": "Exempt ",
-                    "total_value": 193600.0
                 },
                 {
                     "dist_mi": 0.55,
@@ -34417,10 +34421,19 @@
                     "total_value": 1047.0
                 },
                 {
-                    "dist_mi": 0.67,
+                    "dist_mi": 0.65,
                     "dir": "SSE",
                     "lat": "65\u00b0 07.397' N",
                     "lng": "148\u00b0 03.016' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 193600.0
+                },
+                {
+                    "dist_mi": 0.65,
+                    "dir": "SW",
+                    "lat": "65\u00b0 05.665' N",
+                    "lng": "148\u00b0 07.124' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 193600.0
@@ -34435,15 +34448,6 @@
                     "total_value": 14175.0
                 },
                 {
-                    "dist_mi": 0.78,
-                    "dir": "SW",
-                    "lat": "65\u00b0 05.665' N",
-                    "lng": "148\u00b0 07.124' W",
-                    "property_type": "Tax Lot",
-                    "property_use": "Exempt ",
-                    "total_value": 193600.0
-                },
-                {
                     "dist_mi": 0.84,
                     "dir": "N",
                     "lat": "65\u00b0 11.322' N",
@@ -34456,13 +34460,13 @@
                     "dist_mi": 0.86,
                     "dir": "S",
                     "lat": "65\u00b0 03.933' N",
-                    "lng": "148\u00b0 14.266' W",
+                    "lng": "148\u00b0 13.459' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 193600.0
                 },
                 {
-                    "dist_mi": 0.94,
+                    "dist_mi": 0.86,
                     "dir": "SSE",
                     "lat": "65\u00b0 03.933' N",
                     "lng": "148\u00b0 13.213' W",
@@ -34507,8 +34511,8 @@
                     "total_value": 244656.0
                 },
                 {
-                    "dist_mi": 1.1,
-                    "dir": "ESE",
+                    "dist_mi": 1.06,
+                    "dir": "E",
                     "lat": "65\u00b0 05.665' N",
                     "lng": "148\u00b0 03.016' W",
                     "property_type": "Lot",
@@ -34516,7 +34520,7 @@
                     "total_value": 95778.0
                 },
                 {
-                    "dist_mi": 1.14,
+                    "dist_mi": 1.09,
                     "dir": "ESE",
                     "lat": "65\u00b0 05.581' N",
                     "lng": "148\u00b0 03.005' W",
@@ -34525,7 +34529,7 @@
                     "total_value": 4102.0
                 },
                 {
-                    "dist_mi": 1.14,
+                    "dist_mi": 1.09,
                     "dir": "ESE",
                     "lat": "65\u00b0 05.581' N",
                     "lng": "148\u00b0 03.005' W",
@@ -34534,84 +34538,84 @@
                     "total_value": 4993.0
                 },
                 {
-                    "dist_mi": 1.16,
-                    "dir": "ESE",
+                    "dist_mi": 1.1,
+                    "dir": "NE",
+                    "lat": "65\u00b0 11.835' N",
+                    "lng": "148\u00b0 06.882' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 47628.0
+                },
+                {
+                    "dist_mi": 1.11,
+                    "dir": "E",
                     "lat": "65\u00b0 05.640' N",
                     "lng": "148\u00b0 02.907' W",
                     "property_type": "Lot",
                     "property_use": "Vacant Land",
                     "total_value": 4234.0
-                },
-                {
-                    "dist_mi": 1.19,
-                    "dir": "SE",
-                    "lat": "65\u00b0 03.933' N",
-                    "lng": "148\u00b0 11.192' W",
-                    "property_type": "Tax Lot",
-                    "property_use": "Exempt ",
-                    "total_value": 193600.0
                 }
             ],
-            "popped": 384,
-            "cutoff": 1.19
+            "popped": 397,
+            "cutoff": 1.11
         },
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Tax Lot",
-                "value head": 91923.15
+                "value head": 99776.44
             },
             {
                 "key head": "Lot",
-                "value head": 2166.59
+                "value head": 2189.73
             },
             {
                 "key head": "Tract",
-                "value head": 605.6
+                "value head": 792.22
             },
             {
                 "key head": "Roadway",
                 "value head": 285.47
             },
             {
-                "key head": "Pipeline",
-                "value head": 22.6
+                "key head": "Waterway",
+                "value head": 83.97
             },
             {
-                "key head": "Waterway",
-                "value head": 20.5
+                "key head": "Pipeline",
+                "value head": 54.04
             }
         ],
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Exempt ",
-                "value head": 93748.76
+                "value head": 101704.06
             },
             {
                 "key head": "Vacant Land",
-                "value head": 680.04
+                "value head": 734.89
             },
             {
                 "key head": "No Data",
-                "value head": 328.58
+                "value head": 423.48
+            },
+            {
+                "key head": "Recreational",
+                "value head": 174.76
             },
             {
                 "key head": "Residential",
                 "value head": 144.69
-            },
-            {
-                "key head": "Recreational",
-                "value head": 121.85
             }
         ],
-        "Parcel_TotalAcres": 95023.91,
-        "Parcel_TotalValue_AttrSum": 35527031.0,
+        "Parcel_TotalAcres": 103181.88,
+        "Parcel_TotalValue_AttrSum": 41850150.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
         "PipeLine_Name_FeetSum": [
             {
                 "key head": "TRANS-ALASKA PIPELINE",
-                "value head": 53602
+                "value head": 56291
             }
         ],
         "PipeLine_Locations": {
@@ -34624,136 +34628,150 @@
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 1.01,
+                    "dist_mi": 0.6,
                     "dir": "NE",
                     "lat": "65\u00b0 11.510' N",
                     "lng": "148\u00b0 07.569' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 1.01,
+                    "dist_mi": 0.61,
                     "dir": "NE",
                     "lat": "65\u00b0 11.525' N",
                     "lng": "148\u00b0 07.583' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 1.1,
-                    "dir": "NE",
+                    "dist_mi": 0.77,
+                    "dir": "NNE",
                     "lat": "65\u00b0 11.775' N",
                     "lng": "148\u00b0 07.802' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 1.11,
-                    "dir": "NE",
+                    "dist_mi": 0.78,
+                    "dir": "NNE",
                     "lat": "65\u00b0 11.791' N",
                     "lng": "148\u00b0 07.815' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 1.3,
-                    "dir": "NNE",
+                    "dist_mi": 1.05,
+                    "dir": "N",
                     "lat": "65\u00b0 12.067' N",
                     "lng": "148\u00b0 08.058' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 1.31,
-                    "dir": "NNE",
+                    "dist_mi": 1.07,
+                    "dir": "N",
                     "lat": "65\u00b0 12.083' N",
                     "lng": "148\u00b0 08.071' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 1.42,
-                    "dir": "ESE",
+                    "dist_mi": 1.13,
+                    "dir": "E",
                     "lat": "65\u00b0 08.309' N",
                     "lng": "147\u00b0 59.714' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 1.49,
-                    "dir": "ESE",
+                    "dist_mi": 1.19,
+                    "dir": "E",
                     "lat": "65\u00b0 08.272' N",
                     "lng": "147\u00b0 59.618' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 1.74,
-                    "dir": "ESE",
+                    "dist_mi": 1.4,
+                    "dir": "E",
                     "lat": "65\u00b0 08.092' N",
                     "lng": "147\u00b0 59.245' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 1.75,
-                    "dir": "ESE",
+                    "dist_mi": 1.41,
+                    "dir": "E",
                     "lat": "65\u00b0 08.079' N",
                     "lng": "147\u00b0 59.221' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 1.81,
-                    "dir": "NNE",
+                    "dist_mi": 1.65,
+                    "dir": "N",
                     "lat": "65\u00b0 12.610' N",
                     "lng": "148\u00b0 08.423' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 1.83,
-                    "dir": "NNE",
+                    "dist_mi": 1.67,
+                    "dir": "N",
                     "lat": "65\u00b0 12.626' N",
                     "lng": "148\u00b0 08.432' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 1.9,
-                    "dir": "NNE",
+                    "dist_mi": 1.75,
+                    "dir": "N",
                     "lat": "65\u00b0 12.700' N",
                     "lng": "148\u00b0 08.475' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 2.68,
+                    "dist_mi": 2.3,
                     "dir": "ESE",
                     "lat": "65\u00b0 07.434' N",
                     "lng": "147\u00b0 57.859' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 2.73,
+                    "dist_mi": 2.35,
                     "dir": "ESE",
                     "lat": "65\u00b0 07.397' N",
                     "lng": "147\u00b0 57.796' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 2.78,
+                    "dist_mi": 2.39,
                     "dir": "ESE",
                     "lat": "65\u00b0 07.349' N",
                     "lng": "147\u00b0 57.748' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 2.81,
+                    "dist_mi": 2.42,
                     "dir": "ESE",
                     "lat": "65\u00b0 07.329' N",
                     "lng": "147\u00b0 57.721' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 2.82,
+                    "dist_mi": 2.43,
                     "dir": "ESE",
                     "lat": "65\u00b0 07.314' N",
                     "lng": "147\u00b0 57.702' W",
+                    "NAME": "TRANS-ALASKA PIPELINE"
+                },
+                {
+                    "dist_mi": 2.69,
+                    "dir": "ESE",
+                    "lat": "65\u00b0 07.092' N",
+                    "lng": "147\u00b0 57.414' W",
+                    "NAME": "TRANS-ALASKA PIPELINE"
+                },
+                {
+                    "dist_mi": 2.71,
+                    "dir": "ESE",
+                    "lat": "65\u00b0 07.069' N",
+                    "lng": "147\u00b0 57.383' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 }
             ],
             "popped": 0,
             "cutoff": null
         },
-        "PipeLine_TotalFeet": 53602.0,
+        "PipeLine_TotalFeet": 56291.0,
         "PowerPlant_PrimSource_AttrCount": null,
         "PowerPlant_UtilName_AttrCount": null,
         "PowerPlant_FeatureCount": null,
@@ -34770,7 +34788,7 @@
         "Silviculture_Locations": {
             "features": [
                 {
-                    "dist_mi": 1.92,
+                    "dist_mi": 1.86,
                     "dir": "SSE",
                     "lat": "65\u00b0 03.257' N",
                     "lng": "148\u00b0 11.087' W",
@@ -34779,7 +34797,7 @@
                     "SALE_NAME": "Hastings Salvage #4"
                 },
                 {
-                    "dist_mi": 1.99,
+                    "dist_mi": 1.9,
                     "dir": "S",
                     "lat": "65\u00b0 04.234' N",
                     "lng": "148\u00b0 05.615' W",
@@ -34788,7 +34806,7 @@
                     "SALE_NAME": "Hastings Salvage Spruce #1"
                 },
                 {
-                    "dist_mi": 2.08,
+                    "dist_mi": 1.99,
                     "dir": "SSW",
                     "lat": "65\u00b0 04.409' N",
                     "lng": "148\u00b0 07.770' W",
@@ -34797,16 +34815,16 @@
                     "SALE_NAME": "Hastings Salvage # 3"
                 },
                 {
-                    "dist_mi": 2.16,
-                    "dir": "SSE",
-                    "lat": "65\u00b0 04.099' N",
-                    "lng": "148\u00b0 05.071' W",
+                    "dist_mi": 2.05,
+                    "dir": "S",
+                    "lat": "65\u00b0 04.100' N",
+                    "lng": "148\u00b0 05.022' W",
                     "STATUS": "Proposed",
                     "TOTAL_VALUE": 0,
                     "SALE_NAME": "Hastings Salvage Spruce #1"
                 },
                 {
-                    "dist_mi": 2.22,
+                    "dist_mi": 2.1,
                     "dir": "SSE",
                     "lat": "65\u00b0 04.069' N",
                     "lng": "148\u00b0 04.683' W",
@@ -34815,7 +34833,7 @@
                     "SALE_NAME": "Hastings Salvage Spruce #1"
                 },
                 {
-                    "dist_mi": 2.46,
+                    "dist_mi": 2.37,
                     "dir": "S",
                     "lat": "65\u00b0 03.827' N",
                     "lng": "148\u00b0 05.590' W",
@@ -34838,7 +34856,7 @@
         "SpecMgmt_Locations": {
             "features": [
                 {
-                    "dist_mi": 1.14,
+                    "dist_mi": 0.74,
                     "dir": "NE",
                     "lat": "65\u00b0 11.587' N",
                     "lng": "148\u00b0 07.347' W",
@@ -34881,15 +34899,23 @@
         "UsaStruct_Locations": {
             "features": [
                 {
-                    "dist_mi": 1.22,
-                    "dir": "ESE",
+                    "dist_mi": 1.15,
+                    "dir": "E",
+                    "lat": "65\u00b0 08.314' N",
+                    "lng": "147\u00b0 59.684' W",
+                    "OCC_CLS": "Unclassified",
+                    "PRIM_OCC": "Unclassified"
+                },
+                {
+                    "dist_mi": 1.19,
+                    "dir": "E",
                     "lat": "65\u00b0 05.712' N",
                     "lng": "148\u00b0 02.705' W",
                     "OCC_CLS": "Residential",
                     "PRIM_OCC": "Temporary Lodging"
                 },
                 {
-                    "dist_mi": 1.28,
+                    "dist_mi": 1.26,
                     "dir": "E",
                     "lat": "65\u00b0 05.782' N",
                     "lng": "148\u00b0 02.533' W",
@@ -34897,23 +34923,15 @@
                     "PRIM_OCC": "Temporary Lodging"
                 },
                 {
-                    "dist_mi": 1.34,
-                    "dir": "ESE",
+                    "dist_mi": 1.29,
+                    "dir": "E",
                     "lat": "65\u00b0 05.581' N",
                     "lng": "148\u00b0 02.562' W",
                     "OCC_CLS": "Residential",
                     "PRIM_OCC": "Temporary Lodging"
                 },
                 {
-                    "dist_mi": 1.35,
-                    "dir": "ESE",
-                    "lat": "65\u00b0 05.610' N",
-                    "lng": "148\u00b0 02.499' W",
-                    "OCC_CLS": "Residential",
-                    "PRIM_OCC": "Temporary Lodging"
-                },
-                {
-                    "dist_mi": 1.35,
+                    "dist_mi": 1.3,
                     "dir": "ESE",
                     "lat": "65\u00b0 05.570' N",
                     "lng": "148\u00b0 02.549' W",
@@ -34921,12 +34939,12 @@
                     "PRIM_OCC": "Temporary Lodging"
                 },
                 {
-                    "dist_mi": 1.43,
-                    "dir": "ESE",
-                    "lat": "65\u00b0 08.314' N",
-                    "lng": "147\u00b0 59.684' W",
-                    "OCC_CLS": "Unclassified",
-                    "PRIM_OCC": "Unclassified"
+                    "dist_mi": 1.31,
+                    "dir": "E",
+                    "lat": "65\u00b0 05.610' N",
+                    "lng": "148\u00b0 02.499' W",
+                    "OCC_CLS": "Residential",
+                    "PRIM_OCC": "Temporary Lodging"
                 },
                 {
                     "dist_mi": 1.72,
@@ -34960,7 +34978,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:272011.359%2C1697138.876%2C3338,scale:60840",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:271464.561%2C1696935.694%2C3338,scale:63918",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
@@ -42833,7 +42851,7 @@
         "wfigs_GISAcres": 29132.0,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1750973452000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751764944000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751771064570.0,
         "wfigs_IrwinID": "{058AD797-B4F7-4CB5-B34F-7267D980BAA9}",
         "ReportedAcres": 28643.97,
         "HasError": 0.0,
@@ -47566,7 +47584,7 @@
         "wfigs_GISAcres": 5477.308165527658,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751544000000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751769320400.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751771486000.0,
         "wfigs_IrwinID": "{3DC21EB7-7323-497D-B5AB-BFB16EC65599}",
         "ReportedAcres": 5477.0,
         "HasError": 0.0,
@@ -47772,30 +47790,22 @@
                     "dir": "NNW",
                     "lat": "65\u00b0 07.976' N",
                     "lng": "147\u00b0 38.231' W",
-                    "VOLTAGE": "120/240",
-                    "COND_TYPE": "OH Secondary"
+                    "VOLTAGE": "35",
+                    "COND_TYPE": "OH Primary 35KV"
                 },
                 {
                     "dist_mi": 0.07,
                     "dir": "NNW",
                     "lat": "65\u00b0 07.976' N",
                     "lng": "147\u00b0 38.231' W",
-                    "VOLTAGE": "35",
-                    "COND_TYPE": "OH Primary 35KV"
+                    "VOLTAGE": "120/240",
+                    "COND_TYPE": "OH Secondary"
                 },
                 {
                     "dist_mi": 0.08,
                     "dir": "SW",
                     "lat": "65\u00b0 08.054' N",
                     "lng": "147\u00b0 38.261' W",
-                    "VOLTAGE": "120/240",
-                    "COND_TYPE": "OH Secondary"
-                },
-                {
-                    "dist_mi": 0.09,
-                    "dir": "WSW",
-                    "lat": "65\u00b0 08.118' N",
-                    "lng": "147\u00b0 38.351' W",
                     "VOLTAGE": "120/240",
                     "COND_TYPE": "OH Secondary"
                 },
@@ -47816,10 +47826,10 @@
                     "COND_TYPE": "OH Primary 35KV"
                 },
                 {
-                    "dist_mi": 0.1,
+                    "dist_mi": 0.09,
                     "dir": "WSW",
-                    "lat": "65\u00b0 08.095' N",
-                    "lng": "147\u00b0 38.361' W",
+                    "lat": "65\u00b0 08.118' N",
+                    "lng": "147\u00b0 38.351' W",
                     "VOLTAGE": "120/240",
                     "COND_TYPE": "OH Secondary"
                 },
@@ -47830,6 +47840,30 @@
                     "lng": "147\u00b0 38.297' W",
                     "VOLTAGE": "35",
                     "COND_TYPE": "OH Primary 35KV"
+                },
+                {
+                    "dist_mi": 0.1,
+                    "dir": "WSW",
+                    "lat": "65\u00b0 08.095' N",
+                    "lng": "147\u00b0 38.361' W",
+                    "VOLTAGE": "120/240",
+                    "COND_TYPE": "OH Secondary"
+                },
+                {
+                    "dist_mi": 0.11,
+                    "dir": "SSE",
+                    "lat": "65\u00b0 07.706' N",
+                    "lng": "147\u00b0 38.075' W",
+                    "VOLTAGE": "35",
+                    "COND_TYPE": "OH Primary 35KV"
+                },
+                {
+                    "dist_mi": 0.11,
+                    "dir": "S",
+                    "lat": "65\u00b0 07.998' N",
+                    "lng": "147\u00b0 40.815' W",
+                    "VOLTAGE": "120/240",
+                    "COND_TYPE": "OH Secondary"
                 },
                 {
                     "dist_mi": 0.11,
@@ -47852,22 +47886,6 @@
                     "dir": "WSW",
                     "lat": "65\u00b0 08.070' N",
                     "lng": "147\u00b0 38.360' W",
-                    "VOLTAGE": "120/240",
-                    "COND_TYPE": "OH Secondary"
-                },
-                {
-                    "dist_mi": 0.11,
-                    "dir": "SSE",
-                    "lat": "65\u00b0 07.706' N",
-                    "lng": "147\u00b0 38.075' W",
-                    "VOLTAGE": "35",
-                    "COND_TYPE": "OH Primary 35KV"
-                },
-                {
-                    "dist_mi": 0.11,
-                    "dir": "S",
-                    "lat": "65\u00b0 07.998' N",
-                    "lng": "147\u00b0 40.815' W",
                     "VOLTAGE": "120/240",
                     "COND_TYPE": "OH Secondary"
                 },
@@ -47948,8 +47966,8 @@
                     "dir": "S",
                     "lat": "65\u00b0 07.621' N",
                     "lng": "147\u00b0 38.125' W",
-                    "VOLTAGE": "35",
-                    "COND_TYPE": "OH Primary 35KV"
+                    "VOLTAGE": "120/240",
+                    "COND_TYPE": "OH Secondary"
                 }
             ],
             "popped": 942,
@@ -48329,7 +48347,7 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 50072.96
+                "value head": 50231.14
             },
             {
                 "key head": "Fairbanks North Star Borough",
@@ -48337,7 +48355,7 @@
             },
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 1808.41
+                "value head": 1948.05
             },
             {
                 "key head": "Alaska Regional Office",
@@ -48361,18 +48379,18 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 46743.66,
+            "State": 46901.84,
             "Private": 3971.91,
             "County": 3491.61,
-            "BLM": 1808.41,
+            "BLM": 1948.05,
             "BIA": 489.4,
             "City": 262.46
         },
         "MgmtOption_AcreSum": {
             "Critical": 20696.17,
-            "Full": 20464.32,
-            "Modified (Jul 10)": 7804.05,
-            "Limited": 7802.9
+            "Full": 20581.71,
+            "Limited": 7983.33,
+            "Modified (Jul 10)": 7804.05
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -48381,7 +48399,7 @@
         "NpsStruct_Locations": null,
         "Parcel_BuildingValue_AttrSum": 20790498.0,
         "Parcel_FeatureCount": 644.0,
-        "Parcel_LandValue_AttrSum": 44892039.0,
+        "Parcel_LandValue_AttrSum": 44978006.0,
         "Parcel_Locations": {
             "features": [
                 {
@@ -48646,13 +48664,13 @@
                     "total_value": 106928.0
                 }
             ],
-            "popped": 1064,
+            "popped": 1065,
             "cutoff": 0.16
         },
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Tax Lot",
-                "value head": 48990.99
+                "value head": 49149.04
             },
             {
                 "key head": "Lot",
@@ -48678,7 +48696,7 @@
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Exempt ",
-                "value head": 51651.79
+                "value head": 51809.84
             },
             {
                 "key head": "Vacant Land",
@@ -48713,8 +48731,8 @@
                 "value head": 3.39
             }
         ],
-        "Parcel_TotalAcres": 56547.2,
-        "Parcel_TotalValue_AttrSum": 65682538.0,
+        "Parcel_TotalAcres": 56705.25,
+        "Parcel_TotalValue_AttrSum": 65768505.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -49090,7 +49108,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:295120.134%2C1700815.366%2C3338,scale:47967",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:295147.366%2C1700855.892%2C3338,scale:47967",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
@@ -49111,10 +49129,10 @@
         "AkFireNumber": "222",
         "wfigs_IncidentName": "7 Mile Lookout",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 3119.7983413684065,
+        "wfigs_GISAcres": 3204.418926737336,
         "wfigs_MapMethod": "GPS-Flight",
         "wfigs_PolygonDateTime": 1750968130000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751685367333.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751770552000.0,
         "wfigs_IrwinID": "{8CF29542-3408-4B54-B79C-507CA4997E01}",
         "ReportedAcres": 3120.0,
         "HasError": 0.0,
@@ -49449,10 +49467,10 @@
                     "ALLOT_ID": "FF014473A"
                 },
                 {
-                    "dist_mi": 0.79,
-                    "dir": "SSW",
-                    "lat": "63\u00b0 14.086' N",
-                    "lng": "143\u00b0 10.168' W",
+                    "dist_mi": 0.64,
+                    "dir": "NW",
+                    "lat": "63\u00b0 13.870' N",
+                    "lng": "143\u00b0 10.165' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "989F14423A"
                 },
@@ -49481,7 +49499,7 @@
                     "ALLOT_ID": "FF002678C"
                 },
                 {
-                    "dist_mi": 2.03,
+                    "dist_mi": 1.93,
                     "dir": "E",
                     "lat": "63\u00b0 12.216' N",
                     "lng": "143\u00b0 02.357' W",
@@ -49501,11 +49519,11 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 39031.06
+                "value head": 40170.56
             },
             {
                 "key head": "Tetlin Native Corporation",
-                "value head": 229.81
+                "value head": 248.55
             },
             {
                 "key head": "Eastern Interior Field Office",
@@ -49517,17 +49535,17 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 37197.68,
+            "State": 38337.18,
             "Private": 1833.38,
-            "ANCSA": 229.81,
+            "ANCSA": 248.55,
             "BLM": 175.67,
             "BIA": 40.0
         },
         "MgmtOption_AcreSum": {
-            "Full": 31052.58,
+            "Full": 31782.69,
             "Critical": 7640.54,
-            "Limited": 549.71,
-            "Modified (Jul 10)": 233.71
+            "Limited": 968.96,
+            "Modified (Jul 10)": 242.6
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -49556,11 +49574,11 @@
         "Silviculture_Status_AcreSum": [
             {
                 "key head": "Active",
-                "value head": 242.12
+                "value head": 244.46
             },
             {
                 "key head": "Proposed",
-                "value head": 223.4
+                "value head": 226.57
             },
             {
                 "key head": "WORKING",
@@ -49572,7 +49590,7 @@
         "Silviculture_Locations": {
             "features": [
                 {
-                    "dist_mi": 1.81,
+                    "dist_mi": 1.67,
                     "dir": "SSE",
                     "lat": "63\u00b0 11.052' N",
                     "lng": "143\u00b0 05.199' W",
@@ -49581,7 +49599,7 @@
                     "SALE_NAME": "Tok River Block A #1"
                 },
                 {
-                    "dist_mi": 1.84,
+                    "dist_mi": 1.72,
                     "dir": "SSE",
                     "lat": "63\u00b0 10.954' N",
                     "lng": "143\u00b0 05.813' W",
@@ -49590,7 +49608,7 @@
                     "SALE_NAME": "Young Negotiated Timber Sale"
                 },
                 {
-                    "dist_mi": 1.89,
+                    "dist_mi": 1.74,
                     "dir": "SE",
                     "lat": "63\u00b0 11.099' N",
                     "lng": "143\u00b0 04.573' W",
@@ -49599,7 +49617,7 @@
                     "SALE_NAME": "Tok River Block A #32"
                 },
                 {
-                    "dist_mi": 1.95,
+                    "dist_mi": 1.82,
                     "dir": "SE",
                     "lat": "63\u00b0 11.318' N",
                     "lng": "143\u00b0 03.682' W",
@@ -49608,17 +49626,17 @@
                     "SALE_NAME": "Tok SB180"
                 },
                 {
-                    "dist_mi": 2.03,
+                    "dist_mi": 1.97,
                     "dir": "S",
-                    "lat": "63\u00b0 10.755' N",
-                    "lng": "143\u00b0 06.827' W",
+                    "lat": "63\u00b0 10.754' N",
+                    "lng": "143\u00b0 06.808' W",
                     "STATUS": "Active",
                     "TOTAL_VALUE": "No Data",
                     "SALE_NAME": "Young Negotiated Timber Sale"
                 },
                 {
-                    "dist_mi": 2.18,
-                    "dir": "SE",
+                    "dist_mi": 2.05,
+                    "dir": "ESE",
                     "lat": "63\u00b0 11.224' N",
                     "lng": "143\u00b0 03.269' W",
                     "STATUS": "WORKING",
@@ -49626,7 +49644,7 @@
                     "SALE_NAME": "Tok SB180"
                 },
                 {
-                    "dist_mi": 2.25,
+                    "dist_mi": 2.13,
                     "dir": "SSE",
                     "lat": "63\u00b0 10.601' N",
                     "lng": "143\u00b0 05.789' W",
@@ -49635,16 +49653,7 @@
                     "SALE_NAME": "Young Negotiated Timber Sale"
                 },
                 {
-                    "dist_mi": 2.34,
-                    "dir": "S",
-                    "lat": "63\u00b0 10.489' N",
-                    "lng": "143\u00b0 06.889' W",
-                    "STATUS": "Active",
-                    "TOTAL_VALUE": 0.0,
-                    "SALE_NAME": "Young Negotiated Timber Sale"
-                },
-                {
-                    "dist_mi": 2.36,
+                    "dist_mi": 2.22,
                     "dir": "SE",
                     "lat": "63\u00b0 11.009' N",
                     "lng": "143\u00b0 03.285' W",
@@ -49653,17 +49662,26 @@
                     "SALE_NAME": "Tok SB180"
                 },
                 {
-                    "dist_mi": 2.42,
-                    "dir": "SE",
-                    "lat": "63\u00b0 11.106' N",
-                    "lng": "143\u00b0 02.883' W",
+                    "dist_mi": 2.28,
+                    "dir": "S",
+                    "lat": "63\u00b0 10.489' N",
+                    "lng": "143\u00b0 06.889' W",
+                    "STATUS": "Active",
+                    "TOTAL_VALUE": 0.0,
+                    "SALE_NAME": "Young Negotiated Timber Sale"
+                },
+                {
+                    "dist_mi": 2.29,
+                    "dir": "ESE",
+                    "lat": "63\u00b0 11.100' N",
+                    "lng": "143\u00b0 02.896' W",
                     "STATUS": "WORKING",
                     "TOTAL_VALUE": "No Data",
                     "SALE_NAME": "Tok SB180"
                 },
                 {
-                    "dist_mi": 2.61,
-                    "dir": "SSE",
+                    "dist_mi": 2.5,
+                    "dir": "S",
                     "lat": "63\u00b0 10.268' N",
                     "lng": "143\u00b0 06.236' W",
                     "STATUS": "Active",
@@ -49671,7 +49689,7 @@
                     "SALE_NAME": "Young Negotiated Timber Sale"
                 },
                 {
-                    "dist_mi": 2.69,
+                    "dist_mi": 2.57,
                     "dir": "SSE",
                     "lat": "63\u00b0 10.252' N",
                     "lng": "143\u00b0 05.229' W",
@@ -49680,7 +49698,7 @@
                     "SALE_NAME": "Tok River Block A #41"
                 },
                 {
-                    "dist_mi": 2.72,
+                    "dist_mi": 2.58,
                     "dir": "SSE",
                     "lat": "63\u00b0 10.295' N",
                     "lng": "143\u00b0 04.709' W",
@@ -49689,7 +49707,7 @@
                     "SALE_NAME": "Tok River Block A #40"
                 },
                 {
-                    "dist_mi": 2.87,
+                    "dist_mi": 2.82,
                     "dir": "S",
                     "lat": "63\u00b0 10.032' N",
                     "lng": "143\u00b0 07.146' W",
@@ -49698,10 +49716,10 @@
                     "SALE_NAME": "Young Negotiated Timber Sale"
                 },
                 {
-                    "dist_mi": 2.97,
+                    "dist_mi": 2.95,
                     "dir": "S",
-                    "lat": "63\u00b0 09.948' N",
-                    "lng": "143\u00b0 07.431' W",
+                    "lat": "63\u00b0 09.941' N",
+                    "lng": "143\u00b0 07.326' W",
                     "STATUS": "Active",
                     "TOTAL_VALUE": "No Data",
                     "SALE_NAME": "Young Negotiated Timber Sale"
@@ -49710,7 +49728,7 @@
             "popped": 0,
             "cutoff": null
         },
-        "Silviculture_TotalAcres": 559.86,
+        "Silviculture_TotalAcres": 565.37,
         "SpecMgmt_Consid_AttrCount": null,
         "SpecMgmt_FeatureCount": null,
         "SpecMgmt_Locations": null,
@@ -49954,7 +49972,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:543090.477%2C1518654.323%2C3338,scale:38297",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:543029.309%2C1518525.334%2C3338,scale:38371",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 54.0,
