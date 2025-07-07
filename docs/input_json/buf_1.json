@@ -17502,7 +17502,7 @@
         "wfigs_GISAcres": 72.86665248206478,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751403600000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751778296817.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751860601367.0,
         "wfigs_IrwinID": "{82EFFF88-781E-496A-B809-4B490302CD5C}",
         "ReportedAcres": 72.87,
         "HasError": 0.0,
@@ -17556,10 +17556,35 @@
         "WeatherStation_Locations": null,
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
-        "Aksd_Protection_AttrCount": null,
-        "Aksd_SiteCat_AttrCount": null,
-        "Aksd_FeatureCount": null,
-        "Aksd_Locations": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Unknown",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Other",
+                "value head": 1
+            }
+        ],
+        "Aksd_FeatureCount": 1.0,
+        "Aksd_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.0,
+                    "dir": "ENE",
+                    "lat": "64\u00b0 20.616' N",
+                    "lng": "146\u00b0 30.925' W",
+                    "SiteCat": "Other",
+                    "Protection": "Unknown",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "NtvAllot_Status_AcreSum": null,
         "NtvAllot_FeatureCount": null,
         "NtvAllot_Locations": null,
@@ -17652,16 +17677,16 @@
         "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:360309.644%2C1618072.467%2C3338,scale:10763",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
-        "PercentContained": 75.0,
+        "PercentContained": 77.0,
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
-        "IncidentComplexityLevel": "Type 5 Incident",
-        "EstimatedCostToDate": 650000.0,
-        "TotalIncidentPersonnel": 23.0,
+        "IncidentComplexityLevel": "Type 4 Incident",
+        "EstimatedCostToDate": 600000.0,
+        "TotalIncidentPersonnel": 24.0,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1751776833000.0,
+        "ICS209ReportDateTime": 1751860601000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 4 IC"
     },
@@ -20267,9 +20292,9 @@
         "wfigs_GISAcres": 333.56104052857677,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1750825200000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751839934000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751860485573.0,
         "wfigs_IrwinID": "{E07FA154-761F-4B26-B1AD-B4CCEF988DA6}",
-        "ReportedAcres": 327.0,
+        "ReportedAcres": 334.0,
         "HasError": 0.0,
         "DefaultLabel": "289-Tok River, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
@@ -20471,16 +20496,16 @@
         "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:547054.052%2C1513352.889%2C3338,scale:13374",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
-        "PercentContained": 62.0,
+        "PercentContained": 82.0,
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 3 Incident",
-        "EstimatedCostToDate": 228752.0,
-        "TotalIncidentPersonnel": 42.0,
+        "EstimatedCostToDate": 265487.0,
+        "TotalIncidentPersonnel": 44.0,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1751771450000.0,
+        "ICS209ReportDateTime": 1751860485000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 3 Team"
     },
@@ -27021,7 +27046,7 @@
         "wfigs_GISAcres": 24724.0,
         "wfigs_MapMethod": "Remote Sensing Derived",
         "wfigs_PolygonDateTime": 1750678649000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751847523000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751860953000.0,
         "wfigs_IrwinID": "{9ABAD0E9-E2E8-492F-B34C-0422582007BA}",
         "ReportedAcres": 24608.51,
         "HasError": 0.0,
@@ -27050,12 +27075,12 @@
         "Aksd_OtherStruct_AttrSum": 53.0,
         "Aksd_Protection_AttrCount": [
             {
-                "key head": "Unknown",
+                "key head": "Full",
                 "value head": 12
             },
             {
-                "key head": "Full",
-                "value head": 11
+                "key head": "Unknown",
+                "value head": 12
             },
             {
                 "key head": "Undesignated",
@@ -27069,14 +27094,14 @@
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
-                "value head": 25
+                "value head": 26
             },
             {
                 "key head": "RAWS",
                 "value head": 1
             }
         ],
-        "Aksd_FeatureCount": 26.0,
+        "Aksd_FeatureCount": 27.0,
         "Aksd_Locations": {
             "features": [
                 {
@@ -27170,10 +27195,20 @@
                     "OthrStructs": 7.0
                 },
                 {
-                    "dist_mi": 0.98,
+                    "dist_mi": 0.92,
                     "dir": "NNE",
                     "lat": "64\u00b0 18.463' N",
                     "lng": "147\u00b0 54.773' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.98,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 18.544' N",
+                    "lng": "147\u00b0 54.853' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
                     "MainStructs": "No Data",
@@ -27205,7 +27240,7 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 50985.67
+                "value head": 51354.28
             },
             {
                 "key head": "Alaska Department of Transportation and Public Facilities",
@@ -27213,12 +27248,12 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 50615.77,
-            "Private": 400.2
+            "State": 50978.49,
+            "Private": 406.1
         },
         "MgmtOption_AcreSum": {
-            "Full": 31343.38,
-            "Limited": 19672.59
+            "Full": 31618.53,
+            "Limited": 19766.06
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -27226,24 +27261,24 @@
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
         "Parcel_BuildingValue_AttrSum": null,
-        "Parcel_FeatureCount": 30.0,
-        "Parcel_LandValue_AttrSum": null,
+        "Parcel_FeatureCount": 31.0,
+        "Parcel_LandValue_AttrSum": 25459.0,
         "Parcel_Locations": {
             "features": [
                 {
                     "dist_mi": 0.01,
-                    "dir": "W",
-                    "lat": "64\u00b0 12.188' N",
-                    "lng": "147\u00b0 57.630' W",
+                    "dir": "WSW",
+                    "lat": "64\u00b0 12.331' N",
+                    "lng": "147\u00b0 57.722' W",
                     "property_type": "",
                     "property_use": "",
                     "total_value": "No Data"
                 },
                 {
                     "dist_mi": 0.01,
-                    "dir": "WSW",
-                    "lat": "64\u00b0 12.331' N",
-                    "lng": "147\u00b0 57.722' W",
+                    "dir": "W",
+                    "lat": "64\u00b0 12.188' N",
+                    "lng": "147\u00b0 57.630' W",
                     "property_type": "",
                     "property_use": "",
                     "total_value": "No Data"
@@ -27285,7 +27320,7 @@
                     "total_value": "No Data"
                 },
                 {
-                    "dist_mi": 0.92,
+                    "dist_mi": 0.85,
                     "dir": "NNE",
                     "lat": "64\u00b0 18.418' N",
                     "lng": "147\u00b0 54.848' W",
@@ -27294,7 +27329,7 @@
                     "total_value": "No Data"
                 },
                 {
-                    "dist_mi": 0.95,
+                    "dist_mi": 0.88,
                     "dir": "NNE",
                     "lat": "64\u00b0 18.407' N",
                     "lng": "147\u00b0 54.673' W",
@@ -27303,13 +27338,22 @@
                     "total_value": "No Data"
                 },
                 {
-                    "dist_mi": 0.95,
+                    "dist_mi": 0.88,
                     "dir": "ENE",
                     "lat": "64\u00b0 17.978' N",
                     "lng": "147\u00b0 53.809' W",
                     "property_type": "Waterway",
                     "property_use": "",
                     "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 0.98,
+                    "dir": "ENE",
+                    "lat": "64\u00b0 17.907' N",
+                    "lng": "147\u00b0 53.538' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 1742500.0
                 }
             ],
             "popped": 0,
@@ -27318,21 +27362,29 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "No Data",
-                "value head": 397.19
+                "value head": 404.52
             },
             {
                 "key head": "Waterway",
-                "value head": 4.61
+                "value head": 17.51
+            },
+            {
+                "key head": "Tax Lot",
+                "value head": 1.74
             }
         ],
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "No Data",
-                "value head": 401.8
+                "value head": 422.03
+            },
+            {
+                "key head": "Exempt ",
+                "value head": 1.74
             }
         ],
-        "Parcel_TotalAcres": 401.8,
-        "Parcel_TotalValue_AttrSum": null,
+        "Parcel_TotalAcres": 423.78,
+        "Parcel_TotalValue_AttrSum": 25459.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -27369,7 +27421,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:295172.821%2C1594499.471%2C3338,scale:61871",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:295146.982%2C1594583.815%2C3338,scale:62346",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
@@ -29763,7 +29815,7 @@
         "wfigs_GISAcres": 30575.0,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1750973452000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751855091000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751861042000.0,
         "wfigs_IrwinID": "{058AD797-B4F7-4CB5-B34F-7267D980BAA9}",
         "ReportedAcres": 30068.53,
         "HasError": 0.0,
@@ -30440,7 +30492,7 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 39211.98
+                "value head": 39231.3
             },
             {
                 "key head": "Cook Inlet Region, Incorporated",
@@ -30456,13 +30508,13 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 35740.94,
+            "State": 35760.25,
             "ANCSA": 19960.33,
             "Private": 3784.13,
             "BIA": 709.8
         },
         "MgmtOption_AcreSum": {
-            "Full": 57319.32,
+            "Full": 57338.64,
             "Modified (Jul 10)": 2875.88
         },
         "NpsStruct_Use_AttrCount": null,
@@ -31182,7 +31234,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:227311.193%2C1578868.966%2C3338,scale:58921",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:227309.524%2C1578869.088%2C3338,scale:58921",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 17.0,
@@ -32405,7 +32457,7 @@
         "wfigs_GISAcres": 7993.75453027798,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751751460000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751829322000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751860756213.0,
         "wfigs_IrwinID": "{39CC9E9A-8E79-4B98-8D8B-9B1404D8FC45}",
         "ReportedAcres": 5598.0,
         "HasError": 0.0,
@@ -32802,12 +32854,12 @@
         "PercentPerimeterToBeContained": 0.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 3 Incident",
-        "EstimatedCostToDate": 171625.0,
-        "TotalIncidentPersonnel": 15.0,
+        "EstimatedCostToDate": 256000.0,
+        "TotalIncidentPersonnel": 35.0,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1751774680000.0,
+        "ICS209ReportDateTime": 1751860756000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 3 IC"
     },
@@ -37042,7 +37094,7 @@
         "wfigs_GISAcres": 14839.0,
         "wfigs_MapMethod": "Remote Sensing Derived",
         "wfigs_PolygonDateTime": 1750678760000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751847559000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751860608000.0,
         "wfigs_IrwinID": "{850AAF3D-6BF6-4D5D-8BC4-6DA0EC8A4629}",
         "ReportedAcres": 14325.35,
         "HasError": 0.0,
@@ -37067,7 +37119,7 @@
         "Aksd_Protection_AttrCount": [
             {
                 "key head": "Full",
-                "value head": 5
+                "value head": 6
             },
             {
                 "key head": "No Data",
@@ -37077,10 +37129,10 @@
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
-                "value head": 9
+                "value head": 10
             }
         ],
-        "Aksd_FeatureCount": 9.0,
+        "Aksd_FeatureCount": 10.0,
         "Aksd_Locations": {
             "features": [
                 {
@@ -37105,7 +37157,7 @@
                 },
                 {
                     "dist_mi": 0.43,
-                    "dir": "SSE",
+                    "dir": "ENE",
                     "lat": "64\u00b0 07.515' N",
                     "lng": "147\u00b0 46.944' W",
                     "SiteCat": "Structure",
@@ -37175,7 +37227,7 @@
                 },
                 {
                     "dist_mi": 1.0,
-                    "dir": "NE",
+                    "dir": "ENE",
                     "lat": "64\u00b0 15.839' N",
                     "lng": "147\u00b0 47.400' W",
                     "SiteCat": "Structure",
@@ -37199,25 +37251,25 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 36848.75
+                "value head": 37420.96
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 36679.33,
-            "Private": 169.42
+            "State": 37250.54,
+            "Private": 170.42
         },
         "MgmtOption_AcreSum": {
-            "Full": 22299.3,
-            "Limited": 14549.45
+            "Full": 22602.71,
+            "Limited": 14818.25
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
         "NpsStruct_Rating_AttrCount": null,
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
-        "Parcel_BuildingValue_AttrSum": 1302.0,
+        "Parcel_BuildingValue_AttrSum": 1396.0,
         "Parcel_FeatureCount": 18.0,
-        "Parcel_LandValue_AttrSum": 2429753.0,
+        "Parcel_LandValue_AttrSum": 2675353.0,
         "Parcel_Locations": {
             "features": [
                 {
@@ -37329,8 +37381,8 @@
                     "total_value": 4841895.0
                 },
                 {
-                    "dist_mi": 0.84,
-                    "dir": "ENE",
+                    "dist_mi": 0.83,
+                    "dir": "NE",
                     "lat": "64\u00b0 15.843' N",
                     "lng": "147\u00b0 47.798' W",
                     "property_type": "Tract",
@@ -37338,8 +37390,8 @@
                     "total_value": 10829.0
                 },
                 {
-                    "dist_mi": 0.85,
-                    "dir": "ENE",
+                    "dist_mi": 0.84,
+                    "dir": "NE",
                     "lat": "64\u00b0 15.845' N",
                     "lng": "147\u00b0 47.776' W",
                     "property_type": "",
@@ -37371,37 +37423,37 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Waterway",
-                "value head": 171.27
+                "value head": 181.87
             },
             {
                 "key head": "Tax Lot",
-                "value head": 135.87
+                "value head": 144.07
             },
             {
                 "key head": "No Data",
-                "value head": 126.87
+                "value head": 127.88
             },
             {
                 "key head": "Tract",
-                "value head": 13.82
+                "value head": 14.82
             }
         ],
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "No Data",
-                "value head": 298.14
+                "value head": 309.75
             },
             {
                 "key head": "Exempt ",
-                "value head": 135.87
+                "value head": 144.07
             },
             {
                 "key head": "Recreational",
-                "value head": 13.82
+                "value head": 14.82
             }
         ],
-        "Parcel_TotalAcres": 447.82,
-        "Parcel_TotalValue_AttrSum": 2431055.0,
+        "Parcel_TotalAcres": 468.64,
+        "Parcel_TotalValue_AttrSum": 2676750.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -37433,7 +37485,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:301029.697%2C1594999.7%2C3338,scale:51940",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:301019.138%2C1595032.677%2C3338,scale:52458",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
