@@ -645,7 +645,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1751868158767.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751871609970.0,
         "wfigs_IrwinID": "{A105352F-EAA2-4908-9042-9A1D61F35E0D}",
         "ReportedAcres": 0.1,
         "HasError": 0.0,
@@ -671,24 +671,28 @@
             {
                 "key head": "Full",
                 "value head": 3
+            },
+            {
+                "key head": "Critical",
+                "value head": 2
             }
         ],
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
-                "value head": 2
+                "value head": 4
             },
             {
                 "key head": "Other",
                 "value head": 1
             }
         ],
-        "Aksd_FeatureCount": 3.0,
+        "Aksd_FeatureCount": 5.0,
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 1.52,
-                    "dir": "WSW",
+                    "dist_mi": 1.45,
+                    "dir": "SW",
                     "lat": "67\u00b0 10.777' N",
                     "lng": "158\u00b0 26.213' W",
                     "SiteCat": "Structure",
@@ -697,7 +701,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 2.0,
+                    "dist_mi": 1.74,
                     "dir": "WSW",
                     "lat": "67\u00b0 10.956' N",
                     "lng": "158\u00b0 27.570' W",
@@ -707,12 +711,32 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 2.08,
-                    "dir": "WSW",
+                    "dist_mi": 2.04,
+                    "dir": "SW",
                     "lat": "67\u00b0 10.382' N",
                     "lng": "158\u00b0 27.052' W",
                     "SiteCat": "Other",
                     "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.72,
+                    "dir": "W",
+                    "lat": "67\u00b0 11.318' N",
+                    "lng": "158\u00b0 30.323' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Critical",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.74,
+                    "dir": "W",
+                    "lat": "67\u00b0 11.312' N",
+                    "lng": "158\u00b0 30.361' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Critical",
                     "MainStructs": "No Data",
                     "OthrStructs": "No Data"
                 }
@@ -721,40 +745,48 @@
             "cutoff": null
         },
         "NtvAllot_Status_AcreSum": {
-            "Restricted": 276.85
+            "Restricted": 318.17
         },
         "NtvAllot_FeatureCount": 3.0,
         "NtvAllot_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.78,
-                    "dir": "WSW",
+                    "dist_mi": 0.75,
+                    "dir": "SSW",
                     "lat": "67\u00b0 11.195' N",
                     "lng": "158\u00b0 24.919' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "981F17862"
                 },
                 {
-                    "dist_mi": 1.31,
-                    "dir": "WSW",
+                    "dist_mi": 1.16,
+                    "dir": "SW",
                     "lat": "67\u00b0 11.041' N",
                     "lng": "158\u00b0 26.031' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "981F18567B"
                 },
                 {
-                    "dist_mi": 2.74,
-                    "dir": "NW",
+                    "dist_mi": 2.1,
+                    "dir": "NNW",
                     "lat": "67\u00b0 13.342' N",
                     "lng": "158\u00b0 27.030' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "FF016797A"
+                },
+                {
+                    "dist_mi": 3.0,
+                    "dir": "WSW",
+                    "lat": "67\u00b0 11.058' N",
+                    "lng": "158\u00b0 30.780' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "981F17804"
                 }
             ],
             "popped": 0,
             "cutoff": null
         },
-        "NtvAllot_TotalAcres": 276.85,
+        "NtvAllot_TotalAcres": 318.17,
         "ComsTwr_Type_AttrCount": null,
         "ComsTwr_FeatureCount": null,
         "ComsTwr_Locations": null,
@@ -763,32 +795,36 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Kobuk Valley National Park",
-                "value head": 15688.12
+                "value head": 17018.72
             },
             {
                 "key head": "Anchorage Field Office",
-                "value head": 1918.79
+                "value head": 814.69
             },
             {
                 "key head": "Alaska Regional Office",
-                "value head": 276.85
+                "value head": 318.17
             },
             {
                 "key head": "NANA Regional Corporation, Incorporated",
-                "value head": 267.87
+                "value head": 0.04
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "NPS": 15688.12,
-            "BLM": 1918.79,
-            "BIA": 276.85,
-            "ANCSA": 267.87
+            "NPS": 17018.72,
+            "BLM": 814.69,
+            "BIA": 318.17,
+            "ANCSA": 0.04
         },
         "MgmtOption_AcreSum": {
-            "Modified (Jul 10)": 17874.78,
-            "Full": 276.85
+            "Modified (Jul 10)": 17833.46,
+            "Full": 318.17
         },
         "NpsStruct_Use_AttrCount": [
+            {
+                "key head": "NoKnown",
+                "value head": 4
+            },
             {
                 "key head": "Unknown",
                 "value head": 1
@@ -797,25 +833,69 @@
         "NpsStruct_Protection_AttrCount": [
             {
                 "key head": "Full",
+                "value head": 4
+            },
+            {
+                "key head": "Not Designated",
                 "value head": 1
             }
         ],
         "NpsStruct_Rating_AttrCount": [
             {
+                "key head": "High",
+                "value head": 4
+            },
+            {
                 "key head": "Not Surveyed",
                 "value head": 1
             }
         ],
-        "NpsStruct_FeatureCount": 1.0,
+        "NpsStruct_FeatureCount": 5.0,
         "NpsStruct_Locations": {
             "features": [
                 {
-                    "dist_mi": 2.0,
+                    "dist_mi": 1.74,
                     "dir": "WSW",
                     "lat": "67\u00b0 10.956' N",
                     "lng": "158\u00b0 27.571' W",
                     "FacilityUse": "Unknown",
                     "Rating": "Not Surveyed",
+                    "ProtectionLevel": "Full"
+                },
+                {
+                    "dist_mi": 2.69,
+                    "dir": "W",
+                    "lat": "67\u00b0 11.331' N",
+                    "lng": "158\u00b0 30.261' W",
+                    "FacilityUse": "NoKnown",
+                    "Rating": "High",
+                    "ProtectionLevel": "Not Designated"
+                },
+                {
+                    "dist_mi": 2.7,
+                    "dir": "W",
+                    "lat": "67\u00b0 11.297' N",
+                    "lng": "158\u00b0 30.257' W",
+                    "FacilityUse": "NoKnown",
+                    "Rating": "High",
+                    "ProtectionLevel": "Full"
+                },
+                {
+                    "dist_mi": 2.71,
+                    "dir": "W",
+                    "lat": "67\u00b0 11.312' N",
+                    "lng": "158\u00b0 30.293' W",
+                    "FacilityUse": "NoKnown",
+                    "Rating": "High",
+                    "ProtectionLevel": "Full"
+                },
+                {
+                    "dist_mi": 2.73,
+                    "dir": "W",
+                    "lat": "67\u00b0 11.329' N",
+                    "lng": "158\u00b0 30.341' W",
+                    "FacilityUse": "NoKnown",
+                    "Rating": "High",
                     "ProtectionLevel": "Full"
                 }
             ],
@@ -861,7 +941,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-190778.927%2C1921072.356%2C3338,scale:24167",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-191528.84%2C1921816.976%2C3338,scale:24167",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
