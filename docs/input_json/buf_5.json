@@ -7,7 +7,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1751920942180.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751921075727.0,
         "wfigs_IrwinID": "{315E263C-24FC-4FD6-9276-80B3F5AA862A}",
         "ReportedAcres": 0.1,
         "HasError": 0.0,
@@ -32,7 +32,11 @@
         "Aksd_Protection_AttrCount": [
             {
                 "key head": "Undesignated",
-                "value head": 5
+                "value head": 6
+            },
+            {
+                "key head": "Critical",
+                "value head": 1
             },
             {
                 "key head": "No Protection",
@@ -42,14 +46,14 @@
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
-                "value head": 6
+                "value head": 8
             }
         ],
-        "Aksd_FeatureCount": 6.0,
+        "Aksd_FeatureCount": 8.0,
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 3.23,
+                    "dist_mi": 3.1,
                     "dir": "SW",
                     "lat": "67\u00b0 31.541' N",
                     "lng": "150\u00b0 33.165' W",
@@ -59,8 +63,8 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 3.5,
-                    "dir": "SSW",
+                    "dist_mi": 3.34,
+                    "dir": "SW",
                     "lat": "67\u00b0 31.124' N",
                     "lng": "150\u00b0 32.832' W",
                     "SiteCat": "Structure",
@@ -69,7 +73,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 3.99,
+                    "dist_mi": 3.7,
                     "dir": "SE",
                     "lat": "67\u00b0 30.878' N",
                     "lng": "150\u00b0 22.584' W",
@@ -79,7 +83,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 4.38,
+                    "dist_mi": 4.18,
                     "dir": "SSW",
                     "lat": "67\u00b0 30.213' N",
                     "lng": "150\u00b0 32.767' W",
@@ -89,7 +93,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 4.57,
+                    "dist_mi": 4.36,
                     "dir": "ESE",
                     "lat": "67\u00b0 31.941' N",
                     "lng": "150\u00b0 18.832' W",
@@ -99,12 +103,32 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 4.64,
-                    "dir": "SE",
+                    "dist_mi": 4.39,
+                    "dir": "ESE",
                     "lat": "67\u00b0 31.120' N",
                     "lng": "150\u00b0 19.935' W",
                     "SiteCat": "Structure",
                     "Protection": "Undesignated",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 4.78,
+                    "dir": "SSW",
+                    "lat": "67\u00b0 29.480' N",
+                    "lng": "150\u00b0 31.993' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 4.88,
+                    "dir": "SSW",
+                    "lat": "67\u00b0 29.395' N",
+                    "lng": "150\u00b0 32.010' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Critical",
                     "MainStructs": "No Data",
                     "OthrStructs": "No Data"
                 }
@@ -124,16 +148,16 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Doyon, Limited",
-                "value head": 35342.76
+                "value head": 35479.77
             },
             {
                 "key head": "Gates of the Arctic National Park & Preserve",
-                "value head": 14983.81
+                "value head": 14846.8
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "ANCSA": 35342.76,
-            "NPS": 14983.81
+            "ANCSA": 35479.77,
+            "NPS": 14846.8
         },
         "MgmtOption_AcreSum": {
             "Limited": 50326.57
@@ -141,13 +165,13 @@
         "NpsStruct_Use_AttrCount": [
             {
                 "key head": "Unknown",
-                "value head": 6
+                "value head": 7
             }
         ],
         "NpsStruct_Protection_AttrCount": [
             {
                 "key head": "Not Designated",
-                "value head": 5
+                "value head": 6
             },
             {
                 "key head": "Non-Sensitive",
@@ -157,14 +181,14 @@
         "NpsStruct_Rating_AttrCount": [
             {
                 "key head": "SRVNotRequired",
-                "value head": 6
+                "value head": 7
             }
         ],
-        "NpsStruct_FeatureCount": 6.0,
+        "NpsStruct_FeatureCount": 7.0,
         "NpsStruct_Locations": {
             "features": [
                 {
-                    "dist_mi": 3.23,
+                    "dist_mi": 3.1,
                     "dir": "SW",
                     "lat": "67\u00b0 31.541' N",
                     "lng": "150\u00b0 33.164' W",
@@ -173,8 +197,8 @@
                     "ProtectionLevel": "Not Designated"
                 },
                 {
-                    "dist_mi": 3.5,
-                    "dir": "SSW",
+                    "dist_mi": 3.34,
+                    "dir": "SW",
                     "lat": "67\u00b0 31.124' N",
                     "lng": "150\u00b0 32.830' W",
                     "FacilityUse": "Unknown",
@@ -182,7 +206,7 @@
                     "ProtectionLevel": "Not Designated"
                 },
                 {
-                    "dist_mi": 3.99,
+                    "dist_mi": 3.7,
                     "dir": "SE",
                     "lat": "67\u00b0 30.878' N",
                     "lng": "150\u00b0 22.583' W",
@@ -191,7 +215,7 @@
                     "ProtectionLevel": "Not Designated"
                 },
                 {
-                    "dist_mi": 4.38,
+                    "dist_mi": 4.18,
                     "dir": "SSW",
                     "lat": "67\u00b0 30.213' N",
                     "lng": "150\u00b0 32.766' W",
@@ -200,7 +224,7 @@
                     "ProtectionLevel": "Not Designated"
                 },
                 {
-                    "dist_mi": 4.57,
+                    "dist_mi": 4.36,
                     "dir": "ESE",
                     "lat": "67\u00b0 31.941' N",
                     "lng": "150\u00b0 18.830' W",
@@ -209,10 +233,19 @@
                     "ProtectionLevel": "Non-Sensitive"
                 },
                 {
-                    "dist_mi": 4.64,
-                    "dir": "SE",
+                    "dist_mi": 4.39,
+                    "dir": "ESE",
                     "lat": "67\u00b0 31.120' N",
                     "lng": "150\u00b0 19.933' W",
+                    "FacilityUse": "Unknown",
+                    "Rating": "SRVNotRequired",
+                    "ProtectionLevel": "Not Designated"
+                },
+                {
+                    "dist_mi": 4.78,
+                    "dir": "SSW",
+                    "lat": "67\u00b0 29.480' N",
+                    "lng": "150\u00b0 31.991' W",
                     "FacilityUse": "Unknown",
                     "Rating": "SRVNotRequired",
                     "ProtectionLevel": "Not Designated"
@@ -260,7 +293,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 5 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:151328.387%2C1959722.2%2C3338,scale:40241",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:151519.252%2C1959269.94%2C3338,scale:40241",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
