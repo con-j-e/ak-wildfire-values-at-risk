@@ -14776,10 +14776,10 @@
         "AkFireNumber": "264",
         "wfigs_IncidentName": "Buckley Bar",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 5209.0,
+        "wfigs_GISAcres": 5995.0,
         "wfigs_MapMethod": "Mixed Methods",
-        "wfigs_PolygonDateTime": 1751837100000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751943366630.0,
+        "wfigs_PolygonDateTime": 1751922000000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751987939000.0,
         "wfigs_IrwinID": "{11A6FCDD-5FBD-4E76-9899-8658696EE21E}",
         "ReportedAcres": 5209.0,
         "HasError": 0.0,
@@ -14801,10 +14801,35 @@
         "WeatherStation_Locations": null,
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
-        "Aksd_Protection_AttrCount": null,
-        "Aksd_SiteCat_AttrCount": null,
-        "Aksd_FeatureCount": null,
-        "Aksd_Locations": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Undesignated",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Structure",
+                "value head": 1
+            }
+        ],
+        "Aksd_FeatureCount": 1.0,
+        "Aksd_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.37,
+                    "dir": "Interior",
+                    "lat": "65\u00b0 19.805' N",
+                    "lng": "144\u00b0 21.597' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "NtvAllot_Status_AcreSum": null,
         "NtvAllot_FeatureCount": null,
         "NtvAllot_Locations": null,
@@ -14817,14 +14842,14 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 5209.58
+                "value head": 5994.26
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 5209.58
+            "BLM": 5994.26
         },
         "MgmtOption_AcreSum": {
-            "Modified (Jul 10)": 5209.58
+            "Modified (Jul 10)": 5994.26
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -14870,7 +14895,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:447813.966%2C1742652.282%2C3338,scale:18029",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:447734.511%2C1742134.006%2C3338,scale:21956",
         "CpxName": "Ptarmigan Complex",
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
