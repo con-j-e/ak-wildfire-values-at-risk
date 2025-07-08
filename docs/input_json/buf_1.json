@@ -19104,7 +19104,7 @@
         "wfigs_GISAcres": 72.86665248206478,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751403600000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751860601367.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751951210747.0,
         "wfigs_IrwinID": "{82EFFF88-781E-496A-B809-4B490302CD5C}",
         "ReportedAcres": 72.87,
         "HasError": 0.0,
@@ -19279,16 +19279,16 @@
         "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:360309.644%2C1618072.467%2C3338,scale:10763",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
-        "PercentContained": 77.0,
+        "PercentContained": 80.0,
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 4 Incident",
-        "EstimatedCostToDate": 600000.0,
+        "EstimatedCostToDate": 650000.0,
         "TotalIncidentPersonnel": 24.0,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1751860601000.0,
+        "ICS209ReportDateTime": 1751951210000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 4 IC"
     },
@@ -44101,10 +44101,10 @@
         "AkFireNumber": "172",
         "wfigs_IncidentName": "Obrien",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 9298.69444064717,
-        "wfigs_MapMethod": "Mixed Methods",
+        "wfigs_GISAcres": 8125.137010638282,
+        "wfigs_MapMethod": "GPS-Flight",
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1751940092807.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751950610000.0,
         "wfigs_IrwinID": "{6ACDFBDF-2F82-4B2C-B55B-43219D237B7E}",
         "ReportedAcres": 9299.0,
         "HasError": 0.0,
@@ -44124,35 +44124,25 @@
         "Runway_Ownership_AttrCount": null,
         "WeatherStation_FeatureCount": null,
         "WeatherStation_Locations": null,
-        "Aksd_MainStruct_AttrSum": 3.0,
+        "Aksd_MainStruct_AttrSum": 4.0,
         "Aksd_OtherStruct_AttrSum": 2.0,
         "Aksd_Protection_AttrCount": [
             {
                 "key head": "Full",
-                "value head": 3
+                "value head": 4
             }
         ],
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
-                "value head": 3
+                "value head": 4
             }
         ],
-        "Aksd_FeatureCount": 3.0,
+        "Aksd_FeatureCount": 4.0,
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.07,
-                    "dir": "S",
-                    "lat": "65\u00b0 16.345' N",
-                    "lng": "147\u00b0 58.103' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Full",
-                    "MainStructs": 1.0,
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 0.1,
+                    "dist_mi": 0.31,
                     "dir": "ESE",
                     "lat": "65\u00b0 19.799' N",
                     "lng": "147\u00b0 48.949' W",
@@ -44162,14 +44152,34 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 0.84,
-                    "dir": "SSE",
+                    "dist_mi": 0.4,
+                    "dir": "S",
+                    "lat": "65\u00b0 16.345' N",
+                    "lng": "147\u00b0 58.103' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": 1.0,
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.76,
+                    "dir": "S",
                     "lat": "65\u00b0 16.746' N",
                     "lng": "147\u00b0 52.538' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
                     "MainStructs": 1.0,
                     "OthrStructs": 2.0
+                },
+                {
+                    "dist_mi": 0.91,
+                    "dir": "SSE",
+                    "lat": "65\u00b0 16.689' N",
+                    "lng": "147\u00b0 50.851' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": 1.0,
+                    "OthrStructs": "No Data"
                 }
             ],
             "popped": 0,
@@ -44187,19 +44197,19 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 12811.7
+                "value head": 13487.73
             },
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 11339.91
+                "value head": 10909.89
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 12811.7,
-            "State": 11339.91
+            "BLM": 13487.73,
+            "State": 10909.89
         },
         "MgmtOption_AcreSum": {
-            "Limited": 24151.61
+            "Limited": 24397.62
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -44237,7 +44247,19 @@
             }
         ],
         "SpecMgmt_FeatureCount": 1.0,
-        "SpecMgmt_Locations": null,
+        "SpecMgmt_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.28,
+                    "dir": "S",
+                    "lat": "65\u00b0 16.449' N",
+                    "lng": "147\u00b0 58.109' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "Railroad_NetDesc_FeetSum": null,
         "Railroad_Locations": null,
         "Railroad_TotalFeet": null,
@@ -44250,7 +44272,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:282694.068%2C1717912.077%2C3338,scale:37281",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:282990.694%2C1717885.23%2C3338,scale:38175",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,

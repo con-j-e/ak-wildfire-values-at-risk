@@ -28242,7 +28242,7 @@
         "wfigs_GISAcres": 72.86665248206478,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751403600000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751860601367.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751951210747.0,
         "wfigs_IrwinID": "{82EFFF88-781E-496A-B809-4B490302CD5C}",
         "ReportedAcres": 72.87,
         "HasError": 0.0,
@@ -29235,16 +29235,16 @@
         "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:360302.746%2C1618073.916%2C3338,scale:26847",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
-        "PercentContained": 77.0,
+        "PercentContained": 80.0,
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 4 Incident",
-        "EstimatedCostToDate": 600000.0,
+        "EstimatedCostToDate": 650000.0,
         "TotalIncidentPersonnel": 24.0,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1751860601000.0,
+        "ICS209ReportDateTime": 1751951210000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 4 IC"
     },
@@ -65672,10 +65672,10 @@
         "AkFireNumber": "172",
         "wfigs_IncidentName": "Obrien",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 9298.69444064717,
-        "wfigs_MapMethod": "Mixed Methods",
+        "wfigs_GISAcres": 8125.137010638282,
+        "wfigs_MapMethod": "GPS-Flight",
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1751940092807.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751950610000.0,
         "wfigs_IrwinID": "{6ACDFBDF-2F82-4B2C-B55B-43219D237B7E}",
         "ReportedAcres": 9299.0,
         "HasError": 0.0,
@@ -65725,17 +65725,7 @@
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.07,
-                    "dir": "S",
-                    "lat": "65\u00b0 16.345' N",
-                    "lng": "147\u00b0 58.103' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Full",
-                    "MainStructs": 1.0,
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 0.1,
+                    "dist_mi": 0.31,
                     "dir": "ESE",
                     "lat": "65\u00b0 19.799' N",
                     "lng": "147\u00b0 48.949' W",
@@ -65745,8 +65735,18 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 0.84,
-                    "dir": "SSE",
+                    "dist_mi": 0.4,
+                    "dir": "S",
+                    "lat": "65\u00b0 16.345' N",
+                    "lng": "147\u00b0 58.103' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": 1.0,
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.76,
+                    "dir": "S",
                     "lat": "65\u00b0 16.746' N",
                     "lng": "147\u00b0 52.538' W",
                     "SiteCat": "Structure",
@@ -65755,13 +65755,23 @@
                     "OthrStructs": 2.0
                 },
                 {
-                    "dist_mi": 1.24,
+                    "dist_mi": 0.91,
                     "dir": "SSE",
                     "lat": "65\u00b0 16.689' N",
                     "lng": "147\u00b0 50.851' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
                     "MainStructs": 1.0,
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.47,
+                    "dir": "SW",
+                    "lat": "65\u00b0 17.059' N",
+                    "lng": "148\u00b0 08.702' W",
+                    "SiteCat": "Other",
+                    "Protection": "Avoid",
+                    "MainStructs": "No Data",
                     "OthrStructs": "No Data"
                 },
                 {
@@ -65775,17 +65785,7 @@
                     "OthrStructs": 5.0
                 },
                 {
-                    "dist_mi": 2.51,
-                    "dir": "WSW",
-                    "lat": "65\u00b0 17.059' N",
-                    "lng": "148\u00b0 08.702' W",
-                    "SiteCat": "Other",
-                    "Protection": "Avoid",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 2.84,
+                    "dist_mi": 2.79,
                     "dir": "WSW",
                     "lat": "65\u00b0 17.361' N",
                     "lng": "148\u00b0 09.731' W",
@@ -65810,21 +65810,21 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 37086.98
+                "value head": 38208.53
             },
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 27585.5
+                "value head": 27456.63
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 37086.98,
-            "State": 27545.47,
+            "BLM": 38208.53,
+            "State": 27416.6,
             "Private": 40.03
         },
         "MgmtOption_AcreSum": {
-            "Limited": 63770.97,
-            "Full": 901.51
+            "Limited": 64770.99,
+            "Full": 894.18
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -65865,38 +65865,45 @@
         "SpecMgmt_Locations": {
             "features": [
                 {
-                    "dist_mi": 1.94,
+                    "dist_mi": 0.28,
+                    "dir": "S",
+                    "lat": "65\u00b0 16.449' N",
+                    "lng": "147\u00b0 58.109' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 2.08,
                     "dir": "S",
                     "lat": "65\u00b0 14.829' N",
                     "lng": "148\u00b0 00.572' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 2.36,
-                    "dir": "WSW",
-                    "lat": "65\u00b0 17.062' N",
-                    "lng": "148\u00b0 08.372' W",
+                    "dist_mi": 2.33,
+                    "dir": "SW",
+                    "lat": "65\u00b0 17.081' N",
+                    "lng": "148\u00b0 08.393' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 2.5,
+                    "dist_mi": 2.45,
                     "dir": "WSW",
-                    "lat": "65\u00b0 17.319' N",
-                    "lng": "148\u00b0 08.955' W",
+                    "lat": "65\u00b0 17.314' N",
+                    "lng": "148\u00b0 08.949' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 2.77,
+                    "dist_mi": 2.73,
                     "dir": "WSW",
                     "lat": "65\u00b0 16.981' N",
                     "lng": "148\u00b0 09.210' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 2.78,
-                    "dir": "SSW",
-                    "lat": "65\u00b0 14.279' N",
-                    "lng": "148\u00b0 02.155' W",
+                    "dist_mi": 2.85,
+                    "dir": "S",
+                    "lat": "65\u00b0 14.285' N",
+                    "lng": "148\u00b0 02.194' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 }
             ],
@@ -65943,7 +65950,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:282622.263%2C1718049.079%2C3338,scale:53365",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:282870.902%2C1717968.279%2C3338,scale:54254",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,

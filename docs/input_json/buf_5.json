@@ -39319,7 +39319,7 @@
         "wfigs_GISAcres": 72.86665248206478,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751403600000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751860601367.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751951210747.0,
         "wfigs_IrwinID": "{82EFFF88-781E-496A-B809-4B490302CD5C}",
         "ReportedAcres": 72.87,
         "HasError": 0.0,
@@ -41232,16 +41232,16 @@
         "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:360301.241%2C1618073.938%2C3338,scale:42951",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
-        "PercentContained": 77.0,
+        "PercentContained": 80.0,
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 4 Incident",
-        "EstimatedCostToDate": 600000.0,
+        "EstimatedCostToDate": 650000.0,
         "TotalIncidentPersonnel": 24.0,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1751860601000.0,
+        "ICS209ReportDateTime": 1751951210000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 4 IC"
     },
@@ -91325,10 +91325,10 @@
         "AkFireNumber": "172",
         "wfigs_IncidentName": "Obrien",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 9298.69444064717,
-        "wfigs_MapMethod": "Mixed Methods",
+        "wfigs_GISAcres": 8125.137010638282,
+        "wfigs_MapMethod": "GPS-Flight",
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1751940092807.0,
+        "wfigs_ModifiedOnDateTime_dt": 1751950610000.0,
         "wfigs_IrwinID": "{6ACDFBDF-2F82-4B2C-B55B-43219D237B7E}",
         "ReportedAcres": 9299.0,
         "HasError": 0.0,
@@ -91364,11 +91364,11 @@
                 "value head": 3
             },
             {
-                "key head": "Unknown",
-                "value head": 1
+                "key head": "No Protection",
+                "value head": 2
             },
             {
-                "key head": "No Protection",
+                "key head": "Unknown",
                 "value head": 1
             }
         ],
@@ -91383,24 +91383,14 @@
             },
             {
                 "key head": "Communications",
-                "value head": 1
+                "value head": 2
             }
         ],
-        "Aksd_FeatureCount": 31.0,
+        "Aksd_FeatureCount": 32.0,
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.07,
-                    "dir": "S",
-                    "lat": "65\u00b0 16.345' N",
-                    "lng": "147\u00b0 58.103' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Full",
-                    "MainStructs": 1.0,
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 0.1,
+                    "dist_mi": 0.31,
                     "dir": "ESE",
                     "lat": "65\u00b0 19.799' N",
                     "lng": "147\u00b0 48.949' W",
@@ -91410,8 +91400,18 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 0.84,
-                    "dir": "SSE",
+                    "dist_mi": 0.4,
+                    "dir": "S",
+                    "lat": "65\u00b0 16.345' N",
+                    "lng": "147\u00b0 58.103' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": 1.0,
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.76,
+                    "dir": "S",
                     "lat": "65\u00b0 16.746' N",
                     "lng": "147\u00b0 52.538' W",
                     "SiteCat": "Structure",
@@ -91420,13 +91420,23 @@
                     "OthrStructs": 2.0
                 },
                 {
-                    "dist_mi": 1.24,
+                    "dist_mi": 0.91,
                     "dir": "SSE",
                     "lat": "65\u00b0 16.689' N",
                     "lng": "147\u00b0 50.851' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
                     "MainStructs": 1.0,
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.47,
+                    "dir": "SW",
+                    "lat": "65\u00b0 17.059' N",
+                    "lng": "148\u00b0 08.702' W",
+                    "SiteCat": "Other",
+                    "Protection": "Avoid",
+                    "MainStructs": "No Data",
                     "OthrStructs": "No Data"
                 },
                 {
@@ -91440,17 +91450,7 @@
                     "OthrStructs": 5.0
                 },
                 {
-                    "dist_mi": 2.51,
-                    "dir": "WSW",
-                    "lat": "65\u00b0 17.059' N",
-                    "lng": "148\u00b0 08.702' W",
-                    "SiteCat": "Other",
-                    "Protection": "Avoid",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 2.84,
+                    "dist_mi": 2.79,
                     "dir": "WSW",
                     "lat": "65\u00b0 17.361' N",
                     "lng": "148\u00b0 09.731' W",
@@ -91460,7 +91460,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 3.14,
+                    "dist_mi": 3.19,
                     "dir": "NNW",
                     "lat": "65\u00b0 21.083' N",
                     "lng": "148\u00b0 04.867' W",
@@ -91470,7 +91470,7 @@
                     "OthrStructs": 0.0
                 },
                 {
-                    "dist_mi": 3.68,
+                    "dist_mi": 3.63,
                     "dir": "W",
                     "lat": "65\u00b0 17.914' N",
                     "lng": "148\u00b0 11.750' W",
@@ -91480,7 +91480,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 3.85,
+                    "dist_mi": 3.8,
                     "dir": "W",
                     "lat": "65\u00b0 17.974' N",
                     "lng": "148\u00b0 12.105' W",
@@ -91490,7 +91490,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 3.96,
+                    "dist_mi": 4.16,
                     "dir": "NNE",
                     "lat": "65\u00b0 22.827' N",
                     "lng": "147\u00b0 44.210' W",
@@ -91500,7 +91500,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 4.22,
+                    "dist_mi": 4.17,
                     "dir": "W",
                     "lat": "65\u00b0 18.673' N",
                     "lng": "148\u00b0 12.790' W",
@@ -91510,7 +91510,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 4.25,
+                    "dist_mi": 4.2,
                     "dir": "W",
                     "lat": "65\u00b0 18.346' N",
                     "lng": "148\u00b0 12.938' W",
@@ -91520,7 +91520,7 @@
                     "OthrStructs": 2.0
                 },
                 {
-                    "dist_mi": 4.25,
+                    "dist_mi": 4.2,
                     "dir": "W",
                     "lat": "65\u00b0 18.012' N",
                     "lng": "148\u00b0 12.943' W",
@@ -91530,7 +91530,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 4.26,
+                    "dist_mi": 4.21,
                     "dir": "W",
                     "lat": "65\u00b0 18.967' N",
                     "lng": "148\u00b0 12.753' W",
@@ -91540,7 +91540,7 @@
                     "OthrStructs": 4.0
                 },
                 {
-                    "dist_mi": 4.27,
+                    "dist_mi": 4.22,
                     "dir": "W",
                     "lat": "65\u00b0 18.136' N",
                     "lng": "148\u00b0 12.999' W",
@@ -91550,7 +91550,7 @@
                     "OthrStructs": 2.0
                 },
                 {
-                    "dist_mi": 4.29,
+                    "dist_mi": 4.24,
                     "dir": "W",
                     "lat": "65\u00b0 18.202' N",
                     "lng": "148\u00b0 13.020' W",
@@ -91560,7 +91560,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 4.31,
+                    "dist_mi": 4.26,
                     "dir": "W",
                     "lat": "65\u00b0 18.321' N",
                     "lng": "148\u00b0 13.068' W",
@@ -91570,7 +91570,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 4.35,
+                    "dist_mi": 4.3,
                     "dir": "W",
                     "lat": "65\u00b0 17.998' N",
                     "lng": "148\u00b0 13.148' W",
@@ -91580,7 +91580,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 4.37,
+                    "dist_mi": 4.33,
                     "dir": "W",
                     "lat": "65\u00b0 19.013' N",
                     "lng": "148\u00b0 12.978' W",
@@ -91590,17 +91590,7 @@
                     "OthrStructs": 0.0
                 },
                 {
-                    "dist_mi": 4.4,
-                    "dir": "SSW",
-                    "lat": "65\u00b0 13.026' N",
-                    "lng": "148\u00b0 03.688' W",
-                    "SiteCat": "Communications",
-                    "Protection": "Undesignated",
-                    "MainStructs": 1.0,
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 4.4,
+                    "dist_mi": 4.35,
                     "dir": "W",
                     "lat": "65\u00b0 17.962' N",
                     "lng": "148\u00b0 13.242' W",
@@ -91610,7 +91600,7 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 4.42,
+                    "dist_mi": 4.37,
                     "dir": "W",
                     "lat": "65\u00b0 17.884' N",
                     "lng": "148\u00b0 13.289' W",
@@ -91620,7 +91610,17 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 4.52,
+                    "dist_mi": 4.45,
+                    "dir": "SSW",
+                    "lat": "65\u00b0 13.026' N",
+                    "lng": "148\u00b0 03.688' W",
+                    "SiteCat": "Communications",
+                    "Protection": "Undesignated",
+                    "MainStructs": 1.0,
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 4.47,
                     "dir": "W",
                     "lat": "65\u00b0 17.890' N",
                     "lng": "148\u00b0 13.496' W",
@@ -91630,7 +91630,7 @@
                     "OthrStructs": 2.0
                 },
                 {
-                    "dist_mi": 4.52,
+                    "dist_mi": 4.48,
                     "dir": "W",
                     "lat": "65\u00b0 17.951' N",
                     "lng": "148\u00b0 13.507' W",
@@ -91640,18 +91640,18 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 4.63,
-                    "dir": "N",
-                    "lat": "65\u00b0 24.144' N",
-                    "lng": "147\u00b0 48.971' W",
-                    "SiteCat": "Other",
-                    "Protection": "Avoid",
+                    "dist_mi": 4.52,
+                    "dir": "SE",
+                    "lat": "65\u00b0 14.079' N",
+                    "lng": "147\u00b0 44.706' W",
+                    "SiteCat": "Communications",
+                    "Protection": "No Protection",
                     "MainStructs": "No Data",
                     "OthrStructs": "No Data"
                 }
             ],
-            "popped": 5,
-            "cutoff": 4.63
+            "popped": 6,
+            "cutoff": 4.52
         },
         "NtvAllot_Status_AcreSum": null,
         "NtvAllot_FeatureCount": null,
@@ -91671,7 +91671,7 @@
         "ComsTwr_Locations": {
             "features": [
                 {
-                    "dist_mi": 4.38,
+                    "dist_mi": 4.44,
                     "dir": "SSW",
                     "lat": "65\u00b0 13.023' N",
                     "lng": "148\u00b0 03.580' W",
@@ -91679,7 +91679,7 @@
                     "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=2736986"
                 },
                 {
-                    "dist_mi": 4.38,
+                    "dist_mi": 4.44,
                     "dir": "SSW",
                     "lat": "65\u00b0 13.023' N",
                     "lng": "148\u00b0 03.580' W",
@@ -91687,7 +91687,7 @@
                     "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3434836"
                 },
                 {
-                    "dist_mi": 4.38,
+                    "dist_mi": 4.44,
                     "dir": "SSW",
                     "lat": "65\u00b0 13.023' N",
                     "lng": "148\u00b0 03.580' W",
@@ -91695,7 +91695,7 @@
                     "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=969247"
                 },
                 {
-                    "dist_mi": 4.38,
+                    "dist_mi": 4.44,
                     "dir": "SSW",
                     "lat": "65\u00b0 13.023' N",
                     "lng": "148\u00b0 03.580' W",
@@ -91703,7 +91703,7 @@
                     "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=969240"
                 },
                 {
-                    "dist_mi": 4.38,
+                    "dist_mi": 4.44,
                     "dir": "SSW",
                     "lat": "65\u00b0 13.023' N",
                     "lng": "148\u00b0 03.580' W",
@@ -91711,7 +91711,7 @@
                     "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=969226"
                 },
                 {
-                    "dist_mi": 4.38,
+                    "dist_mi": 4.44,
                     "dir": "SSW",
                     "lat": "65\u00b0 13.023' N",
                     "lng": "148\u00b0 03.580' W",
@@ -91727,22 +91727,22 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 72399.9
+                "value head": 74054.88
             },
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 48580.67
+                "value head": 48406.24
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 72399.9,
-            "State": 48058.52,
-            "Private": 522.15
+            "BLM": 74054.88,
+            "State": 47862.33,
+            "Private": 543.91
         },
         "MgmtOption_AcreSum": {
-            "Limited": 109667.23,
-            "Full": 6745.08,
-            "Modified (Jul 10)": 4568.27
+            "Limited": 111847.47,
+            "Full": 6459.67,
+            "Modified (Jul 10)": 4153.98
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -91751,21 +91751,21 @@
         "NpsStruct_Locations": null,
         "Parcel_BuildingValue_AttrSum": null,
         "Parcel_FeatureCount": 2.0,
-        "Parcel_LandValue_AttrSum": 363630.0,
+        "Parcel_LandValue_AttrSum": 173450.0,
         "Parcel_Locations": {
             "features": [
                 {
-                    "dist_mi": 4.39,
+                    "dist_mi": 4.63,
                     "dir": "S",
                     "lat": "65\u00b0 12.593' N",
-                    "lng": "147\u00b0 58.580' W",
+                    "lng": "147\u00b0 59.891' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 917664.0
                 },
                 {
-                    "dist_mi": 4.75,
-                    "dir": "SSW",
+                    "dist_mi": 4.85,
+                    "dir": "S",
                     "lat": "65\u00b0 12.593' N",
                     "lng": "148\u00b0 03.043' W",
                     "property_type": "Tax Lot",
@@ -91779,124 +91779,117 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Tax Lot",
-                "value head": 1497.88
+                "value head": 714.55
             }
         ],
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Exempt ",
-                "value head": 1497.88
+                "value head": 714.55
             }
         ],
-        "Parcel_TotalAcres": 1497.88,
-        "Parcel_TotalValue_AttrSum": 363630.0,
+        "Parcel_TotalAcres": 714.55,
+        "Parcel_TotalValue_AttrSum": 173450.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
         "PipeLine_Name_FeetSum": [
             {
                 "key head": "TRANS-ALASKA PIPELINE",
-                "value head": 30439
+                "value head": 30615
             }
         ],
         "PipeLine_Locations": {
             "features": [
                 {
-                    "dist_mi": 3.75,
+                    "dist_mi": 3.77,
                     "dir": "SW",
                     "lat": "65\u00b0 15.655' N",
                     "lng": "148\u00b0 09.723' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 3.96,
+                    "dist_mi": 4.02,
                     "dir": "SW",
                     "lat": "65\u00b0 15.124' N",
                     "lng": "148\u00b0 09.211' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 4.19,
-                    "dir": "WSW",
-                    "lat": "65\u00b0 16.721' N",
-                    "lng": "148\u00b0 12.141' W",
-                    "NAME": "TRANS-ALASKA PIPELINE"
-                },
-                {
-                    "dist_mi": 4.19,
+                    "dist_mi": 4.13,
                     "dir": "WSW",
                     "lat": "65\u00b0 16.823' N",
                     "lng": "148\u00b0 12.226' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 4.2,
+                    "dist_mi": 4.14,
                     "dir": "WSW",
                     "lat": "65\u00b0 16.709' N",
                     "lng": "148\u00b0 12.137' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 4.23,
+                    "dist_mi": 4.14,
+                    "dir": "WSW",
+                    "lat": "65\u00b0 16.721' N",
+                    "lng": "148\u00b0 12.141' W",
+                    "NAME": "TRANS-ALASKA PIPELINE"
+                },
+                {
+                    "dist_mi": 4.18,
                     "dir": "WSW",
                     "lat": "65\u00b0 16.899' N",
                     "lng": "148\u00b0 12.387' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 4.68,
-                    "dir": "SW",
-                    "lat": "65\u00b0 14.169' N",
-                    "lng": "148\u00b0 08.980' W",
-                    "NAME": "TRANS-ALASKA PIPELINE"
-                },
-                {
                     "dist_mi": 4.69,
-                    "dir": "SW",
-                    "lat": "65\u00b0 14.160' N",
-                    "lng": "148\u00b0 08.984' W",
-                    "NAME": "TRANS-ALASKA PIPELINE"
-                },
-                {
-                    "dist_mi": 4.74,
                     "dir": "WSW",
                     "lat": "65\u00b0 17.360' N",
                     "lng": "148\u00b0 13.778' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 4.75,
+                    "dist_mi": 4.7,
                     "dir": "WSW",
                     "lat": "65\u00b0 17.370' N",
                     "lng": "148\u00b0 13.809' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 4.77,
+                    "dist_mi": 4.71,
+                    "dir": "SW",
+                    "lat": "65\u00b0 14.169' N",
+                    "lng": "148\u00b0 08.980' W",
+                    "NAME": "TRANS-ALASKA PIPELINE"
+                },
+                {
+                    "dist_mi": 4.72,
+                    "dir": "SW",
+                    "lat": "65\u00b0 14.160' N",
+                    "lng": "148\u00b0 08.984' W",
+                    "NAME": "TRANS-ALASKA PIPELINE"
+                },
+                {
+                    "dist_mi": 4.72,
                     "dir": "WSW",
                     "lat": "65\u00b0 17.386' N",
                     "lng": "148\u00b0 13.861' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 },
                 {
-                    "dist_mi": 4.88,
+                    "dist_mi": 4.82,
                     "dir": "WSW",
                     "lat": "65\u00b0 17.473' N",
                     "lng": "148\u00b0 14.115' W",
-                    "NAME": "TRANS-ALASKA PIPELINE"
-                },
-                {
-                    "dist_mi": 4.99,
-                    "dir": "SW",
-                    "lat": "65\u00b0 13.822' N",
-                    "lng": "148\u00b0 09.067' W",
                     "NAME": "TRANS-ALASKA PIPELINE"
                 }
             ],
             "popped": 0,
             "cutoff": null
         },
-        "PipeLine_TotalFeet": 30439.0,
+        "PipeLine_TotalFeet": 30615.0,
         "PowerPlant_PrimSource_AttrCount": null,
         "PowerPlant_UtilName_AttrCount": null,
         "PowerPlant_FeatureCount": null,
@@ -91917,42 +91910,49 @@
         "SpecMgmt_Locations": {
             "features": [
                 {
-                    "dist_mi": 1.94,
+                    "dist_mi": 0.28,
+                    "dir": "S",
+                    "lat": "65\u00b0 16.449' N",
+                    "lng": "147\u00b0 58.109' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 2.08,
                     "dir": "S",
                     "lat": "65\u00b0 14.829' N",
                     "lng": "148\u00b0 00.572' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 2.36,
-                    "dir": "WSW",
-                    "lat": "65\u00b0 17.062' N",
-                    "lng": "148\u00b0 08.372' W",
+                    "dist_mi": 2.33,
+                    "dir": "SW",
+                    "lat": "65\u00b0 17.081' N",
+                    "lng": "148\u00b0 08.393' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 2.5,
+                    "dist_mi": 2.45,
                     "dir": "WSW",
-                    "lat": "65\u00b0 17.319' N",
-                    "lng": "148\u00b0 08.955' W",
+                    "lat": "65\u00b0 17.314' N",
+                    "lng": "148\u00b0 08.949' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 2.77,
+                    "dist_mi": 2.73,
                     "dir": "WSW",
                     "lat": "65\u00b0 16.981' N",
                     "lng": "148\u00b0 09.210' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 2.78,
-                    "dir": "SSW",
-                    "lat": "65\u00b0 14.279' N",
-                    "lng": "148\u00b0 02.155' W",
+                    "dist_mi": 2.85,
+                    "dir": "S",
+                    "lat": "65\u00b0 14.285' N",
+                    "lng": "148\u00b0 02.194' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 4.01,
+                    "dist_mi": 4.08,
                     "dir": "SSW",
                     "lat": "65\u00b0 13.291' N",
                     "lng": "148\u00b0 03.096' W",
@@ -92002,7 +92002,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 5 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:282579.418%2C1718129.401%2C3338,scale:69450",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:282815.565%2C1718009.558%2C3338,scale:70334",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
