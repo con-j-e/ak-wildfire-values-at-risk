@@ -8140,10 +8140,10 @@
         "AkFireNumber": "397",
         "wfigs_IncidentName": "Yukon Fork",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": null,
-        "wfigs_MapMethod": null,
-        "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1751779284097.0,
+        "wfigs_GISAcres": 728.0,
+        "wfigs_MapMethod": "Mixed Methods",
+        "wfigs_PolygonDateTime": 1751928960000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752074481000.0,
         "wfigs_IrwinID": "{4AE6E51E-EBCB-4DAC-A6EC-CEEDFAD32DB3}",
         "ReportedAcres": 0.1,
         "HasError": 0.0,
@@ -8163,12 +8163,51 @@
         "Runway_Ownership_AttrCount": null,
         "WeatherStation_FeatureCount": null,
         "WeatherStation_Locations": null,
-        "Aksd_MainStruct_AttrSum": null,
+        "Aksd_MainStruct_AttrSum": 1.0,
         "Aksd_OtherStruct_AttrSum": null,
-        "Aksd_Protection_AttrCount": null,
-        "Aksd_SiteCat_AttrCount": null,
-        "Aksd_FeatureCount": null,
-        "Aksd_Locations": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Full",
+                "value head": 1
+            },
+            {
+                "key head": "Undesignated",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Structure",
+                "value head": 2
+            }
+        ],
+        "Aksd_FeatureCount": 2.0,
+        "Aksd_Locations": {
+            "features": [
+                {
+                    "dist_mi": 4.45,
+                    "dir": "W",
+                    "lat": "65\u00b0 14.076' N",
+                    "lng": "144\u00b0 12.754' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 4.47,
+                    "dir": "W",
+                    "lat": "65\u00b0 14.017' N",
+                    "lng": "144\u00b0 12.825' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": 1.0,
+                    "OthrStructs": "No Data"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "NtvAllot_Status_AcreSum": null,
         "NtvAllot_FeatureCount": null,
         "NtvAllot_Locations": null,
@@ -8181,25 +8220,25 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 39355.59
+                "value head": 48586.42
             },
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 7353.43
+                "value head": 11443.47
             },
             {
                 "key head": "Yukon-Charley Rivers National Preserve",
-                "value head": 3617.55
+                "value head": 5883.47
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 39355.59,
-            "State": 7353.43,
-            "NPS": 3617.55
+            "BLM": 48586.42,
+            "State": 11443.47,
+            "NPS": 5883.47
         },
         "MgmtOption_AcreSum": {
-            "Modified (Jul 10)": 39338.22,
-            "Limited": 10988.35
+            "Modified (Jul 10)": 48630.42,
+            "Limited": 17282.94
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -8245,7 +8284,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 5 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:465017.869%2C1730244.322%2C3338,scale:40241",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:464534.609%2C1730567.434%2C3338,scale:46569",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
