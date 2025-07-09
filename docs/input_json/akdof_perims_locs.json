@@ -22049,10 +22049,10 @@
         "AkFireNumber": "223",
         "wfigs_IncidentName": "Himalaya Road",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 6171.251851266088,
+        "wfigs_GISAcres": 6074.265358144187,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751544000000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752027011377.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752096814000.0,
         "wfigs_IrwinID": "{3DC21EB7-7323-497D-B5AB-BFB16EC65599}",
         "ReportedAcres": 6171.0,
         "HasError": 0.0,
@@ -22088,14 +22088,6 @@
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "65\u00b0 07.948' N",
-                    "lng": "147\u00b0 38.055' W",
-                    "VOLTAGE": "35",
-                    "COND_TYPE": "OH Primary 35KV"
-                },
-                {
-                    "dist_mi": 0.0,
-                    "dir": "Interior",
                     "lat": "65\u00b0 07.857' N",
                     "lng": "147\u00b0 38.053' W",
                     "VOLTAGE": "35",
@@ -22114,6 +22106,14 @@
                     "dir": "Interior",
                     "lat": "65\u00b0 07.861' N",
                     "lng": "147\u00b0 38.051' W",
+                    "VOLTAGE": "35",
+                    "COND_TYPE": "OH Primary 35KV"
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "65\u00b0 07.948' N",
+                    "lng": "147\u00b0 38.055' W",
                     "VOLTAGE": "35",
                     "COND_TYPE": "OH Primary 35KV"
                 },
@@ -22140,20 +22140,16 @@
         "Aksd_Protection_AttrCount": [
             {
                 "key head": "Unknown",
-                "value head": 2
-            },
-            {
-                "key head": "Undesignated",
                 "value head": 1
             }
         ],
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Other",
-                "value head": 3
+                "value head": 1
             }
         ],
-        "Aksd_FeatureCount": 3.0,
+        "Aksd_FeatureCount": 1.0,
         "Aksd_Locations": {
             "features": [
                 {
@@ -22163,26 +22159,6 @@
                     "lng": "147\u00b0 39.931' W",
                     "SiteCat": "Other",
                     "Protection": "Unknown",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 0.05,
-                    "dir": "Interior",
-                    "lat": "65\u00b0 08.614' N",
-                    "lng": "147\u00b0 47.024' W",
-                    "SiteCat": "Other",
-                    "Protection": "Unknown",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 0.07,
-                    "dir": "Interior",
-                    "lat": "65\u00b0 09.433' N",
-                    "lng": "147\u00b0 36.413' W",
-                    "SiteCat": "Other",
-                    "Protection": "Undesignated",
                     "MainStructs": "No Data",
                     "OthrStructs": "No Data"
                 }
@@ -22225,7 +22201,7 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 6120.0
+                "value head": 6023.01
             },
             {
                 "key head": "Alaska Regional Office",
@@ -22241,14 +22217,14 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 6103.74,
+            "State": 6006.75,
             "BIA": 45.14,
             "Private": 16.26,
             "County": 4.16,
             "City": 1.95
         },
         "MgmtOption_AcreSum": {
-            "Full": 5203.91,
+            "Full": 5106.93,
             "Modified (Jul 10)": 763.42,
             "Critical": 203.92
         },
@@ -22259,7 +22235,7 @@
         "NpsStruct_Locations": null,
         "Parcel_BuildingValue_AttrSum": 57119.0,
         "Parcel_FeatureCount": 22.0,
-        "Parcel_LandValue_AttrSum": 2096461.0,
+        "Parcel_LandValue_AttrSum": 2069324.0,
         "Parcel_Locations": {
             "features": [
                 {
@@ -22270,15 +22246,6 @@
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 287232.0
-                },
-                {
-                    "dist_mi": 0.0,
-                    "dir": "Interior",
-                    "lat": "65\u00b0 07.856' N",
-                    "lng": "147\u00b0 38.404' W",
-                    "property_type": "Lot",
-                    "property_use": "Residential",
-                    "total_value": 87425.0
                 },
                 {
                     "dist_mi": 0.0,
@@ -22311,7 +22278,7 @@
                     "dist_mi": 0.0,
                     "dir": "Interior",
                     "lat": "65\u00b0 07.533' N",
-                    "lng": "147\u00b0 47.582' W",
+                    "lng": "147\u00b0 47.580' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 388800.0
@@ -22364,6 +22331,15 @@
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
+                    "lat": "65\u00b0 07.856' N",
+                    "lng": "147\u00b0 38.404' W",
+                    "property_type": "Lot",
+                    "property_use": "Residential",
+                    "total_value": 87425.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
                     "lat": "65\u00b0 07.929' N",
                     "lng": "147\u00b0 38.099' W",
                     "property_type": "Lot",
@@ -22409,6 +22385,15 @@
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
+                    "lat": "65\u00b0 06.964' N",
+                    "lng": "147\u00b0 45.886' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 53865.0
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
                     "lat": "65\u00b0 07.629' N",
                     "lng": "147\u00b0 48.089' W",
                     "property_type": "Tax Lot",
@@ -22428,19 +22413,10 @@
                     "dist_mi": 0.0,
                     "dir": "Interior",
                     "lat": "65\u00b0 06.988' N",
-                    "lng": "147\u00b0 45.990' W",
+                    "lng": "147\u00b0 45.994' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 249480.0
-                },
-                {
-                    "dist_mi": 0.0,
-                    "dir": "Interior",
-                    "lat": "65\u00b0 06.964' N",
-                    "lng": "147\u00b0 45.886' W",
-                    "property_type": "Tax Lot",
-                    "property_use": "Exempt ",
-                    "total_value": 53865.0
                 },
                 {
                     "dist_mi": 0.0,
@@ -22455,7 +22431,7 @@
                     "dist_mi": 0.0,
                     "dir": "Interior",
                     "lat": "65\u00b0 09.996' N",
-                    "lng": "147\u00b0 36.092' W",
+                    "lng": "147\u00b0 36.188' W",
                     "property_type": "Tax Lot",
                     "property_use": "Exempt ",
                     "total_value": 5492912.0
@@ -22467,7 +22443,7 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Tax Lot",
-                "value head": 6143.93
+                "value head": 6046.94
             },
             {
                 "key head": "Lot",
@@ -22481,7 +22457,7 @@
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Exempt ",
-                "value head": 6153.03
+                "value head": 6056.05
             },
             {
                 "key head": "Vacant Land",
@@ -22496,8 +22472,8 @@
                 "value head": 1.97
             }
         ],
-        "Parcel_TotalAcres": 6171.25,
-        "Parcel_TotalValue_AttrSum": 2153581.0,
+        "Parcel_TotalAcres": 6074.26,
+        "Parcel_TotalValue_AttrSum": 2126444.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -22529,7 +22505,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:295166.48%2C1700887.996%2C3338,scale:24167",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:295106.398%2C1700855.566%2C3338,scale:23549",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
@@ -25501,7 +25477,7 @@
         "wfigs_GISAcres": 5639.558096592438,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1751407054000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751517135503.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752096159400.0,
         "wfigs_IrwinID": "{826CB3E2-D674-4BB4-961F-856EF96A1E63}",
         "ReportedAcres": 5640.0,
         "HasError": 0.0,
@@ -25604,7 +25580,7 @@
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1751429240000.0,
+        "ICS209ReportDateTime": 1752096159000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 3 IC"
     },
@@ -25615,8 +25591,8 @@
         "FireActivityStatus": "Active",
         "wfigs_GISAcres": 24036.0,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1751925360000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752029747103.0,
+        "wfigs_PolygonDateTime": 1752011258000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752097160000.0,
         "wfigs_IrwinID": "{9B7A96A6-E06B-4F40-9321-9ADB96358945}",
         "ReportedAcres": 24036.0,
         "HasError": 0.0,
@@ -25767,8 +25743,8 @@
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "65\u00b0 34.894' N",
-                    "lng": "150\u00b0 10.347' W",
+                    "lat": "65\u00b0 35.047' N",
+                    "lng": "150\u00b0 10.316' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "989F15570"
                 },
@@ -25801,15 +25777,15 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Baan O Yeel Kon Corporation",
-                "value head": 14527.35
+                "value head": 15084.12
             },
             {
                 "key head": "Doyon, Limited",
-                "value head": 7786.56
+                "value head": 8782.19
             },
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 860.53
+                "value head": 863.82
             },
             {
                 "key head": "Alaska Regional Office",
@@ -25821,14 +25797,14 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "ANCSA": 22313.91,
-            "State": 860.53,
+            "ANCSA": 23866.31,
+            "State": 863.82,
             "BIA": 702.94,
             "BLM": 158.67
         },
         "MgmtOption_AcreSum": {
-            "Full": 21008.54,
-            "Limited": 3027.51
+            "Full": 21591.21,
+            "Limited": 4000.54
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -25869,10 +25845,10 @@
         "SpecMgmt_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.43,
+                    "dist_mi": 0.99,
                     "dir": "Interior",
-                    "lat": "65\u00b0 35.076' N",
-                    "lng": "150\u00b0 14.665' W",
+                    "lat": "65\u00b0 35.072' N",
+                    "lng": "150\u00b0 14.670' W",
                     "ManagementConsiderations": "Contact Doyon, Limited Lands and Natural Resources Dept. for guidence."
                 },
                 {
@@ -25898,7 +25874,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:172284.132%2C1736422.975%2C3338,scale:37243",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:172354.576%2C1736805.023%2C3338,scale:37243",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 10.0,
