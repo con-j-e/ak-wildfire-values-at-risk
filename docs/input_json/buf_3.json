@@ -781,9 +781,9 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1752026488580.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752038811360.0,
         "wfigs_IrwinID": "{46F5C92C-0A39-423A-AFBF-EC00F1A47753}",
-        "ReportedAcres": 50.0,
+        "ReportedAcres": 100.0,
         "HasError": 0.0,
         "DefaultLabel": "423-Salmon, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -807,12 +807,14 @@
         "Aksd_SiteCat_AttrCount": null,
         "Aksd_FeatureCount": null,
         "Aksd_Locations": null,
-        "NtvAllot_Status_AcreSum": null,
-        "NtvAllot_FeatureCount": null,
+        "NtvAllot_Status_AcreSum": {
+            "Restricted": 5.15
+        },
+        "NtvAllot_FeatureCount": 1.0,
         "NtvAllot_Locations": {
             "features": [
                 {
-                    "dist_mi": 3.0,
+                    "dist_mi": 2.93,
                     "dir": "NW",
                     "lat": "67\u00b0 09.262' N",
                     "lng": "159\u00b0 24.557' W",
@@ -823,7 +825,7 @@
             "popped": 0,
             "cutoff": null
         },
-        "NtvAllot_TotalAcres": null,
+        "NtvAllot_TotalAcres": 5.15,
         "ComsTwr_Type_AttrCount": null,
         "ComsTwr_FeatureCount": null,
         "ComsTwr_Locations": null,
@@ -832,14 +834,20 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Kobuk Valley National Park",
-                "value head": 20018.04
+                "value head": 20850.49
+            },
+            {
+                "key head": "Alaska Regional Office",
+                "value head": 5.15
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "NPS": 20018.04
+            "NPS": 20850.49,
+            "BIA": 5.15
         },
         "MgmtOption_AcreSum": {
-            "Modified (Jul 10)": 20018.04
+            "Modified (Jul 10)": 20850.49,
+            "Full": 5.15
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -885,7 +893,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-232033.134%2C1916511.571%2C3338,scale:25380",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-232033.134%2C1916511.571%2C3338,scale:25905",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
