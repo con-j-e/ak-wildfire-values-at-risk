@@ -4961,10 +4961,10 @@
         "AkFireNumber": "410",
         "wfigs_IncidentName": "Kaliguricheark",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 1638.1411206995035,
-        "wfigs_MapMethod": "Digitized-Image",
-        "wfigs_PolygonDateTime": 1752045780000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752088457120.0,
+        "wfigs_GISAcres": 2715.1135023277457,
+        "wfigs_MapMethod": "Mixed Methods",
+        "wfigs_PolygonDateTime": 1752132180000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752172495000.0,
         "wfigs_IrwinID": "{DD437316-D5C3-497A-99DC-160995008285}",
         "ReportedAcres": 1638.14,
         "HasError": 0.0,
@@ -4986,14 +4986,78 @@
         "WeatherStation_Locations": null,
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
-        "Aksd_Protection_AttrCount": null,
-        "Aksd_SiteCat_AttrCount": null,
-        "Aksd_FeatureCount": null,
-        "Aksd_Locations": null,
-        "NtvAllot_Status_AcreSum": null,
-        "NtvAllot_FeatureCount": null,
-        "NtvAllot_Locations": null,
-        "NtvAllot_TotalAcres": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Full",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Structure",
+                "value head": 1
+            }
+        ],
+        "Aksd_FeatureCount": 1.0,
+        "Aksd_Locations": {
+            "features": [
+                {
+                    "dist_mi": 2.64,
+                    "dir": "S",
+                    "lat": "67\u00b0 10.905' N",
+                    "lng": "159\u00b0 06.272' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "NtvAllot_Status_AcreSum": {
+            "Restricted": 366.13
+        },
+        "NtvAllot_FeatureCount": 4.0,
+        "NtvAllot_Locations": {
+            "features": [
+                {
+                    "dist_mi": 2.17,
+                    "dir": "S",
+                    "lat": "67\u00b0 11.311' N",
+                    "lng": "159\u00b0 06.337' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "981F16886"
+                },
+                {
+                    "dist_mi": 2.31,
+                    "dir": "SSW",
+                    "lat": "67\u00b0 11.212' N",
+                    "lng": "159\u00b0 07.024' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "981F16570B"
+                },
+                {
+                    "dist_mi": 2.36,
+                    "dir": "SSW",
+                    "lat": "67\u00b0 11.366' N",
+                    "lng": "159\u00b0 08.698' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "981F16574"
+                },
+                {
+                    "dist_mi": 2.88,
+                    "dir": "S",
+                    "lat": "67\u00b0 10.708' N",
+                    "lng": "159\u00b0 05.661' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "981F16578"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "NtvAllot_TotalAcres": 366.13,
         "ComsTwr_Type_AttrCount": null,
         "ComsTwr_FeatureCount": null,
         "ComsTwr_Locations": null,
@@ -5002,15 +5066,26 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Kobuk Valley National Park",
-                "value head": 37492.67
+                "value head": 47377.14
+            },
+            {
+                "key head": "Alaska Regional Office",
+                "value head": 366.13
+            },
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 160.01
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "NPS": 37492.67
+            "NPS": 47377.14,
+            "BIA": 366.13,
+            "Private": 160.01
         },
         "MgmtOption_AcreSum": {
-            "Modified (Jul 10)": 18942.23,
-            "Limited": 18550.44
+            "Modified (Jul 10)": 28386.15,
+            "Limited": 19151.0,
+            "Full": 366.13
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -5056,8 +5131,8 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-220435.703%2C1932313.947%2C3338,scale:37454",
-        "CpxName": null,
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-220865.935%2C1930897.265%2C3338,scale:45512",
+        "CpxName": "Goldrun Complex",
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
         "PercentPerimeterToBeContained": null,
