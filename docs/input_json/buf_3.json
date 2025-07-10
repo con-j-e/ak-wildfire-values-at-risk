@@ -36546,7 +36546,7 @@
         "wfigs_GISAcres": 18085.491935960115,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1751900079000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752033502730.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752119976113.0,
         "wfigs_IrwinID": "{83997F1E-7D1C-4E08-9E41-DE41920B5929}",
         "ReportedAcres": 18086.0,
         "HasError": 0.0,
@@ -36878,7 +36878,7 @@
         "WeatherStation_FeatureCount": null,
         "WeatherStation_Locations": null,
         "Aksd_MainStruct_AttrSum": 35.0,
-        "Aksd_OtherStruct_AttrSum": 57.0,
+        "Aksd_OtherStruct_AttrSum": 59.0,
         "Aksd_Protection_AttrCount": [
             {
                 "key head": "Unknown",
@@ -36886,20 +36886,20 @@
             },
             {
                 "key head": "Undesignated",
-                "value head": 18
+                "value head": 17
             }
         ],
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
-                "value head": 36
+                "value head": 35
             },
             {
                 "key head": "Communications",
                 "value head": 1
             }
         ],
-        "Aksd_FeatureCount": 37.0,
+        "Aksd_FeatureCount": 36.0,
         "Aksd_Locations": {
             "features": [
                 {
@@ -36909,8 +36909,8 @@
                     "lng": "148\u00b0 51.063' W",
                     "SiteCat": "Structure",
                     "Protection": "Unknown",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
+                    "MainStructs": 1.0,
+                    "OthrStructs": 2.0
                 },
                 {
                     "dist_mi": 1.04,
@@ -36931,16 +36931,6 @@
                     "Protection": "Undesignated",
                     "MainStructs": 1.0,
                     "OthrStructs": 1.0
-                },
-                {
-                    "dist_mi": 1.34,
-                    "dir": "N",
-                    "lat": "64\u00b0 48.168' N",
-                    "lng": "148\u00b0 41.721' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Undesignated",
-                    "MainStructs": 1.0,
-                    "OthrStructs": "No Data"
                 },
                 {
                     "dist_mi": 1.35,
@@ -37161,10 +37151,20 @@
                     "Protection": "Unknown",
                     "MainStructs": "No Data",
                     "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.82,
+                    "dir": "SSW",
+                    "lat": "64\u00b0 40.342' N",
+                    "lng": "148\u00b0 55.544' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Unknown",
+                    "MainStructs": "No Data",
+                    "OthrStructs": 3.0
                 }
             ],
-            "popped": 62,
-            "cutoff": 2.81
+            "popped": 61,
+            "cutoff": 2.82
         },
         "NtvAllot_Status_AcreSum": {
             "Restricted": 133.45,
@@ -38329,12 +38329,12 @@
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": null,
-        "EstimatedCostToDate": 884220.0,
+        "EstimatedCostToDate": 1290146.0,
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1752033502000.0,
+        "ICS209ReportDateTime": 1752119976000.0,
         "ICS209ReportStatus": null,
         "IncidentManagementOrganization": null
     },
@@ -46119,7 +46119,7 @@
         "wfigs_GISAcres": 12132.762914378525,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751878800000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752033499517.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752119973440.0,
         "wfigs_IrwinID": "{2E74E7EC-3BE4-4C52-89C0-6E3CA1E4D999}",
         "ReportedAcres": 12133.0,
         "HasError": 0.0,
@@ -46448,8 +46448,31 @@
         "Runway_FeatureCount": null,
         "Runway_Locations": null,
         "Runway_Ownership_AttrCount": null,
-        "WeatherStation_FeatureCount": null,
-        "WeatherStation_Locations": null,
+        "WeatherStation_FeatureCount": 2.0,
+        "WeatherStation_Locations": {
+            "features": [
+                {
+                    "dist_mi": 1.54,
+                    "dir": "N",
+                    "lat": "64\u00b0 44.580' N",
+                    "lng": "148\u00b0 18.976' W",
+                    "NAME": "Bonanza Creek LTER1",
+                    "CODE": "BONA2",
+                    "MESOWESTWEBURL": "https://akff.mesowest.org/tabular/station/#CFFDRS/BONA2/"
+                },
+                {
+                    "dist_mi": 2.36,
+                    "dir": "ESE",
+                    "lat": "64\u00b0 41.934' N",
+                    "lng": "148\u00b0 15.292' W",
+                    "NAME": "Bonanza Creek LTER2",
+                    "CODE": "BZKA2",
+                    "MESOWESTWEBURL": "https://akff.mesowest.org/tabular/station/#CFFDRS/BZKA2/"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "Aksd_MainStruct_AttrSum": 38.0,
         "Aksd_OtherStruct_AttrSum": 56.0,
         "Aksd_Protection_AttrCount": [
@@ -46491,16 +46514,6 @@
                 },
                 {
                     "dist_mi": 0.05,
-                    "dir": "SSW",
-                    "lat": "64\u00b0 42.677' N",
-                    "lng": "148\u00b0 37.210' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Undesignated",
-                    "MainStructs": 1.0,
-                    "OthrStructs": 3.0
-                },
-                {
-                    "dist_mi": 0.05,
                     "dir": "N",
                     "lat": "64\u00b0 42.623' N",
                     "lng": "148\u00b0 37.433' W",
@@ -46518,6 +46531,16 @@
                     "Protection": "Full",
                     "MainStructs": "No Data",
                     "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.05,
+                    "dir": "SSW",
+                    "lat": "64\u00b0 42.677' N",
+                    "lng": "148\u00b0 37.210' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
+                    "MainStructs": 1.0,
+                    "OthrStructs": 3.0
                 },
                 {
                     "dist_mi": 0.06,
@@ -46691,13 +46714,13 @@
                 },
                 {
                     "dist_mi": 2.06,
-                    "dir": "NW",
-                    "lat": "64\u00b0 42.251' N",
-                    "lng": "148\u00b0 48.040' W",
+                    "dir": "NNW",
+                    "lat": "64\u00b0 42.342' N",
+                    "lng": "148\u00b0 47.636' W",
                     "SiteCat": "Structure",
-                    "Protection": "Unknown",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
+                    "Protection": "Undesignated",
+                    "MainStructs": 1.0,
+                    "OthrStructs": 3.0
                 },
                 {
                     "dist_mi": 2.06,
@@ -46711,13 +46734,13 @@
                 },
                 {
                     "dist_mi": 2.06,
-                    "dir": "NNW",
-                    "lat": "64\u00b0 42.342' N",
-                    "lng": "148\u00b0 47.636' W",
+                    "dir": "NW",
+                    "lat": "64\u00b0 42.251' N",
+                    "lng": "148\u00b0 48.040' W",
                     "SiteCat": "Structure",
-                    "Protection": "Undesignated",
-                    "MainStructs": 1.0,
-                    "OthrStructs": 3.0
+                    "Protection": "Unknown",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
                 },
                 {
                     "dist_mi": 2.07,
@@ -47801,12 +47824,12 @@
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 3 Incident",
-        "EstimatedCostToDate": 4709428.0,
+        "EstimatedCostToDate": 5033726.0,
         "TotalIncidentPersonnel": 2.0,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1752033499000.0,
+        "ICS209ReportDateTime": 1752119973000.0,
         "ICS209ReportStatus": "F",
         "IncidentManagementOrganization": "Type 3 IC"
     },
