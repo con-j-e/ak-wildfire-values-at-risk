@@ -81352,7 +81352,7 @@
         "wfigs_GISAcres": 15610.388640429961,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1751923620000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752122393667.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752212039097.0,
         "wfigs_IrwinID": "{AAE5042E-833A-466D-B54A-DC92F77EAD7A}",
         "ReportedAcres": 15610.39,
         "HasError": 0.0,
@@ -81422,9 +81422,18 @@
         "Runway_FeatureCount": null,
         "Runway_Locations": null,
         "Runway_Ownership_AttrCount": null,
-        "WeatherStation_FeatureCount": 2.0,
+        "WeatherStation_FeatureCount": 3.0,
         "WeatherStation_Locations": {
             "features": [
+                {
+                    "dist_mi": 0.06,
+                    "dir": "S",
+                    "lat": "64\u00b0 35.418' N",
+                    "lng": "146\u00b0 08.152' W",
+                    "NAME": "ALASKA PORTABLE #3",
+                    "CODE": "AP3A2",
+                    "MESOWESTWEBURL": "https://akff.mesowest.org/tabular/station/#CFFDRS/AP3A2/"
+                },
                 {
                     "dist_mi": 4.73,
                     "dir": "W",
@@ -81438,8 +81447,8 @@
             "popped": 0,
             "cutoff": null
         },
-        "Aksd_MainStruct_AttrSum": 21.0,
-        "Aksd_OtherStruct_AttrSum": 15.0,
+        "Aksd_MainStruct_AttrSum": 22.0,
+        "Aksd_OtherStruct_AttrSum": 17.0,
         "Aksd_Protection_AttrCount": [
             {
                 "key head": "Full",
@@ -81447,7 +81456,7 @@
             },
             {
                 "key head": "Unknown",
-                "value head": 19
+                "value head": 20
             },
             {
                 "key head": "Undesignated",
@@ -81465,7 +81474,7 @@
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
-                "value head": 70
+                "value head": 71
             },
             {
                 "key head": "Other",
@@ -81484,7 +81493,7 @@
                 "value head": 1
             }
         ],
-        "Aksd_FeatureCount": 94.0,
+        "Aksd_FeatureCount": 95.0,
         "Aksd_Locations": {
             "features": [
                 {
@@ -81709,21 +81718,21 @@
                 },
                 {
                     "dist_mi": 0.26,
-                    "dir": "S",
-                    "lat": "64\u00b0 35.933' N",
-                    "lng": "146\u00b0 05.278' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Full",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 0.26,
                     "dir": "SSE",
                     "lat": "64\u00b0 36.087' N",
                     "lng": "146\u00b0 03.107' W",
                     "SiteCat": "Other",
                     "Protection": "Unknown",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.26,
+                    "dir": "S",
+                    "lat": "64\u00b0 35.933' N",
+                    "lng": "146\u00b0 05.278' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
                     "MainStructs": "No Data",
                     "OthrStructs": "No Data"
                 },
@@ -81748,7 +81757,7 @@
                     "OthrStructs": "No Data"
                 }
             ],
-            "popped": 65,
+            "popped": 66,
             "cutoff": 0.29
         },
         "NtvAllot_Status_AcreSum": {
@@ -82391,16 +82400,16 @@
         "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:373143.416%2C1651520.217%2C3338,scale:74439",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
-        "PercentContained": 17.0,
-        "PercentPerimeterToBeContained": 45.0,
+        "PercentContained": 40.0,
+        "PercentPerimeterToBeContained": 20.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 3 Incident",
-        "EstimatedCostToDate": 2832000.0,
-        "TotalIncidentPersonnel": 79.0,
+        "EstimatedCostToDate": 2950000.0,
+        "TotalIncidentPersonnel": 100.0,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "USA",
         "POOJurisdictionalUnit": "AKFWQ",
-        "ICS209ReportDateTime": 1752122393000.0,
+        "ICS209ReportDateTime": 1752212039000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 3 Team"
     },
