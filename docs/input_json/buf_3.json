@@ -7,7 +7,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1752195462787.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752197516543.0,
         "wfigs_IrwinID": "{F945218E-2FE8-46EF-A2EE-4F47D704BEEF}",
         "ReportedAcres": 0.1,
         "HasError": 0.0,
@@ -15,18 +15,18 @@
         "AnalysisBufferMiles": 3.0,
         "AkMine_Active_AttrCount": [
             {
-                "key head": "0",
+                "key head": "1",
                 "value head": 2
             },
             {
-                "key head": "1",
-                "value head": 1
+                "key head": "0",
+                "value head": 2
             }
         ],
         "AkMine_Type_AttrCount": [
             {
                 "key head": "PL",
-                "value head": 2
+                "value head": 3
             },
             {
                 "key head": "No Data",
@@ -43,16 +43,44 @@
                 "value head": 1
             },
             {
-                "key head": "XII Caesars Gold LLC|AK Team GS LLC|1 N SXX",
+                "key head": "Howard Christopher Lambert | Same | 5 N SXX",
+                "value head": 1
+            },
+            {
+                "key head": "Henrich Onufer| Elima  Chernyak",
                 "value head": 1
             }
         ],
-        "AkMine_FeatureCount": 3.0,
+        "AkMine_FeatureCount": 4.0,
         "AkMine_Locations": {
             "features": [
                 {
-                    "dist_mi": 1.73,
-                    "dir": "SSE",
+                    "dist_mi": 0.96,
+                    "dir": "NE",
+                    "lat": "64\u00b0 13.376' N",
+                    "lng": "141\u00b0 21.533' W",
+                    "ACTIVE": 1,
+                    "APMA_TYPE": "PL",
+                    "NOTE": "Henrich Onufer| Elima  Chernyak",
+                    "Explosives": "No Data",
+                    "START_YEAR": 2012,
+                    "EXPIRATION_YEAR": 2026
+                },
+                {
+                    "dist_mi": 2.4,
+                    "dir": "S",
+                    "lat": "64\u00b0 10.789' N",
+                    "lng": "141\u00b0 23.476' W",
+                    "ACTIVE": 0,
+                    "APMA_TYPE": "No Data",
+                    "NOTE": "Howard Christopher Lambert | Same | 5 N SXX",
+                    "Explosives": "No Data",
+                    "START_YEAR": 2004,
+                    "EXPIRATION_YEAR": 2004
+                },
+                {
+                    "dist_mi": 2.53,
+                    "dir": "SW",
                     "lat": "64\u00b0 11.604' N",
                     "lng": "141\u00b0 27.172' W",
                     "ACTIVE": 0,
@@ -63,20 +91,8 @@
                     "EXPIRATION_YEAR": 2018
                 },
                 {
-                    "dist_mi": 2.29,
-                    "dir": "W",
-                    "lat": "64\u00b0 13.080' N",
-                    "lng": "141\u00b0 32.785' W",
-                    "ACTIVE": 0,
-                    "APMA_TYPE": "No Data",
-                    "NOTE": "XII Caesars Gold LLC|AK Team GS LLC|1 N SXX",
-                    "Explosives": "No Data",
-                    "START_YEAR": 2011,
-                    "EXPIRATION_YEAR": 2015
-                },
-                {
-                    "dist_mi": 2.95,
-                    "dir": "SE",
+                    "dist_mi": 2.66,
+                    "dir": "SSW",
                     "lat": "64\u00b0 10.794' N",
                     "lng": "141\u00b0 25.388' W",
                     "ACTIVE": 1,
@@ -105,30 +121,24 @@
             {
                 "key head": "Full",
                 "value head": 3
+            },
+            {
+                "key head": "Undesignated",
+                "value head": 1
             }
         ],
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
-                "value head": 3
+                "value head": 4
             }
         ],
-        "Aksd_FeatureCount": 3.0,
+        "Aksd_FeatureCount": 4.0,
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 2.86,
-                    "dir": "SW",
-                    "lat": "64\u00b0 11.677' N",
-                    "lng": "141\u00b0 32.994' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Full",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 2.93,
-                    "dir": "SE",
+                    "dist_mi": 2.45,
+                    "dir": "SSW",
                     "lat": "64\u00b0 10.916' N",
                     "lng": "141\u00b0 24.993' W",
                     "SiteCat": "Structure",
@@ -137,12 +147,32 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 2.97,
-                    "dir": "SE",
+                    "dist_mi": 2.55,
+                    "dir": "SSW",
                     "lat": "64\u00b0 10.843' N",
                     "lng": "141\u00b0 25.091' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.75,
+                    "dir": "S",
+                    "lat": "64\u00b0 10.529' N",
+                    "lng": "141\u00b0 24.115' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.87,
+                    "dir": "SSW",
+                    "lat": "64\u00b0 10.601' N",
+                    "lng": "141\u00b0 25.424' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
                     "MainStructs": "No Data",
                     "OthrStructs": "No Data"
                 }
@@ -162,21 +192,16 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 17447.23
-            },
-            {
-                "key head": "Eastern Interior Field Office",
-                "value head": 524.73
+                "value head": 18148.61
             },
             {
                 "key head": "Doyon, Limited",
-                "value head": 179.67
+                "value head": 3.02
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 17447.23,
-            "BLM": 524.73,
-            "ANCSA": 179.67
+            "State": 18148.61,
+            "ANCSA": 3.02
         },
         "MgmtOption_AcreSum": {
             "Limited": 18151.63
@@ -210,9 +235,33 @@
         "Silviculture_FeatureCount": null,
         "Silviculture_Locations": null,
         "Silviculture_TotalAcres": null,
-        "SpecMgmt_Consid_AttrCount": null,
-        "SpecMgmt_FeatureCount": null,
-        "SpecMgmt_Locations": null,
+        "SpecMgmt_Consid_AttrCount": [
+            {
+                "key head": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area.",
+                "value head": 2
+            }
+        ],
+        "SpecMgmt_FeatureCount": 2.0,
+        "SpecMgmt_Locations": {
+            "features": [
+                {
+                    "dist_mi": 1.19,
+                    "dir": "SSE",
+                    "lat": "64\u00b0 11.889' N",
+                    "lng": "141\u00b0 22.257' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 2.69,
+                    "dir": "SE",
+                    "lat": "64\u00b0 10.805' N",
+                    "lng": "141\u00b0 20.519' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "Railroad_NetDesc_FeetSum": null,
         "Railroad_Locations": null,
         "Railroad_TotalFeet": null,
@@ -225,7 +274,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:603973.834%2C1640872.878%2C3338,scale:24167",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:608133.349%2C1641355.418%2C3338,scale:24167",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
