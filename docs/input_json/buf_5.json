@@ -4837,12 +4837,12 @@
         "AkFireNumber": "419",
         "wfigs_IncidentName": "Divide",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 20.0,
+        "wfigs_GISAcres": 67.00706123274597,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1751926620000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752031549323.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752193071860.0,
         "wfigs_IrwinID": "{35988E58-2888-4055-BA43-0EDD0616CF67}",
-        "ReportedAcres": 20.0,
+        "ReportedAcres": 67.0,
         "HasError": 0.0,
         "DefaultLabel": "419-Divide, 5 Mile Buffer",
         "AnalysisBufferMiles": 5.0,
@@ -4878,19 +4878,19 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 37448.03
+                "value head": 38991.16
             },
             {
                 "key head": "Gates of the Arctic National Park & Preserve",
-                "value head": 15563.14
+                "value head": 15744.07
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 37448.03,
-            "NPS": 15563.14
+            "State": 38991.16,
+            "NPS": 15744.07
         },
         "MgmtOption_AcreSum": {
-            "Limited": 53011.17
+            "Limited": 54735.23
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -4936,7 +4936,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 5 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:5827.376%2C1889807.909%2C3338,scale:41781",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:5945.75%2C1889832.584%2C3338,scale:42451",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
@@ -5618,12 +5618,12 @@
         "AkFireNumber": "415",
         "wfigs_IncidentName": "Continental",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 47.0,
+        "wfigs_GISAcres": 218.6341111263418,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1751926620000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752031567520.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752193058883.0,
         "wfigs_IrwinID": "{021B5CB6-B549-4F30-9AEF-48D647E32636}",
-        "ReportedAcres": 47.0,
+        "ReportedAcres": 219.0,
         "HasError": 0.0,
         "DefaultLabel": "415-Continental, 5 Mile Buffer",
         "AnalysisBufferMiles": 5.0,
@@ -5659,14 +5659,14 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 55114.84
+                "value head": 59020.74
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 55114.84
+            "State": 59020.74
         },
         "MgmtOption_AcreSum": {
-            "Limited": 55114.84
+            "Limited": 59020.74
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -5697,9 +5697,40 @@
         "Silviculture_FeatureCount": null,
         "Silviculture_Locations": null,
         "Silviculture_TotalAcres": null,
-        "SpecMgmt_Consid_AttrCount": null,
-        "SpecMgmt_FeatureCount": null,
-        "SpecMgmt_Locations": null,
+        "SpecMgmt_Consid_AttrCount": [
+            {
+                "key head": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area.",
+                "value head": 3
+            }
+        ],
+        "SpecMgmt_FeatureCount": 3.0,
+        "SpecMgmt_Locations": {
+            "features": [
+                {
+                    "dist_mi": 4.87,
+                    "dir": "ESE",
+                    "lat": "66\u00b0 56.927' N",
+                    "lng": "153\u00b0 31.777' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 4.91,
+                    "dir": "ESE",
+                    "lat": "66\u00b0 56.450' N",
+                    "lng": "153\u00b0 32.323' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 4.98,
+                    "dir": "ESE",
+                    "lat": "66\u00b0 56.758' N",
+                    "lng": "153\u00b0 31.715' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "Railroad_NetDesc_FeetSum": null,
         "Railroad_Locations": null,
         "Railroad_TotalFeet": null,
@@ -5712,7 +5743,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 5 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:12566.945%2C1890625.005%2C3338,scale:42908",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:12690.672%2C1890951.548%2C3338,scale:44400",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
@@ -5883,12 +5914,12 @@
         "AkFireNumber": "413",
         "wfigs_IncidentName": "Threetime",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 466.36616504578177,
+        "wfigs_GISAcres": 477.925013407295,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1752011234000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752108270000.0,
+        "wfigs_PolygonDateTime": 1752098811000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752193043427.0,
         "wfigs_IrwinID": "{66F54FF7-6AAF-45C2-A6E5-C041121D6241}",
-        "ReportedAcres": 0.1,
+        "ReportedAcres": 478.0,
         "HasError": 0.0,
         "DefaultLabel": "413-Threetime, 5 Mile Buffer",
         "AnalysisBufferMiles": 5.0,
@@ -5949,15 +5980,15 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 62317.32
+                "value head": 62433.22
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 62317.32
+            "State": 62433.22
         },
         "MgmtOption_AcreSum": {
-            "Limited": 51039.64,
-            "Modified (Jul 10)": 11277.68
+            "Limited": 51133.24,
+            "Modified (Jul 10)": 11299.99
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -6003,7 +6034,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 5 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:91674.497%2C1918929.524%2C3338,scale:45850",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:91669.334%2C1918916.446%2C3338,scale:45919",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
@@ -95661,9 +95692,9 @@
         "wfigs_GISAcres": 30153.975536953345,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1752099760000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752187945000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752193024633.0,
         "wfigs_IrwinID": "{AC5DAC11-2619-4887-B4DB-5B739E3D33F2}",
-        "ReportedAcres": 26540.0,
+        "ReportedAcres": 30154.0,
         "HasError": 0.0,
         "DefaultLabel": "165-Klikhtentotzna, 5 Mile Buffer",
         "AnalysisBufferMiles": 5.0,
@@ -97861,12 +97892,12 @@
         "AkFireNumber": "153",
         "wfigs_IncidentName": "Chabanika",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 3371.0,
+        "wfigs_GISAcres": 3504.434298268021,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1751926620000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752031527677.0,
+        "wfigs_PolygonDateTime": 1752098817000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752193009967.0,
         "wfigs_IrwinID": "{565DA474-66FA-4A6C-A6A6-80C68B3B6E5B}",
-        "ReportedAcres": 3371.0,
+        "ReportedAcres": 3504.0,
         "HasError": 0.0,
         "DefaultLabel": "153-Chabanika, 5 Mile Buffer",
         "AnalysisBufferMiles": 5.0,
@@ -97897,15 +97928,15 @@
         "NtvAllot_Locations": {
             "features": [
                 {
-                    "dist_mi": 3.54,
-                    "dir": "SW",
+                    "dist_mi": 3.52,
+                    "dir": "SSW",
                     "lat": "66\u00b0 46.762' N",
                     "lng": "153\u00b0 27.484' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "989F93246BA"
                 },
                 {
-                    "dist_mi": 4.32,
+                    "dist_mi": 4.26,
                     "dir": "SW",
                     "lat": "66\u00b0 46.395' N",
                     "lng": "153\u00b0 28.990' W",
@@ -97941,11 +97972,11 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 59122.55
+                "value head": 60285.79
             },
             {
                 "key head": "Central Yukon Field Office",
-                "value head": 29142.42
+                "value head": 29301.24
             },
             {
                 "key head": "Alaska Regional Office",
@@ -97953,13 +97984,13 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 59122.55,
-            "BLM": 29142.42,
+            "State": 60285.79,
+            "BLM": 29301.24,
             "BIA": 399.22
         },
         "MgmtOption_AcreSum": {
-            "Limited": 60007.13,
-            "Modified (Jul 10)": 28257.83,
+            "Limited": 60117.0,
+            "Modified (Jul 10)": 29470.03,
             "Full": 399.22
         },
         "NpsStruct_Use_AttrCount": null,
@@ -98006,7 +98037,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 5 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:27653.718%2C1876179.431%2C3338,scale:55244",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:27734.296%2C1876053.943%2C3338,scale:55559",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -101082,12 +101113,12 @@
         "AkFireNumber": "140",
         "wfigs_IncidentName": "Hogatza",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 14857.711363377914,
+        "wfigs_GISAcres": 15580.116175949623,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1752099758000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752163280000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752192992590.0,
         "wfigs_IrwinID": "{652226A0-F69E-4DD9-BA06-F0BECA6D0602}",
-        "ReportedAcres": 14331.0,
+        "ReportedAcres": 15580.0,
         "HasError": 0.0,
         "DefaultLabel": "140-Hogatza, 5 Mile Buffer",
         "AnalysisBufferMiles": 5.0,
@@ -101123,8 +101154,8 @@
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 2.94,
-                    "dir": "NNE",
+                    "dist_mi": 2.43,
+                    "dir": "N",
                     "lat": "66\u00b0 49.630' N",
                     "lng": "153\u00b0 57.628' W",
                     "SiteCat": "Structure",
@@ -101148,14 +101179,14 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 141418.04
+                "value head": 143412.3
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 141418.04
+            "State": 143412.3
         },
         "MgmtOption_AcreSum": {
-            "Limited": 141418.04
+            "Limited": 143412.3
         },
         "NpsStruct_Use_AttrCount": [
             {
@@ -101230,7 +101261,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 5 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:2503.685%2C1865695.234%2C3338,scale:73396",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:2444.192%2C1865806.091%2C3338,scale:74047",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
