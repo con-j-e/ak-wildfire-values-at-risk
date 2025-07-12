@@ -1700,56 +1700,140 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1752216232363.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752281745727.0,
         "wfigs_IrwinID": "{F945218E-2FE8-46EF-A2EE-4F47D704BEEF}",
-        "ReportedAcres": 0.1,
+        "ReportedAcres": 5.0,
         "HasError": 0.0,
         "DefaultLabel": "435-Polly, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
         "AkMine_Active_AttrCount": [
             {
                 "key head": "1",
-                "value head": 2
+                "value head": 5
             },
             {
                 "key head": "0",
-                "value head": 2
+                "value head": 1
             }
         ],
         "AkMine_Type_AttrCount": [
             {
                 "key head": "PL",
-                "value head": 3
+                "value head": 4
             },
             {
                 "key head": "No Data",
+                "value head": 1
+            },
+            {
+                "key head": "SD",
                 "value head": 1
             }
         ],
         "AkMine_Note_AttrCount": [
             {
-                "key head": "Glen Martin",
+                "key head": "Randy Duncan",
                 "value head": 1
             },
             {
-                "key head": "Daria & Dionici Kuzmin",
+                "key head": "Vernon & Carol Thurneau | Same | 2 Y XFX",
                 "value head": 1
             },
             {
-                "key head": "Howard Christopher Lambert | Same | 5 N SXX",
+                "key head": "Katherine & Roxanne Turner | Vern Still",
                 "value head": 1
             },
             {
-                "key head": "Henrich Onufer| Elima  Chernyak",
+                "key head": "Bradley Diemer",
+                "value head": 1
+            },
+            {
+                "key head": "Maiden Bench Ltd. | Bronk Jorgensen",
+                "value head": 1
+            },
+            {
+                "key head": "45 Pup gold Co. | Bronk Jorgensen",
                 "value head": 1
             }
         ],
-        "AkMine_FeatureCount": 4.0,
+        "AkMine_FeatureCount": 6.0,
         "AkMine_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.96,
-                    "dir": "NE",
+                    "dist_mi": 0.98,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 16.725' N",
+                    "lng": "141\u00b0 19.027' W",
+                    "ACTIVE": 1,
+                    "APMA_TYPE": "PL",
+                    "NOTE": "Maiden Bench Ltd. | Bronk Jorgensen",
+                    "Explosives": 0.0,
+                    "START_YEAR": 2021,
+                    "EXPIRATION_YEAR": 2025
+                },
+                {
+                    "dist_mi": 1.08,
+                    "dir": "N",
+                    "lat": "64\u00b0 16.822' N",
+                    "lng": "141\u00b0 19.071' W",
+                    "ACTIVE": 1,
+                    "APMA_TYPE": "PL",
+                    "NOTE": "45 Pup gold Co. | Bronk Jorgensen",
+                    "Explosives": 0.0,
+                    "START_YEAR": 2012,
+                    "EXPIRATION_YEAR": 2026
+                },
+                {
+                    "dist_mi": 1.61,
+                    "dir": "NNW",
+                    "lat": "64\u00b0 17.331' N",
+                    "lng": "141\u00b0 20.326' W",
+                    "ACTIVE": 1,
+                    "APMA_TYPE": "No Data",
+                    "NOTE": "Randy Duncan",
+                    "Explosives": "No Data",
+                    "START_YEAR": 2023,
+                    "EXPIRATION_YEAR": 2027
+                },
+                {
+                    "dist_mi": 1.63,
+                    "dir": "ENE",
+                    "lat": "64\u00b0 16.123' N",
+                    "lng": "141\u00b0 16.544' W",
+                    "ACTIVE": 1,
+                    "APMA_TYPE": "SD",
+                    "NOTE": "Bradley Diemer",
+                    "Explosives": 0.0,
+                    "START_YEAR": 2022,
+                    "EXPIRATION_YEAR": 2026
+                },
+                {
+                    "dist_mi": 2.62,
+                    "dir": "NW",
+                    "lat": "64\u00b0 17.816' N",
+                    "lng": "141\u00b0 22.886' W",
+                    "ACTIVE": 0,
+                    "APMA_TYPE": "PL",
+                    "NOTE": "Vernon & Carol Thurneau | Same | 2 Y XFX",
+                    "Explosives": "No Data",
+                    "START_YEAR": 2005,
+                    "EXPIRATION_YEAR": 2013
+                },
+                {
+                    "dist_mi": 2.98,
+                    "dir": "NW",
+                    "lat": "64\u00b0 18.051' N",
+                    "lng": "141\u00b0 23.362' W",
+                    "ACTIVE": 1,
+                    "APMA_TYPE": "PL",
+                    "NOTE": "Katherine & Roxanne Turner | Vern Still",
+                    "Explosives": 0.0,
+                    "START_YEAR": 2009,
+                    "EXPIRATION_YEAR": 2034
+                },
+                {
+                    "dist_mi": 3.0,
+                    "dir": "S",
                     "lat": "64\u00b0 13.376' N",
                     "lng": "141\u00b0 21.533' W",
                     "ACTIVE": 1,
@@ -1758,42 +1842,6 @@
                     "Explosives": "No Data",
                     "START_YEAR": 2012,
                     "EXPIRATION_YEAR": 2026
-                },
-                {
-                    "dist_mi": 2.4,
-                    "dir": "S",
-                    "lat": "64\u00b0 10.789' N",
-                    "lng": "141\u00b0 23.476' W",
-                    "ACTIVE": 0,
-                    "APMA_TYPE": "No Data",
-                    "NOTE": "Howard Christopher Lambert | Same | 5 N SXX",
-                    "Explosives": "No Data",
-                    "START_YEAR": 2004,
-                    "EXPIRATION_YEAR": 2004
-                },
-                {
-                    "dist_mi": 2.53,
-                    "dir": "SW",
-                    "lat": "64\u00b0 11.604' N",
-                    "lng": "141\u00b0 27.172' W",
-                    "ACTIVE": 0,
-                    "APMA_TYPE": "PL",
-                    "NOTE": "Daria & Dionici Kuzmin",
-                    "Explosives": 0.0,
-                    "START_YEAR": 2014,
-                    "EXPIRATION_YEAR": 2018
-                },
-                {
-                    "dist_mi": 2.66,
-                    "dir": "SSW",
-                    "lat": "64\u00b0 10.794' N",
-                    "lng": "141\u00b0 25.388' W",
-                    "ACTIVE": 1,
-                    "APMA_TYPE": "PL",
-                    "NOTE": "Glen Martin",
-                    "Explosives": 0.0,
-                    "START_YEAR": 2011,
-                    "EXPIRATION_YEAR": 2028
                 }
             ],
             "popped": 0,
@@ -1808,64 +1856,216 @@
         "Runway_Ownership_AttrCount": null,
         "WeatherStation_FeatureCount": null,
         "WeatherStation_Locations": null,
-        "Aksd_MainStruct_AttrSum": null,
-        "Aksd_OtherStruct_AttrSum": null,
+        "Aksd_MainStruct_AttrSum": 1.0,
+        "Aksd_OtherStruct_AttrSum": 1.0,
         "Aksd_Protection_AttrCount": [
             {
-                "key head": "Full",
-                "value head": 3
+                "key head": "No Protection",
+                "value head": 12
             },
             {
                 "key head": "Undesignated",
-                "value head": 1
+                "value head": 3
+            },
+            {
+                "key head": "Full",
+                "value head": 3
             }
         ],
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
+                "value head": 13
+            },
+            {
+                "key head": "Other",
                 "value head": 4
+            },
+            {
+                "key head": "Mining",
+                "value head": 1
             }
         ],
-        "Aksd_FeatureCount": 4.0,
+        "Aksd_FeatureCount": 18.0,
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 2.45,
-                    "dir": "SSW",
-                    "lat": "64\u00b0 10.916' N",
-                    "lng": "141\u00b0 24.993' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Full",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 2.55,
-                    "dir": "SSW",
-                    "lat": "64\u00b0 10.843' N",
-                    "lng": "141\u00b0 25.091' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Full",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 2.75,
-                    "dir": "S",
-                    "lat": "64\u00b0 10.529' N",
-                    "lng": "141\u00b0 24.115' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Full",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 2.87,
-                    "dir": "SSW",
-                    "lat": "64\u00b0 10.601' N",
-                    "lng": "141\u00b0 25.424' W",
+                    "dist_mi": 1.03,
+                    "dir": "N",
+                    "lat": "64\u00b0 16.791' N",
+                    "lng": "141\u00b0 19.152' W",
                     "SiteCat": "Structure",
                     "Protection": "Undesignated",
+                    "MainStructs": 1.0,
+                    "OthrStructs": 1.0
+                },
+                {
+                    "dist_mi": 1.08,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 16.804' N",
+                    "lng": "141\u00b0 18.931' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 1.13,
+                    "dir": "N",
+                    "lat": "64\u00b0 16.916' N",
+                    "lng": "141\u00b0 19.457' W",
+                    "SiteCat": "Mining",
+                    "Protection": "No Protection",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 1.35,
+                    "dir": "ENE",
+                    "lat": "64\u00b0 16.267' N",
+                    "lng": "141\u00b0 17.196' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 1.42,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 16.959' N",
+                    "lng": "141\u00b0 18.185' W",
+                    "SiteCat": "Structure",
+                    "Protection": "No Protection",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 1.46,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 16.851' N",
+                    "lng": "141\u00b0 17.773' W",
+                    "SiteCat": "Other",
+                    "Protection": "No Protection",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 1.49,
+                    "dir": "NE",
+                    "lat": "64\u00b0 16.775' N",
+                    "lng": "141\u00b0 17.515' W",
+                    "SiteCat": "Other",
+                    "Protection": "No Protection",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 1.51,
+                    "dir": "N",
+                    "lat": "64\u00b0 17.243' N",
+                    "lng": "141\u00b0 19.378' W",
+                    "SiteCat": "Structure",
+                    "Protection": "No Protection",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 1.73,
+                    "dir": "N",
+                    "lat": "64\u00b0 17.417' N",
+                    "lng": "141\u00b0 19.167' W",
+                    "SiteCat": "Other",
+                    "Protection": "No Protection",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 1.8,
+                    "dir": "N",
+                    "lat": "64\u00b0 17.512' N",
+                    "lng": "141\u00b0 19.750' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 1.86,
+                    "dir": "ENE",
+                    "lat": "64\u00b0 16.150' N",
+                    "lng": "141\u00b0 16.100' W",
+                    "SiteCat": "Structure",
+                    "Protection": "No Protection",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 1.94,
+                    "dir": "NW",
+                    "lat": "64\u00b0 17.377' N",
+                    "lng": "141\u00b0 21.950' W",
+                    "SiteCat": "Structure",
+                    "Protection": "No Protection",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 1.96,
+                    "dir": "NW",
+                    "lat": "64\u00b0 17.510' N",
+                    "lng": "141\u00b0 21.448' W",
+                    "SiteCat": "Structure",
+                    "Protection": "No Protection",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.01,
+                    "dir": "NNW",
+                    "lat": "64\u00b0 17.563' N",
+                    "lng": "141\u00b0 21.402' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.07,
+                    "dir": "NW",
+                    "lat": "64\u00b0 17.465' N",
+                    "lng": "141\u00b0 22.109' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.31,
+                    "dir": "NW",
+                    "lat": "64\u00b0 17.416' N",
+                    "lng": "141\u00b0 23.049' W",
+                    "SiteCat": "Structure",
+                    "Protection": "No Protection",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.36,
+                    "dir": "WNW",
+                    "lat": "64\u00b0 16.862' N",
+                    "lng": "141\u00b0 24.129' W",
+                    "SiteCat": "Other",
+                    "Protection": "No Protection",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.92,
+                    "dir": "E",
+                    "lat": "64\u00b0 15.583' N",
+                    "lng": "141\u00b0 13.994' W",
+                    "SiteCat": "Structure",
+                    "Protection": "No Protection",
                     "MainStructs": "No Data",
                     "OthrStructs": "No Data"
                 }
@@ -1884,20 +2084,25 @@
         "Community_Locations": null,
         "Jurisd_Unit_AcreSum": [
             {
+                "key head": "Eastern Interior Field Office",
+                "value head": 9012.0
+            },
+            {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 18148.61
+                "value head": 8835.3
             },
             {
                 "key head": "Doyon, Limited",
-                "value head": 3.02
+                "value head": 825.53
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 18148.61,
-            "ANCSA": 3.02
+            "BLM": 9012.0,
+            "State": 8835.3,
+            "ANCSA": 825.53
         },
         "MgmtOption_AcreSum": {
-            "Limited": 18151.63
+            "Limited": 18672.83
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -1928,46 +2133,58 @@
         "Silviculture_FeatureCount": null,
         "Silviculture_Locations": null,
         "Silviculture_TotalAcres": null,
-        "SpecMgmt_Consid_AttrCount": [
+        "SpecMgmt_Consid_AttrCount": null,
+        "SpecMgmt_FeatureCount": null,
+        "SpecMgmt_Locations": null,
+        "Railroad_NetDesc_FeetSum": null,
+        "Railroad_Locations": null,
+        "Railroad_TotalFeet": null,
+        "UsaStruct_OccCls_AttrCount": [
             {
-                "key head": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area.",
+                "key head": "Unclassified",
                 "value head": 2
             }
         ],
-        "SpecMgmt_FeatureCount": 2.0,
-        "SpecMgmt_Locations": {
+        "UsaStruct_PrimOcc_AttrCount": [
+            {
+                "key head": "Unclassified",
+                "value head": 2
+            }
+        ],
+        "UsaStruct_SecOcc_AttrCount": [
+            {
+                "key head": "No Data",
+                "value head": 2
+            }
+        ],
+        "UsaStruct_FeatureCount": 2.0,
+        "UsaStruct_Locations": {
             "features": [
                 {
-                    "dist_mi": 1.19,
-                    "dir": "SSE",
-                    "lat": "64\u00b0 11.889' N",
-                    "lng": "141\u00b0 22.257' W",
-                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                    "dist_mi": 1.33,
+                    "dir": "ENE",
+                    "lat": "64\u00b0 16.269' N",
+                    "lng": "141\u00b0 17.245' W",
+                    "OCC_CLS": "Unclassified",
+                    "PRIM_OCC": "Unclassified"
                 },
                 {
-                    "dist_mi": 2.69,
-                    "dir": "SE",
-                    "lat": "64\u00b0 10.805' N",
-                    "lng": "141\u00b0 20.519' W",
-                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                    "dist_mi": 1.35,
+                    "dir": "ENE",
+                    "lat": "64\u00b0 16.258' N",
+                    "lng": "141\u00b0 17.188' W",
+                    "OCC_CLS": "Unclassified",
+                    "PRIM_OCC": "Unclassified"
                 }
             ],
             "popped": 0,
             "cutoff": null
         },
-        "Railroad_NetDesc_FeetSum": null,
-        "Railroad_Locations": null,
-        "Railroad_TotalFeet": null,
-        "UsaStruct_OccCls_AttrCount": null,
-        "UsaStruct_PrimOcc_AttrCount": null,
-        "UsaStruct_SecOcc_AttrCount": null,
-        "UsaStruct_FeatureCount": null,
-        "UsaStruct_Locations": null,
         "WindTurb_FeatureCount": null,
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:608133.349%2C1641355.418%2C3338,scale:24167",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:609591.737%2C1647401.514%2C3338,scale:24512",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
@@ -1977,8 +2194,8 @@
         "EstimatedCostToDate": null,
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "BLM",
-        "POOJurisdictionalAgency": "DNR",
-        "POOJurisdictionalUnit": "AKDNS",
+        "POOJurisdictionalAgency": "BLM",
+        "POOJurisdictionalUnit": "AKEID",
         "ICS209ReportDateTime": null,
         "ICS209ReportStatus": null,
         "IncidentManagementOrganization": null
