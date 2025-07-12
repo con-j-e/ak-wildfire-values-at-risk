@@ -60127,10 +60127,10 @@
         "AkFireNumber": "219",
         "wfigs_IncidentName": "Red",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 623.9153210816274,
+        "wfigs_GISAcres": 1039.6075185991638,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1752010980000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752293636593.0,
+        "wfigs_PolygonDateTime": 1752271052000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752361120000.0,
         "wfigs_IrwinID": "{A871E713-D7B8-463E-A6DC-269F60FF0041}",
         "ReportedAcres": 624.0,
         "HasError": 0.0,
@@ -60168,14 +60168,24 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Central Yukon Field Office",
-                "value head": 30530.57
+                "value head": 35939.47
+            },
+            {
+                "key head": "K'oyitl'ots'ina, Limited",
+                "value head": 16.05
+            },
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 10.0
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 30530.57
+            "BLM": 35939.47,
+            "ANCSA": 16.05,
+            "Private": 10.0
         },
         "MgmtOption_AcreSum": {
-            "Modified (Jul 10)": 30530.57
+            "Modified (Jul 10)": 35965.52
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -60206,9 +60216,26 @@
         "Silviculture_FeatureCount": null,
         "Silviculture_Locations": null,
         "Silviculture_TotalAcres": null,
-        "SpecMgmt_Consid_AttrCount": null,
-        "SpecMgmt_FeatureCount": null,
-        "SpecMgmt_Locations": null,
+        "SpecMgmt_Consid_AttrCount": [
+            {
+                "key head": "Contact Doyon, Limited Lands and Natural Resources Dept. for guidence.",
+                "value head": 1
+            }
+        ],
+        "SpecMgmt_FeatureCount": 1.0,
+        "SpecMgmt_Locations": {
+            "features": [
+                {
+                    "dist_mi": 2.62,
+                    "dir": "SE",
+                    "lat": "66\u00b0 18.833' N",
+                    "lng": "153\u00b0 50.605' W",
+                    "ManagementConsiderations": "Contact Doyon, Limited Lands and Natural Resources Dept. for guidence."
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "Railroad_NetDesc_FeetSum": null,
         "Railroad_Locations": null,
         "Railroad_TotalFeet": null,
@@ -60221,7 +60248,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:1665.014%2C1821698.938%2C3338,scale:32403",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:2267.599%2C1821500.623%2C3338,scale:35869",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
