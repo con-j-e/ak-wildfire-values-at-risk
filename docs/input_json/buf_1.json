@@ -1309,35 +1309,39 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1752281745727.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752292112953.0,
         "wfigs_IrwinID": "{F945218E-2FE8-46EF-A2EE-4F47D704BEEF}",
-        "ReportedAcres": 5.0,
+        "ReportedAcres": 50.0,
         "HasError": 0.0,
         "DefaultLabel": "435-Polly, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
         "AkMine_Active_AttrCount": [
             {
                 "key head": "1",
-                "value head": 1
+                "value head": 2
             }
         ],
         "AkMine_Type_AttrCount": [
             {
                 "key head": "PL",
-                "value head": 1
+                "value head": 2
             }
         ],
         "AkMine_Note_AttrCount": [
             {
                 "key head": "Maiden Bench Ltd. | Bronk Jorgensen",
                 "value head": 1
+            },
+            {
+                "key head": "45 Pup gold Co. | Bronk Jorgensen",
+                "value head": 1
             }
         ],
-        "AkMine_FeatureCount": 1.0,
+        "AkMine_FeatureCount": 2.0,
         "AkMine_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.98,
+                    "dist_mi": 0.87,
                     "dir": "NNE",
                     "lat": "64\u00b0 16.725' N",
                     "lng": "141\u00b0 19.027' W",
@@ -1347,6 +1351,18 @@
                     "Explosives": 0.0,
                     "START_YEAR": 2021,
                     "EXPIRATION_YEAR": 2025
+                },
+                {
+                    "dist_mi": 0.97,
+                    "dir": "N",
+                    "lat": "64\u00b0 16.822' N",
+                    "lng": "141\u00b0 19.071' W",
+                    "ACTIVE": 1,
+                    "APMA_TYPE": "PL",
+                    "NOTE": "45 Pup gold Co. | Bronk Jorgensen",
+                    "Explosives": 0.0,
+                    "START_YEAR": 2012,
+                    "EXPIRATION_YEAR": 2026
                 }
             ],
             "popped": 0,
@@ -1361,12 +1377,51 @@
         "Runway_Ownership_AttrCount": null,
         "WeatherStation_FeatureCount": null,
         "WeatherStation_Locations": null,
-        "Aksd_MainStruct_AttrSum": null,
-        "Aksd_OtherStruct_AttrSum": null,
-        "Aksd_Protection_AttrCount": null,
-        "Aksd_SiteCat_AttrCount": null,
-        "Aksd_FeatureCount": null,
-        "Aksd_Locations": null,
+        "Aksd_MainStruct_AttrSum": 1.0,
+        "Aksd_OtherStruct_AttrSum": 1.0,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Undesignated",
+                "value head": 1
+            },
+            {
+                "key head": "Full",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Structure",
+                "value head": 2
+            }
+        ],
+        "Aksd_FeatureCount": 2.0,
+        "Aksd_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.92,
+                    "dir": "N",
+                    "lat": "64\u00b0 16.791' N",
+                    "lng": "141\u00b0 19.152' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
+                    "MainStructs": 1.0,
+                    "OthrStructs": 1.0
+                },
+                {
+                    "dist_mi": 0.98,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 16.804' N",
+                    "lng": "141\u00b0 18.931' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "NtvAllot_Status_AcreSum": null,
         "NtvAllot_FeatureCount": null,
         "NtvAllot_Locations": null,
@@ -1379,19 +1434,19 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 1258.12
+                "value head": 1483.9
             },
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 954.7
+                "value head": 1207.28
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 1258.12,
-            "State": 954.7
+            "BLM": 1483.9,
+            "State": 1207.28
         },
         "MgmtOption_AcreSum": {
-            "Limited": 2212.82
+            "Limited": 2691.17
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -1437,7 +1492,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:609591.737%2C1647401.514%2C3338,scale:8438",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:609591.737%2C1647401.514%2C3338,scale:9305",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
