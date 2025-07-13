@@ -4298,9 +4298,9 @@
         "wfigs_GISAcres": 175.7661382239433,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1752271039000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752367411000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752375745450.0,
         "wfigs_IrwinID": "{1023ACF9-02B1-4FC9-BD94-CB72D220A3E0}",
-        "ReportedAcres": 1.0,
+        "ReportedAcres": 176.0,
         "HasError": 0.0,
         "DefaultLabel": "431-Muskox, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -6236,12 +6236,12 @@
         "AkFireNumber": "417",
         "wfigs_IncidentName": "Foggytop",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 4.238263928310671,
+        "wfigs_GISAcres": 10.066562648159541,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1752011216000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752111552740.0,
+        "wfigs_PolygonDateTime": 1752271016000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752375707423.0,
         "wfigs_IrwinID": "{315E263C-24FC-4FD6-9276-80B3F5AA862A}",
-        "ReportedAcres": 4.0,
+        "ReportedAcres": 10.0,
         "HasError": 0.0,
         "DefaultLabel": "417-Foggytop, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -6264,7 +6264,22 @@
         "Aksd_Protection_AttrCount": null,
         "Aksd_SiteCat_AttrCount": null,
         "Aksd_FeatureCount": null,
-        "Aksd_Locations": null,
+        "Aksd_Locations": {
+            "features": [
+                {
+                    "dist_mi": 3.0,
+                    "dir": "SW",
+                    "lat": "67\u00b0 31.541' N",
+                    "lng": "150\u00b0 33.165' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "NtvAllot_Status_AcreSum": null,
         "NtvAllot_FeatureCount": null,
         "NtvAllot_Locations": null,
@@ -6277,25 +6292,39 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Doyon, Limited",
-                "value head": 18008.44
+                "value head": 18244.76
             },
             {
                 "key head": "Gates of the Arctic National Park & Preserve",
-                "value head": 965.34
+                "value head": 1085.8
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "ANCSA": 18008.44,
-            "NPS": 965.34
+            "ANCSA": 18244.76,
+            "NPS": 1085.8
         },
         "MgmtOption_AcreSum": {
-            "Limited": 18973.78
+            "Limited": 19330.57
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
         "NpsStruct_Rating_AttrCount": null,
         "NpsStruct_FeatureCount": null,
-        "NpsStruct_Locations": null,
+        "NpsStruct_Locations": {
+            "features": [
+                {
+                    "dist_mi": 3.0,
+                    "dir": "SW",
+                    "lat": "67\u00b0 31.541' N",
+                    "lng": "150\u00b0 33.164' W",
+                    "FacilityUse": "Unknown",
+                    "Rating": "SRVNotRequired",
+                    "ProtectionLevel": "Not Designated"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "Parcel_BuildingValue_AttrSum": null,
         "Parcel_FeatureCount": null,
         "Parcel_LandValue_AttrSum": null,
@@ -6335,7 +6364,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:151679.202%2C1959295.106%2C3338,scale:24887",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:151646.367%2C1959234.026%2C3338,scale:25073",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
@@ -6356,12 +6385,12 @@
         "AkFireNumber": "416",
         "wfigs_IncidentName": "Portage",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 39.0,
+        "wfigs_GISAcres": 1166.505404825437,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1751926620000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752031591470.0,
+        "wfigs_PolygonDateTime": 1752271039000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752375664700.0,
         "wfigs_IrwinID": "{D21108A3-9BB0-4D3D-A517-7EC507128B3D}",
-        "ReportedAcres": 39.0,
+        "ReportedAcres": 1167.0,
         "HasError": 0.0,
         "DefaultLabel": "416-Portage, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -6381,10 +6410,35 @@
         "WeatherStation_Locations": null,
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
-        "Aksd_Protection_AttrCount": null,
-        "Aksd_SiteCat_AttrCount": null,
-        "Aksd_FeatureCount": null,
-        "Aksd_Locations": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Undesignated",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Structure",
+                "value head": 1
+            }
+        ],
+        "Aksd_FeatureCount": 1.0,
+        "Aksd_Locations": {
+            "features": [
+                {
+                    "dist_mi": 2.96,
+                    "dir": "W",
+                    "lat": "67\u00b0 02.654' N",
+                    "lng": "153\u00b0 49.898' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "NtvAllot_Status_AcreSum": null,
         "NtvAllot_FeatureCount": null,
         "NtvAllot_Locations": null,
@@ -6397,14 +6451,14 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 20241.32
+                "value head": 33054.83
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 20241.32
+            "State": 33054.83
         },
         "MgmtOption_AcreSum": {
-            "Limited": 20241.32
+            "Limited": 33054.83
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -6438,52 +6492,45 @@
         "SpecMgmt_Consid_AttrCount": [
             {
                 "key head": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area.",
-                "value head": 6
+                "value head": 8
             }
         ],
-        "SpecMgmt_FeatureCount": 6.0,
+        "SpecMgmt_FeatureCount": 8.0,
         "SpecMgmt_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.72,
-                    "dir": "NE",
-                    "lat": "67\u00b0 03.474' N",
-                    "lng": "153\u00b0 41.257' W",
-                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
-                },
-                {
-                    "dist_mi": 1.01,
-                    "dir": "NE",
-                    "lat": "67\u00b0 03.677' N",
-                    "lng": "153\u00b0 40.875' W",
-                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
-                },
-                {
-                    "dist_mi": 1.01,
-                    "dir": "NE",
-                    "lat": "67\u00b0 03.692' N",
-                    "lng": "153\u00b0 40.898' W",
-                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
-                },
-                {
-                    "dist_mi": 1.66,
-                    "dir": "NE",
+                    "dist_mi": 0.22,
+                    "dir": "N",
                     "lat": "67\u00b0 03.944' N",
                     "lng": "153\u00b0 39.521' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 2.92,
-                    "dir": "E",
+                    "dist_mi": 0.83,
+                    "dir": "ENE",
                     "lat": "67\u00b0 03.240' N",
                     "lng": "153\u00b0 35.891' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 2.98,
-                    "dir": "ENE",
+                    "dist_mi": 1.23,
+                    "dir": "NNE",
                     "lat": "67\u00b0 03.992' N",
                     "lng": "153\u00b0 36.224' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 2.28,
+                    "dir": "E",
+                    "lat": "67\u00b0 02.879' N",
+                    "lng": "153\u00b0 32.653' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 2.64,
+                    "dir": "E",
+                    "lat": "67\u00b0 02.895' N",
+                    "lng": "153\u00b0 31.867' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 }
             ],
@@ -6502,7 +6549,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:12687.666%2C1898903.753%2C3338,scale:25883",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:13992.201%2C1899499.787%2C3338,scale:34482",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
@@ -6526,9 +6573,9 @@
         "wfigs_GISAcres": 257.39458811850767,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1752271039000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752367043000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752375559730.0,
         "wfigs_IrwinID": "{021B5CB6-B549-4F30-9AEF-48D647E32636}",
-        "ReportedAcres": 219.0,
+        "ReportedAcres": 257.0,
         "HasError": 0.0,
         "DefaultLabel": "415-Continental, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -11452,12 +11499,12 @@
         "AkFireNumber": "395",
         "wfigs_IncidentName": "McQuisten",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 158.0,
+        "wfigs_GISAcres": 309.1059787295127,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1751838900000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751926958973.0,
+        "wfigs_PolygonDateTime": 1752271061000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752375507457.0,
         "wfigs_IrwinID": "{B72A1844-EEA9-4C33-9D05-4A5D5147E677}",
-        "ReportedAcres": 158.0,
+        "ReportedAcres": 309.0,
         "HasError": 0.0,
         "DefaultLabel": "395-McQuisten, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -11481,24 +11528,42 @@
             {
                 "key head": "No Protection",
                 "value head": 1
+            },
+            {
+                "key head": "Undesignated",
+                "value head": 1
             }
         ],
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
                 "value head": 1
+            },
+            {
+                "key head": "Other",
+                "value head": 1
             }
         ],
-        "Aksd_FeatureCount": 1.0,
+        "Aksd_FeatureCount": 2.0,
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 1.46,
+                    "dist_mi": 1.26,
                     "dir": "NNW",
                     "lat": "65\u00b0 38.050' N",
                     "lng": "151\u00b0 38.050' W",
                     "SiteCat": "Structure",
                     "Protection": "No Protection",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.97,
+                    "dir": "NNW",
+                    "lat": "65\u00b0 39.181' N",
+                    "lng": "151\u00b0 40.670' W",
+                    "SiteCat": "Other",
+                    "Protection": "Undesignated",
                     "MainStructs": "No Data",
                     "OthrStructs": "No Data"
                 }
@@ -11518,14 +11583,14 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Central Yukon Field Office",
-                "value head": 22350.04
+                "value head": 25572.48
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 22350.04
+            "BLM": 25572.48
         },
         "MgmtOption_AcreSum": {
-            "Limited": 22350.04
+            "Limited": 25572.48
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -11571,7 +11636,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:109787.56%2C1740952.209%2C3338,scale:27216",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:110190.042%2C1741246.411%2C3338,scale:29709",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
@@ -40640,9 +40705,9 @@
         "wfigs_GISAcres": 2503.3179371605443,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1752271088000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752374196000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752375407227.0,
         "wfigs_IrwinID": "{487E3977-35D4-4E72-B8ED-F343CAB8BBF9}",
-        "ReportedAcres": 2416.0,
+        "ReportedAcres": 2503.0,
         "HasError": 0.0,
         "DefaultLabel": "271-Live Trap, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -40809,7 +40874,7 @@
         "wfigs_GISAcres": 20214.0,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1752269078000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752371417000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752375736000.0,
         "wfigs_IrwinID": "{83997F1E-7D1C-4E08-9E41-DE41920B5929}",
         "ReportedAcres": 20225.39,
         "HasError": 0.0,
@@ -40899,6 +40964,62 @@
                     "COND_TYPE": "OH Primary 25KV"
                 },
                 {
+                    "dist_mi": 0.16,
+                    "dir": "N",
+                    "lat": "64\u00b0 42.293' N",
+                    "lng": "148\u00b0 42.578' W",
+                    "VOLTAGE": "25",
+                    "COND_TYPE": "OH Primary 25KV"
+                },
+                {
+                    "dist_mi": 0.16,
+                    "dir": "N",
+                    "lat": "64\u00b0 42.293' N",
+                    "lng": "148\u00b0 42.621' W",
+                    "VOLTAGE": "25",
+                    "COND_TYPE": "OH Primary 25KV"
+                },
+                {
+                    "dist_mi": 0.16,
+                    "dir": "NNW",
+                    "lat": "64\u00b0 42.293' N",
+                    "lng": "148\u00b0 42.673' W",
+                    "VOLTAGE": "25",
+                    "COND_TYPE": "OH Primary 25KV"
+                },
+                {
+                    "dist_mi": 0.17,
+                    "dir": "N",
+                    "lat": "64\u00b0 42.293' N",
+                    "lng": "148\u00b0 42.354' W",
+                    "VOLTAGE": "25",
+                    "COND_TYPE": "OH Primary 25KV"
+                },
+                {
+                    "dist_mi": 0.17,
+                    "dir": "N",
+                    "lat": "64\u00b0 42.293' N",
+                    "lng": "148\u00b0 42.450' W",
+                    "VOLTAGE": "25",
+                    "COND_TYPE": "OH Primary 25KV"
+                },
+                {
+                    "dist_mi": 0.18,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 42.293' N",
+                    "lng": "148\u00b0 42.241' W",
+                    "VOLTAGE": "25",
+                    "COND_TYPE": "OH Primary 25KV"
+                },
+                {
+                    "dist_mi": 0.18,
+                    "dir": "NNW",
+                    "lat": "64\u00b0 42.293' N",
+                    "lng": "148\u00b0 42.769' W",
+                    "VOLTAGE": "25",
+                    "COND_TYPE": "OH Primary 25KV"
+                },
+                {
                     "dist_mi": 0.18,
                     "dir": "ENE",
                     "lat": "64\u00b0 42.295' N",
@@ -40907,10 +41028,18 @@
                     "COND_TYPE": "OH Primary 25KV"
                 },
                 {
-                    "dist_mi": 0.2,
-                    "dir": "S",
-                    "lat": "64\u00b0 42.293' N",
-                    "lng": "148\u00b0 42.241' W",
+                    "dist_mi": 0.19,
+                    "dir": "N",
+                    "lat": "64\u00b0 42.294' N",
+                    "lng": "148\u00b0 43.120' W",
+                    "VOLTAGE": "25",
+                    "COND_TYPE": "OH Primary 25KV"
+                },
+                {
+                    "dist_mi": 0.19,
+                    "dir": "N",
+                    "lat": "64\u00b0 42.294' N",
+                    "lng": "148\u00b0 43.102' W",
                     "VOLTAGE": "25",
                     "COND_TYPE": "OH Primary 25KV"
                 },
@@ -40924,25 +41053,17 @@
                 },
                 {
                     "dist_mi": 0.2,
-                    "dir": "S",
-                    "lat": "64\u00b0 42.293' N",
-                    "lng": "148\u00b0 42.200' W",
+                    "dir": "NNW",
+                    "lat": "64\u00b0 42.294' N",
+                    "lng": "148\u00b0 43.253' W",
                     "VOLTAGE": "25",
                     "COND_TYPE": "OH Primary 25KV"
                 },
                 {
-                    "dist_mi": 0.21,
-                    "dir": "SSW",
+                    "dist_mi": 0.2,
+                    "dir": "N",
                     "lat": "64\u00b0 42.293' N",
-                    "lng": "148\u00b0 42.354' W",
-                    "VOLTAGE": "25",
-                    "COND_TYPE": "OH Primary 25KV"
-                },
-                {
-                    "dist_mi": 0.22,
-                    "dir": "S",
-                    "lat": "64\u00b0 41.871' N",
-                    "lng": "148\u00b0 47.021' W",
+                    "lng": "148\u00b0 42.986' W",
                     "VOLTAGE": "25",
                     "COND_TYPE": "OH Primary 25KV"
                 },
@@ -40951,6 +41072,22 @@
                     "dir": "SSE",
                     "lat": "64\u00b0 42.293' N",
                     "lng": "148\u00b0 41.996' W",
+                    "VOLTAGE": "25",
+                    "COND_TYPE": "OH Primary 25KV"
+                },
+                {
+                    "dist_mi": 0.22,
+                    "dir": "NNW",
+                    "lat": "64\u00b0 42.294' N",
+                    "lng": "148\u00b0 43.355' W",
+                    "VOLTAGE": "25",
+                    "COND_TYPE": "OH Primary 25KV"
+                },
+                {
+                    "dist_mi": 0.22,
+                    "dir": "S",
+                    "lat": "64\u00b0 41.871' N",
+                    "lng": "148\u00b0 47.021' W",
                     "VOLTAGE": "25",
                     "COND_TYPE": "OH Primary 25KV"
                 },
@@ -40964,33 +41101,9 @@
                 },
                 {
                     "dist_mi": 0.24,
-                    "dir": "SSW",
-                    "lat": "64\u00b0 42.293' N",
-                    "lng": "148\u00b0 42.472' W",
-                    "VOLTAGE": "25",
-                    "COND_TYPE": "OH Primary 25KV"
-                },
-                {
-                    "dist_mi": 0.24,
-                    "dir": "S",
-                    "lat": "64\u00b0 42.293' N",
-                    "lng": "148\u00b0 42.664' W",
-                    "VOLTAGE": "25",
-                    "COND_TYPE": "OH Primary 25KV"
-                },
-                {
-                    "dist_mi": 0.24,
-                    "dir": "S",
-                    "lat": "64\u00b0 42.293' N",
-                    "lng": "148\u00b0 42.769' W",
-                    "VOLTAGE": "25",
-                    "COND_TYPE": "OH Primary 25KV"
-                },
-                {
-                    "dist_mi": 0.24,
-                    "dir": "S",
-                    "lat": "64\u00b0 42.293' N",
-                    "lng": "148\u00b0 42.673' W",
+                    "dir": "NW",
+                    "lat": "64\u00b0 42.294' N",
+                    "lng": "148\u00b0 43.460' W",
                     "VOLTAGE": "25",
                     "COND_TYPE": "OH Primary 25KV"
                 },
@@ -41007,38 +41120,6 @@
                     "dir": "SSE",
                     "lat": "64\u00b0 42.293' N",
                     "lng": "148\u00b0 41.762' W",
-                    "VOLTAGE": "25",
-                    "COND_TYPE": "OH Primary 25KV"
-                },
-                {
-                    "dist_mi": 0.26,
-                    "dir": "S",
-                    "lat": "64\u00b0 42.294' N",
-                    "lng": "148\u00b0 43.166' W",
-                    "VOLTAGE": "25",
-                    "COND_TYPE": "OH Primary 25KV"
-                },
-                {
-                    "dist_mi": 0.26,
-                    "dir": "S",
-                    "lat": "64\u00b0 42.294' N",
-                    "lng": "148\u00b0 43.120' W",
-                    "VOLTAGE": "25",
-                    "COND_TYPE": "OH Primary 25KV"
-                },
-                {
-                    "dist_mi": 0.26,
-                    "dir": "SSW",
-                    "lat": "64\u00b0 42.293' N",
-                    "lng": "148\u00b0 42.884' W",
-                    "VOLTAGE": "25",
-                    "COND_TYPE": "OH Primary 25KV"
-                },
-                {
-                    "dist_mi": 0.27,
-                    "dir": "S",
-                    "lat": "64\u00b0 42.294' N",
-                    "lng": "148\u00b0 43.253' W",
                     "VOLTAGE": "25",
                     "COND_TYPE": "OH Primary 25KV"
                 },
@@ -41060,9 +41141,9 @@
                 },
                 {
                     "dist_mi": 0.28,
-                    "dir": "SSW",
+                    "dir": "NW",
                     "lat": "64\u00b0 42.294' N",
-                    "lng": "148\u00b0 43.355' W",
+                    "lng": "148\u00b0 43.594' W",
                     "VOLTAGE": "25",
                     "COND_TYPE": "OH Primary 25KV"
                 },
@@ -41079,14 +41160,6 @@
                     "dir": "ENE",
                     "lat": "64\u00b0 42.295' N",
                     "lng": "148\u00b0 46.050' W",
-                    "VOLTAGE": "25",
-                    "COND_TYPE": "OH Primary 25KV"
-                },
-                {
-                    "dist_mi": 0.3,
-                    "dir": "SSW",
-                    "lat": "64\u00b0 42.294' N",
-                    "lng": "148\u00b0 43.460' W",
                     "VOLTAGE": "25",
                     "COND_TYPE": "OH Primary 25KV"
                 },
@@ -41121,18 +41194,10 @@
                     "lng": "148\u00b0 44.168' W",
                     "VOLTAGE": "25",
                     "COND_TYPE": "OH Primary 25KV"
-                },
-                {
-                    "dist_mi": 0.32,
-                    "dir": "SSW",
-                    "lat": "64\u00b0 42.294' N",
-                    "lng": "148\u00b0 44.303' W",
-                    "VOLTAGE": "25",
-                    "COND_TYPE": "OH Primary 25KV"
                 }
             ],
             "popped": 436,
-            "cutoff": 0.32
+            "cutoff": 0.31
         },
         "AkPowerLine_TotalFeet": 188546.0,
         "Runway_FeatureCount": null,
@@ -41535,7 +41600,7 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 91190.89
+                "value head": 92418.52
             },
             {
                 "key head": "Toghotthele Corporation",
@@ -41563,7 +41628,7 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 91281.18,
+            "State": 92508.81,
             "ANCSA": 18925.41,
             "Private": 2684.44,
             "BIA": 206.95,
@@ -41571,7 +41636,7 @@
             "BLM": 73.09
         },
         "MgmtOption_AcreSum": {
-            "Full": 92016.15,
+            "Full": 93243.78,
             "Limited": 21241.56
         },
         "NpsStruct_Use_AttrCount": null,
@@ -41580,8 +41645,8 @@
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
         "Parcel_BuildingValue_AttrSum": 4021005.0,
-        "Parcel_FeatureCount": 139.0,
-        "Parcel_LandValue_AttrSum": 53719790.0,
+        "Parcel_FeatureCount": 141.0,
+        "Parcel_LandValue_AttrSum": 61756529.0,
         "Parcel_Locations": {
             "features": [
                 {
@@ -41837,17 +41902,21 @@
                     "total_value": 1380010.0
                 }
             ],
-            "popped": 158,
+            "popped": 176,
             "cutoff": 1.09
         },
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Tract",
-                "value head": 28097.9
+                "value head": 28113.85
             },
             {
                 "key head": "Tax Lot",
-                "value head": 11826.55
+                "value head": 11960.31
+            },
+            {
+                "key head": "Government Lot",
+                "value head": 232.08
             },
             {
                 "key head": "Railroad",
@@ -41858,10 +41927,6 @@
                 "value head": 186.51
             },
             {
-                "key head": "Government Lot",
-                "value head": 162.34
-            },
-            {
                 "key head": "Lot",
                 "value head": 106.56
             }
@@ -41869,7 +41934,7 @@
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Exempt ",
-                "value head": 39876.7
+                "value head": 40096.16
             },
             {
                 "key head": "Vacant Land",
@@ -41888,8 +41953,8 @@
                 "value head": 12.09
             }
         ],
-        "Parcel_TotalAcres": 40573.9,
-        "Parcel_TotalValue_AttrSum": 57740795.0,
+        "Parcel_TotalAcres": 40793.35,
+        "Parcel_TotalValue_AttrSum": 65777534.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -41908,11 +41973,11 @@
             },
             {
                 "key head": "Proposed",
-                "value head": 1402.9
+                "value head": 1430.35
             },
             {
                 "key head": "Active",
-                "value head": 356.84
+                "value head": 357.18
             },
             {
                 "key head": "OTC",
@@ -41923,8 +41988,8 @@
                 "value head": 75.83
             }
         ],
-        "Silviculture_TotalValue_AttrSum": 2402541.0,
-        "Silviculture_FeatureCount": 220.0,
+        "Silviculture_TotalValue_AttrSum": 2402763.0,
+        "Silviculture_FeatureCount": 221.0,
         "Silviculture_Locations": {
             "features": [
                 {
@@ -42171,10 +42236,10 @@
                     "SALE_NAME": "Glacier Creek Spruce #1"
                 }
             ],
-            "popped": 272,
+            "popped": 276,
             "cutoff": 0.21
         },
-        "Silviculture_TotalAcres": 4814.9,
+        "Silviculture_TotalAcres": 4842.7,
         "SpecMgmt_Consid_AttrCount": [
             {
                 "key head": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area.",
@@ -42586,14 +42651,14 @@
                     "PRIM_OCC": "Unclassified"
                 }
             ],
-            "popped": 32,
+            "popped": 33,
             "cutoff": 2.67
         },
         "WindTurb_FeatureCount": null,
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:251241.026%2C1653098.222%2C3338,scale:77859",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:251265.84%2C1652996.645%2C3338,scale:77859",
         "CpxName": "Nenana Ridge Complex",
         "DispatchCenterID": "AKNFDC",
         "PercentContained": null,
@@ -42807,9 +42872,9 @@
         "wfigs_GISAcres": 35057.65571140781,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751779551000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752345152947.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752375607450.0,
         "wfigs_IrwinID": "{A5FFC9D8-6F8D-453F-A4E3-D52362D53216}",
-        "ReportedAcres": 35057.52,
+        "ReportedAcres": 35058.0,
         "HasError": 0.0,
         "DefaultLabel": "268-Aggie Creek, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -42868,8 +42933,8 @@
             "popped": 0,
             "cutoff": null
         },
-        "Aksd_MainStruct_AttrSum": 62.0,
-        "Aksd_OtherStruct_AttrSum": 67.0,
+        "Aksd_MainStruct_AttrSum": 67.0,
+        "Aksd_OtherStruct_AttrSum": 75.0,
         "Aksd_Protection_AttrCount": [
             {
                 "key head": "Full",
@@ -43034,8 +43099,8 @@
                     "lng": "148\u00b0 13.392' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
+                    "MainStructs": 1.0,
+                    "OthrStructs": 1.0
                 },
                 {
                     "dist_mi": 1.44,
@@ -43085,7 +43150,7 @@
                     "SiteCat": "Structure",
                     "Protection": "Critical",
                     "MainStructs": 1.0,
-                    "OthrStructs": 1.0
+                    "OthrStructs": 4.0
                 },
                 {
                     "dist_mi": 1.75,
@@ -43154,8 +43219,8 @@
                     "lng": "148\u00b0 08.597' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
+                    "MainStructs": 1.0,
+                    "OthrStructs": 2.0
                 },
                 {
                     "dist_mi": 2.06,
@@ -44069,13 +44134,13 @@
         "PercentContained": 2.0,
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
-        "IncidentComplexityLevel": "Type 4 Incident",
-        "EstimatedCostToDate": 745000.0,
-        "TotalIncidentPersonnel": 125.0,
+        "IncidentComplexityLevel": "Type 2 Incident",
+        "EstimatedCostToDate": 1030000.0,
+        "TotalIncidentPersonnel": 101.0,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1752283644000.0,
+        "ICS209ReportDateTime": 1752375607000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 4 IC"
     },
@@ -53976,19 +54041,23 @@
         "AkFireNumber": "235",
         "wfigs_IncidentName": "Moran",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 7866.0,
+        "wfigs_GISAcres": 8358.589781389474,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1751838900000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1751926940053.0,
+        "wfigs_PolygonDateTime": 1752271061000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752375352550.0,
         "wfigs_IrwinID": "{9B91E3B7-D685-40C1-9B23-74C6D88C7519}",
-        "ReportedAcres": 7866.0,
+        "ReportedAcres": 8359.0,
         "HasError": 0.0,
         "DefaultLabel": "235-Moran, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
         "AkMine_Active_AttrCount": [
             {
                 "key head": "0",
-                "value head": 3
+                "value head": 2
+            },
+            {
+                "key head": "1",
+                "value head": 1
             }
         ],
         "AkMine_Type_AttrCount": [
@@ -54015,7 +54084,7 @@
                 "value head": 1
             },
             {
-                "key head": "EMX Alaska | Gold Canyon Partners",
+                "key head": "Kraken Gold Corp",
                 "value head": 1
             }
         ],
@@ -54077,7 +54146,7 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 62796.7
+                "value head": 64858.4
             },
             {
                 "key head": "Central Yukon Field Office",
@@ -54085,16 +54154,16 @@
             },
             {
                 "key head": "Doyon, Limited",
-                "value head": 128.12
+                "value head": 152.61
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 62796.7,
+            "State": 64858.4,
             "BLM": 611.91,
-            "ANCSA": 128.12
+            "ANCSA": 152.61
         },
         "MgmtOption_AcreSum": {
-            "Limited": 63536.73
+            "Limited": 65622.92
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -54140,7 +54209,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:53448.053%2C1714912.857%2C3338,scale:50190",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:53622.786%2C1714920.864%2C3338,scale:50190",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -56503,9 +56572,9 @@
         "wfigs_GISAcres": 8978.425889521708,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1752271055000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752343664000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752375692420.0,
         "wfigs_IrwinID": "{39CC9E9A-8E79-4B98-8D8B-9B1404D8FC45}",
-        "ReportedAcres": 8687.0,
+        "ReportedAcres": 8978.0,
         "HasError": 0.0,
         "DefaultLabel": "225-Elephant, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -57157,12 +57226,12 @@
         "PercentPerimeterToBeContained": 0.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 3 Incident",
-        "EstimatedCostToDate": 595000.0,
-        "TotalIncidentPersonnel": 54.0,
+        "EstimatedCostToDate": 652000.0,
+        "TotalIncidentPersonnel": 56.0,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1752289629000.0,
+        "ICS209ReportDateTime": 1752375692000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 3 IC"
     },
@@ -60142,9 +60211,9 @@
         "wfigs_GISAcres": 1039.6075185991638,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1752271052000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752361120000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752375256543.0,
         "wfigs_IrwinID": "{A871E713-D7B8-463E-A6DC-269F60FF0041}",
-        "ReportedAcres": 624.0,
+        "ReportedAcres": 1040.0,
         "HasError": 0.0,
         "DefaultLabel": "219-Red, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -65823,9 +65892,9 @@
         "wfigs_GISAcres": 26584.736537227953,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1752271055000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752372459000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752375168900.0,
         "wfigs_IrwinID": "{9B7A96A6-E06B-4F40-9321-9ADB96358945}",
-        "ReportedAcres": 26079.0,
+        "ReportedAcres": 26585.0,
         "HasError": 0.0,
         "DefaultLabel": "199-Lush, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
