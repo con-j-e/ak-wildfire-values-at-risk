@@ -22833,7 +22833,7 @@
         "wfigs_GISAcres": 131.6804892078373,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1751579276000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752102707867.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752372903950.0,
         "wfigs_IrwinID": "{A51CA877-E5BF-4D1A-8C82-49537C12B253}",
         "ReportedAcres": 132.0,
         "HasError": 0.0,
@@ -22936,8 +22936,8 @@
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1751850916000.0,
-        "ICS209ReportStatus": "I",
+        "ICS209ReportDateTime": 1752372904000.0,
+        "ICS209ReportStatus": "F",
         "IncidentManagementOrganization": "Type 5 IC"
     },
     {
@@ -38082,10 +38082,10 @@
         "AkFireNumber": "223",
         "wfigs_IncidentName": "Himalaya Road",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 6084.675495962509,
+        "wfigs_GISAcres": 6082.890492357698,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751544000000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752283613173.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752372866550.0,
         "wfigs_IrwinID": "{3DC21EB7-7323-497D-B5AB-BFB16EC65599}",
         "ReportedAcres": 6085.0,
         "HasError": 0.0,
@@ -38408,8 +38408,8 @@
         "Runway_Ownership_AttrCount": null,
         "WeatherStation_FeatureCount": null,
         "WeatherStation_Locations": null,
-        "Aksd_MainStruct_AttrSum": 86.0,
-        "Aksd_OtherStruct_AttrSum": 125.0,
+        "Aksd_MainStruct_AttrSum": 92.0,
+        "Aksd_OtherStruct_AttrSum": 133.0,
         "Aksd_Protection_AttrCount": [
             {
                 "key head": "Undesignated",
@@ -38420,25 +38420,25 @@
                 "value head": 13
             },
             {
-                "key head": "Full",
-                "value head": 7
+                "key head": "Unknown",
+                "value head": 13
             },
             {
-                "key head": "Unknown",
-                "value head": 5
+                "key head": "Full",
+                "value head": 7
             }
         ],
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
-                "value head": 101
+                "value head": 108
             },
             {
                 "key head": "Other",
-                "value head": 3
+                "value head": 4
             }
         ],
-        "Aksd_FeatureCount": 104.0,
+        "Aksd_FeatureCount": 112.0,
         "Aksd_Locations": {
             "features": [
                 {
@@ -38503,6 +38503,16 @@
                 },
                 {
                     "dist_mi": 0.06,
+                    "dir": "SSE",
+                    "lat": "65\u00b0 08.164' N",
+                    "lng": "147\u00b0 38.385' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Unknown",
+                    "MainStructs": 1.0,
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.06,
                     "dir": "WSW",
                     "lat": "65\u00b0 08.042' N",
                     "lng": "147\u00b0 38.216' W",
@@ -38520,6 +38530,16 @@
                     "Protection": "Undesignated",
                     "MainStructs": 1.0,
                     "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.07,
+                    "dir": "WSW",
+                    "lat": "65\u00b0 08.147' N",
+                    "lng": "147\u00b0 38.328' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Unknown",
+                    "MainStructs": 1.0,
+                    "OthrStructs": 2.0
                 },
                 {
                     "dist_mi": 0.08,
@@ -38563,16 +38583,6 @@
                 },
                 {
                     "dist_mi": 0.13,
-                    "dir": "WSW",
-                    "lat": "65\u00b0 08.098' N",
-                    "lng": "147\u00b0 38.422' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Unknown",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 0.13,
                     "dir": "SW",
                     "lat": "65\u00b0 08.047' N",
                     "lng": "147\u00b0 38.397' W",
@@ -38580,6 +38590,16 @@
                     "Protection": "Undesignated",
                     "MainStructs": 1.0,
                     "OthrStructs": 1.0
+                },
+                {
+                    "dist_mi": 0.13,
+                    "dir": "WSW",
+                    "lat": "65\u00b0 08.098' N",
+                    "lng": "147\u00b0 38.422' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Unknown",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
                 },
                 {
                     "dist_mi": 0.15,
@@ -38613,16 +38633,6 @@
                 },
                 {
                     "dist_mi": 0.22,
-                    "dir": "SW",
-                    "lat": "65\u00b0 07.576' N",
-                    "lng": "147\u00b0 48.805' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Full",
-                    "MainStructs": 1.0,
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 0.22,
                     "dir": "SSE",
                     "lat": "65\u00b0 07.637' N",
                     "lng": "147\u00b0 37.930' W",
@@ -38632,13 +38642,33 @@
                     "OthrStructs": "No Data"
                 },
                 {
+                    "dist_mi": 0.22,
+                    "dir": "SW",
+                    "lat": "65\u00b0 07.576' N",
+                    "lng": "147\u00b0 48.805' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": 1.0,
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.25,
+                    "dir": "SSE",
+                    "lat": "65\u00b0 07.585' N",
+                    "lng": "147\u00b0 38.266' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Unknown",
+                    "MainStructs": 1.0,
+                    "OthrStructs": 1.0
+                },
+                {
                     "dist_mi": 0.25,
                     "dir": "SSE",
                     "lat": "65\u00b0 07.591' N",
                     "lng": "147\u00b0 38.058' W",
                     "SiteCat": "Structure",
                     "Protection": "Undesignated",
-                    "MainStructs": 1.0,
+                    "MainStructs": "No Data",
                     "OthrStructs": 1.0
                 },
                 {
@@ -38670,40 +38700,10 @@
                     "Protection": "Undesignated",
                     "MainStructs": 1.0,
                     "OthrStructs": 6.0
-                },
-                {
-                    "dist_mi": 0.3,
-                    "dir": "SSW",
-                    "lat": "65\u00b0 06.721' N",
-                    "lng": "147\u00b0 46.313' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Critical",
-                    "MainStructs": 1.0,
-                    "OthrStructs": 1.0
-                },
-                {
-                    "dist_mi": 0.3,
-                    "dir": "SSW",
-                    "lat": "65\u00b0 06.722' N",
-                    "lng": "147\u00b0 46.306' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Critical",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 0.31,
-                    "dir": "SSW",
-                    "lat": "65\u00b0 06.762' N",
-                    "lng": "147\u00b0 46.565' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Critical",
-                    "MainStructs": 1.0,
-                    "OthrStructs": 1.0
                 }
             ],
-            "popped": 237,
-            "cutoff": 0.31
+            "popped": 248,
+            "cutoff": 0.29
         },
         "NtvAllot_Status_AcreSum": {
             "Restricted": 440.21
@@ -39419,16 +39419,16 @@
         "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:295247.936%2C1701015.029%2C3338,scale:31595",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
-        "PercentContained": 0.0,
+        "PercentContained": 12.0,
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 2 Incident",
-        "EstimatedCostToDate": 9940000.0,
-        "TotalIncidentPersonnel": 152.0,
+        "EstimatedCostToDate": 10030000.0,
+        "TotalIncidentPersonnel": 217.0,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1752283613000.0,
+        "ICS209ReportDateTime": 1752372866000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 3 IC"
     },
@@ -47497,12 +47497,12 @@
         "AkFireNumber": "172",
         "wfigs_IncidentName": "Obrien",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 8125.137010638282,
+        "wfigs_GISAcres": 8125.13800130858,
         "wfigs_MapMethod": "GPS-Flight",
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1752259202560.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752372636810.0,
         "wfigs_IrwinID": "{6ACDFBDF-2F82-4B2C-B55B-43219D237B7E}",
-        "ReportedAcres": 3093.0,
+        "ReportedAcres": 8125.0,
         "HasError": 0.0,
         "DefaultLabel": "172-Obrien, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
@@ -47690,7 +47690,7 @@
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "BLM",
         "POOJurisdictionalUnit": "AKEID",
-        "ICS209ReportDateTime": 1752199857000.0,
+        "ICS209ReportDateTime": 1752372636000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 5 IC"
     },
