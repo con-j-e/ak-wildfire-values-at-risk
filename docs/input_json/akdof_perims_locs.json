@@ -1027,10 +1027,10 @@
         "AkFireNumber": "433",
         "wfigs_IncidentName": "Onion",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 314.0269335554486,
+        "wfigs_GISAcres": 639.2339846563335,
         "wfigs_MapMethod": "Digitized-Image",
-        "wfigs_PolygonDateTime": 1752271500000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752391905047.0,
+        "wfigs_PolygonDateTime": 1752358500000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752425623000.0,
         "wfigs_IrwinID": "{A36D09F0-D9A1-4819-A467-7825CB0FB5FE}",
         "ReportedAcres": 314.03,
         "HasError": 0.0,
@@ -1068,14 +1068,14 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "NANA Regional Corporation, Incorporated",
-                "value head": 314.03
+                "value head": 639.23
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "ANCSA": 314.03
+            "ANCSA": 639.23
         },
         "MgmtOption_AcreSum": {
-            "Modified (Jul 10)": 314.03
+            "Modified (Jul 10)": 639.23
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -1121,7 +1121,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-183586.363%2C1906609.036%2C3338,scale:5049",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-183260.698%2C1906461.989%2C3338,scale:6583",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
@@ -1372,10 +1372,10 @@
         "AkFireNumber": "430",
         "wfigs_IncidentName": "Reed",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 152.52237522472922,
+        "wfigs_GISAcres": 1662.8366686617767,
         "wfigs_MapMethod": "Digitized-Image",
-        "wfigs_PolygonDateTime": 1752271440000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752345280000.0,
+        "wfigs_PolygonDateTime": 1752358500000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752425043000.0,
         "wfigs_IrwinID": "{EF688ACE-FD49-447F-9AF6-63F48D465EF0}",
         "ReportedAcres": 152.52,
         "HasError": 0.0,
@@ -1413,14 +1413,19 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 152.52
+                "value head": 1504.68
+            },
+            {
+                "key head": "Gates of the Arctic National Park & Preserve",
+                "value head": 158.16
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 152.52
+            "State": 1504.68,
+            "NPS": 158.16
         },
         "MgmtOption_AcreSum": {
-            "Limited": 152.52
+            "Limited": 1662.84
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -1451,9 +1456,33 @@
         "Silviculture_FeatureCount": null,
         "Silviculture_Locations": null,
         "Silviculture_TotalAcres": null,
-        "SpecMgmt_Consid_AttrCount": null,
-        "SpecMgmt_FeatureCount": null,
-        "SpecMgmt_Locations": null,
+        "SpecMgmt_Consid_AttrCount": [
+            {
+                "key head": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area.",
+                "value head": 2
+            }
+        ],
+        "SpecMgmt_FeatureCount": 2.0,
+        "SpecMgmt_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.03,
+                    "dir": "Interior",
+                    "lat": "67\u00b0 04.100' N",
+                    "lng": "154\u00b0 48.768' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 0.09,
+                    "dir": "Interior",
+                    "lat": "67\u00b0 03.444' N",
+                    "lng": "154\u00b0 50.270' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "Railroad_NetDesc_FeetSum": null,
         "Railroad_Locations": null,
         "Railroad_TotalFeet": null,
@@ -1466,7 +1495,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-37324.893%2C1900136.638%2C3338,scale:3328",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-36249.342%2C1901242.331%2C3338,scale:10180",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
@@ -1487,10 +1516,10 @@
         "AkFireNumber": "429",
         "wfigs_IncidentName": "Anguitakada",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 2585.0056485023088,
+        "wfigs_GISAcres": 5056.97136614898,
         "wfigs_MapMethod": "Digitized-Image",
-        "wfigs_PolygonDateTime": 1752271500000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752345370000.0,
+        "wfigs_PolygonDateTime": 1752358500000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752424155000.0,
         "wfigs_IrwinID": "{8D7D1F34-97A3-485D-9FC9-BCCEC6C7D66E}",
         "ReportedAcres": 2585.01,
         "HasError": 0.0,
@@ -1528,14 +1557,19 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Anchorage Field Office",
-                "value head": 2585.0
+                "value head": 4996.46
+            },
+            {
+                "key head": "Alaska Department of Natural Resources",
+                "value head": 60.5
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 2585.0
+            "BLM": 4996.46,
+            "State": 60.5
         },
         "MgmtOption_AcreSum": {
-            "Limited": 2585.0
+            "Limited": 5056.97
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -1581,7 +1615,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-109874.409%2C1850132.626%2C3338,scale:13085",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-109072.873%2C1850100.431%2C3338,scale:18274",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -3248,10 +3282,10 @@
         "AkFireNumber": "412",
         "wfigs_IncidentName": "Wheeler",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 12410.178674053677,
+        "wfigs_GISAcres": 22355.69342998123,
         "wfigs_MapMethod": "Digitized-Image",
-        "wfigs_PolygonDateTime": 1752186180000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752301655107.0,
+        "wfigs_PolygonDateTime": 1752358500000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752424646000.0,
         "wfigs_IrwinID": "{D359035F-B089-4A48-A445-12261E4B846D}",
         "ReportedAcres": 12410.18,
         "HasError": 0.0,
@@ -3289,20 +3323,20 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Central Yukon Field Office",
-                "value head": 9377.2
+                "value head": 17423.59
             },
             {
                 "key head": "Koyukuk National Wildlife Refuge",
-                "value head": 3032.97
+                "value head": 4932.08
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 9377.2,
-            "USFWS": 3032.97
+            "BLM": 17423.59,
+            "USFWS": 4932.08
         },
         "MgmtOption_AcreSum": {
-            "Limited": 11190.88,
-            "Modified (Jul 10)": 1219.28
+            "Limited": 19397.43,
+            "Modified (Jul 10)": 2958.25
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -3348,7 +3382,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-117314.159%2C1801220.589%2C3338,scale:28875",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-117481.733%2C1802175.702%2C3338,scale:34496",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -4084,10 +4118,10 @@
         "AkFireNumber": "404",
         "wfigs_IncidentName": "Sikik",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 10093.04420470992,
+        "wfigs_GISAcres": 10905.016263772572,
         "wfigs_MapMethod": "Digitized-Image",
-        "wfigs_PolygonDateTime": 1752271920000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752391781377.0,
+        "wfigs_PolygonDateTime": 1752358500000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752423761000.0,
         "wfigs_IrwinID": "{E025ACC5-A6A0-482A-9595-A84DFD1B7139}",
         "ReportedAcres": 10093.04,
         "HasError": 0.0,
@@ -4125,14 +4159,14 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Noatak National Preserve",
-                "value head": 10093.04
+                "value head": 10905.01
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "NPS": 10093.04
+            "NPS": 10905.01
         },
         "MgmtOption_AcreSum": {
-            "Limited": 10093.04
+            "Limited": 10905.01
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -4178,7 +4212,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-175812.235%2C2002005.007%2C3338,scale:26180",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-175875.571%2C2001919.371%2C3338,scale:26180",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -8728,10 +8762,10 @@
         "AkFireNumber": "339",
         "wfigs_IncidentName": "Mauneluk",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 2724.8769769042497,
+        "wfigs_GISAcres": 2786.422874836666,
         "wfigs_MapMethod": "Digitized-Image",
-        "wfigs_PolygonDateTime": 1752045780000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752306691683.0,
+        "wfigs_PolygonDateTime": 1752358500000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752425255000.0,
         "wfigs_IrwinID": "{0A164C60-F8DF-4D86-81E0-62D4F6D70AB8}",
         "ReportedAcres": 2724.88,
         "HasError": 0.0,
@@ -8769,14 +8803,14 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 2724.87
+                "value head": 2786.42
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 2724.87
+            "State": 2786.42
         },
         "MgmtOption_AcreSum": {
-            "Limited": 1916.28,
+            "Limited": 1977.83,
             "Modified (Jul 10)": 808.59
         },
         "NpsStruct_Use_AttrCount": null,
@@ -8823,7 +8857,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-85594.458%2C1911304.951%2C3338,scale:11629",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-85580.906%2C1911303.7%2C3338,scale:11629",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -11273,7 +11307,7 @@
         "wfigs_GISAcres": 72.86665248206478,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751403600000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752389044610.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752425461613.0,
         "wfigs_IrwinID": "{82EFFF88-781E-496A-B809-4B490302CD5C}",
         "ReportedAcres": 72.87,
         "HasError": 0.0,
@@ -11403,7 +11437,7 @@
         "PercentContained": 92.0,
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
-        "IncidentComplexityLevel": "Type 4 Incident",
+        "IncidentComplexityLevel": "Type 5 Incident",
         "EstimatedCostToDate": 650000.0,
         "TotalIncidentPersonnel": 24.0,
         "POOProtectingAgency": "DVF",
