@@ -7,7 +7,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1752459966460.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752460701463.0,
         "wfigs_IrwinID": "{C9371855-581F-44EC-A21C-966B4AB0205C}",
         "ReportedAcres": 0.1,
         "HasError": 0.0,
@@ -45,8 +45,8 @@
         "Aksd_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.13,
-                    "dir": "N",
+                    "dist_mi": 0.64,
+                    "dir": "NW",
                     "lat": "62\u00b0 25.616' N",
                     "lng": "145\u00b0 24.522' W",
                     "SiteCat": "Structure",
@@ -55,8 +55,8 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 0.17,
-                    "dir": "N",
+                    "dist_mi": 0.66,
+                    "dir": "NNW",
                     "lat": "62\u00b0 25.648' N",
                     "lng": "145\u00b0 24.483' W",
                     "SiteCat": "Structure",
@@ -69,22 +69,29 @@
             "cutoff": null
         },
         "NtvAllot_Status_AcreSum": {
-            "Restricted": 397.84,
-            "Selected": 18.49
+            "Restricted": 391.94
         },
-        "NtvAllot_FeatureCount": 6.0,
+        "NtvAllot_FeatureCount": 4.0,
         "NtvAllot_Locations": {
             "features": [
                 {
-                    "dist_mi": 1.27,
-                    "dir": "ESE",
+                    "dist_mi": 0.38,
+                    "dir": "N",
+                    "lat": "62\u00b0 25.457' N",
+                    "lng": "145\u00b0 23.955' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "976A46794"
+                },
+                {
+                    "dist_mi": 0.8,
+                    "dir": "E",
                     "lat": "62\u00b0 24.913' N",
                     "lng": "145\u00b0 22.514' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "976AA83915A"
                 },
                 {
-                    "dist_mi": 2.1,
+                    "dist_mi": 1.57,
                     "dir": "SE",
                     "lat": "62\u00b0 23.937' N",
                     "lng": "145\u00b0 22.514' W",
@@ -92,34 +99,18 @@
                     "ALLOT_ID": "976AA6231B"
                 },
                 {
-                    "dist_mi": 2.63,
+                    "dist_mi": 2.12,
                     "dir": "ESE",
                     "lat": "62\u00b0 24.129' N",
                     "lng": "145\u00b0 20.606' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "976AA6495C"
-                },
-                {
-                    "dist_mi": 2.89,
-                    "dir": "WSW",
-                    "lat": "62\u00b0 24.995' N",
-                    "lng": "145\u00b0 29.856' W",
-                    "ALLOT_STATUS": "Selected",
-                    "ALLOT_ID": "AA098130"
-                },
-                {
-                    "dist_mi": 2.91,
-                    "dir": "NNE",
-                    "lat": "62\u00b0 27.604' N",
-                    "lng": "145\u00b0 21.548' W",
-                    "ALLOT_STATUS": "Restricted",
-                    "ALLOT_ID": "976AA83663B"
                 }
             ],
             "popped": 0,
             "cutoff": null
         },
-        "NtvAllot_TotalAcres": 416.33,
+        "NtvAllot_TotalAcres": 391.94,
         "ComsTwr_Type_AttrCount": null,
         "ComsTwr_FeatureCount": null,
         "ComsTwr_Locations": null,
@@ -128,32 +119,31 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Ahtna, Incorporated",
-                "value head": 9947.28
+                "value head": 9540.63
             },
             {
                 "key head": "Glenallen Field Office",
-                "value head": 4790.52
+                "value head": 5309.36
             },
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 3016.0
+                "value head": 2909.71
             },
             {
                 "key head": "Alaska Regional Office",
-                "value head": 397.84
+                "value head": 391.94
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "ANCSA": 9947.28,
-            "BLM": 4790.52,
-            "State": 2597.75,
+            "ANCSA": 9540.63,
+            "BLM": 5309.36,
+            "State": 2491.46,
             "Private": 418.25,
-            "BIA": 397.84
+            "BIA": 391.94
         },
         "MgmtOption_AcreSum": {
-            "Critical": 15505.06,
-            "Modified (Sep 30)": 2640.67,
-            "Full": 5.9
+            "Critical": 15388.33,
+            "Modified (Sep 30)": 2763.3
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -171,33 +161,9 @@
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
-        "PipeLine_Name_FeetSum": [
-            {
-                "key head": "TRANS-ALASKA PIPELINE",
-                "value head": 4333
-            }
-        ],
-        "PipeLine_Locations": {
-            "features": [
-                {
-                    "dist_mi": 2.85,
-                    "dir": "WSW",
-                    "lat": "62\u00b0 24.853' N",
-                    "lng": "145\u00b0 29.702' W",
-                    "NAME": "TRANS-ALASKA PIPELINE"
-                },
-                {
-                    "dist_mi": 2.93,
-                    "dir": "WSW",
-                    "lat": "62\u00b0 25.092' N",
-                    "lng": "145\u00b0 29.972' W",
-                    "NAME": "TRANS-ALASKA PIPELINE"
-                }
-            ],
-            "popped": 0,
-            "cutoff": null
-        },
-        "PipeLine_TotalFeet": 4333.0,
+        "PipeLine_Name_FeetSum": null,
+        "PipeLine_Locations": null,
+        "PipeLine_TotalFeet": null,
         "PowerPlant_PrimSource_AttrCount": null,
         "PowerPlant_UtilName_AttrCount": null,
         "PowerPlant_FeatureCount": null,
@@ -218,10 +184,10 @@
         "SpecMgmt_Locations": {
             "features": [
                 {
-                    "dist_mi": 1.82,
+                    "dist_mi": 2.32,
                     "dir": "NNW",
-                    "lat": "62\u00b0 27.027' N",
-                    "lng": "145\u00b0 25.393' W",
+                    "lat": "62\u00b0 27.040' N",
+                    "lng": "145\u00b0 25.290' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 }
             ],
@@ -253,7 +219,7 @@
         "UsaStruct_Locations": {
             "features": [
                 {
-                    "dist_mi": 2.5,
+                    "dist_mi": 1.97,
                     "dir": "SSE",
                     "lat": "62\u00b0 23.549' N",
                     "lng": "145\u00b0 22.518' W",
@@ -261,7 +227,7 @@
                     "PRIM_OCC": "Unclassified"
                 },
                 {
-                    "dist_mi": 2.51,
+                    "dist_mi": 1.98,
                     "dir": "SSE",
                     "lat": "62\u00b0 23.534' N",
                     "lng": "145\u00b0 22.535' W",
@@ -276,7 +242,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:441250.966%2C1412074.728%2C3338,scale:24167",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:441839.663%2C1411442.978%2C3338,scale:24167",
         "CpxName": null,
         "DispatchCenterID": "AKACDC",
         "PercentContained": null,
@@ -286,8 +252,8 @@
         "EstimatedCostToDate": null,
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "DVF",
-        "POOJurisdictionalAgency": "BIA",
-        "POOJurisdictionalUnit": "AKAKA",
+        "POOJurisdictionalAgency": "DNR",
+        "POOJurisdictionalUnit": "AKDNS",
         "ICS209ReportDateTime": null,
         "ICS209ReportStatus": null,
         "IncidentManagementOrganization": null
