@@ -5302,7 +5302,7 @@
         "wfigs_GISAcres": 101.55757495507092,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1752355980000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752426977723.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752470938180.0,
         "wfigs_IrwinID": "{A76CDCE9-7461-4C1F-89CF-4D3500345930}",
         "ReportedAcres": 101.56,
         "HasError": 0.0,
@@ -5402,18 +5402,18 @@
         "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-96190.974%2C1930068.411%2C3338,scale:27199",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
-        "PercentContained": null,
-        "PercentPerimeterToBeContained": null,
+        "PercentContained": 0.0,
+        "PercentPerimeterToBeContained": 0.0,
         "FireMgmtComplexity": null,
-        "IncidentComplexityLevel": null,
-        "EstimatedCostToDate": null,
+        "IncidentComplexityLevel": "Type 5 Incident",
+        "EstimatedCostToDate": 0.0,
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": null,
-        "ICS209ReportStatus": null,
-        "IncidentManagementOrganization": null
+        "ICS209ReportDateTime": 1752470938000.0,
+        "ICS209ReportStatus": "I",
+        "IncidentManagementOrganization": "Type 5 IC"
     },
     {
         "AkFireRegion": "MSS",
@@ -10399,9 +10399,9 @@
         "wfigs_GISAcres": 3797.3982888746987,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1752412320000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752427377000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752471384100.0,
         "wfigs_IrwinID": "{D658DAFD-51D6-49CA-9C0A-4F18504BB632}",
-        "ReportedAcres": 2416.19,
+        "ReportedAcres": 3797.0,
         "HasError": 0.0,
         "DefaultLabel": "424-Tutuksuk, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -10498,12 +10498,12 @@
         "PercentPerimeterToBeContained": 0.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 5 Incident",
-        "EstimatedCostToDate": 0.0,
+        "EstimatedCostToDate": 2250.0,
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "NPS",
         "POOJurisdictionalUnit": "AKKOP",
-        "ICS209ReportDateTime": 1752382138000.0,
+        "ICS209ReportDateTime": 1752471384000.0,
         "ICS209ReportStatus": "F",
         "IncidentManagementOrganization": "Type 5 IC"
     },
@@ -10515,7 +10515,7 @@
         "wfigs_GISAcres": 105.37861973378651,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1752045780000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752382135920.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752471381820.0,
         "wfigs_IrwinID": "{46F5C92C-0A39-423A-AFBF-EC00F1A47753}",
         "ReportedAcres": 103.0,
         "HasError": 0.0,
@@ -10613,12 +10613,12 @@
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 4 Incident",
-        "EstimatedCostToDate": 127654.0,
+        "EstimatedCostToDate": 139000.0,
         "TotalIncidentPersonnel": 12.0,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "NPS",
         "POOJurisdictionalUnit": "AKKOP",
-        "ICS209ReportDateTime": 1752382136000.0,
+        "ICS209ReportDateTime": 1752471381000.0,
         "ICS209ReportStatus": "F",
         "IncidentManagementOrganization": "Type 4 IC"
     },
@@ -10785,9 +10785,9 @@
         "wfigs_GISAcres": 10152.621283669596,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1752358500000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752422530000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752471373360.0,
         "wfigs_IrwinID": "{3E2996A1-F990-4020-BB50-23A20F4F1AF5}",
-        "ReportedAcres": 7442.68,
+        "ReportedAcres": 10152.0,
         "HasError": 0.0,
         "DefaultLabel": "420-Nuna, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -10805,8 +10805,8 @@
         "Runway_Ownership_AttrCount": null,
         "WeatherStation_FeatureCount": null,
         "WeatherStation_Locations": null,
-        "Aksd_MainStruct_AttrSum": 1.0,
-        "Aksd_OtherStruct_AttrSum": 1.0,
+        "Aksd_MainStruct_AttrSum": 2.0,
+        "Aksd_OtherStruct_AttrSum": 2.0,
         "Aksd_Protection_AttrCount": [
             {
                 "key head": "Full",
@@ -10847,20 +10847,20 @@
                 {
                     "dist_mi": 2.32,
                     "dir": "SW",
-                    "lat": "67\u00b0 10.760' N",
-                    "lng": "158\u00b0 26.147' W",
-                    "SiteCat": "Camp",
-                    "Protection": "Unknown",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 2.32,
-                    "dir": "SW",
                     "lat": "67\u00b0 10.777' N",
                     "lng": "158\u00b0 26.213' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
+                    "MainStructs": 1.0,
+                    "OthrStructs": 1.0
+                },
+                {
+                    "dist_mi": 2.33,
+                    "dir": "SW",
+                    "lat": "67\u00b0 10.763' N",
+                    "lng": "158\u00b0 26.181' W",
+                    "SiteCat": "Camp",
+                    "Protection": "Unknown",
                     "MainStructs": "No Data",
                     "OthrStructs": "No Data"
                 },
@@ -11053,12 +11053,12 @@
         "PercentPerimeterToBeContained": 0.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 4 Incident",
-        "EstimatedCostToDate": 196495.0,
+        "EstimatedCostToDate": 216000.0,
         "TotalIncidentPersonnel": 8.0,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "BLM",
         "POOJurisdictionalUnit": "AKADD",
-        "ICS209ReportDateTime": 1752382125000.0,
+        "ICS209ReportDateTime": 1752471373000.0,
         "ICS209ReportStatus": "F",
         "IncidentManagementOrganization": "Type 4 IC"
     },
@@ -12161,9 +12161,9 @@
         "wfigs_GISAcres": 79.43274309961811,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1752358500000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752422271000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752471377883.0,
         "wfigs_IrwinID": "{CDAFD47F-6D5F-4679-BB2C-22840E211AB4}",
-        "ReportedAcres": 76.77,
+        "ReportedAcres": 79.0,
         "HasError": 0.0,
         "DefaultLabel": "411-Kobuk, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -12265,7 +12265,7 @@
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "NPS",
         "POOJurisdictionalUnit": "AKKOP",
-        "ICS209ReportDateTime": 1752382131000.0,
+        "ICS209ReportDateTime": 1752471378000.0,
         "ICS209ReportStatus": "F",
         "IncidentManagementOrganization": "Type 5 IC"
     },
@@ -12277,9 +12277,9 @@
         "wfigs_GISAcres": 7069.636755542407,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1752358500000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752422353000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752471369390.0,
         "wfigs_IrwinID": "{DD437316-D5C3-497A-99DC-160995008285}",
-        "ReportedAcres": 5727.97,
+        "ReportedAcres": 7069.0,
         "HasError": 0.0,
         "DefaultLabel": "410-Kaliguricheark, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -12479,12 +12479,12 @@
         "PercentPerimeterToBeContained": 0.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 5 Incident",
-        "EstimatedCostToDate": 27000.0,
+        "EstimatedCostToDate": 13096.0,
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "NPS",
         "POOJurisdictionalUnit": "AKKOP",
-        "ICS209ReportDateTime": 1752382120000.0,
+        "ICS209ReportDateTime": 1752471369000.0,
         "ICS209ReportStatus": "F",
         "IncidentManagementOrganization": "Type 5 IC"
     },
@@ -12496,9 +12496,9 @@
         "wfigs_GISAcres": 8.062416109840402,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1752358500000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752422433000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752471371357.0,
         "wfigs_IrwinID": "{0C889637-30E2-4B33-AC8B-5D1A3F1FF6F0}",
-        "ReportedAcres": 0.1,
+        "ReportedAcres": 8.06,
         "HasError": 0.0,
         "DefaultLabel": "409-Hunt, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -12600,7 +12600,7 @@
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "NPS",
         "POOJurisdictionalUnit": "AKKOP",
-        "ICS209ReportDateTime": 1752382123000.0,
+        "ICS209ReportDateTime": 1752471371000.0,
         "ICS209ReportStatus": "F",
         "IncidentManagementOrganization": "Type 5 IC"
     },
@@ -12612,7 +12612,7 @@
         "wfigs_GISAcres": 8.313791986572811,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1752271920000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752382128360.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752471375687.0,
         "wfigs_IrwinID": "{80A24141-2D6C-48DA-9AC4-D4D9B94B8DEF}",
         "ReportedAcres": 8.31,
         "HasError": 0.0,
@@ -12632,8 +12632,8 @@
         "Runway_Ownership_AttrCount": null,
         "WeatherStation_FeatureCount": null,
         "WeatherStation_Locations": null,
-        "Aksd_MainStruct_AttrSum": null,
-        "Aksd_OtherStruct_AttrSum": null,
+        "Aksd_MainStruct_AttrSum": 1.0,
+        "Aksd_OtherStruct_AttrSum": 1.0,
         "Aksd_Protection_AttrCount": [
             {
                 "key head": "Full",
@@ -12641,6 +12641,10 @@
             },
             {
                 "key head": "Undesignated",
+                "value head": 1
+            },
+            {
+                "key head": "Unknown",
                 "value head": 1
             }
         ],
@@ -12650,11 +12654,15 @@
                 "value head": 3
             },
             {
+                "key head": "Camp",
+                "value head": 1
+            },
+            {
                 "key head": "Other",
                 "value head": 1
             }
         ],
-        "Aksd_FeatureCount": 4.0,
+        "Aksd_FeatureCount": 5.0,
         "Aksd_Locations": {
             "features": [
                 {
@@ -12688,14 +12696,24 @@
                     "OthrStructs": "No Data"
                 },
                 {
+                    "dist_mi": 2.92,
+                    "dir": "NNE",
+                    "lat": "67\u00b0 10.763' N",
+                    "lng": "158\u00b0 26.181' W",
+                    "SiteCat": "Camp",
+                    "Protection": "Unknown",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
                     "dist_mi": 2.93,
                     "dir": "NNE",
                     "lat": "67\u00b0 10.777' N",
                     "lng": "158\u00b0 26.213' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
+                    "MainStructs": 1.0,
+                    "OthrStructs": 1.0
                 }
             ],
             "popped": 0,
@@ -12854,12 +12872,12 @@
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 4 Incident",
-        "EstimatedCostToDate": 0.0,
+        "EstimatedCostToDate": 65000.0,
         "TotalIncidentPersonnel": 10.0,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "NPS",
         "POOJurisdictionalUnit": "AKKOP",
-        "ICS209ReportDateTime": 1752382127000.0,
+        "ICS209ReportDateTime": 1752471375000.0,
         "ICS209ReportStatus": "F",
         "IncidentManagementOrganization": "Type 4 IC"
     },
@@ -12871,7 +12889,7 @@
         "wfigs_GISAcres": 2.609024415629463,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1752271920000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752382133660.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752471379800.0,
         "wfigs_IrwinID": "{A105352F-EAA2-4908-9042-9A1D61F35E0D}",
         "ReportedAcres": 2.61,
         "HasError": 0.0,
@@ -12891,12 +12909,16 @@
         "Runway_Ownership_AttrCount": null,
         "WeatherStation_FeatureCount": null,
         "WeatherStation_Locations": null,
-        "Aksd_MainStruct_AttrSum": null,
-        "Aksd_OtherStruct_AttrSum": null,
+        "Aksd_MainStruct_AttrSum": 2.0,
+        "Aksd_OtherStruct_AttrSum": 7.0,
         "Aksd_Protection_AttrCount": [
             {
                 "key head": "Full",
                 "value head": 3
+            },
+            {
+                "key head": "Unknown",
+                "value head": 2
             },
             {
                 "key head": "Critical",
@@ -12906,16 +12928,30 @@
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
-                "value head": 4
+                "value head": 5
             },
             {
                 "key head": "Other",
                 "value head": 1
+            },
+            {
+                "key head": "Camp",
+                "value head": 1
             }
         ],
-        "Aksd_FeatureCount": 5.0,
+        "Aksd_FeatureCount": 7.0,
         "Aksd_Locations": {
             "features": [
+                {
+                    "dist_mi": 1.43,
+                    "dir": "SW",
+                    "lat": "67\u00b0 10.763' N",
+                    "lng": "158\u00b0 26.181' W",
+                    "SiteCat": "Camp",
+                    "Protection": "Unknown",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
                 {
                     "dist_mi": 1.43,
                     "dir": "SW",
@@ -12923,8 +12959,8 @@
                     "lng": "158\u00b0 26.213' W",
                     "SiteCat": "Structure",
                     "Protection": "Full",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
+                    "MainStructs": 1.0,
+                    "OthrStructs": 1.0
                 },
                 {
                     "dist_mi": 1.69,
@@ -12953,8 +12989,8 @@
                     "lng": "158\u00b0 30.323' W",
                     "SiteCat": "Structure",
                     "Protection": "Critical",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
+                    "MainStructs": 1.0,
+                    "OthrStructs": 4.0
                 },
                 {
                     "dist_mi": 2.67,
@@ -12965,6 +13001,16 @@
                     "Protection": "Critical",
                     "MainStructs": "No Data",
                     "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 2.71,
+                    "dir": "W",
+                    "lat": "67\u00b0 11.324' N",
+                    "lng": "158\u00b0 30.459' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Unknown",
+                    "MainStructs": "No Data",
+                    "OthrStructs": 2.0
                 }
             ],
             "popped": 0,
@@ -13169,12 +13215,12 @@
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 5 Incident",
-        "EstimatedCostToDate": 30679.0,
+        "EstimatedCostToDate": 30700.0,
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "NPS",
         "POOJurisdictionalUnit": "AKKOP",
-        "ICS209ReportDateTime": 1752382133000.0,
+        "ICS209ReportDateTime": 1752471379000.0,
         "ICS209ReportStatus": "F",
         "IncidentManagementOrganization": "Type 5 IC"
     },
@@ -42605,7 +42651,7 @@
         "wfigs_GISAcres": 333.56104052857677,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1750825200000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752387695350.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752471332050.0,
         "wfigs_IrwinID": "{E07FA154-761F-4B26-B1AD-B4CCEF988DA6}",
         "ReportedAcres": 334.0,
         "HasError": 0.0,
@@ -43011,12 +43057,12 @@
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 3 Incident",
-        "EstimatedCostToDate": 445173.0,
+        "EstimatedCostToDate": 445150.0,
         "TotalIncidentPersonnel": 18.0,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1752387695000.0,
+        "ICS209ReportDateTime": 1752471332000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 3 Team"
     },
@@ -60896,7 +60942,7 @@
         "wfigs_GISAcres": 3919.771596014709,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751602020000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752418307910.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752470606497.0,
         "wfigs_IrwinID": "{5F27DEF6-F74A-49F7-9F6D-677AED2F4ED1}",
         "ReportedAcres": 3920.0,
         "HasError": 0.0,
@@ -61863,13 +61909,13 @@
         "PercentContained": 19.0,
         "PercentPerimeterToBeContained": 0.0,
         "FireMgmtComplexity": null,
-        "IncidentComplexityLevel": "Type 4 Incident",
-        "EstimatedCostToDate": 5098402.0,
-        "TotalIncidentPersonnel": 69.0,
+        "IncidentComplexityLevel": "Type 3 Incident",
+        "EstimatedCostToDate": 5133402.0,
+        "TotalIncidentPersonnel": 47.0,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1752383551000.0,
+        "ICS209ReportDateTime": 1752470606000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 3 IC"
     },
