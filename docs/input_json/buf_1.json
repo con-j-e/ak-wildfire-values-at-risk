@@ -209,7 +209,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1752546191300.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752551481810.0,
         "wfigs_IrwinID": "{85C1B6ED-1F3B-4A5F-A178-01728156DFC1}",
         "ReportedAcres": 10.0,
         "HasError": 0.0,
@@ -235,10 +235,25 @@
         "Aksd_SiteCat_AttrCount": null,
         "Aksd_FeatureCount": null,
         "Aksd_Locations": null,
-        "NtvAllot_Status_AcreSum": null,
-        "NtvAllot_FeatureCount": null,
-        "NtvAllot_Locations": null,
-        "NtvAllot_TotalAcres": null,
+        "NtvAllot_Status_AcreSum": {
+            "Restricted": 79.99
+        },
+        "NtvAllot_FeatureCount": 1.0,
+        "NtvAllot_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.44,
+                    "dir": "WNW",
+                    "lat": "66\u00b0 05.020' N",
+                    "lng": "149\u00b0 17.505' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "989F13811A"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "NtvAllot_TotalAcres": 79.99,
         "ComsTwr_Type_AttrCount": null,
         "ComsTwr_FeatureCount": null,
         "ComsTwr_Locations": null,
@@ -246,20 +261,26 @@
         "Community_Locations": null,
         "Jurisd_Unit_AcreSum": [
             {
-                "key head": "Doyon, Limited",
-                "value head": 1252.54
+                "key head": "Dinyea Corporation",
+                "value head": 2196.46
             },
             {
-                "key head": "Dinyea Corporation",
-                "value head": 1048.3
+                "key head": "Alaska Regional Office",
+                "value head": 79.99
+            },
+            {
+                "key head": "Doyon, Limited",
+                "value head": 24.39
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "ANCSA": 2300.84
+            "ANCSA": 2220.85,
+            "BIA": 79.99
         },
         "MgmtOption_AcreSum": {
-            "Limited": 2177.92,
-            "Modified (Jul 10)": 122.92
+            "Limited": 1239.89,
+            "Modified (Jul 10)": 980.97,
+            "Full": 79.99
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -305,7 +326,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:212621.344%2C1795791.363%2C3338,scale:8604",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:214157.185%2C1799079.305%2C3338,scale:8604",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
@@ -316,7 +337,7 @@
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "ANC",
-        "POOJurisdictionalUnit": "AKDYN",
+        "POOJurisdictionalUnit": "AKDNYN",
         "ICS209ReportDateTime": null,
         "ICS209ReportStatus": null,
         "IncidentManagementOrganization": null
@@ -25868,12 +25889,12 @@
         "AkFireNumber": "319",
         "wfigs_IncidentName": "Monte Cristo Creek",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 8234.499497820769,
+        "wfigs_GISAcres": 8107.905380811008,
         "wfigs_MapMethod": "Digitized-Image",
-        "wfigs_PolygonDateTime": 1752355541000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752377622433.0,
+        "wfigs_PolygonDateTime": 1752527719000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752551213647.0,
         "wfigs_IrwinID": "{6CB8BD07-B9C0-4E03-9F8E-FE982D5CF21E}",
-        "ReportedAcres": 8234.5,
+        "ReportedAcres": 8107.9,
         "HasError": 0.0,
         "DefaultLabel": "319-Monte Cristo Creek, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
@@ -25909,14 +25930,14 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 22375.08
+                "value head": 22485.89
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 22375.08
+            "State": 22485.89
         },
         "MgmtOption_AcreSum": {
-            "Full": 22375.08
+            "Full": 22485.89
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -25925,7 +25946,7 @@
         "NpsStruct_Locations": null,
         "Parcel_BuildingValue_AttrSum": null,
         "Parcel_FeatureCount": 5.0,
-        "Parcel_LandValue_AttrSum": 15564202.0,
+        "Parcel_LandValue_AttrSum": 15614100.0,
         "Parcel_Locations": {
             "features": [
                 {
@@ -25938,7 +25959,7 @@
                     "total_value": 7975800.0
                 },
                 {
-                    "dist_mi": 0.9,
+                    "dist_mi": 0.91,
                     "dir": "SSE",
                     "lat": "64\u00b0 25.827' N",
                     "lng": "145\u00b0 51.360' W",
@@ -25953,17 +25974,17 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Tax Lot",
-                "value head": 21764.15
+                "value head": 21898.35
             }
         ],
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Exempt ",
-                "value head": 21764.15
+                "value head": 21898.35
             }
         ],
-        "Parcel_TotalAcres": 21764.15,
-        "Parcel_TotalValue_AttrSum": 15564202.0,
+        "Parcel_TotalAcres": 21898.35,
+        "Parcel_TotalValue_AttrSum": 15614100.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -25995,7 +26016,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:388628.935%2C1634506.874%2C3338,scale:31236",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:388597.086%2C1634476.923%2C3338,scale:31236",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
@@ -38392,7 +38413,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1752206279150.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752551851680.0,
         "wfigs_IrwinID": "{E73593E5-D3EF-4444-91E0-2E81D273E0B2}",
         "ReportedAcres": 0.25,
         "HasError": 0.0,
@@ -38488,7 +38509,7 @@
         "CpxName": "Ptarmigan Complex",
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 100.0,
-        "PercentPerimeterToBeContained": 0.0,
+        "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": null,
         "EstimatedCostToDate": 0.0,
@@ -38496,7 +38517,7 @@
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1752206279000.0,
+        "ICS209ReportDateTime": 1752551851000.0,
         "ICS209ReportStatus": null,
         "IncidentManagementOrganization": null
     },
@@ -42885,7 +42906,7 @@
         "wfigs_GISAcres": 8940.86801456082,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1752357388000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752463837180.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752550749687.0,
         "wfigs_IrwinID": "{39CC9E9A-8E79-4B98-8D8B-9B1404D8FC45}",
         "ReportedAcres": 8941.0,
         "HasError": 0.0,
@@ -42918,16 +42939,20 @@
             },
             {
                 "key head": "Unknown",
-                "value head": 2
+                "value head": 4
             }
         ],
         "Aksd_SiteCat_AttrCount": [
             {
                 "key head": "Structure",
                 "value head": 22
+            },
+            {
+                "key head": "Camp",
+                "value head": 2
             }
         ],
-        "Aksd_FeatureCount": 22.0,
+        "Aksd_FeatureCount": 24.0,
         "Aksd_Locations": {
             "features": [
                 {
@@ -43111,6 +43136,26 @@
                     "OthrStructs": "No Data"
                 },
                 {
+                    "dist_mi": 0.3,
+                    "dir": "SE",
+                    "lat": "65\u00b0 14.209' N",
+                    "lng": "150\u00b0 10.640' W",
+                    "SiteCat": "Camp",
+                    "Protection": "Unknown",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.44,
+                    "dir": "SE",
+                    "lat": "65\u00b0 13.898' N",
+                    "lng": "150\u00b0 10.991' W",
+                    "SiteCat": "Camp",
+                    "Protection": "Unknown",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
                     "dist_mi": 0.51,
                     "dir": "SSE",
                     "lat": "65\u00b0 13.205' N",
@@ -43256,12 +43301,12 @@
         "PercentPerimeterToBeContained": 0.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 3 Incident",
-        "EstimatedCostToDate": 738000.0,
-        "TotalIncidentPersonnel": 53.0,
+        "EstimatedCostToDate": 785000.0,
+        "TotalIncidentPersonnel": 31.0,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1752463837000.0,
+        "ICS209ReportDateTime": 1752550749000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 3 IC"
     },
