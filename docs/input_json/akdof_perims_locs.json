@@ -12847,7 +12847,7 @@
         "wfigs_GISAcres": 72.86665248206478,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751403600000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752535687877.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752555743913.0,
         "wfigs_IrwinID": "{82EFFF88-781E-496A-B809-4B490302CD5C}",
         "ReportedAcres": 72.87,
         "HasError": 0.0,
@@ -12974,16 +12974,16 @@
         "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:360348.517%2C1618083.084%2C3338,scale:2721",
         "CpxName": null,
         "DispatchCenterID": "AKNFDC",
-        "PercentContained": 95.0,
+        "PercentContained": 97.0,
         "PercentPerimeterToBeContained": 100.0,
         "FireMgmtComplexity": null,
-        "IncidentComplexityLevel": "Type 5 Incident",
+        "IncidentComplexityLevel": "Type 4 Incident",
         "EstimatedCostToDate": 555170.0,
-        "TotalIncidentPersonnel": 24.0,
+        "TotalIncidentPersonnel": 22.0,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1752469157000.0,
+        "ICS209ReportDateTime": 1752555744000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 4 IC"
     },
@@ -16950,9 +16950,9 @@
         "wfigs_GISAcres": 20535.0,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1752443258000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752524018767.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752556034433.0,
         "wfigs_IrwinID": "{83997F1E-7D1C-4E08-9E41-DE41920B5929}",
-        "ReportedAcres": 20550.07,
+        "ReportedAcres": 20535.0,
         "HasError": 0.0,
         "DefaultLabel": "270-Goldstream Creek, Perimeter",
         "AnalysisBufferMiles": 0.0,
@@ -17689,7 +17689,7 @@
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1752469700000.0,
+        "ICS209ReportDateTime": 1752556034000.0,
         "ICS209ReportStatus": null,
         "IncidentManagementOrganization": null
     },
@@ -21718,9 +21718,9 @@
         "wfigs_GISAcres": 12554.0,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1752443258000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752523055313.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752556031463.0,
         "wfigs_IrwinID": "{2E74E7EC-3BE4-4C52-89C0-6E3CA1E4D999}",
-        "ReportedAcres": 12553.69,
+        "ReportedAcres": 12554.0,
         "HasError": 0.0,
         "DefaultLabel": "238-Bonanza Creek, Perimeter",
         "AnalysisBufferMiles": 0.0,
@@ -22017,16 +22017,16 @@
         "Runway_Ownership_AttrCount": null,
         "WeatherStation_FeatureCount": null,
         "WeatherStation_Locations": null,
-        "Aksd_MainStruct_AttrSum": 12.0,
-        "Aksd_OtherStruct_AttrSum": 17.0,
+        "Aksd_MainStruct_AttrSum": 11.0,
+        "Aksd_OtherStruct_AttrSum": 22.0,
         "Aksd_Protection_AttrCount": [
             {
-                "key head": "Undesignated",
+                "key head": "Unknown",
                 "value head": 7
             },
             {
-                "key head": "Unknown",
-                "value head": 6
+                "key head": "Undesignated",
+                "value head": 7
             }
         ],
         "Aksd_SiteCat_AttrCount": [
@@ -22035,11 +22035,15 @@
                 "value head": 12
             },
             {
+                "key head": "Other",
+                "value head": 1
+            },
+            {
                 "key head": "Communications",
                 "value head": 1
             }
         ],
-        "Aksd_FeatureCount": 13.0,
+        "Aksd_FeatureCount": 14.0,
         "Aksd_Locations": {
             "features": [
                 {
@@ -22080,7 +22084,7 @@
                     "SiteCat": "Structure",
                     "Protection": "Unknown",
                     "MainStructs": 1.0,
-                    "OthrStructs": 3.0
+                    "OthrStructs": 5.0
                 },
                 {
                     "dist_mi": 0.02,
@@ -22135,6 +22139,16 @@
                 {
                     "dist_mi": 0.06,
                     "dir": "Interior",
+                    "lat": "64\u00b0 41.969' N",
+                    "lng": "148\u00b0 34.799' W",
+                    "SiteCat": "Other",
+                    "Protection": "Unknown",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 0.06,
+                    "dir": "Interior",
                     "lat": "64\u00b0 42.526' N",
                     "lng": "148\u00b0 37.025' W",
                     "SiteCat": "Structure",
@@ -22149,8 +22163,8 @@
                     "lng": "148\u00b0 32.106' W",
                     "SiteCat": "Structure",
                     "Protection": "Unknown",
-                    "MainStructs": 2.0,
-                    "OthrStructs": 2.0
+                    "MainStructs": 1.0,
+                    "OthrStructs": 5.0
                 },
                 {
                     "dist_mi": 0.08,
@@ -22237,7 +22251,7 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 11501.52
+                "value head": 11500.0
             },
             {
                 "key head": "Toghotthele Corporation",
@@ -22261,24 +22275,24 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 11423.24,
+            "State": 11421.11,
             "ANCSA": 970.41,
-            "Private": 95.27,
+            "Private": 95.88,
             "BIA": 62.62,
             "DOD": 1.98,
             "City": 0.2
         },
         "MgmtOption_AcreSum": {
-            "Full": 12553.73
+            "Full": 12552.2
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
         "NpsStruct_Rating_AttrCount": null,
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
-        "Parcel_BuildingValue_AttrSum": 1715551.0,
+        "Parcel_BuildingValue_AttrSum": 1715621.0,
         "Parcel_FeatureCount": 61.0,
-        "Parcel_LandValue_AttrSum": 17932047.0,
+        "Parcel_LandValue_AttrSum": 17931768.0,
         "Parcel_Locations": {
             "features": [
                 {
@@ -22428,8 +22442,8 @@
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "64\u00b0 43.062' N",
-                    "lng": "148\u00b0 23.877' W",
+                    "lat": "64\u00b0 42.910' N",
+                    "lng": "148\u00b0 23.279' W",
                     "property_type": "Tract",
                     "property_use": "Exempt ",
                     "total_value": 1824384.0
@@ -22540,7 +22554,7 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "Tract",
-                "value head": 9382.68
+                "value head": 9380.54
             },
             {
                 "key head": "Tax Lot",
@@ -22552,7 +22566,7 @@
             },
             {
                 "key head": "Lot",
-                "value head": 32.17
+                "value head": 32.78
             },
             {
                 "key head": "Roadway",
@@ -22566,7 +22580,7 @@
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "Exempt ",
-                "value head": 9952.2
+                "value head": 9950.07
             },
             {
                 "key head": "Vacant Land",
@@ -22574,7 +22588,7 @@
             },
             {
                 "key head": "Residential",
-                "value head": 29.96
+                "value head": 30.57
             },
             {
                 "key head": "No Data",
@@ -22585,8 +22599,8 @@
                 "value head": 4.96
             }
         ],
-        "Parcel_TotalAcres": 10063.89,
-        "Parcel_TotalValue_AttrSum": 19647599.0,
+        "Parcel_TotalAcres": 10062.37,
+        "Parcel_TotalValue_AttrSum": 19647389.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -22863,7 +22877,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:260480.048%2C1647369.178%2C3338,scale:52278",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:260478.951%2C1647368.734%2C3338,scale:52278",
         "CpxName": "Nenana Ridge Complex",
         "DispatchCenterID": "AKNFDC",
         "PercentContained": 0.0,
@@ -22875,7 +22889,7 @@
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "DNR",
         "POOJurisdictionalUnit": "AKDNS",
-        "ICS209ReportDateTime": 1752469697000.0,
+        "ICS209ReportDateTime": 1752556031000.0,
         "ICS209ReportStatus": "F",
         "IncidentManagementOrganization": "Type 3 IC"
     },
