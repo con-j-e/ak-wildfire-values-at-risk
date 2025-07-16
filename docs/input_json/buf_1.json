@@ -25402,7 +25402,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1751052484720.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752702575603.0,
         "wfigs_IrwinID": "{718FCCE2-233E-4E0B-864E-471B81966F2B}",
         "ReportedAcres": 0.1,
         "HasError": 0.0,
@@ -29061,10 +29061,10 @@
         "AkFireNumber": "279",
         "wfigs_IncidentName": "Moldy",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 70533.43305649128,
+        "wfigs_GISAcres": 72139.61375374535,
         "wfigs_MapMethod": "Mixed Methods",
         "wfigs_PolygonDateTime": 1751542663000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752559586967.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752702643000.0,
         "wfigs_IrwinID": "{BE1874C8-7BD4-4D22-A087-A689F710ED78}",
         "ReportedAcres": 72431.0,
         "HasError": 0.0,
@@ -29089,7 +29089,7 @@
         "Aksd_Protection_AttrCount": [
             {
                 "key head": "Unknown",
-                "value head": 2
+                "value head": 3
             },
             {
                 "key head": "Undesignated",
@@ -29106,17 +29106,27 @@
                 "value head": 2
             },
             {
-                "key head": "RAWS",
-                "value head": 1
+                "key head": "Communications",
+                "value head": 2
             },
             {
-                "key head": "Communications",
+                "key head": "RAWS",
                 "value head": 1
             }
         ],
-        "Aksd_FeatureCount": 4.0,
+        "Aksd_FeatureCount": 5.0,
         "Aksd_Locations": {
             "features": [
+                {
+                    "dist_mi": 0.03,
+                    "dir": "N",
+                    "lat": "65\u00b0 32.860' N",
+                    "lng": "156\u00b0 26.714' W",
+                    "SiteCat": "Communications",
+                    "Protection": "Unknown",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
                 {
                     "dist_mi": 0.16,
                     "dir": "WSW",
@@ -29142,9 +29152,9 @@
             "cutoff": null
         },
         "NtvAllot_Status_AcreSum": {
-            "Restricted": 942.29
+            "Restricted": 1117.72
         },
-        "NtvAllot_FeatureCount": 13.0,
+        "NtvAllot_FeatureCount": 16.0,
         "NtvAllot_Locations": {
             "features": [
                 {
@@ -29164,12 +29174,28 @@
                     "ALLOT_ID": "989F93445A"
                 },
                 {
+                    "dist_mi": 0.44,
+                    "dir": "NE",
+                    "lat": "65\u00b0 32.985' N",
+                    "lng": "156\u00b0 23.558' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "989F17172"
+                },
+                {
                     "dist_mi": 0.71,
                     "dir": "SSE",
                     "lat": "65\u00b0 26.222' N",
                     "lng": "156\u00b0 21.911' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "989F17107"
+                },
+                {
+                    "dist_mi": 0.79,
+                    "dir": "NE",
+                    "lat": "65\u00b0 33.437' N",
+                    "lng": "156\u00b0 23.795' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "989F14479A"
                 },
                 {
                     "dist_mi": 0.83,
@@ -29180,20 +29206,28 @@
                     "ALLOT_ID": "989F14127A"
                 },
                 {
-                    "dist_mi": 0.84,
-                    "dir": "SSE",
-                    "lat": "65\u00b0 26.938' N",
-                    "lng": "156\u00b0 32.613' W",
-                    "ALLOT_STATUS": "Restricted",
-                    "ALLOT_ID": "989F17128A"
-                },
-                {
-                    "dist_mi": 0.96,
-                    "dir": "NE",
+                    "dist_mi": 0.87,
+                    "dir": "NNE",
                     "lat": "65\u00b0 44.593' N",
                     "lng": "156\u00b0 36.749' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "989F17153A"
+                },
+                {
+                    "dist_mi": 0.87,
+                    "dir": "N",
+                    "lat": "65\u00b0 33.646' N",
+                    "lng": "156\u00b0 24.671' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "989F13292A"
+                },
+                {
+                    "dist_mi": 0.88,
+                    "dir": "WSW",
+                    "lat": "65\u00b0 26.836' N",
+                    "lng": "156\u00b0 32.117' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "989F17128A"
                 },
                 {
                     "dist_mi": 0.98,
@@ -29207,39 +29241,73 @@
             "popped": 0,
             "cutoff": null
         },
-        "NtvAllot_TotalAcres": 942.29,
-        "ComsTwr_Type_AttrCount": null,
-        "ComsTwr_FeatureCount": null,
-        "ComsTwr_Locations": null,
+        "NtvAllot_TotalAcres": 1117.72,
+        "ComsTwr_Type_AttrCount": [
+            {
+                "key head": "Microwave Service",
+                "value head": 3
+            }
+        ],
+        "ComsTwr_FeatureCount": 3.0,
+        "ComsTwr_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.03,
+                    "dir": "N",
+                    "lat": "65\u00b0 32.858' N",
+                    "lng": "156\u00b0 26.722' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3632092"
+                },
+                {
+                    "dist_mi": 0.03,
+                    "dir": "N",
+                    "lat": "65\u00b0 32.858' N",
+                    "lng": "156\u00b0 26.722' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3765519"
+                },
+                {
+                    "dist_mi": 0.03,
+                    "dir": "N",
+                    "lat": "65\u00b0 32.858' N",
+                    "lng": "156\u00b0 26.722' W",
+                    "Type": "Microwave Service",
+                    "url": "http://wireless2.fcc.gov/UlsApp/UlsSearch/licenseLocSum.jsp?licKey=3892330"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "Community_FeatureCount": null,
         "Community_Locations": null,
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Koyukuk National Wildlife Refuge",
-                "value head": 88473.93
+                "value head": 89637.29
             },
             {
                 "key head": "Doyon, Limited",
-                "value head": 40493.16
+                "value head": 43360.33
             },
             {
                 "key head": "K'oyitl'ots'ina, Limited",
-                "value head": 1731.05
+                "value head": 2491.35
             },
             {
                 "key head": "Alaska Regional Office",
-                "value head": 942.29
+                "value head": 1117.72
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "USFWS": 88473.93,
-            "ANCSA": 42224.21,
-            "BIA": 942.29
+            "USFWS": 89637.29,
+            "ANCSA": 45851.68,
+            "BIA": 1117.72
         },
         "MgmtOption_AcreSum": {
-            "Modified (Jul 10)": 113861.55,
-            "Limited": 15478.12,
-            "Full": 2300.76
+            "Modified (Jul 10)": 118557.45,
+            "Limited": 15038.32,
+            "Full": 3010.92
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -29281,19 +29349,7 @@
             }
         ],
         "SpecMgmt_FeatureCount": 2.0,
-        "SpecMgmt_Locations": {
-            "features": [
-                {
-                    "dist_mi": 0.01,
-                    "dir": "ENE",
-                    "lat": "65\u00b0 32.299' N",
-                    "lng": "156\u00b0 28.333' W",
-                    "ManagementConsiderations": "Active land use permit (to DRS Tech). Contact Doyon, Limited Lands and Natural Resources Dept. for guidence."
-                }
-            ],
-            "popped": 0,
-            "cutoff": null
-        },
+        "SpecMgmt_Locations": null,
         "Railroad_NetDesc_FeetSum": null,
         "Railroad_Locations": null,
         "Railroad_TotalFeet": null,
@@ -29306,7 +29362,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-123254.936%2C1738410.071%2C3338,scale:94594",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-122941.798%2C1738519.682%2C3338,scale:95242",
         "CpxName": "Roundabout Complex",
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -29318,7 +29374,7 @@
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "ANC",
         "POOJurisdictionalUnit": "AKDYN",
-        "ICS209ReportDateTime": 1752559587000.0,
+        "ICS209ReportDateTime": 1752638896000.0,
         "ICS209ReportStatus": "F",
         "IncidentManagementOrganization": "Type 4 IC"
     },
