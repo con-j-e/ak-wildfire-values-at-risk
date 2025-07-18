@@ -7,7 +7,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1752799237403.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752799596207.0,
         "wfigs_IrwinID": "{6BA8B167-7DE3-4E13-92C9-E980D3FAB709}",
         "ReportedAcres": 0.1,
         "HasError": 0.0,
@@ -45,11 +45,16 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 0.1
+                "value head": 0.05
+            },
+            {
+                "key head": "Alaska Department of Transportation and Public Facilities",
+                "value head": 0.05
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "Private": 0.1
+            "Private": 0.05,
+            "State": 0.05
         },
         "MgmtOption_AcreSum": {
             "Critical": 0.1
@@ -60,15 +65,24 @@
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
         "Parcel_BuildingValue_AttrSum": null,
-        "Parcel_FeatureCount": 1.0,
-        "Parcel_LandValue_AttrSum": 1305.0,
+        "Parcel_FeatureCount": 2.0,
+        "Parcel_LandValue_AttrSum": 650.0,
         "Parcel_Locations": {
             "features": [
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "61\u00b0 28.515' N",
-                    "lng": "149\u00b0 44.080' W",
+                    "lat": "61\u00b0 28.524' N",
+                    "lng": "149\u00b0 44.115' W",
+                    "property_type": "NA",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "61\u00b0 28.530' N",
+                    "lng": "149\u00b0 44.102' W",
                     "property_type": "PRIVATE",
                     "property_use": "",
                     "total_value": 15000.0
@@ -79,8 +93,12 @@
         },
         "Parcel_PropType_AcreSum": [
             {
+                "key head": "NA",
+                "value head": 0.05
+            },
+            {
                 "key head": "PRIVATE",
-                "value head": 0.1
+                "value head": 0.05
             }
         ],
         "Parcel_PropUse_AcreSum": [
@@ -90,7 +108,7 @@
             }
         ],
         "Parcel_TotalAcres": 0.1,
-        "Parcel_TotalValue_AttrSum": 1305.0,
+        "Parcel_TotalValue_AttrSum": 650.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -113,44 +131,16 @@
         "Railroad_NetDesc_FeetSum": null,
         "Railroad_Locations": null,
         "Railroad_TotalFeet": null,
-        "UsaStruct_OccCls_AttrCount": [
-            {
-                "key head": "Unclassified",
-                "value head": 1
-            }
-        ],
-        "UsaStruct_PrimOcc_AttrCount": [
-            {
-                "key head": "Unclassified",
-                "value head": 1
-            }
-        ],
-        "UsaStruct_SecOcc_AttrCount": [
-            {
-                "key head": "No Data",
-                "value head": 1
-            }
-        ],
-        "UsaStruct_FeatureCount": 1.0,
-        "UsaStruct_Locations": {
-            "features": [
-                {
-                    "dist_mi": 0.0,
-                    "dir": "Interior",
-                    "lat": "61\u00b0 28.515' N",
-                    "lng": "149\u00b0 44.080' W",
-                    "OCC_CLS": "Unclassified",
-                    "PRIM_OCC": "Unclassified"
-                }
-            ],
-            "popped": 0,
-            "cutoff": null
-        },
+        "UsaStruct_OccCls_AttrCount": null,
+        "UsaStruct_PrimOcc_AttrCount": null,
+        "UsaStruct_SecOcc_AttrCount": null,
+        "UsaStruct_FeatureCount": null,
+        "UsaStruct_Locations": null,
         "WindTurb_FeatureCount": null,
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Reported Location",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:226342.484%2C1284561.719%2C3338,scale:56",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:226321.023%2C1284586.787%2C3338,scale:56",
         "CpxName": null,
         "DispatchCenterID": "AKACDC",
         "PercentContained": null,
@@ -29038,7 +29028,7 @@
         "wfigs_GISAcres": 12604.430175035875,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1751402865000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752539408930.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752799465267.0,
         "wfigs_IrwinID": "{6FD4BAE0-F1F2-4DA8-9760-A7A3FDD2587F}",
         "ReportedAcres": 12604.43,
         "HasError": 0.0,
@@ -29261,13 +29251,13 @@
         "PercentPerimeterToBeContained": 0.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 4 Incident",
-        "EstimatedCostToDate": 100000.0,
+        "EstimatedCostToDate": 144228.0,
         "TotalIncidentPersonnel": 13.0,
         "POOProtectingAgency": "DVF",
         "POOJurisdictionalAgency": "BLM",
         "POOJurisdictionalUnit": "AKEID",
-        "ICS209ReportDateTime": 1752178764000.0,
-        "ICS209ReportStatus": "U",
+        "ICS209ReportDateTime": 1752799465000.0,
+        "ICS209ReportStatus": "F",
         "IncidentManagementOrganization": "Type 4 IC"
     },
     {
