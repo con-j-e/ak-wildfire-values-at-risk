@@ -46320,12 +46320,12 @@
         "AkFireNumber": "255",
         "wfigs_IncidentName": "Christian",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 34161.202660114635,
+        "wfigs_GISAcres": 35463.0,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1752615422000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752814353223.0,
+        "wfigs_PolygonDateTime": 1752614760000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1752902114290.0,
         "wfigs_IrwinID": "{A54A4E83-26D5-492E-B913-9E4156030E41}",
-        "ReportedAcres": 34161.0,
+        "ReportedAcres": 35463.0,
         "HasError": 0.0,
         "DefaultLabel": "255-Christian, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -46343,12 +46343,12 @@
         "Runway_Ownership_AttrCount": null,
         "WeatherStation_FeatureCount": null,
         "WeatherStation_Locations": null,
-        "Aksd_MainStruct_AttrSum": null,
-        "Aksd_OtherStruct_AttrSum": null,
+        "Aksd_MainStruct_AttrSum": 6.0,
+        "Aksd_OtherStruct_AttrSum": 1.0,
         "Aksd_Protection_AttrCount": [
             {
                 "key head": "Critical",
-                "value head": 7
+                "value head": 5
             },
             {
                 "key head": "Undesignated",
@@ -46363,15 +46363,21 @@
             {
                 "key head": "Structure",
                 "value head": 9
-            },
-            {
-                "key head": "Other",
-                "value head": 2
             }
         ],
-        "Aksd_FeatureCount": 11.0,
+        "Aksd_FeatureCount": 9.0,
         "Aksd_Locations": {
             "features": [
+                {
+                    "dist_mi": 0.43,
+                    "dir": "NNW",
+                    "lat": "67\u00b0 25.083' N",
+                    "lng": "144\u00b0 33.489' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Critical",
+                    "MainStructs": 1.0,
+                    "OthrStructs": "No Data"
+                },
                 {
                     "dist_mi": 0.47,
                     "dir": "WNW",
@@ -46379,42 +46385,12 @@
                     "lng": "144\u00b0 29.462' W",
                     "SiteCat": "Structure",
                     "Protection": "Critical",
-                    "MainStructs": "No Data",
+                    "MainStructs": 1.0,
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 0.57,
-                    "dir": "N",
-                    "lat": "67\u00b0 25.083' N",
-                    "lng": "144\u00b0 33.489' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Critical",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 1.11,
-                    "dir": "NNW",
-                    "lat": "67\u00b0 25.479' N",
-                    "lng": "144\u00b0 34.429' W",
-                    "SiteCat": "Other",
-                    "Protection": "Critical",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 1.13,
-                    "dir": "NW",
-                    "lat": "67\u00b0 25.344' N",
-                    "lng": "144\u00b0 35.223' W",
-                    "SiteCat": "Other",
-                    "Protection": "Critical",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 1.2,
-                    "dir": "NNW",
+                    "dist_mi": 1.19,
+                    "dir": "WNW",
                     "lat": "67\u00b0 25.147' N",
                     "lng": "144\u00b0 36.145' W",
                     "SiteCat": "Structure",
@@ -46423,18 +46399,8 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 1.21,
-                    "dir": "NNW",
-                    "lat": "67\u00b0 25.156' N",
-                    "lng": "144\u00b0 36.151' W",
-                    "SiteCat": "Structure",
-                    "Protection": "Undesignated",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
-                },
-                {
-                    "dist_mi": 1.22,
-                    "dir": "NNW",
+                    "dist_mi": 1.19,
+                    "dir": "WNW",
                     "lat": "67\u00b0 25.162' N",
                     "lng": "144\u00b0 36.137' W",
                     "SiteCat": "Structure",
@@ -46443,8 +46409,18 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 1.23,
-                    "dir": "NNW",
+                    "dist_mi": 1.2,
+                    "dir": "WNW",
+                    "lat": "67\u00b0 25.156' N",
+                    "lng": "144\u00b0 36.151' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                },
+                {
+                    "dist_mi": 1.21,
+                    "dir": "WNW",
                     "lat": "67\u00b0 25.172' N",
                     "lng": "144\u00b0 36.149' W",
                     "SiteCat": "Structure",
@@ -46453,14 +46429,14 @@
                     "OthrStructs": "No Data"
                 },
                 {
-                    "dist_mi": 1.45,
-                    "dir": "NW",
+                    "dist_mi": 1.34,
+                    "dir": "NNW",
                     "lat": "67\u00b0 25.720' N",
                     "lng": "144\u00b0 34.866' W",
                     "SiteCat": "Structure",
                     "Protection": "Critical",
-                    "MainStructs": "No Data",
-                    "OthrStructs": "No Data"
+                    "MainStructs": 2.0,
+                    "OthrStructs": 1.0
                 },
                 {
                     "dist_mi": 1.78,
@@ -46469,7 +46445,7 @@
                     "lng": "144\u00b0 48.763' W",
                     "SiteCat": "Structure",
                     "Protection": "No Protection",
-                    "MainStructs": "No Data",
+                    "MainStructs": 1.0,
                     "OthrStructs": "No Data"
                 },
                 {
@@ -46479,7 +46455,7 @@
                     "lng": "144\u00b0 31.616' W",
                     "SiteCat": "Structure",
                     "Protection": "Critical",
-                    "MainStructs": "No Data",
+                    "MainStructs": 1.0,
                     "OthrStructs": "No Data"
                 }
             ],
@@ -46498,11 +46474,11 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Yukon Flats National Wildlife Refuge",
-                "value head": 129212.07
+                "value head": 133885.6
             },
             {
                 "key head": "Arctic National Wildlife Refuge",
-                "value head": 13331.0
+                "value head": 13971.5
             },
             {
                 "key head": "Eielson Air Force Base",
@@ -46510,12 +46486,12 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "USFWS": 142543.07,
+            "USFWS": 147857.1,
             "DOD": 5046.72
         },
         "MgmtOption_AcreSum": {
-            "Modified (Jul 10)": 78680.22,
-            "Limited": 68909.57
+            "Modified (Jul 10)": 81082.77,
+            "Limited": 71821.05
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -46566,19 +46542,19 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:403769.137%2C1961313.475%2C3338,scale:86156",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:404084.695%2C1961427.596%2C3338,scale:88818",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
         "PercentPerimeterToBeContained": 0.0,
         "FireMgmtComplexity": null,
         "IncidentComplexityLevel": "Type 5 Incident",
-        "EstimatedCostToDate": 179000.0,
+        "EstimatedCostToDate": 199789.0,
         "TotalIncidentPersonnel": 12.0,
         "POOProtectingAgency": "BLM",
         "POOJurisdictionalAgency": "USFWS",
         "POOJurisdictionalUnit": "AKYFR",
-        "ICS209ReportDateTime": 1752814353000.0,
+        "ICS209ReportDateTime": 1752902114000.0,
         "ICS209ReportStatus": "U",
         "IncidentManagementOrganization": "Type 5 IC"
     },
