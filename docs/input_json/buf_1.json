@@ -40938,10 +40938,10 @@
         "AkFireNumber": "219",
         "wfigs_IncidentName": "Red",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 9619.85,
+        "wfigs_GISAcres": 14375.73,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1752790620000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752898400910.0,
+        "wfigs_PolygonDateTime": 1752962820000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1753038438000.0,
         "wfigs_IrwinID": "{A871E713-D7B8-463E-A6DC-269F60FF0041}",
         "ReportedAcres": 9619.85,
         "HasError": 0.0,
@@ -40967,10 +40967,25 @@
         "Aksd_SiteCat_AttrCount": null,
         "Aksd_FeatureCount": null,
         "Aksd_Locations": null,
-        "NtvAllot_Status_AcreSum": null,
-        "NtvAllot_FeatureCount": null,
-        "NtvAllot_Locations": null,
-        "NtvAllot_TotalAcres": null,
+        "NtvAllot_Status_AcreSum": {
+            "Restricted": 27.6
+        },
+        "NtvAllot_FeatureCount": 1.0,
+        "NtvAllot_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.79,
+                    "dir": "S",
+                    "lat": "66\u00b0 18.790' N",
+                    "lng": "153\u00b0 48.225' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "989F15005A"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
+        "NtvAllot_TotalAcres": 27.6,
         "ComsTwr_Type_AttrCount": null,
         "ComsTwr_FeatureCount": null,
         "ComsTwr_Locations": null,
@@ -40979,14 +40994,20 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Central Yukon Field Office",
-                "value head": 28022.93
+                "value head": 33018.72
+            },
+            {
+                "key head": "Alaska Regional Office",
+                "value head": 27.6
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 28022.93
+            "BLM": 33018.72,
+            "BIA": 27.6
         },
         "MgmtOption_AcreSum": {
-            "Modified (Jul 10)": 28022.93
+            "Modified (Jul 10)": 33018.72,
+            "Full": 27.6
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -41020,17 +41041,24 @@
         "SpecMgmt_Consid_AttrCount": [
             {
                 "key head": "Contact Doyon, Limited Lands and Natural Resources Dept. for guidence.",
-                "value head": 2
+                "value head": 3
             }
         ],
-        "SpecMgmt_FeatureCount": 2.0,
+        "SpecMgmt_FeatureCount": 3.0,
         "SpecMgmt_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.92,
-                    "dir": "SSE",
-                    "lat": "66\u00b0 19.016' N",
-                    "lng": "153\u00b0 48.918' W",
+                    "dist_mi": 0.5,
+                    "dir": "SSW",
+                    "lat": "66\u00b0 19.050' N",
+                    "lng": "153\u00b0 48.609' W",
+                    "ManagementConsiderations": "Contact Doyon, Limited Lands and Natural Resources Dept. for guidence."
+                },
+                {
+                    "dist_mi": 0.79,
+                    "dir": "S",
+                    "lat": "66\u00b0 18.806' N",
+                    "lng": "153\u00b0 47.398' W",
                     "ManagementConsiderations": "Contact Doyon, Limited Lands and Natural Resources Dept. for guidence."
                 }
             ],
@@ -41049,7 +41077,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:6887.517%2C1821151.92%2C3338,scale:44716",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:7300.806%2C1821505.79%2C3338,scale:44900",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
