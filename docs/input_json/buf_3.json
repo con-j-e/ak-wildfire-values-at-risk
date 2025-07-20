@@ -73019,10 +73019,10 @@
         "AkFireNumber": "165",
         "wfigs_IncidentName": "Klikhtentotzna",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 79794.91547157487,
+        "wfigs_GISAcres": 115611.7,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1752530850000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752726210783.0,
+        "wfigs_PolygonDateTime": 1752962820000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1753037748000.0,
         "wfigs_IrwinID": "{AC5DAC11-2619-4887-B4DB-5B739E3D33F2}",
         "ReportedAcres": 79795.0,
         "HasError": 0.0,
@@ -73044,10 +73044,35 @@
         "WeatherStation_Locations": null,
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
-        "Aksd_Protection_AttrCount": null,
-        "Aksd_SiteCat_AttrCount": null,
-        "Aksd_FeatureCount": null,
-        "Aksd_Locations": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "No Protection",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Structure",
+                "value head": 1
+            }
+        ],
+        "Aksd_FeatureCount": 1.0,
+        "Aksd_Locations": {
+            "features": [
+                {
+                    "dist_mi": 2.53,
+                    "dir": "N",
+                    "lat": "66\u00b0 41.167' N",
+                    "lng": "154\u00b0 16.350' W",
+                    "SiteCat": "Structure",
+                    "Protection": "No Protection",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "NtvAllot_Status_AcreSum": null,
         "NtvAllot_FeatureCount": null,
         "NtvAllot_Locations": null,
@@ -73060,24 +73085,25 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Central Yukon Field Office",
-                "value head": 136084.02
+                "value head": 145669.6
             },
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 90865.73
+                "value head": 119525.75
             },
             {
                 "key head": "Gates of the Arctic National Park & Preserve",
-                "value head": 3762.51
+                "value head": 5853.75
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 136084.02,
-            "State": 90865.73,
-            "NPS": 3762.51
+            "BLM": 145669.6,
+            "State": 119525.75,
+            "NPS": 5853.75
         },
         "MgmtOption_AcreSum": {
-            "Limited": 230712.26
+            "Limited": 271041.99,
+            "Modified (Jul 10)": 7.11
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -73115,19 +73141,7 @@
             }
         ],
         "SpecMgmt_FeatureCount": 1.0,
-        "SpecMgmt_Locations": {
-            "features": [
-                {
-                    "dist_mi": 0.57,
-                    "dir": "NW",
-                    "lat": "66\u00b0 36.644' N",
-                    "lng": "154\u00b0 30.719' W",
-                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
-                }
-            ],
-            "popped": 0,
-            "cutoff": null
-        },
+        "SpecMgmt_Locations": null,
         "Railroad_NetDesc_FeetSum": null,
         "Railroad_Locations": null,
         "Railroad_TotalFeet": null,
@@ -73140,7 +73154,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-19768.88%2C1843273.05%2C3338,scale:111732",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-18215.113%2C1844187.903%2C3338,scale:111807",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
