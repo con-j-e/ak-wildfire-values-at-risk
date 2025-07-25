@@ -3,14 +3,14 @@
         "AkFireRegion": "MSS",
         "AkFireNumber": "471",
         "wfigs_IncidentName": "Shenandoah",
-        "FireActivityStatus": "Active",
+        "FireActivityStatus": "Contained",
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1753407010097.0,
+        "wfigs_ModifiedOnDateTime_dt": 1753407975777.0,
         "wfigs_IrwinID": "{973AB7C5-D752-4C3E-AC49-99676E1FF40B}",
-        "ReportedAcres": 0.1,
-        "HasError": 0.0,
+        "ReportedAcres": 1.0,
+        "HasError": 1.0,
         "DefaultLabel": "471-Shenandoah, Reported Location",
         "AnalysisBufferMiles": 0.0,
         "AkMine_Active_AttrCount": null,
@@ -45,70 +45,33 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Transportation and Public Facilities",
-                "value head": 0.1
+                "value head": 0.69
             },
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 0.0
+                "value head": 0.31
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 0.1,
-            "Private": 0.0
+            "State": 0.69,
+            "Private": 0.31
         },
         "MgmtOption_AcreSum": {
-            "Critical": 0.1
+            "Critical": 1.0
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
         "NpsStruct_Rating_AttrCount": null,
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
-        "Parcel_BuildingValue_AttrSum": 25.0,
-        "Parcel_FeatureCount": 2.0,
-        "Parcel_LandValue_AttrSum": 8869.0,
-        "Parcel_Locations": {
-            "features": [
-                {
-                    "dist_mi": 0.0,
-                    "dir": "Interior",
-                    "lat": "61\u00b0 35.641' N",
-                    "lng": "149\u00b0 17.139' W",
-                    "property_type": "PRIVATE",
-                    "property_use": "No Data",
-                    "total_value": 710200.0
-                },
-                {
-                    "dist_mi": 0.0,
-                    "dir": "Interior",
-                    "lat": "61\u00b0 35.647' N",
-                    "lng": "149\u00b0 17.131' W",
-                    "property_type": "STATE",
-                    "property_use": "No Data",
-                    "total_value": 84100.0
-                }
-            ],
-            "popped": 0,
-            "cutoff": null
-        },
-        "Parcel_PropType_AcreSum": [
-            {
-                "key head": "STATE",
-                "value head": 0.1
-            },
-            {
-                "key head": "PRIVATE",
-                "value head": 0.0
-            }
-        ],
-        "Parcel_PropUse_AcreSum": [
-            {
-                "key head": "No Data",
-                "value head": 0.1
-            }
-        ],
-        "Parcel_TotalAcres": 0.1,
-        "Parcel_TotalValue_AttrSum": 8894.0,
+        "Parcel_BuildingValue_AttrSum": -1.0,
+        "Parcel_FeatureCount": -1.0,
+        "Parcel_LandValue_AttrSum": -1.0,
+        "Parcel_Locations": "!error!",
+        "Parcel_PropType_AcreSum": "!error!",
+        "Parcel_PropUse_AcreSum": "!error!",
+        "Parcel_TotalAcres": -1.0,
+        "Parcel_TotalValue_AttrSum": -1.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
@@ -140,13 +103,13 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Reported Location",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:249196.831%2C1299431.947%2C3338,scale:56",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:249196.831%2C1299431.947%2C3338,scale:179",
         "CpxName": null,
         "DispatchCenterID": "AKACDC",
         "PercentContained": null,
         "PercentPerimeterToBeContained": null,
         "FireMgmtComplexity": null,
-        "IncidentComplexityLevel": null,
+        "IncidentComplexityLevel": "Type 5 Incident",
         "EstimatedCostToDate": null,
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "DVF",
