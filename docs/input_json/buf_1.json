@@ -7909,9 +7909,9 @@
         "wfigs_GISAcres": 951.7417593451206,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1753567039000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1753642544143.0,
+        "wfigs_ModifiedOnDateTime_dt": 1753650514337.0,
         "wfigs_IrwinID": "{B72A1844-EEA9-4C33-9D05-4A5D5147E677}",
-        "ReportedAcres": 816.14,
+        "ReportedAcres": 951.74,
         "HasError": 0.0,
         "DefaultLabel": "395-McQuisten, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
@@ -15974,9 +15974,9 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750650557273.0,
+        "wfigs_ModifiedOnDateTime_dt": 1753650640807.0,
         "wfigs_IrwinID": "{B6DCF48A-7929-4758-9A47-5F88FA1DD79B}",
-        "ReportedAcres": 1.0,
+        "ReportedAcres": 0.41,
         "HasError": 0.0,
         "DefaultLabel": "314-Kuchoruk, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
@@ -16012,24 +16012,24 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "NANA Regional Corporation, Incorporated",
-                "value head": 1237.56
+                "value head": 1184.82
             },
             {
                 "key head": "Anchorage Field Office",
-                "value head": 485.52
+                "value head": 490.9
             },
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 374.94
+                "value head": 389.47
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "ANCSA": 1237.56,
-            "BLM": 485.52,
-            "State": 374.94
+            "ANCSA": 1184.82,
+            "BLM": 490.9,
+            "State": 389.47
         },
         "MgmtOption_AcreSum": {
-            "Full": 2098.02
+            "Full": 2065.19
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -16075,7 +16075,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-390063.548%2C1979513.814%2C3338,scale:8216",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-390103.232%2C1979493.227%2C3338,scale:8151",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
@@ -42478,10 +42478,10 @@
         "AkFireNumber": "139",
         "wfigs_IncidentName": "Canyon",
         "FireActivityStatus": "Controlled",
-        "wfigs_GISAcres": null,
-        "wfigs_MapMethod": null,
-        "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1750310867303.0,
+        "wfigs_GISAcres": 4.810622367008112,
+        "wfigs_MapMethod": "Image Interpretation",
+        "wfigs_PolygonDateTime": 1750310891000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1753650689287.0,
         "wfigs_IrwinID": "{23555FF1-1ACB-4BD1-8E76-9E0C5208B2F3}",
         "ReportedAcres": 4.8,
         "HasError": 0.0,
@@ -42508,13 +42508,13 @@
         "Aksd_FeatureCount": null,
         "Aksd_Locations": null,
         "NtvAllot_Status_AcreSum": {
-            "Restricted": 430.0
+            "Restricted": 365.01
         },
         "NtvAllot_FeatureCount": 7.0,
         "NtvAllot_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.47,
+                    "dist_mi": 0.59,
                     "dir": "ESE",
                     "lat": "67\u00b0 03.368' N",
                     "lng": "160\u00b0 25.042' W",
@@ -42522,23 +42522,7 @@
                     "ALLOT_ID": "981F12966C"
                 },
                 {
-                    "dist_mi": 0.63,
-                    "dir": "SSW",
-                    "lat": "67\u00b0 02.957' N",
-                    "lng": "160\u00b0 26.346' W",
-                    "ALLOT_STATUS": "Restricted",
-                    "ALLOT_ID": "981F16878"
-                },
-                {
-                    "dist_mi": 0.73,
-                    "dir": "ENE",
-                    "lat": "67\u00b0 03.846' N",
-                    "lng": "160\u00b0 24.562' W",
-                    "ALLOT_STATUS": "Restricted",
-                    "ALLOT_ID": "981F17972A"
-                },
-                {
-                    "dist_mi": 0.75,
+                    "dist_mi": 0.64,
                     "dir": "NNE",
                     "lat": "67\u00b0 04.228' N",
                     "lng": "160\u00b0 25.874' W",
@@ -42546,26 +42530,42 @@
                     "ALLOT_ID": "981F17937A"
                 },
                 {
-                    "dist_mi": 0.77,
+                    "dist_mi": 0.71,
+                    "dir": "S",
+                    "lat": "67\u00b0 02.957' N",
+                    "lng": "160\u00b0 26.346' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "981F16878"
+                },
+                {
+                    "dist_mi": 0.74,
+                    "dir": "NE",
+                    "lat": "67\u00b0 04.228' N",
+                    "lng": "160\u00b0 25.325' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "981F17937A"
+                },
+                {
+                    "dist_mi": 0.76,
+                    "dir": "E",
+                    "lat": "67\u00b0 03.867' N",
+                    "lng": "160\u00b0 24.589' W",
+                    "ALLOT_STATUS": "Restricted",
+                    "ALLOT_ID": "981F17972A"
+                },
+                {
+                    "dist_mi": 0.89,
                     "dir": "SSE",
                     "lat": "67\u00b0 02.973' N",
                     "lng": "160\u00b0 25.008' W",
                     "ALLOT_STATUS": "Restricted",
                     "ALLOT_ID": "981F16882"
-                },
-                {
-                    "dist_mi": 0.81,
-                    "dir": "NNE",
-                    "lat": "67\u00b0 04.228' N",
-                    "lng": "160\u00b0 25.325' W",
-                    "ALLOT_STATUS": "Restricted",
-                    "ALLOT_ID": "981F17937A"
                 }
             ],
             "popped": 0,
             "cutoff": null
         },
-        "NtvAllot_TotalAcres": 430.0,
+        "NtvAllot_TotalAcres": 365.01,
         "ComsTwr_Type_AttrCount": null,
         "ComsTwr_FeatureCount": null,
         "ComsTwr_Locations": null,
@@ -42574,20 +42574,20 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "NANA Regional Corporation, Incorporated",
-                "value head": 1778.57
+                "value head": 1871.92
             },
             {
                 "key head": "Alaska Regional Office",
-                "value head": 430.0
+                "value head": 365.01
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "ANCSA": 1778.57,
-            "BIA": 430.0
+            "ANCSA": 1871.92,
+            "BIA": 365.01
         },
         "MgmtOption_AcreSum": {
-            "Modified (Jul 10)": 1778.57,
-            "Full": 430.0
+            "Modified (Jul 10)": 1871.92,
+            "Full": 365.01
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -42633,7 +42633,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-280929.737%2C1913759.403%2C3338,scale:8430",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-281046.403%2C1913941.902%2C3338,scale:8597",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
