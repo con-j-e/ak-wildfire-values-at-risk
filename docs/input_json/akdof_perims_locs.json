@@ -7,7 +7,7 @@
         "wfigs_GISAcres": null,
         "wfigs_MapMethod": null,
         "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1753729882863.0,
+        "wfigs_ModifiedOnDateTime_dt": 1753730506517.0,
         "wfigs_IrwinID": "{AA3ECFA5-BC06-44E6-B1EA-B31A3E13F0B7}",
         "ReportedAcres": 0.1,
         "HasError": 0.0,
@@ -45,7 +45,11 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 0.1
+                "value head": 0.06
+            },
+            {
+                "key head": "Division of Parks and Outdoor Recreation",
+                "value head": 0.04
             }
         ],
         "Jurisd_Owner_AcreSum": {
@@ -60,15 +64,24 @@
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
         "Parcel_BuildingValue_AttrSum": null,
-        "Parcel_FeatureCount": 1.0,
+        "Parcel_FeatureCount": 2.0,
         "Parcel_LandValue_AttrSum": null,
         "Parcel_Locations": {
             "features": [
                 {
                     "dist_mi": 0.0,
                     "dir": "Interior",
-                    "lat": "59\u00b0 13.581' N",
-                    "lng": "135\u00b0 25.538' W",
+                    "lat": "59\u00b0 13.554' N",
+                    "lng": "135\u00b0 25.617' W",
+                    "property_type": "STA",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 0.0,
+                    "dir": "Interior",
+                    "lat": "59\u00b0 13.562' N",
+                    "lng": "135\u00b0 25.608' W",
                     "property_type": "STA",
                     "property_use": "",
                     "total_value": "No Data"
@@ -80,16 +93,16 @@
         "Parcel_PropType_AcreSum": [
             {
                 "key head": "STA",
-                "value head": 0.1
+                "value head": 0.06
             }
         ],
         "Parcel_PropUse_AcreSum": [
             {
                 "key head": "No Data",
-                "value head": 0.1
+                "value head": 0.06
             }
         ],
-        "Parcel_TotalAcres": 0.1,
+        "Parcel_TotalAcres": 0.06,
         "Parcel_TotalValue_AttrSum": null,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
@@ -122,7 +135,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Reported Location",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:1042995.262%2C1172598.727%2C3338,scale:56",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:1042943.269%2C1172539.243%2C3338,scale:56",
         "CpxName": null,
         "DispatchCenterID": "AKTNFC",
         "PercentContained": null,
@@ -132,8 +145,8 @@
         "EstimatedCostToDate": null,
         "TotalIncidentPersonnel": null,
         "POOProtectingAgency": "USFS",
-        "POOJurisdictionalAgency": "DNR",
-        "POOJurisdictionalUnit": "AKDNS",
+        "POOJurisdictionalAgency": "DPOR",
+        "POOJurisdictionalUnit": "AKPRS",
         "ICS209ReportDateTime": null,
         "ICS209ReportStatus": null,
         "IncidentManagementOrganization": null
