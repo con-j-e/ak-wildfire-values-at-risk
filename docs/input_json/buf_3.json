@@ -7316,9 +7316,9 @@
         "wfigs_GISAcres": 404.6732852309116,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1753482414000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1753675718157.0,
+        "wfigs_ModifiedOnDateTime_dt": 1753818755793.0,
         "wfigs_IrwinID": "{A76CDCE9-7461-4C1F-89CF-4D3500345930}",
-        "ReportedAcres": 257.78,
+        "ReportedAcres": 404.67,
         "HasError": 0.0,
         "DefaultLabel": "438-Ulaneak, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -8655,12 +8655,12 @@
         "AkFireNumber": "430",
         "wfigs_IncidentName": "Reed",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 1662.8366686617767,
+        "wfigs_GISAcres": 3143.378463166981,
         "wfigs_MapMethod": "Digitized-Image",
-        "wfigs_PolygonDateTime": 1752358500000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1753067134167.0,
+        "wfigs_PolygonDateTime": 1753482409000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1753818698397.0,
         "wfigs_IrwinID": "{EF688ACE-FD49-447F-9AF6-63F48D465EF0}",
-        "ReportedAcres": 1662.84,
+        "ReportedAcres": 3143.37,
         "HasError": 0.0,
         "DefaultLabel": "430-Reed, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -8680,10 +8680,35 @@
         "WeatherStation_Locations": null,
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
-        "Aksd_Protection_AttrCount": null,
-        "Aksd_SiteCat_AttrCount": null,
-        "Aksd_FeatureCount": null,
-        "Aksd_Locations": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Full",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Structure",
+                "value head": 1
+            }
+        ],
+        "Aksd_FeatureCount": 1.0,
+        "Aksd_Locations": {
+            "features": [
+                {
+                    "dist_mi": 2.91,
+                    "dir": "SSE",
+                    "lat": "67\u00b0 00.820' N",
+                    "lng": "154\u00b0 43.766' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "NtvAllot_Status_AcreSum": null,
         "NtvAllot_FeatureCount": null,
         "NtvAllot_Locations": null,
@@ -8696,19 +8721,20 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 20532.54
+                "value head": 22831.43
             },
             {
                 "key head": "Gates of the Arctic National Park & Preserve",
-                "value head": 13356.2
+                "value head": 21120.31
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 20532.54,
-            "NPS": 13356.2
+            "State": 22811.44,
+            "NPS": 21120.31,
+            "Private": 19.99
         },
         "MgmtOption_AcreSum": {
-            "Limited": 33888.75
+            "Limited": 43951.73
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -8749,36 +8775,15 @@
         "SpecMgmt_Locations": {
             "features": [
                 {
-                    "dist_mi": 0.04,
-                    "dir": "S",
-                    "lat": "67\u00b0 03.201' N",
-                    "lng": "154\u00b0 49.088' W",
+                    "dist_mi": 0.02,
+                    "dir": "SW",
+                    "lat": "67\u00b0 03.190' N",
+                    "lng": "154\u00b0 49.053' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 0.05,
-                    "dir": "ENE",
-                    "lat": "67\u00b0 04.852' N",
-                    "lng": "154\u00b0 48.779' W",
-                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
-                },
-                {
-                    "dist_mi": 0.07,
-                    "dir": "ESE",
-                    "lat": "67\u00b0 03.306' N",
-                    "lng": "154\u00b0 48.708' W",
-                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
-                },
-                {
-                    "dist_mi": 0.1,
-                    "dir": "SSE",
-                    "lat": "67\u00b0 03.176' N",
-                    "lng": "154\u00b0 48.872' W",
-                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
-                },
-                {
-                    "dist_mi": 0.48,
-                    "dir": "S",
+                    "dist_mi": 0.36,
+                    "dir": "WSW",
                     "lat": "67\u00b0 02.827' N",
                     "lng": "154\u00b0 48.903' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
@@ -8791,10 +8796,24 @@
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
-                    "dist_mi": 1.04,
-                    "dir": "SE",
+                    "dist_mi": 0.95,
+                    "dir": "S",
+                    "lat": "67\u00b0 02.187' N",
+                    "lng": "154\u00b0 48.597' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 0.97,
+                    "dir": "SSW",
                     "lat": "67\u00b0 02.283' N",
                     "lng": "154\u00b0 49.373' W",
+                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
+                },
+                {
+                    "dist_mi": 1.0,
+                    "dir": "SSW",
+                    "lat": "67\u00b0 02.179' N",
+                    "lng": "154\u00b0 48.978' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
@@ -8809,20 +8828,6 @@
                     "dir": "SSW",
                     "lat": "67\u00b0 02.071' N",
                     "lng": "154\u00b0 51.975' W",
-                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
-                },
-                {
-                    "dist_mi": 1.19,
-                    "dir": "S",
-                    "lat": "67\u00b0 02.184' N",
-                    "lng": "154\u00b0 49.024' W",
-                    "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
-                },
-                {
-                    "dist_mi": 1.23,
-                    "dir": "S",
-                    "lat": "67\u00b0 02.187' N",
-                    "lng": "154\u00b0 48.597' W",
                     "ManagementConsiderations": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area."
                 },
                 {
@@ -8876,7 +8881,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-36221.91%2C1901380.008%2C3338,scale:34311",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-35315.278%2C1901636.915%2C3338,scale:38959",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -8900,9 +8905,9 @@
         "wfigs_GISAcres": 9076.075566780304,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1753482428000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1753553643000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1753818513640.0,
         "wfigs_IrwinID": "{8D7D1F34-97A3-485D-9FC9-BCCEC6C7D66E}",
-        "ReportedAcres": 7991.48,
+        "ReportedAcres": 9076.04,
         "HasError": 0.0,
         "DefaultLabel": "429-Anguitakada, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -9185,12 +9190,12 @@
         "AkFireNumber": "426",
         "wfigs_IncidentName": "Egaupak",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 76.32652692932282,
+        "wfigs_GISAcres": 360.99163540560426,
         "wfigs_MapMethod": "Digitized-Image",
-        "wfigs_PolygonDateTime": 1752132180000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752177500820.0,
+        "wfigs_PolygonDateTime": 1753482420000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1753818596810.0,
         "wfigs_IrwinID": "{9087191C-334F-44B4-802D-93776B00A391}",
-        "ReportedAcres": 76.33,
+        "ReportedAcres": 360.99,
         "HasError": 0.0,
         "DefaultLabel": "426-Egaupak, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -9215,13 +9220,13 @@
         "Aksd_FeatureCount": null,
         "Aksd_Locations": null,
         "NtvAllot_Status_AcreSum": {
-            "Restricted": 30.35
+            "Restricted": 30.74
         },
         "NtvAllot_FeatureCount": 1.0,
         "NtvAllot_Locations": {
             "features": [
                 {
-                    "dist_mi": 2.78,
+                    "dist_mi": 2.76,
                     "dir": "SSW",
                     "lat": "66\u00b0 46.238' N",
                     "lng": "158\u00b0 20.763' W",
@@ -9232,7 +9237,7 @@
             "popped": 0,
             "cutoff": null
         },
-        "NtvAllot_TotalAcres": 30.35,
+        "NtvAllot_TotalAcres": 30.74,
         "ComsTwr_Type_AttrCount": null,
         "ComsTwr_FeatureCount": null,
         "ComsTwr_Locations": null,
@@ -9241,20 +9246,20 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Selawik National Wildlife Refuge",
-                "value head": 21434.76
+                "value head": 25103.18
             },
             {
                 "key head": "Alaska Regional Office",
-                "value head": 30.35
+                "value head": 30.74
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "USFWS": 21434.76,
-            "BIA": 30.35
+            "USFWS": 25103.18,
+            "BIA": 30.74
         },
         "MgmtOption_AcreSum": {
-            "Limited": 21434.76,
-            "Full": 30.35
+            "Limited": 25103.18,
+            "Full": 30.74
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -9300,7 +9305,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-190971.163%2C1879362.815%2C3338,scale:26907",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-190318.949%2C1879287.421%2C3338,scale:28918",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": null,
@@ -10529,9 +10534,9 @@
         "wfigs_GISAcres": 38931.88201667457,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1753482428000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1753554402000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1753818782657.0,
         "wfigs_IrwinID": "{D359035F-B089-4A48-A445-12261E4B846D}",
-        "ReportedAcres": 35788.79,
+        "ReportedAcres": 38931.73,
         "HasError": 0.0,
         "DefaultLabel": "412-Wheeler, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -11842,9 +11847,9 @@
         "wfigs_GISAcres": 12325.587300958443,
         "wfigs_MapMethod": "Digitized-Image",
         "wfigs_PolygonDateTime": 1753482406000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1753550471857.0,
+        "wfigs_ModifiedOnDateTime_dt": 1753818725423.0,
         "wfigs_IrwinID": "{E025ACC5-A6A0-482A-9595-A84DFD1B7139}",
-        "ReportedAcres": 12325.59,
+        "ReportedAcres": 14458.56,
         "HasError": 0.0,
         "DefaultLabel": "404-Sikik, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -20661,12 +20666,12 @@
         "AkFireNumber": "339",
         "wfigs_IncidentName": "Mauneluk",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 2786.422874836666,
+        "wfigs_GISAcres": 3004.825447819191,
         "wfigs_MapMethod": "Digitized-Image",
-        "wfigs_PolygonDateTime": 1752358500000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1753468527817.0,
+        "wfigs_PolygonDateTime": 1753482414000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1753818662997.0,
         "wfigs_IrwinID": "{0A164C60-F8DF-4D86-81E0-62D4F6D70AB8}",
-        "ReportedAcres": 2786.42,
+        "ReportedAcres": 3004.81,
         "HasError": 0.0,
         "DefaultLabel": "339-Mauneluk, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
@@ -20702,14 +20707,14 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 39345.22
+                "value head": 40840.78
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 39345.22
+            "State": 40840.78
         },
         "MgmtOption_AcreSum": {
-            "Limited": 27328.0,
+            "Limited": 28823.56,
             "Modified (Jul 10)": 12017.22
         },
         "NpsStruct_Use_AttrCount": null,
@@ -20756,7 +20761,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 3 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-85566.064%2C1911258.75%2C3338,scale:35767",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-85392.864%2C1911331.109%2C3338,scale:36789",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -46721,7 +46726,7 @@
         "wfigs_GISAcres": 6056.6130956610905,
         "wfigs_MapMethod": "GPS-Flight",
         "wfigs_PolygonDateTime": 1753477200000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1753764211453.0,
+        "wfigs_ModifiedOnDateTime_dt": 1753818651540.0,
         "wfigs_IrwinID": "{3DC21EB7-7323-497D-B5AB-BFB16EC65599}",
         "ReportedAcres": 6056.59,
         "HasError": 0.0,
@@ -61585,9 +61590,9 @@
         "wfigs_GISAcres": 4.810622367008112,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1750310891000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1753650689287.0,
+        "wfigs_ModifiedOnDateTime_dt": 1753818544807.0,
         "wfigs_IrwinID": "{23555FF1-1ACB-4BD1-8E76-9E0C5208B2F3}",
-        "ReportedAcres": 4.8,
+        "ReportedAcres": 4.81,
         "HasError": 0.0,
         "DefaultLabel": "139-Canyon, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
