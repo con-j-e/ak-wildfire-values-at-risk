@@ -10,7 +10,7 @@
         "wfigs_ModifiedOnDateTime_dt": 1753914165133.0,
         "wfigs_IrwinID": "{D6DB12CE-7237-4AAC-9D28-4D7C1DD02CED}",
         "ReportedAcres": 0.1,
-        "HasError": 1.0,
+        "HasError": 0.0,
         "DefaultLabel": "478-Tanana River Trail, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
         "AkMine_Active_AttrCount": null,
@@ -329,9 +329,9 @@
             "cutoff": 0.66
         },
         "AkPowerLine_TotalFeet": 40125.0,
-        "Runway_FeatureCount": -1.0,
-        "Runway_Locations": "!error!",
-        "Runway_Ownership_AttrCount": "!error!",
+        "Runway_FeatureCount": null,
+        "Runway_Locations": null,
+        "Runway_Ownership_AttrCount": null,
         "WeatherStation_FeatureCount": null,
         "WeatherStation_Locations": null,
         "Aksd_MainStruct_AttrSum": null,
@@ -416,21 +416,345 @@
             "BIA": 0.54
         },
         "MgmtOption_AcreSum": {
-            "!error!": "!error!"
+            "Critical": 1962.05,
+            "Limited": 73.78
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
         "NpsStruct_Rating_AttrCount": null,
         "NpsStruct_FeatureCount": null,
         "NpsStruct_Locations": null,
-        "Parcel_BuildingValue_AttrSum": -1.0,
-        "Parcel_FeatureCount": -1.0,
-        "Parcel_LandValue_AttrSum": -1.0,
-        "Parcel_Locations": "!error!",
-        "Parcel_PropType_AcreSum": "!error!",
-        "Parcel_PropUse_AcreSum": "!error!",
-        "Parcel_TotalAcres": -1.0,
-        "Parcel_TotalValue_AttrSum": -1.0,
+        "Parcel_BuildingValue_AttrSum": 23651475.0,
+        "Parcel_FeatureCount": 230.0,
+        "Parcel_LandValue_AttrSum": 62213780.0,
+        "Parcel_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.0,
+                    "dir": "WSW",
+                    "lat": "64\u00b0 47.796' N",
+                    "lng": "147\u00b0 54.640' W",
+                    "property_type": "Waterway",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 0.1,
+                    "dir": "NW",
+                    "lat": "64\u00b0 47.874' N",
+                    "lng": "147\u00b0 54.738' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Vacant Land",
+                    "total_value": 72951.0
+                },
+                {
+                    "dist_mi": 0.12,
+                    "dir": "N",
+                    "lat": "64\u00b0 47.911' N",
+                    "lng": "147\u00b0 54.609' W",
+                    "property_type": "Government Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 224576.0
+                },
+                {
+                    "dist_mi": 0.16,
+                    "dir": "ESE",
+                    "lat": "64\u00b0 47.756' N",
+                    "lng": "147\u00b0 54.306' W",
+                    "property_type": "Lot",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 0.17,
+                    "dir": "SSE",
+                    "lat": "64\u00b0 47.655' N",
+                    "lng": "147\u00b0 54.497' W",
+                    "property_type": "Government Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 15600.0
+                },
+                {
+                    "dist_mi": 0.18,
+                    "dir": "ESE",
+                    "lat": "64\u00b0 47.732' N",
+                    "lng": "147\u00b0 54.277' W",
+                    "property_type": "Government Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 6400.0
+                },
+                {
+                    "dist_mi": 0.19,
+                    "dir": "ESE",
+                    "lat": "64\u00b0 47.749' N",
+                    "lng": "147\u00b0 54.245' W",
+                    "property_type": "Roadway",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 0.2,
+                    "dir": "ENE",
+                    "lat": "64\u00b0 47.831' N",
+                    "lng": "147\u00b0 54.195' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 165200.0
+                },
+                {
+                    "dist_mi": 0.2,
+                    "dir": "E",
+                    "lat": "64\u00b0 47.798' N",
+                    "lng": "147\u00b0 54.195' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 208224.0
+                },
+                {
+                    "dist_mi": 0.21,
+                    "dir": "ESE",
+                    "lat": "64\u00b0 47.738' N",
+                    "lng": "147\u00b0 54.195' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 208224.0
+                },
+                {
+                    "dist_mi": 0.21,
+                    "dir": "ESE",
+                    "lat": "64\u00b0 47.738' N",
+                    "lng": "147\u00b0 54.195' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 165200.0
+                },
+                {
+                    "dist_mi": 0.24,
+                    "dir": "NW",
+                    "lat": "64\u00b0 47.977' N",
+                    "lng": "147\u00b0 54.897' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Commercial",
+                    "total_value": 419102.0
+                },
+                {
+                    "dist_mi": 0.24,
+                    "dir": "NE",
+                    "lat": "64\u00b0 47.912' N",
+                    "lng": "147\u00b0 54.196' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 128000.0
+                },
+                {
+                    "dist_mi": 0.26,
+                    "dir": "SE",
+                    "lat": "64\u00b0 47.652' N",
+                    "lng": "147\u00b0 54.195' W",
+                    "property_type": "Government Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 12352.0
+                },
+                {
+                    "dist_mi": 0.26,
+                    "dir": "NNW",
+                    "lat": "64\u00b0 48.031' N",
+                    "lng": "147\u00b0 54.703' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 27240.0
+                },
+                {
+                    "dist_mi": 0.36,
+                    "dir": "SSW",
+                    "lat": "64\u00b0 47.526' N",
+                    "lng": "147\u00b0 55.003' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Vacant Land",
+                    "total_value": 57070.0
+                },
+                {
+                    "dist_mi": 0.37,
+                    "dir": "N",
+                    "lat": "64\u00b0 48.130' N",
+                    "lng": "147\u00b0 54.614' W",
+                    "property_type": "Government Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 118624.0
+                },
+                {
+                    "dist_mi": 0.38,
+                    "dir": "NW",
+                    "lat": "64\u00b0 48.014' N",
+                    "lng": "147\u00b0 55.216' W",
+                    "property_type": "Tract",
+                    "property_use": "Residential",
+                    "total_value": 870439.0
+                },
+                {
+                    "dist_mi": 0.38,
+                    "dir": "NNW",
+                    "lat": "64\u00b0 48.130' N",
+                    "lng": "147\u00b0 54.709' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 63600.0
+                },
+                {
+                    "dist_mi": 0.39,
+                    "dir": "SSW",
+                    "lat": "64\u00b0 47.478' N",
+                    "lng": "147\u00b0 54.873' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 160676.0
+                },
+                {
+                    "dist_mi": 0.4,
+                    "dir": "ENE",
+                    "lat": "64\u00b0 47.860' N",
+                    "lng": "147\u00b0 53.802' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 25515000.0
+                },
+                {
+                    "dist_mi": 0.4,
+                    "dir": "NNW",
+                    "lat": "64\u00b0 48.130' N",
+                    "lng": "147\u00b0 54.928' W",
+                    "property_type": "Lot",
+                    "property_use": "Vacant Land",
+                    "total_value": 65737.0
+                },
+                {
+                    "dist_mi": 0.42,
+                    "dir": "E",
+                    "lat": "64\u00b0 47.695' N",
+                    "lng": "147\u00b0 53.784' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 208224.0
+                },
+                {
+                    "dist_mi": 0.42,
+                    "dir": "WSW",
+                    "lat": "64\u00b0 47.712' N",
+                    "lng": "147\u00b0 55.467' W",
+                    "property_type": "Government Lot",
+                    "property_use": "Vacant Land",
+                    "total_value": 57070.0
+                },
+                {
+                    "dist_mi": 0.43,
+                    "dir": "NNE",
+                    "lat": "64\u00b0 48.128' N",
+                    "lng": "147\u00b0 54.198' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 128000.0
+                },
+                {
+                    "dist_mi": 0.43,
+                    "dir": "NW",
+                    "lat": "64\u00b0 48.130' N",
+                    "lng": "147\u00b0 55.057' W",
+                    "property_type": "Roadway",
+                    "property_use": "",
+                    "total_value": "No Data"
+                },
+                {
+                    "dist_mi": 0.43,
+                    "dir": "NNW",
+                    "lat": "64\u00b0 48.149' N",
+                    "lng": "147\u00b0 54.940' W",
+                    "property_type": "Lot",
+                    "property_use": "Residential",
+                    "total_value": 591047.0
+                },
+                {
+                    "dist_mi": 0.44,
+                    "dir": "S",
+                    "lat": "64\u00b0 47.426' N",
+                    "lng": "147\u00b0 54.870' W",
+                    "property_type": "Tax Lot",
+                    "property_use": "Exempt ",
+                    "total_value": 160676.0
+                }
+            ],
+            "popped": 9982,
+            "cutoff": 0.44
+        },
+        "Parcel_PropType_AcreSum": [
+            {
+                "key head": "Waterway",
+                "value head": 641.23
+            },
+            {
+                "key head": "Tax Lot",
+                "value head": 559.28
+            },
+            {
+                "key head": "Government Lot",
+                "value head": 433.88
+            },
+            {
+                "key head": "Lot",
+                "value head": 272.94
+            },
+            {
+                "key head": "Tract",
+                "value head": 86.14
+            },
+            {
+                "key head": "Roadway",
+                "value head": 47.0
+            },
+            {
+                "key head": "Railroad",
+                "value head": 13.56
+            }
+        ],
+        "Parcel_PropUse_AcreSum": [
+            {
+                "key head": "Exempt ",
+                "value head": 902.29
+            },
+            {
+                "key head": "No Data",
+                "value head": 695.45
+            },
+            {
+                "key head": "Vacant Land",
+                "value head": 150.23
+            },
+            {
+                "key head": "Residential",
+                "value head": 143.2
+            },
+            {
+                "key head": "Multi-Family",
+                "value head": 97.14
+            },
+            {
+                "key head": "Commercial",
+                "value head": 31.61
+            },
+            {
+                "key head": "Industrial",
+                "value head": 24.51
+            },
+            {
+                "key head": "Other (Misc.)",
+                "value head": 6.53
+            },
+            {
+                "key head": "Assembled",
+                "value head": 3.07
+            }
+        ],
+        "Parcel_TotalAcres": 2054.04,
+        "Parcel_TotalValue_AttrSum": 85865256.0,
         "PetrolTerm_Company_AttrCount": null,
         "PetrolTerm_FeatureCount": null,
         "PetrolTerm_Locations": null,
