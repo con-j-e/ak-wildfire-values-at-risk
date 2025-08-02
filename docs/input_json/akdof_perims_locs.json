@@ -4038,10 +4038,10 @@
         "AkFireNumber": "410",
         "wfigs_IncidentName": "Kaliguricheark",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 11761.447707611826,
-        "wfigs_MapMethod": "Mixed Methods",
-        "wfigs_PolygonDateTime": 1753482420000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1754086498513.0,
+        "wfigs_GISAcres": 11479.17,
+        "wfigs_MapMethod": "Image Interpretation",
+        "wfigs_PolygonDateTime": 1754087760000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1754169636000.0,
         "wfigs_IrwinID": "{DD437316-D5C3-497A-99DC-160995008285}",
         "ReportedAcres": 11858.58,
         "HasError": 0.0,
@@ -4079,15 +4079,15 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Kobuk Valley National Park",
-                "value head": 11761.44
+                "value head": 11479.16
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "NPS": 11761.44
+            "NPS": 11479.16
         },
         "MgmtOption_AcreSum": {
-            "Modified (Jul 10)": 8161.87,
-            "Limited": 3599.57
+            "Modified (Jul 10)": 7814.82,
+            "Limited": 3664.34
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -4133,7 +4133,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-220379.92%2C1930142.796%2C3338,scale:38025",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:-220385.061%2C1930289.863%2C3338,scale:37958",
         "CpxName": "Goldrun Complex",
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -12387,8 +12387,8 @@
         "FireActivityStatus": "Active",
         "wfigs_GISAcres": 20471.032979970863,
         "wfigs_MapMethod": "Digitized-Image",
-        "wfigs_PolygonDateTime": 1752948000000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1753903256377.0,
+        "wfigs_PolygonDateTime": 1753473600000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1754169598000.0,
         "wfigs_IrwinID": "{83997F1E-7D1C-4E08-9E41-DE41920B5929}",
         "ReportedAcres": 20470.95,
         "HasError": 0.0,
@@ -16687,8 +16687,8 @@
         "FireActivityStatus": "Active",
         "wfigs_GISAcres": 12572.364290662556,
         "wfigs_MapMethod": "Mixed Methods",
-        "wfigs_PolygonDateTime": 1753722408000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1753903206723.0,
+        "wfigs_PolygonDateTime": 1753819608000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1754169564000.0,
         "wfigs_IrwinID": "{2E74E7EC-3BE4-4C52-89C0-6E3CA1E4D999}",
         "ReportedAcres": 12572.31,
         "HasError": 0.0,
@@ -17316,7 +17316,7 @@
         "NpsStruct_Locations": null,
         "Parcel_BuildingValue_AttrSum": 1826833.0,
         "Parcel_FeatureCount": 63.0,
-        "Parcel_LandValue_AttrSum": 18049953.0,
+        "Parcel_LandValue_AttrSum": 18049954.0,
         "Parcel_Locations": {
             "features": [
                 {
@@ -17325,7 +17325,7 @@
                     "lat": "64\u00b0 39.536' N",
                     "lng": "148\u00b0 27.628' W",
                     "property_type": "Waterway",
-                    "property_use": "",
+                    "property_use": "No Data",
                     "total_value": "No Data"
                 },
                 {
@@ -17424,7 +17424,7 @@
                     "lat": "64\u00b0 42.507' N",
                     "lng": "148\u00b0 31.240' W",
                     "property_type": "Lot",
-                    "property_use": "Residential",
+                    "property_use": "Other (Misc.)",
                     "total_value": 18726.0
                 },
                 {
@@ -17496,7 +17496,7 @@
                     "lat": "64\u00b0 44.327' N",
                     "lng": "148\u00b0 25.354' W",
                     "property_type": "Roadway",
-                    "property_use": "",
+                    "property_use": "No Data",
                     "total_value": "No Data"
                 },
                 {
@@ -17561,18 +17561,9 @@
                     "property_type": "Government Lot",
                     "property_use": "Exempt ",
                     "total_value": 25599.0
-                },
-                {
-                    "dist_mi": 0.0,
-                    "dir": "Interior",
-                    "lat": "64\u00b0 39.726' N",
-                    "lng": "148\u00b0 26.789' W",
-                    "property_type": "Waterway",
-                    "property_use": "",
-                    "total_value": "No Data"
                 }
             ],
-            "popped": 35,
+            "popped": 36,
             "cutoff": 0.0
         },
         "Parcel_PropType_AcreSum": [
@@ -17612,11 +17603,15 @@
             },
             {
                 "key head": "Residential",
-                "value head": 39.02
+                "value head": 26.83
             },
             {
                 "key head": "No Data",
                 "value head": 19.78
+            },
+            {
+                "key head": "Other (Misc.)",
+                "value head": 12.19
             },
             {
                 "key head": "Commercial",
@@ -17654,7 +17649,7 @@
                 "value head": 0.38
             }
         ],
-        "Silviculture_TotalValue_AttrSum": 13071.0,
+        "Silviculture_TotalValue_AttrSum": 8866.0,
         "Silviculture_FeatureCount": 14.0,
         "Silviculture_Locations": {
             "features": [
@@ -17772,7 +17767,7 @@
                     "lat": "64\u00b0 41.729' N",
                     "lng": "148\u00b0 34.460' W",
                     "STATUS": "Active",
-                    "TOTAL_VALUE": 4205.34,
+                    "TOTAL_VALUE": 0.0,
                     "SALE_NAME": "Fudge Neg 2023"
                 },
                 {
