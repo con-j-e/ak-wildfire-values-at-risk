@@ -4,12 +4,12 @@
         "AkFireNumber": "484",
         "wfigs_IncidentName": "Medicine",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": null,
-        "wfigs_MapMethod": null,
-        "wfigs_PolygonDateTime": null,
-        "wfigs_ModifiedOnDateTime_dt": 1754374507203.0,
+        "wfigs_GISAcres": 421.5764540002311,
+        "wfigs_MapMethod": "Image Interpretation",
+        "wfigs_PolygonDateTime": 1754343439000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1754422127563.0,
         "wfigs_IrwinID": "{AF3FED53-0DF9-4F84-833B-218F12FE1C7E}",
-        "ReportedAcres": 1000.0,
+        "ReportedAcres": 484.0,
         "HasError": 0.0,
         "DefaultLabel": "484-Medicine, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
@@ -29,10 +29,35 @@
         "WeatherStation_Locations": null,
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
-        "Aksd_Protection_AttrCount": null,
-        "Aksd_SiteCat_AttrCount": null,
-        "Aksd_FeatureCount": null,
-        "Aksd_Locations": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Undesignated",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Structure",
+                "value head": 1
+            }
+        ],
+        "Aksd_FeatureCount": 1.0,
+        "Aksd_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.98,
+                    "dir": "SE",
+                    "lat": "65\u00b0 24.860' N",
+                    "lng": "144\u00b0 16.240' W",
+                    "SiteCat": "Structure",
+                    "Protection": "Undesignated",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "NtvAllot_Status_AcreSum": null,
         "NtvAllot_FeatureCount": null,
         "NtvAllot_Locations": null,
@@ -45,20 +70,20 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Eastern Interior Field Office",
-                "value head": 4349.26
+                "value head": 4495.91
             },
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 1491.29
+                "value head": 295.65
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "BLM": 4349.26,
-            "State": 1491.29
+            "BLM": 4495.91,
+            "State": 295.65
         },
         "MgmtOption_AcreSum": {
-            "Limited": 5722.76,
-            "Modified (Jul 10)": 117.79
+            "Limited": 4736.72,
+            "Modified (Jul 10)": 54.84
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -104,7 +129,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:448281.938%2C1751847.468%2C3338,scale:13711",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:448939.457%2C1752042.538%2C3338,scale:13029",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -9881,12 +9906,12 @@
         "AkFireNumber": "382",
         "wfigs_IncidentName": "Tsukon",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 1423.5853691672594,
+        "wfigs_GISAcres": 1483.246026643375,
         "wfigs_MapMethod": "Image Interpretation",
-        "wfigs_PolygonDateTime": 1753219624000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1754282999240.0,
+        "wfigs_PolygonDateTime": 1754343419000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1754422097313.0,
         "wfigs_IrwinID": "{8D2156D5-7FF7-487A-8CC6-CF2BB15CDC3E}",
-        "ReportedAcres": 1423.58,
+        "ReportedAcres": 1483.0,
         "HasError": 0.0,
         "DefaultLabel": "382-Tsukon, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
@@ -9922,7 +9947,7 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Venetie Indian And Neets Ai Corporation",
-                "value head": 8834.79
+                "value head": 8932.98
             },
             {
                 "key head": "Yukon Flats National Wildlife Refuge",
@@ -9930,11 +9955,11 @@
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "ANCSA": 8834.79,
+            "ANCSA": 8932.98,
             "USFWS": 582.21
         },
         "MgmtOption_AcreSum": {
-            "Full": 8876.18,
+            "Full": 8974.37,
             "Limited": 540.82
         },
         "NpsStruct_Use_AttrCount": null,
@@ -9981,7 +10006,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " 1 Mile Buffer",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:351138.639%2C1895922.869%2C3338,scale:20670",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:351135.017%2C1895939.562%2C3338,scale:20670",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
@@ -17290,9 +17315,9 @@
         "wfigs_GISAcres": 7942.6635883741865,
         "wfigs_MapMethod": "Image Interpretation",
         "wfigs_PolygonDateTime": 1753565803000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1754421045000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1754422072547.0,
         "wfigs_IrwinID": "{B1FC52FF-4743-4BA3-BC6F-D3A6E8C43BBA}",
-        "ReportedAcres": 7942.63,
+        "ReportedAcres": 7943.0,
         "HasError": 0.0,
         "DefaultLabel": "297-Yellow, 1 Mile Buffer",
         "AnalysisBufferMiles": 1.0,
