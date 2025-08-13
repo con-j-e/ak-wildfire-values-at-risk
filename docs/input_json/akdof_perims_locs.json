@@ -11293,12 +11293,12 @@
         "AkFireNumber": "273",
         "wfigs_IncidentName": "Porphyry",
         "FireActivityStatus": "Active",
-        "wfigs_GISAcres": 2641.275391782885,
+        "wfigs_GISAcres": 5101.08,
         "wfigs_MapMethod": "Digitized-Image",
-        "wfigs_PolygonDateTime": 1750574100000.0,
-        "wfigs_ModifiedOnDateTime_dt": 1752102615447.0,
+        "wfigs_PolygonDateTime": 1751663700000.0,
+        "wfigs_ModifiedOnDateTime_dt": 1755122315113.0,
         "wfigs_IrwinID": "{BD31C4A6-6C96-4E70-939A-2E1563BE768D}",
-        "ReportedAcres": 2641.26,
+        "ReportedAcres": 5101.08,
         "HasError": 0.0,
         "DefaultLabel": "273-Porphyry, Perimeter",
         "AnalysisBufferMiles": 0.0,
@@ -11318,10 +11318,35 @@
         "WeatherStation_Locations": null,
         "Aksd_MainStruct_AttrSum": null,
         "Aksd_OtherStruct_AttrSum": null,
-        "Aksd_Protection_AttrCount": null,
-        "Aksd_SiteCat_AttrCount": null,
-        "Aksd_FeatureCount": null,
-        "Aksd_Locations": null,
+        "Aksd_Protection_AttrCount": [
+            {
+                "key head": "Full",
+                "value head": 1
+            }
+        ],
+        "Aksd_SiteCat_AttrCount": [
+            {
+                "key head": "Other",
+                "value head": 1
+            }
+        ],
+        "Aksd_FeatureCount": 1.0,
+        "Aksd_Locations": {
+            "features": [
+                {
+                    "dist_mi": 0.19,
+                    "dir": "Interior",
+                    "lat": "64\u00b0 11.250' N",
+                    "lng": "142\u00b0 32.750' W",
+                    "SiteCat": "Other",
+                    "Protection": "Full",
+                    "MainStructs": "No Data",
+                    "OthrStructs": "No Data"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "NtvAllot_Status_AcreSum": null,
         "NtvAllot_FeatureCount": null,
         "NtvAllot_Locations": null,
@@ -11334,14 +11359,19 @@
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
-                "value head": 2641.27
+                "value head": 4740.02
+            },
+            {
+                "key head": "Doyon, Limited",
+                "value head": 361.06
             }
         ],
         "Jurisd_Owner_AcreSum": {
-            "State": 2641.27
+            "State": 4740.02,
+            "ANCSA": 361.06
         },
         "MgmtOption_AcreSum": {
-            "Limited": 2641.27
+            "Limited": 5101.08
         },
         "NpsStruct_Use_AttrCount": null,
         "NpsStruct_Protection_AttrCount": null,
@@ -11387,7 +11417,7 @@
         "WindTurb_Locations": null,
         "WindTurb_ProjName_AttrCount": null,
         "SpatialInfoType": " Perimeter",
-        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:552604.492%2C1629530.896%2C3338,scale:13410",
+        "VarAppURL": "https://experience.arcgis.com/experience/e44a6857abe84578971add4c5f862c7d/page/VALUES-AT-RISK/#widget_1=center:552327.339%2C1628586.554%2C3338,scale:18976",
         "CpxName": null,
         "DispatchCenterID": "AKYFDC",
         "PercentContained": 0.0,
