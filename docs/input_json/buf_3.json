@@ -10,7 +10,7 @@
         "wfigs_ModifiedOnDateTime_dt": 1755465331943.0,
         "wfigs_IrwinID": "{83DCA10E-1457-4E0C-84A1-8D4FBAF41BE4}",
         "ReportedAcres": 0.1,
-        "HasError": 1.0,
+        "HasError": 0.0,
         "DefaultLabel": "511-Halibut, 3 Mile Buffer",
         "AnalysisBufferMiles": 3.0,
         "AkMine_Active_AttrCount": null,
@@ -689,8 +689,20 @@
             "popped": 135,
             "cutoff": 2.65
         },
-        "Community_FeatureCount": -1.0,
-        "Community_Locations": "!error!",
+        "Community_FeatureCount": 1.0,
+        "Community_Locations": {
+            "features": [
+                {
+                    "dist_mi": 1.0,
+                    "dir": "NNW",
+                    "lat": "59\u00b0 40.018' N",
+                    "lng": "151\u00b0 27.163' W",
+                    "CommunityName": "Kachemak"
+                }
+            ],
+            "popped": 0,
+            "cutoff": null
+        },
         "Jurisd_Unit_AcreSum": [
             {
                 "key head": "Alaska Department of Natural Resources",
@@ -1085,11 +1097,11 @@
         "PowerPlant_FeatureCount": null,
         "PowerPlant_Locations": null,
         "PowerPlant_SectorName_AttrCount": null,
-        "Silviculture_Status_AcreSum": "!error!",
-        "Silviculture_TotalValue_AttrSum": -1.0,
-        "Silviculture_FeatureCount": -1.0,
-        "Silviculture_Locations": "!error!",
-        "Silviculture_TotalAcres": -1.0,
+        "Silviculture_Status_AcreSum": null,
+        "Silviculture_TotalValue_AttrSum": null,
+        "Silviculture_FeatureCount": null,
+        "Silviculture_Locations": null,
+        "Silviculture_TotalAcres": null,
         "SpecMgmt_Consid_AttrCount": [
             {
                 "key head": "Contact the Office of History and Archaeology at (907) 269-8718 or 907 269-8720. No digging, heavy machinery in or near area.",
