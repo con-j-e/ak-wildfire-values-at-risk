@@ -45,3 +45,38 @@ td {
 .buffer-links a:hover {
     color: #007bff;
 }
+
+/* Seasonal Notice Styling */
+.season-notice {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    color: white;
+    padding: 16px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    border-left: 4px solid #d35400;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.season-notice i {
+    font-size: 20px;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.season-notice p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.season-notice a {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: rgba(255,255,255,0.7);
+}
+
+.season-notice a:hover {
+    text-decoration-color: #fff;
+}
