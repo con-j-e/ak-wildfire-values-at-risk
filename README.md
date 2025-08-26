@@ -1,3 +1,6 @@
+## ⚠️ Notice
+With Alaska's fire season winding down, this project is no longer pushing automatic updates. Personnel seeking updated information about a specific incident are encouraged to reach out to [ak_fire_gis@alaska.gov](mailto:ak_fire_gis@alaska.gov).
+
 ## About
 This project aims to expedite an initial assessment of land and infrastructure values that may be impacted by, or are in proximity to, active wildfires in Alaska. The data provided by this assessment should not be viewed as final and authoritative, as development is ongoing throughout the 2025 fire season. Additionally, because input data sources and user needs are expected to change over time, the current configuration and implementation details are likely to change as well.
 
