@@ -66,34 +66,45 @@ def main():
 
         #REGION PREPARE WFIGS INPUTS
 
+        # 20250626 0936 AKT getting {"error": {"code": 500, "message": "Unauthorized access", "details": ["Unauthorized access"]}} from WFIGS interagency perimeters service
+        # previously this was a publicly accessible endpoint
+        # passing `testing=True` to provide a NIFC token for accessing WFIGS features 
+            # this optional kwarg was previously in place for when I was querying private WFIGS proxy services used during development
         wfigs_points, wfigs_polys, irwins_with_errors, check_json_pickles, exception = asyncio.run(
             get_wfigs_updates(
                 r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/AK_Wildfire_Values_at_Risk/FeatureServer',
                 r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_YearToDate/FeatureServer/0',
                 r'https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Interagency_Perimeters_YearToDate/FeatureServer/0',
                 token_dict['nifc'],
-                testing=False
+                testing=True
             )
         )
 
         # any error during get_wfigs_updates() will have the same implications for main
         # wfigs_points and/or wfigs_polys will remain None
         # so log the error and exit with code 1, no work should be done during this cycle
-        if wfigs_points is None or wfigs_polys is None:
-            logger.critical('Unable to retrieve WFIGS updates... exiting with code 1.')
-            if exception:
-                logger.critical(format_logged_exception(*exception))
-            sys.exit(1)
-        else:
-            logger.info(
-                json.dumps(
-                    {
-                        'WFIGS points retrieved': len(wfigs_points['features']),
-                        'WFIGS polygons retrieved': len(wfigs_polys['features'])
-                    }
+        try:
+            if wfigs_points is None or wfigs_polys is None:
+                logger.critical('Unable to retrieve WFIGS updates... exiting with code 1.')
+                if exception:
+                    logger.critical(format_logged_exception(*exception))
+                sys.exit(1)
+            else:
+                logger.info(
+                    json.dumps(
+                        {
+                            'WFIGS points retrieved': len(wfigs_points['features']),
+                            'WFIGS polygons retrieved': len(wfigs_polys['features'])
+                        }
+                    )
                 )
-            )
-        
+        except KeyError as e:
+            logger.info(json.dumps(wfigs_points))
+            logger.info(json.dumps(wfigs_polys))
+            exc_type, exc_val, exc_tb = type(e), e, e.__traceback__
+            logger.critical(format_logged_exception(exc_type, exc_val, exc_tb))
+            sys.exit(1)
+
         wfigs_cache = proj_dir / 'wfigs_json_pickles'
         wfigs_points['features'] = prevent_perimeter_overwrite_by_point(wfigs_cache, wfigs_points['features'])
 
@@ -134,6 +145,20 @@ def main():
             sys.exit(0)
 
         analysis_gdf = create_analysis_gdf(wfigs_points_gdf, wfigs_polys_gdf)
+
+        # 20250825 edge case
+        # a single wfigs feature was missing IrwinID
+        # a missing IrwinID will break downstream processing logic
+        analysis_gdf = analysis_gdf[analysis_gdf["IrwinID"].notna()]
+
+        # quick fix to handle large backlog of features to process
+        """
+        analysis_gdf = analysis_gdf.sort_values(by='ModifiedOnDateTime_dt').head(32)
+        analysis_gdf.to_csv("analysis_gdf.csv")
+        irwin_val_counts = analysis_gdf['IrwinID'].value_counts()
+        assert (irwin_val_counts == 4).all(), "unexpected counts!"
+        logger.info(f"proceeding with {len(analysis_gdf)} features for this analysis cycle.")
+        """
 
         # this is not relevant to any core functionality
         acdc_update_email(analysis_gdf, sender, recipient, password)

@@ -8,6 +8,7 @@ import pandas as pd
 import pytz
 import sys
 import traceback
+import time
 
 from utils.general import basic_file_logger, format_logged_exception, send_email
 from utils.arcgis_helpers import AsyncArcGISRequester, arcgis_features_to_dataframe, arcgis_features_to_gdf, checkout_token
@@ -42,10 +43,10 @@ async def get_recent_fires_info(dof_perims_locs_url: str, wfigs_locs_url: str, q
             # If an input feature service remains down for an extended period,
             # continually attempting to reprocess the accumulating AK WF VAR features that have had a query error during prior processing
             # becomes extremely inefficient / potentially burdensome on external resources.
-            # Limiting the number of error-having features which can be reprocessed during each cycle to 5
+            # Limiting the number of error-having features which can be reprocessed during each cycle
             # addresses this problem while still enabling the service to incrementally self-correct any information gaps that exist due to prior processing errors.
         irwins_with_errors = list(irwins_with_errors)
-        irwins_with_errors = irwins_with_errors[:5]
+        irwins_with_errors = irwins_with_errors[:10]
 
         if irwins_with_errors:
             where_clause = f"""wfigs_ModifiedOnDateTime_dt >= timestamp '{query_timestamp}' OR
@@ -113,7 +114,7 @@ async def get_recent_fires_info(dof_perims_locs_url: str, wfigs_locs_url: str, q
             )
 
             wfigs_query_irwins_chunks = list(wfigs_query_irwins)
-            wfigs_query_irwins_chunks = [tuple(wfigs_query_irwins_chunks[i: i + 10]) for i in range(0, len(wfigs_query_irwins_chunks), 10)]
+            wfigs_query_irwins_chunks = [tuple(wfigs_query_irwins_chunks[i: i + 20]) for i in range(0, len(wfigs_query_irwins_chunks), 20)]
 
             wfigs_locs_features = list()
             for irwins_chunk in wfigs_query_irwins_chunks:
@@ -132,6 +133,7 @@ async def get_recent_fires_info(dof_perims_locs_url: str, wfigs_locs_url: str, q
                     operation='query?'
                 )
                 wfigs_locs_features.extend(wfigs_locs['features'])
+                time.sleep(5)
 
             wfigs_locs = {'features': wfigs_locs_features}
 
@@ -302,7 +304,7 @@ def main():
 
         # all max_timestamps should be the same, this is a safety measure
         query_epoch_milliseconds = min(max_timestamps)
-
+        
         nifc_token = checkout_token('NIFC_AGO', 120, 'NIFC_TOKEN', 5)
 
         # query input feature layers

@@ -10,6 +10,7 @@ import pickle as pkl
 import pytz
 import sys
 import traceback
+import time
 
 from utils.arcgis_helpers import AsyncArcGISRequester, checkout_token
 from utils.general import basic_file_logger, format_logged_exception, send_email
@@ -109,10 +110,10 @@ async def purge_features_gone_from_wfigs(perims_locs_url: str, wfigs_locs_url: s
                 raise KeyError(f'Expected keys not found in query response: {response}')
 
         # Because excessively long request parameters can result in http 404 responses,
-        # we make irwin id queries in batches of ten.
+        # we make irwin id queries in batches of twenty.
         # This is not being done efficiently, but for the task at hand, effiency is not a factor.
         ak_wf_var_irwins_chunks = list(ak_wf_var_irwins)
-        ak_wf_var_irwins_chunks = [tuple(ak_wf_var_irwins_chunks[i: i + 10]) for i in range(0, len(ak_wf_var_irwins), 10)]
+        ak_wf_var_irwins_chunks = [tuple(ak_wf_var_irwins_chunks[i: i + 20]) for i in range(0, len(ak_wf_var_irwins), 20)]
 
         current_wfigs_irwins = set()
         for irwins_chunk in ak_wf_var_irwins_chunks:
@@ -125,6 +126,7 @@ async def purge_features_gone_from_wfigs(perims_locs_url: str, wfigs_locs_url: s
                 current_wfigs_irwins.update([feat['attributes']['IrwinID'] for feat in current_wfigs_feats['features']])
             except KeyError:
                 raise KeyError(f'Expected keys not found in query response: {current_wfigs_feats}')
+            time.sleep(5)
         
         ak_wf_var_irwins.difference_update(current_wfigs_irwins)
 

@@ -108,10 +108,10 @@ async def get_wfigs_updates(akdof_var_service_url: str, wfigs_locations_url: str
             # If an input feature service remains down for an extended period,
             # continually attempting to reprocess the accumulating AK WF VAR features that have had a query error during prior processing
             # becomes extremely inefficient / potentially burdensome on external resources.
-            # Limiting the number of error-having features which can be reprocessed during each cycle to 5
+            # Limiting the number of error-having features which can be reprocessed during each cycle
             # addresses this problem while still enabling the service to incrementally self-correct any information gaps that exist due to prior processing errors.
         irwins_with_errors = list(irwins_with_errors)
-        irwins_with_errors = irwins_with_errors[:5]
+        irwins_with_errors = irwins_with_errors[:10]
 
         if irwins_with_errors:
 
